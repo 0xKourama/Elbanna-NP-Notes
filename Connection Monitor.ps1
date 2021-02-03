@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 
 Clear-Host
 
@@ -57,7 +57,8 @@ while($true){
         $latency_sum   += $ping.ResponseTime
 
         Write-Host "$sign "                                                   -NoNewline -ForegroundColor $pingcolor 
-        Write-Host "IP Address: $($ping.ProtocolAddress) | ".PadRight(15,' ') -NoNewline
+        Write-Host "IP Address: "                                             -NoNewline
+        Write-Host "$($ping.ProtocolAddress) | ".PadRight(15,' ')             -NoNewline
         Write-Host "Bytes: $($ping.BufferSize) | "                            -NoNewline
         Write-Host "Latency: "                                                -NoNewline
         Write-Host "$($ping.ResponseTime)".PadRight(4,' ')                    -NoNewline -ForegroundColor $pingcolor 
