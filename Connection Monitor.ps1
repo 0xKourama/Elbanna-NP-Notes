@@ -56,21 +56,21 @@ while($true){
         $prevping = $ping.ResponseTime
         $latency_sum   += $ping.ResponseTime
 
-        Write-Host "$sign "                                     -NoNewline -ForegroundColor $pingcolor 
+        Write-Host "$sign "                                                   -NoNewline -ForegroundColor $pingcolor 
         Write-Host "IP Address: $($ping.ProtocolAddress) | ".PadRight(15,' ') -NoNewline
-        Write-Host "Bytes: $($ping.BufferSize) | "                -NoNewline
-        Write-Host "Latency: "                                     -NoNewline
-        Write-Host "$($ping.ResponseTime)".PadRight(4,' ')      -NoNewline -ForegroundColor $pingcolor 
-        Write-Host " ms | "                                       -NoNewline
-        Write-Host "TTL: $($ping.ResponseTimeToLive) hops | "           -NoNewline
-        Write-Host "Jitter: "                                     -NoNewline
-        Write-Host "$jitter ".PadRight(4,' ')                   -NoNewline -ForegroundColor $jitcolor 
-        Write-Host "ms | "                                        -NoNewline
-        Write-Host "Average Latency: "                                      -NoNewline
-        Write-Host "$average_latency".PadRight(4,' ')           -NoNewline -ForegroundColor $avgcolor
-        Write-Host "ms | "                                        -NoNewline
-        Write-Host "Packet Loss: "                                     -NoNewline
-        Write-Host "$packetloss_percent".PadRight(3,' ')        -NoNewline -ForegroundColor $packetloss_color
+        Write-Host "Bytes: $($ping.BufferSize) | "                            -NoNewline
+        Write-Host "Latency: "                                                -NoNewline
+        Write-Host "$($ping.ResponseTime)".PadRight(4,' ')                    -NoNewline -ForegroundColor $pingcolor 
+        Write-Host " ms | "                                                   -NoNewline
+        Write-Host "TTL: $($ping.ResponseTimeToLive) hops | "                 -NoNewline
+        Write-Host "Jitter: "                                                 -NoNewline
+        Write-Host "$jitter ".PadRight(4,' ')                                 -NoNewline -ForegroundColor $jitcolor 
+        Write-Host "ms | "                                                    -NoNewline
+        Write-Host "Average Latency: "                                        -NoNewline
+        Write-Host "$average_latency".PadRight(4,' ')                         -NoNewline -ForegroundColor $avgcolor
+        Write-Host "ms | "                                                    -NoNewline
+        Write-Host "Packet Loss: "                                            -NoNewline
+        Write-Host "$packetloss_percent".PadRight(3,' ')                      -NoNewline -ForegroundColor $packetloss_color
         Write-Host "%"
     }
     catch{
