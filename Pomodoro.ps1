@@ -1,5 +1,5 @@
 Add-Type -AssemblyName PresentationFramework
-$Record_location = 'C:\Users\Blade\record.txt'
+$Record_location = 'D:\OneDrive\Record.txt'
 [int]$Record = Get-Content $Record_location
 Clear-Host
 
@@ -17,6 +17,9 @@ $skill_ranks = @(
 )
 
 $Quotes = @(
+    "Innna Allaha yo7ibbo itha 3amila a7adokom 3amalan ... an yotqenoh - Qoran",
+    "Hal yastwi allatheen ya3maloon wallatheen la ya3maloon? - Qoran",
+    "Inna Allaha la yodi3o agra man a7sana 3amalan - Qoran",
     "Happiness is inversely proprotional with pleasure.",
     "The man who moves a mountain begins by carrying away small stones.",
     "Hard work paying off is one of the greatest feelings ever.",
@@ -150,9 +153,15 @@ While($true){
 
     $Remaining_Minutes = $Work_duration_minutes
     1..$Work_duration_minutes | ForEach-Object {
+
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
-            [System.Windows.MessageBox]::Show("$Buffer_duration_minutes minutes left.") | Out-Null
-        }
+            Start-Job -ScriptBlock {
+                $Buffer_duration_minutes = $args[0]
+                Add-Type -AssemblyName PresentationFramework
+                [System.Windows.MessageBox]::Show("$Buffer_duration_minutes minutes left.") | Out-Null
+            } -ArgumentList $Buffer_duration_minutes | Out-Null
+        } 
+
         Write-Progress  -Activity "On the grind..." `
                         -Status "$( ( ($_/$Work_duration_minutes)*100) -as [int])% complete. $Remaining_Minutes minutes left." `
                         -PercentComplete $( ( ($_/$Work_duration_minutes)*100 ) -as [int])
@@ -163,5 +172,7 @@ While($true){
     $Record++
     $Record > $Record_location
 
+    Get-Job | Remove-Job
     [System.Windows.MessageBox]::Show('Finished. Press OK to start next session.') | Out-Null
+    Pause
 }
