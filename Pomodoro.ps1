@@ -1,4 +1,4 @@
-﻿Add-Type -AssemblyName PresentationFramework
+Add-Type -AssemblyName PresentationFramework
 $Record_location = 'C:\Users\Blade\record.txt'
 [int]$Record = Get-Content $Record_location
 Clear-Host
@@ -132,7 +132,7 @@ $Quotes = @(
     "The warrior is always alert. He is always awake. He is never sleeping through life. He knows how to focus his mind and his body. He is what the samurai called mindful. He is a hunter in the Native American tradition."
 )
 
-$Work_duration_minutes  = 25
+$Work_duration_minutes   = 30
 $Buffer_duration_minutes = 5
 
 While($true){
@@ -141,30 +141,22 @@ While($true){
 
     $Random_quote = $Quotes[(Get-Random -Maximum ($Quotes.Count))]
 
-    $rank = $skill_ranks[([math]::Floor($hours / 1000))]
+    $skill_rank = $skill_ranks[([math]::Floor($hours / 1000))]
 
     Write-Host $Random_quote -ForegroundColor Green
     Write-Host "`n`n`n`n`n`n"
     Write-Host "Experience: $hours hours."
-    Write-Host "Skill rank: $rank."
+    Write-Host "Skill rank: $skill_rank."
 
     $Remaining_Minutes = $Work_duration_minutes
     1..$Work_duration_minutes | ForEach-Object {
+        if ($Remaining_Minutes -eq $Buffer_duration_minutes){
+            [System.Windows.MessageBox]::Show("$Buffer_duration_minutes minutes left.") | Out-Null
+        }
         Write-Progress  -Activity "On the grind..." `
                         -Status "$( ( ($_/$Work_duration_minutes)*100) -as [int])% complete. $Remaining_Minutes minutes left." `
                         -PercentComplete $( ( ($_/$Work_duration_minutes)*100 ) -as [int])
-        Start-Sleep 60
-        $Remaining_Minutes--
-    }
-
-    [System.Windows.MessageBox]::Show('Five minutes left.') | Out-Null
-
-    $Remaining_Minutes = $Buffer_duration_minutes
-    1..$Buffer_duration_minutes  | ForEach-Object {
-        Write-Progress  -Activity "Wrapping up session..." `
-                        -Status "$( ( ($_/$Buffer_duration_minutes)*100) -as [int])% complete. $Remaining_Minutes minutes left." `
-                        -PercentComplete $( ( ($_/$Buffer_duration_minutes)*100) -as [int])
-        Start-Sleep 60
+        Start-Sleep -Seconds 60
         $Remaining_Minutes--
     }
 
