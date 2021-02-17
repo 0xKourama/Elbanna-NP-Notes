@@ -93,7 +93,6 @@ while($true){
         $List.Add($ping_object) | Out-Null
         $Sign = '[x]'
         Write-Host "$sign Request timed out" -ForegroundColor Red
-        Write-Host $Error[0]
     }
 
     Start-Sleep -Milliseconds $time_between_pings_milliseconds
