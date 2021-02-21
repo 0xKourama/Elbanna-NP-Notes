@@ -1,7 +1,11 @@
+﻿$ErrorActionPreference = 'stop'
 Add-Type -AssemblyName PresentationFramework
-$Record_location = 'D:\OneDrive\Record.txt'
+$repo_folder = 'C:\Users\Zen\PowerShell'
+$Record_location = "$repo_folder\record.txt"
 [int]$Record = Get-Content $Record_location
 Clear-Host
+
+$streak = 0
 
 $skill_ranks = @(
     'Novice',
@@ -17,12 +21,14 @@ $skill_ranks = @(
 )
 
 $Quotes = @(
-    "Innna Allaha yo7ibbo itha 3amila a7adokom 3amalan ... an yotqenoh - Qoran",
-    "Hal yastwi allatheen ya3maloon wallatheen la ya3maloon? - Qoran",
+    "Innna Allaha yo7ibbo itha 3amila a7adokom 3amalan an yotqenoh - Qoran",
+    "Hal yastawi alla-theen ya3maloon walla-theen la ya3maloon? - Qoran",
     "Inna Allaha la yodi3o agra man a7sana 3amalan - Qoran",
-    "Happiness is inversely proprotional with pleasure.",
-    "The man who moves a mountain begins by carrying away small stones.",
-    "Hard work paying off is one of the greatest feelings ever.",
+    "Happiness is inversely proprotional with pleasure. - Unknown,",
+    "The closest thing to perfection is progress - Unknown,",
+    "People in the old ages didn't have nearly as much entertainment sources as we do now. And, there were OK with that. Why can't we? - Unknown"
+    "The man who moves a mountain begins by carrying away small stones. - Unknown,",
+    "Hard work paying off is one of the greatest feelings ever. - Unknown,",
     "The secret of getting ahead is getting started. – Mark Twain",
     "I've missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I've failed over and over and over again in my life and that is why I succeed. – Michael Jordan",
     "It’s hard to beat a person who never gives up. – Babe Ruth",
@@ -146,10 +152,18 @@ While($true){
 
     $skill_rank = $skill_ranks[([math]::Floor($hours / 1000))]
 
+    if    ($hours -lt 3333){$skill_color = 'Gray'  }
+    elseif($hours -lt 6666){$skill_color = 'Yellow'}
+    elseif($hours -lt 9999){$skill_color = 'Green' }
+    else                   {$skill_color = 'Cyan'  }
+
     Write-Host $Random_quote -ForegroundColor Green
     Write-Host "`n`n`n`n`n`n"
-    Write-Host "Experience: $hours hours."
-    Write-Host "Skill rank: $skill_rank."
+    Write-Host "Experience: " -NoNewline 
+    Write-host "$hours hours" -ForegroundColor $skill_color
+    Write-Host "Skill rank: " -NoNewline
+    Write-Host "$skill_rank" -ForegroundColor $skill_color
+    Write-Host "Streak    : $streak"
 
     $Remaining_Minutes = $Work_duration_minutes
     1..$Work_duration_minutes | ForEach-Object {
@@ -171,8 +185,17 @@ While($true){
 
     $Record++
     $Record > $Record_location
+    $streak++
 
-    Get-Job | Remove-Job
+    cd $repo_folder
+    try{
+        git add record.txt | Out-Null
+        git commit -m 'one-more' | Out-Null
+        git push | Out-Null
+    }
+    catch{}
+
     [System.Windows.MessageBox]::Show('Finished. Press OK to start next session.') | Out-Null
     Pause
+    Get-Job | Remove-Job
 }
