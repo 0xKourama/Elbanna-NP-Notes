@@ -143,7 +143,7 @@ $Work_duration_minutes   = 30
 $Buffer_duration_minutes = 5
 
 While($true){
-    $hours = ((Get-Content $Record_location) / 2)
+    $hours = ((Get-Content .\record.txt) / 2)
     Clear-Host
 
     $Random_quote = $Quotes[(Get-Random -Maximum ($Quotes.Count))]
