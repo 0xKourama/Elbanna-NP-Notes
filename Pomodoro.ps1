@@ -1,8 +1,5 @@
 ﻿$ErrorActionPreference = 'stop'
 Add-Type -AssemblyName PresentationFramework
-if($env:COMPUTERNAME -eq 'Zen-PC'){$profile = 'Zen'}
-else{$profile = 'Admin'}
-cd "C:\Users\$profile\PowerShell"
 [int]$Record = Get-Content .\record.txt
 Clear-Host
 
