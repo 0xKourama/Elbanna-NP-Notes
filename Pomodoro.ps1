@@ -163,8 +163,8 @@ While($true){
     Write-Host $Random_quote -ForegroundColor Green
     Write-Host "`n`n`n`n`n`n"
     Write-Host "Experience: " -NoNewline 
-    Write-host "$hours hours" -ForegroundColor $skill_color
-    Write-Host "Skill rank: " -NoNewline
+    Write-host "$hours" -ForegroundColor $skill_color
+    Write-Host "Rank      : " -NoNewline
     Write-Host "$skill_rank" -ForegroundColor $skill_color
     Write-Host "Streak    : $streak"
 
