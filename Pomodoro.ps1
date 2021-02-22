@@ -181,7 +181,7 @@ While($true){
             } -ArgumentList $Buffer_duration_minutes | Out-Null
         } 
 
-        Write-Progress  -Activity "On the grind..." `
+        Write-Progress  -Activity "Progress" `
                         -Status "$( ( ($_/$Work_duration_minutes)*100) -as [int])% complete. $Remaining_Minutes minutes left." `
                         -PercentComplete $( ( ($_/$Work_duration_minutes)*100 ) -as [int])
         Start-Sleep -Seconds 60
