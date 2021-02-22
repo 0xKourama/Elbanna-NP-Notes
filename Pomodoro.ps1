@@ -1,7 +1,10 @@
 ﻿$ErrorActionPreference = 'stop'
 Add-Type -AssemblyName PresentationFramework
-$repo_folder = 'C:\Users\Zen\PowerShell'
-$Record_location = "$repo_folder\record.txt"
+$repo_folder = 'C:\Users\Admin\PowerShell'
+cd $repo_folder
+try{git pull | Out-Null}
+catch{}
+$Record_location = ".\record.txt"
 [int]$Record = Get-Content $Record_location
 Clear-Host
 
@@ -187,10 +190,9 @@ While($true){
     $Record > $Record_location
     $streak++
 
-    cd $repo_folder
     try{
         git add record.txt | Out-Null
-        git commit -m 'one-more' | Out-Null
+        git commit -m 'one step closer' | Out-Null
         git push | Out-Null
     }
     catch{}
