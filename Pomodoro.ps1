@@ -1,6 +1,8 @@
 ﻿$ErrorActionPreference = 'stop'
 Add-Type -AssemblyName PresentationFramework
-$repo_folder = 'C:\Users\Admin\PowerShell'
+if($env:COMPUTERNAME -eq 'Zen-PC'){$profile = 'Zen'}
+else{$profile = 'Admin'}
+$repo_folder = 'C:\Users\$profile\PowerShell'
 cd $repo_folder
 try{git pull | Out-Null}
 catch{}
