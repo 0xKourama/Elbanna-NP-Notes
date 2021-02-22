@@ -2,12 +2,8 @@
 Add-Type -AssemblyName PresentationFramework
 if($env:COMPUTERNAME -eq 'Zen-PC'){$profile = 'Zen'}
 else{$profile = 'Admin'}
-$repo_folder = "C:\Users\$profile\PowerShell"
-cd $repo_folder
-try{git pull | Out-Null}
-catch{}
-$Record_location = ".\record.txt"
-[int]$Record = Get-Content $Record_location
+cd "C:\Users\$profile\PowerShell"
+[int]$Record = Get-Content .\record.txt
 Clear-Host
 
 $streak = 0
@@ -189,7 +185,7 @@ While($true){
     }
 
     $Record++
-    $Record > $Record_location
+    $Record > .\record.txt
     $streak++
 
     try{
