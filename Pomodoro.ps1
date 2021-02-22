@@ -157,10 +157,8 @@ While($true){
 
     Write-Host $Random_quote -ForegroundColor Green
     Write-Host "`n`n`n`n`n`n"
-    Write-Host "Exp : " -NoNewline 
-    Write-host "$hours" -ForegroundColor $skill_color
-    Write-Host "Rnk : " -NoNewline
-    Write-Host "$skill_rank" -ForegroundColor $skill_color
+    Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
+    Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
     Write-Host "Strk: $streak"
 
     $Remaining_Minutes = $Work_duration_minutes
@@ -188,7 +186,7 @@ While($true){
     try{
         git add record.txt | Out-Null
         git commit -m 'one step closer' | Out-Null
-        git push | Out-Null
+        git push
     }
     catch{}
 
