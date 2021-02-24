@@ -1,11 +1,6 @@
-﻿$ErrorActionPreference = 'stop'
-Add-Type -AssemblyName PresentationFramework
-[int]$Record = Get-Content .\record.txt
-Clear-Host
+﻿Add-Type -AssemblyName PresentationFramework | Out-Null
 
-git pull
-
-$streak = 0
+$Working_directory = Get-Location | Select-Object -ExpandProperty Path
 
 $skill_ranks = @(
     'Novice',
@@ -24,7 +19,7 @@ $Quotes = @(
     "Innna Allaha yo7ibbo itha 3amila a7adokom 3amalan an yotqenoh - Qoran",
     "Hal yastawi alla-theen ya3maloon walla-theen la ya3maloon? - Qoran",
     "Inna Allaha la yodi3o agra man a7sana 3amalan - Qoran",
-    "Happiness is inversely proprotional with pleasure. - Unknown,",
+    "Happiness is inversely proprotional with pleasure. - Unknown",
     "The closest thing to perfection is progress - Unknown,",
     "People in the old ages didn't have nearly as much entertainment sources as we do now. And, there were OK with that. Why can't we? - Unknown"
     "The man who moves a mountain begins by carrying away small stones. - Unknown,",
@@ -145,8 +140,17 @@ $Work_duration_minutes   = 30
 $Buffer_duration_minutes = 5
 
 While($true){
-    $hours = ((Get-Content .\record.txt) / 2)
-    Clear-Host
+
+    [int]$Record = Get-Content Record.txt
+
+    [int]$Chain = Get-Content Chain.txt
+
+    Start-Job -ScriptBlock {
+        Set-Location $args[0]
+        git pull
+    } -ArgumentList $Working_directory | Wait-Job
+
+    $hours = (Get-Content Record.txt) / 2
 
     $Random_quote = $Quotes[(Get-Random -Maximum ($Quotes.Count))]
 
@@ -157,14 +161,9 @@ While($true){
     elseif($hours -lt 9999){$skill_color = 'Green' }
     else                   {$skill_color = 'Cyan'  }
 
-    Write-Host $Random_quote -ForegroundColor Green
-    Write-Host "`n`n`n`n`n`n"
-    Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
-    Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
-    Write-Host "Strk: $streak"
-
     $Remaining_Minutes = $Work_duration_minutes
     1..$Work_duration_minutes | ForEach-Object {
+        Clear-Host
 
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
             Start-Job -ScriptBlock {
@@ -172,27 +171,60 @@ While($true){
                 Add-Type -AssemblyName PresentationFramework
                 [System.Windows.MessageBox]::Show("$Buffer_duration_minutes minutes left.") | Out-Null
             } -ArgumentList $Buffer_duration_minutes | Out-Null
-        } 
+        }
 
-        Write-Progress  -Activity "Progress" `
-                        -Status "$( ( ($_/$Work_duration_minutes)*100) -as [int])% complete. $Remaining_Minutes minutes left." `
-                        -PercentComplete $( ( ($_/$Work_duration_minutes)*100 ) -as [int])
+        $upper = '\\' * $_
+        $lower = '//' * $_
+        $border = '+' + ('-' * $Work_duration_minutes * 2) + '+'
+
+        Write-Host $Random_quote -ForegroundColor Cyan
+        Write-Host
+        Write-Host $border
+        Write-Host '|' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor Green -NoNewline; Write-Host '|'
+        Write-Host '|' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border.Length - 2) - $lower.Length)) -ForegroundColor Green -NoNewline; Write-Host '|'
+        Write-Host $border
+        Write-Host
+        Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
+        Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
+        Write-Host "Chn : $Chain"
+        Write-Host "Strk: $Streak"
+        Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
+        Write-Host "Mins: $Remaining_Minutes"
+
         Start-Sleep -Seconds 60
         $Remaining_Minutes--
     }
 
-    $Record++
-    $Record > .\record.txt
-    $streak++
 
-    try{
-        git add record.txt | Out-Null
-        git commit -m 'one step closer' | Out-Null
-        git push
+    $Last_Sprint_date = Import-Csv LastSprintDate.csv
+    $Date = Get-Date | Select-Object -Property Day, Month, Year
+
+    if  ($Date.Day   -eq $Last_Sprint_date.Day   `
+    -and $Date.Month -eq $Last_Sprint_date.Month `
+    -and $Date.Year  -eq $Last_Sprint_date.Year){
+        $Last_Sprint_date | Export-Csv LastSprintDate.csv -NoTypeInformation
+        $Chain++
+        $Chain > Chain.txt
     }
-    catch{}
+    else{
+        $Chain = 1
+        $Chain > Chain.txt
+    }
+
+    $Record++
+    $Record > Record.txt
+
+    Start-Job -ScriptBlock {
+        Set-Location $args[0]
+        git add Record.txt
+        git add Chain.txt
+        git add LastSprintDate.csv
+        git commit -m 'one step closer'
+        git push
+    } -ArgumentList $Working_directory | Wait-Job
 
     [System.Windows.MessageBox]::Show('Finished. Press OK to start next session.') | Out-Null
+    
     Pause
     Get-Job | Remove-Job
 }
