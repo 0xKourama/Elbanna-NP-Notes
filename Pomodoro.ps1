@@ -180,8 +180,8 @@ While($true){
         Write-Host $Random_quote -ForegroundColor Cyan
         Write-Host
         Write-Host $border
-        Write-Host '|' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor Green -NoNewline; Write-Host '|'
-        Write-Host '|' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border.Length - 2) - $lower.Length)) -ForegroundColor Green -NoNewline; Write-Host '|'
+        Write-Host ' \' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor Green -NoNewline; Write-Host '\'
+        Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border.Length - 2) - $lower.Length)) -ForegroundColor Green -NoNewline; Write-Host '/'
         Write-Host $border
         Write-Host
         Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
