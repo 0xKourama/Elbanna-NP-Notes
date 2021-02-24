@@ -3,6 +3,8 @@ Add-Type -AssemblyName PresentationFramework
 [int]$Record = Get-Content .\record.txt
 Clear-Host
 
+git pull
+
 $streak = 0
 
 $skill_ranks = @(
