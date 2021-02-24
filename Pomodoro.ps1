@@ -148,7 +148,7 @@ While($true){
     Start-Job -ScriptBlock {
         Set-Location $args[0]
         git pull
-    } -ArgumentList $Working_directory | Wait-Job
+    } -ArgumentList $Working_directory | Wait-Job | Out-Null
 
     $hours = (Get-Content Record.txt) / 2
 
@@ -221,7 +221,7 @@ While($true){
         git add LastSprintDate.csv
         git commit -m 'one step closer'
         git push
-    } -ArgumentList $Working_directory | Wait-Job
+    } -ArgumentList $Working_directory | Wait-Job | Out-Null
 
     [System.Windows.MessageBox]::Show('Finished. Press OK to start next session.') | Out-Null
     
