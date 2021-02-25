@@ -177,11 +177,15 @@ While($true){
         $lower = '//' * $_
         $border = '+' + ('-' * $Work_duration_minutes * 2) + '+'
 
+        if    ($_ -le 10){$Progress_color = 'Red'   }
+        elseif($_ -le 20){$Progress_color = 'Yellow'}
+        else             {$Progress_color = 'Green' }
+
         Write-Host $Random_quote -ForegroundColor Cyan
         Write-Host
         Write-Host $border
-        Write-Host ' \' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor Green -NoNewline; Write-Host '\'
-        Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border.Length - 2) - $lower.Length)) -ForegroundColor Green -NoNewline; Write-Host '/'
+        Write-Host ' \' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '\'
+        Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '/'
         Write-Host $border
         Write-Host
         Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
