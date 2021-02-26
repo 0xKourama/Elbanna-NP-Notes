@@ -1,10 +1,2 @@
-1. add the streak feature:
-	1. get the last record
-	2. if it is equal to yesterday ... then our streak is going strong
-	3. streak is equal to yesterday's streak valye +1
-2. set up the chain to be logged to the tracker and updated per run
-	by setting the property
-3. change the script name to something cooler
-4. show stats like: max streak & max chain
-5. show a ber for current level experience
-6. add the timer for minutes and seconds
+1. change the script name to something coole
+3. show a bar for current level experience
