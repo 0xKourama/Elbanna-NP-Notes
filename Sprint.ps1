@@ -181,7 +181,7 @@ While($true){
     $Today     = Get-Date
     $Yesterday = $Today.AddDays(-1)
     $Charge    = Get-Content Charge.txt
-    
+    $MaxChain  = Get-Content MaxChain.txt
     $Last_record = Import-Csv Tracker.csv
 
     #yesterday's record is there
@@ -240,8 +240,7 @@ While($true){
     else                   {$skill_color = 'Cyan'  }
 
     $Remaining_Minutes = $Work_duration_minutes - 1
-    1..$Work_duration_minutes | ForEach-Object {
-        #Clear-Host
+    0..$Work_duration_minutes | ForEach-Object {
 
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
             Start-Job -ScriptBlock {
@@ -259,49 +258,44 @@ While($true){
         elseif($_ -le 20){$Progress_color = 'Yellow'}
         else             {$Progress_color = 'Green' }
 
-        $Remaining_Seconds = 59
+        Clear-Host
+        Write-Host $Random_quote -ForegroundColor Cyan
+        Write-Host
+        Write-Host $border
+        Write-Host ' \' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '\'
+        Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '/'
+        Write-Host $border
+        Write-Host
+        Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
+        Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
+        Write-Host "Chn : $($Object.Chain)"
+        Write-Host "Strk: $($Object.Streak)"
+        Write-Host "Chrg: $Charge"
+        Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
+        Write-Host "Mins: $Remaining_Minutes"
 
-        0..$Remaining_Seconds | ForEach-Object {
-            Clear-Host
-
-            if($Remaining_Seconds -lt 10){$seconds_display = "0$Remaining_Seconds"}
-            else                         {$seconds_display = $Remaining_Seconds   }
-
-            Write-Host $Random_quote -ForegroundColor Cyan
-            Write-Host
-            Write-Host $border
-            Write-Host ' \' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '\'
-            Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '/'
-            Write-Host $border
-            Write-Host
-            Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
-            Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
-            Write-Host "Chn : $($Object.Chain)"
-            Write-Host "Strk: $($Object.Streak)"
-            Write-Host "Chrg: $Charge"
-            Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
-            Write-Host "Time: $Remaining_Minutes`:$seconds_display"
-
-            Start-Sleep -Seconds 1
-            $Remaining_Seconds--
-        }
-
+        Start-Sleep -Seconds 60
         $Remaining_Minutes--
     }
 
     [int]$Object.Record = [int]$Object.Record + 1
     [int]$Object.Chain  = [int]$Object.Chain  + 1
 
+    if([int]$object.Chain -gt $MaxChain){
+        Write-Host "[+] Chain record passed!! $($Object.Chain)!!" -ForegroundColor Green
+        [int]$Object.Chain > MaxChain.txt
+    }
+    
     $Object | Export-Csv Tracker.csv -NoTypeInformation
-    <#
+
     Start-Job -ScriptBlock {
         Set-Location $args[0]
         git add Charge.txt
         git add Tracker.csv
+        git add MaxChain.txt
         git commit -m 'one step closer'
         git push
     } -ArgumentList $Working_directory | Wait-Job | Out-Null
-    #>
 
     [System.Windows.MessageBox]::Show('Finished. Press OK to start next session.') | Out-Null
     
