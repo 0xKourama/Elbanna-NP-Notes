@@ -170,12 +170,10 @@ $Buffer_duration_minutes = 5
 
 While($true){
 
-    <#
     Start-Job -ScriptBlock {
         Set-Location $args[0]
         git pull
     } -ArgumentList $Working_directory | Wait-Job | Out-Null
-    #>
 
     #get today and yesteday's dates
     $Today     = Get-Date
@@ -239,8 +237,8 @@ While($true){
     elseif($hours -lt 9999){$skill_color = 'Green' }
     else                   {$skill_color = 'Cyan'  }
 
-    $Remaining_Minutes = $Work_duration_minutes - 1
-    0..$Work_duration_minutes | ForEach-Object {
+    $Remaining_Minutes = $Work_duration_minutes
+    0..($Work_duration_minutes - 1)| ForEach-Object {
 
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
             Start-Job -ScriptBlock {
