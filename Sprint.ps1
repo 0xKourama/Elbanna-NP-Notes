@@ -16,6 +16,7 @@ $skill_ranks = @(
 )
 
 $Quotes = @(
+    "و مالنصر الا من عند الله",
     "Innna Allaha yo7ibbo itha 3amila a7adokom 3amalan an yotqenoh - Qoran",
 	"Hal yastawi alla-theen ya3maloon walla-theen la ya3maloon? - Qoran",
 	"Inna Allaha la yodi3o agra man a7sana 3amalan. - Qoran",
