@@ -264,7 +264,7 @@ While($true){
 
         $upper = '\\' * $_
         $lower = '//' * $_
-        $border = '+' + ('-' * $Work_duration_minutes * 2) + '+'
+        $border = '+' + ('-' * ($Work_duration_minutes - 1) * 2) + '+'
 
         if    ($_ -le 10){$Progress_color = 'Red'   }
         elseif($_ -le 20){$Progress_color = 'Yellow'}
