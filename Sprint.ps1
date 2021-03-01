@@ -15,7 +15,7 @@ $skill_ranks = @(
     'Transcender'
 )
 
-Import-Module Quotes.ps1
+Import-Module .\Quotes.ps1
 
 $Work_duration_minutes   = 30
 $Buffer_duration_minutes = 5
@@ -92,7 +92,7 @@ While($true){
     else                   {$skill_color = 'Cyan'  }
 
     $Remaining_Minutes = $Work_duration_minutes
-    0..($Work_duration_minutes - 1)| ForEach-Object {
+    0..$Work_duration_minutes | ForEach-Object {
 
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
             Start-Job -ScriptBlock {
@@ -126,12 +126,15 @@ While($true){
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
         Write-Host "Mins: $Remaining_Minutes"
 
-        Start-Sleep -Seconds 60
-        $Remaining_Minutes--
+        if($Remaining_Minutes -ne 0){
+            Start-Sleep -Seconds 60
+            $Remaining_Minutes--
+        }
     }
 
     [int]$Object.Record = [int]$Object.Record + 1
     [int]$Object.Chain  = [int]$Object.Chain  + 1
+
 
     if([int]$object.Chain -gt $MaxChain){
         Write-Host "[+] Chain record passed!! $($Object.Chain)!!" -ForegroundColor Green
@@ -151,6 +154,7 @@ While($true){
 
     [System.Windows.MessageBox]::Show('Finished. Press OK to start next session.') | Out-Null
     
+    Write-Host
     Pause
     Get-Job | Remove-Job
 }
