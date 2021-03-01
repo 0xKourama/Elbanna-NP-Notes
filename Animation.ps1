@@ -16,7 +16,8 @@ $Remaining_Minutes = $Work_duration_minutes
     Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor $color -NoNewline; Write-Host '/'
     Write-Host $border
     
-    $Remaining_Minutes--
 
+    $Remaining_Minutes--
+    Write-Host $Remaining_Minutes
     sleep -Milliseconds 250
 }
