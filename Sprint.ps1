@@ -15,7 +15,7 @@ $skill_ranks = @(
     'Transcender'
 )
 
-Import-Module .\Quotes.ps1
+Get-Content -Raw Quotes.ps1 | Invoke-Expression
 
 $Work_duration_minutes   = 30
 $Buffer_duration_minutes = 5
