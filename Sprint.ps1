@@ -133,7 +133,24 @@ While($true){
     [int]$Object.Record = [int]$Object.Record + 1
     [int]$Object.Chain  = [int]$Object.Chain  + 1
 
+    #display the finish screen
+    Clear-Host
+    Write-Host $Random_quote -ForegroundColor Cyan
+    Write-Host
+    Write-Host $border
+    Write-Host ' \' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '\'
+    Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '/'
+    Write-Host $border
+    Write-Host
+    Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
+    Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
+    Write-Host "Chn : $($Object.Chain)"
+    Write-Host "Strk: $($Object.Streak)"
+    Write-Host "Chrg: $Charge"
+    Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
+    Write-Host "Mins: $Remaining_Minutes"
 
+    #if max chain is exceeded, celebrate!
     if([int]$object.Chain -gt $MaxChain){
         Write-Host "[+] Chain record passed!! $($Object.Chain)!!" -ForegroundColor Green
         [int]$Object.Chain > MaxChain.txt
@@ -141,11 +158,14 @@ While($true){
     
     $Object | Export-Csv Tracker.csv -NoTypeInformation
 
+
+    #commit charge, tracker, trail and max chain and push
     Start-Job -ScriptBlock {
         Set-Location $args[0]
         git add Charge.txt
         git add Tracker.csv
         git add MaxChain.txt
+        git add Trail.csv
         git commit -m 'one step closer'
         git push
     } -ArgumentList $Working_directory | Wait-Job | Out-Null
