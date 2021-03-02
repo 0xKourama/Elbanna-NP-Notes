@@ -92,7 +92,7 @@ While($true){
     else                   {$skill_color = 'Cyan'  }
 
     $Remaining_Minutes = $Work_duration_minutes
-    0..$Work_duration_minutes | ForEach-Object {
+    0..($Work_duration_minutes - 1) | ForEach-Object {
 
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
             Start-Job -ScriptBlock {

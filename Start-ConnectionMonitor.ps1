@@ -83,7 +83,7 @@ while($true){
         Write-Host "ms | "                                        -NoNewline
         Write-Host "AVG: "                                        -NoNewline
         Write-Host "$average_latency".PadRight(4,' ')             -NoNewline -ForegroundColor $avgcolor
-        Write-Host "ms | "                                        -NoNewline
+        Write-Host " ms | "                                        -NoNewline
         Write-Host "LOSS: "                                       -NoNewline
         Write-Host "$packetloss_percent".PadRight(3,' ')          -NoNewline -ForegroundColor $packetloss_color
         Write-Host "%"
