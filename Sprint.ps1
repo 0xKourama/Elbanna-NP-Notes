@@ -126,10 +126,8 @@ While($true){
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
         Write-Host "Mins: $Remaining_Minutes"
 
-        if($Remaining_Minutes -ne 0){
-            Start-Sleep -Seconds 60
-            $Remaining_Minutes--
-        }
+        Start-Sleep -Seconds 60
+        $Remaining_Minutes--
     }
 
     [int]$Object.Record = [int]$Object.Record + 1
