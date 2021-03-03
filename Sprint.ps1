@@ -104,8 +104,8 @@ While($true){
 
         $upper = '\\' * $_
         $lower = '//' * $_
-        $border1 = '╭' + ('━' * $Work_duration_minutes * 2) + '╮'
-        $border2 = '╰' + ('━' * $Work_duration_minutes * 2) + '╯'
+        $border1 = '┏' + ('━' * $Work_duration_minutes * 2) + '┓'
+        $border2 = '┗' + ('━' * $Work_duration_minutes * 2) + '┛'
 
         if    ($_ -le 10){$Progress_color = 'Red'   }
         elseif($_ -le 20){$Progress_color = 'Yellow'}
@@ -115,8 +115,8 @@ While($true){
         Write-Host $Random_quote -ForegroundColor Cyan
         Write-Host
         Write-Host $border1
-        Write-Host ' \' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '\'
-        Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '/'
+        Write-Host ' ' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host ' '
+        Write-Host ' ' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host ' '
         Write-Host $border2
         Write-Host
         Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
@@ -141,8 +141,8 @@ While($true){
     Write-Host $Random_quote -ForegroundColor Cyan
     Write-Host
     Write-Host $border1
-    Write-Host ' \' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '\'
-    Write-Host ' /' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border1.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host '/'
+    Write-Host ' ' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host ' '
+    Write-Host ' ' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border1.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host ' '
     Write-Host $border2
     Write-Host
     Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
