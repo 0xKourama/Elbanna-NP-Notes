@@ -134,6 +134,8 @@ While($true){
     [int]$Object.Chain  = [int]$Object.Chain  + 1
 
     #display the finish screen
+    $upper = '\\' * 30
+    $lower = '//' * 30
     Clear-Host
     Write-Host $Random_quote -ForegroundColor Cyan
     Write-Host
