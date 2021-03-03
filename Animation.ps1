@@ -3,8 +3,8 @@ $Remaining_Minutes = $Work_duration_minutes
 1..$Work_duration_minutes | ForEach-Object {
     Clear-Host
 
-    $border1 = ' ╭' + ('━' * $Work_duration_minutes * 2) + '╮'
-    $border2 = ' ╰' + ('━' * $Work_duration_minutes * 2) + '╯'
+    $border1 = '╭' + ('━' * $Work_duration_minutes * 2) + '╮'
+    $border2 = '╰' + ('━' * $Work_duration_minutes * 2) + '╯'
 
     $upper = '\\' * $_
 
