@@ -120,7 +120,7 @@ While($true){
         Write-Host
         Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
         Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
-        Write-Host "Chn : $($Object.Chain) >> $($Object.Chain + 1)"
+        Write-Host "Chn : $($Object.Chain) >> $([int]$Object.Chain + 1)"
         Write-Host "Strk: $($Object.Streak)"
         Write-Host "Chrg: $Charge"
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
