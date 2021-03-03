@@ -115,8 +115,8 @@ While($true){
         Write-Host $Random_quote -ForegroundColor Cyan
         Write-Host
         Write-Host $border1
-        Write-Host ' ' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host ' '
-        Write-Host ' ' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host ' '
+        Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color
+        Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color
         Write-Host $border2
         Write-Host
         Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
@@ -141,8 +141,8 @@ While($true){
     Write-Host $Random_quote -ForegroundColor Cyan
     Write-Host
     Write-Host $border1
-    Write-Host ' ' -NoNewline; Write-Host $upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host ' '
-    Write-Host ' ' -NoNewline; Write-Host $lower.PadRight($lower.Length + (($border1.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color -NoNewline; Write-Host ' '
+    Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color
+    Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color
     Write-Host $border2
     Write-Host
     Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
