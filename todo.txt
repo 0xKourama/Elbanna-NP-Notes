@@ -1,2 +1,0 @@
-1. change the script name to something coole
-3. show a bar for current level experience
