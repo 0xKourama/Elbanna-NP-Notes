@@ -36,13 +36,12 @@ foreach($domain in $domains){
         }
         else{
             foreach($MX_record in $MX_records){
-                switch($MX_record){
-                    'wp-secure-cloudmail01.worldposta.com'{$obj.MX1 = $true}
-                    'wp-secure-cloudmail02.worldposta.com'{$obj.MX2 = $true}
-                    'wp-secure-cloudmail03.worldposta.com'{$obj.MX3 = $true}
-                    'wp-secure-cloudmail04.worldposta.com'{$obj.MX4 = $true}
-                    default{$obj.DifferentMXPresent = $true}
-                }
+                if    ($MX_record -match 'wp-secure-cloudmail01.worldposta.com'){$obj.MX1 = $true}
+                elseif($MX_record -match 'wp-secure-cloudmail02.worldposta.com'){$obj.MX2 = $true}
+                elseif($MX_record -match 'wp-secure-cloudmail03.worldposta.com'){$obj.MX3 = $true}
+                elseif($MX_record -match 'wp-secure-cloudmail04.worldposta.com'){$obj.MX4 = $true}
+                elseif($MX_record -eq ''){}
+                else{$obj.DifferentMXPresent = $true}
             }
 
             if($obj.MX1 -and $obj.MX2 -and $obj.MX3 -and $obj.MX4){
@@ -81,4 +80,4 @@ foreach($domain in $domains){
     $result_list += $obj
 }
 
-$result_list | ft
+$result_list | ft -AutoSize
