@@ -22,11 +22,6 @@ $Buffer_duration_minutes = 5
 
 While($true){
 
-    Start-Job -ScriptBlock {
-        Set-Location $args[0]
-        git pull
-    } -ArgumentList $Working_directory | Wait-Job | Out-Null
-
     #get today and yesteday's dates
     $Today     = Get-Date
     $Yesterday = $Today.AddDays(-1)
