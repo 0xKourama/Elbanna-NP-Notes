@@ -1,4 +1,9 @@
-﻿$csv = Import-Csv C:\Users\admin\Desktop\result.csv
+﻿Param(
+    $InputCsv,
+    $OutputCsv
+)
+
+$csv = Import-Csv $InputCsv
 
 $domains = $csv.Domain | Sort-Object -Unique
 
@@ -11,6 +16,7 @@ foreach($domain in $domains){
 
     $records    = $csv | Where-Object {$_.domain -eq $domain}
 
+    #if the error property was not an empty string, set everything to false
     if($records.Error -ne ''){
         $obj.Error = $records.Error
         $obj.MX1               = $false
@@ -24,8 +30,10 @@ foreach($domain in $domains){
     }
     else{
         $obj.Error = $false
+        #select MX records for checking
         $MX_records  = $records | Select-Object -ExpandProperty MX
 
+        #if no MX records were found
         if(!$MX_records){
             $obj.MX1               = $false
             $obj.MX2               = $false
@@ -41,9 +49,10 @@ foreach($domain in $domains){
                 elseif($MX_record -match 'wp-secure-cloudmail03.worldposta.com'){$obj.MX3 = $true}
                 elseif($MX_record -match 'wp-secure-cloudmail04.worldposta.com'){$obj.MX4 = $true}
                 elseif($MX_record -eq ''){}
+                #if the record doesn't match any of the worldposta records, point it out (as this might cause problems)
                 else{$obj.DifferentMXPresent = $true}
             }
-
+            #if all MX records of worldposta are present, set the fullyconfigured property to true
             if($obj.MX1 -and $obj.MX2 -and $obj.MX3 -and $obj.MX4){
                 $obj.MXConfigured      = $true
                 $obj.MXFullyConfigured = $true
@@ -54,12 +63,15 @@ foreach($domain in $domains){
             }
         }
 
+        #select TXT records for checking
         $TXT_records = $records | Select-Object -ExpandProperty TXT
 
+        #if no TXT records are there set the properties to false
         if(!$TXT_records){
-            $obj.SPFConfigured = $false
+            $obj.SPFConfigured  = $false
             $obj.DKIMConfigured = $false
         }
+        #otherwise, check the SPF and DKIM records
         else{
             if($TXT_records -contains "v=spf1 mx include:_spf.worldposta.com -all"){
                 $obj.SPFConfigured = $true
@@ -80,4 +92,4 @@ foreach($domain in $domains){
     $result_list += $obj
 }
 
-$result_list | ft -AutoSize
+$result_list | Export-Csv -NoTypeInformation $OutputCsv
