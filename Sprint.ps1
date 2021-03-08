@@ -142,10 +142,10 @@ While($true){
     Write-Host
     Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
     Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
-    Write-Host "Chn : $($Object.Chain)"
+    Write-Host "Chn : " -NoNewline; Write-Host $($Object.Chain) -ForegroundColor Green
     Write-Host "Strk: $($Object.Streak)"
     Write-Host "Chrg: $Charge"
-    Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
+    Write-Host "Prog: " -NoNewline; write-host "100%" -ForegroundColor Green
     Write-Host "Mins: $Remaining_Minutes"
 
     #if max chain is exceeded, celebrate!
