@@ -11,6 +11,7 @@ $Special_Chars = '!@#$%^&*'.ToCharArray()
 $Password_length_Min = 15
 $Password_length_Max = 20
 
+if(!$Count){$Count = 1}
 1..$Count | ForEach-Object {
     #generate a random length
     $Random_length = Get-Random -Minimum $Password_length_Min -Maximum ($Password_length_Max + 1)
