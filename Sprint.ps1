@@ -81,11 +81,6 @@ While($true){
 
     $skill_rank = $skill_ranks[([math]::Floor($hours / 1000))]
 
-    if    ($hours -lt 3333){$skill_color = 'Gray'  }
-    elseif($hours -lt 6666){$skill_color = 'Yellow'}
-    elseif($hours -lt 9999){$skill_color = 'Green' }
-    else                   {$skill_color = 'Cyan'  }
-
     $Remaining_Minutes = $Work_duration_minutes
     0..($Work_duration_minutes - 1) | ForEach-Object {
 
@@ -114,8 +109,8 @@ While($true){
         Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color
         Write-Host $border2
         Write-Host
-        Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
-        Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
+        Write-Host "Exp : $hours >> $($hours + 0.5)"
+        Write-Host "Rnk : $skill_rank >> $($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
         Write-Host "Chn : $($Object.Chain) >> $([int]$Object.Chain + 1)"
         Write-Host "Strk: $($Object.Streak)"
         Write-Host "Chrg: $Charge"
@@ -140,8 +135,8 @@ While($true){
     Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color
     Write-Host $border2
     Write-Host
-    Write-Host "Exp : " -NoNewline; Write-host "$hours"      -ForegroundColor $skill_color
-    Write-Host "Rnk : " -NoNewline; Write-Host "$skill_rank" -ForegroundColor $skill_color
+    Write-Host "Exp : " -NoNewline; Write-Host $hours -ForegroundColor Green
+    Write-Host "Rnk : $skill_rank"
     Write-Host "Chn : " -NoNewline; Write-Host $($Object.Chain) -ForegroundColor Green
     Write-Host "Strk: $($Object.Streak)"
     Write-Host "Chrg: $Charge"
