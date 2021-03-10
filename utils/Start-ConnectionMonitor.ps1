@@ -71,7 +71,10 @@ while($true){
         elseif($packetloss_percent -lt 20 ){$packetloss_color = 'Yellow'               }
         else                               {$packetloss_color = 'Red'                  }
 
+        $date = Get-Date
+
         Write-Host "$sign "                                       -NoNewline -ForegroundColor $pingcolor 
+        Write-Host "$date | " -NoNewline
         Write-Host "IP: "                                         -NoNewline
         Write-Host "$($ping.ProtocolAddress) | ".PadLeft(15,' ')  -NoNewline
         Write-Host "LAT: "                                        -NoNewline
