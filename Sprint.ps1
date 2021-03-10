@@ -109,9 +109,9 @@ While($true){
         Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color
         Write-Host $border2
         Write-Host
-        Write-Host "Exp : $hours >> $($hours + 0.5)"
-        Write-Host "Rnk : $skill_rank >> $($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
-        Write-Host "Chn : $($Object.Chain) >> $([int]$Object.Chain + 1)"
+        Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host $($hours + 0.5)
+        Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
+        Write-Host "Chn : $($Object.Chain) " -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host "$([int]$Object.Chain + 1)"
         Write-Host "Strk: $($Object.Streak)"
         Write-Host "Chrg: $Charge"
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
