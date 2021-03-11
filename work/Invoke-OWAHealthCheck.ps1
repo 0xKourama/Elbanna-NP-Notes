@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'stop'
 $ProgressPreference = 'SilentlyContinue'
 
-#bypass cert checks
+#region bypass cert checks
 add-type @"
     using System.Net;
     using System.Security.Cryptography.X509Certificates;
@@ -14,6 +14,7 @@ add-type @"
     }
 "@
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
+#endregion
 
 ipconfig /flushdns | Out-Null
 Write-Host '[+] Local DNS Cache flushed' -ForegroundColor Green

@@ -22,6 +22,7 @@ $Buffer_duration_minutes = 5
 
 While($true){
 
+    #region manage records
     #get today and yesteday's dates
     $Today     = Get-Date
     $Yesterday = $Today.AddDays(-1)
@@ -72,6 +73,7 @@ While($true){
             Streak = 0
         }
     }
+    #endregion
 
     $Object | Export-Csv Tracker.csv -NoTypeInformation
 
@@ -92,6 +94,7 @@ While($true){
             } -ArgumentList $Buffer_duration_minutes | Out-Null
         }
 
+        #region update animation
         $upper = '\\' * $_
         $lower = '//' * $_
         $border1 = '┏' + ('━' * $Work_duration_minutes * 2) + '┓'
@@ -112,6 +115,7 @@ While($true){
         Write-Host "Chrg: $Charge"
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
         Write-Host "Mins: $Remaining_Minutes"
+        #endregion
 
         Start-Sleep -Seconds 60
         $Remaining_Minutes--
@@ -120,7 +124,7 @@ While($true){
     [int]$Object.Record = [int]$Object.Record + 1
     [int]$Object.Chain  = [int]$Object.Chain  + 1
 
-    #display the finish screen
+    #region display the finish screen
     $upper = '\\' * 30
     $lower = '//' * 30
     Clear-Host
@@ -138,6 +142,7 @@ While($true){
     Write-Host "Chrg: $Charge"
     Write-Host "Prog: " -NoNewline; write-host "100%" -ForegroundColor Green
     Write-Host "Mins: $Remaining_Minutes"
+    #endregion
 
     #if max chain is exceeded, celebrate!
     if([int]$object.Chain -gt $MaxChain){
@@ -148,7 +153,7 @@ While($true){
     $Object | Export-Csv Tracker.csv -NoTypeInformation
 
 
-    #commit charge, tracker, trail and max chain and push
+    #region commit charge, tracker, trail and max chain and push
     Start-Job -ScriptBlock {
         Set-Location $args[0]
         git add Charge.txt
@@ -158,6 +163,8 @@ While($true){
         git commit -m 'one step closer'
         git push
     } -ArgumentList $Working_directory | Wait-Job | Out-Null
+    #endregion
+
 
     [System.Windows.MessageBox]::Show('Finished. Press OK to start next session.') | Out-Null
     
