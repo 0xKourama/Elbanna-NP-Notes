@@ -1,27 +1,14 @@
-﻿function Quick-ping {
-    param(
-        [string[]]$ComputerNames
-    )
+﻿param($ComputerName)
 
-    Write-Host "* Testing connectivity..." -ForegroundColor Cyan
-
-    $Online = @()
-    $Job = Test-Connection -ComputerName $ComputerNames -Count 1 -AsJob
-    $Job | Wait-Job | Receive-Job | % {
-        if($null -eq $_.responsetime -or $null -eq $_.ipv4address){                     }
-        else                                                      {$Online += $_.Address}
-    }
-
-     Remove-Job $Job
-
-    if(!$Online){
-        
-        Write-Host "- $($Online.count)/$($ComputerNames.Count) online" -ForegroundColor Gray
-        continue
-    }
-    else{
-        
-        Write-Host "+ $($Online.count)/$($ComputerNames.Count) online" -ForegroundColor Green
-        return $Online | Sort
-    }
+Write-Host '[*] Testing connectivity' -ForegroundColor Cyan
+$Online = Test-Connection -ComputerName $ComputerName -Count 1 -AsJob |
+Wait-Job |
+Receive-Job |
+Where-Object {$_.StatusCode -eq 0}
+if(!$Online){
+    Write-Host '[-] Provided computer(s) offline' -ForegroundColor Red
+}
+else{
+    Write-Host '[+] Online computer(s) found' -ForegroundColor Green
+    $Online.IPV4Address.IPAddressToString
 }
