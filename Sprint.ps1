@@ -1,6 +1,4 @@
-﻿Add-Type -AssemblyName PresentationFramework | Out-Null
-
-$Working_directory = Get-Location | Select-Object -ExpandProperty Path
+﻿$Working_directory = Get-Location | Select-Object -ExpandProperty Path
 
 $skill_ranks = @(
     'Novice',
@@ -88,10 +86,8 @@ While($true){
 
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
             Start-Job -ScriptBlock {
-                $Buffer_duration_minutes = $args[0]
-                Add-Type -AssemblyName PresentationFramework
-                [System.Windows.MessageBox]::Show("$Buffer_duration_minutes minutes left.") | Out-Null
-            } -ArgumentList $Buffer_duration_minutes | Out-Null
+                subl.exe five_mins_left.txt
+            }
         }
 
         #region update animation
@@ -164,10 +160,9 @@ While($true){
         git push
     } -ArgumentList $Working_directory | Wait-Job | Out-Null
     #endregion
+     
+    subl.exe finished.txt
 
-
-    [System.Windows.MessageBox]::Show('Finished. Press OK to start next session.') | Out-Null
-    
     Write-Host
     Pause
     Get-Job | Remove-Job
