@@ -127,8 +127,8 @@ While($true){
     Write-Host $Random_quote -ForegroundColor Cyan
     Write-Host
     Write-Host $border1
-    Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color
-    Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color
+    Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor Green
+    Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor Green
     Write-Host $border2
     Write-Host
     Write-Host "Exp : " -NoNewline; Write-Host $hours -ForegroundColor Green
