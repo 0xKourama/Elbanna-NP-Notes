@@ -12,3 +12,4 @@ else{
     Write-Host '[+] Online computer(s) found' -ForegroundColor Green
     $Online.IPV4Address.IPAddressToString
 }
+Write-Host '[+] Execution finished' -ForegroundColor Green

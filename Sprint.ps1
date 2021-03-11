@@ -97,16 +97,12 @@ While($true){
         $border1 = '┏' + ('━' * $Work_duration_minutes * 2) + '┓'
         $border2 = '┗' + ('━' * $Work_duration_minutes * 2) + '┛'
 
-        if    ($_ -le 10){$Progress_color = 'Red'   }
-        elseif($_ -le 20){$Progress_color = 'Yellow'}
-        else             {$Progress_color = 'Green' }
-
         Clear-Host
         Write-Host $Random_quote -ForegroundColor Cyan
         Write-Host
         Write-Host $border1
-        Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor $Progress_color
-        Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor $Progress_color
+        Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor Cyan
+        Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor Cyan
         Write-Host $border2
         Write-Host
         Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host $($hours + 0.5)
