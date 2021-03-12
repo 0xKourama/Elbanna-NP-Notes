@@ -86,8 +86,9 @@ While($true){
 
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
             Start-Job -ScriptBlock {
-                subl.exe five_mins_left.txt
-            }
+                $Working_directory = $args[0]
+                subl.exe "$Working_directory\five_mins_left.txt"
+            } -ArgumentList $Working_directory
         }
 
         #region update animation
@@ -108,7 +109,7 @@ While($true){
         Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
         Write-Host "Chn : $($Object.Chain) " -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host "$([int]$Object.Chain + 1)"
         Write-Host "Strk: $($Object.Streak)"
-        Write-Host "Chrg: $Charge"
+        #Write-Host "Chrg: $Charge"
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
         Write-Host "Mins: $Remaining_Minutes"
         #endregion
@@ -124,7 +125,7 @@ While($true){
     $upper = '\\' * 30
     $lower = '//' * 30
     Clear-Host
-    Write-Host $Random_quote -ForegroundColor Cyan
+    Write-Host $Random_quote -ForegroundColor Green
     Write-Host
     Write-Host $border1
     Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor Green
@@ -135,7 +136,7 @@ While($true){
     Write-Host "Rnk : $skill_rank"
     Write-Host "Chn : " -NoNewline; Write-Host $($Object.Chain) -ForegroundColor Green
     Write-Host "Strk: $($Object.Streak)"
-    Write-Host "Chrg: $Charge"
+    #Write-Host "Chrg: $Charge"
     Write-Host "Prog: " -NoNewline; write-host "100%" -ForegroundColor Green
     Write-Host "Mins: $Remaining_Minutes"
     #endregion
