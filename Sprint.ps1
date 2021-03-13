@@ -98,16 +98,16 @@ While($true){
         $border2 = '┗' + ('━' * $Work_duration_minutes * 2) + '┛'
 
         Clear-Host
-        Write-Host $Random_quote -ForegroundColor Cyan
+        Write-Host $Random_quote -ForegroundColor DarkBlue
         Write-Host
         Write-Host $border1
-        Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor Cyan
-        Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor Cyan
+        Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor DarkBlue
+        Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor DarkBlue
         Write-Host $border2
         Write-Host
-        Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host $($hours + 0.5)
-        Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
-        Write-Host "Chn : $($Object.Chain) " -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor Cyan; Write-Host "$([int]$Object.Chain + 1)"
+        Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host $($hours + 0.5)
+        Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
+        Write-Host "Chn : $($Object.Chain) " -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host "$([int]$Object.Chain + 1)"
         Write-Host "Strk: $($Object.Streak)"
         #Write-Host "Chrg: $Charge"
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
@@ -125,25 +125,25 @@ While($true){
     $upper = '\\' * 30
     $lower = '//' * 30
     Clear-Host
-    Write-Host $Random_quote -ForegroundColor Green
+    Write-Host $Random_quote -ForegroundColor DarkGreen
     Write-Host
     Write-Host $border1
-    Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor Green
-    Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor Green
+    Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor DarkGreen
+    Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor DarkGreen
     Write-Host $border2
     Write-Host
-    Write-Host "Exp : " -NoNewline; Write-Host $hours -ForegroundColor Green
+    Write-Host "Exp : " -NoNewline; Write-Host $hours -ForegroundColor DarkGreen
     Write-Host "Rnk : $skill_rank"
-    Write-Host "Chn : " -NoNewline; Write-Host $($Object.Chain) -ForegroundColor Green
+    Write-Host "Chn : " -NoNewline; Write-Host $($Object.Chain) -ForegroundColor DarkGreen
     Write-Host "Strk: $($Object.Streak)"
     #Write-Host "Chrg: $Charge"
-    Write-Host "Prog: " -NoNewline; write-host "100%" -ForegroundColor Green
+    Write-Host "Prog: " -NoNewline; write-host "100%" -ForegroundColor DarkGreen
     Write-Host "Mins: $Remaining_Minutes"
     #endregion
 
     #if max chain is exceeded, celebrate!
     if([int]$object.Chain -gt $MaxChain){
-        Write-Host "[+] Chain record passed!! $($Object.Chain)!!" -ForegroundColor Green
+        Write-Host "[+] Chain record passed!! $($Object.Chain)!!" -ForegroundColor DarkGreen
         [int]$Object.Chain > MaxChain.txt
     }
     
