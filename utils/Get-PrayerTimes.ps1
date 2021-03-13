@@ -10,9 +10,9 @@ class PrayerObject {
 $PrayerTimes = @()
 0..5 | ForEach-Object {
     $PrayerTimes += [prayerObject]@{
-        Prayer = $matches[$_].Groups[1]
+        Prayer = $matches[$_].Groups[1].Value.trim()
         #Time   = [datetime]::parseexact($matches[$_].Groups[2], 'hh:mm tt', $null)
-        Time   = $matches[$_].Groups[2]
+        Time   = $matches[$_].Groups[2].Value.trim()
     }
 }
 $PrayerTimes
