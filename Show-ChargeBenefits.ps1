@@ -8,5 +8,5 @@ $Charge_benefits = @(
     'Improved mood'
 )
 $Charge_benefits | ForEach-Object {
-    Write-Host "[+] $_" -ForegroundColor Green
+    Write-Host "[+] $_" -ForegroundColor DarkGreen
 }
