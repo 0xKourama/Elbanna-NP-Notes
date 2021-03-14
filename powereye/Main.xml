@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<ActiveModules>
+		<ConnectivityMonitor>
+			<OnlineHosts>
+			</OnlineHosts>
+			<OfflineHosts>
+			</OfflineHosts>
+			<IPLessHosts>
+			</IPLessHosts>
+		</ConnectivityMonitor>
+		<ActiveDirectoryMonitor>
+		</ActiveDirectoryMonitor>			
+		<SMBMonitor>
+		</SMBMonitor>
+		<EventMonitor>
+			<EventLogs>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4624</ID>
+			      <Title>User Logon</Title>
+			      <Description>A users log in will likely be the first sign of an attack and can indicate suspicious behavior. It can also give an analyst a starting time to create a timeline of events. This log is recquired in the HIPAA and PCI DSS regulations and is recommended by the NSA Event Forwarding Guidance and JPCERT.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4625</ID>
+			      <Title>Failed User Login</Title>
+			      <Description>Failed user logins can show possible password spray and password guessing attacks. Not every failed login is an attack, but they can be early indicators of one. This log is recquired by the PCI DSS regulation and is recommended by the NSA Cyber Event Forwarding Guidance.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4634</ID>
+			      <Title>User Logoff</Title>
+			      <Description>A users log off can indicate the end of an attack or potential system restarts that may have occurred. This can conclude a timeline or give a bit more insight to a users activity. This log is recommended by the NSA Cyber Event Forwarding Guidance and JPCERT.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4720</ID>
+			      <Title>Account Created</Title>
+			      <Description>Account creation logs can indicate a suspicious new account that was created in preparation for an attack or someone trying to do things they necessarily shouldnt. It is also a good idea to know when there may be new users on the network so you are prepared for their activity. This log is required by NIST SP 800-53, HIPAA and PCI DSS regulations. It is also recommended under the NSA Cyber Event Forwarding Guidance.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4726</ID>
+			      <Title>Account Deleted</Title>
+			      <Description>An attacker may attempt to tidy up after themselves by deleting an account or simply disrupt normal workflow by deleting legitimate accounts.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4738</ID>
+			      <Title>Account Changed</Title>
+			      <Description>Account changes, such as password and username changes may indicate a successful breach and a backdoor setup for a user. Also can be used to track changes for legitimate users.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4731</ID>
+			      <Title>Group Creation</Title>
+			      <Description>Groups allow for multiple user accounts to be managed as one and an attacker may try and create a group with escalated privileges.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4735</ID>
+			      <Title>Group Change</Title>
+			      <Description>Group change can indicate unauthorized privilege escalation of a whole user group. This should be monitored so that user permissions are known and not over reaching. This log is recommended by the NSA Cyber Event Forwarding Guidance.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4732</ID>
+			      <Title>Member Added to Group</Title>
+			      <Description>Group membership change can indicate a user adding themselves to an admin group without permissions. It is important to monitor the groups that have escalated permissions. This log is recommended by the NSA Cyber Event Forwarding Guidance.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4733</ID>
+			      <Title>Member Removed from Group</Title>
+			      <Description>Group membership change can indicate a user removing themselves from an admin group in an effort to clean up after an attack. It is important to monitor the groups that have escalated permissions.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Security</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>4734</ID>
+			      <Title>Group Deletion</Title>
+			      <Description>Group deletion may signal the cleanup of an attack or someone trying to inconvenience a group of users in a network. It is also good to know what groups are active.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>System</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>7045</ID>
+			      <Title>Service Installed</Title>
+			      <Description>Services on a Windows machine have many purposes and these logs may indicate a malicious service being places on the computer. This log is recommended by JPCERT.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Application</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>11707</ID>
+			      <Title>Software Installed</Title>
+			      <Description>Many attack rely on software being installed and this log can signal who and what installed the software that may cause a vulnerability. It can also be used to make sure that only authorized apps are being installed.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Application</LogName>
+			      <Provider>N/A</Provider>
+			      <ID>11724</ID>
+			      <Title>Software Uninstalled</Title>
+			      <Description>Software removal may indicate previously used malicious software being taken off a machine or an attempt to disrupt the normal workflow.</Description>
+			    </Properties>
+			  </Event>
+			  <Event>
+			    <Properties>
+			      <LogName>Application</LogName>
+			      <Provider>MSIInstaller</Provider>
+			      <ID>1036</ID>
+			      <Title>Software Updated</Title>
+			      <Description>Software updates are not always a sign of an attack, but often contain patches for known vulnerabilities. An update may also introduce vulnerabilities and it is important to know if and when that was installed.</Description>
+			    </Properties>
+			  </Event>
+			</EventLogs>
+		</EventMonitor>
+		<PasswordChangeMonitor>
+		</PasswordChangeMonitor>
+		<ADGroupsMonitor>
+		</ADGroupsMonitor>
+		<LocalAdministratorsMonitor>
+		</LocalAdministratorsMonitor>
+	</ActiveModules>
+	<InactiveModules>
+	</InactiveModules>
+	<ModulesPath>c:\users\admin\desktop\PowerEye\Modules</WorkingFolder>
+	<WorkingFolder>c:\users\admin\desktop\PowerEye</WorkingFolder>
+	<EmailSettings>
+		<SMTPServer>mail.worldposta.com</SMTPServer>
+		<from>PowerShell@Roaya.co</from>
+		<to>MGabr@Roaya.co</to>
+	</EmailSettings>
+	<ActiveHosts>
+	</ActiveHosts>
+	<ExceptionHosts>
+	</ExceptionHosts>
+</Configuration>
