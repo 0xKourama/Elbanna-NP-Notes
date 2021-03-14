@@ -3,6 +3,8 @@ $services = @(
     'imap'
     'mapi'
     'autodiscover'
+    'rpc'
+    'async'
 )
 ipconfig /flushdns | Out-Null
 Write-Host '[+] Local DNS Cache flushed' -ForegroundColor Green
@@ -12,5 +14,6 @@ $services | ForEach-Object {
     foreach($res in $result){
         Write-Host "$($res.Name): $($res.IPAddress)"
     }
+    Write-Host
 }
 Write-Host '[+] Execution completed' -ForegroundColor Green
