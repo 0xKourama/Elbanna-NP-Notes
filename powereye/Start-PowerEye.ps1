@@ -1,29 +1,46 @@
 $ErrorActionPreference = 'stop'
 
-$All_Computers       = Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address -ne $null}
+$All_Computers = Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address -ne $null}
 
-$Online              = Test-Connection -ComputerName $All_Computers -Count 1 -AsJob | Wait-Job | Receive-Job | Where-Object {$_.StatusCode -eq 0}
+$Online        = Test-Connection -ComputerName $All_Computers -Count 1 -AsJob | Wait-Job | Receive-Job | Where-Object {$_.StatusCode -eq 0}
 
-$Connected_Computers = Get-PSSession | Select-Object -ExpandProperty ComputerName
+$Sessions      = New-PSSession
 
 #find disconnected computers
 $disconnected_computers = $Online | Where-Object {$Computers_in_session -notcontains $_}
 
-#start sessions with them
-New-PSSession -ComputerName $disconnected_computers
-
 #grab all active sessions
 $active_sessions = Get-PSSession | Where-Object {$_.Availability -eq 'Available' -and $_.State -eq 'Opened'}
 
-$config_file_path = 'C:\users\admin\desktop\Config.csv'
-
-#load config
-$config = Import-Csv $config_file_path
-
 $mail_settings = @{
-    SMTPServer = $config.SMTPServer
-    To         = $config.SenderMail
-    From       = $config.RecepientMail
+    SMTPServer = $config.MailSettings.SMTPServer
+    To         = $config.MailSettings.SenderMail
+    From       = $config.MailSettings.RecepientMail
 }
 
-#Send-MailMessage @mail_settings -Subject -Body
+$SMB_Mon_Block = {
+    [xml]$Config = Get-Content ''
+    $Poll_Interval = $Config.PollIntervals.SMBModule
+    $active_sessions = Get-PSSession | Where-Object {$_.Availability -eq 'Available' -and $_.State -eq 'Opened'}
+    $Script = {
+        $Properties = @(
+            'Name'
+            'Path'
+            'Description'
+        )
+        Get-SmbShare | Select-Object -Property $Properties
+    }
+    Invoke-Command -Session $active_sessions -ScriptBlock $Script | Export-Csv ''
+    Start-Sleep -Seconds $Poll_Interval
+}
+
+[XML]$config = Get-Content ''
+
+foreach($Enabled_Module in $config.EnabledModules){
+    switch($Enabled_Module){
+        'SMBMon'{Start-Job -ScriptBlock $SMB_Mon_Block}
+        'EventMon'{Start-Job -ScriptBlock $Event_Mon_Block}
+        'ADMon'{Start-Job -ScriptBlock $AD_Mon_Block}
+        'PasswordMon'{Start-Job -ScriptBlock $Password_Mon_Block}
+    }
+}
