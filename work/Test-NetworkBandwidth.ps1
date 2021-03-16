@@ -18,14 +18,23 @@ Write-Host  -ForegroundColor Green "[+] $($Sessions.Count) PowerShell sessions a
 
 Write-Host  -ForegroundColor Cyan "[*] Starting copy to computers in session"
 
-foreach($ActiveSession in ($Sessions | Where-Object {$_.State -eq 'Opened' -and $_.Availability -eq 'Available' })){
-    Copy-Item $source_executable_folder -ToSession $ActiveSession `
-                                        -Destination $destination_executable_folder `
-                                        -Recurse -Force -ErrorAction SilentlyContinue
-    if($?){Write-Host -ForegroundColor Green "[+] [COPY SUCCESS] $($ActiveSession.ComputerName)"}
-    else{
-        Write-Host -ForegroundColor Red "[-] [COPY FAILURE] $($ActiveSession.ComputerName)"
-        Remove-PSSession -ComputerName $ActiveSession.ComputerName
+$Computers_without_Executable = Invoke-Command -Session ($Sessions | Where-Object {$_.State -eq 'Opened' -and $_.Availability -eq 'Available' }) -ScriptBlock {
+    $Check = ((Test-Path "C:\users\gabrurgent\iperf\iperf3.exe") -or (Test-Path "C:\users\gabrurgent\iperf\cygwin1.dll"))
+    Write-Output $Check
+} | Where-Object {$_.Check -eq $false} | Select-Object -ExpandProperty PSComputerName
+
+if($Computers_without_Executable){
+    Write-Host -ForegroundColor Cyan "[+] $($Computers_without_Executable.count) computers were found missing the necessary executables. Starting copy."
+
+    foreach($ActiveSession in (Get-PSSession | Where-Object {$Computers_without_Executable -contains $_.ComputerName})){
+        Copy-Item $source_executable_folder -ToSession $ActiveSession `
+                                            -Destination $destination_executable_folder `
+                                            -Recurse -Force -ErrorAction SilentlyContinue
+        if($?){Write-Host -ForegroundColor Green "[+] [COPY SUCCESS] $($ActiveSession.ComputerName)"}
+        else{
+            Write-Host -ForegroundColor Red "[-] [COPY FAILURE] $($ActiveSession.ComputerName)"
+            Remove-PSSession -ComputerName $ActiveSession.ComputerName
+        }
     }
 }
 
@@ -69,6 +78,8 @@ foreach($entry in $Test_Segment_list){
     $Obj.Destination = ($entry -split '<-->')[1]
     $Test_Segments += $Obj
 }
+
+$Test_Segments | Format-Table -AutoSize
 
 $Connector_Code = {
     $Server = $args[0]
