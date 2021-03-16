@@ -29,7 +29,7 @@ if($Computers_without_Executable){
     foreach($ActiveSession in (Get-PSSession | Where-Object {$Computers_without_Executable -contains $_.ComputerName})){
         Copy-Item $source_executable_folder -ToSession $ActiveSession `
                                             -Destination $destination_executable_folder `
-                                            -Recurse -Force -ErrorAction SilentlyContinue
+                                            -Recurse -ErrorAction SilentlyContinue
         if($?){Write-Host -ForegroundColor Green "[+] [COPY SUCCESS] $($ActiveSession.ComputerName)"}
         else{
             Write-Host -ForegroundColor Red "[-] [COPY FAILURE] $($ActiveSession.ComputerName)"
@@ -47,6 +47,8 @@ $ActiveSessions = Get-PSSession
 
 Write-Host -ForegroundColor Cyan "[*] Populating test segment list for $($ActiveSessions.Count) computers"
 
+$side_width = 0
+
 foreach($Source in $Sessions.ComputerName){
     foreach($Destination in $Sessions.ComputerName){
         if($Source -ne $Destination -and `
@@ -59,7 +61,15 @@ foreach($Source in $Sessions.ComputerName){
             Write-Host -NoNewline ' <--> '
             Write-Host -NoNewline '['
             Write-Host -NoNewline -ForegroundColor Red "$Destination"
-            Write-Host ']'
+
+            if($side_width -eq 3){
+                Write-Host ']'
+                $side_width = 0
+            }
+            else{
+                Write-Host -NoNewline '] '
+                $side_width++
+            }
 
             $Test_Segment_list += "$Source<-->$Destination"
         }
