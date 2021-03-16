@@ -6,7 +6,7 @@ $dest = Read-Host "[?] Destination"
 
 if($dest -eq ''){
     $dest = 'google.com'
-    Write-Host '[*] Blank destination entered. Using google.com' -ForegroundColor Cyan
+    Write-Host '[*] Blank destination entered. Using google.com' -ForegroundColor DarkCyan
 }
 
 $List = New-Object -TypeName "System.Collections.ArrayList"
@@ -36,7 +36,7 @@ while($true){
         $List.Add($ping_object) | Out-Null
         if($List.Count -eq 0 -or ($List[$List.Count - 2]).LostPacket){
             $Jitter = '-'
-            $JitColor = 'Red'
+            $JitColor = 'DarkRed'
             $LastPacketLost = $true
         }
         else{
@@ -45,7 +45,7 @@ while($true){
         }
 
         if($ping_object.Latency  -lt 100){
-            $pingColor = 'Green'
+            $pingColor = 'DarkGreen'
             $Sign = '[+]'
         }
         elseif($ping_object.Latency  -lt 200){
@@ -53,25 +53,25 @@ while($true){
             $Sign = '[!]'
         }
         else{
-            $PingColor = 'Red'
+            $PingColor = 'DarkRed'
             $Sign = '[-]'
         }
 
-        if    ($Jitter -lt 10 -and $LastPacketLost -ne $true){$JitColor = 'Green' }
+        if    ($Jitter -lt 10 -and $LastPacketLost -ne $true){$JitColor = 'DarkGreen' }
         elseif($Jitter -lt 20 ){$JitColor = 'Yellow'}
-        else                   {$JitColor = 'Red'   }
+        else                   {$JitColor = 'DarkRed'   }
 
         $average_latency = ($List.Latency | Measure-Object -Average | Select-Object -ExpandProperty Average) -as [int]
 
-        if    ($average_latency    -lt 100){$avgcolor = 'Green'                }
+        if    ($average_latency    -lt 100){$avgcolor = 'DarkGreen'                }
         elseif($average_latency    -lt 200){$avgcolor = 'Yellow'               }
-        else                               {$avgcolor = 'Red'                  }
+        else                               {$avgcolor = 'DarkRed'                  }
 
         $packetloss_percent = (($List | Where-Object {$_.LostPacket -eq $true} | Measure-Object | Select-Object -ExpandProperty count)/$List.count) * 100 -as [int]
 
-        if    ($packetloss_percent -lt 10 ){$packetloss_color = 'Green'                }
+        if    ($packetloss_percent -lt 10 ){$packetloss_color = 'DarkGreen'                }
         elseif($packetloss_percent -lt 20 ){$packetloss_color = 'Yellow'               }
-        else                               {$packetloss_color = 'Red'                  }
+        else                               {$packetloss_color = 'DarkRed'                  }
 
         $date = Get-Date
 
