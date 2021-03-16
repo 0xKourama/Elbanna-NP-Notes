@@ -35,7 +35,7 @@ while($true){
         $ping_object.Latency = $ping.ResponseTime
         $List.Add($ping_object) | Out-Null
         if($List.Count -eq 0 -or ($List[$List.Count - 2]).LostPacket){
-            $Jitter = 'X'
+            $Jitter = '-'
             $JitColor = 'Red'
             $LastPacketLost = $true
         }
