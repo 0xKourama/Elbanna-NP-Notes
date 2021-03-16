@@ -1,4 +1,8 @@
-﻿param($Count)
+﻿param(
+    $Count,
+    $MinimumLength = 15,
+    $MaximumLength = 20
+)
 
 #arrays to randomize from
 $Alphabet      = 'abcdefghijklmnopqrstuvwxyz'
@@ -7,14 +11,10 @@ $Chars_Upper   = $Alphabet.ToUpper().ToCharArray()
 $Numbers       = '012345679'.ToCharArray()
 $Special_Chars = '!@#$%^&*'.ToCharArray()
 
-#configure min and max password length
-$Password_length_Min = 15
-$Password_length_Max = 20
-
 if(!$Count){$Count = 1}
 1..$Count | ForEach-Object {
     #generate a random length
-    $Random_length = Get-Random -Minimum $Password_length_Min -Maximum ($Password_length_Max + 1)
+    $Random_length = Get-Random -Minimum $MinimumLength -Maximum ($MaximumLength + 1)
 
     #initialize password as an array
     $password = @()
@@ -40,6 +40,10 @@ if(!$Count){$Count = 1}
     #shuffle the final password and turn it into a string
     $password = ($password | Sort-Object {Get-Random}) -join ''
 
+    if($password.Length -lt 10){$color = 'Red'}
+    elseif($password.Length -lt 15){$color = 'Yellow'}
+    else{$color = 'Green'}
+
     write-host 'Password: ' -NoNewline
-    write-host $password -ForegroundColor Green
+    write-host $password -ForegroundColor $color
 }

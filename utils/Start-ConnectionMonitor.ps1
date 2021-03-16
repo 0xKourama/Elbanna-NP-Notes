@@ -41,6 +41,7 @@ while($true){
         }
         else{
             $prev_ping_latency = ($List[$List.Count - 2]).Latency
+            $LastPacketLost = $false
             $Jitter  = [math]::abs($prev_ping_latency - $ping_object.Latency)
         }
 
@@ -57,7 +58,7 @@ while($true){
             $Sign = '[-]'
         }
 
-        if    ($Jitter -lt 10 -and $LastPacketLost -ne $true){$JitColor = 'DarkGreen' }
+        if    ($Jitter -lt 10 -and $LastPacketLost -eq $false){$JitColor = 'DarkGreen' }
         elseif($Jitter -lt 20 ){$JitColor = 'Yellow'}
         else                   {$JitColor = 'DarkRed'   }
 
