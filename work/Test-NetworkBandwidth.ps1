@@ -63,15 +63,15 @@ foreach($Source in $Sessions.ComputerName){
            $Test_Segment_list -notcontains "$Source<-->$Destination" -and `
            $Test_Segment_list -notcontains "$Destination<-->$Source"
         ){
-            Write-Host -NoNewline '['
+            Write-Host -NoNewline '[ '
             write-Host -NoNewLine "#$counter".PadRight(3)
-            Write-Host -NoNewLine '] ['
+            Write-Host -NoNewLine ' ] [ '
             Write-Host -NoNewline -ForegroundColor Cyan $Source.PadRight(15)
-            Write-Host -NoNewline ']'
+            Write-Host -NoNewline ' ]'
             Write-Host -NoNewline ' <--> '
-            Write-Host -NoNewline '['
+            Write-Host -NoNewline '[ '
             Write-Host -NoNewline -ForegroundColor Green $Destination.PadRight(15)
-            Write-Host ']'
+            Write-Host ' ]'
 
             $counter++
 
@@ -80,9 +80,9 @@ foreach($Source in $Sessions.ComputerName){
     }
 }
 
-Write-Host -ForegroundColor Cyan "`n[*] $($Test_Segment_list.count) unique network segment(s) found:`n"
+Write-Host -ForegroundColor Cyan "`n[*] $($Test_Segment_list.count) unique network segment(s) calculated`n"
 
-if((Read-Host "Continue? [Y/N]") -eq 'N'){
+if((Read-Host "[?] Continue? [Y/N]") -eq 'N'){
     Write-Host -ForegroundColor Cyan '[*] Terminating running sessions'
     $Sessions | Remove-PSSession
     if($?){
@@ -112,20 +112,20 @@ $Connector_Code = {
     Measure-Object -Average |
     Select-Object -ExpandProperty average
 
-    Write-Host -NoNewline '['
+    Write-Host -NoNewline '[ '
     Write-Host -NoNewline "$Segment/$total_segments".PadRight(7)
-    Write-Host -NoNewline '] ['
+    Write-Host -NoNewline ' ] [ '
     Write-Host -NoNewline -ForegroundColor Cyan $env:COMPUTERNAME.PadRight(15)
-    Write-Host -NoNewline '] ['
+    Write-Host -NoNewline ' ] [ '
     Write-Host -NoNewline -ForegroundColor Cyan $SourceSubnet.PadRight(18)
-    Write-Host -NoNewline '] <--- ['
+    Write-Host -NoNewline ' ] <--- [ '
     Write-Host -NoNewline -ForegroundColor Yellow "$result".PadRight(6)
     Write-Host -NoNewline -ForegroundColor Yellow ' MBytes/Second'
-    Write-Host -NoNewline '] ---> ['
-    Write-Host -NoNewline -ForegroundColor Green $DestinationSubnet.PadRight(18)
-    Write-Host -NoNewline '] ['
+    Write-Host -NoNewline ' ] ---> [ '
     Write-Host -NoNewline -ForegroundColor Green $Server.PadRight(15)
-    Write-Host ']'
+    Write-Host -NoNewline ' ] [ '
+    Write-Host -NoNewline -ForegroundColor Green $DestinationSubnet.PadRight(18)
+    Write-Host ' ]'
 
     Write-Output $result
 }
