@@ -8,15 +8,26 @@ ipconfig /flushdns | Out-Null
 
 if($?){Write-Host -ForeGroundColor Green '[+] DNS Cache Cleared'}
 
-$ADComputers = Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address} | Select-Object -ExpandProperty Name
+class Node{
+    [String]$Name
+    [string]$Subnet
+}
 
-Write-Host  -ForegroundColor Cyan "[*] Attempting to start PowerShell sessions with $($ADComputers.Count) AD Computers.."
+$Target_Nodes = @(
+    [Node]@{Name = 'FRANk-RODC-01' ; Subnet = '192.168.1.0/24'}
+    [Node]@{Name = 'WP-ROOTCA'     ; Subnet = '192.168.2.0/24'}
+    [Node]@{Name = 'FRANK-PDC'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-WSUS'    ; Subnet = '192.168.4.0/24'}
+    [Node]@{Name = 'FRANK-FEM-F01' ; Subnet = '10.1.1.0/24'}
+)
 
-$Sessions = New-PSSession -ComputerName $ADComputers -ErrorAction SilentlyContinue
+#$Target_Nodes = Get-ADComputer -Filter * -Properties IPV4address | Where-Object {$_.IPV4Address} | Select-Object -ExpandProperty name
+
+Write-Host  -ForegroundColor Cyan "[*] Attempting to start PowerShell sessions with [$($Target_Nodes.Name -join '][')]"
+
+$Sessions = New-PSSession -ComputerName $Target_Nodes.Name -ErrorAction SilentlyContinue
 
 Write-Host  -ForegroundColor Green "[+] $($Sessions.Count) PowerShell sessions are now active"
-
-Write-Host  -ForegroundColor Cyan "[*] Starting copy to computers in session"
 
 $Computers_without_Executable = Invoke-Command -Session ($Sessions | Where-Object {$_.State -eq 'Opened' -and $_.Availability -eq 'Available' }) -ScriptBlock {
     $Check = ((Test-Path "C:\users\gabrurgent\iperf\iperf3.exe") -or (Test-Path "C:\users\gabrurgent\iperf\cygwin1.dll"))
@@ -38,16 +49,13 @@ if($Computers_without_Executable){
     }
 }
 
-pause
-
-#populating test segments
 $Test_Segment_list = @()
 
-$ActiveSessions = Get-PSSession
+$Sessions = Get-PSSession
 
-Write-Host -ForegroundColor Cyan "[*] Populating test segment list for $($ActiveSessions.Count) computers"
+Write-Host -ForegroundColor Cyan "[*] Populating test segment list for $($Sessions.Count) computers`n"
 
-$side_width = 0
+$counter = 1
 
 foreach($Source in $Sessions.ComputerName){
     foreach($Destination in $Sessions.ComputerName){
@@ -56,43 +64,43 @@ foreach($Source in $Sessions.ComputerName){
            $Test_Segment_list -notcontains "$Destination<-->$Source"
         ){
             Write-Host -NoNewline '['
-            Write-Host -NoNewline -ForegroundColor Green "$Source"
+            write-Host -NoNewLine "#$counter".PadRight(3)
+            Write-Host -NoNewLine '] ['
+            Write-Host -NoNewline -ForegroundColor Cyan $Source.PadRight(15)
             Write-Host -NoNewline ']'
             Write-Host -NoNewline ' <--> '
             Write-Host -NoNewline '['
-            Write-Host -NoNewline -ForegroundColor Red "$Destination"
+            Write-Host -NoNewline -ForegroundColor Green $Destination.PadRight(15)
+            Write-Host ']'
 
-            if($side_width -eq 3){
-                Write-Host ']'
-                $side_width = 0
-            }
-            else{
-                Write-Host -NoNewline '] '
-                $side_width++
-            }
+            $counter++
 
             $Test_Segment_list += "$Source<-->$Destination"
         }
     }
 }
 
-Write-Host -ForegroundColor Cyan "[*] $($Test_Segment_list.count) unique network segments found"
+Write-Host -ForegroundColor Cyan "`n[*] $($Test_Segment_list.count) unique network segment(s) found:`n"
 
-pause
-
-$Test_Segments = @()
-
-foreach($entry in $Test_Segment_list){
-    $Obj = @{} | Select-Object -Property Source, Destination
-    $Obj.Source = ($entry -split '<-->')[0]
-    $Obj.Destination = ($entry -split '<-->')[1]
-    $Test_Segments += $Obj
+if((Read-Host "Continue? [Y/N]") -eq 'N'){
+    Write-Host -ForegroundColor Cyan '[*] Terminating running sessions'
+    $Sessions | Remove-PSSession
+    if($?){
+        Write-Host -ForegroundColor Green '[+] Sessions terminated'
+    }
+    else{
+        Write-Host -ForegroundColor Yellow "[!] An error occured $_"
+    }
+    exit
 }
-
-$Test_Segments | Format-Table -AutoSize
+Write-Host
 
 $Connector_Code = {
     $Server = $args[0]
+    $SourceSubnet = $args[1]
+    $DestinationSubnet = $args[2]
+    $Segment = $args[3]
+    $total_segments = $args[4]
 
     $result = c:\users\gabrurgent\iperf\iperf3.exe -c $Server |
     Select-Object -Skip 3 -First 10 |
@@ -105,48 +113,72 @@ $Connector_Code = {
     Select-Object -ExpandProperty average
 
     Write-Host -NoNewline '['
-    Write-Host -NoNewline -ForegroundColor Cyan $env:COMPUTERNAME
-    Write-Host -NoNewline '] <---'
-    Write-Host -NoNewline "[$result MBytes/Second]"
-    Write-Host -NoNewline '---> ['
-    Write-Host -NoNewline -ForegroundColor Red $Server
+    Write-Host -NoNewline "$Segment/$total_segments".PadRight(7)
+    Write-Host -NoNewline '] ['
+    Write-Host -NoNewline -ForegroundColor Cyan $env:COMPUTERNAME.PadRight(15)
+    Write-Host -NoNewline '] ['
+    Write-Host -NoNewline -ForegroundColor Cyan $SourceSubnet.PadRight(18)
+    Write-Host -NoNewline '] <--- ['
+    Write-Host -NoNewline -ForegroundColor Yellow "$result".PadRight(6)
+    Write-Host -NoNewline -ForegroundColor Yellow ' MBytes/Second'
+    Write-Host -NoNewline '] ---> ['
+    Write-Host -NoNewline -ForegroundColor Green $DestinationSubnet.PadRight(18)
+    Write-Host -NoNewline '] ['
+    Write-Host -NoNewline -ForegroundColor Green $Server.PadRight(15)
     Write-Host ']'
 
     Write-Output $result
 }
 
+Write-Host -ForeGroundColor Cyan "[*] Starting bandwidth tests (10 seconds per network segment)`n"
+
 $ResultArray = @()
 
-<#
-foreach($Host1 in $Online_Hosts){
+$Index = 1
 
-    try{
-        $Listener_Session = New-PSSession -ComputerName $Host1
-        Invoke-Command -Session $Listener_Session -ScriptBlock {Write-Host "[*] Listener started on $env:COMPUTERNAME" -ForegroundColor Cyan}
-        $Listener_job = Invoke-Command -Session $Listener_Session -ScriptBlock {\\frank-rodc-01\c$\users\gabrurgent\iperf\iperf3.exe -s} -AsJob
+foreach($entry in $Test_Segment_list){
+    $Obj = @{} | Select-Object -Property Segment, Source, SourceSubnet, Destination, DestinationSubnet, AverageSpeedMBps
 
-        foreach($Host2 in $Online_Hosts){
-            if($Host2 -ne $Host1){
-                $obj = @{} | Select-Object -Property Source, Destination, AverageTransferSpeedMB
+    $obj.Segment           = $Index
+    $Obj.Source            = ($entry -split '<-->')[0]
+    $Obj.Destination       = ($entry -split '<-->')[1]
+    $Obj.SourceSubnet      = $Target_Nodes | Where-Object {$_.Name -eq $Obj.Source}      | Select-Object -ExpandProperty Subnet
+    $Obj.DestinationSubnet = $Target_Nodes | Where-Object {$_.Name -eq $Obj.Destination} | Select-Object -ExpandProperty Subnet
 
-                $obj.Source      = $Host2
-                $obj.Destination = $Host1
-                $obj.AverageTransferSpeedMB = Invoke-Command -ComputerName $Host2 -ScriptBlock $Connector_Code
+    $Index += 1
 
-                $ResultArray += $obj
-                Write-Output $obj | Format-Table -AutoSize
-            }
-        }
+    $Listener_Session  = $Sessions | Where-Object {$_.ComputerName -eq $Obj.Source}
+    $Connector_Session = $Sessions | Where-Object {$_.ComputerName -eq $Obj.Destination}
 
-        Write-Host "[*] Stopping Listener on $Host1" -ForegroundColor Cyan
-        $Listener_Job | Stop-Job
-        $Listener_Job | Remove-Job
-        $Listener_Session | Remove-PSSession
-        Write-Host "[+] Listener stopped on $Host1" -ForegroundColor Green
-    }
-    catch{
-        Write-Host "[-] An error has occured: $_" -ForegroundColor Red
-    }
+    #Invoke-Command -Session $Listener_Session -ScriptBlock {Write-Host "[*] Listener started on $env:COMPUTERNAME" -ForegroundColor Cyan}
+
+    $Listener_Job = Invoke-Command -Session $Listener_Session -ScriptBlock {C:\users\gabrurgent\iperf\iperf3.exe -s} -AsJob
+    Start-Sleep -Seconds 1
+
+    $Obj.AverageSpeedMBps = Invoke-Command -Session $Connector_Session -ScriptBlock $Connector_Code -ArgumentList $Obj.Source,
+                                                                                                                  $Obj.SourceSubnet,
+                                                                                                                  $Obj.DestinationSubnet,
+                                                                                                                  $Obj.Segment,
+                                                                                                                  $Test_Segment_list.Count
+
+    $Listener_Job | Stop-Job
+    $Listener_Job | Remove-Job
+
+    $ResultArray += $Obj
 }
+
+Write-Host
+Write-Host -ForegroundColor Cyan '[*] Displaying results:'
+
 $ResultArray | Format-Table -AutoSize
-#>
+
+Write-Host -ForegroundColor Cyan '[*] Terminating running sessions'
+
+$Sessions | Remove-PSSession
+
+if($?){
+    Write-Host -ForegroundColor Green '[+] Sessions terminated'
+}
+else{
+    Write-Host -ForegroundColor Yellow "[!] An error occured $_"
+}

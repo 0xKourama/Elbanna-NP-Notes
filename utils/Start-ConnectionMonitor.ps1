@@ -5,8 +5,8 @@ Clear-Host
 $dest = Read-Host "[?] Destination"
 
 if($dest -eq ''){
-    $dest = 'google.com'
-    Write-Host '[*] Blank destination entered. Using google.com' -ForegroundColor DarkCyan
+    $dest = '1.1.1.1'
+    Write-Host '[*] Blank destination entered. Using CloudFlare DNS' -ForegroundColor DarkCyan
 }
 
 $List = New-Object -TypeName "System.Collections.ArrayList"
