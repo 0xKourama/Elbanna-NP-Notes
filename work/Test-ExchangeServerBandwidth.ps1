@@ -18,11 +18,28 @@ class Node{
 }
 
 $Target_Nodes = @(
-    [Node]@{Name = 'FRANk-RODC-01' ; Subnet = '192.168.1.0/24'}
-    [Node]@{Name = 'WP-ROOTCA'     ; Subnet = '192.168.2.0/24'}
-    [Node]@{Name = 'FRANK-PDC'     ; Subnet = '192.168.3.0/24'}
-    [Node]@{Name = 'FRANK-WSUS'    ; Subnet = '192.168.4.0/24'}
-    [Node]@{Name = 'FRANK-FEM-F01' ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'FRANK-MBX02'   ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-EX1-X04' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-FEM-F02' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-FEM-F01' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-MBX'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-FEM-F03' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-FEM-F04' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-MBM-902' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'STRAS-FEM-FS1' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'STRAS-FEM-FS2' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-SMT-P01' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-SMT-P02' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-MBM-D35' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-MBM-911' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-FEM-F05' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'Frank-MBM-912' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-MBM-901' ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'EU1MB9903'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'EU1FE3112'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'EU1FE3110'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'EU1FE3111'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'EU1FE3113'     ; Subnet = '192.168.3.0/24'}
 )
 
 Write-Host  -ForegroundColor Cyan "[*] Attempting to start PowerShell sessions with [$($Target_Nodes.Name -join '][')]"
@@ -197,5 +214,3 @@ if($?){
 else{
     Write-Host -ForegroundColor Yellow "[!] An error occured $_"
 }
-
-#.\Test-NetworkMailboxBandwidth.ps1
