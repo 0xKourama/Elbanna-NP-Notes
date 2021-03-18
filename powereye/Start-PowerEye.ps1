@@ -1,10 +1,12 @@
-$ErrorActionPreference = 'stop'
+$ErrorActionPreference = 'Inquire'
+
+[XML]$config = Get-Content 'config.xml'
 
 $All_Computers = Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address -ne $null}
 
 $Online        = Test-Connection -ComputerName $All_Computers -Count 1 -AsJob | Wait-Job | Receive-Job | Where-Object {$_.StatusCode -eq 0}
 
-$Sessions      = New-PSSession
+$Sessions      = New-PSSession -ErrorAction SilentlyContinue
 
 #find disconnected computers
 $disconnected_computers = $Online | Where-Object {$Computers_in_session -notcontains $_}
@@ -18,37 +20,30 @@ $mail_settings = @{
     From       = $config.MailSettings.RecepientMail
 }
 
-$SMB_Module = {
-    $Properties = @(
-        'Name'
-        'Path'
-        'Description'
-    )
-    Get-SmbShare | Select-Object -Property $Properties
-}
-
-[XML]$config = Get-Content ''
-
 class Module {
     [string]$Name
     [int]$Pollinterval
     [int]$MinutesTillNextRun
-    [scriptblock]$ScriptBlock
+    [string]$ScriptPath
 }
 
 $Modules = @(
     [PollInterval]@{
         ModuleName = 'SMB'
         PollInterval = $config.PollIntervals.SMBModule
+        MinutesTillNextRun = $config.PollIntervals.SMBModule
+        ScriptPath = ''
     }
 )
 
 while($true){
+    foreach($Module in $Modules){
+        Write-Host -ForegroundColor Cyan "[*] Running $($Modules.Name)"
+        Invoke-Command -Session $active_sessions -FilePath $Module.ScriptPath
 
-    Invoke-Command -Session $active_sessions -ScriptBlock $SMB_Module   
-
-    Start-Sleep -Seconds 60
-    foreach($Pollinterval in $Pollintervals){
-        $Pollinterval.MinutesTillNextRun--
+        Start-Sleep -Seconds 60
+        foreach($Pollinterval in $Pollintervals){
+            $Pollinterval.MinutesTillNextRun--
+        }    
     }
 }
