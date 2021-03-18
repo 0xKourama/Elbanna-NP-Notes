@@ -141,6 +141,8 @@ Write-Host -ForeGroundColor Cyan "[*] Starting bandwidth tests (10 seconds per n
 
 $ResultArray = @()
 
+$Test_Segment_list = $Test_Segment_list | Sort-Object
+
 $Index = 1
 
 foreach($entry in $Test_Segment_list){
