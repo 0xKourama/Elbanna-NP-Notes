@@ -1,0 +1,15 @@
+error:
+
+0x8024402C ---> netsh winhttp reset proxy; net stop wuauserv; net start wuauserv
+
+0x80244022 ---> 
+
+service related: 
+gsv wuauserv | ? {$_.starttype -ne 'Automatic'}
+
+set-service -name wuauserv -starttype automatic
+
+get where computers are installed:
+
+$serviceManager = new-object -Com 'Microsoft.Update.ServiceManager'
+$servicemanager.Services | Select-Object Name, ISManaged, IsDefaultService, ServiceUrl

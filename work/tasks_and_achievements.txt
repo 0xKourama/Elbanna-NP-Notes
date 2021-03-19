@@ -1,0 +1,26 @@
+1. sewedy OWA attack (112 mailbox compromised) --> increases loyalty between a big client like sewedy and worldposta.
+2. network bandwidth tester (smart detection and non-redundant segments tesintg + statstics)
+3. security script collection
+	+ HUGE Project to guard AD
+4. palo alto email alerts
+	+ personalized SMTP mail alerts for the SMTP Wildfire Group
+	+ gives increases network visibility
+5. palo alto zone protection (anti-recon feature)
+	+ added protection against port scanning
+6. MX, SPF & DKIM detection script
+	+ improving our service reliability
+7. Exchange zero day response and monitor scripts
+	+ palo alto response policies to block attack while mitigation occurs
+8. mohamed hamad ssh tunnel workaround
+9. 1 hour response to new wordpress vulnerabilities
+10. reverse shell exercise to secure Global protect to jump servers
+11. enabling smart scan in trendmicro
+	+ overall reduction in malware reports from clients
+12. S3 configuration task
+13. remote code execution in Dell iDRAC detection
+14. Writing the transcript for the Exchange zero day annoucement
+	+ helped inform clients and clear our public image
+15. Alert on password change script
+16. Wordpress security
+17. tools penetration test and security
+18. Quickest scripter in emergencies

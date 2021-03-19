@@ -36,7 +36,7 @@ while($true){
         $List.Add($ping_object) | Out-Null
         if($List.Count -eq 0 -or ($List[$List.Count - 2]).LostPacket){
             $Jitter = '-'
-            $JitColor = 'DarkRed'
+            $JitColor = 'Red'
             $LastPacketLost = $true
         }
         else{
@@ -46,7 +46,7 @@ while($true){
         }
 
         if($ping_object.Latency  -lt 100){
-            $pingColor = 'DarkGreen'
+            $pingColor = 'Green'
             $Sign = '[+]'
         }
         elseif($ping_object.Latency  -lt 200){
@@ -54,51 +54,49 @@ while($true){
             $Sign = '[!]'
         }
         else{
-            $PingColor = 'DarkRed'
+            $PingColor = 'Red'
             $Sign = '[-]'
         }
 
-        if    ($Jitter -lt 10 -and $LastPacketLost -eq $false){$JitColor = 'DarkGreen' }
+        if    ($Jitter -lt 10 -and $LastPacketLost -eq $false){$JitColor = 'Green' }
         elseif($Jitter -lt 20 ){$JitColor = 'Yellow'}
-        else                   {$JitColor = 'DarkRed'   }
+        else                   {$JitColor = 'Red'   }
 
         $average_latency = ($List.Latency | Measure-Object -Average | Select-Object -ExpandProperty Average) -as [int]
 
-        if    ($average_latency    -lt 100){$avgcolor = 'DarkGreen'                }
+        if    ($average_latency    -lt 100){$avgcolor = 'Green'                }
         elseif($average_latency    -lt 200){$avgcolor = 'Yellow'               }
-        else                               {$avgcolor = 'DarkRed'                  }
+        else                               {$avgcolor = 'Red'                  }
 
         $packetloss_percent = (($List | Where-Object {$_.LostPacket -eq $true} | Measure-Object | Select-Object -ExpandProperty count)/$List.count) * 100 -as [int]
 
-        if    ($packetloss_percent -lt 10 ){$packetloss_color = 'DarkGreen'                }
+        if    ($packetloss_percent -lt 10 ){$packetloss_color = 'Green'                }
         elseif($packetloss_percent -lt 20 ){$packetloss_color = 'Yellow'               }
-        else                               {$packetloss_color = 'DarkRed'                  }
+        else                               {$packetloss_color = 'Red'                  }
 
-        $date = Get-Date
-
-        Write-Host "$sign "                                       -NoNewline -ForegroundColor $pingcolor 
-        Write-Host "$date | " -NoNewline
-        Write-Host "IP: "                                         -NoNewline
-        Write-Host "$($ping.ProtocolAddress) | ".PadLeft(15,' ')  -NoNewline
-        Write-Host "LAT: "                                        -NoNewline
-        Write-Host "$($ping.ResponseTime)".PadRight(4,' ')        -NoNewline -ForegroundColor $pingcolor 
-        Write-Host " ms | "                                       -NoNewline
-        Write-Host "TTL: $($ping.ResponseTimeToLive) | "          -NoNewline
-        Write-Host "JITT: "                                       -NoNewline
-        Write-Host "$jitter ".PadRight(4,' ')                     -NoNewline -ForegroundColor $jitcolor 
-        Write-Host "ms | "                                        -NoNewline
-        Write-Host "AVG: "                                        -NoNewline
-        Write-Host "$average_latency".PadRight(4,' ')             -NoNewline -ForegroundColor $avgcolor
-        Write-Host " ms | "                                        -NoNewline
-        Write-Host "LOSS: "                                       -NoNewline
-        Write-Host "$packetloss_percent".PadRight(3,' ')          -NoNewline -ForegroundColor $packetloss_color
-        Write-Host "%"
+        Write-Host -ForegroundColor $pingcolor -NoNewline "$sign "
+        Write-Host -NoNewline "[ IP: "
+        Write-Host -NoNewline "$($ping.ProtocolAddress)".PadRight(15,' ')
+        Write-Host -NoNewline " | "
+        Write-Host -NoNewline "LAT: "
+        Write-Host -ForegroundColor $pingcolor -NoNewline "$($ping.ResponseTime)".PadRight(4)
+        Write-Host -NoNewline " ms | "
+        Write-Host -NoNewline "TTL: $($ping.ResponseTimeToLive) | "
+        Write-Host -NoNewline "JITT: "
+        Write-Host -ForegroundColor $jitcolor -NoNewline "$jitter ".PadRight(4)
+        Write-Host -NoNewline "ms | "
+        Write-Host -NoNewline "AVG: "
+        Write-Host -ForegroundColor $avgcolor -NoNewline "$average_latency".PadRight(4)
+        Write-Host -NoNewline " ms | "
+        Write-Host -NoNewline "LOSS: "
+        Write-Host -ForegroundColor $packetloss_color -NoNewline "$packetloss_percent".PadRight(3)
+        Write-Host "% ]"
     }
     catch{
         $ping_object.LostPacket = $true
         $List.Add($ping_object) | Out-Null
         $Sign = '[x]'
-        Write-Host "$sign Request timed out" -ForegroundColor Red
+        Write-Host "$sign Request timed out at $((get-date).ToShortTimeString())" -ForegroundColor Red
     }
 
     Start-Sleep -Milliseconds $time_between_pings_milliseconds
