@@ -1,3 +1,11 @@
+Param(
+    $SMTPServer,
+    $Sender,
+    $Recipient,
+    $Subject,
+    $OutputPath
+)
+
 $ProgressPreference = 'SilentlyContinue'
 $ErrorActionPreference = 'Inquire'
 
@@ -15,48 +23,24 @@ class Node{
 
 $Target_Nodes = @(
     [Node]@{Name = 'FRANk-RODC-01' ; Subnet = '192.168.1.0/24'}
-    #[Node]@{Name = 'FRANk-MBM-901'  ; Subnet = '192.168.3.0/24'}
-    #[Node]@{Name = 'FRANk-KBASE-01' ; Subnet = '192.168.2.0/24'}
     [Node]@{Name = 'WP-ROOTCA'     ; Subnet = '192.168.2.0/24'}
-    [Node]@{Name = 'FRANK-PDC'     ; Subnet = '192.168.3.0/24'}
-    [Node]@{Name = 'FRANK-WSUS'    ; Subnet = '192.168.4.0/24'}
-    [Node]@{Name = 'FRANK-FEM-F01' ; Subnet = '10.1.1.0/24'   }
+    #[Node]@{Name = 'FRANK-PDC'     ; Subnet = '192.168.3.0/24'}
+    #[Node]@{Name = 'FRANK-WSUS'    ; Subnet = '192.168.4.0/24'}
+    #[Node]@{Name = 'FRANK-FEM-F01' ; Subnet = '10.1.1.0/24'   }
 )
 
 Write-Host  -ForegroundColor Cyan "[*] Attempting to start PowerShell sessions with [$($Target_Nodes.Name -join '][')]"
 
-$Sessions = New-PSSession -ComputerName $Target_Nodes.Name -ErrorAction SilentlyContinue
+$PSSessions = New-PSSession -ComputerName $Target_Nodes.Name
 
-Write-Host  -ForegroundColor Green "[+] $($Sessions.Count) PowerShell sessions are now active"
-
-$Computers_without_Executable = Invoke-Command -Session ($Sessions | Where-Object {$_.State -eq 'Opened' -and $_.Availability -eq 'Available' }) -ScriptBlock {
-    $Check = ((Test-Path "C:\users\gabrurgent\iperf\iperf3.exe") -or (Test-Path "C:\users\gabrurgent\iperf\cygwin1.dll"))
-    Write-Output $Check
-} | Where-Object {$_.Check -eq $false} | Select-Object -ExpandProperty PSComputerName
-
-if($Computers_without_Executable){
-    Write-Host -ForegroundColor Cyan "[+] $($Computers_without_Executable.count) computers were found missing the necessary executables. Starting copy."
-
-    foreach($ActiveSession in (Get-PSSession | Where-Object {$Computers_without_Executable -contains $_.ComputerName})){
-        Copy-Item $source_executable_folder -ToSession $ActiveSession `
-                                            -Destination $destination_executable_folder `
-                                            -Recurse -ErrorAction SilentlyContinue
-        if($?){Write-Host -ForegroundColor Green "[+] [COPY SUCCESS] $($ActiveSession.ComputerName)"}
-        else{
-            Write-Host -ForegroundColor Red "[-] [COPY FAILURE] $($ActiveSession.ComputerName)"
-            Remove-PSSession -ComputerName $ActiveSession.ComputerName
-        }
-    }
-}
+Write-Host  -ForegroundColor Green "[+] $($PSSessions.Count) PowerShell sessions are now active"
 
 $Test_Segment_list = @()
 
-$Sessions = Get-PSSession
+Write-Host -ForegroundColor Cyan "[*] Populating test segment list for $($PSSessions.Count) computers"
 
-Write-Host -ForegroundColor Cyan "[*] Populating test segment list for $($Sessions.Count) computers"
-
-foreach($Source in $Sessions.ComputerName){
-    foreach($Destination in $Sessions.ComputerName){
+foreach($Source in $PSSessions.ComputerName){
+    foreach($Destination in $PSSessions.ComputerName){
         if($Source -ne $Destination -and `
            $Test_Segment_list -notcontains "$Source<-->$Destination" -and `
            $Test_Segment_list -notcontains "$Destination<-->$Source"
@@ -70,8 +54,8 @@ Write-Host -ForegroundColor Cyan "[*] $($Test_Segment_list.count) unique network
 
 $Connector_Code = {
     $Server = $args[0]
-    $SourceSubnet = $args[1]
-    $DestinationSubnet = $args[2]
+    $DestinationSubnet = $args[1]
+    $SourceSubnet = $args[2]
     $Segment = $args[3]
     $total_segments = $args[4]
 
@@ -124,10 +108,8 @@ foreach($entry in $Test_Segment_list){
 
     $Index += 1
 
-    $Listener_Session  = $Sessions | Where-Object {$_.ComputerName -eq $Obj.Source}
-    $Connector_Session = $Sessions | Where-Object {$_.ComputerName -eq $Obj.Destination}
-
-    #Invoke-Command -Session $Listener_Session -ScriptBlock {Write-Host "[*] Listener started on $env:COMPUTERNAME" -ForegroundColor Cyan}
+    $Listener_Session  = $PSSessions | Where-Object {$_.ComputerName -eq $Obj.Source}
+    $Connector_Session = $PSSessions | Where-Object {$_.ComputerName -eq $Obj.Destination}
 
     $Listener_Job = Invoke-Command -Session $Listener_Session -ScriptBlock {C:\users\gabrurgent\iperf\iperf3.exe -s} -AsJob
     Start-Sleep -Seconds 1
@@ -148,8 +130,10 @@ $measurements = $ResultArray | Measure-Object -Property AverageSpeedMBps -Averag
 
 Write-Host -ForegroundColor Cyan '[*] Terminating running sessions'
 
-$Sessions | Remove-PSSession
+$PSSessions | Remove-PSSession
 
-Write-Output $ResultArray
+$ResultHTML = $ResultArray | ConvertTo-Html -Fragment
 
-Write-Output $measurements
+$MeasurementHTML = $measurements | ConvertTo-Html -Fragment
+
+Send-MailMessage -SmtpServer $SMTPServer -From $Sender -To $Recipient -Subject $Subject -BodyAsHtml "$ResultArray $measurements"
