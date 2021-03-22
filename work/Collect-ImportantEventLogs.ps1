@@ -6,7 +6,7 @@ if($ComputerName){
     Invoke-Command -ComputerName $ComputerName -ScriptBlock {
         $result += Get-WinEvent -FilterHashtable @{
             LogName='Security'
-            id=4624,4625,4634,4720,4726,4738,4731,4735,4732,4733,4734
+            id=4624,4625,4634,4720,4726,4738,4731,4735,4732,4733,4734,4723,4724
         }
 
         $result += Get-WinEvent -FilterHashtable @{
