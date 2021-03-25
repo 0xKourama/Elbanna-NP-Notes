@@ -92,10 +92,10 @@ While($true){
         }
 
         #region update animation
-        $upper = '\\' * $_
-        $lower = '//' * $_
-        $border1 = '┏' + ('━' * $Work_duration_minutes * 2) + '┓'
-        $border2 = '┗' + ('━' * $Work_duration_minutes * 2) + '┛'
+        $upper = '\' * 4 * $_
+        $lower = '/' * 4 * $_
+        $border1 = '┏' + ('━' * $Work_duration_minutes * 4) + '┓'
+        $border2 = '┗' + ('━' * $Work_duration_minutes * 4) + '┛'
 
         Clear-Host
         Write-Host $Random_quote -ForegroundColor DarkBlue
@@ -122,8 +122,9 @@ While($true){
     [int]$Object.Chain  = [int]$Object.Chain  + 1
 
     #region display the finish screen
-    $upper = '\\' * 30
-    $lower = '//' * 30
+    $upper = '\' * 4 * 30
+    $lower = '/' * 4 * 30
+
     Clear-Host
     Write-Host $Random_quote -ForegroundColor DarkGreen
     Write-Host
