@@ -98,19 +98,32 @@ While($true){
             $width = 1
         }
 
-        $upper = '\' * $width * $_
-        $lower = '/' * $width * $_
-        $border1 = '┏' + ('━' * $Work_duration_minutes * $width) + '┓'
-        $border2 = '┗' + ('━' * $Work_duration_minutes * $width) + '┛'
+        $session_progress_unit = '|' * $width * $_
+
+        $upper_border = '┏' + ('━' * $Work_duration_minutes * $width) + '┓'
+        $middle_border = ' ' + ('━' * $Work_duration_minutes * $width) + ' '
+        $lower_border = '┗' + ('━' * $Work_duration_minutes * $width) + '┛'
+
+
+        $level_progress = (($hours % 1000)/1000)
+
+        $progress_bars_number = [math]::Floor($level_progress * ($upper_border.Length - 2))
+
+        $level_progress_unit = '|' * $progress_bars_number
 
         Clear-Host
         Write-Host $Random_quote -ForegroundColor DarkBlue
-        Write-Host
-        Write-Host $border1
-        Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor DarkBlue
-        Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor DarkBlue
-        Write-Host $border2
-        Write-Host
+
+        Write-Host $upper_border
+
+        Write-Host " $level_progress_unit".PadRight($level_progress_unit.Length + (($upper_border.Length - 2) - $level_progress_unit.Length)) -ForegroundColor DarkBlue
+
+        Write-Host $middle_border
+
+        Write-Host " $session_progress_unit".PadRight($session_progress_unit.Length + (($middle_border.Length - 2) - $session_progress_unit.Length)) -ForegroundColor DarkBlue
+
+        Write-Host $lower_border
+
         Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host $($hours + 0.5)
         Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
         Write-Host "Chn : $($Object.Chain) " -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host "$([int]$Object.Chain + 1)"
@@ -128,17 +141,27 @@ While($true){
     [int]$Object.Chain  = [int]$Object.Chain  + 1
 
     #region display the finish screen
-    $upper = '\' * $width * 30
-    $lower = '/' * $width * 30
+    $session_progress_unit = '|' * $width * 30
+
+    $level_progress = ((($hours + 1) % 1000)/1000)
+
+    $progress_bars_number = [math]::Floor($level_progress * ($upper_border.Length - 2))
+
+    $level_progress_unit = '|' * $progress_bars_number
 
     Clear-Host
-    Write-Host $Random_quote -ForegroundColor DarkGreen
-    Write-Host
-    Write-Host $border1
-    Write-Host ""$upper.PadRight($upper.Length + (($border1.Length - 2) - $upper.Length)) -ForegroundColor DarkGreen
-    Write-Host ""$lower.PadRight($lower.Length + (($border2.Length - 2) - $lower.Length)) -ForegroundColor DarkGreen
-    Write-Host $border2
-    Write-Host
+    Write-Host $Random_quote -ForegroundColor DarkBlue
+
+    Write-Host $upper_border
+
+    Write-Host " $level_progress_unit".PadRight($level_progress_unit.Length + (($upper_border.Length - 2) - $level_progress_unit.Length)) -ForegroundColor DarkGreen
+
+    Write-Host $middle_border
+
+    Write-Host " $session_progress_unit".PadRight($session_progress_unit.Length + (($middle_border.Length - 2) - $session_progress_unit.Length)) -ForegroundColor DarkGreen
+
+    Write-Host $lower_border
+
     Write-Host "Exp : " -NoNewline; Write-Host $hours -ForegroundColor DarkGreen
     Write-Host "Rnk : $skill_rank"
     Write-Host "Chn : " -NoNewline; Write-Host $($Object.Chain) -ForegroundColor DarkGreen
