@@ -92,10 +92,16 @@ While($true){
         }
 
         #region update animation
-        $upper = '\' * 4 * $_
-        $lower = '/' * 4 * $_
-        $border1 = '┏' + ('━' * $Work_duration_minutes * 4) + '┓'
-        $border2 = '┗' + ('━' * $Work_duration_minutes * 4) + '┛'
+
+        $width = [Math]::floor($Host.UI.RAWUI.MaxWindowSize.Width / 30)
+        if($width -lt 1){
+            $width = 1
+        }
+
+        $upper = '\' * $width * $_
+        $lower = '/' * $width * $_
+        $border1 = '┏' + ('━' * $Work_duration_minutes * $width) + '┓'
+        $border2 = '┗' + ('━' * $Work_duration_minutes * $width) + '┛'
 
         Clear-Host
         Write-Host $Random_quote -ForegroundColor DarkBlue
@@ -122,8 +128,8 @@ While($true){
     [int]$Object.Chain  = [int]$Object.Chain  + 1
 
     #region display the finish screen
-    $upper = '\' * 4 * 30
-    $lower = '/' * 4 * 30
+    $upper = '\' * $width * 30
+    $lower = '/' * $width * 30
 
     Clear-Host
     Write-Host $Random_quote -ForegroundColor DarkGreen
