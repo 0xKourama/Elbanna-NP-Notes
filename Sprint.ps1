@@ -98,7 +98,7 @@ While($true){
             $width = 1
         }
 
-        $session_progress_unit = '|' * $width * $_
+        $session_progress_unit = '/' * $width * $_
 
         $upper_border = '┏' + ('━' * $Work_duration_minutes * $width) + '┓'
         $middle_border = ' ' + ('━' * $Work_duration_minutes * $width) + ' '
@@ -109,7 +109,7 @@ While($true){
 
         $progress_bars_number = [math]::Floor($level_progress * ($upper_border.Length - 2))
 
-        $level_progress_unit = '|' * $progress_bars_number
+        $level_progress_unit = '\' * $progress_bars_number
 
         Clear-Host
         Write-Host $Random_quote -ForegroundColor DarkBlue
@@ -141,16 +141,16 @@ While($true){
     [int]$Object.Chain  = [int]$Object.Chain  + 1
 
     #region display the finish screen
-    $session_progress_unit = '|' * $width * 30
+    $session_progress_unit = '/' * $width * 30
 
     $level_progress = ((($hours + 1) % 1000)/1000)
 
     $progress_bars_number = [math]::Floor($level_progress * ($upper_border.Length - 2))
 
-    $level_progress_unit = '|' * $progress_bars_number
+    $level_progress_unit = '\' * $progress_bars_number
 
     Clear-Host
-    Write-Host $Random_quote -ForegroundColor DarkBlue
+    Write-Host $Random_quote -ForegroundColor DarkGreen
 
     Write-Host $upper_border
 
