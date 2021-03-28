@@ -1,5 +1,5 @@
 $UserCredential = Get-Credential
-$Exchange_Server = 'EU1MB9903.roaya.loc'
+$Exchange_Server = 'eu1fe9111.roaya.loc'
 while($true){
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
                              -ConnectionUri http://$Exchange_Server/PowerShell/ `
