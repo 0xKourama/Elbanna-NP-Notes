@@ -1,13 +1,9 @@
-$mailfolder_path = "$env:USERPROFILE\Desktop\Test Messages"
-
+﻿$mailfolder_path = "$env:USERPROFILE\Desktop\Test Messages"
 $ErrorActionPreference = 'stop'
-
-#$ol = New-Object -ComObject Outlook.Application
-
+$ol = New-Object -ComObject Outlook.Application
 $emails = Get-ChildItem $mailfolder_path
 
 ForEach ($email in $emails) {
-
     if($email.Extension -eq '.msg'){
         continue
         Write-Host "[*] MSG file $($email.fullname)`n" -ForegroundColor Yellow
@@ -20,39 +16,40 @@ ForEach ($email in $emails) {
     }
     else{continue}
 
-    #$headers = $headers -replace "^\s+"
-
     $headers = @()
     $counter = 0
     foreach($line in $content){
-        Write-Host "LINE:      $line" -ForegroundColor Yellow
-        if($line -match '^\S+:'){
-            Write-Host "HEADER MATCH!" -ForegroundColor Green
+        if($line -match '^Received: from ' -or
+           $line -match '^To: '            -or
+           $line -match '^From: '          -or
+           $line -match '^Subject: '
+        ){
             $string = ''
             $string += $line
+            if($content[$counter+1] -match '^\S+:'){
+                $headers += $string
+                $string = ''
+            }
         }
         elseif($line -match '^\s'){
-            Write-Host "FOOTER MATCH!" -ForegroundColor Red
             $string += $line
             if($content[$counter+1] -match '^\S+:'){
-                Write-Host "STRING! $string" -ForegroundColor Magenta
                 $headers += $string
+                $string = ''
             }
         }
         $counter++
     }
 
-    $headers = $headers | Out-String -Stream
-
     $sender_pattern = "^From: (.*)$"
     $recipient_pattern = "^To: (.*)$"
     $subject_pattern = "^Subject: (.*)$"
-    $sender_data_pattern = "^Received: from (.*)$"
+    $sender_data_pattern = "^Received: from (.*)by "
 
     try{
-        $sender = ($headers | Select-String -Pattern $sender_pattern -AllMatches).Matches.Groups[1].Value
+        $sender    = ($headers | Select-String -Pattern $sender_pattern    -AllMatches).Matches.Groups[1].Value
     }catch{
-        $sender = "None"
+        $sender    = "None"
     }
     try{
         $recipient = ($headers | Select-String -Pattern $recipient_pattern -AllMatches).Matches.Groups[1].Value
@@ -60,9 +57,9 @@ ForEach ($email in $emails) {
         $recipient = "None"
     }
     try{
-        $subject = ($headers | Select-String -Pattern $subject_pattern -AllMatches).Matches.Groups[1].Value
+        $subject   = ($headers | Select-String -Pattern $subject_pattern   -AllMatches).Matches.Groups[1].Value
     }catch{
-        $subject = "None"
+        $subject   = "None"
     }
     try{
         $senderData = ($headers | Select-String -Pattern $sender_data_pattern -AllMatches).Matches.Groups | 
@@ -72,17 +69,14 @@ ForEach ($email in $emails) {
         $senderData = "None"
     }
 
-    Write-Host -NoNewline "Sender      : "
-    Write-Host -ForegroundColor Green $Sender
-    Write-Host -NoNewline "Sender Data : " 
-    Write-Host -ForegroundColor Cyan $SenderData
-    Write-Host -NoNewline "Recipient   : "
-    Write-Host -ForegroundColor Magenta $Recipient
-    Write-Host -NoNewline "Subject     : "
-    Write-Host -ForegroundColor Yellow $Subject
+    Write-Host -NoNewline "Sender      : " ; Write-Host -ForegroundColor Green   $Sender
+    Write-Host -NoNewline "Sender Data : " ; Write-Host -ForegroundColor Cyan    $SenderData
+    Write-Host -NoNewline "Recipient   : " ; Write-Host -ForegroundColor Magenta $Recipient
+    Write-Host -NoNewline "Subject     : " ; Write-Host -ForegroundColor Yellow  $Subject
     Write-Host "-------------------------------------------------------------------------------"
-    
+
     Read-Host
 }
-
-#$ol.Quit()
+if($ol){
+    $ol.quit
+}
