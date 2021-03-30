@@ -1,73 +1,105 @@
-﻿#param($RecordID)
+﻿$ErrorActionPreference = 'Stop'
 
-$ErrorActionPreference = 'Stop'
+while($true){
+    $Domain_Controllers = (Get-ADDomainControllers -Filter *).Name
 
-$Report  = @()
+    $Online = Test-Connection -ComputerName $Domain_Controllers -Count 1 -AsJob | Receive-Job -Wait | Where-Object {$_.StatusCode -eq 0} | Select-Object -ExpandProperty Address
 
-$Report += "<h3>Password Reset Detection Report from [$env:COMPUTERNAME]:</h3>"
-
-try{
     $Admin_Security_Groups = @(
         'Administrators',
         'Domain Admins',
         'Enterprise Admins'
     )
 
-    $Admin_Group_Members = $Admin_Security_Groups | % {Get-ADGroupMember -Identity $_ | ? {$_.ObjectClass -eq 'user'} | Select-Object -ExpandProperty SamAccountName} | Sort-Object -Unique
+    $Admin_Group_Members = $Admin_Security_Groups | ForEach-Object {
+        Get-ADGroupMember -Identity $_ |
+        Where-Object {$_.ObjectClass -eq 'user'} |
+        Select-Object -ExpandProperty SamAccountName
+    } | Sort-Object -Unique
 
-    $minutes_ago = 2
-    $start_time  = (Get-Date).AddMinutes(-$minutes_ago)
+    $Script = {
 
-    $Event_properties = @(
-        'Message',
-        'TimeCreated'
-    )
+        $Event_properties = @(
+            'Message',
+            'TimeCreated'
+        )
 
-    $Events = Get-WinEvent -FilterHashtable @{
-        LogName='Security'
-        id=4723,4724
-        StartTime=$start_time
-    } | Select-Object -Property $Event_properties
-
-    $Report_empty = $true
-
-    #loop through events, if the target account for password change was an administrator, add to report
-    foreach($Event in $Events){
-        $Message        = ($Event.Message | Select-String 'Account Name:.*' -AllMatches | Select-Object -ExpandProperty matches | Select-Object -ExpandProperty value) -replace ('\W') -replace ('AccountName')
-        $Source_account = $Message[0]
-        $Target_account = $Message[1]
-
-        if($Admin_Group_Members -contains $Target_account){
-            $Format_array = $Event.TimeCreated.ToString().Split(' ')
-            $Date         = $Format_array[0]
-            $Time         = $Format_array[1]
-            $AMPM         = $Format_array[2]
-            $Report      += '<b>[ ' + "$Date".PadLeft(10,' ') + ' ' + "$Time".PadLeft(8,' ') + ' ' + "$AMPM".PadLeft(2 ,' ') + " ]</b> an attempt was made by <b>$Source_account</b> to reset <b>$Target_account</b>'s password.<br>"
-            $Report_empty = $false
+        if(!(Test-Path 'C:\Users\Public\Event_4724_LastCheck.xml')){
+            $Events = Get-WinEvent -FilterHashtable @{
+                LogName='Security'
+                id=4724
+            } | Select-Object -Property $Event_properties
+            Get-Date | Export-Clixml 'C:\Users\Public\Event_4724_LastCheck.xml'
         }
+        else{
+            $start_time = Import-Clixml 'C:\Users\Public\Event_4724_LastCheck.xml'
+            $Events = Get-WinEvent -FilterHashtable @{
+                LogName='Security'
+                id=4724
+                StartTime=$start_time
+            } | Select-Object -Property $Event_properties    
+        }
+
+        $Results = @()
+
+        foreach($Event in $Events){
+        
+            $obj = @{} | Select-Object -Property ComputerName, ChangeDate, ChangeSource, ChangeTarget
+        
+            $Account_matches = ($Event.Message -split "\n" | Select-String -Pattern "^\s+Account Name:\s+(\S+)" -AllMatches).Matches.Groups |
+                Where-Object {$_.name -eq 1} | Select-Object -ExpandProperty Value
+        
+            $obj.ComputerName = $env:COMPUTERNAME
+            $obj.ChangeDate   = $Event.TimeCreated
+            $obj.ChangeSource = $Account_matches[0]
+            $obj.ChangeTarget = $Account_matches[1]
+
+            $Results += $obj
+        }
+
+        Write-Output $Results
+
+        Write-Host -ForegroundColor Green "[+] $env:COMPUTERNAME queried"
     }
+
+    Write-Host -ForegroundColor Cyan "[*] Module ran at $(Get-Date)"
+
+    $Result = Invoke-Command -ComputerName $Online -ScriptBlock $Script |
+              Where-Object {$Admin_Group_Members -contains $_.ChangeTarget} |
+              Select-Object -Property * -ExcludeProperty RunSpaceID, PSShowComputerName, PSComputerName
+
+    $ResultHTML = $Result | ConvertTo-Html
+
+    $Header = @"
+<style>
+th, td {
+    border: 2px solid black;
+    text-align: center;
 }
-catch{
-    $Report += '<b>An error occured:</b><br>'
-    $Report += $Error[0] | Select-Object -ExpandProperty Exception
-    $Report_empty = $false
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 100%;
 }
+h3{
+    color: white;
+    background-color: #FF0000;
+    padding: 3px;
+    text-align: Center;
+    border: 2px solid black;
+}
+</style>
+<h3>Admin Password Change:</h3>
+"@
 
-$Report = $Report | Out-String
+    $MailSettings = @{
+        SMTPserver = 'mail.worldposta.com'
+        From       = 'PowerEye@worldposta.com'
+        To         = 'MGabr@roaya.co'
+        Subject    = 'Admin Password Change'
+    }
 
-if($Report_empty -eq $false){
-    #send mail configuration
-    $SMTP_server = 'mail.worldposta.com'
-    $From        = 'PowerShell@worldposta.com'
-    $To          = 'Operation@roaya.co'
-    $Subject     = 'Admin Password Change'
+    Send-MailMessage @MailSettings -BodyAsHtml "$Header $ResultHTML"
 
-    Send-MailMessage -SmtpServer $SMTP_server `
-                     -From       $From        `
-                     -To         $To          `
-                     -Subject    $Subject     `
-                     -Body       $Report      `
-                     -Bcc        $bcc         `
-                     -BodyAsHtml
-                     
+    Start-Sleep -Seconds 60
 }
