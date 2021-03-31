@@ -180,9 +180,9 @@ $MeasurementsHTML = @"
 
     $MailSettings = @{
         SmtpServer = '192.168.3.202'
-        From       = 'ExchangeQueue@roaya.co'
+        From       = 'PowerEye@roaya.co'
         To         = 'Operation@roaya.co'
-        Subject    = 'Exchange Queue Warning'
+        Subject    = 'PowerEye | Network Bandwidth Module'
     }
 
     try{
