@@ -7,6 +7,7 @@ while($true){
         'Administrators',
         'Domain Admins',
         'Enterprise Admins'
+        'Schema Admins'
     )
 
     $Admin_Group_Members = $Admin_Security_Groups | ForEach-Object {
@@ -61,26 +62,26 @@ while($true){
             }
 
             Write-Output $Results
-
-            Write-Host -ForegroundColor Yellow "[!] Logs found | $env:COMPUTERNAME"
         }
         catch{
            $obj = @{} | Select-Object -Property ComputerName, ChangeDate, Source, Target, Error
            $obj.ComputerName = $env:COMPUTERNAME
            $obj.Error = $Error[0]
            $Results += $obj
-
-           Write-Host -ForegroundColor Green "[+] $($obj.Error) | $env:COMPUTERNAME"
         }
     }
 
     Write-Host -ForegroundColor Cyan "[*] Module running at $(Get-Date)"
 
-    $Result = Invoke-Command -ComputerName $Online -ScriptBlock $Script |
-              Where-Object {$Admin_Group_Members -contains $_.Target} |
-              Select-Object -Property * -ExcludeProperty RunSpaceID, PSShowComputerName, PSComputerName | Sort-Object -Property ChangeDate -Descending
+    $ResultNormal = Invoke-Command -ComputerName $Online -ScriptBlock $Script |
+                    Select-Object -Property * -ExcludeProperty RunSpaceID, PSShowComputerName, PSComputerName |
+                    Sort-Object -Property ChangeDate -Descending
 
-    $ResultHTML = $Result | ConvertTo-Html
+    Write-Output $ResultNormal | Format-Table -AutoSize
+
+    $ResultAdmin = $ResultNormal | Where-Object {$Admin_Group_Members -contains $_.Target}
+
+    $ResultHTML = $ResultAdmin | ConvertTo-Html
 
     $Header = @"
 <style>
@@ -106,12 +107,12 @@ h3{
 
     $MailSettings = @{
         SMTPserver = '192.168.3.202'
-        From       = 'PowerEye@worldposta.com'
+        From       = 'PowerEye@roaya.co'
         To         = 'operation@roaya.co'
         Subject    = 'PowerEye | Admin Password Change Module'
     }
 
-    if($Result){
+    if($ResultAdmin){
         Write-Host -ForegroundColor Red "[!] Admin password changes found! Sending mail"
         Send-MailMessage @MailSettings -BodyAsHtml "$Header $ResultHTML"
     }

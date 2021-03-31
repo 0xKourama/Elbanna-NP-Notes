@@ -35,26 +35,25 @@ while($true){
         'Status'
         'NextHopDomain'
         'MessageCount'
+        'DeliveryType'
         'LastError'
     )
 
     $Message_Count_threshold = 25
 
-    $res = Get-MailboxServer | ForEach-Object {
-        Get-Queue -Server $_.name |
-        Where-Object {
+    $res = Get-MailboxServer | ForEach-Object { Get-Queue -Server $_.name | Select-Object -Property $Required_properties }
+
+    $res_Alert = $res | Where-Object {
             $_.MessageCount -gt $Message_Count_threshold -and `
             $_.NextHopDomain -notlike "*frank contoso.com*" -and `
             $_.DeliveryType -notlike "*ShadowRedundancy*"
-        }
-    } | Select-Object -Property $Required_properties
+    } | Sort-Object -Property MessageCount -Descending
+
+    Write-Output $Res | Sort-Object -Property MessageCount -Descending | Select-Object -First 20 | Format-Table -AutoSize
 
     Remove-PSSession -Session $Session
 
-    if($res){
-        Write-Host -ForegroundColor Yellow "[!] Queue Conditions met. Sending mail alert"
-        $resHTML = $res | ConvertTo-Html | Out-String
-        $Header = @"
+$Style = @"
 <style>
 th, td {
     border: 2px solid black;
@@ -73,13 +72,24 @@ h3{
     border: 2px solid black;
 }
 </style>
+"@
+
+$Header = @"
 <h3>Exchange Queue Warning:</h3>
 "@
-        Send-MailMessage -SmtpServer 192.168.3.202 `
-                         -From ExchangeQueue@roaya.co `
-                         -To Operation@roaya.co `
-                         -Subject 'Exchange Queue Warning' `
-                         -BodyAsHtml "$Header $resHTML"
+
+    $MailSettings = @{
+        SMTPserver = '192.168.3.202'
+        From       = 'ExchangeQueue@roaya.co'
+        To         = 'operation@roaya.co'
+        Subject    = 'PowerEye | Exchange Queue Warning'
+    }
+
+    if($res_Alert){
+        Write-Host -ForegroundColor Yellow "[!] Queue Conditions met. Sending mail alert"
+        $resHTML = $res_Alert | ConvertTo-Html | Out-String
+        Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $resHTML"
+
     }
     else{
         Write-Host -ForegroundColor Green "[+] Queue Conditions not met. No mail sent"

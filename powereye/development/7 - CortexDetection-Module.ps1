@@ -1,3 +1,5 @@
+$SleepDuration = 43200
+
 while($true){
     $online = Test-Connection -ComputerName (
         Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address} |
@@ -24,6 +26,8 @@ while($true){
         }
         Write-Output $Obj
     }
+
+    Write-Host -ForegroundColor Cyan "[*] Module running at $(Get-Date)"
 
     $Result = Invoke-Command -ComputerName $online -ErrorAction SilentlyContinue -ScriptBlock $script | 
               Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceId
@@ -61,19 +65,21 @@ $Header = @"
 
     $MailSettings = @{
         SMTPserver = '192.168.3.202'
-        From       = 'PowerEye@worldposta.com'
-        To         = 'MGabr@roaya.co'
+        From       = 'PowerEye@Roaya.co'
+        To         = 'Operation@roaya.co'
         Subject    = 'PowerEye | Cortex Endpoint Check Module'
     }
 
     if($Alert_Result){
         Write-Host -ForegroundColor Yellow '[!] Cortex missing on some computers. Sending mail'
-        Send-MailMessage @MailSettings -Body "$style $Header $Alert_Result_HTML"    
+        Send-MailMessage @MailSettings -BodyAsHTML "$style $Header $Alert_Result_HTML"    
     }
     else{
         Write-Host -ForegroundColor Green '[+] Cortex Endpoint installed on all computers'
     }
 
-    Start-Sleep -Seconds 60
+    Write-Host -ForegroundColor Cyan "[*] Sleeping for $SleepDuration"
+
+    Start-Sleep -Seconds $SleepDuration
 
 }

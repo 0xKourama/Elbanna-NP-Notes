@@ -160,3 +160,46 @@ $session_RDP_summary = $session_summary | Where-Object {$_.Status -eq 'ACTIVE - 
 $session_CONSOLE_summmary = $session_summary | Where-Object {$_.Status -eq 'ACTIVE - CONSOLE'}
 $session_inactive_summary = $session_summary | Where-Object {$_.Status -eq 'INACTIVE'}
 #endregion
+
+$style = @"
+<style>
+th, td {
+    border: 2px solid black;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 100%;
+}
+h3{
+    color: white;
+    background-color: #44188C;
+    padding: 3px;
+    text-align: Center;
+    border: 2px solid black;
+}
+h4{
+    color: white;
+    background-color: #18368C;
+    padding: 2px;
+    border: 2px solid black;
+}
+</style>
+"@
+
+$header = @"
+<h3>Computer Environment Report</h3>
+"@
+
+$body = @"
+<h4>Connectivity</h4>
+
+"@
+
+$MailSettings = @{
+    SMTPserver = '192.168.3.202'
+    From       = 'PowerEye@Roaya.co'
+    To         = 'Mgabr@roaya.co'
+    Subject    = 'PowerEye | Computer Environment Report'
+}

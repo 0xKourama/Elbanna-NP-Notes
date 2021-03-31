@@ -177,11 +177,12 @@ $MeasurementsHTML = @"
 </ul>
 "@
 
+
     $MailSettings = @{
-        SMTPServer = '192.168.3.203'
-        From       = 'PowerEye@roaya.co'
+        SmtpServer = '192.168.3.202'
+        From       = 'ExchangeQueue@roaya.co'
         To         = 'Operation@roaya.co'
-        Subject    = 'PowerEye | Network Bandwidth Module'
+        Subject    = 'Exchange Queue Warning'
     }
 
     try{
