@@ -1,0 +1,3 @@
+#TYPE Deserialized.System.Management.Automation.PSCustomObject
+"ComputerName","Type","Path","Name"
+"FRANK-MBX02","SuspiciousArchive","C:\ProgramData\VMware\VMware Tools\vss_manifests.zip","vss_manifests.zip"

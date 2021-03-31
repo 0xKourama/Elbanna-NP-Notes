@@ -1,3 +1,5 @@
+$ProgressPreference = 'SilentlyContinue'
+
 $Exchange_Servers = @(
     'frank-fem-f01.roaya.loc:8080'
     'frank-fem-f02.roaya.loc:8080'
@@ -13,16 +15,18 @@ $password = '97$p$*J5f7$#3$0DnA'
 
 while($true){
 
-    foreach($Exchange_Server in $Exchange_Servers){
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
-                                 -ConnectionUri "http://$Exchange_Server/PowerShell/" `
-                                 -Authentication Kerberos `
-                                 -Credential $UserCredential
+    if(!(Get-PSSession)){
+        foreach($Exchange_Server in $Exchange_Servers){
+            $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
+                                     -ConnectionUri "http://$Exchange_Server/PowerShell/" `
+                                     -Authentication Kerberos `
+                                     -Credential $UserCredential
 
-        Import-PSSession $Session -DisableNameChecking -AllowClobber | Out-Null
-        if($? -eq $true){
-            Write-Host -ForegroundColor green "[+] Session established with $Exchange_Server"
-            break
+            Import-PSSession $Session -DisableNameChecking -AllowClobber | Out-Null
+            if($? -eq $true){
+                Write-Host -ForegroundColor green "[+] Session established with $Exchange_Server"
+                break
+            }
         }
     }
 
@@ -96,4 +100,5 @@ $Header = @"
     }
 
     Start-Sleep -Seconds 300
+    [GC]::Collect()
 }
