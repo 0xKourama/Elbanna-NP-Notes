@@ -113,16 +113,13 @@ While($true){
 
         Clear-Host
         Write-Host $Random_quote -ForegroundColor DarkBlue
-
-        Write-Host $upper_border
-
+        Write-Host
+        #Write-Host $upper_border
         Write-Host " $level_progress_unit".PadRight($level_progress_unit.Length + (($upper_border.Length - 2) - $level_progress_unit.Length)) -ForegroundColor DarkBlue
-
         Write-Host $middle_border
-
         Write-Host " $session_progress_unit".PadRight($session_progress_unit.Length + (($middle_border.Length - 2) - $session_progress_unit.Length)) -ForegroundColor DarkBlue
-
-        Write-Host $lower_border
+        #Write-Host $lower_border
+        Write-Host
 
         Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host $($hours + 0.5)
         Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
@@ -151,16 +148,13 @@ While($true){
 
     Clear-Host
     Write-Host $Random_quote -ForegroundColor DarkGreen
-
-    Write-Host $upper_border
-
+    Write-Host
+    #Write-Host $upper_border
     Write-Host " $level_progress_unit".PadRight($level_progress_unit.Length + (($upper_border.Length - 2) - $level_progress_unit.Length)) -ForegroundColor DarkGreen
-
     Write-Host $middle_border
-
     Write-Host " $session_progress_unit".PadRight($session_progress_unit.Length + (($middle_border.Length - 2) - $session_progress_unit.Length)) -ForegroundColor DarkGreen
-
-    Write-Host $lower_border
+    #Write-Host $lower_border
+    Write-Host
 
     Write-Host "Exp : " -NoNewline; Write-Host $hours -ForegroundColor DarkGreen
     Write-Host "Rnk : $skill_rank"
