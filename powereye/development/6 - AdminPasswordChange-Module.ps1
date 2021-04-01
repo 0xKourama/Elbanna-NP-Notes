@@ -4,8 +4,9 @@ while($true){
     $Online = Test-Connection -ComputerName $Domain_Controllers -Count 1 -AsJob | Receive-Job -Wait | Where-Object {$_.StatusCode -eq 0} | Select-Object -ExpandProperty Address
 
     $Admin_Security_Groups = @(
-        'Administrators',
-        'Domain Admins',
+        'Server Operators'
+        'Administrators'
+        'Domain Admins'
         'Enterprise Admins'
         'Schema Admins'
     )
