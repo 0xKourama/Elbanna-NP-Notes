@@ -23,10 +23,18 @@ while($true){
         'OperatingSystem'
     )
 
-    $ADComputers = Get-ADComputer -Filter * -Properties $ADProperties | Select-Object -Property $ADProperties
+    Write-Host -ForegroundColor Cyan "[*] Module running at $(Get-Date)"
+
+    $OldServers = (Get-ADComputer -Filter * -SearchBase 'OU=OldServers,DC=Roaya,DC=loc').Name
+
+
+    Write-Host -ForegroundColor Cyan "[*] Pulling computer data"
+    $ADComputers = Get-ADComputer -Filter * -Properties $ADProperties | Where-Object {$OldServers -notcontains $_.name} |
+                   Select-Object -Property $ADProperties
 
     $DomainControllers = Get-ADDomainController -Filter * | Select-Object -Property $DCProperties
 
+    Write-Host -ForegroundColor Cyan "[*] Running connectivity check"
     #region connectivity summary
     $Connectivity_Summary = @()
     $Online = Test-Connection -ComputerName ($ADComputers | Where-Object {$_.IPV4Address}).Name -Count 1 -AsJob |
@@ -35,17 +43,19 @@ while($true){
     $Offline = $ADComputers.Name | Where-Object {$Online -notcontains $_}
 
     $Online_Object  = @{} | Select-Object -Property State, Count, ComputerList
-    $Online_Object.State  = 'Online' ; $Online_Object.Count = $Online.Count        ; $Online_Object.ComputerList  = $Online -join ','
+    $Online_Object.State  = 'Online' ; $Online_Object.Count = $Online.Count        ; $Online_Object.ComputerList  = $Online -join ' | '
     $Offline_Object = @{} | Select-Object -Property State, Count, ComputerList
-    $Offline_Object.State = 'Offline'; $Offline_Object.Count = $Offline.Count      ; $Offline_Object.ComputerList = $Offline -join ','
+    $Offline_Object.State = 'Offline'; $Offline_Object.Count = $Offline.Count      ; $Offline_Object.ComputerList = $Offline -join ' | '
     $NoIPV4_Object  = @{} | Select-Object -Property State, Count, ComputerList
-    $NoIPV4_Object.State  = 'NoIPV4' ; $NoIPV4_Object.Count = $NoIPV4Assigned.Count; $NoIPV4_Object.ComputerList  = $NoIPV4Assigned -join ','
+    $NoIPV4_Object.State  = 'NoIPV4' ; $NoIPV4_Object.Count = $NoIPV4Assigned.Count; $NoIPV4_Object.ComputerList  = $NoIPV4Assigned -join ' | '
 
     $Connectivity_Summary += $Online_Object
     $Connectivity_Summary += $Offline_Object
     $Connectivity_Summary += $NoIPV4_Object
     #endregion
 
+
+    Write-Host -ForegroundColor Cyan "[*] Running OS module"
     #region operating system summary
     $OS_Summary = @()
     $OS_List = $ADComputers.OperatingSystem | Select-Object -Unique
@@ -53,13 +63,14 @@ while($true){
         $OS_Group = @{} | Select-Object -Property OperatingSystem, Count, ComputerList
         $OS_Group.OperatingSystem = $OS
         $list = $ADComputers | Where-Object {$_.OperatingSystem -eq $OS} | Select-Object -ExpandProperty Name
-        $OS_Group.ComputerList = $List -join ','
+        $OS_Group.ComputerList = $List -join ' | '
         $OS_Group.Count = $list.Count
         $OS_Summary += $OS_Group
     }
     $OS_Summary = $OS_Summary | Sort-Object -Property Count -Descending
     #endregion
 
+    Write-Host -ForegroundColor Cyan "[*] Running logon date module"
     #region computer Last logon date
     $LastLogonDate_Summary = @()
     foreach($Computer in $ADComputers){
@@ -78,6 +89,7 @@ while($true){
     $LastLogonDate_Summary = $LastLogonDate_Summary | Sort-Object -Property Days -Descending
     #endregion
 
+    Write-Host -ForegroundColor Cyan "[*] Running OU Module"
     #region OU summary
     $OUs = $ADComputers.CanonicalName -replace "/\S+$" | Select-Object -Unique
     $OU_Summary = @()
@@ -85,31 +97,35 @@ while($true){
         $Obj = @{} | Select-Object -Property OU, Count, ComputerList
         $Obj.OU = $OU
         $List = $ADComputers | Where-Object {($_.CanonicalName -replace "/\S+$") -eq $OU} | Select-Object -ExpandProperty Name
-        $Obj.ComputerList = $List -join ','
+        $Obj.ComputerList = $List -join ' | '
         $Obj.Count = $List.Count
         $OU_Summary += $Obj
     }
     $OU_Summary = $OU_Summary | Sort-Object -Property Count -Descending
     #endregion
 
+
+    Write-Host -ForegroundColor Cyan "[*] Running Exchange OU Membership Module"
     #region Exchange server group memberships summary
     $Exchange_Group_Membership_summary = @()
     $Exchange_Servers = Get-ADGroupMember -Identity 'Exchange Servers' |
                         Where-Object {$_.ObjectClass -eq 'Computer'} |
                         Select-Object -ExpandProperty name
     foreach($ExchangeServer in $Exchange_Servers){
-        $obj = @{} | Select-Object -Property Server, MemberOf
+        $obj = @{} | Select-Object -Property Server, OperatingSystem, MemberOf
         $Obj.Server = $ExchangeServer
+        $Obj.OperatingSystem = $ADComputers | Where-Object {$_.Name -eq $ExchangeServer} | Select-Object -ExpandProperty OperatingSystem
         $Obj.MemberOf = (
             Get-ADComputer -Identity $ExchangeServer -Properties memberof |
             Select-Object -ExpandProperty MemberOf |
             ForEach-Object {Get-ADGroup -Identity $_ | Select-Object -ExpandProperty Name}     
-        ) -join ','
+        ) -join ' | '
         $Exchange_Group_Membership_summary += $Obj
     }
     $Exchange_Group_Membership_summary = $Exchange_Group_Membership_summary | Sort-Object -Property Server
     #endregion
 
+    Write-Host -ForegroundColor Cyan "[*] Running Domain Controller Module"
     #region domain controller summary
     $DomainController_Summary = @()
     foreach($DC in $DomainControllers){
@@ -119,6 +135,7 @@ while($true){
     $DomainController_Summary = $DomainController_Summary | Sort-Object -Property Name
     #endregion
 
+    Write-Host -ForegroundColor Cyan "[*] Running Uptime Module"
     #region uptime summary
     $uptime_script = {
         $Result = New-TimeSpan -Start (
@@ -168,6 +185,7 @@ while($true){
         }
         Write-Output $User_list
     }
+    Write-Host -ForegroundColor Cyan "[*] Running Session Module"
     $session_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script |
                        Select-Object -Property ComputerName, Username, LogonTime, Status | Sort-Object -Property ComputerName
     $session_RDP_summary = $session_summary | Where-Object {$_.Status -eq 'ACTIVE - RDP'}
@@ -233,9 +251,12 @@ $($session_inactive_summary | ConvertTo-Html -Fragment)
         SMTPserver = '192.168.3.202'
         From       = 'PowerEye@Roaya.co'
         To         = 'Operation@roaya.co'
+        #To         = 'mgabr@roaya.co'
         Subject    = 'PowerEye | Computer Environment Report'
     }
 
+    Write-Host -ForegroundColor Cyan "[*] Sending Report Email"
     Send-MailMessage @MailSettings -BodyAsHtml "$style $header $body"
+    Write-Host -ForegroundColor Cyan "[*] sleeping for 24 hours"
     Start-Sleep -Seconds 86400
 }

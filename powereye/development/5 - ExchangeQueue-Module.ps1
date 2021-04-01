@@ -55,8 +55,6 @@ while($true){
 
     Write-Output $Res | Sort-Object -Property MessageCount -Descending | Select-Object -First 20 | Format-Table -AutoSize
 
-    Remove-PSSession -Session $Session
-
 $Style = @"
 <style>
 th, td {
