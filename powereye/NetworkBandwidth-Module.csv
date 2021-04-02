@@ -1,3 +1,0 @@
-"Segment","Source","SourceSubnet","Destination","DestinationSubnet","AverageSpeedMBps"
-"1","FRANk-RODC-01","192.168.1.0/24","WP-ROOTCA","192.168.2.0/24","98.38"
-,,,,,
