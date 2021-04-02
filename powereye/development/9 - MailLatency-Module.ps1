@@ -1,4 +1,5 @@
 $ProgressPreference = 'SilentlyContinue'
+$ErrorActionPreference = 'Stop'
 
 $Exchange_Servers = @(
     'frank-fem-f01.roaya.loc:8080'
@@ -15,7 +16,11 @@ $password = '97$p$*J5f7$#3$0DnA'
 
 while($true){
 
-    if(!(Get-PSSession)){
+    $present_session = Get-PSSession
+
+    if(!$present_session -or ($present_session.Availability -ne 'Available') -or ($present_session.State -ne 'Opened')){
+        try{Remove-PSSession $present_session}
+        catch{}
         foreach($Exchange_Server in $Exchange_Servers){
             $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
                                      -ConnectionUri "http://$Exchange_Server/PowerShell/" `

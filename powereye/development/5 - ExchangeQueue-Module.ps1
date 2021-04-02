@@ -15,7 +15,11 @@ $password = '97$p$*J5f7$#3$0DnA'
 
 while($true){
 
-    if(!(Get-PSSession)){
+    $present_session = Get-PSSession
+
+    if(!$present_session -or ($present_session.Availability -ne 'Available') -or ($present_session.State -ne 'Opened')){
+        try{Remove-PSSession $present_session}
+        catch{}
         foreach($Exchange_Server in $Exchange_Servers){
             $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
                                      -ConnectionUri "http://$Exchange_Server/PowerShell/" `
@@ -96,7 +100,7 @@ $Header = @"
     else{
         Write-Host -ForegroundColor Green "[+] Queue Conditions not met. No mail sent"
     }
-
-    Start-Sleep -Seconds 300
+    Write-Host -ForegroundColor Cyan '[*] Sleeping for 10 minutes'
+    Start-Sleep -Seconds (60 * 10)
     [GC]::Collect()
 }

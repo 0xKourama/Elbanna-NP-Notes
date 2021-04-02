@@ -122,6 +122,6 @@ h3{
     }
 
     Write-Host -ForegroundColor Cyan '[*] Sleeping for 10 minutes'
-
-    Start-Sleep -Seconds 600
+    [GC]::Collect()
+    Start-Sleep -Seconds (60 * 10)
 }

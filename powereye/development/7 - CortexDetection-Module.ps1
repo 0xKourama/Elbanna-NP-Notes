@@ -1,5 +1,3 @@
-$SleepDuration = 43200
-
 while($true){
     $online = Test-Connection -ComputerName (
         Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address} |
@@ -78,8 +76,7 @@ $Header = @"
         Write-Host -ForegroundColor Green '[+] Cortex Endpoint installed on all computers'
     }
 
-    Write-Host -ForegroundColor Cyan "[*] Sleeping for $SleepDuration"
-
-    Start-Sleep -Seconds $SleepDuration
-
+    Write-Host -ForegroundColor Cyan "[*] Sleeping for 12 hours"
+    [GC]::Collect()
+    Start-Sleep -Seconds (60 * 60 * 12)
 }

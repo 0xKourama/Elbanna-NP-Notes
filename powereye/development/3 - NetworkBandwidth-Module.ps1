@@ -191,5 +191,7 @@ $MeasurementsHTML = @"
     catch{
         Write-Host -ForegroundColor Yellow "[!] Failed to send report with SMTP Server 192.168.3.203"
     }
-    start-sleep -Seconds 1200
+    [GC]::Collect()
+    Write-Host -ForegroundColor Cyan '[*] Sleeping for 20 minutes'
+    start-sleep -Seconds (20 * 60)
 }

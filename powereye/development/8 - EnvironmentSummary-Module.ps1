@@ -257,6 +257,7 @@ $($session_inactive_summary | ConvertTo-Html -Fragment)
 
     Write-Host -ForegroundColor Cyan "[*] Sending Report Email"
     Send-MailMessage @MailSettings -BodyAsHtml "$style $header $body"
+    [GC]::Collect()
     Write-Host -ForegroundColor Cyan "[*] sleeping for 24 hours"
-    Start-Sleep -Seconds 86400
+    Start-Sleep -Seconds (60 * 60 * 24)
 }
