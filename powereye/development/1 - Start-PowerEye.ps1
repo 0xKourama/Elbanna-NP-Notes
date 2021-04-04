@@ -1,10 +1,12 @@
-$ErrorActionPreference = 'continue'
+$ScriptRoot = 'C:\Users\Zen\PowerShell\powereye\development'
 
-#intialize Module manifest
-$Manifest_path = 'C:\users\gabrurgent\powereye\Manifest.ps1'
-Get-Content -Raw $Manifest_path | Invoke-Expression
+$Manifest_path = "$ScriptRoot\0 - Manifest.ps1"
+
+Invoke-Expression -Command (Get-Content -Raw $Manifest_path)
 
 $Original_Manifest_hash = Get-FileHash -Path $Manifest_path | Select-Object -ExpandProperty Hash
+
+$Enabled_modules = $Modules | Where-Object {$_.Enabled -eq $true}
 
 while($true){
 
@@ -12,39 +14,38 @@ while($true){
     $current_Manifest_hash = Get-FileHash -Path $Manifest_path | Select-Object -ExpandProperty Hash
 
     if($current_Manifest_hash -ne $Original_Manifest_hash){
-        Write-Host -ForegroundColor Yellow "[!] Config file changed. Updating the running configuration."
-        Get-Content $Manifest_path -Raw | Invoke-Expression
+        Write-Host -ForegroundColor Yellow "[!] Configuration file changed. Updating the running configuration."
+
+        Invoke-Expression -Command (Get-Content -Raw $Manifest_path)
+
+        $Original_Manifest_hash = $current_Manifest_hash
+
+        $Enabled_modules = $Modules | Where-Object {$_.Enabled -eq $true}
     }
     #endregion
-    
-    #generating several computer criterias
-    $Computers_with_ip = Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address} | Select-Object -ExpandProperty Name
-    $Online = Test-Connection -ComputerName $Computers_with_ip -Count 1 -AsJob | Wait-Job | Receive-Job | Where-Object {$_.StatusCode -eq 0} | Select-Object -ExpandProperty address
-    $sessions = New-PSSession -ComputerName $Online -ErrorAction SilentlyContinue | Where-Object {$_.state -eq 'opened' -and $_.Availability -eq 'Available'}
 
-    Write-Host -ForegroundColor Cyan "[*] Connectivity status: $($Online.count) computer(s) online"
+    Write-Host -ForegroundColor Cyan '[*] Displaying current module summary:'
 
-    foreach($Module in ($Modules | Where-Object {$_.Enabled -eq $true} )){
+    Format-Table -InputObject $Modules -AutoSize -Wrap
+
+    foreach($Module in $Enabled_modules){
         if($Module.MinutesTillNextRun -eq 0){
 
-            Write-Host -ForegroundColor Cyan "[*] Running $($Module.Name)"
+            Write-Host -ForegroundColor Cyan "[*] $($Module.Name) now running"
 
-            # -OutputPath $($Module.OutputPath)"
-
-            $command = "$($Module.ScriptPath) -SMTPServer $General_SMTPServer -Sender $General_Sender -Recipient $General_Recipient -Subject `"$($Module.MailSubject)`""
-
-            $Result = Invoke-Expression $command 
-
-            Write-Host -ForegroundColor Green "[+] $($Module.Name) Ran successfully."
+            #Start-Process PowerShell.exe -ArgumentList $($Module.ScriptPath)
 
             $Module.MinutesTillNextRun = $Module.RunIntervalMinutes
         }
         else{
-            Write-Host -ForegroundColor Cyan "[*] $($Module.MinutesTillNextRun) minute(s) till $($Module.Name) module's next run"
             $Module.MinutesTillNextRun--
         }
     }
-    Get-PSSession | Remove-PSSession
-    Write-Host -ForegroundColor Cyan "[*] Sleeping for a minute"
+
+    Export-Clixml -InputObject $Modules -Path "$ScriptRoot\State.xml"
+
+    [GC]::Collect()
+
+    Write-Host -ForegroundColor Cyan "[*] Going on standby for 1 minute"
     Start-Sleep -Seconds 60
 }

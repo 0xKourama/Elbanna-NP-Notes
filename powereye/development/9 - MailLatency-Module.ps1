@@ -42,7 +42,6 @@ while($true){
     $MailBox_Servers = Get-MailboxServer "*MB*" | Select-Object -ExpandProperty Name
 
     $Result1 = @()
-
     $Result2 = @()
 
     Foreach($MailBox_Server in $MailBox_Servers){

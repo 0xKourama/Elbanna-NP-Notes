@@ -1,55 +1,69 @@
-class Module {
+$ScriptRoot = 'C:\Users\Zen\PowerShell\powereye\development'
+
+Class Module {
+    [bool]$Enabled
     [string]$Name
     [int]$RunIntervalMinutes
     [int]$MinutesTillNextRun
     [string]$ScriptPath
-    [string]$OutputPath
-    [string]$MailSubject
-    [bool]$Enabled
 }
 
-$General_SMTPServer = 'mail.worldposta.com'
-$General_Sender     = 'PowerEye@roaya.co'
-$General_Recipient  = 'mgabr@roaya.co'
-
+$State = Import-Clixml "$ScriptRoot\state.xml"
+#
 $Modules = @(
+    
+    #1
     [Module]@{
-        Name = 'SMB'
-        RunIntervalMinutes = 2
-        MinutesTillNextRun = 0
-        ScriptPath = 'C:\users\GabrUrgent\powereye\SMB-Module.ps1'
-        OutputPath = 'C:\Users\GabrUrgent\powereye\SMB-Report.csv'
-        MailSubject = "PowerEye | SMB Module"
         Enabled = $true
-    }
-
-   [Module]@{
-        Name = 'Network Bandwidth'
-        RunIntervalMinutes = 60
-        MinutesTillNextRun = 0
-        ScriptPath = 'C:\users\GabrUrgent\powereye\NetworkBandwidth-Module.ps1'
-        OutputPath = 'C:\Users\GabrUrgent\powereye\NetworkBandwidth-Module.csv'
-        MailSubject = "PowerEye | Network Bandwidth Module"
-        Enabled = $false
-    }
-
-   [Module]@{
-        Name = 'Event Log'
-        RunIntervalMinutes = 10
-        MinutesTillNextRun = 0
-        ScriptPath = 'C:\users\GabrUrgent\powereye\EventLog-Module.ps1'
-        OutputPath = 'C:\Users\GabrUrgent\powereye\EventLog-Module.csv'
-        MailSubject = "PowerEye | Event Log Module"
-        Enabled = $false
-    }
-
-   [Module]@{
         Name = 'Exchange Queue'
         RunIntervalMinutes = 10
-        MinutesTillNextRun = 0
-        ScriptPath = 'C:\users\GabrUrgent\powereye\EventLog-Module.ps1'
-        OutputPath = 'C:\Users\GabrUrgent\powereye\EventLog-Module.csv'
-        MailSubject = "PowerEye | Event Log Module"
-        Enabled = $false
+        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Exchange Queue'} | Select-Object -ExpandProperty MinutesTillNextRun
+        ScriptPath = "$ScriptRoot"
     }
+
+    #2
+    [Module]@{
+        Enabled = $true
+        Name = 'Mail Latency'
+        RunIntervalMinutes = 10
+        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Mail Latency'} | Select-Object -ExpandProperty MinutesTillNextRun
+        ScriptPath = "$ScriptRoot"
+    }
+
+    #3
+    [Module]@{
+        Enabled = $true
+        Name = 'Network Bandwidth'
+        RunIntervalMinutes = 60
+        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Network Bandwidth'} | Select-Object -ExpandProperty MinutesTillNextRun
+        ScriptPath = "$ScriptRoot"
+    }
+
+    #4
+    [Module]@{
+        Enabled = $true
+        Name = 'Administrator Monitor'
+        RunIntervalMinutes = 10
+        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Administrator Monitor'} | Select-Object -ExpandProperty MinutesTillNextRun
+        ScriptPath = "$ScriptRoot"
+    }
+
+    #5
+    [Module]@{
+        Enabled = $true
+        Name = 'Cortex Endpoint Check'
+        RunIntervalMinutes = 10
+        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Cortex Endpoint Check'} | Select-Object -ExpandProperty MinutesTillNextRun
+        ScriptPath = "$ScriptRoot"
+    }
+
+    #6
+    [Module]@{
+        Enabled = $true
+        Name = 'Computer Environment Report'
+        RunIntervalMinutes = (60 * 24)
+        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Computer Environment Report'} | Select-Object -ExpandProperty MinutesTillNextRun
+        ScriptPath = "$ScriptRoot"
+    }
+
 )
