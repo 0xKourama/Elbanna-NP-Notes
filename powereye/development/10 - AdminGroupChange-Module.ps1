@@ -1,3 +1,5 @@
+$Log_path = ""
+
 $Admin_Security_Groups = @(
     'Server Operators'
     'Administrators'
@@ -6,22 +8,37 @@ $Admin_Security_Groups = @(
     'Schema Admins'
 )
 
-$GroupFolder_Path = ""
+Class SecurityGroup {
+    [string]$Name
+    [string]$Members
+}
 
-#region load stored group membership files
+if(Test-Path $Log_path){
+    $OldGroupData = Import-Csv $Log_path
+}
+
+$NewGroupData = @()
+
 $Admin_Security_Groups | ForEach-Object {
-    New-Variable -Name ($_ -replace ' ') -Value (Get-Content (Join-Path -Path $GroupFolder_Path -ChildPath "$($_ -replace ' ')-Members.txt"))
+    $NewGroupData += [SecurityGroup]@{
+        Name = $_
+        Members = (Get-ADGroupMember -Identity $_ | Where-Object {$_.ObjectClass -eq 'user'} | 
+                  Select-Object -ExpandProperty SamAccountName | Sort-Object) -join ';'
+    }
 }
-#end region
 
-#region get latest group membership data from AD
-$Admin_Group_Members = $Admin_Security_Groups | ForEach-Object {
-    Get-ADGroupMember -Identity $_ | Where-Object {$_.ObjectClass -eq 'user'} |
-    Select-Object -ExpandProperty SamAccountName | Sort-Object -Unique > "$($_ -replace ' ')-Members.txt"
+$ChangedGroups = @()
+
+if($OldGroupData){
+    0..($Admin_Security_Groups.Count - 1) | ForEach-Object {
+        $difference = Compare-Object -ReferenceObject $OldGroupData[$_] -DifferenceObject $NewGroupData[$_]
+        if($difference){
+            $ChangedGroups += $Admin_Security_Groups[$_]
+        }
+    }
 }
-#end region
 
-
+$NewGroupData | Export-Csv -NoTypeInformation GroupLog.csv
 
 Write-Host -ForegroundColor Cyan "[*] Module running at $(Get-Date)"
 
@@ -50,16 +67,15 @@ $header = @"
 <h3>Admin Group Changed</h3>
 "@
 
-<#
 $MailSettings = @{
     SMTPserver = '192.168.3.202'
     From       = 'AdminGroupChange@roaya.co'
     #To         = 'operation@roaya.co'
     To         = 'MGabr@roaya.co'
-    Subject    = 'PowerEye | Admin Group Change'
+    Subject    = 'Admin Group Change'
 }
 
-Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header "
-Write-Host -ForegroundColor Cyan '[*] Sleeping for 10 minutes'
-Start-Sleep -Seconds 600
-#>
+if($ChangedGroups){
+    $Body = $ChangedGroups | ConvertTo-Html -Fragment
+    Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $Body"    
+}
