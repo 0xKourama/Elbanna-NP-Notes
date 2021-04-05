@@ -52,7 +52,7 @@ $Modules = @(
     [Module]@{
         Enabled = $true
         Name = 'Cortex Endpoint Check'
-        RunIntervalMinutes = 10
+        RunIntervalMinutes = (60 * 12)
         MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Cortex Endpoint Check'} | Select-Object -ExpandProperty MinutesTillNextRun
         ScriptPath = "$ScriptRoot"
     }
