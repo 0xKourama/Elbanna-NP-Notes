@@ -1,36 +1,66 @@
+$MailSettings = @{
+    SmtpServer = '192.168.3.202'
+    From       = 'NetworkBandwidthReport@roaya.co'
+    To         = 'Operation@roaya.co'
+    #To         = 'mgabr@roaya.co'
+    Subject    = 'Network Bandwidth Report'
+}
+
+$Style = @"
+<style>
+th, td {
+    border: 2px solid black;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 100%;
+}
+h3{
+    color: white;
+    background-color: #0000CD;
+    padding: 3px;
+    text-align: Center;
+    border: 2px solid black;
+}
+</style>
+"@
+
+$Header1 = "<h3>Network Bandwidth Report</h3>"
+$header2 = "<h3>Network Bandwidth Statistics</h3>"
+
+$ProgressPreference = 'SilentlyContinue'
+$ErrorActionPreference = 'Inquire'
+
+ipconfig /flushdns | Out-Null
+
+class Node{
+    [String]$Name
+    [string]$Subnet
+}
+
+$Target_Nodes = @(
+    [Node]@{Name = 'EU1FE3110'     ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'EU1FE3111'     ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'EU1FE3112'     ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'EU1FE3113'     ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'EU1FE9111'     ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'EU1FE9222'     ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'EU1MB9901'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'EU1MB9902'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'EU1MB9903'     ; Subnet = '192.168.3.0/24'}
+    [Node]@{Name = 'FRANK-FEM-F01' ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'FRANK-FEM-F02' ; Subnet = '192.168.2.0/24'}
+    [Node]@{Name = 'FRANK-FEM-F03' ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'FRANK-FEM-F04' ; Subnet = '10.1.1.0/24'   }
+    [Node]@{Name = 'FRANK-MBM-D35' ; Subnet = '192.168.3.0/24'}
+)
+
 while($true){
 
-    $ProgressPreference = 'SilentlyContinue'
-    $ErrorActionPreference = 'Inquire'
-
-    ipconfig /flushdns | Out-Null
-
-    if($?){Write-Host -ForeGroundColor Green '[+] DNS Cache Cleared'}
-
-    class Node{
-        [String]$Name
-        [string]$Subnet
-    }
-
-    $Target_Nodes = @(
-        [Node]@{Name = 'EU1FE3110'     ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'EU1FE3111'     ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'EU1FE3112'     ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'EU1FE3113'     ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'EU1FE9111'     ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'EU1FE9222'     ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'EU1MB9901'     ; Subnet = '192.168.3.0/24'}
-        [Node]@{Name = 'EU1MB9902'     ; Subnet = '192.168.3.0/24'}
-        [Node]@{Name = 'EU1MB9903'     ; Subnet = '192.168.3.0/24'}
-        [Node]@{Name = 'FRANK-FEM-F01' ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'FRANK-FEM-F02' ; Subnet = '192.168.2.0/24'}
-        [Node]@{Name = 'FRANK-FEM-F03' ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'FRANK-FEM-F04' ; Subnet = '10.1.1.0/24'   }
-        [Node]@{Name = 'FRANK-MBM-D35' ; Subnet = '192.168.3.0/24'}
-    )
-
-    Write-Host  -ForegroundColor Cyan "[*] Testing PowerShell sessions with $($Target_Nodes.count) computers:"
-
+    $stopwatch =  [system.diagnostics.stopwatch]::StartNew()
+    
     $width = 3
 
     $Target_Nodes.name | ForEach-Object {
@@ -61,7 +91,7 @@ while($true){
         }
     }
 
-    $PSSessions | Remove-PSSession
+    Remove-PSSession -Session $PSSessions
 
     Write-Host -ForegroundColor Cyan "[*] $($Test_Segment_list.count) unique network segment(s) calculated"
 
@@ -87,9 +117,9 @@ while($true){
         #region verbose output
         Write-Host -NoNewline "$Segment/$total_segments".PadRight(7)
         Write-Host -NoNewline ' [ '
-        Write-Host -NoNewline -ForegroundColor Green $Server.PadRight(15)
-        Write-Host -NoNewline ' | '
         Write-Host -NoNewline -ForegroundColor Green $DestinationSubnet.PadRight(18)
+        Write-Host -NoNewline ' | '
+        Write-Host -NoNewline -ForegroundColor Green $Server.PadRight(15)
         Write-Host -NoNewline '] < [ '
         Write-Host -NoNewline -ForegroundColor $color "$result".PadRight(6)
         Write-Host -NoNewline ' MBps'
@@ -97,7 +127,7 @@ while($true){
         Write-Host -NoNewline -ForegroundColor Cyan $env:COMPUTERNAME.PadRight(15)
         Write-Host -NoNewline ' | '
         Write-Host -NoNewline -ForegroundColor Cyan $SourceSubnet.PadRight(18)
-        Write-Host ' ]'
+        Write-Host -NoNewline ' ] '
         Write-Output $result
         #endregion
     }
@@ -108,29 +138,48 @@ while($true){
 
     $Test_Segment_list = $Test_Segment_list | Sort-Object
 
-    $Index = 1
+    $Index = 0
 
     foreach($entry in $Test_Segment_list){
 
-        $Obj = @{} | Select-Object -Property Segment, Source, SourceSubnet, Destination, DestinationSubnet, AverageSpeedMBps, Error
+        $Obj = @{} | Select-Object -Property SourceSubnet, Source, AverageSpeed`(MBps`), Destination, DestinationSubnet, Error
 
-        $obj.Segment           = $Index
         $Obj.Source            = ($entry -split '<->')[0]
-        $Obj.Destination       = ($entry -split '<->')[1]
         $Obj.SourceSubnet      = $Target_Nodes | Where-Object {$_.Name -eq $Obj.Source}      | Select-Object -ExpandProperty Subnet
+
+        $Obj.Destination       = ($entry -split '<->')[1]
         $Obj.DestinationSubnet = $Target_Nodes | Where-Object {$_.Name -eq $Obj.Destination} | Select-Object -ExpandProperty Subnet
 
-        $Index += 1
+        $Index++
 
         try{
+            
+            $SegmentStopwatch =  [system.diagnostics.stopwatch]::StartNew()
 
             $Listener_Job = Invoke-Command -ComputerName $Obj.Source -ScriptBlock {C:\users\gabrurgent\iperf\iperf3.exe -s} -AsJob -ErrorAction Stop
 
-            $Obj.AverageSpeedMBps = Invoke-Command -ComputerName $Obj.Destination -ScriptBlock $Connector_Code -ErrorAction Stop -ArgumentList $Obj.Source,
+            $Obj.'AverageSpeed(MBps)' = Invoke-Command -ComputerName $Obj.Destination -ScriptBlock $Connector_Code -ErrorAction Stop -ArgumentList $Obj.Source,
                                                                                                                                                $Obj.SourceSubnet,
                                                                                                                                                $Obj.DestinationSubnet,
-                                                                                                                                               $Obj.Segment,
+                                                                                                                                               $Index,
                                                                                                                                                $Test_Segment_list.Count
+            $Segmentstopwatch.Stop()
+            
+            $ElapsedSeconds = [Math]::Round($SegmentStopwatch.Elapsed.TotalSeconds,2)
+
+            if($ElapsedSeconds -lt 8){
+                $TimeColor = 'Green'
+            }
+            elseif($ElapsedSeconds -lt 10){
+                $TimeColor = 'Yellow'
+            }
+            else{
+                $TimeColor = 'Red'
+            }
+
+            Write-Host -NoNewline "Time elapsed: "
+            Write-Host -NoNewline -ForegroundColor $TimeColor $ElapsedSeconds
+            Write-Host ' seconds'
 
             $Listener_Job | Stop-Job
             $Listener_Job | Remove-Job
@@ -142,56 +191,28 @@ while($true){
         $ResultArray += $Obj
     }
 
-    $measurements = $ResultArray | Measure-Object -Property AverageSpeedMBps -Average -Minimum -Maximum
+    $measurements = $ResultArray | Measure-Object -Property 'AverageSpeed(MBps)' -Average -Minimum -Maximum
 
-$Header = @"
-<style>
-th, td {
-    border: 2px solid black;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 100%;
-}
-h3{
-    color: white;
-    background-color: #0000CD;
-    padding: 3px;
-    text-align: Center;
-    border: 2px solid black;
-}
-</style>
-<h3>Results:</h3>
-"@
+    $ResultHTML = $ResultArray | Sort-Object -Property 'AverageSpeed(MBps)' -Descending | ConvertTo-Html -Fragment
 
-    $ResultHTML = $ResultArray | Sort-Object -Property AverageSpeedMBps -Descending | ConvertTo-Html -Fragment
+    $stopwatch.Stop()
+
+    Write-Host -ForegroundColor Cyan "[*] Total time elapsed: $($stopwatch.Elapsed.Hours) hours $($stopwatch.Elapsed.Minutes) minutes $($stopwatch.Elapsed.Seconds) seconds"
 
 $MeasurementsHTML = @"
-<h3>Statistics:</h3>
 <ul>
     <li><b>Minimum:</b> $([math]::Round($measurements.Minimum,2)) MBps</li>
     <li><b>Maximum:</b> $([math]::Round($measurements.Maximum,2)) MBps</li>
     <li><b>Average:</b> $([math]::Round($measurements.Average,2)) MBps</li>
 </ul>
 "@
-
-
-    $MailSettings = @{
-        SmtpServer = '192.168.3.202'
-        From       = 'PowerEye@roaya.co'
-        To         = 'Operation@roaya.co'
-        Subject    = 'PowerEye | Network Bandwidth Module'
-    }
-
     try{
-        Send-MailMessage @MailSettings -BodyAsHtml "$Header $ResultHTML $measurementsHTML" -ErrorAction Stop
+        Send-MailMessage @MailSettings -BodyAsHtml "$Style $header2 $measurementsHTML $Header1 $ResultHTML" -ErrorAction Stop
     }
     catch{
         Write-Host -ForegroundColor Yellow "[!] Failed to send report with SMTP Server 192.168.3.203"
     }
     [GC]::Collect()
-    Write-Host -ForegroundColor Cyan '[*] Sleeping for 20 minutes'
-    start-sleep -Seconds (20 * 60)
+    Write-Host -ForegroundColor Cyan '[*] Sleeping for 5 hours'
+    start-sleep -Seconds (5 * 60 * 60)
 }
