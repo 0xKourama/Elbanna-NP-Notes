@@ -1,6 +1,6 @@
 Write-Host -ForegroundColor Cyan '[*] Testing connectivity'
-#$Online = Get-ADComputer -Filter * | Select-Object -Property @{name = 'ComputerName'; Expression = {$_.name}} | 
-          #Test-Connection -Count 1 -AsJob | Receive-job -Wait | Where-Object {$_.statuscode -eq 0} | Select-Object -ExpandProperty Address
+$Online = Get-ADComputer -Filter * | Select-Object -Property @{name = 'ComputerName'; Expression = {$_.name}} | 
+          Test-Connection -Count 1 -AsJob | Receive-job -Wait | Where-Object {$_.statuscode -eq 0} | Select-Object -ExpandProperty Address
 Write-Host -ForegroundColor Cyan "[*] $($Online.Count) Online computers found"
 
 Write-Host -ForegroundColor Cyan '[*] Starting sessions with computers'
