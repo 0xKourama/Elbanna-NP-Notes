@@ -13,7 +13,8 @@ $AllStatus = @()
 $EXServers=(Get-ExchangeServer).Name | Sort
 
 Foreach ($Server in $EXServers){
-	$Online=if (Test-Connection $Server -Count 1 -EA SilentlyContinue) {$true} else {$false}
+
+	$Online = Test-Connection $Server -Count 1 -Quiet
 
 	If($Online -eq $false){
         $Status=New-Object -TypeName PSObject -Property @{Name=$Server; Online=$false}

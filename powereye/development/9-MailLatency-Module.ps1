@@ -39,9 +39,7 @@ h3{
 "@
 
 $Header1 = "<h3>Internal Mail Latency</h3>"
-$Header2 = "<h3>Internal mails exceeding $($LatencyThresholdSeconds/60) minutes delay</h3>"
 $Header3 = "<h3>External Mail Latency</h3>"
-$Header4 = "<h3>External mails exceeding $($LatencyThresholdSeconds/60) minutes delay</h3>"
 
 $Exchange_Servers = @(
     'frank-fem-f01.roaya.loc:8080'
@@ -112,8 +110,8 @@ while($true){
         $InternalData = $Data | Where-Object {$_.Directionality -eq "Originating"}
         $ExternalData = $Data | Where-Object {$_.Sender -match $ExternalSenderList}
 
-        $InternalMeasurements = $InternalData.MessageLatency | ForEach-Object {($_ -as [timespan]).TotalSeconds} | Measure-Object -Average -Maximum -Minimum
-        $ExternalMeasurements = $ExternalData.MessageLatency | ForEach-Object {($_ -as [timespan]).TotalSeconds} | Measure-Object -Average -Maximum -Minimum
+        $InternalMeasurements = $InternalData.MessageLatency | ForEach-Object {($_ -as [timespan]).TotalSeconds} | Measure-Object -Minimum -Maximum -Average
+        $ExternalMeasurements = $ExternalData.MessageLatency | ForEach-Object {($_ -as [timespan]).TotalSeconds} | Measure-Object -Minimum -Maximum -Average
 
         $InternalObject = [pscustomobject][ordered]@{
             Server              = $MailBox_Server
@@ -147,15 +145,15 @@ while($true){
     }
 
     $InternalResult1HTML = $InternalMailLatency | Where-Object {$_.'MinimumLatency(S)' -and $_.'MaximumLatency(S)'} | ConvertTo-Html -Fragment | Out-String
-    $InternalResult2HTML = $InternalMailsExceedingDelayThreshold | ConvertTo-Html -Fragment | Out-String
-    if(!$InternalMailsExceedingDelayThreshold){
-        $Header2 = $null
+    if($InternalMailsExceedingDelayThreshold){
+        $InternalResult2HTML = $InternalMailsExceedingDelayThreshold | ConvertTo-Html -Fragment | Out-String
+        $Header2 = "<h3>Internal mails exceeding $($LatencyThresholdSeconds/60) minutes delay</h3>"
     }
 
     $ExternalResult1HTML = $ExternalMailLatency | Where-Object {$_.'MinimumLatency(S)' -and $_.'MaximumLatency(S)'} | ConvertTo-Html -Fragment | Out-String
-    $ExternalResult2HTML = $ExternalMailsExceedingDelayThreshold | ConvertTo-Html -Fragment | Out-String
-    if(!$ExternalMailsExceedingDelayThreshold){
-        $Header4 = $null
+    if($ExternalMailsExceedingDelayThreshold){
+        $ExternalResult2HTML = $ExternalMailsExceedingDelayThreshold | ConvertTo-Html -Fragment | Out-String
+        $Header4 = "<h3>External mails exceeding $($LatencyThresholdSeconds/60) minutes delay</h3>"
     }
 
     if($ExternalMailsExceedingDelayThreshold -or $InternalMailsExceedingDelayThreshold){
