@@ -37,7 +37,12 @@ while($true){
         if(($Module.MinutesTillNextRun -eq 0) -or ($Module.RunOnDemand -eq $true)){
 
             Write-Host -ForegroundColor Cyan "[*] [$(Get-Date)] $($Module.Name) now running"
-            #Start-Process PowerShell.exe -ArgumentList $($Module.ScriptPath)
+
+            Start-Process -FilePath PowerShell.exe `
+                          -ArgumentList $Module.ScriptPath `
+                          -RedirectStandardOutput $Module.ScriptOutputLog `
+                          -RedirectStandardError $Module.ScriptErrorLog `
+                          -PassThru
 
             #reset its run interval
             $Module.MinutesTillNextRun = $Module.RunInterval.TotalMinutes
@@ -52,7 +57,8 @@ while($true){
     #endregion
 
     #standing by for 1 minute
-    Write-Host -ForegroundColor Cyan "[*] Standing by for 1 minute`n"
-    $Modules | Select-Object -Property Enabled, Name, RunInterval, MinutesTillNextRun, RunOnDemand | Sort-Object -Property MinutesTillNextRun |  Format-Table -Wrap
+    $Modules | Select-Object -Property Enabled, Name, RunInterval, MinutesTillNextRun, RunOnDemand |
+               Sort-Object -Property MinutesTillNextRun | Format-Table -Wrap
+    Write-Host -ForegroundColor Cyan '[*] Standing by for 1 minute'
     Start-Sleep -Seconds 60
 }
