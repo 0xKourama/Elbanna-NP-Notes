@@ -1,35 +1,5 @@
-$MailSettings = @{
-    SMTPserver = '192.168.3.202'
-    From       = 'ExchangeQueueWarning@Roaya.co'
-    #To         = 'Operation@Roaya.co'
-    To         = 'MGabr@roaya.co'
-    Subject    = 'Exchange Queue Warning'
-}
-
-#region HTML layout
-$Header = "<h3>Exchange Queue Warning</h3>"
-
-$Style = @"
-<style>
-th, td {
-    border: 2px solid black;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 100%;
-}
-h3{
-    color: white;
-    background-color: #FF0000;
-    padding: 3px;
-    text-align: Center;
-    border: 2px solid black;
-}
-</style>
-"@
-#endregion
+Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Message_Count_threshold = 25
 

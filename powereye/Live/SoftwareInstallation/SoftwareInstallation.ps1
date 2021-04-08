@@ -1,35 +1,5 @@
-﻿$MailSettings = @{
-    SMTPserver = '192.168.3.202'
-    From       = 'SoftwareInstallation@Roaya.co'
-    #To         = 'Operation@Roaya.co'
-    To         = 'MGabr@Roaya.co'
-    Subject    = 'Software Installation'
-}
-
-#region HTML layout
-$Header = "<h3>Software Installation</h3>"
-
-$Style = @"
-<style>
-th, td {
-    border: 2px solid black;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 100%;
-}
-h3{
-    color: white;
-    padding: 3px;
-    background-color: #ebc402;
-    text-align: Center;
-    border: 2px solid black;
-}
-</style>
-"@
-#endregion
+﻿Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Script = {
     #supress errors, only error is when there are no logs matching the criteria
@@ -48,7 +18,6 @@ $Script = {
         $Events = Get-WinEvent -FilterHashtable @{LogName = 'Application'; ID = $EventID; StartTime = Import-Clixml -Path $XML_Path} |
                   Select-Object -Property Message,TimeCreated
     }
-
     #update the tracker XML file
     Get-Date | Export-Clixml -Path $XML_Path
     #endregion
@@ -69,12 +38,10 @@ $Script = {
 #region test connectivity to all domain computers
 $Online = (Get-ADComputer -Filter * | Select-Object -Property @{name = 'ComputerName'; Expression = {$_.name}} | 
             Test-Connection -Count 1 -AsJob | Receive-job -Wait | Where-Object {$_.statuscode -eq 0}).Address
-#endregion
 
 #region invoke the script over the remote computers
 $Results = Invoke-Command -ComputerName $Online -ScriptBlock $Script -ErrorAction SilentlyContinue | 
-            Select-Object -Property * -ExcludeProperty PSComputerName, RunspaceId, PSShowComputerName
-#endregion
+           Select-Object -Property * -ExcludeProperty PSComputerName, RunspaceId, PSShowComputerName
 
 #send an email if results were found
 if($Results){

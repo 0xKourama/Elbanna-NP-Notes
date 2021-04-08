@@ -1,41 +1,5 @@
-$MailSettings = @{
-    SMTPserver = '192.168.3.202'
-    From       = 'ComputerEnvironmentReport@Roaya.co'
-    #To         = 'Operation@Roaya.co'
-    To         = 'MGabr@Roaya.co'
-    Subject    = 'Computer Environment Report'
-}
-
-#region HTML layout
-$header = "<h3>Computer Environment Report</h3>"
-
-$style = @"
-<style>
-    th, td {
-    border: 2px solid black;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 100%;
-}
-h3{
-    color: white;
-    background-color: #44188C;
-    padding: 3px;
-    text-align: Center;
-    border: 2px solid black;
-}
-h4{
-    color: white;
-    background-color: #18368C;
-    padding: 2px;
-    border: 2px solid black;
-}
-</style>
-"@
-#endregion
+Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 #region properties to be collected from both normal computers and domain controllers
 $ADProperties = @(

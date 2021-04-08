@@ -1,36 +1,5 @@
-$MailSettings = @{
-    SmtpServer = '192.168.3.202'
-    From       = 'NetworkBandwidthReport@Roaya.co'
-    #To         = 'Operation@Roaya.co'
-    To         = 'MGabr@Roaya.co'
-    Subject    = 'Network Bandwidth Report'
-}
-#region HTML layout
-$header1 = "<h3>Network Bandwidth Statistics</h3>"
-
-$Header2 = "<h3>Network Bandwidth Report</h3>"
-
-$Style = @"
-<style>
-th, td {
-    border: 2px solid black;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 100%;
-}
-h3{
-    color: white;
-    background-color: #0000CD;
-    padding: 3px;
-    text-align: Center;
-    border: 2px solid black;
-}
-</style>
-"@
-#endregion
+Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 #flushing DNS to make sure all host names are up-to-date
 ipconfig /flushdns | Out-Null

@@ -1,35 +1,5 @@
-$MailSettings = @{
-    SMTPserver = '192.168.3.202'
-    From       = 'CortexEndpointMissing@Roaya.co'
-    #To         = 'Operation@Roaya.co'
-    To         = 'MGabr@Roaya.co'
-    Subject    = 'Cortex Endpoint Missing'
-}
-
-#region HTML Layout
-$Header = "<h3>Cortex Endpoint Missing</h3>"
-
-$style = @"
-<style>
-th, td {
-    border: 2px solid black;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 100%;
-}
-h3{
-    color: white;
-    background-color: #FF0000;
-    padding: 3px;
-    text-align: Center;
-    border: 2px solid black;
-}
-</style>
-"@
-#endregion
+Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 #region testing connectivity for all domain computers
 $online = (Test-Connection -ComputerName (

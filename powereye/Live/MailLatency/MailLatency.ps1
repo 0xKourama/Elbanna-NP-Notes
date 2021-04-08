@@ -1,36 +1,5 @@
-$MailSettings = @{
-    SMTPserver = '192.168.3.202'
-    From       = 'MailLatency@Roaya.co'
-    #To         = 'operation@Roaya.co'
-    To         = 'MGabr@Roaya.co'
-    Subject    = 'Mail Latency'
-}
-
-#region HTML layoud
-$Header1 = "<h3>Internal Mail Latency</h3>"
-$Header3 = "<h3>External Mail Latency</h3>"
-
-$Style = @"
-<style>
-th, td {
-    border: 2px solid black;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 100%;
-}
-h3{
-    color: white;
-    padding: 3px;
-    background-color: #210b9e;
-    text-align: Center;
-    border: 2px solid black;
-}
-</style>
-"@
-#endregion
+Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Exchange_Servers = @(
     'frank-fem-f01.roaya.loc:8080'

@@ -1,36 +1,5 @@
-$MailSettings = @{
-    SMTPserver = '192.168.3.202'
-    From       = 'ServiceInstallation@Roaya.co'
-    #To         = 'Operation@Roaya.co'
-    To         = 'MGabr@Roaya.co'
-    Subject    = 'Service Installation'
-}
-
-#region HTML layout
-$Header = "<h3>Service Installation</h3>"
-
-$Style = @"
-
-<style>
-th, td {
-    border: 2px solid black;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-    width: 100%;
-}
-h3{
-    color: white;
-    padding: 3px;
-    background-color: #0596F4;
-    text-align: Center;
-    border: 2px solid black;
-}
-</style>
-"@
-#endregion
+Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Script = {
     #supress errors, only error is when there are no logs matching the criteria
