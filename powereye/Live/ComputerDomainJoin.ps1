@@ -1,12 +1,13 @@
 $MailSettings = @{
     SMTPserver = '192.168.3.202'
-    From       = 'SoftwareInstallation@Roaya.co'
+    From       = 'ComputerDomainJoin@Roaya.co'
     #To         = 'Operation@Roaya.co'
     To         = 'MGabr@Roaya.co'
-    Subject    = 'Software Installation'
+    Subject    = 'Computer Domain Join'
 }
 
-$Header = "<h3>Software Installation</h3>"
+#region HTML layout
+$Header = "<h3>Computer Domain Join</h3>"
 
 $Style = @"
 <style>
@@ -28,15 +29,15 @@ h3{
 }
 </style>
 "@
+#endregion
 
 $MinutesSinceCreationThreshold = 60
 
+#query active directory created property and find the ones created within the last 60 minutes
 $Result = Get-ADComputer -Filter * -Properties Created |
           Select-Object name,@{Name = 'MinutesSinceCreation';Expression = {(New-TimeSpan -Start $_.Created -End (get-date)).TotalMinutes}} |
           Where-Object {$_.MinutesSinceCreation -lt $MinutesSinceCreationThreshold}
 
-if($Result -eq $null){
+if($Result){
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Result | ConvertTo-Html -Fragment | Out-String)"
-}
-else{
 }

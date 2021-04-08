@@ -6,6 +6,9 @@
     Subject    = 'Software Installation'
 }
 
+#region HTML layout
+$Header = "<h3>Software Installation</h3>"
+
 $Style = @"
 <style>
 th, td {
@@ -26,34 +29,31 @@ h3{
 }
 </style>
 "@
-
-$Header = "<h3>Software Installation</h3>"
+#endregion
 
 $Script = {
-    
+    #supress errors, only error is when there are no logs matching the criteria
     $ErrorActionPreference = 'SilentlyContinue'
-        
-    $Event_properties = @(
-        'Message',
-        'TimeCreated'
-    )
 
     $EventID = 11707
     $XML_Path = "C:\Users\Public\Event_$EventID`_LastCheck.xml"
 
     $Results = @()
 
+    #region if the date of last query is found, we query events from that point forward, otherwise, we query all events
     if(!(Test-Path $XML_Path)){
-        $Events = Get-WinEvent -FilterHashtable @{LogName = 'Application'; ID = $EventID} |
-                  Select-Object -Property $Event_properties
+        $Events = Get-WinEvent -FilterHashtable @{LogName = 'Application'; ID = $EventID} | Select-Object -Property Message,TimeCreated
     }
     else{
         $Events = Get-WinEvent -FilterHashtable @{LogName = 'Application'; ID = $EventID; StartTime = Import-Clixml -Path $XML_Path} |
-                  Select-Object -Property $Event_properties    
+                  Select-Object -Property Message,TimeCreated
     }
 
+    #update the tracker XML file
     Get-Date | Export-Clixml -Path $XML_Path
+    #endregion
 
+    #region parse event message into an object
     $Events | ForEach-Object {
         $Results += [PSCustomObject][Ordered]@{
             ComputerName = $env:COMPUTERNAME
@@ -61,15 +61,22 @@ $Script = {
             Product      = ($_.Message | Select-String -Pattern "^Product: (.*) -- Installation completed successfully.$" -AllMatches).Matches.Groups[1].Value
         }
     }
+    #endregion
+
     Write-Output $Results
 }
 
+#region test connectivity to all domain computers
 $Online = (Get-ADComputer -Filter * | Select-Object -Property @{name = 'ComputerName'; Expression = {$_.name}} | 
             Test-Connection -Count 1 -AsJob | Receive-job -Wait | Where-Object {$_.statuscode -eq 0}).Address
+#endregion
 
+#region invoke the script over the remote computers
 $Results = Invoke-Command -ComputerName $Online -ScriptBlock $Script -ErrorAction SilentlyContinue | 
             Select-Object -Property * -ExcludeProperty PSComputerName, RunspaceId, PSShowComputerName
+#endregion
 
+#send an email if results were found
 if($Results){
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Results | ConvertTo-Html -Fragment | Out-String)"
 }

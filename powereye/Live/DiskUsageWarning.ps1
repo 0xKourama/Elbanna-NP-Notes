@@ -6,6 +6,7 @@ $MailSettings = @{
     Subject    = 'Disk Usage Warning'
 }
 
+#region HTML layout
 $Header = "<h3>Disk Usage Warning</h3>"
 
 $Style = @"
@@ -28,14 +29,18 @@ h3{
 }
 </style>
 "@
+#endregion
 
 $FreeDiskUsagePercentThreshold = 30
 
+#script to collect the needed data through WMI
 $script = {Get-WmiObject -Class Win32_LogicalDisk | Where-Object {$_.DriveType -eq 3} |  Select-Object -Property DeviceID, Size, FreeSpace}
 
+#testing connetivity for all domain computers
 $Online = (Get-ADComputer -Filter * | Select-Object -Property @{name = 'ComputerName'; Expression = {$_.name}} | 
           Test-Connection -Count 1 -AsJob | Receive-job -Wait | Where-Object {$_.statuscode -eq 0}).Address
 
+#running the script and processing the results
 $Result = Invoke-Command -ComputerName $Online -ScriptBlock $script -ErrorAction SilentlyContinue |
           Select-Object -Property @{name='ComputerName'        ;expression={$_.PSComputerName}},
                                   @{name='DriveLetter'         ;expression={$_.DeviceID}},

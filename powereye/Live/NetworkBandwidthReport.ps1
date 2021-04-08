@@ -1,12 +1,13 @@
 $MailSettings = @{
     SmtpServer = '192.168.3.202'
-    From       = 'NetworkBandwidthReport@roaya.co'
-    #To         = 'Operation@roaya.co'
-    To         = 'mgabr@roaya.co'
+    From       = 'NetworkBandwidthReport@Roaya.co'
+    #To         = 'Operation@Roaya.co'
+    To         = 'MGabr@Roaya.co'
     Subject    = 'Network Bandwidth Report'
 }
-
+#region HTML layout
 $header1 = "<h3>Network Bandwidth Statistics</h3>"
+
 $Header2 = "<h3>Network Bandwidth Report</h3>"
 
 $Style = @"
@@ -29,9 +30,12 @@ h3{
 }
 </style>
 "@
+#endregion
 
+#flushing DNS to make sure all host names are up-to-date
 ipconfig /flushdns | Out-Null
 
+#nodes list
 $Target_Nodes = @(
     [PSCustomObject][Ordered]@{Name = 'EU1FE3110'     ; Subnet = '10.1.1.0/24'   }
     [PSCustomObject][Ordered]@{Name = 'EU1FE3111'     ; Subnet = '10.1.1.0/24'   }
@@ -51,12 +55,10 @@ $Target_Nodes = @(
 
 $stopwatch = [system.diagnostics.stopwatch]::StartNew()
 
+#region testing for session availability and generating segment list
 $PSSessions = New-PSSession -ComputerName $Target_Nodes.Name -ErrorAction SilentlyContinue
 
 $Test_Segment_list = @()
-
-Write-Host -ForegroundColor Cyan "[*] Populating test segment list for $($PSSessions.Count) computers"
-
 foreach($Source in $PSSessions.ComputerName){
     foreach($Destination in $PSSessions.ComputerName){
         if($Source -ne $Destination -and `
@@ -69,7 +71,9 @@ foreach($Source in $PSSessions.ComputerName){
 }
 
 Remove-PSSession -Session $PSSessions
+#endregion
 
+#region code to run on destination node
 $Connector_Code = {
     $Server            = $args[0]
     $DestinationSubnet = $args[1]
@@ -77,19 +81,24 @@ $Connector_Code = {
     $Segment           = $args[3]
     $total_segments    = $args[4]
 
-    [single]$result = (c:\users\gabrurgent\iperf\iperf3.exe -c $Server -t 5 -R |
+    #region testing bandwidth for 5 seconds and calculating the average speed
+    [single]$result = (c:\users\gabrurgent\iperf\iperf3.exe -c $Server -t 5 |
                       Select-Object -Skip 3 -First 5 |
                       Select-String -Pattern '(\d{1,3}.\d) MBytes' -AllMatches).matches.groups |
                       Where-Object {$_.name -eq 1} | Select-Object -ExpandProperty value |
                       Measure-Object -Average | Select-Object -ExpandProperty average
 
+    #round the result to 2 decimal places
     $result = [math]::Round($result,2)
+    #endregion
 
+
+    #region verbose output
+    #color the output based on link speed
     if    ($result -lt 100){$color = 'Red'   }
     elseif($result -lt 300){$color = 'Yellow'}
     else                   {$color = 'Green' }
 
-    #region verbose output
     Write-Host -NoNewline "$Segment/$total_segments".PadRight(7)
     Write-Host -NoNewline ' [ '
     Write-Host -NoNewline -ForegroundColor Green $DestinationSubnet.PadRight(18)
@@ -106,13 +115,13 @@ $Connector_Code = {
     Write-Output $result
     #endregion
 }
-
-Write-Host -ForeGroundColor Cyan "[*] Starting bandwidth tests (5 seconds per network segment)"
+#endregion
 
 $ResultArray = @()
-$Test_Segment_list = $Test_Segment_list | Sort-Object
+
 $Index = 0
 
+#properties per measurement object
 $ObjectProperties = @(
     'SourceSubnet'
     'Source'
@@ -122,6 +131,7 @@ $ObjectProperties = @(
     'Error'
 )
 
+#region loop over every segment and test connectivity
 foreach($entry in $Test_Segment_list){
 
     $Obj = @{} | Select-Object -Property $ObjectProperties
@@ -133,11 +143,17 @@ foreach($entry in $Test_Segment_list){
     $Index++
 
     try{
+        #counting time elapsed for each measurement
         $SegmentStopwatch =  [system.diagnostics.stopwatch]::StartNew()
+
+        #region starting listener on source machine
         $Listener_Job = Invoke-Command -ComputerName $Obj.Source `
                                        -ScriptBlock {C:\users\gabrurgent\iperf\iperf3.exe -s} `
                                        -AsJob `
                                        -ErrorAction Stop
+        #endregion
+
+        #region running the code on the destination machine
         $PassedArguments = @(
             $Obj.Source
             $Obj.SourceSubnet
@@ -149,8 +165,12 @@ foreach($entry in $Test_Segment_list){
                                                    -ScriptBlock $Connector_Code   `
                                                    -ErrorAction Stop              `
                                                    -ArgumentList $PassedArguments
+        #endregion
+        
+        #region stopping the timer and displaying time elapsed for each measurement
         $Segmentstopwatch.Stop()
         $ElapsedSeconds = [Math]::Round($SegmentStopwatch.Elapsed.TotalSeconds,2)
+        
         if    ($ElapsedSeconds -lt 8 ){$TimeColor = 'Green' }
         elseif($ElapsedSeconds -lt 10){$TimeColor = 'Yellow'}
         else                          {$TimeColor = 'Red'   }
@@ -158,7 +178,9 @@ foreach($entry in $Test_Segment_list){
         Write-Host -NoNewline "Time elapsed: "
         Write-Host -NoNewline -ForegroundColor $TimeColor $ElapsedSeconds
         Write-Host ' seconds'
+        #endregion
 
+        #stopping the server listener
         $Listener_Job | Stop-Job
         $Listener_Job | Remove-Job
     }
@@ -167,13 +189,13 @@ foreach($entry in $Test_Segment_list){
     }
     $ResultArray += $Obj
 }
-
-$Measurements = $ResultArray | Measure-Object -Property 'AverageSpeed(MBps)' -Minimum -Maximum -Average
-
-$ResultHTML = $ResultArray | Sort-Object -Property 'AverageSpeed(MBps)' -Descending | ConvertTo-Html -Fragment | Out-String
+#endregion
 
 $stopwatch.Stop()
 
+#region HTML measurements
+$Measurements = $ResultArray | Measure-Object -Property 'AverageSpeed(MBps)' -Minimum -Maximum -Average
+$ResultHTML = $ResultArray | Sort-Object -Property 'AverageSpeed(MBps)' -Descending | ConvertTo-Html -Fragment | Out-String
 $MeasurementsHTML = @"
 <ul>
     <li><b>Minimum:</b> $([math]::Round($Measurements.Minimum,2)) MBps</li>
@@ -181,5 +203,6 @@ $MeasurementsHTML = @"
     <li><b>Average:</b> $([math]::Round($Measurements.Average,2)) MBps</li>
 </ul>
 "@
+#endregion
 
 Send-MailMessage @MailSettings -BodyAsHtml "$Style $header1 $measurementsHTML $Header2 $ResultHTML"

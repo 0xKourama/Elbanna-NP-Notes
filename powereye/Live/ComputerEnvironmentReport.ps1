@@ -6,6 +6,9 @@ $MailSettings = @{
     Subject    = 'Computer Environment Report'
 }
 
+#region HTML layout
+$header = "<h3>Computer Environment Report</h3>"
+
 $style = @"
 <style>
     th, td {
@@ -32,9 +35,9 @@ h4{
 }
 </style>
 "@
+#endregion
 
-$header = "<h3>Computer Environment Report</h3>"
-
+#region properties to be collected from both normal computers and domain controllers
 $ADProperties = @(
     'Name'
     'CanonicalName'
@@ -51,9 +54,12 @@ $DCProperties = @(
     'isGlobalCatalog'
     'OperatingSystem'
 )
+#endregion
 
+#getting the computers in the 'old servers' OU to be excluded from report
 $OldServers = (Get-ADComputer -Filter * -SearchBase 'OU=OldServers,DC=Roaya,DC=loc').Name
 
+#fetch all AD computers with the needed properties
 $ADComputers = Get-ADComputer -Filter * -Properties $ADProperties | Where-Object {$OldServers -notcontains $_.name} |
                 Select-Object -Property $ADProperties
 
@@ -208,6 +214,7 @@ $session_inactive_summary = $session_summary | Where-Object {$_.Status -eq 'INAC
 
 Remove-PSSession $PSSessions
 
+#region HTML summary data
 $body = @"
 <h4>Connectivity Summary</h4>
 $($Connectivity_Summary              | ConvertTo-Html -Fragment)
@@ -230,5 +237,6 @@ $($session_RDP_summary               | ConvertTo-Html -Fragment)
 <h4>Inactive Sessions</h4>
 $($session_inactive_summary          | ConvertTo-Html -Fragment)
 "@
+#endregion
 
 Send-MailMessage @MailSettings -BodyAsHtml "$style $header $body"

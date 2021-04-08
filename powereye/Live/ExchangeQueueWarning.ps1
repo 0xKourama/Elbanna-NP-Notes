@@ -1,11 +1,12 @@
 $MailSettings = @{
     SMTPserver = '192.168.3.202'
     From       = 'ExchangeQueueWarning@Roaya.co'
-    To         = 'Operation@Roaya.co'
-    #To         = 'MGabr@roaya.co'
+    #To         = 'Operation@Roaya.co'
+    To         = 'MGabr@roaya.co'
     Subject    = 'Exchange Queue Warning'
 }
 
+#region HTML layout
 $Header = "<h3>Exchange Queue Warning</h3>"
 
 $Style = @"
@@ -28,6 +29,7 @@ h3{
 }
 </style>
 "@
+#endregion
 
 $Message_Count_threshold = 25
 
@@ -44,6 +46,7 @@ $password = '97$p$*J5f7$#3$0DnA'
 [SecureString]$secStringPassword = ConvertTo-SecureString $password -AsPlainText -Force
 [PSCredential]$UserCredential    = New-Object System.Management.Automation.PSCredential ($username, $secStringPassword)
 
+#region test session
 $present_session = Get-PSSession
 
 if(!$present_session -or ($present_session.Availability -ne 'Available') -or ($present_session.State -ne 'Opened')){
@@ -62,7 +65,9 @@ if(!$present_session -or ($present_session.Availability -ne 'Available') -or ($p
         }
     }
 }
+#endregion
 
+#properties for queue
 $Required_properties = @(
     'Identity'
     'Status'
@@ -72,6 +77,7 @@ $Required_properties = @(
     'LastError'
 )
 
+#query
 $Result = Get-MailboxServer | ForEach-Object {Get-Queue -Server $_.name | Select-Object -Property $Required_properties} | 
           Where-Object {
                     $_.MessageCount -gt $Message_Count_threshold    -and `
@@ -81,7 +87,4 @@ $Result = Get-MailboxServer | ForEach-Object {Get-Queue -Server $_.name | Select
 
 if($Result){
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Result | ConvertTo-Html | Out-String)"
-}
-else{
-    
 }

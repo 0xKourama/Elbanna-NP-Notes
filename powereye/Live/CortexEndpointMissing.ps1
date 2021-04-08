@@ -6,6 +6,7 @@ $MailSettings = @{
     Subject    = 'Cortex Endpoint Missing'
 }
 
+#region HTML Layout
 $Header = "<h3>Cortex Endpoint Missing</h3>"
 
 $style = @"
@@ -28,12 +29,16 @@ h3{
 }
 </style>
 "@
+#endregion
 
-$online = Test-Connection -ComputerName (
+#region testing connectivity for all domain computers
+$online = (Test-Connection -ComputerName (
           Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address} |
           Select-Object -ExpandProperty Name
-) -Count 1 -AsJob | Receive-Job -Wait | Where-Object {$_.statuscode -eq 0} | Select-Object -ExpandProperty Address
+) -Count 1 -AsJob | Receive-Job -Wait | Where-Object {$_.statuscode -eq 0}).Address
+#endregion
 
+#script to test if cortex is installed in WMI
 $script = {
     [PSCustomObject][Ordered]@{
         ComputerName    = $env:COMPUTERNAME
@@ -41,13 +46,11 @@ $script = {
     }
 }
 
+#invoking the script to run on all online remote domain computers
 $Result = Invoke-Command -ComputerName $online -ErrorAction SilentlyContinue -ScriptBlock $script |
           Where-Object {$_.CortexInstalled -eq $false} | 
           Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceId
 
 if($Result){
     Send-MailMessage @MailSettings -BodyAsHTML "$style $Header $($Result | ConvertTo-Html -Fragment | Out-String)"
-}
-else{
-    
 }
