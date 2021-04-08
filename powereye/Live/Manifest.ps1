@@ -2,6 +2,7 @@ Class Module {
     [Bool]$Enabled
     [String]$Name
     [TimeSpan]$RunInterval
+    [Int]$TimeoutDurationSeconds
     [Int]$MinutesTillNextRun
     [String]$ScriptDirectory
     [String]$ScriptPath
@@ -90,7 +91,8 @@ $Modules | ForEach-Object {
     $_.ScriptDirectory = Join-Path $ScriptRoot -ChildPath ($_.Name -replace ' ')
 }
 $Modules | ForEach-Object {
-    $_.ScriptPath      = Join-Path $_.ScriptDirectory -ChildPath "$($_.Name -replace ' ').ps1"
-    $_.ScriptOutputLog = Join-Path $_.ScriptDirectory -ChildPath "OutputLog.txt"
-    $_.ScriptErrorLog  = Join-Path $_.ScriptDirectory -ChildPath "ErrorLog.txt"
+    $_.ScriptPath             = Join-Path $_.ScriptDirectory -ChildPath "$($_.Name -replace ' ').ps1"
+    $_.ScriptOutputLog        = Join-Path $_.ScriptDirectory -ChildPath "OutputLog.txt"
+    $_.ScriptErrorLog         = Join-Path $_.ScriptDirectory -ChildPath "ErrorLog.txt"
+    $_.TimeoutDurationSeconds = $_.RunInterval.TotalSeconds
 }

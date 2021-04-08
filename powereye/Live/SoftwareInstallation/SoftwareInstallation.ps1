@@ -1,4 +1,6 @@
-﻿Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+﻿Param([int]$Timeout)
+
+Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Script = {

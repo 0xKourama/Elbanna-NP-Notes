@@ -1,6 +1,6 @@
 #region set paths for working directory and manifest file
 $ScriptRoot = 'C:\Users\Zen\powershell\powereye\live'
-$Manifest_path = "$ScriptRoot\Manifest.txt"
+$Manifest_path = "$ScriptRoot\Manifest.ps1"
 #end region
 
 #load configuration from manifest
@@ -38,12 +38,12 @@ while($true){
 
             Write-Host -ForegroundColor Cyan "[*] [$(Get-Date)] $($Module.Name) now running"
 
-            Start-Process -FilePath PowerShell.exe `
-                          -ArgumentList $Module.ScriptPath `
-                          -WorkingDirectory $Module.ScriptDirectory `
+            Start-Process -FilePath               PowerShell.exe          `
+                          -ArgumentList           "$($Module.ScriptPath) -TimeOut $($Module.TimeOutDurationSeconds)"      `
+                          -WorkingDirectory       $Module.ScriptDirectory `
                           -RedirectStandardOutput $Module.ScriptOutputLog `
-                          -RedirectStandardError $Module.ScriptErrorLog `
-                          -WindowStyle Hidden
+                          -RedirectStandardError  $Module.ScriptErrorLog  `
+                          -WindowStyle            Hidden
 
             #reset its run interval
             $Module.MinutesTillNextRun = $Module.RunInterval.TotalMinutes
