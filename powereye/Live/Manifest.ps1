@@ -1,69 +1,96 @@
-$ScriptRoot = 'C:\Users\Zen\PowerShell\powereye\'
-
 Class Module {
-    [bool]$Enabled
-    [string]$Name
-    [int]$RunIntervalMinutes
-    [int]$MinutesTillNextRun
-    [string]$ScriptPath
+    [Bool]$Enabled
+    [String]$Name
+    [TimeSpan]$RunInterval
+    [Int]$MinutesTillNextRun
+    [String]$ScriptPath
+    [Bool]$RunOnDemand = $false
 }
 
-$State = Import-Clixml "$ScriptRoot\state.xml"
-#
 $Modules = @(
-    
     #1
     [Module]@{
         Enabled = $true
-        Name = 'Exchange Queue'
-        RunIntervalMinutes = 10
-        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Exchange Queue'} | Select-Object -ExpandProperty MinutesTillNextRun
-        ScriptPath = "$ScriptRoot"
+        Name = 'Admin Group Change'
+        RunInterval = New-TimeSpan -Minutes 10
+        ScriptPath = "$ScriptRoot\AdminGroupChange.ps1"
     }
-
     #2
     [Module]@{
         Enabled = $true
-        Name = 'Mail Latency'
-        RunIntervalMinutes = 10
-        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Mail Latency'} | Select-Object -ExpandProperty MinutesTillNextRun
-        ScriptPath = "$ScriptRoot"
+        Name = 'Admin Password Change'
+        RunInterval = New-TimeSpan -Minutes 10
+        ScriptPath = "$ScriptRoot\AdminPasswordChange.ps1"
     }
-
     #3
     [Module]@{
         Enabled = $true
-        Name = 'Network Bandwidth'
-        RunIntervalMinutes = 60
-        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Network Bandwidth'} | Select-Object -ExpandProperty MinutesTillNextRun
-        ScriptPath = "$ScriptRoot"
+        Name = 'Computer Domain Join'
+        RunInterval = New-TimeSpan -Hours 1
+        ScriptPath = "$ScriptRoot\ComputerDomainJoin.ps1"
     }
-
     #4
     [Module]@{
         Enabled = $true
-        Name = 'Administrator Monitor'
-        RunIntervalMinutes = 10
-        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Administrator Monitor'} | Select-Object -ExpandProperty MinutesTillNextRun
-        ScriptPath = "$ScriptRoot"
+        Name = 'Computer Environment Report'
+        RunInterval = New-TimeSpan -Hours 24
+        ScriptPath = "$ScriptRoot\ComputerEnvironmentReport.ps1"
     }
-
     #5
     [Module]@{
         Enabled = $true
-        Name = 'Cortex Endpoint Check'
-        RunIntervalMinutes = (60 * 12)
-        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Cortex Endpoint Check'} | Select-Object -ExpandProperty MinutesTillNextRun
-        ScriptPath = "$ScriptRoot"
+        Name = 'Cortex Endpoint Missing'
+        RunInterval = New-TimeSpan -Hours 12
+        ScriptPath = "$ScriptRoot\CortexEndpointMissing.ps1"
     }
-
     #6
     [Module]@{
         Enabled = $true
-        Name = 'Computer Environment Report'
-        RunIntervalMinutes = (60 * 24)
-        MinutesTillNextRun = $State | Where-Object {$_.Name -eq 'Computer Environment Report'} | Select-Object -ExpandProperty MinutesTillNextRun
-        ScriptPath = "$ScriptRoot"
+        Name = 'Disk Usage Warning'
+        RunInterval = New-TimeSpan -Hours 6
+        ScriptPath = "$ScriptRoot\DiskUsageWarning.ps1"
     }
-
+    #7
+    [Module]@{
+        Enabled = $true
+        Name = 'Exchange Queue Warning'
+        RunInterval = New-TimeSpan -Minutes 10
+        ScriptPath = "$ScriptRoot\ExchangeQueueWarning.ps1"
+    }
+    #8
+    [Module]@{
+        Enabled = $true
+        Name = 'Mail Latency'
+        RunInterval = New-TimeSpan -Minutes 10
+        ScriptPath = "$ScriptRoot\MailLatency.ps1"
+    }
+    #9
+    [Module]@{
+        Enabled = $true
+        Name = 'Network Bandwidth Report'
+        RunInterval = New-TimeSpan -Hours 6
+        ScriptPath = "$ScriptRoot\NetworkBandwidthReport.ps1"
+    }
+    #10
+    [Module]@{
+        Enabled = $true
+        Name = 'Service Installation'
+        RunInterval = New-TimeSpan -Minutes 10
+        ScriptPath = "$ScriptRoot\ServiceInstallation.ps1"
+    }
+    #11
+    [Module]@{
+        Enabled = $true
+        Name = 'Software Installation'
+        RunInterval = New-TimeSpan -Minutes 10
+        ScriptPath = "$ScriptRoot\SoftwareInstallation.ps1"
+    }
 )
+if(!$Runtime_Data){
+    $Modules | ForEach-Object {$_.MinutesTillNextRun = $_.RunInterval.TotalMinutes}
+}
+else{
+    foreach ($Module in $Modules){
+        $Module.MinutesTillNextRun = ($Runtime_Data | Where-Object {$_.Name -eq $Module.Name}).MinutesTillNextRun
+    }
+}
