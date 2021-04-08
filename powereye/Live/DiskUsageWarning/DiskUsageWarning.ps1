@@ -8,9 +8,10 @@ $FreeDiskUsagePercentThreshold = 30
 #script to collect the needed data through WMI
 $script = {Get-WmiObject -Class Win32_LogicalDisk | Where-Object {$_.DriveType -eq 3} |  Select-Object -Property DeviceID, Size, FreeSpace}
 
+Import-Module '..\UtilityFunctions.ps1'
+
 #testing connetivity for all domain computers
-$Online = (Get-ADComputer -Filter * | Select-Object -Property @{name = 'ComputerName'; Expression = {$_.name}} | 
-          Test-Connection -Count 1 -AsJob | Receive-job -Wait | Where-Object {$_.statuscode -eq 0}).Address
+$Online = (Get-ADComputer -Filter *).Name | Return-OnlineComputers
 
 #running the script and processing the results
 $Result = Invoke-Command -ComputerName $Online -ScriptBlock $script -ErrorAction SilentlyContinue |

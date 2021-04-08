@@ -18,6 +18,10 @@ $script = {
     }
 }
 
+Import-Module '..\UtilityFunctions.ps1'
+
+$online = (Get-ADComputer -Filter *).Name | Return-OnlineComputers
+
 #invoking the script to run on all online remote domain computers
 $Result = Invoke-Command -ComputerName $online -ErrorAction SilentlyContinue -ScriptBlock $script |
           Where-Object {$_.CortexInstalled -eq $false} | 

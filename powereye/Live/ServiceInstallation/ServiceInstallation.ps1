@@ -40,9 +40,10 @@ $Script = {
     Write-Output $Results
 }
 
+Import-Module '..\UtilityFunctions.ps1'
+
 #region test connectivity to all domain computers
-$Online = (Get-ADComputer -Filter * | Select-Object -Property @{name = 'ComputerName'; Expression = {$_.name}} | 
-          Test-Connection -Count 1 -AsJob | Receive-job -Wait | Where-Object {$_.statuscode -eq 0}).Address
+$Online = (Get-ADComputer -Filter *).Name | Return-OnlineComputers
 #endregion
 
 #region invoke the script over the remote computers
