@@ -60,7 +60,7 @@ $Script = {
 Import-Module '..\UtilityFunctions.ps1'
 
 #testing connectivity for all domain computers
-$Online = (Get-ADDomainController -Filter *).Name | Return-OnlineComputers
+$Online = Return-OnlineComputers -ComputerNames (Get-ADDomainController -Filter *).Name
 
 #invoke the script over the remote computers
 $Result = Invoke-Command -ComputerName $Online -ScriptBlock $Script | Where-Object {$Admin_Group_Members -contains $_.Target} |

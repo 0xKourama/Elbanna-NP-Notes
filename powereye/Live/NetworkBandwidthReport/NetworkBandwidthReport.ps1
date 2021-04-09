@@ -29,7 +29,7 @@ $stopwatch = [system.diagnostics.stopwatch]::StartNew()
 #region testing for session availability and generating segment list
 Import-Module '..\UtilityFunctions.ps1'
 
-$PSSessions = New-PSSession -ComputerName ($Target_Nodes.Name | Return-OnlineComputers) -ErrorAction SilentlyContinue
+$PSSessions = New-PSSession -ComputerName (Return-OnlineComputers -ComputerNames $Target_Nodes.Name) -ErrorAction SilentlyContinue
 
 $Test_Segment_list = @()
 foreach($Source in $PSSessions.ComputerName){

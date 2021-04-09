@@ -20,7 +20,7 @@ $script = {
 
 Import-Module '..\UtilityFunctions.ps1'
 
-$online = (Get-ADComputer -Filter *).Name | Return-OnlineComputers
+$online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address}).Name
 
 #invoking the script to run on all online remote domain computers
 $Result = Invoke-Command -ComputerName $online -ErrorAction SilentlyContinue -ScriptBlock $script |

@@ -43,7 +43,7 @@ $Script = {
 Import-Module '..\UtilityFunctions.ps1'
 
 #region test connectivity to all domain computers
-$Online = (Get-ADComputer -Filter *).Name | Return-OnlineComputers
+$Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address}).Name
 #endregion
 
 #region invoke the script over the remote computers

@@ -1,0 +1,2 @@
+[+] Session established with frank-fem-f01.roaya.loc:8080
+04/09/2021 19:11:35 [*] Mail latency threshold not exceeded.

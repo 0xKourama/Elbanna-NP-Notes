@@ -11,7 +11,7 @@ $script = {Get-WmiObject -Class Win32_LogicalDisk | Where-Object {$_.DriveType -
 Import-Module '..\UtilityFunctions.ps1'
 
 #testing connetivity for all domain computers
-$Online = (Get-ADComputer -Filter *).Name | Return-OnlineComputers
+$Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address}).Name
 
 #running the script and processing the results
 $Result = Invoke-Command -ComputerName $Online -ScriptBlock $script -ErrorAction SilentlyContinue |

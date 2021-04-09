@@ -1,7 +1,7 @@
 $MailSettings = @{
     SmtpServer = '192.168.3.202'
     From       = 'NetworkBandwidthReport@Roaya.co'
-   #To         = 'Operation@Roaya.co'
-    To         = 'MGabr@Roaya.co'
+    To         = 'Operation@Roaya.co'
+   #To         = 'MGabr@Roaya.co'
     Subject    = 'Network Bandwidth Report'
 }

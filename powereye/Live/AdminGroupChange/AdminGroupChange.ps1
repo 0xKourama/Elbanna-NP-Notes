@@ -12,7 +12,7 @@ $Admin_Security_Groups = @(
 )
 
 #location for the file to track membership data
-$Admin_Group_Tracker_Path = '.\test.csv'
+$Admin_Group_Tracker_Path = '.\GroupData.csv'
 
 $Old_Group_Data = Import-Csv $Admin_Group_Tracker_Path
 

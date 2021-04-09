@@ -33,8 +33,10 @@ $DomainControllers = Get-ADDomainController -Filter * | Select-Object -Property 
 
 #region connectivity summary
 $Connectivity_Summary = @()
-$Online = Test-Connection -ComputerName ($ADComputers | Where-Object {$_.IPV4Address}).Name -Count 1 -AsJob |
-          Receive-Job -Wait | Where-Object {$_.StatusCode -eq 0} | Select-Object -ExpandProperty Address
+
+Import-Module '..\UtilityFunctions.ps1'
+
+$Online = Return-OnlineComputers -ComputerNames ($ADComputers | Where-Object {$_.IPV4Address}).Name
 $NoIPV4Assigned = $ADComputers | Where-Object {!$_.IPV4Address} | Select-Object -ExpandProperty Name
 $Offline = $ADComputers.Name | Where-Object {$Online -notcontains $_}
 
