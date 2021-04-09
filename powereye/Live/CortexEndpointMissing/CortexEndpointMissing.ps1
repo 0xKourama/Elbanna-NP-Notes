@@ -28,5 +28,10 @@ $Result = Invoke-Command -ComputerName $online -ErrorAction SilentlyContinue -Sc
           Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceId
 
 if($Result){
+    Write-Output "$(Get-Date) [!] Cortex endpoint missing on some hosts. Sending mail."
+    Write-Output $Result
     Send-MailMessage @MailSettings -BodyAsHTML "$style $Header $($Result | ConvertTo-Html -Fragment | Out-String)"
+}
+else{
+    Write-Output "$(Get-Date) [*] Cortex endpoint found on all contacted hosts."
 }

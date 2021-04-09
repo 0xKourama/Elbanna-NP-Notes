@@ -11,5 +11,10 @@ $Result = Get-ADComputer -Filter * -Properties Created |
           Where-Object {$_.MinutesSinceCreation -lt $MinutesSinceCreationThreshold}
 
 if($Result){
+    Write-Output "$(Get-Date) [!] Computer domain join detected. Sending mail"
+    Write-Output $Result
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Result | ConvertTo-Html -Fragment | Out-String)"
+}
+else{
+    Write-Output "$(Get-Date) [*] No computer domain joins detected."
 }

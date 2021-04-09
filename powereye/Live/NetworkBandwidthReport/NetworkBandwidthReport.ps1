@@ -177,5 +177,7 @@ $MeasurementsHTML = @"
 </ul>
 "@
 #endregion
+Write-Output $Measurements
+Write-Output $ResultArray
 
 Send-MailMessage @MailSettings -BodyAsHtml "$Style $header1 $measurementsHTML $Header2 $ResultHTML"

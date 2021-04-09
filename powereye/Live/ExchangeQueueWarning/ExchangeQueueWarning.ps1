@@ -58,5 +58,10 @@ $Result = Get-MailboxServer | ForEach-Object {Get-Queue -Server $_.name | Select
           } | Sort-Object -Property MessageCount -Descending
 
 if($Result){
+    Write-Output "$(Get-Date) [!] Exchange queue threshold exceeded. Sending mail."
+    Write-Output $Result
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Result | ConvertTo-Html | Out-String)"
+}
+else{
+    Write-Output "$(Get-Date) [*] Exchange queue threshold not exceeded."
 }

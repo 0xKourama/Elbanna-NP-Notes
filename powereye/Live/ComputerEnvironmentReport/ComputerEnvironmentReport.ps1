@@ -205,4 +205,7 @@ $($session_inactive_summary          | ConvertTo-Html -Fragment)
 "@
 #endregion
 
+Write-Output "$(Get-Date) [*] Sending mail"
+Write-Output $Connectivity_Summary, $OS_Summary, $LastLogonDate_Summary, $Exchange_Group_Membership_summary, $DomainController_Summary, $uptime_summary, $session_CONSOLE_summmary, $session_RDP_summary, $session_inactive_summary
+
 Send-MailMessage @MailSettings -BodyAsHtml "$style $header $body"

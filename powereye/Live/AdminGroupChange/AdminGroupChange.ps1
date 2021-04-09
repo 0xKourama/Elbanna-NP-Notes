@@ -51,5 +51,11 @@ if($New_Hash -ne $Old_Hash){
             }
         }
     }
+    Write-Output "$(Get-Date) [!] change detected. Sending mail."
+    Write-Output $Difference_Array
+
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Difference_Array | ConvertTo-Html -Fragment | Out-String)"
+}
+else{
+    Write-Output "$(Get-Date) [*] No change detected."
 }

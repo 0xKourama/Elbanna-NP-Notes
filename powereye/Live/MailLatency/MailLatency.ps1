@@ -116,5 +116,11 @@ if($ExternalMailsExceedingDelayThreshold){
 
 #send mails only if the configured threshold has been exceed. Either internally or externally
 if($ExternalMailsExceedingDelayThreshold -or $InternalMailsExceedingDelayThreshold){
+    Write-Output "$(Get-Date) [!] Mail latency threshold exceeded. Sending mail."
+    Write-Output $InternalMailLatency, $InternalMailsExceedingDelayThreshold, $ExternalMailLatency, $ExternalMailsExceedingDelayThreshold
+
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header1 $InternalResult1HTML $Header2 $InternalResult2HTML $Header3 $ExternalResult1HTML $Header4 $ExternalResult2HTML"
+}
+else{
+    Write-Output "$(Get-Date) [*] Mail latency threshold not exceeded."
 }

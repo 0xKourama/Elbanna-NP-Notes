@@ -1,5 +1,5 @@
 #region set paths for working directory and manifest file
-$ScriptRoot = 'C:\Users\Zen\powershell\powereye\live'
+$ScriptRoot = 'C:\powereye'
 $Manifest_path = "$ScriptRoot\Manifest.ps1"
 #end region
 
@@ -44,7 +44,7 @@ while($true){
                           -RedirectStandardOutput $Module.ScriptOutputLog `
                           -RedirectStandardError  $Module.ScriptErrorLog  `
                           -WindowStyle            Hidden
-
+            
             #reset its run interval
             $Module.MinutesTillNextRun = $Module.RunInterval.TotalMinutes
             #unset the run on demand property
@@ -61,5 +61,5 @@ while($true){
     $Modules | Select-Object -Property Enabled, Name, RunInterval, MinutesTillNextRun, RunOnDemand |
                Sort-Object -Property MinutesTillNextRun | Format-Table -Wrap
     Write-Host -ForegroundColor Cyan '[*] Standing by for 1 minute'
-    Start-Sleep -Seconds 60
+    Start-Sleep -Seconds 10
 }

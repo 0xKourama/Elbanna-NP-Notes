@@ -68,5 +68,11 @@ $Result = Invoke-Command -ComputerName $Online -ScriptBlock $Script | Where-Obje
           Sort-Object -Property ChangeDate -Descending
 
 if($Result){
+    Write-Output "$(Get-Date) [!] Admin password change detected. Sending mail."
+    Write-Output $Result
+
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Result | ConvertTo-Html)"
+}
+else{
+    Write-Output "$(Get-Date) [*] No admin password change detected."
 }

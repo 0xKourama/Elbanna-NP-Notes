@@ -23,5 +23,10 @@ $Result = Invoke-Command -ComputerName $Online -ScriptBlock $script -ErrorAction
           Where-Object {$_.FreeDiskSpacePercent -lt $FreeDiskUsagePercentThreshold} | Sort-Object -Property ComputerName
 
 if($Result){
+    Write-Output "$(Get-Date) [!] Disk usage percent exceeded threshold. Sending mail."
+    Write-Output $Result
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Result | ConvertTo-Html -Fragment | Out-String)"
+}
+else{
+    Write-Output "$(Get-Date) [*] Disk usage percent not exceeded."
 }

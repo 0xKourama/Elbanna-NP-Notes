@@ -48,5 +48,11 @@ $Results = Invoke-Command -ComputerName $Online -ScriptBlock $Script -ErrorActio
 
 #send an email if results were found
 if($Results){
+    Write-Output "$(Get-Date) [!] Software installation(s) detected. Sending mail."
+    Write-Output $Results
+
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Results | ConvertTo-Html -Fragment | Out-String)"
+}
+else{
+    Write-Output "$(Get-Date) [*] No new software installation(s) detected."
 }
