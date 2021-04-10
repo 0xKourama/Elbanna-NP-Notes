@@ -1,2 +1,18 @@
 [+] Session established with frank-fem-f01.roaya.loc:8080
-04/09/2021 19:11:35 [*] Mail latency threshold not exceeded.
+04/10/2021 22:54:30 [!] Mail latency threshold exceeded. Sending mail.
+
+Server        MinimumLatency(S) MaximumLatency(S) AverageLatency(S)
+------        ----------------- ----------------- -----------------
+FRANK-MBM-D35                 0              4.99              1.81
+EU1MB9903                     0            106.18              34.2
+EU1MB9901                     0             38.51              1.93
+EU1MB9902                   0.4            139.62             55.32
+                                                                   
+                                                                   
+                                                                   
+FRANK-MBM-D35                 0                 0                 0
+EU1MB9903                  0.79               1.3              0.97
+EU1MB9901                     0                 0                 0
+EU1MB9902                     1             35.85             29.03
+
+

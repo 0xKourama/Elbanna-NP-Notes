@@ -98,7 +98,7 @@ $Index = 0
 $ObjectProperties = @(
     'SourceSubnet'
     'Source'
-    'AverageSpeed`(MBps`)'
+    'AverageSpeed(MBps)'
     'Destination'
     'DestinationSubnet'
     'Error'

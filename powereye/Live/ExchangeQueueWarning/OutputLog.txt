@@ -1,2 +1,2 @@
-[+] Session established with frank-fem-f02.roaya.loc:8080
-04/09/2021 19:11:35 [*] Exchange queue threshold not exceeded.
+[+] Session established with frank-fem-f01.roaya.loc:8080
+04/10/2021 22:54:31 [*] Exchange queue threshold not exceeded.

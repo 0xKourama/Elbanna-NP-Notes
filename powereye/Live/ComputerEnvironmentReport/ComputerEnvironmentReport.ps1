@@ -62,8 +62,8 @@ $OS_Summary = @()
 foreach($OS in ($ADComputers.OperatingSystem | Select-Object -Unique)){
     $OS_Summary += [PSCustomObject][Ordered]@{
         OperatingSystem = $OS
+        Count = ($ADComputers | Where-Object {$_.OperatingSystem -eq $OS}).Count
         ComputerList = ($ADComputers | Where-Object {$_.OperatingSystem -eq $OS}).Name -join ' | '
-        Count = $list.Count
     }
 }
 $OS_Summary = $OS_Summary | Sort-Object -Property Count -Descending
@@ -87,8 +87,8 @@ $OU_Summary = @()
 foreach($OU in $OUs){
     $OU_Summary += [PSCustomObject][Ordered]@{
         OU = $OU
+        Count = ($ADComputers | Where-Object {($_.CanonicalName -replace "/\S+$") -eq $OU}).Count
         ComputerList = ($ADComputers | Where-Object {($_.CanonicalName -replace "/\S+$") -eq $OU}).Name -join ' | '
-        Count = $List.Count
     }
 }
 $OU_Summary = $OU_Summary | Sort-Object -Property Count -Descending
@@ -208,6 +208,15 @@ $($session_inactive_summary          | ConvertTo-Html -Fragment)
 #endregion
 
 Write-Output "$(Get-Date) [*] Sending mail"
-Write-Output $Connectivity_Summary, $OS_Summary, $LastLogonDate_Summary, $Exchange_Group_Membership_summary, $DomainController_Summary, $uptime_summary, $session_CONSOLE_summmary, $session_RDP_summary, $session_inactive_summary
+
+Write-Output $Connectivity_Summary
+Write-Output $OS_Summary
+Write-Output $LastLogonDate_Summary
+Write-Output $Exchange_Group_Membership_summary
+Write-Output $DomainController_Summary
+Write-Output $uptime_summary
+Write-Output $session_CONSOLE_summmary
+Write-Output $session_RDP_summary
+Write-Output $session_inactive_summary
 
 Send-MailMessage @MailSettings -BodyAsHtml "$style $header $body"

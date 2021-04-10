@@ -52,9 +52,9 @@ $Required_properties = @(
 #query
 $Result = Get-MailboxServer | ForEach-Object {Get-Queue -Server $_.name | Select-Object -Property $Required_properties} | 
           Where-Object {
-                    $_.MessageCount -gt $Message_Count_threshold    -and `
-                    $_.NextHopDomain -notlike "*frank contoso.com*" -and `
-                    $_.DeliveryType -notlike "*ShadowRedundancy*"
+                    $_.MessageCount  -gt $Message_Count_threshold    -and `
+                    $_.NextHopDomain -notlike "*frank contoso.com*"  -and `
+                    $_.DeliveryType  -notlike "*ShadowRedundancy*"
           } | Sort-Object -Property MessageCount -Descending
 
 if($Result){
