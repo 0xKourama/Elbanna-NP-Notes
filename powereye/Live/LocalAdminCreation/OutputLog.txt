@@ -1,0 +1,27 @@
+04/13/2021 22:06:46 [!] Local administrator additions detected. Sending mail.
+
+
+ComputerName        : WP-ROOTCA
+ChangeDate          : 4/13/2021 10:03:17 PM
+ActionSourceSID     : S-1-5-21-2956518221-444034542-2043350422-85795
+ActionSourceAccount : GabrUrgent
+ActionSourceDomain  : ROAYA
+TargetAccountSID    : S-1-5-21-2715094395-1435841213-333512545-1000
+TargetAccount       : test
+GroupSID            : S-1-5-32-544
+GroupName           : Administrators
+GroupDomain         : Builtin
+
+ComputerName        : WP-ROOTCA
+ChangeDate          : 4/13/2021 10:03:10 PM
+ActionSourceSID     : S-1-5-21-2956518221-444034542-2043350422-85795
+ActionSourceAccount : GabrUrgent
+ActionSourceDomain  : ROAYA
+TargetAccountSID    : S-1-5-21-2715094395-1435841213-333512545-1000
+TargetAccount       : test
+GroupSID            : S-1-5-32-545
+GroupName           : Users
+GroupDomain         : Builtin
+
+
+
