@@ -1,0 +1,1 @@
+Write-Host -ForegroundColor Yellow ('-' * $Host.UI.RAWUI.MaxWindowSize.Width)

@@ -2,3 +2,9 @@ Project PowerEye:
 1. monitor SMB Shares in domain
 	monitor for vulnerable configurations
 2. monitor security updates installed
+
+Tasks:
+1. check local administrators (look for wierd stuff)
+2. check for changes using a neater way
+3. check the accounts with password not required (microsoft article)
+4. check the accounts with a null on the password last set active directory attribute
