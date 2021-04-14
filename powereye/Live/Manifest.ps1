@@ -10,7 +10,7 @@ Class Module {
     [String]$ScriptErrorLog
     [Bool]$RunOnDemand = $false
 }
-
+#
 $Modules = @(
     #1
     [Module]@{
@@ -83,6 +83,13 @@ $Modules = @(
         Enabled = $true
         Name = 'Local Admin Creation'
         RunInterval = New-TimeSpan -Minutes 10
+    }
+    #13
+    [Module]@{
+        Enabled = $true
+        Name = 'LAPS Missing'
+        RunInterval = New-TimeSpan -Hours 12
+        RunOnDemand = $true
     }
 )
 if(!$Runtime_Data){

@@ -1,0 +1,16 @@
+04/14/2021 19:48:03 [!] LAPS missing on some hosts. Sending mail.
+
+ComputerName   LAPSInstalled
+------------   -------------
+FRANK-ADC-02           False
+FRANK-ADC-01           False
+FRANK-ADC-03           False
+FRANK-ADC-04           False
+FRANK-EVENTLOG         False
+FRANK-DC01             False
+FRANK-D02              False
+FRANK-KBASE-01         False
+PST-SERVER1            False
+FRANK-MBX              False
+
+
