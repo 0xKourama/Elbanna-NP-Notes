@@ -1,8 +1,8 @@
-basic syntax:
-@{ Name = '';  Expression = {}}
+#basic syntax:
+#@{ Name = '';  Expression = {}}
 
-execution between parenthesis:
+#execution between parenthesis:
 Get-ChildItem |  Select-Object -Property Name,Directory,@{ Name = 'FromComputer'; Expression = {  hostname }}
 
-using the pipeline to refrence objections:
+#using the pipeline to refrence objections:
 Get-ChildItem |  Select-Object -Property Name,Directory,@{ Name = 'FromComputer'; Expression = {  hostname }},@{Name = 'WithParens';Expression = {"( $($_.Name) )"}}
