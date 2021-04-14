@@ -42,6 +42,8 @@ $Script = {
         $target_part = ($Message | Select-String -Pattern $target_pattern -Context 0,2).context.postcontext
         $group_part  = ($Message | Select-String -Pattern $group_pattern  -Context 0,3).context.postcontext
 
+        #(Get-LocalUser -SID ($target_part | Select-String -Pattern $sid_pattern).Matches.Groups[1].Value).Name
+
         $Results += [PSCustomObject][Ordered]@{
             ComputerName        = $env:COMPUTERNAME
             ChangeDate          = $_.TimeCreated
@@ -49,7 +51,7 @@ $Script = {
             ActionSourceAccount = ($source_part | Select-String -Pattern $accountname_pattern  ).Matches.Groups[1].Value
             ActionSourceDomain  = ($source_part | Select-String -Pattern $accountdomain_pattern).Matches.Groups[1].Value
             TargetAccountSID    = ($target_part | Select-String -Pattern $sid_pattern          ).Matches.Groups[1].Value
-            TargetAccount       = (Get-LocalUser -SID ($target_part | Select-String -Pattern $sid_pattern).Matches.Groups[1].Value).Name
+            TargetAccount       = (Get-WmiObject -Query "Select Name,SID from win32_useraccount" | Where-Object {$_.SID -eq ($target_part | Select-String -Pattern $sid_pattern).Matches.Groups[1].Value}).name
             GroupSID            = ($group_part  | Select-String -Pattern $sid_pattern          ).Matches.Groups[1].Value
             GroupName           = ($group_part  | Select-String -Pattern $groupname_pattern    ).Matches.Groups[1].Value
             GroupDomain         = ($group_part  | Select-String -Pattern $groupdomain_pattern  ).Matches.Groups[1].Value

@@ -14,7 +14,7 @@ use HTTPS transport.
  Note that computers in the TrustedHosts list might not be authenticated.
    -For more information about WinRM configuration, run the following command: winrm help config. For more 
 information, see the about_Remote_Troubleshooting Help topic.
-At C:\powereye\ComputerEnvironmentReport\ComputerEnvironmentReport.ps1:124 char:15
+At C:\powereye\ComputerEnvironmentReport\ComputerEnvironmentReport.ps1:125 char:15
 + $PSSessions = New-PSSession -ComputerName $Online
 +               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : OpenError: (System.Manageme....RemoteRunspace:RemoteRunspace) [New-PSSession], PSRemotin 
@@ -28,7 +28,7 @@ Kerberos, specify the local computer name as the remote destination. Also verify
 destination computer are joined to a domain. To use Basic, specify the local computer name as the remote destination, 
 specify Basic authentication and provide user name and password. Possible authentication mechanisms reported by 
 server:     Negotiate For more information, see the about_Remote_Troubleshooting Help topic.
-At C:\powereye\ComputerEnvironmentReport\ComputerEnvironmentReport.ps1:124 char:15
+At C:\powereye\ComputerEnvironmentReport\ComputerEnvironmentReport.ps1:125 char:15
 + $PSSessions = New-PSSession -ComputerName $Online
 +               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : OpenError: (System.Manageme....RemoteRunspace:RemoteRunspace) [New-PSSession], PSRemotin 

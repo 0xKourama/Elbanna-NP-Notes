@@ -1,0 +1,8 @@
+Exchange can't connect to the Microsoft Exchange Transport service on computer "EU1FE9222". Verify that the service is 
+started.
+    + CategoryInfo          : InvalidOperation: (:) [Get-Queue], LocalizedException
+    + FullyQualifiedErrorId : [Server=EU1FE9111,RequestId=adb0037c-18af-4cf2-8985-35105ccf45f0,TimeStamp=4/14/2021 5:2 
+   4:20 PM] [FailureCategory=Cmdlet-LocalizedException] 1BE945A3,Microsoft.Exchange.Management.QueueViewerTasks.GetQu  
+  eueInfo
+    + PSComputerName        : frank-fem-f01.roaya.loc
+ 

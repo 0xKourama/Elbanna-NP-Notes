@@ -9,6 +9,7 @@ $Admin_Security_Groups = @(
     'Domain Admins'
     'Enterprise Admins'
     'Schema Admins'
+    'Organization Management'
 )
 
 #location for the file to track membership data

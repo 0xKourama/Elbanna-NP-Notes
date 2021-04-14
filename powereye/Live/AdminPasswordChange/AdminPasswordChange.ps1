@@ -9,6 +9,7 @@ $Admin_Security_Groups = @(
     'Domain Admins'
     'Enterprise Admins'
     'Schema Admins'
+    'Organization Management'
 )
 
 #region retrieve members of the configured security groups

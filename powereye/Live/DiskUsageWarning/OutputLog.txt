@@ -1,35 +1,29 @@
-04/10/2021 19:06:51 [!] Disk usage percent exceeded threshold. Sending mail.
+04/14/2021 19:29:02 [!] Disk usage percent exceeded threshold. Sending mail.
 
 
 ComputerName         : FRANK-EVENTLOG
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 99.4
 FreeDiskSpace(GB)    : 21.89
-FreeDiskSpacePercent : 22.02
+FreeDiskSpacePercent : 22.03
 
 ComputerName         : FRANK-SQL2019
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 79.4
-FreeDiskSpace(GB)    : 17.65
-FreeDiskSpacePercent : 22.23
-
-ComputerName         : Listener
-DriveLetter          : C:
-TotalDiskSpace(GB)   : 99.4
-FreeDiskSpace(GB)    : 17.97
-FreeDiskSpacePercent : 18.08
+FreeDiskSpace(GB)    : 17.59
+FreeDiskSpacePercent : 22.15
 
 ComputerName         : SQLCluster
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 99.4
-FreeDiskSpace(GB)    : 17.97
-FreeDiskSpacePercent : 18.08
+FreeDiskSpace(GB)    : 18.45
+FreeDiskSpacePercent : 18.57
 
 ComputerName         : SQL-SOLID1
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 99.4
-FreeDiskSpace(GB)    : 17.97
-FreeDiskSpacePercent : 18.08
+FreeDiskSpace(GB)    : 18.45
+FreeDiskSpacePercent : 18.57
 
 ComputerName         : STRAS-MBM-905
 DriveLetter          : P:
@@ -64,8 +58,8 @@ FreeDiskSpacePercent : 28.16
 ComputerName         : STRAS-MBM-905
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 657.19
-FreeDiskSpace(GB)    : 171.77
-FreeDiskSpacePercent : 26.14
+FreeDiskSpace(GB)    : 171.33
+FreeDiskSpacePercent : 26.07
 
 ComputerName         : STRAS-MBM-905
 DriveLetter          : N:

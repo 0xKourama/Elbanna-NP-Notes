@@ -78,6 +78,12 @@ $Modules = @(
         Name = 'Software Installation'
         RunInterval = New-TimeSpan -Minutes 10
     }
+    #12
+    [Module]@{
+        Enabled = $true
+        Name = 'Local Admin Creation'
+        RunInterval = New-TimeSpan -Minutes 10
+    }
 )
 if(!$Runtime_Data){
     $Modules | ForEach-Object {$_.MinutesTillNextRun = $_.RunInterval.TotalMinutes}

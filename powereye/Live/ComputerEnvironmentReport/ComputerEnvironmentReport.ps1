@@ -82,13 +82,13 @@ $LastLogonDate_Summary = $LastLogonDate_Summary | Sort-Object -Property Days -De
 #endregion
 
 #region OU summary
-$OUs = $ADComputers.CanonicalName -replace "/\S+$" | Select-Object -Unique
+$OUs = ($ADComputers | Select-Object -Property @{n='OU';e={$_.canonicalname -replace "/$($_.name)"}} -Unique).OU
 $OU_Summary = @()
 foreach($OU in $OUs){
     $OU_Summary += [PSCustomObject][Ordered]@{
         OU = $OU
-        Count = ($ADComputers | Where-Object {($_.CanonicalName -replace "/\S+$") -eq $OU}).Count
-        ComputerList = ($ADComputers | Where-Object {($_.CanonicalName -replace "/\S+$") -eq $OU}).Name -join ' | '
+        Count = ($ADComputers | Where-Object {($_.CanonicalName -replace "/$($_.name)") -eq $OU}).Count
+        ComputerList = ($ADComputers | Where-Object {($_.CanonicalName -replace "/$($_.name)") -eq $OU}).Name -join ' | '
     }
 }
 $OU_Summary = $OU_Summary | Sort-Object -Property Count -Descending
