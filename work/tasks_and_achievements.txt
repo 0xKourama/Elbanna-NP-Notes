@@ -25,3 +25,5 @@
 17. tools penetration test and security
 18. Quickest scripter in emergencies
 19. Header Parsing Script
+20. password audit
+21. supporting linux admin tasks
