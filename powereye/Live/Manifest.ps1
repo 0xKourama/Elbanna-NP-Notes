@@ -89,7 +89,12 @@ $Modules = @(
         Enabled = $true
         Name = 'LAPS Missing'
         RunInterval = New-TimeSpan -Hours 12
-        RunOnDemand = $true
+    }
+    #14
+    [Module]@{
+        Enabled = $true
+        Name = 'Session Report'
+        RunInterval = New-TimeSpan -Hours 3
     }
 )
 if(!$Runtime_Data){

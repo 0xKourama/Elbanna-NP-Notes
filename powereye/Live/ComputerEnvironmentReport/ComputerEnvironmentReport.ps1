@@ -121,8 +121,6 @@ foreach($DC in $DomainControllers){
 $DomainController_Summary = $DomainController_Summary | Sort-Object -Property Name
 #endregion
 
-$PSSessions = New-PSSession -ComputerName $Online
-
 #region uptime summary
 $uptime_script = {
     $Result = New-TimeSpan -Start (
@@ -133,54 +131,10 @@ $uptime_script = {
     $Result | Add-Member -NotePropertyName ComputerName -NotePropertyValue $env:COMPUTERNAME
     Write-Output $result
 }
-$uptime_summary = Invoke-Command -Session $PSSessions -ErrorAction SilentlyContinue -ScriptBlock $uptime_script | 
+$uptime_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $uptime_script | 
                     Sort-Object -Property TotalMinutes -Descending | 
                     Select-Object -Property Computername, Days, Hours, Minutes
 #endregion
-
-#region session summary
-$session_script = {
-    $PropertyList = @(
-        'ComputerName'
-        'Username'
-        'Logontime'
-        'Status'
-    )
-    $User_list = @()
-    try{
-        Quser | Select-Object -Skip 1 | ForEach-Object {
-            $User = @{} | Select-Object -Property $PropertyList
-            $User.ComputerName = $env:COMPUTERNAME
-            $User.username     = $_.Substring(0 , 23).Trim().toUpper()
-            $state             = $_.Substring(46, 8 ).Trim().toUpper()
-            if($state -eq 'Disc'){$User.status = 'INACTIVE'}
-            else{
-                $session = $_.Substring(22, 20).Trim().toUpper()
-                if($session -like 'RDP*'){$session = 'RDP'  }
-                else                     {$session = 'CONSOLE'}
-                $User.status = "ACTIVE - $session"
-            }
-            $User.logontime    = $_.Substring(65, ($_.Length - 65)).Trim().toUpper()
-            $User_list += $User
-        }
-    }
-    catch{
-        $User = @{} | Select-Object -Property $PropertyList
-        $User.ComputerName = $env:COMPUTERNAME
-        $User.Username = "NONE"
-        $User_list    += $User        
-    }
-    Write-Output $User_list
-}
-$session_summary = Invoke-Command -Session $PSSessions -ErrorAction SilentlyContinue -ScriptBlock $session_script |
-                    Select-Object -Property ComputerName, Username, LogonTime, Status | Sort-Object -Property ComputerName
-
-$session_RDP_summary      = $session_summary | Where-Object {$_.Status -eq 'ACTIVE - RDP'}
-$session_CONSOLE_summmary = $session_summary | Where-Object {$_.Status -eq 'ACTIVE - CONSOLE'}
-$session_inactive_summary = $session_summary | Where-Object {$_.Status -eq 'INACTIVE'}
-#endregion
-
-Remove-PSSession $PSSessions
 
 #region HTML summary data
 $body = @"
@@ -198,12 +152,6 @@ $($Exchange_Group_Membership_summary | ConvertTo-Html -Fragment)
 $($DomainController_Summary          | ConvertTo-Html -Fragment)
 <h4>Server Uptime Summary</h4>
 $($uptime_summary                    | ConvertTo-Html -Fragment)
-<h4>Console Sessions</h4>
-$($session_CONSOLE_summmary          | ConvertTo-Html -Fragment)
-<h4>RDP Sessions</h4>
-$($session_RDP_summary               | ConvertTo-Html -Fragment)
-<h4>Inactive Sessions</h4>
-$($session_inactive_summary          | ConvertTo-Html -Fragment)
 "@
 #endregion
 
@@ -215,8 +163,5 @@ Write-Output $LastLogonDate_Summary
 Write-Output $Exchange_Group_Membership_summary
 Write-Output $DomainController_Summary
 Write-Output $uptime_summary
-Write-Output $session_CONSOLE_summmary
-Write-Output $session_RDP_summary
-Write-Output $session_inactive_summary
 
 Send-MailMessage @MailSettings -BodyAsHtml "$style $header $body"
