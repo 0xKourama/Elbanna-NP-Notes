@@ -1,11 +1,11 @@
-04/15/2021 11:27:33 [!] LAPS missing on some hosts. Sending mail.
+04/16/2021 23:31:44 [!] LAPS missing on some hosts. Sending mail.
 
 ComputerName   LAPSInstalled
 ------------   -------------
 FRANK-D02              False
 FRANK-KBASE-01         False
-FRANK-EVENTLOG         False
 FRANK-DC01             False
+FRANK-EVENTLOG         False
 PST-SERVER1            False
 FRANK-MBX              False
 

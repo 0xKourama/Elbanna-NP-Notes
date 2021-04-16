@@ -95,7 +95,8 @@ $Modules = @(
         Enabled = $true
         Name = 'Session Report'
         RunInterval = New-TimeSpan -Hours 3
-    }
+        RunOnDemand = $true
+    }#
 )
 if(!$Runtime_Data){
     $Modules | ForEach-Object {$_.MinutesTillNextRun = $_.RunInterval.TotalMinutes}

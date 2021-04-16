@@ -6,47 +6,63 @@ Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 Import-Module '..\UtilityFunctions.ps1'
 
 $session_script = {
-    $PropertyList = @(
-        'ComputerName'
-        'Username'
-        'Logontime'
-        'Status'
-    )
-    $User_list = @()
-    try{
-        Quser | Select-Object -Skip 1 | ForEach-Object {
-            $User = @{} | Select-Object -Property $PropertyList
-            $User.ComputerName = $env:COMPUTERNAME
-            $User.username     = $_.Substring(0 , 23).Trim().toUpper()
-            $state             = $_.Substring(46, 8 ).Trim().toUpper()
-            if($state -eq 'Disc'){$User.status = 'INACTIVE'}
-            else{
-                $session = $_.Substring(22, 20).Trim().toUpper()
-                if($session -like 'RDP*'){$session = 'RDP'  }
-                else                     {$session = 'CONSOLE'}
-                $User.status = "ACTIVE - $session"
+    $List = @()
+    Try{
+        $ErrorActionPreference = 'stop'
+        Quser | Select -Skip 1 | ForEach-Object {
+            $IdleString = $_.substring(54,11).Trim().toUpper()
+            if($IdleString -eq 'NONE'){
+                $IdleMinutes = 0
+                $IdleHours   = 0
+                $IdleDays    = 0
             }
-            $User.logontime    = $_.Substring(65, ($_.Length - 65)).Trim().toUpper()
-            $User_list += $User
+            elseif($IdleString -notmatch ':'){
+                $IdleMinutes = $IdleString
+                $IdleHours   = 0
+                $IdleDays    = 0
+            }
+            elseif($IdleString -notmatch '\+'){
+                $Groups = ($IdleString | Select-String -Pattern "(?<Hours>\d{1,2}):(?<Minutes>\d{1,2})").Matches.Groups
+                $IdleMinutes = ($Groups | Where-Object {$_.Name -eq 'Minutes'}).Value
+                $IdleHours   = ($Groups | Where-Object {$_.Name -eq 'Hours'  }).Value
+                $IdleDays    = 0
+            }
+            else{
+                $Groups = ($IdleString | Select-String -Pattern "(?<Days>\d{1,2})\+(?<Hours>\d{1,2}):(?<Minutes>\d{1,2})").Matches.Groups
+                $IdleMinutes = ($Groups | Where-Object {$_.Name -eq 'Minutes'}).Value
+                $IdleHours   = ($Groups | Where-Object {$_.Name -eq 'Hours'  }).Value
+                $IdleDays    = ($Groups | Where-Object {$_.Name -eq 'Days'   }).Value
+            }
+            $List += [PSCustomObject][Ordered]@{
+                ComputerName = $env:COMPUTERNAME
+                Username     = $_.Substring(1 , 22).Trim().toUpper()
+                ID           = $_.Substring(42, 4 ).Trim()
+                LogonTime    = $_.Substring(65, ($_.Length - 65)).Trim().toUpper()
+                State        = if(($_.Substring(46, 8 ).Trim().toUpper()) -eq 'DISC'){'INACTIVE'}else{'ACTIVE'}
+                SessionType  = $_.substring(23,19).Trim().toUpper() -replace '-.*'
+                IdleDays     = $IdleDays
+                IdleHours    = $IdleHours
+                IdleMinutes  = $IdleMinutes
+            }
         }
     }
-    catch{
-        $User = @{} | Select-Object -Property $PropertyList
-        $User.ComputerName = $env:COMPUTERNAME
-        $User.Username = "NONE"
-        $User_list    += $User        
+    Catch{
+        $List += [PSCustomObject][Ordered]@{
+            ComputerName = $env:COMPUTERNAME
+            Username     = 'NONE'
+        }
     }
-    Write-Output $User_list
+    Write-Output $List
 }
 
 $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address}).Name
 
 $session_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script |
-                   Sort-Object -Property ComputerName | Select-Object -Property ComputerName, Username, LogonTime, Status
+                   Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID, ID
 
-$session_RDP_summary      = $session_summary | Where-Object {$_.Status -eq 'ACTIVE - RDP'    }
-$session_CONSOLE_summmary = $session_summary | Where-Object {$_.Status -eq 'ACTIVE - CONSOLE'}
-$session_inactive_summary = $session_summary | Where-Object {$_.Status -eq 'INACTIVE'        }
+$session_CONSOLE_summmary = $session_summary | Where-Object {$_.SessionType -eq 'CONSOLE'}
+$session_RDP_summary      = $session_summary | Where-Object {$_.SessionType -eq 'RDP'    }
+$session_inactive_summary = $session_summary | Where-Object {$_.State   -eq 'INACTIVE'} | Select-Object -Property * -ExcludeProperty SessionType
 
 #region HTML summary data
 $body = @"
