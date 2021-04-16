@@ -4,13 +4,21 @@
         $ErrorActionPreference = 'stop'
         Quser | Select -Skip 1 | ForEach-Object {
             $IdleString = $_.substring(54,11).Trim().toUpper()
-            if($IdleString -notmatch ':'){
+            if($IdleString -eq 'NONE'){
+                $IdleMinutes = 0
+                $IdleHours   = 0
+                $IdleDays    = 0
+            }
+            elseif($IdleString -notmatch ':'){
                 $IdleMinutes = $IdleString
+                $IdleHours   = 0
+                $IdleDays    = 0
             }
             elseif($IdleString -notmatch '\+'){
                 $Groups = ($IdleString | Select-String -Pattern "(?<Hours>\d{1,2}):(?<Minutes>\d{1,2})").Matches.Groups
                 $IdleMinutes = ($Groups | Where-Object {$_.Name -eq 'Minutes'}).Value
                 $IdleHours   = ($Groups | Where-Object {$_.Name -eq 'Hours'  }).Value
+                $IdleDays    = 0
             }
             else{
                 $Groups = ($IdleString | Select-String -Pattern "(?<Days>\d{1,2})\+(?<Hours>\d{1,2}):(?<Minutes>\d{1,2})").Matches.Groups
@@ -24,7 +32,6 @@
                 ID           = $_.Substring(42, 4 ).Trim()
                 STATE        = if(($_.Substring(46, 8 ).Trim().toUpper()) -eq 'DISC'){'INACTIVE'}else{'ACTIVE'}
                 SESSION      = $_.substring(23,19).Trim().toUpper() -replace '-.*'
-                IDLETIME     = $IdleString
                 IDLEDAYS     = $IdleDays
                 IDLEHOURS    = $IdleHours
                 IDLEMINUTES  = $IdleMinutes
@@ -38,7 +45,7 @@
             USERNAME = 'NONE'
         }
     }
-    $List
+    Write-Output $List
 }
 #while($true){
 $stopwatch =  [system.diagnostics.stopwatch]::StartNew()
