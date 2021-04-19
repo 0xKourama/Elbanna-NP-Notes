@@ -40,18 +40,32 @@ $New_Hash = (Get-FileHash -Path $Admin_Group_Tracker_Path).Hash
 #if the hash for the old file doesn't match the new one
 if($New_Hash -ne $Old_Hash){
     $Difference_Array = @()
-    #loop over all groups and find the difference between the old and new data
-    0..(($Admin_Security_Groups).Count - 1) | ForEach-Object {
-        $Differences = Compare-Object -ReferenceObject ($Old_Group_Data.Members[$_] -split ';') -DifferenceObject ($New_Group_Data.Members[$_] -split ';')
-        Foreach($Difference in $Differences){
-            $Difference_Array += [PSCustomObject][Ordered]@{
-                ChangedMember = $Difference.InputObject
-                ChangedGroup  = $New_Group_Data[$_].name
-                ChangeType    = if($Difference.SideIndicator -eq '=>'){'Addition'}
-                            elseif($Difference.SideIndicator -eq '<='){'Removal'}
+    0..($Admin_Security_Groups.Count - 1) | ForEach-Object {
+        
+        #Write-Host -ForegroundColor Cyan "[*] looping $($Old_Group_Data[$_].name) and $($Old_Group_Data[$_].name)"
+        $OldGroupMembers = $Old_Group_Data[$_].Members -split ';' | Where-Object {$_ -ne ''}
+        $NewGroupMembers = $New_Group_Data[$_].Members -split ';' | Where-Object {$_ -ne ''}
+
+        foreach($member1 in $OldGroupMembers){
+            if($NewGroupMembers -notcontains $member1){
+                $Difference_Array += [PSCustomObject][Ordered]@{
+                    ChangedMember = $member1
+                    ChangedGroup  = $Admin_Security_Groups[$_]
+                    ChangeType    = 'Removal'
+                }
+            }
+        }
+        foreach($member2 in $NewGroupMembers){
+            if($OldGroupMembers -notcontains $member2){
+                $Difference_Array += [PSCustomObject][Ordered]@{
+                    ChangedMember = $member2
+                    ChangedGroup  = $Admin_Security_Groups[$_]
+                    ChangeType    = 'Addition'
+                }
             }
         }
     }
+
     Write-Output "$(Get-Date) [!] change detected. Sending mail."
     Write-Output $Difference_Array
 
