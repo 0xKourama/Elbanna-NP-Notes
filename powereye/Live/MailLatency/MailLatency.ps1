@@ -26,26 +26,18 @@ $password = '97$p$*J5f7$#3$0DnA'
 [securestring]$secStringPassword = ConvertTo-SecureString $password -AsPlainText -Force
 [pscredential]$UserCredential = New-Object System.Management.Automation.PSCredential ($username, $secStringPassword)
 
-#region session check
-$present_session = Get-PSSession
+foreach($Exchange_Server in $Exchange_Servers){
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
+                                -ConnectionUri "http://$Exchange_Server/PowerShell/" `
+                                -Authentication Kerberos `
+                                -Credential $UserCredential
 
-if(!$present_session -or ($present_session.Availability -ne 'Available') -or ($present_session.State -ne 'Opened')){
-    try{Remove-PSSession $present_session}
-    catch{}
-    foreach($Exchange_Server in $Exchange_Servers){
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
-                                 -ConnectionUri "http://$Exchange_Server/PowerShell/" `
-                                 -Authentication Kerberos `
-                                 -Credential $UserCredential
-
-        Import-PSSession $Session -DisableNameChecking -AllowClobber | Out-Null
-        if($? -eq $true){
-            Write-Host -ForegroundColor green "[+] Session established with $Exchange_Server"
-            break
-        }
+    Import-PSSession $Session -DisableNameChecking -AllowClobber | Out-Null
+    if($? -eq $true){
+        Write-Host -ForegroundColor green "[+] Session established with $Exchange_Server"
+        break
     }
 }
-#endregion
 
 $InternalMailLatency = @()
 $InternalMailsExceedingDelayThreshold = @()
@@ -99,6 +91,8 @@ Foreach($MailBox_Server in (Get-MailboxServer "*MB*" ).Name){
     }
 }
 #endregion
+
+Remove-PSSession -Session $Session
 
 #region adding results to HTML
 $InternalResult1HTML = $InternalMailLatency | ConvertTo-Html -Fragment | Out-String

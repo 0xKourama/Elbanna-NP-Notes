@@ -7,7 +7,7 @@ $MinutesSinceCreationThreshold = 60
 
 #query active directory created property and find the ones created within the last 60 minutes
 $Result = Get-ADComputer -Filter * -Properties Created |
-          Select-Object name,@{Name = 'MinutesSinceCreation';Expression = {(New-TimeSpan -Start $_.Created -End (get-date)).TotalMinutes}} |
+          Select-Object name,@{Name = 'MinutesSinceCreation';Expression = {(New-TimeSpan -Start $_.Created -End (get-date)).TotalMinutes -as [int]}} |
           Where-Object {$_.MinutesSinceCreation -lt $MinutesSinceCreationThreshold}
 
 if($Result){

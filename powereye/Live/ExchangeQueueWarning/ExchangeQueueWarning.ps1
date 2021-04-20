@@ -18,26 +18,18 @@ $password = '97$p$*J5f7$#3$0DnA'
 [SecureString]$secStringPassword = ConvertTo-SecureString $password -AsPlainText -Force
 [PSCredential]$UserCredential    = New-Object System.Management.Automation.PSCredential ($username, $secStringPassword)
 
-#region test session
-$present_session = Get-PSSession
+foreach($Exchange_Server in $Exchange_Servers){
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
+                                -ConnectionUri "http://$Exchange_Server/PowerShell/" `
+                                -Authentication Kerberos `
+                                -Credential $UserCredential
 
-if(!$present_session -or ($present_session.Availability -ne 'Available') -or ($present_session.State -ne 'Opened')){
-    try{Remove-PSSession $present_session}
-    catch{}
-    foreach($Exchange_Server in $Exchange_Servers){
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
-                                 -ConnectionUri "http://$Exchange_Server/PowerShell/" `
-                                 -Authentication Kerberos `
-                                 -Credential $UserCredential
-
-        Import-PSSession $Session -DisableNameChecking -AllowClobber | Out-Null
-        if($? -eq $true){
-            Write-Host -ForegroundColor green "[+] Session established with $Exchange_Server"
-            break
-        }
+    Import-PSSession $Session -DisableNameChecking -AllowClobber | Out-Null
+    if($? -eq $true){
+        Write-Host -ForegroundColor green "[+] Session established with $Exchange_Server"
+        break
     }
 }
-#endregion
 
 #properties for queue
 $Required_properties = @(
@@ -56,6 +48,8 @@ $Result = Get-MailboxServer | ForEach-Object {Get-Queue -Server $_.name | Select
                     $_.NextHopDomain -notlike "*frank contoso.com*"  -and `
                     $_.DeliveryType  -notlike "*ShadowRedundancy*"
           } | Sort-Object -Property MessageCount -Descending
+
+Remove-PSSession -Session $Session
 
 if($Result){
     Write-Output "$(Get-Date) [!] Exchange queue threshold exceeded. Sending mail."

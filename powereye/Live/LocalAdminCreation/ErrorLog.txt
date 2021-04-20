@@ -1,21 +1,3 @@
-[FRANK-D36] Connecting to remote server FRANK-D36 failed with the following error message : WinRM cannot process the 
-request. The following error with errorcode 0x80090322 occurred while using Kerberos authentication: An unknown 
-security error occurred.  
- Possible causes are:
-  -The user name or password specified are invalid.
-  -Kerberos is used when no authentication method and no user name are specified.
-  -Kerberos accepts domain user names, but not local user names.
-  -The Service Principal Name (SPN) for the remote computer name and port does not exist.
-  -The client and remote computers are in different domains and there is no trust between the two domains.
- After checking for the above issues, try the following:
-  -Check the Event Viewer for events related to authentication.
-  -Change the authentication method; add the destination computer to the WinRM TrustedHosts configuration setting or 
-use HTTPS transport.
- Note that computers in the TrustedHosts list might not be authenticated.
-   -For more information about WinRM configuration, run the following command: winrm help config. For more 
-information, see the about_Remote_Troubleshooting Help topic.
-    + CategoryInfo          : OpenError: (FRANK-D36:String) [], PSRemotingTransportException
-    + FullyQualifiedErrorId : -2144108387,PSSessionStateBroken
 [STARC-ADC-03] Connecting to remote server STARC-ADC-03 failed with the following error message : The WinRM client 
 cannot process the request. The WinRM client tried to use Kerberos authentication mechanism, but the destination 
 computer (STARC-ADC-03:5985) returned an 'access denied' error. Change the configuration to allow Kerberos 

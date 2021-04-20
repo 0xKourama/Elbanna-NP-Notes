@@ -1,0 +1,15 @@
+Exchange can't connect to the RPC server on computer "FRANK-MBX". Verify that you used a valid computer name.
+    + CategoryInfo          : InvalidOperation: (:) [Get-Queue], LocalizedException
+    + FullyQualifiedErrorId : [Server=EU1MB9902,RequestId=db179324-1197-420d-abfd-82ad3990a382,TimeStamp=4/20/2021 12: 
+   55:14 PM] [FailureCategory=Cmdlet-LocalizedException] 14A31D2F,Microsoft.Exchange.Management.QueueViewerTasks.GetQ  
+  ueueInfo
+    + PSComputerName        : frank-fem-f01.roaya.loc
+ 
+Exchange can't connect to the Microsoft Exchange Transport service on computer "EU1MB9902". Verify that the service is 
+started.
+    + CategoryInfo          : InvalidOperation: (:) [Get-Queue], LocalizedException
+    + FullyQualifiedErrorId : [Server=EU1MB9902,RequestId=9ba72ab5-5152-45ab-b6d4-571fdee1f1f0,TimeStamp=4/20/2021 12: 
+   55:16 PM] [FailureCategory=Cmdlet-LocalizedException] 20A80644,Microsoft.Exchange.Management.QueueViewerTasks.GetQ  
+  ueueInfo
+    + PSComputerName        : frank-fem-f01.roaya.loc
+ 

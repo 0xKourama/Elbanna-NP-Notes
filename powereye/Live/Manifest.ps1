@@ -95,8 +95,13 @@ $Modules = @(
         Enabled = $true
         Name = 'Session Report'
         RunInterval = New-TimeSpan -Hours 3
-        RunOnDemand = $true
-    }#
+    }
+    #15
+    [Module]@{
+        Enabled = $true
+        Name = 'Transport Services Restart'
+        RunInterval = New-TimeSpan -Hours 3
+    }
 )
 if(!$Runtime_Data){
     $Modules | ForEach-Object {$_.MinutesTillNextRun = $_.RunInterval.TotalMinutes}

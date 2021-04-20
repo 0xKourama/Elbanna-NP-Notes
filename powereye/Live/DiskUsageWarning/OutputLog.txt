@@ -1,65 +1,17 @@
-04/16/2021 19:39:55 [!] Disk usage percent exceeded threshold. Sending mail.
+04/20/2021 14:02:20 [!] Disk usage percent exceeded threshold. Sending mail.
 
 
 ComputerName         : FRANK-EVENTLOG
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 99.4
-FreeDiskSpace(GB)    : 21.89
-FreeDiskSpacePercent : 22.02
+FreeDiskSpace(GB)    : 19.65
+FreeDiskSpacePercent : 19.76
 
 ComputerName         : FRANK-SQL2019
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 79.4
-FreeDiskSpace(GB)    : 17.56
-FreeDiskSpacePercent : 22.12
-
-ComputerName         : STRAS-MBM-905
-DriveLetter          : P:
-TotalDiskSpace(GB)   : 6452.02
-FreeDiskSpace(GB)    : 1118.31
-FreeDiskSpacePercent : 17.33
-
-ComputerName         : STRAS-MBM-905
-DriveLetter          : O:
-TotalDiskSpace(GB)   : 6452.02
-FreeDiskSpace(GB)    : 1137.81
-FreeDiskSpacePercent : 17.63
-
-ComputerName         : STRAS-MBM-905
-DriveLetter          : R:
-TotalDiskSpace(GB)   : 6452.02
-FreeDiskSpace(GB)    : 1199.56
-FreeDiskSpacePercent : 18.59
-
-ComputerName         : STRAS-MBM-905
-DriveLetter          : Q:
-TotalDiskSpace(GB)   : 6452.02
-FreeDiskSpace(GB)    : 1043.94
-FreeDiskSpacePercent : 16.18
-
-ComputerName         : STRAS-MBM-905
-DriveLetter          : L:
-TotalDiskSpace(GB)   : 7452.02
-FreeDiskSpace(GB)    : 2098.66
-FreeDiskSpacePercent : 28.16
-
-ComputerName         : STRAS-MBM-905
-DriveLetter          : C:
-TotalDiskSpace(GB)   : 657.19
-FreeDiskSpace(GB)    : 171.39
-FreeDiskSpacePercent : 26.08
-
-ComputerName         : STRAS-MBM-905
-DriveLetter          : N:
-TotalDiskSpace(GB)   : 7452.02
-FreeDiskSpace(GB)    : 2118.9
-FreeDiskSpacePercent : 28.43
-
-ComputerName         : STRAS-MBM-905
-DriveLetter          : M:
-TotalDiskSpace(GB)   : 7452.02
-FreeDiskSpace(GB)    : 2105.36
-FreeDiskSpacePercent : 28.25
+FreeDiskSpace(GB)    : 17.43
+FreeDiskSpacePercent : 21.96
 
 
 
