@@ -1,0 +1,1 @@
+Get-ADUser -SearchBase 'OU=Mail,DC=Roaya,DC=loc' -Filter {mail -notlike '*@Roaya.co' -and enabled -eq 'True'} -Properties mail,enabled,canonicalname | Where-Object {!$_.mail} | Select-Object -Property Enabled,Name,Mail,@{n='OU';e={$_.canonicalname  -replace '/',' > '}} | Format-Table -Wrap
