@@ -55,6 +55,13 @@ $Event_Data = @(
         Title='User Logoff'
         Description='A users log off can indicate the end of an attack or potential system restarts that may have occurred. This can conclude a timeline or give a bit more insight to a users activity. This log is recommended by the NSA Cyber Event Forwarding Guidance and JPCERT.'
  	}
+    [Event]@{
+        LogName='Security'
+        Provider='N/A'
+        ID=4672
+        Title='Special privileges assigned to new logon'
+        Description='This event lets you know whenever an account assigned any "administrator equivalent" user rights logs on. This is a useful right to detecting any "super user" account logons. Of course this right is logged for any server or applications accounts logging on as a batch job (scheduled task) or system service.'
+    }
 	[Event]@{
 		Logname='Security'    
         Provider='N/A'         
@@ -64,14 +71,14 @@ $Event_Data = @(
  	}
 	[Event]@{
 		Logname='Security'    
-        Provider='N/A'         
+        Provider='N/A'
         ID=4726 
         Title='Account Deleted'
         Description='An attacker may attempt to tidy up after themselves by deleting an account or simply disrupt normal workflow by deleting legitimate accounts.'
  	}
 	[Event]@{
 		Logname='Security'    
-        Provider='N/A'         
+        Provider='N/A'
         ID=4738 
         Title='Account Changed'
         Description='Account changes, such as password and username changes may indicate a successful breach and a backdoor setup for a user. Also can be used to track changes for legitimate users.'
