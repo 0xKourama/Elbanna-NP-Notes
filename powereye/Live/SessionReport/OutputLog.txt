@@ -1,295 +1,181 @@
-04/20/2021 13:51:24 [*] Sending mail
+04/28/2021 19:14:03 [*] Sending mail
 
 
-ComputerName : DEEPSECURITY
-Username     : MTAWFIKURGENT
-LogonTime    : 4/16/2021 6:05 PM
+ComputerName : FRANK-EX1-X04
+Username     : 4005
+LogonTime    : 4/20/2021 10:27 PM
 State        : ACTIVE
 SessionType  : CONSOLE
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 0
-
-ComputerName : FRANK-EVENTLOG
-Username     : MTAWFIKURGENT
-LogonTime    : 4/17/2021 2:11 PM
-State        : ACTIVE
-SessionType  : CONSOLE
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 0
+IdleDuration : 0 days 0 hours 0 minutes
 
 ComputerName : FRANK-FEM-F02
 Username     : ABDELRAHMANURGENT
 LogonTime    : 4/20/2021 10:28 AM
 State        : ACTIVE
 SessionType  : CONSOLE
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 0
-
-ComputerName : FRANK-SQL2019
-Username     : ABDELRAHMANURGENT
-LogonTime    : 4/7/2021 9:19 AM
-State        : ACTIVE
-SessionType  : CONSOLE
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 0
+IdleDuration : 0 days 0 hours 0 minutes
 
 ComputerName : SQL-SOLID1
 Username     : 4005
 LogonTime    : 4/17/2021 2:24 PM
 State        : ACTIVE
 SessionType  : CONSOLE
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 0
+IdleDuration : 0 days 0 hours 0 minutes
 
 ComputerName : SQL-SOLID1
 Username     : 4005
 LogonTime    : 4/17/2021 2:24 PM
 State        : ACTIVE
 SessionType  : CONSOLE
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 0
+IdleDuration : 0 days 0 hours 0 minutes
 
-ComputerName : STRAS-SOLID3
+ComputerName : SQL-SOLID1
 Username     : 4005
-LogonTime    : 4/12/2021 10:12 AM
+LogonTime    : 4/17/2021 2:24 PM
 State        : ACTIVE
 SessionType  : CONSOLE
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 0
+IdleDuration : 0 days 0 hours 0 minutes
 
 ComputerName : CP01
 Username     : MALIURGENT
 LogonTime    : 4/18/2021 2:50 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : .
+IdleDuration : 0 days 5 hours 08 minutes
 
 ComputerName : EU1MB9901
-Username     : PEPOURGENT
-LogonTime    : 4/20/2021 10:45 AM
+Username     : ISLAMADMIN
+LogonTime    : 4/25/2021 5:26 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 1
+IdleDuration : 0 days 7 hours 42 minutes
 
 ComputerName : EU1MB9902
-Username     : PEPOURGENT
-LogonTime    : 4/20/2021 10:49 AM
+Username     : ISLAMADMIN
+LogonTime    : 4/27/2021 11:07 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 1
-
-ComputerName : EU1MB9903
-Username     : PEPOURGENT
-LogonTime    : 4/20/2021 10:49 AM
-State        : ACTIVE
-SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 1
+IdleDuration : 0 days 7 hours 42 minutes
 
 ComputerName : FRANK-EX-DEV
 Username     : MALIURGENT
 LogonTime    : 4/20/2021 10:57 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : .
-
-ComputerName : FRANK-MBM-D35
-Username     : PEPOURGENT
-LogonTime    : 4/20/2021 10:53 AM
-State        : ACTIVE
-SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 1
-
-ComputerName : FRANK-MBM-D36
-Username     : PEPOURGENT
-LogonTime    : 4/20/2021 10:53 AM
-State        : ACTIVE
-SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 1
+IdleDuration : 0 days 7 hours 06 minutes
 
 ComputerName : FRANK-MBX02
 Username     : MALIURGENT
 LogonTime    : 4/18/2021 1:14 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 2
+IdleDuration : 0 days 5 hours 27 minutes
+
+ComputerName : FRANK-OOS-O01
+Username     : MALIURGENT
+LogonTime    : 4/27/2021 3:51 PM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 days 7 hours 10 minutes
 
 ComputerName : FRANK-OOS-O02
 Username     : MALIURGENT
-LogonTime    : 4/19/2021 4:03 PM
+LogonTime    : 4/27/2021 3:50 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 2
-IdleMinutes  : 14
-
-ComputerName : FRANK-PDC
-Username     : PEPOURGENT
-LogonTime    : 4/20/2021 1:36 PM
-State        : ACTIVE
-SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : .
+IdleDuration : 1 days 03 hours 20 minutes
 
 ComputerName : FRANK-TOOLS01
 Username     : MALIURGENT
 LogonTime    : 4/20/2021 10:49 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDays     : 0
-IdleHours    : 2
-IdleMinutes  : 54
+IdleDuration : 0 days 5 hours 28 minutes
 
-ComputerName : DEEPSECURITY
-Username     : ABDELRAHMANURGENT
-LogonTime    : 4/18/2021 12:16 PM
-State        : INACTIVE
-IdleDays     : 2
-IdleHours    : 01
-IdleMinutes  : 34
-
-ComputerName : EU1MB9901
-Username     : MTAWFIKURGENT
-LogonTime    : 4/20/2021 12:03 AM
-State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 2
-IdleMinutes  : 53
-
-ComputerName : EU1MB9901
-Username     : ISLAMADMIN
-LogonTime    : 4/20/2021 10:57 AM
-State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 1
-IdleMinutes  : 55
-
-ComputerName : EU1MB9902
-Username     : MTAWFIKURGENT
-LogonTime    : 4/18/2021 8:56 PM
-State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 22
-IdleMinutes  : 39
+ComputerName : PST-SERVER1
+Username     : MWAHBAURGENT
+LogonTime    : 4/28/2021 10:16 AM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 days 4 hours 22 minutes
 
 ComputerName : FRANK-ADC-01
 Username     : ISLAMADMIN
-LogonTime    : 4/15/2021 2:40 PM
+LogonTime    : 4/25/2021 3:50 PM
 State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 1
-IdleMinutes  : 54
+IdleDuration : 1 days 20 hours 15 minutes
 
-ComputerName : FRANK-FEM-F01
-Username     : GABRURGENT
-LogonTime    : 4/20/2021 11:24 AM
-State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 2
-IdleMinutes  : 23
-
-ComputerName : FRANK-FEM-F01
-Username     : MTAWFIKURGENT
-LogonTime    : 4/19/2021 8:38 AM
-State        : INACTIVE
-IdleDays     : 1
-IdleHours    : 02
-IdleMinutes  : 25
-
-ComputerName : FRANK-MBM-D35
+ComputerName : FRANK-D02
 Username     : ISLAMADMIN
-LogonTime    : 4/20/2021 11:07 AM
+LogonTime    : 4/21/2021 10:59 AM
 State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 1
-IdleMinutes  : 54
+IdleDuration : 3 days 07 hours 56 minutes
+
+ComputerName : FRANK-DC01
+Username     : ABDELRAHMANURGENT
+LogonTime    : 4/27/2021 11:39 AM
+State        : INACTIVE
+IdleDuration : 1 days 07 hours 29 minutes
+
+ComputerName : FRANK-EX-DEV
+Username     : MTAWFIKURGENT
+LogonTime    : 4/21/2021 11:30 AM
+State        : INACTIVE
+IdleDuration : 7 days 07 hours 39 minutes
+
+ComputerName : FRANK-MBX02
+Username     : MTAWFIKURGENT
+LogonTime    : 4/21/2021 12:26 AM
+State        : INACTIVE
+IdleDuration : 2 days 21 hours 20 minutes
 
 ComputerName : FRANK-MIGR
 Username     : MALIURGENT
 LogonTime    : 3/17/2021 7:10 PM
 State        : INACTIVE
-IdleDays     : 4
-IdleHours    : 12
-IdleMinutes  : 14
+IdleDuration : 12 days 17 hours 37 minutes
 
 ComputerName : FRANK-MIGR
 Username     : MTAWFIKURGENT
 LogonTime    : 4/14/2021 1:49 PM
 State        : INACTIVE
-IdleDays     : 4
-IdleHours    : 14
-IdleMinutes  : 56
-
-ComputerName : FRANK-OOS-O02
-Username     : MTAWFIKURGENT
-LogonTime    : 4/15/2021 10:34 AM
-State        : INACTIVE
-IdleDays     : 4
-IdleHours    : 14
-IdleMinutes  : 56
+IdleDuration : 12 days 20 hours 18 minutes
 
 ComputerName : FRANK-PDC
-Username     : MTAWFIKURGENT
-LogonTime    : 4/18/2021 11:09 AM
+Username     : ISLAMADMIN
+LogonTime    : 4/20/2021 10:18 PM
 State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 23
-IdleMinutes  : 13
+IdleDuration : 7 days 07 hours 50 minutes
 
-ComputerName : FRANK-VEEAM-ONE
+ComputerName : FRANK-PDC
 Username     : 4005
-LogonTime    : 4/19/2021 4:15 PM
+LogonTime    : 4/27/2021 1:17 PM
 State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 0
-IdleMinutes  : 22
+IdleDuration : 0 days 23 hours 40 minutes
 
-ComputerName : FRANK-VEEAM-ONE
+ComputerName : FRANK-RODC-01
 Username     : ABDELRAHMANURGENT
-LogonTime    : 4/18/2021 12:10 PM
+LogonTime    : 4/27/2021 3:03 PM
 State        : INACTIVE
-IdleDays     : 0
-IdleHours    : 21
-IdleMinutes  : 35
+IdleDuration : 0 days 6 hours 24 minutes
+
+ComputerName : FRANK-SQL2019
+Username     : ABDELRAHMANURGENT
+LogonTime    : 4/7/2021 9:19 AM
+State        : INACTIVE
+IdleDuration : 5 days 02 hours 44 minutes
 
 ComputerName : POWEREYE
 Username     : GABRURGENT
-LogonTime    : 4/9/2021 5:25 PM
+LogonTime    : 4/21/2021 8:36 PM
 State        : INACTIVE
-IdleDays     : 3
-IdleHours    : 21
-IdleMinutes  : 57
+IdleDuration : 1 days 05 hours 14 minutes
 
 ComputerName : WP-ROOTCA
 Username     : MTAWFIKURGENT
 LogonTime    : 3/21/2021 9:47 PM
 State        : INACTIVE
-IdleDays     : 24
-IdleHours    : 11
-IdleMinutes  : 17
+IdleDuration : 32 days 16 hours 39 minutes
 
 
 

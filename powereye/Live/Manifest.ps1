@@ -100,7 +100,13 @@ $Modules = @(
     [Module]@{
         Enabled = $true
         Name = 'Transport Services Restart'
-        RunInterval = New-TimeSpan -Hours 3
+        RunInterval = New-TimeSpan -Hours 1
+    }
+    #16
+    [Module]@{
+        Enabled = $true
+        Name = 'Security Event Log Cleared'
+        RunInterval = New-TimeSpan -Minutes 10
     }
 )
 if(!$Runtime_Data){

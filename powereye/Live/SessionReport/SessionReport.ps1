@@ -40,9 +40,7 @@ $session_script = {
                 LogonTime    = $_.Substring(65, ($_.Length - 65)).Trim().toUpper()
                 State        = if(($_.Substring(46, 8 ).Trim().toUpper()) -eq 'DISC'){'INACTIVE'}else{'ACTIVE'}
                 SessionType  = $_.substring(23,19).Trim().toUpper() -replace '-.*'
-                IdleDays     = $IdleDays
-                IdleHours    = $IdleHours
-                IdleMinutes  = $IdleMinutes
+                IdleDuration = "$IdleDays day(s) $IdleHours hours $IdleMinutes minutes"
             }
         }
     }
