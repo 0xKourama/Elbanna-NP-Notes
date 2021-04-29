@@ -1,0 +1,49 @@
+The operation couldn't be performed because object '*\EU1FE9111' couldn't be found on 'Frank-ADC-01.Roaya.loc'.
+    + CategoryInfo          : NotSpecified: (:) [Get-MailboxDatabaseCopyStatus], ManagementObjectNotFoundException
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=307c21a0-fc52-4f01-a756-951653574c79,TimeStamp=4/29/2021 7:1 
+   4:02 PM] [FailureCategory=Cmdlet-ManagementObjectNotFoundException] 9ED344E6,Microsoft.Exchange.Management.SystemC  
+  onfigurationTasks.GetMailboxDatabaseCopyStatus
+    + PSComputerName        : eu1mb9901.roaya.loc
+ 
+The operation couldn't be performed because object '*\EU1FE9222' couldn't be found on 'Frank-ADC-01.Roaya.loc'.
+    + CategoryInfo          : NotSpecified: (:) [Get-MailboxDatabaseCopyStatus], ManagementObjectNotFoundException
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=6ce396ab-5789-4ea7-8d65-8ca96360183c,TimeStamp=4/29/2021 7:1 
+   4:07 PM] [FailureCategory=Cmdlet-ManagementObjectNotFoundException] 3B34C86D,Microsoft.Exchange.Management.SystemC  
+  onfigurationTasks.GetMailboxDatabaseCopyStatus
+    + PSComputerName        : eu1mb9901.roaya.loc
+ 
+The operation couldn't be performed because object '*\EU1FE9333' couldn't be found on 'Frank-ADC-01.Roaya.loc'.
+    + CategoryInfo          : NotSpecified: (:) [Get-MailboxDatabaseCopyStatus], ManagementObjectNotFoundException
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=307c21a0-fc52-4f01-a756-951653574c79,TimeStamp=4/29/2021 7:1 
+   4:11 PM] [FailureCategory=Cmdlet-ManagementObjectNotFoundException] 599DBC10,Microsoft.Exchange.Management.SystemC  
+  onfigurationTasks.GetMailboxDatabaseCopyStatus
+    + PSComputerName        : eu1mb9901.roaya.loc
+ 
+The operation couldn't be performed because object '*\EU1FE9444' couldn't be found on 'Frank-ADC-01.Roaya.loc'.
+    + CategoryInfo          : NotSpecified: (:) [Get-MailboxDatabaseCopyStatus], ManagementObjectNotFoundException
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=307c21a0-fc52-4f01-a756-951653574c79,TimeStamp=4/29/2021 7:1 
+   4:15 PM] [FailureCategory=Cmdlet-ManagementObjectNotFoundException] CB098C4F,Microsoft.Exchange.Management.SystemC  
+  onfigurationTasks.GetMailboxDatabaseCopyStatus
+    + PSComputerName        : eu1mb9901.roaya.loc
+ 
+The operation couldn't be performed because object '*\FRANK-EX1-X04' couldn't be found on 'Frank-ADC-01.Roaya.loc'.
+    + CategoryInfo          : NotSpecified: (:) [Get-MailboxDatabaseCopyStatus], ManagementObjectNotFoundException
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=6ce396ab-5789-4ea7-8d65-8ca96360183c,TimeStamp=4/29/2021 7:1 
+   4:41 PM] [FailureCategory=Cmdlet-ManagementObjectNotFoundException] 897CA272,Microsoft.Exchange.Management.SystemC  
+  onfigurationTasks.GetMailboxDatabaseCopyStatus
+    + PSComputerName        : eu1mb9901.roaya.loc
+ 
+The operation couldn't be performed because object '*\FRANK-EX-DEV' couldn't be found on 'Frank-ADC-01.Roaya.loc'.
+    + CategoryInfo          : NotSpecified: (:) [Get-MailboxDatabaseCopyStatus], ManagementObjectNotFoundException
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=307c21a0-fc52-4f01-a756-951653574c79,TimeStamp=4/29/2021 7:1 
+   4:56 PM] [FailureCategory=Cmdlet-ManagementObjectNotFoundException] ACBAF1B6,Microsoft.Exchange.Management.SystemC  
+  onfigurationTasks.GetMailboxDatabaseCopyStatus
+    + PSComputerName        : eu1mb9901.roaya.loc
+ 
+The operation couldn't be performed because object '*\FRANK-MBX02' couldn't be found on 'Frank-ADC-01.Roaya.loc'.
+    + CategoryInfo          : NotSpecified: (:) [Get-MailboxDatabaseCopyStatus], ManagementObjectNotFoundException
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=307c21a0-fc52-4f01-a756-951653574c79,TimeStamp=4/29/2021 7:1 
+   5:27 PM] [FailureCategory=Cmdlet-ManagementObjectNotFoundException] 33E8A828,Microsoft.Exchange.Management.SystemC  
+  onfigurationTasks.GetMailboxDatabaseCopyStatus
+    + PSComputerName        : eu1mb9901.roaya.loc
+ 

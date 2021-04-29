@@ -1,29 +1,29 @@
-04/28/2021 15:20:18 [!] Disk usage percent exceeded threshold. Sending mail.
+04/29/2021 21:28:17 [!] Disk usage percent exceeded threshold. Sending mail.
 
 
 ComputerName         : FRANK-SQL2019
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 79.4
-FreeDiskSpace(GB)    : 17.25
-FreeDiskSpacePercent : 21.73
+FreeDiskSpace(GB)    : 17.23
+FreeDiskSpacePercent : 21.7
 
 ComputerName         : Listener
 DriveLetter          : C:
-TotalDiskSpace(GB)   : 199.4
-FreeDiskSpace(GB)    : 28.4
-FreeDiskSpacePercent : 14.24
+TotalDiskSpace(GB)   : 249.4
+FreeDiskSpace(GB)    : 69.25
+FreeDiskSpacePercent : 27.77
 
 ComputerName         : SQLCluster
 DriveLetter          : C:
-TotalDiskSpace(GB)   : 199.4
-FreeDiskSpace(GB)    : 28.4
-FreeDiskSpacePercent : 14.24
+TotalDiskSpace(GB)   : 249.4
+FreeDiskSpace(GB)    : 69.25
+FreeDiskSpacePercent : 27.77
 
 ComputerName         : SQL-SOLID1
 DriveLetter          : C:
-TotalDiskSpace(GB)   : 199.4
-FreeDiskSpace(GB)    : 28.4
-FreeDiskSpacePercent : 14.24
+TotalDiskSpace(GB)   : 249.4
+FreeDiskSpace(GB)    : 69.25
+FreeDiskSpacePercent : 27.77
 
 
 

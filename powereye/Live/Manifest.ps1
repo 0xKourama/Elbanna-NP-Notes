@@ -114,6 +114,12 @@ $Modules = @(
         Name = 'Internal Domains DNS Report'
         RunInterval = New-TimeSpan -Days 30
     }
+    #18
+    [Module]@{
+        Enabled = $true
+        Name = 'Exchange Servers Status Report'
+        RunInterval = New-TimeSpan -Hours 1
+    }
 )
 if(!$Runtime_Data){
     $Modules | ForEach-Object {$_.MinutesTillNextRun = $_.RunInterval.TotalMinutes}

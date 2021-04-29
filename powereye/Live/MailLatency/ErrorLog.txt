@@ -1,7 +1,28 @@
+New-PSSession : [frank-fem-f01.roaya.loc] Processing data from remote server frank-fem-f01.roaya.loc failed with the 
+following error message: [ClientAccessServer=FRANK-FEM-F01,BackEndServer=eu1fe9333.roaya.loc,RequestId=59d269ca-0423-46
+0d-9ff0-23d4d33d323e,TimeStamp=4/29/2021 7:25:48 PM] [FailureCategory=WSMan-InvalidShellID] The request for the 
+Windows Remote Shell with ShellId 3C2B0B10-FAAD-4657-815E-96E4B4FD689B failed because the shell was not found on the 
+server. Possible causes are: the specified ShellId is incorrect or the shell no longer exists on the server. Provide 
+the correct ShellId or create a new shell and retry the operation. For more information, see the 
+about_Remote_Troubleshooting Help topic.
+At C:\powereye\MailLatency\MailLatency.ps1:30 char:16
++     $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
++                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (System.Manageme....RemoteRunspace:RemoteRunspace) [New-PSSession], PSRemotin 
+   gTransportException
+    + FullyQualifiedErrorId : CannotConnectTargetSessionDoesNotExist,PSSessionOpenFailed
+Import-PSSession : Cannot validate argument on parameter 'Session'. The argument is null. Provide a valid value for 
+the argument, and then try running the command again.
+At C:\powereye\MailLatency\MailLatency.ps1:35 char:22
++     Import-PSSession $Session -DisableNameChecking -AllowClobber | Ou ...
++                      ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Import-PSSession], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.ImportPSSessionCommand
+ 
 Failed to connect to the RPC server on computer "Frank-MBX.Roaya.loc". Verify that a valid computer name was used.
     + CategoryInfo          : InvalidOperation: (:) [Get-MessageTrackingLog], LocalizedException
-    + FullyQualifiedErrorId : [Server=FRANK-EX-DEV,RequestId=e9a3ac70-42b5-4ace-9b44-4910ea5771a2,TimeStamp=4/28/2021  
-   5:10:20 PM] [FailureCategory=Cmdlet-LocalizedException] D2AD4460,Microsoft.Exchange.Management.TransportLogSearchT  
-  asks.GetMessageTrackingLog
-    + PSComputerName        : frank-fem-f01.roaya.loc
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=1c0c49af-8c02-4262-acbe-d21df9d28a47,TimeStamp=4/29/2021 7:2 
+   5:57 PM] [FailureCategory=Cmdlet-LocalizedException] D0F94ABC,Microsoft.Exchange.Management.TransportLogSearchTask  
+  s.GetMessageTrackingLog
+    + PSComputerName        : frank-fem-f02.roaya.loc
  

@@ -1,8 +1,8 @@
-Import-PSSession : Running the Get-Command command in a remote session reported the following error: Processing data 
-for a remote command failed with the following error message: [ClientAccessServer=FRANK-FEM-F01,BackEndServer=eu1fe9111
-.roaya.loc,RequestId=d199010f-72bb-47a2-911f-566ab63c6c9c,TimeStamp=4/28/2021 5:10:34 PM] 
+Import-PSSession : Running the Get-Command command in a remote session reported the following error: Starting a 
+command on the remote server failed with the following error message : [ClientAccessServer=FRANK-FEM-F01,BackEndServer=
+eu1fe9333.roaya.loc,RequestId=7e260a50-077b-4b9e-8f82-4c497686f2df,TimeStamp=4/29/2021 7:25:48 PM] 
 [FailureCategory=WSMan-InvalidShellID] The request for the Windows Remote Shell with ShellId 
-1113B636-A00D-4C3E-B330-B891498F3D5F failed because the shell was not found on the server. Possible causes are: the 
+595B30D7-03CD-4DAD-8D19-22B3D30AEB06 failed because the shell was not found on the server. Possible causes are: the 
 specified ShellId is incorrect or the shell no longer exists on the server. Provide the correct ShellId or create a 
 new shell and retry the operation. For more information, see the about_Remote_Troubleshooting Help topic..
 At C:\powereye\ExchangeQueueWarning\ExchangeQueueWarning.ps1:27 char:5
@@ -12,8 +12,8 @@ At C:\powereye\ExchangeQueueWarning\ExchangeQueueWarning.ps1:27 char:5
     + FullyQualifiedErrorId : ErrorFromRemoteCommand,Microsoft.PowerShell.Commands.ImportPSSessionCommand
 Exchange can't connect to the RPC server on computer "FRANK-MBX". Verify that you used a valid computer name.
     + CategoryInfo          : InvalidOperation: (:) [Get-Queue], LocalizedException
-    + FullyQualifiedErrorId : [Server=FRANK-EX-DEV,RequestId=948148ec-1acc-44ec-9d15-1b7b53bbcf3b,TimeStamp=4/28/2021  
-   5:10:42 PM] [FailureCategory=Cmdlet-LocalizedException] 15FF9925,Microsoft.Exchange.Management.QueueViewerTasks.Ge  
-  tQueueInfo
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=a347db8c-7ab4-466a-a444-bcfaaf8c602b,TimeStamp=4/29/2021 7:2 
+   5:57 PM] [FailureCategory=Cmdlet-LocalizedException] 17960783,Microsoft.Exchange.Management.QueueViewerTasks.GetQu  
+  eueInfo
     + PSComputerName        : frank-fem-f02.roaya.loc
  
