@@ -34,7 +34,7 @@ $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Prope
 $AuthorizedPersonnel = (Get-ADGroupMember -Identity 'Authorized Personnel').SamAccountName
 
 $UnAuthorizedSessions = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script |
-                        Where-Object {$AuthorizedPersonnel -notcontains $_.Username -and $_.Username -ne 'NONE' -and $_.ComputerName -ne 'PowerEye'} |
+                        Where-Object {$AuthorizedPersonnel -notcontains $_.Username -and $_.Username -ne 'NONE'} |
                         Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID
 
 $LogoffScript = {
@@ -69,11 +69,6 @@ $($AuthorizedPersonnel | Sort-Object | ForEach-Object -Begin {'<ul>'} -Process {
 
 if($LogoffResults){
 
-$LogoffSummary = @"
-<h3>Logoff Results</h3>
-$($LogoffResults | ConvertTo-Html -Fragment)
-"@
-
 $UnAuthorizedUsersDetected = @"
 <h3>Unauthorized User(s) Detected</h3>
 $($UnAuthorizedSessions.Username | Sort-Object -Unique | ForEach-Object -Begin {'<ul>'} -Process {"<li>$($_.ToUpper())</li>"} -End {"</ul>"})
@@ -82,6 +77,11 @@ $($UnAuthorizedSessions.Username | Sort-Object -Unique | ForEach-Object -Begin {
 $UnAuthorizedSessionDetails = @"
 <h3>Unauthorized Session Details</h3>
 $($UnAuthorizedSessions | Select-Object -Property * -ExcludeProperty ID | ConvertTo-Html -Fragment)
+"@
+
+$LogoffSummary = @"
+<h3>Logoff Results</h3>
+$($LogoffResults | ConvertTo-Html -Fragment)
 "@
 
 }
