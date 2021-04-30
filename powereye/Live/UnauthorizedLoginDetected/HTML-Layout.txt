@@ -1,5 +1,3 @@
-$header = "<h3>Unauthorized Login Detected</h3>"
-
 $style = @"
 <style>
 th, td {
@@ -13,7 +11,7 @@ table{
 }
 h3{
     color: white;
-    background-color: #570ec4;
+    background-color: #cf1b0e;
     padding: 3px;
     text-align: Center;
     border: 2px solid black;

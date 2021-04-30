@@ -34,10 +34,62 @@ $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Prope
 $AuthorizedPersonnel = (Get-ADGroupMember -Identity 'Authorized Personnel').SamAccountName
 
 $UnAuthorizedSessions = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script |
-                        Where-Object {$AuthorizedPersonnel -notcontains $_.Username} | 
+                        Where-Object {$AuthorizedPersonnel -notcontains $_.Username -and $_.Username -ne 'NONE' -and $_.ComputerName -ne 'PowerEye'} |
                         Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID
 
+$LogoffScript = {
+    logoff $args[0]
+    if($?){
+        [PSCustomObject][Ordered]@{
+            ComputerName = $env:COMPUTERNAME
+            Username     = $args[1]
+            Logoff       = 'Success'
+        }
+    }
+    else{
+        [PSCustomObject][Ordered]@{
+            ComputerName = $env:COMPUTERNAME
+            Username     = $args[1]
+            Logoff       = 'Fail'
+        }        
+    }
+}
 
-Write-Output "$(Get-Date) [*] Sending mail"
+$LogoffResults = @()
 
-Send-MailMessage @MailSettings -BodyAsHtml "$style $body"
+$UnAuthorizedSessions | ForEach-Object {
+    $LogoffResults += Invoke-Command -ComputerName $_.ComputerName -ScriptBlock $LogoffScript -ArgumentList $_.ID, $_.Username |
+                      Select-Object -Property * -ExcludeProperty PSComputerName, RunspaceId, PSShowComputerName
+}
+
+$AuthorizedPersonnelList = @"
+<h3>Authorized Personnel</h3>
+$($AuthorizedPersonnel | Sort-Object | ForEach-Object -Begin {'<ul>'} -Process {"<li>$($_.ToUpper())</li>"} -End {"</ul>"})
+"@
+
+if($LogoffResults){
+
+$LogoffSummary = @"
+<h3>Logoff Results</h3>
+$($LogoffResults | ConvertTo-Html -Fragment)
+"@
+
+$UnAuthorizedUsersDetected = @"
+<h3>Unauthorized User(s) Detected</h3>
+$($UnAuthorizedSessions.Username | Sort-Object -Unique | ForEach-Object -Begin {'<ul>'} -Process {"<li>$($_.ToUpper())</li>"} -End {"</ul>"})
+"@
+
+$UnAuthorizedSessionDetails = @"
+<h3>Unauthorized Session Details</h3>
+$($UnAuthorizedSessions | Select-Object -Property * -ExcludeProperty ID | ConvertTo-Html -Fragment)
+"@
+
+}
+
+if($UnAuthorizedSessions){
+    Write-Output "$(Get-Date) [*] Unauthorized logins detected. Sending mail"
+    Send-MailMessage @MailSettings -BodyAsHtml "$style $UnAuthorizedUsersDetected $UnAuthorizedSessionDetails $LogoffSummary $AuthorizedPersonnelList"
+}
+else{
+    Write-Output "$(Get-Date) [*] No unauthorized logins detected."
+}
