@@ -18,7 +18,9 @@ class DNSData {
     [Bool]$SPFConfigured
     [Bool]$DKIMConfigured
     [Bool]$DMARCConfigured
-    [String]$Error = 'N/A'
+    [String]$MXError = 'N/A'
+    [String]$TXTError = 'N/A'
+    [String]$SRVError = 'N/A'
 }
 
 $Csv = Import-Csv 'WorldPostaDomains.csv' | Sort-Object -Property Domain
@@ -38,7 +40,7 @@ $Csv.Domain | ForEach-Object {
 
     try{
         #get MX records
-        $MX_Query  = Resolve-DnsName -Type MX -Name $Domain | Select-Object -Property Name, NameExchange
+        $MX_Query  = Resolve-DnsName -Type MX -Name $Domain -DnsOnly | Select-Object -Property Name, NameExchange
 
         if($MX_Query.NameExchange){
             foreach($MX_Result in $MX_Query){
@@ -60,9 +62,13 @@ $Csv.Domain | ForEach-Object {
         else{
             $Obj.MXConfiguration = 'Not Configured'
         }
-
+    }
+    catch{
+        $Obj.MXError = $_
+    }
+    try{
         #get TXT records
-        $TXT_Query  = Resolve-DnsName -Type TXT -Name $Domain | Select-Object -Property Name, Strings
+        $TXT_Query  = Resolve-DnsName -Type TXT -Name $Domain -DnsOnly | Select-Object -Property Name, Strings
 
         if($TXT_Query){
             foreach($TXT_Result in $TXT_Query){
@@ -72,9 +78,14 @@ $Csv.Domain | ForEach-Object {
                     'v=DMARC1; p=none; rua=mailto:report@worldposta.com; ruf=mailto:report@worldposta.com; sp=none;'{$Obj.DMARCConfigured = $true}
                 }
             }
-        }
+        }        
+    }
+    catch{
+        $Obj.TXTError = $_    
+    }
+    try{
         #get SRV records
-        $SRV_Query = Resolve-DnsName -Name "_autodiscover._tcp.$Domain" -Type SRV | Select-Object -Property NameTarget
+        $SRV_Query = Resolve-DnsName -Type SRV -Name "_autodiscover._tcp.$Domain" -DnsOnly | Select-Object -Property NameTarget
 
         if($SRV_Query){
             foreach($SRV_Result in $SRV_Query){
@@ -82,10 +93,10 @@ $Csv.Domain | ForEach-Object {
                     $Obj.SRVConfigured = $true
                 }
             }
-        }
+        }        
     }
     catch{
-        $Obj.Error  = $_
+        $Obj.SRVError  = $_    
     }
     $Result_list += $Obj
 }
@@ -98,17 +109,49 @@ $Report_items = @(
     'DMARCConfigured'
 )
 
-$Report_items | ForEach-Object {
-
-$body += @"
-<h3>$($_ -replace 'Config.*') Configuration Summary</h3>
-$($Result_list | Group-Object -Property $_ |
-Select-Object -Property @{n='State';e={$_.Name}}, Count,@{n='Domains';e={$_.Group.Domain -join ' | '}} |
-Sort-Object -Property Value -Descending | ConvertTo-Html -Fragment)
+$body = @"
+<h3>Domains with unconfigured MX</h3>
+$($Result_list | Where-Object {$_.MXConfiguration -eq 'Not Configured'} | 
+                 ForEach-Object -Begin   {'<ol>'} `
+                                -Process {"<li><b>$($_.Domain)</b></li>"} `
+                                -End     {'</ol>'})
+<h3>Domains with different MX present</h3>
+$($Result_list | Where-Object {$_.MXConfiguration -eq 'Different MX Present'} |
+                 ForEach-Object -Begin   {'<ol>'} `
+                                -Process {"<li><b>$($_.Domain)</b></li>"} `
+                                -End     {'</ol>'})
+<h3>Domains with partial MX configuration</h3>
+$($Result_list | Where-Object {$_.MXConfiguration -eq 'Partially Configured'} |
+                 ForEach-Object -Begin   {'<ol>'} `
+                                -Process {"<li><b>$($_.Domain)</b></li>"} `
+                                -End     {'</ol>'})
+<h3>Domains with MX record errors</h3>
+$($Result_list | Where-Object {$_.MXError -ne 'N/A'} |
+                 ForEach-Object -Begin   {'<ol>'} `
+                                -Process {"<li><b>$($_.Domain):</b> <b style='color:red;'>$($_.MXError)</b></li>"} `
+                                -End     {'</ol>'})
+<h3>Domains with unconfigured SRV</h3>
+$($Result_list | Where-Object {$_.SRVConfigured -eq $false} |
+                 ForEach-Object -Begin   {'<ol>'} `
+                                -Process {"<li><b>$($_.Domain)</b></li>"} `
+                                -End     {'</ol>'})
+<h3>Domains with SRV record errors</h3>
+$($Result_list | Where-Object {$_.SRVError -ne 'N/A'} |
+                 ForEach-Object -Begin   {'<ol>'} `
+                                -Process {"<li><b>$($_.Domain):</b> <b style='color:red;'>$($_.SRVError)</b></li>"} `
+                                -End     {'</ol>'})
+<h3>Domains with unconfigured SPF</h3>
+$($Result_list | Where-Object {$_.SPFConfigured -eq $false} |
+                 ForEach-Object -Begin   {'<ol>'} `
+                                -Process {"<li><b>$($_.Domain)</b></li>"} `
+                                -End     {'</ol>'})
+<h3>Domains with TXT record errors</h3>
+$($Result_list | Where-Object {$_.TXTError -ne 'N/A'} | Sort-Object -Property TXTError |
+                 ForEach-Object -Begin   {'<ol>'} `
+                                -Process {"<li><b>$($_.Domain):</b> <b style='color:red;'>$($_.TXTError)</b></li>"} `
+                                -End     {'</ol>'})
 "@
 
-}
-
-Write-Output $Result_list
+#Write-Output $Result_list
 
 Send-MailMessage @MailSettings -BodyAsHtml "$Style $body"

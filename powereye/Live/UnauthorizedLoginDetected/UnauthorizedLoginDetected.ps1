@@ -38,20 +38,42 @@ $UnAuthorizedSessions = Invoke-Command -ComputerName $Online -ErrorAction Silent
                         Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID
 
 $LogoffScript = {
+    class ActionData{
+        [String]$Computername = $env:COMPUTERNAME
+        [String]$Username = $args[1]
+        [String]$Type
+        [String]$Logoff
+        [String]$Disable
+        [String]$PasswordChange
+        [String]$NewPassword = '$$Unauthorized$$Login$$'
+    }
+    $Obj = New-Object -TypeName ActionData
     logoff $args[0]
     if($?){
-        [PSCustomObject][Ordered]@{
-            ComputerName = $env:COMPUTERNAME
-            Username     = $args[1]
-            Logoff       = 'Success'
+        $Obj.Logoff = 'Success'
+    }
+    else{
+        $Obj.Logoff = 'Fail'      
+    }
+    if(Get-LocalUser -Name $args[1]){
+        $Obj.Type = 'Local User'
+        Disable-LocalUser -Name $args[1]
+        if($?){
+            $Obj.Disable = 'Success'
+        }
+        else{
+            $Obj.Disable = 'Fail'      
+        }
+        Get-LocalUser -Name $args[1] | Set-LocalUser -Password (ConvertTo-SecureString $Obj.NewPassword -AsPlainText -Force)
+        if($?){
+            $Obj.PasswordChange = 'Success'
+        }
+        else{
+            $Obj.PasswordChange = 'Fail'      
         }
     }
     else{
-        [PSCustomObject][Ordered]@{
-            ComputerName = $env:COMPUTERNAME
-            Username     = $args[1]
-            Logoff       = 'Fail'
-        }        
+        $Obj.Type = 'Domain User'
     }
 }
 
