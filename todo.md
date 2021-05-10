@@ -9,6 +9,7 @@
 6. check the sysinternals logon sessions feature
 7. monitor processes where the company name not equal to microsoft
 8. monitor netstat for weird connections
+9. logoff users idle for more than 1 day
 
 # Work Tasks:
 1. implement concept of least privilege in AD
