@@ -173,7 +173,6 @@ While($true){
     #region commit charge, tracker, trail and max chain and push
     Start-Job -ScriptBlock {
         Set-Location $args[0]
-        git add Charge.txt
         git add Tracker.csv
         git add MaxChain.txt
         git add Trail.csv
