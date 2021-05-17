@@ -1,0 +1,26 @@
+Set-PowerCLIConfiguration : The term 'Set-PowerCLIConfiguration' is not recognized as the name of a cmdlet, function, 
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At C:\powereye\VCenterReport\VCenterReport.ps1:6 char:1
++ Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Set-PowerCLIConfiguration:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Connect-VIServer : The term 'Connect-VIServer' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At C:\powereye\VCenterReport\VCenterReport.ps1:8 char:1
++ Connect-VIServer -Server 10.5.5.21 -User 'powercli@worldposta.com' -P ...
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Connect-VIServer:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Get-VM : The term 'Get-VM' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At C:\powereye\VCenterReport\VCenterReport.ps1:11 char:12
++ $Results = Get-VM | Select-Object -Property Name,PowerState,NumCpu,Co ...
++            ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-VM:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
