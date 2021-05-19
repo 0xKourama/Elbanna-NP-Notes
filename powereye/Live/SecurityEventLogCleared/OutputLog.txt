@@ -1,0 +1,1 @@
+05/19/2021 09:55:12 [*] No Security Event log clear(s) detected.

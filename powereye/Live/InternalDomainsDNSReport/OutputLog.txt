@@ -1,416 +1,6214 @@
-[1/416] [*] Quering 19011pharmacies.com
-[2/416] [*] Quering 2b.com.eg
-[3/416] [*] Quering 2bcomputer.com
-[4/416] [*] Quering 2betech.com
-[5/416] [*] Quering 2bsystems.com
-[6/416] [*] Quering 3een-eg.com
-[7/416] [*] Quering abdulghanigold.com
-[8/416] [*] Quering abdulghaniholding.com
-[9/416] [*] Quering abdulghanijewelry.com
-[10/416] [*] Quering Abouelenein.com
-[11/416] [*] Quering abrahamsdescendantsafterhim.org
-[12/416] [*] Quering abrajud.com
-[13/416] [*] Quering a-c.sa
-[14/416] [*] Quering accountants-group.com
-[15/416] [*] Quering accurateeg.com
-[16/416] [*] Quering Acrow.co
-[17/416] [*] Quering acumaticaeg.com
-[18/416] [*] Quering adalaa.com
-[19/416] [*] Quering afb-eg.com
-[20/416] [*] Quering alagzakhana.com
-[21/416] [*] Quering alamalegypt.com
-[22/416] [*] Quering alarabia-group.com
-[23/416] [*] Quering albarakaenergy.com
-[24/416] [*] Quering alchemiser.com
-[25/416] [*] Quering alcorfund.com
-[26/416] [*] Quering alezz-trade.com
-[27/416] [*] Quering alfadomain.local
-[28/416] [*] Quering alfamarket.com.eg
-[29/416] [*] Quering alhayahuniversity.com
-[30/416] [*] Quering alhayahuniversity.info
-[31/416] [*] Quering aliandco.com.eg
-[32/416] [*] Quering alico.law
-[33/416] [*] Quering ALKHABERY.COM
-[34/416] [*] Quering almorshedy.info
-[35/416] [*] Quering almottahedon-pharma.com
-[36/416] [*] Quering alnadapaints.com
-[37/416] [*] Quering alolatraining.com
-[38/416] [*] Quering alras.me
-[39/416] [*] Quering alsuae.com
-[40/416] [*] Quering alunaut.com.eg
-[41/416] [*] Quering amenli.com
-[42/416] [*] Quering ammlaky.com
-[43/416] [*] Quering amp.com.eg
-[44/416] [*] Quering anameischanged.info
-[45/416] [*] Quering arabia-holding.com
-[46/416] [*] Quering argonaut.ae
-[47/416] [*] Quering argo-naut.com
-[48/416] [*] Quering argonaut.com.eg
-[49/416] [*] Quering artboardsolutions.com
-[50/416] [*] Quering aswaqfathalla.com
-[51/416] [*] Quering bakelandegypt.com
-[52/416] [*] Quering balsamtrade.com
-[53/416] [*] Quering BatteryEgypt.com
-[54/416] [*] Quering beebreakegypt.com
-[55/416] [*] Quering beromedia.net
-[56/416] [*] Quering bestbuyegypt.com
-[57/416] [*] Quering BetaClubHouse.com
-[58/416] [*] Quering betaegypt.com
-[59/416] [*] Quering betna.com.eg
-[60/416] [*] Quering bienetreinstitute.com
-[61/416] [*] Quering bioeco-servizi.it
-[62/416] [*] Quering bio-medics.com
-[63/416] [*] Quering bluebus.com.eg
-[64/416] [*] Quering bluebytehospitality.com
-[65/416] [*] Quering blueskyegypt.net
-[66/416] [*] Quering blueskygroup.net
-[67/416] [*] Quering bottomline-psc.com
-[68/416] [*] Quering bouchamaoui.com
-[69/416] [*] Quering brighteye.info
-[70/416] [*] Quering brighteyexpo.com
-[71/416] [*] Quering buccaneershoes.com
-[72/416] [*] Quering cadcamcim.com
-[73/416] [*] Quering capital-egy.com
-[74/416] [*] Quering capital-ib.com
-[75/416] [*] Quering captinegypt.site
-[76/416] [*] Quering captin-egypt.site
-[77/416] [*] Quering careandcurepharma.com
-[78/416] [*] Quering careers.mobica.net
-[79/416] [*] Quering cashcool-dc.com
-[80/416] [*] Quering cbnewhomes-eg.com
-[81/416] [*] Quering Ceramicacleopatra.com
-[82/416] [*] Quering Ceramicacleopatragroup.com
-[83/416] [*] Quering cg-elsewedy.com
-[84/416] [*] Quering cguay.ca
-[85/416] [*] Quering checkwpcloudmail.com
-[86/416] [*] Quering circlecompany.com
-[87/416] [*] Quering citglobal.com
-[88/416] [*] Quering citizenship-souq.com
-[89/416] [*] Quering Clar.com
-[90/416] [*] Quering Cleopatra.group
-[91/416] [*] Quering Cleopatraagricultural.com
-[92/416] [*] Quering Cleopatraaviation.com
-[93/416] [*] Quering cleopatraceramics.com
-[94/416] [*] Quering Cleopatra-ceramics.com
-[95/416] [*] Quering Cleopatracsv.com
-[96/416] [*] Quering Cleopatra-Group.com
-[97/416] [*] Quering Cleopatraluxury.com
-[98/416] [*] Quering Cleopatraluxurymakadi.com
-[99/416] [*] Quering cleopatraluxurysharm.com
-[100/416] [*] Quering cleopatramall.com
-[101/416] [*] Quering Cleopatramedia.com
-[102/416] [*] Quering Cleopatrarealestate.com
-[103/416] [*] Quering Cleopatra-realestate.com
-[104/416] [*] Quering Cleopatra-realstate.co
-[105/416] [*] Quering Cleotravel.net
-[106/416] [*] Quering clipbucket.net
-[107/416] [*] Quering clue-ces.com
-[108/416] [*] Quering Cmaeg.com
-[109/416] [*] Quering com7.com.au
-[110/416] [*] Quering combatmedic.net
-[111/416] [*] Quering concordia-co.com
-[112/416] [*] Quering cosmotica.co
-[113/416] [*] Quering cosmotrade.co
-[114/416] [*] Quering ctgroups.net
-[115/416] [*] Quering dailyneedsgroup.com
-[116/416] [*] Quering deeinteriors.ae
-[117/416] [*] Quering degas-egy.com
-[118/416] [*] Quering deglagroup.com
-[119/416] [*] Quering delmar.com.eg
-[120/416] [*] Quering deltacapital-eg.com
-[121/416] [*] Quering dentalgate.org
-[122/416] [*] Quering developers-egypt.com
-[123/416] [*] Quering dilifoods.com
-[124/416] [*] Quering dorra.com
-[125/416] [*] Quering DorraGroup.net
-[126/416] [*] Quering Dorraresale.org
-[127/416] [*] Quering double-h-adv.com
-[128/416] [*] Quering eaco.co
-[129/416] [*] Quering eagle-chemicals.com
-[130/416] [*] Quering eaglepaint.com
-[131/416] [*] Quering easternegypt.com
-[132/416] [*] Quering echomarchi.com
-[133/416] [*] Quering economicgroup-eg.com
-[134/416] [*] Quering ees.com.eg
-[135/416] [*] Quering eeziclean.com
-[136/416] [*] Quering eg.fcm.travel
-[137/416] [*] Quering egycopp.com
-[138/416] [*] Quering egymec-eg.com
-[139/416] [*] Quering egy-pt.org
-[140/416] [*] Quering egyptbestproperties.com
-[141/416] [*] Quering egyptbestproperties.net
-[142/416] [*] Quering egypteurosuppliers.net
-[143/416] [*] Quering egyrobo.com
-[144/416] [*] Quering elahlyia.com
-[145/416] [*] Quering elahlyia.com.eg
-[146/416] [*] Quering elarabipharma.com
-[147/416] [*] Quering Elbalad.news
-[148/416] [*] Quering elbaladtv.net
-[149/416] [*] Quering elbannagroup.com
-[150/416] [*] Quering Elbassiouni.com
-[151/416] [*] Quering Elbassiouni.net
-[152/416] [*] Quering eldidiconcrete.com
-[153/416] [*] Quering eldidigroup.com
-[154/416] [*] Quering electrometer.com.gh
-[155/416] [*] Quering Elitehospital.org
-[156/416] [*] Quering elixirpharma-eg.com
-[157/416] [*] Quering Ellaithy.com.eg
-[158/416] [*] Quering elsherifontherun.com
-[159/416] [*] Quering elwatnya-co.com
-[160/416] [*] Quering emessadenim.com
-[161/416] [*] Quering emi-egypt.com
-[162/416] [*] Quering empire-cc.com
-[163/416] [*] Quering energyacables.com
-[164/416] [*] Quering energya-pts.com
-[165/416] [*] Quering engcomptec.com
-[166/416] [*] Quering epda-eg.com
-[167/416] [*] Quering eps-egypt.com
-[168/416] [*] Quering eps-egypt.org
-[169/416] [*] Quering erccegypt.com
-[170/416] [*] Quering etf.org.eg
-[171/416] [*] Quering ethos.ag
-[172/416] [*] Quering evacoeg.com
-[173/416] [*] Quering extramile-eg.co
-[174/416] [*] Quering eye-ltd.com
-[175/416] [*] Quering eye-ltd-eg.com
-[176/416] [*] Quering ezz-eldeen.com
-[177/416] [*] Quering fahmy-group.com
-[178/416] [*] Quering Farahboat.com
-[179/416] [*] Quering farmerbox.sa
-[180/416] [*] Quering fcportal.ae
-[181/416] [*] Quering ferrometalco.com
-[182/416] [*] Quering fgsltd.com
-[183/416] [*] Quering findwell-eg.com
-[184/416] [*] Quering floortec-psc.com
-[185/416] [*] Quering flygroup-eg.com
-[186/416] [*] Quering freddo-egypt.com
-[187/416] [*] Quering fruttella.com
-[188/416] [*] Quering gapit.us
-[189/416] [*] Quering gasmetro.com
-[190/416] [*] Quering Genena.com
-[191/416] [*] Quering genenaproj.com
-[192/416] [*] Quering genenavacation.com
-[193/416] [*] Quering GolfCorner.net
-[194/416] [*] Quering greens-pharmacies.com
-[195/416] [*] Quering greenways.com.pk
-[196/416] [*] Quering groupcleopatra.com
-[197/416] [*] Quering grubersqatar.com
-[198/416] [*] Quering gsa-egy.com
-[199/416] [*] Quering gt.com.eg
-[200/416] [*] Quering guideme4u.com
-[201/416] [*] Quering hanzamedic.com
-[202/416] [*] Quering happycloud.sa
-[203/416] [*] Quering happysweet.co
-[204/416] [*] Quering happysweet.org
-[205/416] [*] Quering hartmannegypt.com
-[206/416] [*] Quering hassab.com
-[207/416] [*] Quering hbsie.com
-[208/416] [*] Quering hipharm-eg.com
-[209/416] [*] Quering holytourseg.com
-[210/416] [*] Quering holytraveleg.com
-[211/416] [*] Quering HootAmmo.com
-[212/416] [*] Quering hopeegypt.com
-[213/416] [*] Quering ht-egy.com
-[214/416] [*] Quering hygeiagroup.net
-[215/416] [*] Quering i2m-pharma.com
-[216/416] [*] Quering ibs-construction.com
-[217/416] [*] Quering icestate.com
-[218/416] [*] Quering icgroupus.com
-[219/416] [*] Quering Ikthar.net
-[220/416] [*] Quering ilsme.com
-[221/416] [*] Quering imaegy.com
-[222/416] [*] Quering infotechs.co
-[223/416] [*] Quering inland-eg.com
-[224/416] [*] Quering inma.com.eg
-[225/416] [*] Quering inmacommercial.com
-[226/416] [*] Quering inmaconstruction.com
-[227/416] [*] Quering inmadevelopments.com
-[228/416] [*] Quering inmaproperties.com
-[229/416] [*] Quering inshieldinsurance.com
-[230/416] [*] Quering intertex-eg.com
-[231/416] [*] Quering itcegy.com
-[232/416] [*] Quering itcpro.co
-[233/416] [*] Quering itvision-eg.com
-[234/416] [*] Quering jbla.pt
-[235/416] [*] Quering Jetouregypt.com
-[236/416] [*] Quering jgtech.com.pa
-[237/416] [*] Quering kith-kin.net
-[238/416] [*] Quering Kkc.ae
-[239/416] [*] Quering lascopaque.com
-[240/416] [*] Quering lavvento.com
-[241/416] [*] Quering life4more.com
-[242/416] [*] Quering Livingin.com
-[243/416] [*] Quering login-sys.com
-[244/416] [*] Quering lutfidifc.com
-[245/416] [*] Quering luxury-living.me
-[246/416] [*] Quering mamibacare.com
-[247/416] [*] Quering masajid.com
-[248/416] [*] Quering massarsupplies.com
-[249/416] [*] Quering matjjari.com
-[250/416] [*] Quering mavendevelopments.com
-[251/416] [*] Quering mav-enterprise.com
-[252/416] [*] Quering md-masterbatch.com
-[253/416] [*] Quering medcom-hc.com
-[254/416] [*] Quering megaloja.pt
-[255/416] [*] Quering megancy.com
-[256/416] [*] Quering megatrust.net
-[257/416] [*] Quering melsyasa.com
-[258/416] [*] Quering memaaralmorshedy.com
-[259/416] [*] Quering metcegy.com
-[260/416] [*] Quering mgh.co.za
-[261/416] [*] Quering mgtechnik.com
-[262/416] [*] Quering Middleeastcomp.com
-[263/416] [*] Quering mindset-academy.net
-[264/416] [*] Quering minlo.com
-[265/416] [*] Quering misr2000online.net
-[266/416] [*] Quering misrpharmacies.com
-[267/416] [*] Quering mixta-egypt.com
-[268/416] [*] Quering mobica.net
-[269/416] [*] Quering modacasa.com
-[270/416] [*] Quering modern4concrete.com
-[271/416] [*] Quering morshedy.com
-[272/416] [*] Quering morshedygroup.com
-[273/416] [*] Quering mortgage-souq.com
-[274/416] [*] Quering moughrabi.com
-[275/416] [*] Quering ms-eg.net
-[276/416] [*] Quering mtbi-group.com
-[277/416] [*] Quering mt-egy.com
-[278/416] [*] Quering mubarakat.com
-[279/416] [*] Quering myasli.com
-[280/416] [*] Quering Nadapaints.com
-[281/416] [*] Quering neiscoegypt.com
-[282/416] [*] Quering nerhadou.com
-[283/416] [*] Quering networkback.com
-[284/416] [*] Quering newmixeg.com
-[285/416] [*] Quering nextv-eg.com
-[286/416] [*] Quering noblecatsociety.com
-[287/416] [*] Quering noon-center.com
-[288/416] [*] Quering noureldinelsherif.com
-[289/416] [*] Quering novochem.net
-[290/416] [*] Quering odce-sa.com
-[291/416] [*] Quering Olicolube.com
-[292/416] [*] Quering omelmasryeenhospital.gov.eg
-[293/416] [*] Quering omni-es.com
-[294/416] [*] Quering ontherun.co
-[295/416] [*] Quering optaline.com
-[296/416] [*] Quering orchidiapharmaceutical.com
-[297/416] [*] Quering orient-paints.com
-[298/416] [*] Quering os4it-sa.com
-[299/416] [*] Quering panda-leap.com
-[300/416] [*] Quering peking-eg.com
-[301/416] [*] Quering pharmaland.com.eg
-[302/416] [*] Quering pharopharma.com
-[303/416] [*] Quering phr-services.com
-[304/416] [*] Quering platinumtrading-eg.com
-[305/416] [*] Quering plumharbour.com
-[306/416] [*] Quering Poolsuae.com
-[307/416] [*] Quering PORTAWEST.COM
-[308/416] [*] Quering powerlube.net
-[309/416] [*] Quering presentation-eg.com
-[310/416] [*] Quering presentationsports.com
-[311/416] [*] Quering prokuala.com
-[312/416] [*] Quering propertystreet.org
-[313/416] [*] Quering Proteam-eg.com
-[314/416] [*] Quering provence-eg.com
-[315/416] [*] Quering provenceschool.com
-[316/416] [*] Quering pst.ae
-[317/416] [*] Quering ptc-eg.org
-[318/416] [*] Quering ptcprojects.com
-[319/416] [*] Quering pyramidseg.com
-[320/416] [*] Quering qasatli.com
-[321/416] [*] Quering QasemStore.com
-[322/416] [*] Quering qasern.com
-[323/416] [*] Quering qspacetraining.com
-[324/416] [*] Quering Qudra-hr.com
-[325/416] [*] Quering queendimarine.com
-[326/416] [*] Quering raatrading.com
-[327/416] [*] Quering rage3fady.com
-[328/416] [*] Quering raileibeachclub.com
-[329/416] [*] Quering rasport.com.eg
-[330/416] [*] Quering rawaj-eg.com
-[331/416] [*] Quering redconcon.com
-[332/416] [*] Quering roaya.co
-[333/416] [*] Quering roaya.loc
-[334/416] [*] Quering roayamail.com
-[335/416] [*] Quering roayastore.com
-[336/416] [*] Quering roayatechnology.com
-[337/416] [*] Quering rootsib.com
-[338/416] [*] Quering Roshdy.co
-[339/416] [*] Quering roshdypharmacies.com
-[340/416] [*] Quering royalswisshotels.com
-[341/416] [*] Quering royalswisslahore.com
-[342/416] [*] Quering sakr-group.org
-[343/416] [*] Quering samritz.co.uk
-[344/416] [*] Quering sanda.email
-[345/416] [*] Quering sanoeg.com
-[346/416] [*] Quering saratec.sa
-[347/416] [*] Quering satta-pharma.com
-[348/416] [*] Quering scefirm.com
-[349/416] [*] Quering schlhomes.com
-[350/416] [*] Quering seifhealthcare.com
-[351/416] [*] Quering serayvacationclub.com
-[352/416] [*] Quering serenityhotelsegypt.com
-[353/416] [*] Quering servicesolutions.co.za
-[354/416] [*] Quering sewedy.com.eg
-[355/416] [*] Quering shamaliwaris.com
-[356/416] [*] Quering sharakkas.com
-[357/416] [*] Quering shieldeg.com
-[358/416] [*] Quering sigma-g.com
-[359/416] [*] Quering silicon21.com.eg
-[360/416] [*] Quering skinrulesegy.com
-[361/416] [*] Quering skygulftraining.com
-[362/416] [*] Quering smartarrow.sa
-[363/416] [*] Quering smartbirdtec.com
-[364/416] [*] Quering smartfurniture.com.eg
-[365/416] [*] Quering smg.com.eg
-[366/416] [*] Quering Solotex-eg.com
-[367/416] [*] Quering sorouj-eg.com
-[368/416] [*] Quering souqbrands.com
-[369/416] [*] Quering stylishbrands.shop
-[370/416] [*] Quering SultanPharmacies.com
-[371/416] [*] Quering swissinternationalhotels.com
-[372/416] [*] Quering swissspirithotels.com
-[373/416] [*] Quering tankwaters.com
-[374/416] [*] Quering tarabot-eg.com
-[375/416] [*] Quering taskedin.net
-[376/416] [*] Quering technocans.net
-[377/416] [*] Quering technoeg.com
-[378/416] [*] Quering techno-side.com
-[379/416] [*] Quering telebirdeg.com
-[380/416] [*] Quering terceirasoft.com
-[381/416] [*] Quering thefootpark.com
-[382/416] [*] Quering thesprinthub.com
-[383/416] [*] Quering tiba-group.com
-[384/416] [*] Quering tmcleaninguae.com
-[385/416] [*] Quering topio-urban.com
-[386/416] [*] Quering Topprintsolutions.com
-[387/416] [*] Quering traininggulf.com
-[388/416] [*] Quering transmisr.com
-[389/416] [*] Quering triviumbc.com
-[390/416] [*] Quering triviumzayed.com
-[391/416] [*] Quering truepulse.ae
-[392/416] [*] Quering tseppas.com
-[393/416] [*] Quering tu-rath.com
-[394/416] [*] Quering tvboxuae.com
-[395/416] [*] Quering uaealnuaimi.com
-[396/416] [*] Quering ubciseg.com
-[397/416] [*] Quering unicon-pumps.com
-[398/416] [*] Quering uniqueimpacts.com
-[399/416] [*] Quering UPE-egypt.com
-[400/416] [*] Quering valuemixers.com
-[401/416] [*] Quering venus-electric.net
-[402/416] [*] Quering virtualallianceltd.com
-[403/416] [*] Quering Whiteville.it
-[404/416] [*] Quering world-beds.com
-[405/416] [*] Quering worldposta.com
-[406/416] [*] Quering worldposta-trial.com
-[407/416] [*] Quering wp.uiy.com
-[408/416] [*] Quering wpcloud.info
-[409/416] [*] Quering Wxpo.com
-[410/416] [*] Quering xproaction.com
-[411/416] [*] Quering xproaction.online
-[412/416] [*] Quering zambiaelectrometer.co.zm
-[413/416] [*] Quering zarcouae.ae
-[414/416] [*] Quering zeelandiamisr.com
-[415/416] [*] Quering ziberna.us
-[416/416] [*] Quering zoono-sa.co.za
+[1/414] [*] Quering 19011pharmacies.com
+[2/414] [*] Quering 2b.com.eg
+[3/414] [*] Quering 2bcomputer.com
+[4/414] [*] Quering 2betech.com
+[5/414] [*] Quering 2bsystems.com
+[6/414] [*] Quering 3een-eg.com
+[7/414] [*] Quering abdulghanigold.com
+[8/414] [*] Quering abdulghaniholding.com
+[9/414] [*] Quering abdulghanijewelry.com
+[10/414] [*] Quering Abouelenein.com
+[11/414] [*] Quering abrahamsdescendantsafterhim.org
+[12/414] [*] Quering abrajud.com
+[13/414] [*] Quering a-c.sa
+[14/414] [*] Quering accountants-group.com
+[15/414] [*] Quering accurateeg.com
+[16/414] [*] Quering Acrow.co
+[17/414] [*] Quering acumaticaeg.com
+[18/414] [*] Quering adalaa.com
+[19/414] [*] Quering afb-eg.com
+[20/414] [*] Quering alagzakhana.com
+[21/414] [*] Quering alamalegypt.com
+[22/414] [*] Quering alarabia-group.com
+[23/414] [*] Quering albarakaenergy.com
+[24/414] [*] Quering alchemiser.com
+[25/414] [*] Quering alcorfund.com
+[26/414] [*] Quering alezz-trade.com
+[27/414] [*] Quering alfadomain.local
+[28/414] [*] Quering alfamarket.com.eg
+[29/414] [*] Quering alhayahuniversity.com
+[30/414] [*] Quering alhayahuniversity.info
+[31/414] [*] Quering aliandco.com.eg
+[32/414] [*] Quering alico.law
+[33/414] [*] Quering ALKHABERY.COM
+[34/414] [*] Quering almorshedy.info
+[35/414] [*] Quering almottahedon-pharma.com
+[36/414] [*] Quering alnadapaints.com
+[37/414] [*] Quering alolatraining.com
+[38/414] [*] Quering alras.me
+[39/414] [*] Quering alsuae.com
+[40/414] [*] Quering alunaut.com.eg
+[41/414] [*] Quering amenli.com
+[42/414] [*] Quering ammlaky.com
+[43/414] [*] Quering amp.com.eg
+[44/414] [*] Quering anameischanged.info
+[45/414] [*] Quering arabia-holding.com
+[46/414] [*] Quering argonaut.ae
+[47/414] [*] Quering argo-naut.com
+[48/414] [*] Quering argonaut.com.eg
+[49/414] [*] Quering artboardsolutions.com
+[50/414] [*] Quering aswaqfathalla.com
+[51/414] [*] Quering bakelandegypt.com
+[52/414] [*] Quering balsamtrade.com
+[53/414] [*] Quering BatteryEgypt.com
+[54/414] [*] Quering beebreakegypt.com
+[55/414] [*] Quering beromedia.net
+[56/414] [*] Quering bestbuyegypt.com
+[57/414] [*] Quering BetaClubHouse.com
+[58/414] [*] Quering betaegypt.com
+[59/414] [*] Quering betna.com.eg
+[60/414] [*] Quering bienetreinstitute.com
+[61/414] [*] Quering bioeco-servizi.it
+[62/414] [*] Quering bio-medics.com
+[63/414] [*] Quering bluebus.com.eg
+[64/414] [*] Quering bluebytehospitality.com
+[65/414] [*] Quering blueskyegypt.net
+[66/414] [*] Quering blueskygroup.net
+[67/414] [*] Quering bottomline-psc.com
+[68/414] [*] Quering bouchamaoui.com
+[69/414] [*] Quering brighteye.info
+[70/414] [*] Quering brighteyexpo.com
+[71/414] [*] Quering buccaneershoes.com
+[72/414] [*] Quering cadcamcim.com
+[73/414] [*] Quering capital-egy.com
+[74/414] [*] Quering capital-ib.com
+[75/414] [*] Quering captinegypt.site
+[76/414] [*] Quering captin-egypt.site
+[77/414] [*] Quering careandcurepharma.com
+[78/414] [*] Quering careers.mobica.net
+[79/414] [*] Quering cashcool-dc.com
+[80/414] [*] Quering cbnewhomes-eg.com
+[81/414] [*] Quering Ceramicacleopatra.com
+[82/414] [*] Quering Ceramicacleopatragroup.com
+[83/414] [*] Quering cg-elsewedy.com
+[84/414] [*] Quering cguay.ca
+[85/414] [*] Quering checkwpcloudmail.com
+[86/414] [*] Quering circlecompany.com
+[87/414] [*] Quering citglobal.com
+[88/414] [*] Quering citizenship-souq.com
+[89/414] [*] Quering Clar.com
+[90/414] [*] Quering Cleopatra.group
+[91/414] [*] Quering Cleopatraagricultural.com
+[92/414] [*] Quering Cleopatraaviation.com
+[93/414] [*] Quering cleopatraceramics.com
+[94/414] [*] Quering Cleopatra-ceramics.com
+[95/414] [*] Quering Cleopatracsv.com
+[96/414] [*] Quering Cleopatra-Group.com
+[97/414] [*] Quering Cleopatraluxury.com
+[98/414] [*] Quering Cleopatraluxurymakadi.com
+[99/414] [*] Quering cleopatraluxurysharm.com
+[100/414] [*] Quering cleopatramall.com
+[101/414] [*] Quering Cleopatramedia.com
+[102/414] [*] Quering Cleopatrarealestate.com
+[103/414] [*] Quering Cleopatra-realestate.com
+[104/414] [*] Quering Cleopatra-realstate.co
+[105/414] [*] Quering Cleotravel.net
+[106/414] [*] Quering clipbucket.net
+[107/414] [*] Quering clue-ces.com
+[108/414] [*] Quering Cmaeg.com
+[109/414] [*] Quering com7.com.au
+[110/414] [*] Quering combatmedic.net
+[111/414] [*] Quering concordia-co.com
+[112/414] [*] Quering cosmotica.co
+[113/414] [*] Quering cosmotrade.co
+[114/414] [*] Quering ctgroups.net
+[115/414] [*] Quering dailyneedsgroup.com
+[116/414] [*] Quering deeinteriors.ae
+[117/414] [*] Quering degas-egy.com
+[118/414] [*] Quering deglagroup.com
+[119/414] [*] Quering delmar.com.eg
+[120/414] [*] Quering deltacapital-eg.com
+[121/414] [*] Quering dentalgate.org
+[122/414] [*] Quering developers-egypt.com
+[123/414] [*] Quering dilifoods.com
+[124/414] [*] Quering dorra.com
+[125/414] [*] Quering DorraGroup.net
+[126/414] [*] Quering Dorraresale.org
+[127/414] [*] Quering double-h-adv.com
+[128/414] [*] Quering eaco.co
+[129/414] [*] Quering eagle-chemicals.com
+[130/414] [*] Quering eaglepaint.com
+[131/414] [*] Quering easternegypt.com
+[132/414] [*] Quering echomarchi.com
+[133/414] [*] Quering economicgroup-eg.com
+[134/414] [*] Quering ees.com.eg
+[135/414] [*] Quering eeziclean.com
+[136/414] [*] Quering eg.fcm.travel
+[137/414] [*] Quering egycopp.com
+[138/414] [*] Quering egymec-eg.com
+[139/414] [*] Quering egy-pt.org
+[140/414] [*] Quering egyptbestproperties.com
+[141/414] [*] Quering egyptbestproperties.net
+[142/414] [*] Quering egypteurosuppliers.net
+[143/414] [*] Quering egyrobo.com
+[144/414] [*] Quering elahlyia.com
+[145/414] [*] Quering elahlyia.com.eg
+[146/414] [*] Quering elarabipharma.com
+[147/414] [*] Quering Elbalad.news
+[148/414] [*] Quering elbaladtv.net
+[149/414] [*] Quering elbannagroup.com
+[150/414] [*] Quering Elbassiouni.com
+[151/414] [*] Quering Elbassiouni.net
+[152/414] [*] Quering eldidiconcrete.com
+[153/414] [*] Quering eldidigroup.com
+[154/414] [*] Quering electrometer.com.gh
+[155/414] [*] Quering Elitehospital.org
+[156/414] [*] Quering elixirpharma-eg.com
+[157/414] [*] Quering Ellaithy.com.eg
+[158/414] [*] Quering elsherifontherun.com
+[159/414] [*] Quering elwatnya-co.com
+[160/414] [*] Quering emessadenim.com
+[161/414] [*] Quering emi-egypt.com
+[162/414] [*] Quering empire-cc.com
+[163/414] [*] Quering energyacables.com
+[164/414] [*] Quering energya-pts.com
+[165/414] [*] Quering engcomptec.com
+[166/414] [*] Quering epda-eg.com
+[167/414] [*] Quering eps-egypt.com
+[168/414] [*] Quering eps-egypt.org
+[169/414] [*] Quering erccegypt.com
+[170/414] [*] Quering etf.org.eg
+[171/414] [*] Quering ethos.ag
+[172/414] [*] Quering evacoeg.com
+[173/414] [*] Quering extramile-eg.co
+[174/414] [*] Quering eye-ltd.com
+[175/414] [*] Quering eye-ltd-eg.com
+[176/414] [*] Quering ezz-eldeen.com
+[177/414] [*] Quering fahmy-group.com
+[178/414] [*] Quering Farahboat.com
+[179/414] [*] Quering farmerbox.sa
+[180/414] [*] Quering fcportal.ae
+[181/414] [*] Quering ferrometalco.com
+[182/414] [*] Quering fgsltd.com
+[183/414] [*] Quering findwell-eg.com
+[184/414] [*] Quering floortec-psc.com
+[185/414] [*] Quering flygroup-eg.com
+[186/414] [*] Quering freddo-egypt.com
+[187/414] [*] Quering fruttella.com
+[188/414] [*] Quering gapit.us
+[189/414] [*] Quering gasmetro.com
+[190/414] [*] Quering Genena.com
+[191/414] [*] Quering genenaproj.com
+[192/414] [*] Quering genenavacation.com
+[193/414] [*] Quering GolfCorner.net
+[194/414] [*] Quering greens-pharmacies.com
+[195/414] [*] Quering greenways.com.pk
+[196/414] [*] Quering groupcleopatra.com
+[197/414] [*] Quering grubersqatar.com
+[198/414] [*] Quering gsa-egy.com
+[199/414] [*] Quering gt.com.eg
+[200/414] [*] Quering guideme4u.com
+[201/414] [*] Quering hanzamedic.com
+[202/414] [*] Quering happycloud.sa
+[203/414] [*] Quering happysweet.co
+[204/414] [*] Quering happysweet.org
+[205/414] [*] Quering hartmannegypt.com
+[206/414] [*] Quering hassab.com
+[207/414] [*] Quering hbsie.com
+[208/414] [*] Quering hipharm-eg.com
+[209/414] [*] Quering holytourseg.com
+[210/414] [*] Quering holytraveleg.com
+[211/414] [*] Quering HootAmmo.com
+[212/414] [*] Quering hopeegypt.com
+[213/414] [*] Quering ht-egy.com
+[214/414] [*] Quering hygeiagroup.net
+[215/414] [*] Quering i2m-pharma.com
+[216/414] [*] Quering ibs-construction.com
+[217/414] [*] Quering icestate.com
+[218/414] [*] Quering icgroupus.com
+[219/414] [*] Quering Ikthar.net
+[220/414] [*] Quering ilsme.com
+[221/414] [*] Quering imaegy.com
+[222/414] [*] Quering infotechs.co
+[223/414] [*] Quering inland-eg.com
+[224/414] [*] Quering inma.com.eg
+[225/414] [*] Quering inmacommercial.com
+[226/414] [*] Quering inmaconstruction.com
+[227/414] [*] Quering inmadevelopments.com
+[228/414] [*] Quering inmaproperties.com
+[229/414] [*] Quering inshieldinsurance.com
+[230/414] [*] Quering intertex-eg.com
+[231/414] [*] Quering itcegy.com
+[232/414] [*] Quering itcpro.co
+[233/414] [*] Quering itvision-eg.com
+[234/414] [*] Quering jbla.pt
+[235/414] [*] Quering Jetouregypt.com
+[236/414] [*] Quering jgtech.com.pa
+[237/414] [*] Quering kith-kin.net
+[238/414] [*] Quering Kkc.ae
+[239/414] [*] Quering lascopaque.com
+[240/414] [*] Quering lavvento.com
+[241/414] [*] Quering life4more.com
+[242/414] [*] Quering Livingin.com
+[243/414] [*] Quering login-sys.com
+[244/414] [*] Quering lutfidifc.com
+[245/414] [*] Quering luxury-living.me
+[246/414] [*] Quering mamibacare.com
+[247/414] [*] Quering masajid.com
+[248/414] [*] Quering massarsupplies.com
+[249/414] [*] Quering matjjari.com
+[250/414] [*] Quering mavendevelopments.com
+[251/414] [*] Quering mav-enterprise.com
+[252/414] [*] Quering md-masterbatch.com
+[253/414] [*] Quering medcom-hc.com
+[254/414] [*] Quering megaloja.pt
+[255/414] [*] Quering megancy.com
+[256/414] [*] Quering megatrust.net
+[257/414] [*] Quering melsyasa.com
+[258/414] [*] Quering memaaralmorshedy.com
+[259/414] [*] Quering metcegy.com
+[260/414] [*] Quering mgh.co.za
+[261/414] [*] Quering mgtechnik.com
+[262/414] [*] Quering Middleeastcomp.com
+[263/414] [*] Quering mindset-academy.net
+[264/414] [*] Quering minlo.com
+[265/414] [*] Quering misr2000online.net
+[266/414] [*] Quering misrpharmacies.com
+[267/414] [*] Quering mixta-egypt.com
+[268/414] [*] Quering mobica.net
+[269/414] [*] Quering modacasa.com
+[270/414] [*] Quering modern4concrete.com
+[271/414] [*] Quering morshedy.com
+[272/414] [*] Quering morshedygroup.com
+[273/414] [*] Quering mortgage-souq.com
+[274/414] [*] Quering moughrabi.com
+[275/414] [*] Quering ms-eg.net
+[276/414] [*] Quering mtbi-group.com
+[277/414] [*] Quering mt-egy.com
+[278/414] [*] Quering mubarakat.com
+[279/414] [*] Quering myasli.com
+[280/414] [*] Quering Nadapaints.com
+[281/414] [*] Quering neiscoegypt.com
+[282/414] [*] Quering nerhadou.com
+[283/414] [*] Quering networkback.com
+[284/414] [*] Quering newmixeg.com
+[285/414] [*] Quering nextv-eg.com
+[286/414] [*] Quering noblecatsociety.com
+[287/414] [*] Quering noon-center.com
+[288/414] [*] Quering noureldinelsherif.com
+[289/414] [*] Quering novochem.net
+[290/414] [*] Quering odce-sa.com
+[291/414] [*] Quering Olicolube.com
+[292/414] [*] Quering omelmasryeenhospital.gov.eg
+[293/414] [*] Quering omni-es.com
+[294/414] [*] Quering ontherun.co
+[295/414] [*] Quering optaline.com
+[296/414] [*] Quering orchidiapharmaceutical.com
+[297/414] [*] Quering orient-paints.com
+[298/414] [*] Quering os4it-sa.com
+[299/414] [*] Quering panda-leap.com
+[300/414] [*] Quering peking-eg.com
+[301/414] [*] Quering pharmaland.com.eg
+[302/414] [*] Quering pharopharma.com
+[303/414] [*] Quering phr-services.com
+[304/414] [*] Quering platinumtrading-eg.com
+[305/414] [*] Quering plumharbour.com
+[306/414] [*] Quering Poolsuae.com
+[307/414] [*] Quering PORTAWEST.COM
+[308/414] [*] Quering powerlube.net
+[309/414] [*] Quering presentation-eg.com
+[310/414] [*] Quering presentationsports.com
+[311/414] [*] Quering prokuala.com
+[312/414] [*] Quering propertystreet.org
+[313/414] [*] Quering Proteam-eg.com
+[314/414] [*] Quering provence-eg.com
+[315/414] [*] Quering provenceschool.com
+[316/414] [*] Quering pst.ae
+[317/414] [*] Quering ptc-eg.org
+[318/414] [*] Quering ptcprojects.com
+[319/414] [*] Quering pyramidseg.com
+[320/414] [*] Quering qasatli.com
+[321/414] [*] Quering QasemStore.com
+[322/414] [*] Quering qasern.com
+[323/414] [*] Quering qspacetraining.com
+[324/414] [*] Quering Qudra-hr.com
+[325/414] [*] Quering queendimarine.com
+[326/414] [*] Quering raatrading.com
+[327/414] [*] Quering rage3fady.com
+[328/414] [*] Quering raileibeachclub.com
+[329/414] [*] Quering rasport.com.eg
+[330/414] [*] Quering rawaj-eg.com
+[331/414] [*] Quering redconcon.com
+[332/414] [*] Quering roayamail.com
+[333/414] [*] Quering roayastore.com
+[334/414] [*] Quering roayatechnology.com
+[335/414] [*] Quering rootsib.com
+[336/414] [*] Quering Roshdy.co
+[337/414] [*] Quering roshdypharmacies.com
+[338/414] [*] Quering royalswisshotels.com
+[339/414] [*] Quering royalswisslahore.com
+[340/414] [*] Quering sakr-group.org
+[341/414] [*] Quering samritz.co.uk
+[342/414] [*] Quering sanda.email
+[343/414] [*] Quering sanoeg.com
+[344/414] [*] Quering saratec.sa
+[345/414] [*] Quering satta-pharma.com
+[346/414] [*] Quering scefirm.com
+[347/414] [*] Quering schlhomes.com
+[348/414] [*] Quering seifhealthcare.com
+[349/414] [*] Quering serayvacationclub.com
+[350/414] [*] Quering serenityhotelsegypt.com
+[351/414] [*] Quering servicesolutions.co.za
+[352/414] [*] Quering sewedy.com.eg
+[353/414] [*] Quering shamaliwaris.com
+[354/414] [*] Quering sharakkas.com
+[355/414] [*] Quering shieldeg.com
+[356/414] [*] Quering sigma-g.com
+[357/414] [*] Quering silicon21.com.eg
+[358/414] [*] Quering skinrulesegy.com
+[359/414] [*] Quering skygulftraining.com
+[360/414] [*] Quering smartarrow.sa
+[361/414] [*] Quering smartbirdtec.com
+[362/414] [*] Quering smartfurniture.com.eg
+[363/414] [*] Quering smg.com.eg
+[364/414] [*] Quering Solotex-eg.com
+[365/414] [*] Quering sorouj-eg.com
+[366/414] [*] Quering souqbrands.com
+[367/414] [*] Quering stylishbrands.shop
+[368/414] [*] Quering SultanPharmacies.com
+[369/414] [*] Quering swissinternationalhotels.com
+[370/414] [*] Quering swissspirithotels.com
+[371/414] [*] Quering tankwaters.com
+[372/414] [*] Quering tarabot-eg.com
+[373/414] [*] Quering taskedin.net
+[374/414] [*] Quering technocans.net
+[375/414] [*] Quering technoeg.com
+[376/414] [*] Quering techno-side.com
+[377/414] [*] Quering telebirdeg.com
+[378/414] [*] Quering terceirasoft.com
+[379/414] [*] Quering thefootpark.com
+[380/414] [*] Quering thesprinthub.com
+[381/414] [*] Quering tiba-group.com
+[382/414] [*] Quering tmcleaninguae.com
+[383/414] [*] Quering topio-urban.com
+[384/414] [*] Quering Topprintsolutions.com
+[385/414] [*] Quering traininggulf.com
+[386/414] [*] Quering transmisr.com
+[387/414] [*] Quering triviumbc.com
+[388/414] [*] Quering triviumzayed.com
+[389/414] [*] Quering truepulse.ae
+[390/414] [*] Quering tseppas.com
+[391/414] [*] Quering tu-rath.com
+[392/414] [*] Quering tvboxuae.com
+[393/414] [*] Quering uaealnuaimi.com
+[394/414] [*] Quering ubciseg.com
+[395/414] [*] Quering unicon-pumps.com
+[396/414] [*] Quering uniqueimpacts.com
+[397/414] [*] Quering UPE-egypt.com
+[398/414] [*] Quering valuemixers.com
+[399/414] [*] Quering venus-electric.net
+[400/414] [*] Quering virtualallianceltd.com
+[401/414] [*] Quering Whiteville.it
+[402/414] [*] Quering world-beds.com
+[403/414] [*] Quering worldposta.com
+[404/414] [*] Quering worldposta-trial.com
+[405/414] [*] Quering wp.uiy.com
+[406/414] [*] Quering wpcloud.info
+[407/414] [*] Quering Wxpo.com
+[408/414] [*] Quering xproaction.com
+[409/414] [*] Quering xproaction.online
+[410/414] [*] Quering zambiaelectrometer.co.zm
+[411/414] [*] Quering zarcouae.ae
+[412/414] [*] Quering zeelandiamisr.com
+[413/414] [*] Quering ziberna.us
+[414/414] [*] Quering zoono-sa.co.za
+
+
+Domain          : 19011pharmacies.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : 2b.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : 2bcomputer.com
+MX1             : True
+MX2             : True
+MX3             : False
+MX4             : False
+MXConfiguration : Partially Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : 2betech.com
+MX1             : True
+MX2             : True
+MX3             : False
+MX4             : True
+MXConfiguration : Partially Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : 2bsystems.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : 3een-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : abdulghanigold.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : abdulghaniholding.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : abdulghanijewelry.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Abouelenein.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : abrahamsdescendantsafterhim.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : abrajud.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : a-c.sa
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : accountants-group.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : accurateeg.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Acrow.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : acumaticaeg.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : adalaa.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : afb-eg.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alagzakhana.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alamalegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alarabia-group.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : albarakaenergy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alchemiser.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : alcorfund.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alezz-trade.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alfadomain.local
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : alfamarket.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alhayahuniversity.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alhayahuniversity.info
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : aliandco.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alico.law
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : ALKHABERY.COM
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : almorshedy.info
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : almottahedon-pharma.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alnadapaints.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alolatraining.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alras.me
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : alsuae.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : alunaut.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : amenli.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ammlaky.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : amp.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : anameischanged.info
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : arabia-holding.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : argonaut.ae
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : argo-naut.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : argonaut.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : artboardsolutions.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : aswaqfathalla.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : bakelandegypt.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : balsamtrade.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : BatteryEgypt.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : beebreakegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : beromedia.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : bestbuyegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : BetaClubHouse.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : betaegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : betna.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : bienetreinstitute.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
+SRVError        : DNS server failure
+
+Domain          : bioeco-servizi.it
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : bio-medics.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : bluebus.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : bluebytehospitality.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : blueskyegypt.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : blueskygroup.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : bottomline-psc.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : bouchamaoui.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : brighteye.info
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : brighteyexpo.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : buccaneershoes.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cadcamcim.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : capital-egy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : capital-ib.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : captinegypt.site
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : captin-egypt.site
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : careandcurepharma.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : careers.mobica.net
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : cashcool-dc.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cbnewhomes-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Ceramicacleopatra.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Ceramicacleopatragroup.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cg-elsewedy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cguay.ca
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : checkwpcloudmail.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : circlecompany.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : citglobal.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : citizenship-souq.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : Clar.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatra.group
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatraagricultural.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : Cleopatraaviation.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cleopatraceramics.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : Cleopatra-ceramics.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatracsv.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatra-Group.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatraluxury.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatraluxurymakadi.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cleopatraluxurysharm.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cleopatramall.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatramedia.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatrarealestate.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatra-realestate.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Cleopatra-realstate.co
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : Cleotravel.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : clipbucket.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : clue-ces.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : Cmaeg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : com7.com.au
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : combatmedic.net
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : concordia-co.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cosmotica.co
+MX1             : False
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Partially Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : cosmotrade.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ctgroups.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : dailyneedsgroup.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : deeinteriors.ae
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : degas-egy.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : deglagroup.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : delmar.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : deltacapital-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : dentalgate.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : developers-egypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : dilifoods.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : dorra.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : DorraGroup.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Dorraresale.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : double-h-adv.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eaco.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eagle-chemicals.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eaglepaint.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : easternegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : echomarchi.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : economicgroup-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ees.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : eeziclean.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eg.fcm.travel
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : egycopp.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : egymec-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : egy-pt.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : egyptbestproperties.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : egyptbestproperties.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : egypteurosuppliers.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : egyrobo.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : elahlyia.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : elahlyia.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : elarabipharma.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Elbalad.news
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : elbaladtv.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : elbannagroup.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Elbassiouni.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Elbassiouni.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eldidiconcrete.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : eldidigroup.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : electrometer.com.gh
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Elitehospital.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : elixirpharma-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Ellaithy.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : elsherifontherun.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : elwatnya-co.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : emessadenim.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : emi-egypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : empire-cc.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : energyacables.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : energya-pts.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : engcomptec.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : epda-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eps-egypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eps-egypt.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : erccegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : etf.org.eg
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : ethos.ag
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : evacoeg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : extramile-eg.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eye-ltd.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : eye-ltd-eg.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : ezz-eldeen.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : fahmy-group.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Farahboat.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : farmerbox.sa
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : fcportal.ae
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : ferrometalco.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : fgsltd.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : findwell-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : floortec-psc.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : flygroup-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : freddo-egypt.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : fruttella.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : gapit.us
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : gasmetro.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Genena.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : genenaproj.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : genenavacation.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : GolfCorner.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : greens-pharmacies.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : greenways.com.pk
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : groupcleopatra.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : grubersqatar.com
+MX1             : False
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Partially Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : gsa-egy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : gt.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : guideme4u.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : hanzamedic.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : happycloud.sa
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : happysweet.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : happysweet.org
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : hartmannegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : hassab.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : hbsie.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : hipharm-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : holytourseg.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : holytraveleg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : HootAmmo.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : hopeegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ht-egy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : hygeiagroup.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : i2m-pharma.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ibs-construction.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : icestate.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : icgroupus.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Ikthar.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ilsme.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : imaegy.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : infotechs.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : inland-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : inma.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : inmacommercial.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : inmaconstruction.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : inmadevelopments.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : inmaproperties.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : inshieldinsurance.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : intertex-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : itcegy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : itcpro.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : itvision-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : jbla.pt
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : Jetouregypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : jgtech.com.pa
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : kith-kin.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : Kkc.ae
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : lascopaque.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : lavvento.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : life4more.com
+MX1             : True
+MX2             : True
+MX3             : False
+MX4             : True
+MXConfiguration : Partially Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : Livingin.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : login-sys.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : lutfidifc.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : luxury-living.me
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mamibacare.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : masajid.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : massarsupplies.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : matjjari.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mavendevelopments.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mav-enterprise.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : md-masterbatch.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : medcom-hc.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : megaloja.pt
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : megancy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : megatrust.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : melsyasa.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : memaaralmorshedy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : metcegy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mgh.co.za
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mgtechnik.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Middleeastcomp.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mindset-academy.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : minlo.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : misr2000online.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : misrpharmacies.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mixta-egypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mobica.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : modacasa.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : modern4concrete.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : morshedy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : morshedygroup.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mortgage-souq.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : moughrabi.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ms-eg.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mtbi-group.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mt-egy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : mubarakat.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : myasli.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Nadapaints.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : neiscoegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : nerhadou.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : networkback.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : newmixeg.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : nextv-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : noblecatsociety.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : noon-center.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : noureldinelsherif.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : novochem.net
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : odce-sa.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Olicolube.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : omelmasryeenhospital.gov.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : omni-es.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ontherun.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : optaline.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : orchidiapharmaceutical.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : orient-paints.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : os4it-sa.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : panda-leap.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : peking-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : pharmaland.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : pharopharma.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : phr-services.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : platinumtrading-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : plumharbour.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Poolsuae.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : PORTAWEST.COM
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : powerlube.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : presentation-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : presentationsports.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : prokuala.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : propertystreet.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Proteam-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : provence-eg.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : provenceschool.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : pst.ae
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ptc-eg.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ptcprojects.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : pyramidseg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : qasatli.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : QasemStore.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : qasern.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : qspacetraining.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Qudra-hr.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : queendimarine.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : raatrading.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : rage3fady.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : raileibeachclub.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : rasport.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : rawaj-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : redconcon.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : roayamail.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : roayastore.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : False
+MXConfiguration : Partially Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : roayatechnology.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : rootsib.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Roshdy.co
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : roshdypharmacies.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : royalswisshotels.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : royalswisslahore.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : sakr-group.org
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : samritz.co.uk
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : sanda.email
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : sanoeg.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : saratec.sa
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : satta-pharma.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : scefirm.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : schlhomes.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : seifhealthcare.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : serayvacationclub.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : serenityhotelsegypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : servicesolutions.co.za
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : sewedy.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : shamaliwaris.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : sharakkas.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : shieldeg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : sigma-g.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : True
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : silicon21.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : skinrulesegy.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : skygulftraining.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : smartarrow.sa
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : smartbirdtec.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : smartfurniture.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : smg.com.eg
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Solotex-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : sorouj-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : souqbrands.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : stylishbrands.shop
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : SultanPharmacies.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : swissinternationalhotels.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : swissspirithotels.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : tankwaters.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : tarabot-eg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : taskedin.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : technocans.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : technoeg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : techno-side.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : telebirdeg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : terceirasoft.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : thefootpark.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : thesprinthub.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : tiba-group.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : tmcleaninguae.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : topio-urban.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Topprintsolutions.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : traininggulf.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : transmisr.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : triviumbc.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : triviumzayed.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : truepulse.ae
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : tseppas.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : tu-rath.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : tvboxuae.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : uaealnuaimi.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ubciseg.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : unicon-pumps.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : uniqueimpacts.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : UPE-egypt.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : valuemixers.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : venus-electric.net
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : virtualallianceltd.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : Whiteville.it
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : world-beds.com
+MX1             : True
+MX2             : False
+MX3             : True
+MX4             : True
+MXConfiguration : Partially Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : worldposta.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : worldposta-trial.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : False
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : DNS name does not exist
+
+Domain          : wp.uiy.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : wpcloud.info
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : Wxpo.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : xproaction.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : DNS name does not exist
+TXTError        : DNS name does not exist
+SRVError        : DNS name does not exist
+
+Domain          : xproaction.online
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : zambiaelectrometer.co.zm
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : zarcouae.ae
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : zeelandiamisr.com
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : ziberna.us
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
+SPFConfigured   : True
+DKIMConfigured  : True
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+Domain          : zoono-sa.co.za
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
+
+
+

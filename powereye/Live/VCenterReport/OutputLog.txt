@@ -1,1 +1,25 @@
-05/17/2021 14:55:44 [+] Report generated. Sending mail.
+WARNING: Please consider joining the VMware Customer Experience Improvement Program, so you can help us make PowerCLI a
+ better product. You can join using the following command:
+
+Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $true
+
+VMware's Customer Experience Improvement Program ("CEIP") provides VMware with information that enables VMware to 
+improve its products and services, to fix problems, and to advise you on how best to deploy and use our products.  As 
+part of the CEIP, VMware collects technical information about your organizationƒ?Ts use of VMware products and services
+ on a regular basis in association with your organizationƒ?Ts VMware license key(s).  This information does not 
+personally identify any individual.
+
+For more details: type "help about_ceip" to see the related help article.
+
+To disable this warning and set your preference use the following command and restart PowerShell: 
+Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $true or $false.
+
+Scope    ProxyPolicy     DefaultVIServerMode InvalidCertificateAction  DisplayDeprecationWarnings WebOperationTimeout
+                                                                                                  Seconds            
+-----    -----------     ------------------- ------------------------  -------------------------- -------------------
+Session  UseSystemProxy  Multiple            Ignore                    True                       300                
+User                                         Ignore                                                                  
+AllUsers                                                                                                             
+05/18/2021 16:09:18 [+] Report generated. Sending mail.
+
+

@@ -1,26 +1,19 @@
-Set-PowerCLIConfiguration : The term 'Set-PowerCLIConfiguration' is not recognized as the name of a cmdlet, function, 
-script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is 
-correct and try again.
-At C:\powereye\VCenterReport\VCenterReport.ps1:6 char:1
-+ Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$ ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (Set-PowerCLIConfiguration:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
+Connect-VIServer : 5/18/2021 4:09:18 PM	Connect-VIServer		An error occurred while making the HTTP request to 
+https://frank-vcenter-01.worldposta.com/sdk. This could be due to the fact that the server certificate is not 
+configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding 
+between the client and the server.	
+At C:\powereye\VCenterReport\VCenterReport.ps1:10 char:1
++ Connect-VIServer -Server 'frank-vcenter-01.worldposta.com' -User 'pow ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Connect-VIServer], ViError
+    + FullyQualifiedErrorId : Client20_ConnectivityServiceImpl_Reconnect_SoapException,VMware.VimAutomation.ViCore.Cmd 
+   lets.Commands.ConnectVIServer
  
-Connect-VIServer : The term 'Connect-VIServer' is not recognized as the name of a cmdlet, function, script file, or 
-operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
-again.
-At C:\powereye\VCenterReport\VCenterReport.ps1:8 char:1
-+ Connect-VIServer -Server 10.5.5.21 -User 'powercli@worldposta.com' -P ...
-+ ~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (Connect-VIServer:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
- 
-Get-VM : The term 'Get-VM' is not recognized as the name of a cmdlet, function, script file, or operable program. 
-Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
-At C:\powereye\VCenterReport\VCenterReport.ps1:11 char:12
+Get-VM : 5/18/2021 4:09:18 PM	Get-VM		You are not currently connected to any servers. Please connect first using a 
+Connect cmdlet.	
+At C:\powereye\VCenterReport\VCenterReport.ps1:12 char:12
 + $Results = Get-VM | Select-Object -Property Name,PowerState,NumCpu,Co ...
 +            ~~~~~~
-    + CategoryInfo          : ObjectNotFound: (Get-VM:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-VM], ViServerConnectionException
+    + FullyQualifiedErrorId : Core_BaseCmdlet_NotConnectedError,VMware.VimAutomation.ViCore.Cmdlets.Commands.GetVM
  

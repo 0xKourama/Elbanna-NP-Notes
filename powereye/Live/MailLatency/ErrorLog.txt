@@ -1,7 +1,7 @@
 New-PSSession : [frank-fem-f01.roaya.loc] Processing data from remote server frank-fem-f01.roaya.loc failed with the 
-following error message: [ClientAccessServer=FRANK-FEM-F01,BackEndServer=eu1fe9333.roaya.loc,RequestId=59d269ca-0423-46
-0d-9ff0-23d4d33d323e,TimeStamp=4/29/2021 7:25:48 PM] [FailureCategory=WSMan-InvalidShellID] The request for the 
-Windows Remote Shell with ShellId 3C2B0B10-FAAD-4657-815E-96E4B4FD689B failed because the shell was not found on the 
+following error message: [ClientAccessServer=FRANK-FEM-F01,BackEndServer=eu1fe9444.roaya.loc,RequestId=82bb553d-fab1-41
+92-bae6-6a41ca5a632b,TimeStamp=5/19/2021 7:51:53 AM] [FailureCategory=WSMan-InvalidShellID] The request for the 
+Windows Remote Shell with ShellId CA6442B0-B6FC-4A5D-94A4-277B742B9E71 failed because the shell was not found on the 
 server. Possible causes are: the specified ShellId is incorrect or the shell no longer exists on the server. Provide 
 the correct ShellId or create a new shell and retry the operation. For more information, see the 
 about_Remote_Troubleshooting Help topic.
@@ -19,10 +19,22 @@ At C:\powereye\MailLatency\MailLatency.ps1:35 char:22
     + CategoryInfo          : InvalidData: (:) [Import-PSSession], ParameterBindingValidationException
     + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.ImportPSSessionCommand
  
+Import-PSSession : Running the Get-Command command in a remote session reported the following error: Starting a 
+command on the remote server failed with the following error message : [ClientAccessServer=FRANK-FEM-F02,BackEndServer=
+eu1fe9333.roaya.loc,RequestId=ae300b53-946e-4f08-9ec6-d4de6646e251,TimeStamp=5/19/2021 7:51:54 AM] 
+[FailureCategory=WSMan-InvalidShellID] The request for the Windows Remote Shell with ShellId 
+3150208C-DC13-42C8-8FD2-830BDE9B4326 failed because the shell was not found on the server. Possible causes are: the 
+specified ShellId is incorrect or the shell no longer exists on the server. Provide the correct ShellId or create a 
+new shell and retry the operation. For more information, see the about_Remote_Troubleshooting Help topic..
+At C:\powereye\MailLatency\MailLatency.ps1:35 char:5
++     Import-PSSession $Session -DisableNameChecking -AllowClobber | Ou ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidResult: (:) [Import-PSSession], RuntimeException
+    + FullyQualifiedErrorId : ErrorFromRemoteCommand,Microsoft.PowerShell.Commands.ImportPSSessionCommand
 Failed to connect to the RPC server on computer "Frank-MBX.Roaya.loc". Verify that a valid computer name was used.
     + CategoryInfo          : InvalidOperation: (:) [Get-MessageTrackingLog], LocalizedException
-    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=1c0c49af-8c02-4262-acbe-d21df9d28a47,TimeStamp=4/29/2021 7:2 
-   5:57 PM] [FailureCategory=Cmdlet-LocalizedException] D0F94ABC,Microsoft.Exchange.Management.TransportLogSearchTask  
+    + FullyQualifiedErrorId : [Server=EU1MB9902,RequestId=5a900c6e-4b6b-46f8-af8c-5f35928d2a63,TimeStamp=5/19/2021 7:5 
+   1:59 AM] [FailureCategory=Cmdlet-LocalizedException] D00F2721,Microsoft.Exchange.Management.TransportLogSearchTask  
   s.GetMessageTrackingLog
-    + PSComputerName        : frank-fem-f02.roaya.loc
+    + PSComputerName        : frank-fem-f03.roaya.loc
  

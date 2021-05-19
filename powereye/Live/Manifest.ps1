@@ -112,13 +112,25 @@ $Modules = @(
     [Module]@{
         Enabled = $true
         Name = 'Internal Domains DNS Report'
-        RunInterval = New-TimeSpan -Days 30
+        RunInterval = New-TimeSpan -Days 2
     }
     #18
     [Module]@{
         Enabled = $true
         Name = 'Exchange Servers Status Report'
         RunInterval = New-TimeSpan -Hours 1
+    }
+    #19
+    [Module]@{
+        Enabled = $true
+        Name = 'Unauthorized Login Detected'
+        RunInterval = New-TimeSpan -Minutes 10
+    }
+    #20
+    [Module]@{
+        Enabled = $true
+        Name = 'VCenter Report'
+        RunInterval = New-TimeSpan -Days 1
     }
 )
 if(!$Runtime_Data){

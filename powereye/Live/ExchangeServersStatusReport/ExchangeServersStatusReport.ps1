@@ -70,7 +70,7 @@ $htmltableheader = "    <p>
                         <th>CPU(%)</th>
                         <th>RAM(%)</th>
                         <th>LogDiskFree(%)</th>
-                        <th>StuckedQueues</th>
+                        <th>StuckQueues</th>
                         <th>StoppedServices</th>
                         <th>DBBadCopy</th>
                         </tr>"
@@ -88,8 +88,8 @@ Foreach ($Server in $EXServers){
 		{$LogDiskFree=[math]::Round(((Get-WmiObject -ComputerName $Server -Class Win32_logicalDisk -EA SilentlyContinue | ? {$_.DeviceID -eq "Y:"}).FreeSpace/(Get-WmiObject -ComputerName $Server -Class Win32_logicalDisk -EA SilentlyContinue | ? {$_.DeviceID -eq "Y:"}).Size)*100,0)}
 		Else {$LogDiskFree=$null}
 	If(Get-MailboxServer $Server -EA SilentlyContinue)
-		{$StuckedQueues=(Get-Queue -Server $Server -Filter {MessageCount -gt 5} -EA SilentlyContinue | ? {$_.DeliveryType -notlike "*Shadow*" -and "*Submission*"}).Count}
-		Else{$StuckedQueues=$null}
+		{$StuckQueues=(Get-Queue -Server $Server -Filter {MessageCount -gt 5} -EA SilentlyContinue | ? {$_.DeliveryType -notlike "*Shadow*" -and "*Submission*"}).Count}
+		Else{$StuckQueues=$null}
 	$StoppedServices=(Get-Service -ComputerName $Server -Name "MSExchange*" | ? {$_.StartType -eq "Automatic" -and $_.Status -ne "Running"}).Count
 	If(Get-MailboxServer $Server -EA SilentlyContinue)
 		{$DBBadCopy=(Get-MailboxDatabaseCopyStatus -Server $Server -EA SilentlyContinue | ? {$_.Status -ne "Healthy" -and $_.Status -ne "Mounted"}).Count}
@@ -104,7 +104,7 @@ Foreach ($Server in $EXServers){
 														CPU = $CPU
 														RAM = $RAM
 														LogDiskFree = $LogDiskFree
-														StuckedQueues = $StuckedQueues
+														StuckQueues = $StuckQueues
 														StoppedServices = $StoppedServices
 														DBBadCopy = $DBBadCopy
 														#DBBadIndex = $DBBadIndex
@@ -120,8 +120,8 @@ Foreach ($Server in $EXServers){
             else{$htmltablerow += "<td class=""pass"">$($Status.RAM)</td>"}
         if ($Status.LogDiskFree -lt 75 -and $Status.LogDiskFree -ne $null){$htmltablerow += "<td class=""fail"">$($Status.LogDiskFree)</td>"}
             else{$htmltablerow += "<td class=""pass"">$($Status.LogDiskFree)</td>"}
-        if ($Status.StuckedQueues -gt 0){$htmltablerow += "<td class=""fail"">$($Status.StuckedQueues)</td>"}
-            else{$htmltablerow += "<td class=""pass"">$($Status.StuckedQueues)</td>"}
+        if ($Status.StuckQueues -gt 0){$htmltablerow += "<td class=""fail"">$($Status.StuckQueues)</td>"}
+            else{$htmltablerow += "<td class=""pass"">$($Status.StuckQueues)</td>"}
         if ($Status.StoppedServices -gt 0){$htmltablerow += "<td class=""fail"">$($Status.StoppedServices)</td>"}
             else{$htmltablerow += "<td class=""pass"">$($Status.StoppedServices)</td>"}
         if ($Status.DBBadCopy -gt 0){$htmltablerow += "<td class=""fail"">$($Status.DBBadCopy)</td>"}

@@ -3,7 +3,9 @@
 Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
-Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls,[Net.SecurityProtocolType]::Tls11,[Net.SecurityProtocolType]::Tls12
+
+Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false -Scope AllUsers, Session, User
 
 Connect-VIServer -Server 10.5.5.21 -User 'powercli@worldposta.com' -Password 'P@ssw0rdP@ssw0rd'
 
@@ -12,4 +14,4 @@ $Results = Get-VM | Select-Object -Property Name,PowerState,NumCpu,CoresPerSocke
 Write-Output "$(Get-Date) [+] Report generated. Sending mail."
 Write-Output $Results
 
-Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Results | ConvertTo-Html -Fragment | Out-String)"
+if($Results){ Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Results | ConvertTo-Html -Fragment | Out-String)" }

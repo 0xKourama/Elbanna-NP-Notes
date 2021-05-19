@@ -133,7 +133,7 @@ $uptime_script = {
 }
 $uptime_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $uptime_script | 
                     Sort-Object -Property TotalMinutes -Descending | 
-                    Select-Object -Property Computername, Days, Hours, Minutes
+                    Select-Object -Property Computername, @{n='Uptime';e={"$($_.Days) day(s) $($_.Hours) hour(s) $($_.Minutes) minute(s)"}}
 #endregion
 
 #region HTML summary data

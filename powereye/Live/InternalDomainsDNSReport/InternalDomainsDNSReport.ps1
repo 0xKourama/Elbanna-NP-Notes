@@ -112,42 +112,42 @@ $Report_items = @(
 $body = @"
 <h3>Domains with unconfigured MX</h3>
 $($Result_list | Where-Object {$_.MXConfiguration -eq 'Not Configured'} | 
-                 ForEach-Object -Begin   {'<ol>' } `
+                 ForEach-Object -Begin   {'<ol>'} `
                                 -Process {"<li><b>$($_.Domain)</b></li>"} `
                                 -End     {'</ol>'})
 <h3>Domains with different MX present</h3>
 $($Result_list | Where-Object {$_.MXConfiguration -eq 'Different MX Present'} |
-                 ForEach-Object -Begin   {'<ol>' } `
+                 ForEach-Object -Begin   {'<ol>'} `
                                 -Process {"<li><b>$($_.Domain)</b></li>"} `
                                 -End     {'</ol>'})
 <h3>Domains with partial MX configuration</h3>
 $($Result_list | Where-Object {$_.MXConfiguration -eq 'Partially Configured'} |
-                 ForEach-Object -Begin   {'<ol>' } `
+                 ForEach-Object -Begin   {'<ol>'} `
                                 -Process {"<li><b>$($_.Domain)</b></li>"} `
                                 -End     {'</ol>'})
 <h3>Domains with MX record errors</h3>
 $($Result_list | Where-Object {$_.MXError -ne 'N/A' -and $_.MXError -ne 'This operation returned because the timeout period expired'} | Sort-Object -Property MXError |
-                 ForEach-Object -Begin   {'<ol>' } `
+                 ForEach-Object -Begin   {'<ol>'} `
                                 -Process {"<li><b>$($_.Domain)</b>: <b style='color:red;'>$($_.MXError)</b></li>"} `
                                 -End     {'</ol>'})
 <h3>Domains with unconfigured SRV</h3>
 $($Result_list | Where-Object {$_.SRVConfigured -eq $false} |
-                 ForEach-Object -Begin   {'<ol>' } `
+                 ForEach-Object -Begin   {'<ol>'} `
                                 -Process {"<li><b>$($_.Domain)</b></li>"} `
                                 -End     {'</ol>'})
 <h3>Domains with SRV record errors</h3>
 $($Result_list | Where-Object {$_.SRVError -ne 'N/A' -and $_.SRVError -ne 'This operation returned because the timeout period expired'} | Sort-Object -Property SRVError |
-                 ForEach-Object -Begin   {'<ol>' } `
+                 ForEach-Object -Begin   {'<ol>'} `
                                 -Process {"<li><b><b>$($_.Domain)</b>:</b> <b style='color:red;'>$($_.SRVError)</b></li>"} `
                                 -End     {'</ol>'})
 <h3>Domains with unconfigured SPF</h3>
 $($Result_list | Where-Object {$_.SPFConfigured -eq $false} |
-                 ForEach-Object -Begin   {'<ol>' } `
+                 ForEach-Object -Begin   {'<ol>'} `
                                 -Process {"<li><b>$($_.Domain)</b></li>"} `
                                 -End     {'</ol>'})
 <h3>Domains with TXT record errors</h3>
 $($Result_list | Where-Object {$_.TXTError -ne 'N/A' -and $_.TXTError -ne 'This operation returned because the timeout period expired'} | Sort-Object -Property TXTError |
-                 ForEach-Object -Begin   {'<ol>' } `
+                 ForEach-Object -Begin   {'<ol>'} `
                                 -Process {"<li><b><b>$($_.Domain)</b>:</b> <b style='color:red;'>$($_.TXTError)</b></li>"} `
                                 -End     {'</ol>'})
 "@

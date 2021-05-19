@@ -97,13 +97,13 @@ Remove-PSSession -Session $Session
 #region adding results to HTML
 $InternalResult1HTML = $InternalMailLatency | ConvertTo-Html -Fragment | Out-String
 if($InternalMailsExceedingDelayThreshold){
-    $Header2 = "<h3>Internal mails exceeding $($LatencyThresholdSeconds/60) minutes delay</h3>"
+    $Header2 = "<h3>Internal mails exceeding $($LatencyThresholdSeconds/60) minutes delay ($($InternalMailsExceedingDelayThreshold.count))</h3>"
     $InternalResult2HTML = $InternalMailsExceedingDelayThreshold | ConvertTo-Html -Fragment | Out-String
 }
 
 $ExternalResult1HTML = $ExternalMailLatency | ConvertTo-Html -Fragment | Out-String
 if($ExternalMailsExceedingDelayThreshold){
-    $Header4 = "<h3>External mails exceeding $($LatencyThresholdSeconds/60) minutes delay</h3>"
+    $Header4 = "<h3>External mails exceeding $($LatencyThresholdSeconds/60) minutes delay ($($ExternalMailsExceedingDelayThreshold.count))</h3>"
     $ExternalResult2HTML = $ExternalMailsExceedingDelayThreshold | ConvertTo-Html -Fragment | Out-String
 }
 #endregion
