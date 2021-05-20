@@ -4,18 +4,18 @@ Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Admin_Security_Groups = @(
-    'Server Operators'
     'Administrators'
     'Domain Admins'
     'Enterprise Admins'
-    'Schema Admins'
     'Organization Management'
+    'Schema Admins'
+    'Server Operators'
 )
 
 #location for the file to track membership data
 $Admin_Group_Tracker_Path = '.\GroupData.csv'
 
-$Old_Group_Data = Import-Csv $Admin_Group_Tracker_Path
+$Old_Group_Data = Import-Csv $Admin_Group_Tracker_Path | Sort-Object -Property Name
 
 #calculating the hash for the old data file
 $Old_Hash = (Get-FileHash -Path $Admin_Group_Tracker_Path).Hash
@@ -31,6 +31,8 @@ $Admin_Security_Groups | ForEach-Object {
     }
 }
 
+$New_Group_Data = $New_Group_Data | Sort-Object -Property Name
+
 #exporting the new data to the tracker file
 $New_Group_Data | Export-Csv -NoTypeInformation $Admin_Group_Tracker_Path
 
@@ -42,28 +44,37 @@ if($New_Hash -ne $Old_Hash){
     $Difference_Array = @()
     0..($Admin_Security_Groups.Count - 1) | ForEach-Object {
         
-        #Write-Host -ForegroundColor Cyan "[*] looping $($Old_Group_Data[$_].name) and $($Old_Group_Data[$_].name)"
+        Write-Host -ForegroundColor Cyan "[*] looping over old $($Old_Group_Data[$_].name) and new $($New_Group_Data[$_].name)"
         $OldGroupMembers = $Old_Group_Data[$_].Members -split ';' | Where-Object {$_ -ne ''}
         $NewGroupMembers = $New_Group_Data[$_].Members -split ';' | Where-Object {$_ -ne ''}
 
         foreach($member1 in $OldGroupMembers){
             if($NewGroupMembers -notcontains $member1){
+                Write-Host -ForegroundColor Yellow "[!] Recent $($New_Group_Data[$_].Name) group data doesn't have $member1"
                 $Difference_Array += [PSCustomObject][Ordered]@{
                     ChangedMember = $member1
                     ChangedGroup  = $Admin_Security_Groups[$_]
                     ChangeType    = 'Removal'
                 }
             }
+            else{
+                Write-Host -ForegroundColor Cyan "[*] Recent $($New_Group_Data[$_].Name) group data also has $member1"
+            }
         }
         foreach($member2 in $NewGroupMembers){
             if($OldGroupMembers -notcontains $member2){
+                Write-Host -ForegroundColor Yellow "[!] Old $($Old_Group_Data[$_].Name) group data doesn't have $member2"
                 $Difference_Array += [PSCustomObject][Ordered]@{
                     ChangedMember = $member2
                     ChangedGroup  = $Admin_Security_Groups[$_]
                     ChangeType    = 'Addition'
                 }
             }
+            else{
+                Write-Host -ForegroundColor Cyan "[*] Old $($Old_Group_Data[$_].Name) group data also has $member2"
+            }
         }
+
     }
 
     Write-Output "$(Get-Date) [!] change detected. Sending mail."
