@@ -39,36 +39,40 @@ $New_Hash = (Get-FileHash -Path $Admin_Group_Tracker_Path).Hash
 #if the hash for the old file doesn't match the new one
 if($New_Hash -ne $Old_Hash){
     $Difference_Array = @()
-    0..($Admin_Security_Groups.Count - 1) | ForEach-Object {
-        $Index = $_
-        Write-Host -ForegroundColor Cyan "[*] looping over old $(($Old_Group_Data[$_]).name) and new $(($New_Group_Data[$_]).name)"
-        $OldGroupMembers = $Old_Group_Data[$Index].Members -split ' \| ' | Where-Object {$_ -ne ''}
-        $NewGroupMembers = $New_Group_Data[$Index].Members -split ' \| ' | Where-Object {$_ -ne ''}
+    $Admin_Security_Groups | ForEach-Object {
+
+        $Group = $_
+        
+        $OldGroup = $Old_Group_Data | Where-Object {$_.name -eq $Group}
+        $NewGroup = $New_Group_Data | Where-Object {$_.name -eq $Group}
+
+        $OldGroupMembers = $OldGroup.Members -split ' \| ' | Where-Object {$_ -ne ''}
+        $NewGroupMembers = $NewGroup.Members -split ' \| ' | Where-Object {$_ -ne ''}
 
         foreach($member1 in $OldGroupMembers){
             if($NewGroupMembers -notcontains $member1){
-                Write-Host -ForegroundColor Yellow "[!] Recent $(($New_Group_Data[$Index]).Name) group data doesn't have $member1"
+                Write-Host -ForegroundColor Yellow "[!] Recent $($NewGroup.Name) group data doesn't have $member1"
                 $Difference_Array += [PSCustomObject][Ordered]@{
                     ChangedMember = $member1
-                    ChangedGroup  = $Admin_Security_Groups[$Index]
+                    ChangedGroup  = $Group
                     ChangeType    = 'Removal'
                 }
             }
             else{
-                Write-Host -ForegroundColor Cyan "[*] Recent $(($New_Group_Data[$Index]).Name) group data also has $member1"
+                Write-Host -ForegroundColor Cyan "[*] Recent $($NewGroup.Name) group data also has $member1"
             }
         }
         foreach($member2 in $NewGroupMembers){
             if($OldGroupMembers -notcontains $member2){
-                Write-Host -ForegroundColor Yellow "[!] Old $(($Old_Group_Data[$Index]).Name) group data doesn't have $member2"
+                Write-Host -ForegroundColor Yellow "[!] Old $($OldGroup.Name) group data doesn't have $member2"
                 $Difference_Array += [PSCustomObject][Ordered]@{
                     ChangedMember = $member2
-                    ChangedGroup  = $Admin_Security_Groups[$Index]
+                    ChangedGroup  = $Group
                     ChangeType    = 'Addition'
                 }
             }
             else{
-                Write-Host -ForegroundColor Cyan "[*] Old $(($Old_Group_Data[$Index]).Name) group data also has $member2"
+                Write-Host -ForegroundColor Cyan "[*] Old $($OldGroup.Name) group data also has $member2"
             }
         }
 
