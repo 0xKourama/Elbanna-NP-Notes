@@ -27,7 +27,7 @@ $Admin_Security_Groups | ForEach-Object {
     $New_Group_Data += [PSCustomObject][Ordered]@{
         Name    = $_
         Members = (Get-ADGroupMember -Identity $_ | Where-Object {$_.ObjectClass -eq 'user'} | 
-                    Select-Object -ExpandProperty SamAccountName | Sort-Object) -join ';'
+                    Select-Object -ExpandProperty SamAccountName | Sort-Object) -join ' | '
     }
 }
 
@@ -45,8 +45,8 @@ if($New_Hash -ne $Old_Hash){
     0..($Admin_Security_Groups.Count - 1) | ForEach-Object {
         
         Write-Host -ForegroundColor Cyan "[*] looping over old $($Old_Group_Data[$_].name) and new $($New_Group_Data[$_].name)"
-        $OldGroupMembers = $Old_Group_Data[$_].Members -split ';' | Where-Object {$_ -ne ''}
-        $NewGroupMembers = $New_Group_Data[$_].Members -split ';' | Where-Object {$_ -ne ''}
+        $OldGroupMembers = $Old_Group_Data[$_].Members -split ' \| ' | Where-Object {$_ -ne ''}
+        $NewGroupMembers = $New_Group_Data[$_].Members -split ' \| ' | Where-Object {$_ -ne ''}
 
         foreach($member1 in $OldGroupMembers){
             if($NewGroupMembers -notcontains $member1){
@@ -80,7 +80,12 @@ if($New_Hash -ne $Old_Hash){
     Write-Output "$(Get-Date) [!] change detected. Sending mail."
     Write-Output $Difference_Array
 
-    Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Difference_Array | ConvertTo-Html -Fragment | Out-String)"
+$Summary = @"
+<h3>Current Admin Group Membership Summary</h3>
+$($New_Group_Data | ConvertTo-Html -Fragment | Out-String)
+"@
+
+    Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Difference_Array | ConvertTo-Html -Fragment | Out-String) $Summary"
 }
 else{
     Write-Output "$(Get-Date) [*] No change detected."
