@@ -20,16 +20,20 @@ $Old_Group_Data = Import-Csv $Admin_Group_Tracker_Path | Sort-Object -Property N
 #calculating the hash for the old data file
 $Old_Hash = (Get-FileHash -Path $Admin_Group_Tracker_Path).Hash
 
-$New_Group_Data = @()
+#loop here until the full membership data is present (sometimes group data is missing)
+do{
+    $New_Group_Data = @()
 
-#pulling the data from the high privelege groups from active directory
-$Admin_Security_Groups | ForEach-Object {
-    $New_Group_Data += [PSCustomObject][Ordered]@{
-        Name    = $_
-        Members = (Get-ADGroupMember -Identity $_ | Where-Object {$_.ObjectClass -eq 'user'} | 
-                    Select-Object -ExpandProperty SamAccountName | Sort-Object) -join ' | '
+    #pulling the data from the high privelege groups from active directory
+    $Admin_Security_Groups | ForEach-Object {
+        $New_Group_Data += [PSCustomObject][Ordered]@{
+            Name    = $_
+            Members = (Get-ADGroupMember -Identity $_ | Where-Object {$_.ObjectClass -eq 'user'} | 
+                        Select-Object -ExpandProperty SamAccountName | Sort-Object) -join ' | '
+        }
     }
-}
+
+}while($New_Group_Data.Count -ne 6)
 
 $New_Group_Data | Export-Csv -NoTypeInformation $Admin_Group_Tracker_Path
 
