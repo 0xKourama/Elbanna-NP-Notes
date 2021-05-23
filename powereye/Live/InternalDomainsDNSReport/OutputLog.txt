@@ -667,13 +667,13 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : afb-eg.com
-MX1             : False
-MX2             : False
+MX1             : True
+MX2             : True
 MX3             : False
-MX4             : False
-MXConfiguration : Not Configured
-SRVConfigured   : False
-SPFConfigured   : False
+MX4             : True
+MXConfiguration : Partially Configured
+SRVConfigured   : True
+SPFConfigured   : True
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
@@ -1250,7 +1250,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : DNS server failure
 SRVError        : DNS server failure
 
@@ -2931,8 +2931,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
+SRVError        : DNS server failure
 
 Domain          : ferrometalco.com
 MX1             : True
@@ -3016,7 +3016,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : fruttella.com
 MX1             : True
@@ -3268,7 +3268,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : hartmannegypt.com
 MX1             : True
@@ -4251,11 +4251,11 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : ms-eg.net
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
 SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
@@ -4457,8 +4457,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : odce-sa.com
 MX1             : True
@@ -4671,12 +4671,12 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : plumharbour.com
-MX1             : False
-MX2             : False
-MX3             : False
-MX4             : False
-MXConfiguration : Not Configured
-SRVConfigured   : False
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
@@ -4965,12 +4965,12 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : raatrading.com
-MX1             : False
-MX2             : False
-MX3             : False
-MX4             : False
-MXConfiguration : Not Configured
-SRVConfigured   : False
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
@@ -5035,16 +5035,16 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : redconcon.com
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
-SRVConfigured   : True
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
 SPFConfigured   : False
-DKIMConfigured  : True
+DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
+MXError         : DNS server failure
 TXTError        : N/A
 SRVError        : N/A
 
@@ -5707,18 +5707,18 @@ TXTError        : N/A
 SRVError        : DNS name does not exist
 
 Domain          : thefootpark.com
-MX1             : False
-MX2             : False
-MX3             : False
-MX4             : False
-MXConfiguration : Not Configured
-SRVConfigured   : False
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : DNS name does not exist
+SRVError        : N/A
 
 Domain          : thesprinthub.com
 MX1             : True

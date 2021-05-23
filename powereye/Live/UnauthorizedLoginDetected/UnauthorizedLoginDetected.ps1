@@ -43,14 +43,14 @@ $LogoffScript = {
         [PSCustomObject][Ordered]@{
             ComputerName = $env:COMPUTERNAME
             Username     = $args[1]
-            LogoffResult = 'Success'
+            Logoff       = 'Success'
         }
     }
     else{
         [PSCustomObject][Ordered]@{
             ComputerName = $env:COMPUTERNAME
             Username     = $args[1]
-            LogoffResult = 'Fail'
+            Logoff       = 'Fail'
         }        
     }
 }

@@ -1,1 +1,1 @@
-05/18/2021 22:35:47 [*] Cortex endpoint found on all contacted hosts.
+05/23/2021 00:22:59 [*] Cortex endpoint found on all contacted hosts.

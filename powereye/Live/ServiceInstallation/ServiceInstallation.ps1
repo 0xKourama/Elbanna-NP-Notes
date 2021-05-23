@@ -48,7 +48,9 @@ $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Prope
 
 #region invoke the script over the remote computers
 $Results = Invoke-Command -ComputerName $Online -ScriptBlock $Script -ErrorAction SilentlyContinue |
-           Where-Object {($_.ServiceFileName -notlike 'C:\ProgramData\Microsoft\Windows Defender\Definition Updates\*') -and ($_.ServiceName -ne 'VeeamVssSupport')} |
+           Where-Object {
+                ($_.ServiceFileName -notlike 'C:\ProgramData\Microsoft\Windows Defender\Definition Updates\*') -and ($_.ServiceName -ne 'VeeamVssSupport')
+            } |
            Select-Object -Property * -ExcludeProperty PSComputerName, RunspaceId, PSShowComputerName
 #endregion
 

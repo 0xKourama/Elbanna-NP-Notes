@@ -5,6 +5,7 @@ Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Admin_Security_Groups = @(
     'Administrators'
+    'Authorized Personnel'
     'Domain Admins'
     'Enterprise Admins'
     'Organization Management'
@@ -33,7 +34,7 @@ do{
         }
     }
 
-}while($New_Group_Data.Count -ne 6)
+}while($New_Group_Data.Count -ne $Admin_Security_Groups.Count)
 
 $New_Group_Data | Export-Csv -NoTypeInformation $Admin_Group_Tracker_Path
 
