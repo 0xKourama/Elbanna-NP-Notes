@@ -29,3 +29,26 @@
 2. remove the exploitable privileges from everyone if possible >> prevent privesc
 3. limit the use of administrators and switch to more granular accounts >> limit the higher privs
 	then test those separately to see if the functionality would suffer or not >> temp
+
+
+# Groups:
+1. Exchange admin (local admin)
+2. RDP
+3. Developer (local admin)
+
+```
+Policy naming:
+
+Generic group = all srv except exch and DC
+
+Computer Group | Privilege Level
+Exchange     | RDP priv           >>
+Exchange     | shutdown priv
+Exchange     | full priv (local admin)
+Generic      | RDP Priv
+Generic      | shutdown priv
+Generic      | full priv (local admin)
+Developer    | RDP Priv
+Developer    | shutdown priv
+Developer    | full priv (local admin)
+```
