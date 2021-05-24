@@ -56,12 +56,12 @@ $session_script = {
 
 $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address}).Name
 
-$session_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script |
+$session_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script | Where-Object {$_.ComputerName -ne 'PowerEye'} |
                    Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID
 
 $session_CONSOLE_summmary = $session_summary | Where-Object {$_.SessionType -eq 'CONSOLE' } | Select-Object -Property * -ExcludeProperty IdleDays, ID
 $session_RDP_summary      = $session_summary | Where-Object {$_.SessionType -eq 'RDP'     } | Select-Object -Property * -ExcludeProperty IdleDays, ID
-$session_inactive_summary = $session_summary | Where-Object {$_.State       -eq 'INACTIVE'} | Select-Object -Property * -ExcludeProperty SessionType, IdleDays, ID
+$session_INACTIVE_summary = $session_summary | Where-Object {$_.State       -eq 'INACTIVE'} | Select-Object -Property * -ExcludeProperty SessionType, IdleDays, ID
 
 $LogoffScript = {
     logoff $args[0]
@@ -83,7 +83,7 @@ $LogoffScript = {
 
 $LogoffResults = @()
 
-$Idle_sessions = $session_summary | Where-Object {$_.IdleDays -ge 1 -and $_.ComputerName -ne 'PowerEye'}
+$Idle_sessions = $session_summary | Where-Object {$_.IdleDays -ge 1}
 
 $Idle_sessions | ForEach-Object {
     $LogoffResults += Invoke-Command -ComputerName $_.ComputerName -ScriptBlock $LogoffScript -ArgumentList $_.ID, $_.Username |
@@ -92,11 +92,11 @@ $Idle_sessions | ForEach-Object {
 
 #region HTML summary data
 $body = @"
-<h3>Console Sessions</h3>
+<h3>Console Sessions ($($session_CONSOLE_summmary.count))</h3>
 $($session_CONSOLE_summmary | ConvertTo-Html -Fragment)
-<h3>RDP Sessions</h3>
+<h3>RDP Sessions ($($session_RDP_summmary.count))</h3>
 $($session_RDP_summary      | ConvertTo-Html -Fragment)
-<h3>Inactive Sessions</h3>
+<h3>Inactive Sessions ($($session_INACTIVE_summmary.count))</h3>
 $($session_inactive_summary | ConvertTo-Html -Fragment)
 "@
 
