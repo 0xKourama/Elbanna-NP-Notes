@@ -17,19 +17,16 @@
 	7. SeTakeOwnership      >> Take ownership of files or other objects
 	8. SeTcb                >> Act as part of the operating system
 
-
 # steps:
 1. test each privilege for effect
 2. try removing the exploitable privileges from high accounts
 3. decide which groupings to create based on required access levels
-
 
 # what I think should be done:
 1. limit access to what's necessary based on roles >> assign single privs
 2. remove the exploitable privileges from everyone if possible >> prevent privesc
 3. limit the use of administrators and switch to more granular accounts >> limit the higher privs
 	then test those separately to see if the functionality would suffer or not >> temp
-
 
 # Groups:
 1. Exchange admin (local admin)
@@ -42,13 +39,13 @@ Policy naming:
 Generic group = all srv except exch and DC
 
 Computer Group | Privilege Level
-Exchange     | RDP priv           >>
-Exchange     | shutdown priv
-Exchange     | full priv (local admin)
-Generic      | RDP Priv
-Generic      | shutdown priv
-Generic      | full priv (local admin)
-Developer    | RDP Priv
-Developer    | shutdown priv
-Developer    | full priv (local admin)
+Exchange       | RDP priv           
+Exchange       | shutdown priv
+Exchange       | full priv (local admin)
+Generic        | RDP Priv
+Generic        | shutdown priv
+Generic        | full priv (local admin)
+Developer      | RDP Priv
+Developer      | shutdown priv
+Developer      | full priv (local admin)
 ```

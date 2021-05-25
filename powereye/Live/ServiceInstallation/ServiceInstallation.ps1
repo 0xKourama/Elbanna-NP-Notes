@@ -50,7 +50,7 @@ $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Prope
 $Results = Invoke-Command -ComputerName $Online -ScriptBlock $Script -ErrorAction SilentlyContinue |
            Where-Object {
                 ($_.ServiceFileName -notlike 'C:\ProgramData\Microsoft\Windows Defender\Definition Updates\*') -and `
-                ($_.ServiceFileName -ne      'C:\Windows\VeeamVssSupport\VeeamGuestHelper.exe') -and `
+                ($_.ServiceFileName -notlike 'C:\Windows\VeeamVssSupport\*') -and `
                 ($_.ServiceFileName -notlike 'C:\Windows\system32\MpEngineStore\*')
             } |
            Select-Object -Property * -ExcludeProperty PSComputerName, RunspaceId, PSShowComputerName

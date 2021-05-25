@@ -1,7 +1,25 @@
+New-PSSession : [frank-fem-f01.roaya.loc] Connecting to remote server frank-fem-f01.roaya.loc failed with the 
+following error message : [ClientAccessServer=FRANK-FEM-F01,BackEndServer=frank-mbx.roaya.loc,RequestId=005b3656-68f1-4
+e93-9ae4-ad65f99bb7b8,TimeStamp=5/25/2021 1:56:17 PM] [FailureCategory=Cafe-NameResolutionFailure]  For more 
+information, see the about_Remote_Troubleshooting Help topic.
+At C:\powereye\MailLatency\MailLatency.ps1:30 char:16
++     $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
++                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (System.Manageme....RemoteRunspace:RemoteRunspace) [New-PSSession], PSRemotin 
+   gTransportException
+    + FullyQualifiedErrorId : -2144108477,PSSessionOpenFailed
+Import-PSSession : Cannot validate argument on parameter 'Session'. The argument is null. Provide a valid value for 
+the argument, and then try running the command again.
+At C:\powereye\MailLatency\MailLatency.ps1:35 char:22
++     Import-PSSession $Session -DisableNameChecking -AllowClobber | Ou ...
++                      ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Import-PSSession], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.ImportPSSessionCommand
+ 
 Failed to connect to the RPC server on computer "Frank-MBX.Roaya.loc". Verify that a valid computer name was used.
     + CategoryInfo          : InvalidOperation: (:) [Get-MessageTrackingLog], LocalizedException
-    + FullyQualifiedErrorId : [Server=EU1MB9902,RequestId=96e1e55c-9958-4563-ae18-4c172b0a9f52,TimeStamp=5/23/2021 9:2 
-   5:13 AM] [FailureCategory=Cmdlet-LocalizedException] D3DEE2E5,Microsoft.Exchange.Management.TransportLogSearchTask  
+    + FullyQualifiedErrorId : [Server=EU1MB9903,RequestId=c28c5d8b-052d-4502-9142-7442d5da5eee,TimeStamp=5/25/2021 1:5 
+   6:24 PM] [FailureCategory=Cmdlet-LocalizedException] D1AB31B2,Microsoft.Exchange.Management.TransportLogSearchTask  
   s.GetMessageTrackingLog
-    + PSComputerName        : frank-fem-f01.roaya.loc
+    + PSComputerName        : frank-fem-f02.roaya.loc
  

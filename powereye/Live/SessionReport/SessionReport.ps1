@@ -59,9 +59,9 @@ $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Prope
 $session_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script | Where-Object {$_.ComputerName -ne 'PowerEye'} |
                    Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID
 
-$session_CONSOLE_summmary = $session_summary | Where-Object {$_.SessionType -eq 'CONSOLE' } | Select-Object -Property * -ExcludeProperty IdleDays, ID
+$session_CONSOLE_summary = $session_summary | Where-Object {$_.SessionType -eq 'CONSOLE' } | Select-Object -Property * -ExcludeProperty IdleDays, ID
 $session_RDP_summary      = $session_summary | Where-Object {$_.SessionType -eq 'RDP'     } | Select-Object -Property * -ExcludeProperty IdleDays, ID
-$session_INACTIVE_summary = $session_summary | Where-Object {$_.State       -eq 'INACTIVE'} | Select-Object -Property * -ExcludeProperty SessionType, IdleDays, ID
+$session_inactive_summary = $session_summary | Where-Object {$_.State       -eq 'INACTIVE'} | Select-Object -Property * -ExcludeProperty SessionType, IdleDays, ID
 
 $LogoffScript = {
     logoff $args[0]
@@ -92,18 +92,18 @@ $Idle_sessions | ForEach-Object {
 
 #region HTML summary data
 $body = @"
-<h3>Console Sessions ($($session_CONSOLE_summmary.count))</h3>
-$($session_CONSOLE_summmary | ConvertTo-Html -Fragment)
-<h3>RDP Sessions ($($session_RDP_summmary.count))</h3>
+<h3>Console Sessions ($($session_CONSOLE_summary.count))</h3>
+$($session_CONSOLE_summary | ConvertTo-Html -Fragment)
+<h3>RDP Sessions ($($session_RDP_summary.count))</h3>
 $($session_RDP_summary      | ConvertTo-Html -Fragment)
-<h3>Inactive Sessions ($($session_INACTIVE_summmary.count))</h3>
+<h3>Inactive Sessions ($($session_inactive_summary.count))</h3>
 $($session_inactive_summary | ConvertTo-Html -Fragment)
 "@
 
 if($LogoffResults){
 
 $Footer = @"
-<h3>Sessions terminated for inactivity exceeding 1 day ($($Idle_sessions.Count))</h3>
+<h3>Sessions terminated for inactivity exceeding 1 day ($($LogoffResults.Count))</h3>
 $($LogoffResults | ConvertTo-Html -Fragment)
 "@
 
@@ -112,7 +112,7 @@ $($LogoffResults | ConvertTo-Html -Fragment)
 
 Write-Output "$(Get-Date) [*] Sending mail"
 
-Write-Output $session_CONSOLE_summmary
+Write-Output $session_CONSOLE_summary
 Write-Output $session_RDP_summary
 Write-Output $session_inactive_summary
 

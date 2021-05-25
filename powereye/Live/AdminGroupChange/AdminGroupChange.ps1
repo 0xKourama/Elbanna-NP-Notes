@@ -4,13 +4,37 @@ Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Admin_Security_Groups = @(
-    'Administrators'
-    'Authorized Personnel'
-    'Domain Admins'
-    'Enterprise Admins'
-    'Organization Management'
-    'Schema Admins'
-    'Server Operators'
+	'Administrators'
+	'Authorized Personnel'
+	'Compliance Management'
+	'Delegated Setup'
+	'Discovery Management'
+	'Domain Admins'
+	'Enterprise Admins'
+	'Exchange Servers'
+	'Exchange Trusted Subsystem'
+	'Exchange Windows Permissions'
+	'ExchangeLegacyInterop'
+	'FrontAdmins'
+	'Help Desk'
+	'Hygiene Management'
+	'Impersonation-Privilege'
+	'import and export role permissions'
+	'Managed Availability Servers'
+	'Organization Management'
+	'Public Folder Management'
+	'Recipient Management'
+	'Records Management'
+	'Schema Admins'
+	'Security Administrator'
+	'Security Reader'
+	'Server Management'
+	'Server Operators'
+	'UM Management'
+	'View-Only Organization Management'
+	'WP-Services-Import_Export_MBXs'
+	'WP-Support-L1'
+	'WP-Support-L2'
 )
 
 #location for the file to track membership data
@@ -29,7 +53,7 @@ do{
     $Admin_Security_Groups | ForEach-Object {
         $New_Group_Data += [PSCustomObject][Ordered]@{
             Name    = $_
-            Members = (Get-ADGroupMember -Identity $_ | Where-Object {$_.ObjectClass -eq 'user'} | 
+            Members = (Get-ADGroup -Filter {name -eq $_} | ForEach-Object { Get-ADGroupMember -Identity $_ } | Where-Object {$_.ObjectClass -eq 'user'} | 
                         Select-Object -ExpandProperty SamAccountName | Sort-Object) -join ' | '
         }
     }
