@@ -1,7 +1,7 @@
 Exchange can't connect to the RPC server on computer "FRANK-MBX". Verify that you used a valid computer name.
     + CategoryInfo          : InvalidOperation: (:) [Get-Queue], LocalizedException
-    + FullyQualifiedErrorId : [Server=FRANK-EX1-X04,RequestId=3b4c64a5-4ea7-440e-b405-cff6cda5aac8,TimeStamp=5/26/2021 
-    12:23:03 PM] [FailureCategory=Cmdlet-LocalizedException] 145EB229,Microsoft.Exchange.Management.QueueViewerTasks.  
-  GetQueueInfo
+    + FullyQualifiedErrorId : [Server=FRANK-EX1-X04,RequestId=dd933c3d-67b9-46d5-93d8-cbb2b7598d0c,TimeStamp=5/26/2021 
+    2:46:37 PM] [FailureCategory=Cmdlet-LocalizedException] 145EB229,Microsoft.Exchange.Management.QueueViewerTasks.G  
+  etQueueInfo
     + PSComputerName        : frank-fem-f01.roaya.loc
  

@@ -49,3 +49,11 @@ Developer      | RDP Priv
 Developer      | shutdown priv
 Developer      | full priv (local admin)
 ```
+
+# classifications
+EU1MB9901: 192.168.3.202 wahba / nada
+PST-SERVER1: 192.168.1.120 wahba / nada
+
+ALL GENERIC (RDP + SHUTDOWN) abdo + hussein
+
+All exchange + All DCs + PST-SERVER1 + office online (FRANK-OOS-O02, FRANK-OOS-O01) >> Islam + Pepo

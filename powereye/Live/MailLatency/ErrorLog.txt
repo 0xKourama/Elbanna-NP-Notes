@@ -1,7 +1,7 @@
 Failed to connect to the RPC server on computer "Frank-MBX.Roaya.loc". Verify that a valid computer name was used.
     + CategoryInfo          : InvalidOperation: (:) [Get-MessageTrackingLog], LocalizedException
-    + FullyQualifiedErrorId : [Server=EU1FE9111,RequestId=143d0abf-8a47-4b24-9e52-c67e4cd4ecda,TimeStamp=5/26/2021 12: 
-   23:02 PM] [FailureCategory=Cmdlet-LocalizedException] D229BA69,Microsoft.Exchange.Management.TransportLogSearchTas  
-  ks.GetMessageTrackingLog
+    + FullyQualifiedErrorId : [Server=FRANK-EX-DEV,RequestId=15fda9d2-875e-4733-8eb9-aad89483384a,TimeStamp=5/26/2021  
+   2:46:33 PM] [FailureCategory=Cmdlet-LocalizedException] D2CE807E,Microsoft.Exchange.Management.TransportLogSearchT  
+  asks.GetMessageTrackingLog
     + PSComputerName        : frank-fem-f01.roaya.loc
  
