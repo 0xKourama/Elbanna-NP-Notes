@@ -57,3 +57,16 @@ PST-SERVER1: 192.168.1.120 wahba / nada
 ALL GENERIC (RDP + SHUTDOWN) abdo + hussein
 
 All exchange + All DCs + PST-SERVER1 + office online (FRANK-OOS-O02, FRANK-OOS-O01) >> Islam + Pepo
+
+## users:
+1. Tawfik
+2. Peter
+3. Karim
+4. Gabr
+5. Wahba
+6. Nada
+7. Abdulrahman
+8. Hussien
+9. Islam
+10. Mali
+11. Sara
