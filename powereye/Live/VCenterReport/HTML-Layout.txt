@@ -1,4 +1,6 @@
-$Header = "<h3>VCenter Report</h3>"
+$Header1 = "<h3>VCenter Report</h3>"
+
+$Header2 = "<h3>VCenter Local DataStore Report</h3>"
 
 $Style = @"
 <style>

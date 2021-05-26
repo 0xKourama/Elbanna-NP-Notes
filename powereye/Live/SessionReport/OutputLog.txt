@@ -1,4 +1,4 @@
-05/25/2021 13:09:19 [*] Sending mail
+05/26/2021 13:20:21 [*] Sending mail
 
 
 ComputerName : SQL-SOLID1
@@ -22,148 +22,136 @@ State        : ACTIVE
 SessionType  : CONSOLE
 IdleDuration : 0 day(s) 0 hour(s) 0 minute(s)
 
-ComputerName : EU1MB9901
-Username     : MWAHBAURGENT
-LogonTime    : 5/23/2021 12:15 PM
+ComputerName : CP01
+Username     : MALIURGENT
+LogonTime    : 5/25/2021 3:22 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 24 minute(s)
+IdleDuration : 0 day(s) 21 hour(s) 52 minute(s)
+
+ComputerName : EU1MB9901
+Username     : ISLAMADMIN
+LogonTime    : 5/24/2021 2:26 PM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 2 hour(s) 51 minute(s)
 
 ComputerName : EU1MB9901
 Username     : NADAURGENT
-LogonTime    : 5/25/2021 10:35 AM
+LogonTime    : 5/26/2021 9:46 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 19 minute(s)
-
-ComputerName : EU1MB9903
-Username     : MWAHBAURGENT
-LogonTime    : 5/25/2021 12:18 PM
-State        : ACTIVE
-SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 47 minute(s)
-
-ComputerName : FRANK-ADC-01
-Username     : ISLAMADMIN
-LogonTime    : 5/24/2021 4:13 PM
-State        : ACTIVE
-SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 52 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 18 minute(s)
 
 ComputerName : FRANK-ADC-01
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 1:57 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 4 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 26 minute(s)
+
+ComputerName : FRANK-ADC-01
+Username     : ISLAMADMIN
+LogonTime    : 5/24/2021 4:13 PM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 2 hour(s) 57 minute(s)
 
 ComputerName : FRANK-ADC-02
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 3:58 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 58 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 26 minute(s)
 
 ComputerName : FRANK-ADC-03
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 3:58 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 58 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 26 minute(s)
 
 ComputerName : FRANK-ADC-04
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 3:28 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 58 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 27 minute(s)
 
 ComputerName : FRANK-D02
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 2:26 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 58 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 26 minute(s)
 
 ComputerName : FRANK-DC01
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 3:28 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 58 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 25 minute(s)
 
 ComputerName : FRANK-EX-DEV
 Username     : MALIURGENT
 LogonTime    : 5/24/2021 4:47 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 2 minute(s)
+IdleDuration : 0 day(s) 22 hour(s) 00 minute(s)
 
 ComputerName : FRANK-PDC
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 2:18 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 58 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 27 minute(s)
 
 ComputerName : FRANK-RODC-01
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 2:30 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 58 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 26 minute(s)
 
 ComputerName : FRANK-TOOLS01
 Username     : MALIURGENT
 LogonTime    : 5/24/2021 11:35 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 3 minute(s)
-
-ComputerName : PST-SERVER1
-Username     : NADAURGENT
-LogonTime    : 5/24/2021 5:28 PM
-State        : ACTIVE
-SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 20 minute(s)
+IdleDuration : 1 day(s) 00 hour(s) 15 minute(s)
 
 ComputerName : PST-SERVER1
 Username     : MWAHBAURGENT
 LogonTime    : 5/23/2021 12:14 PM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 24 minute(s)
+IdleDuration : 0 day(s) 21 hour(s) 29 minute(s)
+
+ComputerName : PST-SERVER1
+Username     : NADAURGENT
+LogonTime    : 5/26/2021 9:40 AM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 0 hour(s) 29 minute(s)
 
 ComputerName : WP-ROOTCA
 Username     : MTAWFIKURGENT
 LogonTime    : 5/22/2021 2:13 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 1 hour(s) 12 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 26 minute(s)
 
 ComputerName : EU1MB9901
-Username     : ISLAMADMIN
-LogonTime    : 5/24/2021 2:26 PM
+Username     : MWAHBAURGENT
+LogonTime    : 5/23/2021 12:15 PM
 State        : INACTIVE
-IdleDuration : 0 day(s) 1 hour(s) 02 minute(s)
+IdleDuration : 0 day(s) 2 hour(s) 57 minute(s)
 
-ComputerName : EU1MB9901
-Username     : PEPOURGENT
-LogonTime    : 5/23/2021 1:55 PM
+ComputerName : EU1MB9903
+Username     : MWAHBAURGENT
+LogonTime    : 5/25/2021 12:18 PM
 State        : INACTIVE
-IdleDuration : 1 day(s) 00 hour(s) 47 minute(s)
-
-ComputerName : EU1MB9902
-Username     : PEPOURGENT
-LogonTime    : 5/23/2021 3:58 PM
-State        : INACTIVE
-IdleDuration : 0 day(s) 20 hour(s) 27 minute(s)
-
-ComputerName : FRANK-WSUS
-Username     : AHUSSAINURGENT
-LogonTime    : 5/23/2021 11:26 AM
-State        : INACTIVE
-IdleDuration : 0 day(s) 3 hour(s) 53 minute(s)
+IdleDuration : 0 day(s) 22 hour(s) 10 minute(s)
 
 
 
