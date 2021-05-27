@@ -91,22 +91,32 @@ $Idle_sessions | ForEach-Object {
 }
 
 #region HTML summary data
-$body = @"
+if($session_CONSOLE_summary){
+$ConsoleSection = @"
 <h3>Console Sessions ($($session_CONSOLE_summary.count))</h3>
 $($session_CONSOLE_summary | ConvertTo-Html -Fragment)
+"@
+}
+
+if($session_RDP_summary){
+$RDPSection = @"
 <h3>RDP Sessions ($($session_RDP_summary.count))</h3>
 $($session_RDP_summary      | ConvertTo-Html -Fragment)
+"@
+}
+
+if($session_inactive_summary){
+$InactiveSection = @"
 <h3>Inactive Sessions ($($session_inactive_summary.count))</h3>
 $($session_inactive_summary | ConvertTo-Html -Fragment)
 "@
+}
 
 if($LogoffResults){
-
-$Footer = @"
+$CleanUpSection = @"
 <h3>Sessions terminated for inactivity exceeding 3 hours ($($LogoffResults.Count))</h3>
 $($LogoffResults | ConvertTo-Html -Fragment)
 "@
-
 }
 #endregion
 
@@ -116,4 +126,4 @@ Write-Output $session_CONSOLE_summary
 Write-Output $session_RDP_summary
 Write-Output $session_inactive_summary
 
-Send-MailMessage @MailSettings -BodyAsHtml "$style $body $Footer"
+Send-MailMessage @MailSettings -BodyAsHtml "$style $ConsoleSection $RDPSection $InactiveSection $CleanUpSection"
