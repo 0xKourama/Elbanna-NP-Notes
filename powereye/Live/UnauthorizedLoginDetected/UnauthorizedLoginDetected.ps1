@@ -55,6 +55,39 @@ $LogoffScript = {
     }
 }
 
+<#
+#actions
+#1. logoff
+#2. disable
+#3. change password
+#4. remove security group membership
+
+$LogoffScript = {
+
+    $Obj = New-Object -TypeName PSObject -Property ComputerName, Username, Scope, Logoff, PasswordChange, Disable, GroupMembershipsRemoval
+
+    if(Get-LocalUser -Name $args[1]){
+        
+    }else{
+        
+    }
+
+
+    logoff $args[0]
+    if($?){
+        $Obj.ComputerName = $env:COMPUTERNAME
+        $Obj.Username     = $args[1]
+        $Obj.Logoff       = 'Success'
+    }
+    else{
+        $Obj.ComputerName = $env:COMPUTERNAME
+        $Obj.Username     = $args[1]
+        $Obj.Logoff       = 'Fail'
+    }
+}
+#>
+
+
 $LogoffResults = @()
 
 $UnAuthorizedSessions | ForEach-Object {
