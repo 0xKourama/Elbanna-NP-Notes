@@ -59,9 +59,9 @@ $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Prope
 $session_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script | Where-Object {$_.ComputerName -ne 'PowerEye'} |
                    Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID
 
-$session_CONSOLE_summary  = $session_summary | Where-Object {$_.SessionType -eq 'CONSOLE' } | Select-Object -Property * -ExcludeProperty IdleSpan, ID
-$session_RDP_summary      = $session_summary | Where-Object {$_.SessionType -eq 'RDP'     } | Select-Object -Property * -ExcludeProperty IdleSpan, ID
-$session_inactive_summary = $session_summary | Where-Object {$_.State       -eq 'INACTIVE'} | Select-Object -Property * -ExcludeProperty SessionType, IdleSpan, ID
+[PSCustomObject[]]$session_CONSOLE_summary  = $session_summary | Where-Object {$_.SessionType -eq 'CONSOLE' } | Select-Object -Property * -ExcludeProperty IdleSpan, ID
+[PSCustomObject[]]$session_RDP_summary      = $session_summary | Where-Object {$_.SessionType -eq 'RDP'     } | Select-Object -Property * -ExcludeProperty IdleSpan, ID
+[PSCustomObject[]]$session_inactive_summary = $session_summary | Where-Object {$_.State       -eq 'INACTIVE'} | Select-Object -Property * -ExcludeProperty SessionType, IdleSpan, ID
 
 $LogoffScript = {
     logoff $args[0]
