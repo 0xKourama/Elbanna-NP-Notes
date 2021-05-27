@@ -19,7 +19,7 @@ $Script = {
     }
     else{
         $Events = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID; StartTime = Import-Clixml -Path $XML_Path} |
-                  Select-Object -Property Message, TimeCreated
+                 Select-Object -Property Message, TimeCreated
     }
     #update the tracker XML file
     Get-Date | Export-Clixml -Path $XML_Path
@@ -69,7 +69,28 @@ $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Prope
 
 #invoke the script over the remote computers
 $Result = Invoke-Command -ComputerName $Online -ScriptBlock $Script |
-          Select-Object -Property * -ExcludeProperty RunSpaceID, PSShowComputerName, PSComputerName |
+          Select-Object -Property ComputerName,
+                                  ChangeDate,
+                                  ActionSourceSID,
+                                  ActionSourceAccount,
+                                  ActionSourceDomain,
+                                  TargetAccountSID,
+                                  @{
+                                    n='TargetAccount'
+                                    e={
+                                        [String]$SID = $_.TargetAccountSID
+                                        $UN = (Get-ADUser -Filter {SID -eq $SID}).SamAccountName
+                                        if(!$UN){
+                                            (Get-ADGroup -Filter {SID -eq $SID}).SamAccountName
+                                        }
+                                        else{
+                                            $UN
+                                        }
+                                    }
+                                  },
+                                  GroupSID,
+                                  GroupName,
+                                  GroupDomain -ExcludeProperty RunSpaceID, PSShowComputerName, PSComputerName |
           Sort-Object -Property ChangeDate -Descending
 
 if($Result){

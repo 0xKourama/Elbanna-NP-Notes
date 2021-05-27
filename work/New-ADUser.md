@@ -1,0 +1,2 @@
+$Password = Read-Host -AsSecureString "Input User Password"
+New-ADUser -Name $_ -SamAccountName $_ -AccountPassword $password -ChangePasswordAtLogon $True -Description "Description" -DisplayName $_ -Enabled $True -Path 'OU=Users,OU=TEST,DC=CORP,DC=COM' -whatif
