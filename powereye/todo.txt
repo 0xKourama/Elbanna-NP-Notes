@@ -1,3 +1,0 @@
-1. Check sessions on each run
-	maybe write summary
-2. Make a single error log (csv format might be best)
