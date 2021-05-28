@@ -53,7 +53,7 @@ do{
     $Admin_Security_Groups | ForEach-Object {
         $New_Group_Data += [PSCustomObject][Ordered]@{
             Name    = $_
-            Members = (Get-ADGroup -Filter {name -eq $_} | ForEach-Object { Get-ADGroupMember -Identity $_ } | Where-Object {$_.ObjectClass -eq 'user'} | 
+            Members = (Get-ADGroup -Filter {name -eq $_} | Get-ADGroupMember -Recursive | Where-Object {$_.ObjectClass -eq 'user'} | 
                         Select-Object -ExpandProperty SamAccountName | Sort-Object) -join ' | '
         }
     }

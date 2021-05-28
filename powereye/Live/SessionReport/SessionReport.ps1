@@ -126,4 +126,10 @@ Write-Output $session_CONSOLE_summary
 Write-Output $session_RDP_summary
 Write-Output $session_inactive_summary
 
-Send-MailMessage @MailSettings -BodyAsHtml "$style $ConsoleSection $RDPSection $InactiveSection $CleanUpSection"
+if($session_CONSOLE_summary -or $session_RDP_summary -or $session_inactive_summary){
+    Write-Output "$(Get-Date) [*] Sessions were found. Sending mail."
+    Send-MailMessage @MailSettings -BodyAsHtml "$style $ConsoleSection $RDPSection $InactiveSection $CleanUpSection"
+}
+else{
+    Write-Output "$(Get-Date)[-] No Sessions were found"
+}
