@@ -132,6 +132,12 @@ $Modules = @(
         Name = 'VCenter Report'
         RunInterval = New-TimeSpan -Days 1
     }
+    #21
+    [Module]@{
+        Enabled = $true
+        Name = 'Local Group Report'
+        RunInterval = New-TimeSpan -Days 1
+    }
 )
 if(!$Runtime_Data){
     $Modules | ForEach-Object {$_.MinutesTillNextRun = $_.RunInterval.TotalMinutes}
