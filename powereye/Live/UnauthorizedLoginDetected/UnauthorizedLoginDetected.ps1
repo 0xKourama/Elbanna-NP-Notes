@@ -64,10 +64,13 @@ $LogoffScript = {
 
 $LogoffScript = {
 
+    $Secure_String_Pwd = ConvertTo-SecureString "$$UnAuthPwdChange$$" -AsPlainText -Force
+
     $Obj = New-Object -TypeName PSObject -Property ComputerName, Username, Scope, Logoff, PasswordChange, Disable, GroupMembershipsRemoval
 
     if(Get-LocalUser -Name $args[1]){
-        
+        Get-LocalUser -Name $args[1] | Set-LocalUser -Password $Secure_String_Pwd
+        Disable-LocalUser -Name $args[1]
     }else{
         
     }
