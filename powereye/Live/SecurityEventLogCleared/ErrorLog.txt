@@ -1,7 +1,7 @@
-[SQL-SOLID1] Connecting to remote server SQL-SOLID1 failed with the following error message : WinRM cannot complete 
+[SQL-SOLID2] Connecting to remote server SQL-SOLID2 failed with the following error message : WinRM cannot complete 
 the operation. Verify that the specified computer name is valid, that the computer is accessible over the network, and 
 that a firewall exception for the WinRM service is enabled and allows access from this computer. By default, the WinRM 
 firewall exception for public profiles limits access to remote computers within the same local subnet. For more 
 information, see the about_Remote_Troubleshooting Help topic.
-    + CategoryInfo          : OpenError: (SQL-SOLID1:String) [], PSRemotingTransportException
+    + CategoryInfo          : OpenError: (SQL-SOLID2:String) [], PSRemotingTransportException
     + FullyQualifiedErrorId : WinRMOperationTimeout,PSSessionStateBroken

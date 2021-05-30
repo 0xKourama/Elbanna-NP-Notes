@@ -1,7 +1,25 @@
+New-PSSession : [frank-fem-f01.roaya.loc] Connecting to remote server frank-fem-f01.roaya.loc failed with the 
+following error message : [ClientAccessServer=FRANK-FEM-F01,BackEndServer=frank-mbx.roaya.loc,RequestId=9cf76cf2-8323-4
+ae2-8b04-bffc3f33f4c9,TimeStamp=5/30/2021 2:42:14 PM] [FailureCategory=Cafe-NameResolutionFailure]  For more 
+information, see the about_Remote_Troubleshooting Help topic.
+At C:\powereye\ExchangeQueueWarning\ExchangeQueueWarning.ps1:22 char:16
++     $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
++                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (System.Manageme....RemoteRunspace:RemoteRunspace) [New-PSSession], PSRemotin 
+   gTransportException
+    + FullyQualifiedErrorId : -2144108477,PSSessionOpenFailed
+Import-PSSession : Cannot validate argument on parameter 'Session'. The argument is null. Provide a valid value for 
+the argument, and then try running the command again.
+At C:\powereye\ExchangeQueueWarning\ExchangeQueueWarning.ps1:27 char:22
++     Import-PSSession $Session -DisableNameChecking -AllowClobber | Ou ...
++                      ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Import-PSSession], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.ImportPSSessionCommand
+ 
 Exchange can't connect to the RPC server on computer "FRANK-MBX". Verify that you used a valid computer name.
     + CategoryInfo          : InvalidOperation: (:) [Get-Queue], LocalizedException
-    + FullyQualifiedErrorId : [Server=EU1MB9902,RequestId=d925b794-bf44-448d-8cfa-d0703647a0be,TimeStamp=5/27/2021 9:4 
-   4:13 AM] [FailureCategory=Cmdlet-LocalizedException] 17B8B63A,Microsoft.Exchange.Management.QueueViewerTasks.GetQu  
+    + FullyQualifiedErrorId : [Server=EU1MB9901,RequestId=63deab93-4230-454f-828d-dc466afc4886,TimeStamp=5/30/2021 2:4 
+   2:26 PM] [FailureCategory=Cmdlet-LocalizedException] 1766166F,Microsoft.Exchange.Management.QueueViewerTasks.GetQu  
   eueInfo
-    + PSComputerName        : frank-fem-f01.roaya.loc
+    + PSComputerName        : frank-fem-f02.roaya.loc
  

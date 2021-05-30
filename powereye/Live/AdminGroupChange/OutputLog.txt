@@ -1,1 +1,184 @@
-05/27/2021 11:44:12 [*] No change detected.
+[!] Recent Administrators group data doesn't have 4005
+[!] Recent Administrators group data doesn't have abdelrahmanurgent
+[!] Recent Administrators group data doesn't have Administrator
+[!] Recent Administrators group data doesn't have backup-sa
+[!] Recent Administrators group data doesn't have devadmin
+[!] Recent Administrators group data doesn't have DevScripts
+[!] Recent Administrators group data doesn't have GabrUrgent
+[!] Recent Administrators group data doesn't have islamadmin
+[!] Recent Administrators group data doesn't have KSE
+[!] Recent Administrators group data doesn't have maliurgent
+[!] Recent Administrators group data doesn't have MTawfikUrgent
+[!] Recent Administrators group data doesn't have mwahbaurgent
+[!] Recent Administrators group data doesn't have nadaurgent
+[!] Recent Administrators group data doesn't have PepoUrgent
+[!] Recent Administrators group data doesn't have roadmin
+[!] Recent Administrators group data doesn't have solidadmin
+[!] Recent Administrators group data doesn't have solidadmintwo
+[!] Recent Administrators group data doesn't have solidfinal
+[!] Recent Administrators group data doesn't have wpadmin
+[!] Recent Administrators group data doesn't have wpsolidadmin
+[*] Recent Authorized Personnel group data also has 4005
+[*] Recent Authorized Personnel group data also has abdelrahmanurgent
+[*] Recent Authorized Personnel group data also has AHussainUrgent
+[*] Recent Authorized Personnel group data also has GabrUrgent
+[*] Recent Authorized Personnel group data also has islamadmin
+[*] Recent Authorized Personnel group data also has maliurgent
+[*] Recent Authorized Personnel group data also has MTawfikUrgent
+[*] Recent Authorized Personnel group data also has mwahbaurgent
+[*] Recent Authorized Personnel group data also has nadaurgent
+[*] Recent Authorized Personnel group data also has PepoUrgent
+[*] Recent Authorized Personnel group data also has wpadmin
+[*] Old Authorized Personnel group data also has 4005
+[*] Old Authorized Personnel group data also has abdelrahmanurgent
+[*] Old Authorized Personnel group data also has AHussainUrgent
+[*] Old Authorized Personnel group data also has GabrUrgent
+[*] Old Authorized Personnel group data also has islamadmin
+[*] Old Authorized Personnel group data also has maliurgent
+[*] Old Authorized Personnel group data also has MTawfikUrgent
+[*] Old Authorized Personnel group data also has mwahbaurgent
+[*] Old Authorized Personnel group data also has nadaurgent
+[*] Old Authorized Personnel group data also has PepoUrgent
+[*] Old Authorized Personnel group data also has wpadmin
+[*] Recent Discovery Management group data also has wpadmin
+[*] Old Discovery Management group data also has wpadmin
+[*] Recent Domain Admins group data also has 4005
+[*] Recent Domain Admins group data also has abdelrahmanurgent
+[*] Recent Domain Admins group data also has Administrator
+[*] Recent Domain Admins group data also has backup-sa
+[*] Recent Domain Admins group data also has devadmin
+[*] Recent Domain Admins group data also has DevScripts
+[*] Recent Domain Admins group data also has GabrUrgent
+[*] Recent Domain Admins group data also has islamadmin
+[*] Recent Domain Admins group data also has KSE
+[*] Recent Domain Admins group data also has maliurgent
+[*] Recent Domain Admins group data also has MTawfikUrgent
+[*] Recent Domain Admins group data also has mwahbaurgent
+[*] Recent Domain Admins group data also has nadaurgent
+[*] Recent Domain Admins group data also has PepoUrgent
+[*] Recent Domain Admins group data also has solidadmin
+[*] Recent Domain Admins group data also has wpadmin
+[*] Old Domain Admins group data also has 4005
+[*] Old Domain Admins group data also has abdelrahmanurgent
+[*] Old Domain Admins group data also has Administrator
+[*] Old Domain Admins group data also has backup-sa
+[*] Old Domain Admins group data also has devadmin
+[*] Old Domain Admins group data also has DevScripts
+[*] Old Domain Admins group data also has GabrUrgent
+[*] Old Domain Admins group data also has islamadmin
+[*] Old Domain Admins group data also has KSE
+[*] Old Domain Admins group data also has maliurgent
+[*] Old Domain Admins group data also has MTawfikUrgent
+[*] Old Domain Admins group data also has mwahbaurgent
+[*] Old Domain Admins group data also has nadaurgent
+[*] Old Domain Admins group data also has PepoUrgent
+[*] Old Domain Admins group data also has solidadmin
+[*] Old Domain Admins group data also has wpadmin
+[*] Recent Enterprise Admins group data also has 4005
+[*] Recent Enterprise Admins group data also has Administrator
+[*] Recent Enterprise Admins group data also has islamadmin
+[*] Recent Enterprise Admins group data also has maliurgent
+[*] Recent Enterprise Admins group data also has MTawfikUrgent
+[*] Recent Enterprise Admins group data also has solidadmin
+[*] Recent Enterprise Admins group data also has wpadmin
+[*] Old Enterprise Admins group data also has 4005
+[*] Old Enterprise Admins group data also has Administrator
+[*] Old Enterprise Admins group data also has islamadmin
+[*] Old Enterprise Admins group data also has maliurgent
+[*] Old Enterprise Admins group data also has MTawfikUrgent
+[*] Old Enterprise Admins group data also has solidadmin
+[*] Old Enterprise Admins group data also has wpadmin
+[*] Recent Help Desk group data also has nextcloud
+[*] Old Help Desk group data also has nextcloud
+[*] Recent Impersonation-Privilege group data also has DevScripts
+[*] Recent Impersonation-Privilege group data also has solidadmin
+[*] Old Impersonation-Privilege group data also has DevScripts
+[*] Old Impersonation-Privilege group data also has solidadmin
+[*] Recent import and export role permissions group data also has islamadmin
+[*] Old import and export role permissions group data also has islamadmin
+[*] Recent Organization Management group data also has Administrator
+[*] Recent Organization Management group data also has devadmin
+[*] Recent Organization Management group data also has DevScripts
+[*] Recent Organization Management group data also has GabrUrgent
+[*] Recent Organization Management group data also has islamadmin
+[*] Recent Organization Management group data also has KSE
+[*] Recent Organization Management group data also has maliurgent
+[*] Recent Organization Management group data also has MTawfikUrgent
+[*] Recent Organization Management group data also has mwahbaurgent
+[*] Recent Organization Management group data also has nadaurgent
+[*] Recent Organization Management group data also has PepoUrgent
+[*] Recent Organization Management group data also has roadmin
+[*] Recent Organization Management group data also has solidadmin
+[*] Recent Organization Management group data also has solidadmintwo
+[*] Recent Organization Management group data also has solidfinal
+[*] Recent Organization Management group data also has wpadmin
+[*] Recent Organization Management group data also has wpsolidadmin
+[*] Old Organization Management group data also has Administrator
+[*] Old Organization Management group data also has devadmin
+[*] Old Organization Management group data also has DevScripts
+[*] Old Organization Management group data also has GabrUrgent
+[*] Old Organization Management group data also has islamadmin
+[*] Old Organization Management group data also has KSE
+[*] Old Organization Management group data also has maliurgent
+[*] Old Organization Management group data also has MTawfikUrgent
+[*] Old Organization Management group data also has mwahbaurgent
+[*] Old Organization Management group data also has nadaurgent
+[*] Old Organization Management group data also has PepoUrgent
+[*] Old Organization Management group data also has roadmin
+[*] Old Organization Management group data also has solidadmin
+[*] Old Organization Management group data also has solidadmintwo
+[*] Old Organization Management group data also has solidfinal
+[*] Old Organization Management group data also has wpadmin
+[*] Old Organization Management group data also has wpsolidadmin
+[*] Recent Schema Admins group data also has 4005
+[*] Recent Schema Admins group data also has Administrator
+[*] Recent Schema Admins group data also has islamadmin
+[*] Recent Schema Admins group data also has MTawfikUrgent
+[*] Recent Schema Admins group data also has roadmin
+[*] Recent Schema Admins group data also has wpadmin
+[*] Old Schema Admins group data also has 4005
+[*] Old Schema Admins group data also has Administrator
+[*] Old Schema Admins group data also has islamadmin
+[*] Old Schema Admins group data also has MTawfikUrgent
+[*] Old Schema Admins group data also has roadmin
+[*] Old Schema Admins group data also has wpadmin
+[*] Recent Server Management group data also has exadmin
+[*] Old Server Management group data also has exadmin
+[*] Recent View-Only Organization Management group data also has ExchangeMonitor
+[*] Recent View-Only Organization Management group data also has QueueMonitor
+[*] Old View-Only Organization Management group data also has ExchangeMonitor
+[*] Old View-Only Organization Management group data also has QueueMonitor
+[*] Recent WP-Services-Import_Export_MBXs group data also has BadawyUrgent
+[*] Recent WP-Services-Import_Export_MBXs group data also has PanelExport
+[*] Old WP-Services-Import_Export_MBXs group data also has BadawyUrgent
+[*] Old WP-Services-Import_Export_MBXs group data also has PanelExport
+[*] Recent WP-Support-L2 group data also has mwahbaurgent
+[*] Recent WP-Support-L2 group data also has nadaurgent
+[*] Old WP-Support-L2 group data also has mwahbaurgent
+[*] Old WP-Support-L2 group data also has nadaurgent
+05/30/2021 16:42:24 [!] change detected. Sending mail.
+
+ChangedMember     ChangedGroup   ChangeType
+-------------     ------------   ----------
+4005              Administrators Removal   
+abdelrahmanurgent Administrators Removal   
+Administrator     Administrators Removal   
+backup-sa         Administrators Removal   
+devadmin          Administrators Removal   
+DevScripts        Administrators Removal   
+GabrUrgent        Administrators Removal   
+islamadmin        Administrators Removal   
+KSE               Administrators Removal   
+maliurgent        Administrators Removal   
+MTawfikUrgent     Administrators Removal   
+mwahbaurgent      Administrators Removal   
+nadaurgent        Administrators Removal   
+PepoUrgent        Administrators Removal   
+roadmin           Administrators Removal   
+solidadmin        Administrators Removal   
+solidadmintwo     Administrators Removal   
+solidfinal        Administrators Removal   
+wpadmin           Administrators Removal   
+wpsolidadmin      Administrators Removal   
+
+

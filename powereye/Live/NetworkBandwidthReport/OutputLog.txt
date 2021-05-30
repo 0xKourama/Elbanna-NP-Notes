@@ -1,113 +1,386 @@
-1/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 145.2  MBps ] > [ FRANK-FEM-F01   | 10.1.1.0/24        ] Time elapsed: 6.35 seconds
-2/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 3.52 seconds
-3/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1FE3110       | 10.1.1.0/24        ] Time elapsed: 21.72 seconds
-4/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 3.46 seconds
-5/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 3.49 seconds
-6/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 111.78 MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.52 seconds
-7/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 149    MBps ] > [ EU1FE3111       | 10.1.1.0/24        ] Time elapsed: 6.5 seconds
-8/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 21.76 seconds
-9/91    [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 123.4  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.87 seconds
-10/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 3.82 seconds
-11/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 3.84 seconds
-12/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 154    MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.41 seconds
-13/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 21.78 seconds
-14/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 193.2  MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 27.46 seconds
-15/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 389.8  MBps ] > [ EU1FE3110       | 10.1.1.0/24        ] Time elapsed: 6.36 seconds
-16/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 190.6  MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 24.9 seconds
-17/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 183    MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 25.34 seconds
-18/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 231.2  MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.6 seconds
-19/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 389.2  MBps ] > [ EU1FE3111       | 10.1.1.0/24        ] Time elapsed: 6.43 seconds
-20/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 459.8  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 6.62 seconds
-21/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 368.8  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.62 seconds
-22/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 459.8  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 8.42 seconds
-23/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 446.2  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 8.44 seconds
-24/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 162.8  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.35 seconds
-25/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 341.8  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.63 seconds
-26/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 138    MBps ] > [ EU1FE3110       | 10.1.1.0/24        ] Time elapsed: 6.6 seconds
-27/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 514.6  MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 24.63 seconds
-28/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 478.8  MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 28.54 seconds
-29/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 167.6  MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.59 seconds
-30/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 142.8  MBps ] > [ EU1FE3111       | 10.1.1.0/24        ] Time elapsed: 6.39 seconds
-31/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 160.2  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 6.66 seconds
-32/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 138    MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.9 seconds
-33/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 142.6  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.3 seconds
-34/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 154.8  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9.2 seconds
-35/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 392.4  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.39 seconds
-36/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 153.4  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.53 seconds
-37/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 174    MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 24.95 seconds
-38/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 154.8  MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 25.68 seconds
-39/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 207.36 MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.54 seconds
-40/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 310    MBps ] > [ EU1FE3111       | 10.1.1.0/24        ] Time elapsed: 6.41 seconds
-41/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 393.6  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 6.89 seconds
-42/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 310.8  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.76 seconds
-43/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 407.2  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.59 seconds
-44/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 398.4  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9.24 seconds
-45/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 142.8  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.35 seconds
-46/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 309.4  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.48 seconds
-47/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 355    MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 27.25 seconds
-48/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 163.8  MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.48 seconds
-49/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 140.4  MBps ] > [ EU1FE3111       | 10.1.1.0/24        ] Time elapsed: 6.45 seconds
-50/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 153.6  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 6.86 seconds
-51/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 133.2  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.75 seconds
-52/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 164.4  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 8.86 seconds
-53/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 144.4  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 8.27 seconds
-54/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 266.8  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.38 seconds
-55/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 135.8  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.63 seconds
-56/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 117.4  MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.45 seconds
-57/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 147.6  MBps ] > [ EU1FE3111       | 10.1.1.0/24        ] Time elapsed: 6.41 seconds
-58/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 148.2  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 6.87 seconds
-59/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 123.4  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.59 seconds
-60/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 141.2  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 8.57 seconds
-61/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 143.2  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 8.65 seconds
-62/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 284.4  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.55 seconds
-63/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 134.6  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.63 seconds
-64/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 305.4  MBps ] > [ EU1FE3111       | 10.1.1.0/24        ] Time elapsed: 6.51 seconds
-65/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 336.8  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.04 seconds
-66/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 340.4  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.51 seconds
-67/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 314    MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.72 seconds
-68/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 296.6  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9.84 seconds
-69/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 126.8  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.46 seconds
-70/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 399.6  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.75 seconds
-71/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 348.2  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 6.85 seconds
-72/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 266.7  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.81 seconds
-73/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 338    MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.26 seconds
-74/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 347.8  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 8.62 seconds
-75/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 137    MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 9.38 seconds
-76/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 332.2  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.65 seconds
-77/91   [ 10.1.1.0/24        | FRANK-FEM-F04  ] < [ 331.8  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.68 seconds
-78/91   [ 10.1.1.0/24        | FRANK-FEM-F04  ] < [ 536.6  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.41 seconds
-79/91   [ 10.1.1.0/24        | FRANK-FEM-F04  ] < [ 527.4  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9.86 seconds
-80/91   [ 10.1.1.0/24        | FRANK-FEM-F04  ] < [ 138.6  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.39 seconds
-81/91   [ 10.1.1.0/24        | FRANK-FEM-F04  ] < [ 326.8  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.62 seconds
-82/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 320    MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 8.36 seconds
-83/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 306.8  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 8.6 seconds
-84/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 131    MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.4 seconds
-85/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 466.4  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.6 seconds
-86/91   [ 10.1.1.0/24        | EU1FE9222      ] < [ 507.8  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 8.48 seconds
-87/91   [ 10.1.1.0/24        | EU1FE9222      ] < [ 129.8  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.93 seconds
-88/91   [ 10.1.1.0/24        | EU1FE9222      ] < [ 260.58 MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 7.18 seconds
-89/91   [ 10.1.1.0/24        | EU1FE9111      ] < [ 140.2  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.9 seconds
-90/91   [ 10.1.1.0/24        | EU1FE9111      ] < [ 262.8  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 7.25 seconds
-91/91   [ 192.168.3.0/24     | FRANK-MBM-D35  ] < [ 148.6  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.55 seconds
+1/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 305.6  MBps ] > [ EU1FE3111       | 10.1.1.0/24        ] Time elapsed: 6.98 seconds
+2/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 214.2  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.81 seconds
+3/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 71.9   MBps ] > [ FRANK-FEM-F02   | 192.168.2.0/24     ] Time elapsed: 6.49 seconds
+4/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 276    MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.95 seconds
+5/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 107.1  MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 33.03 seconds
+6/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 121.18 MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 28.26 seconds
+7/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 318.8  MBps ] > [ FRANK-FEM-F01   | 10.1.1.0/24        ] Time elapsed: 6.66 seconds
+8/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 122    MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 32.52 seconds
+9/91    [ 10.1.1.0/24        | EU1FE3110      ] < [ 251    MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.63 seconds
+10/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 392.4  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 8.99 seconds
+11/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 375.6  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.18 seconds
+12/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 106.62 MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.54 seconds
+13/91   [ 10.1.1.0/24        | EU1FE3110      ] < [ 372.8  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 8.85 seconds
+14/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 288.8  MBps ] > [ EU1FE3112       | 10.1.1.0/24        ] Time elapsed: 6.9 seconds
+15/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 129.2  MBps ] > [ FRANK-FEM-F02   | 192.168.2.0/24     ] Time elapsed: 7.03 seconds
+16/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 296    MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.76 seconds
+17/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 116.8  MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 34.06 seconds
+18/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 126.2  MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 28.12 seconds
+19/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 318    MBps ] > [ FRANK-FEM-F01   | 10.1.1.0/24        ] Time elapsed: 6.66 seconds
+20/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 132.6  MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 31.54 seconds
+21/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 288.2  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.61 seconds
+22/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 307    MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.21 seconds
+23/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 324    MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.05 seconds
+24/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 111.6  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.63 seconds
+25/91   [ 10.1.1.0/24        | EU1FE3111      ] < [ 317    MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 8.99 seconds
+26/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 103.8  MBps ] > [ FRANK-FEM-F02   | 192.168.2.0/24     ] Time elapsed: 6.96 seconds
+27/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 321.8  MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 6.79 seconds
+28/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 99.36  MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 34.67 seconds
+29/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 102.82 MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 28.09 seconds
+30/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 313.6  MBps ] > [ FRANK-FEM-F01   | 10.1.1.0/24        ] Time elapsed: 7.12 seconds
+31/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 128.6  MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 31.07 seconds
+32/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 385.2  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.6 seconds
+33/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 282.4  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.18 seconds
+34/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 286.6  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.32 seconds
+35/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 98.42  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.67 seconds
+36/91   [ 10.1.1.0/24        | EU1FE3112      ] < [ 317.2  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 10.09 seconds
+37/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1FE3113       | 10.1.1.0/24        ] Time elapsed: 21.69 seconds
+38/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 3.58 seconds
+39/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 3.54 seconds
+40/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 134    MBps ] > [ FRANK-FEM-F01   | 10.1.1.0/24        ] Time elapsed: 6.56 seconds
+41/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 58.14  MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 31.22 seconds
+42/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 22.13 seconds
+43/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 99.6   MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.62 seconds
+44/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 0      MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 21.7 seconds
+45/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 135    MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.45 seconds
+46/91   [ 192.168.2.0/24     | FRANK-FEM-F02  ] < [ 107.28 MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9.12 seconds
+47/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 109.2  MBps ] > [ EU1MB9901       | 192.168.3.0/24     ] Time elapsed: 34.86 seconds
+48/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 132.6  MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 28.32 seconds
+49/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 312.2  MBps ] > [ FRANK-FEM-F01   | 10.1.1.0/24        ] Time elapsed: 6.57 seconds
+50/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 132.8  MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 31.33 seconds
+51/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 360.4  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.63 seconds
+52/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 283.8  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.11 seconds
+53/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 309    MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 6.95 seconds
+54/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 34.88  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.48 seconds
+55/91   [ 10.1.1.0/24        | EU1FE3113      ] < [ 293    MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9.16 seconds
+56/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 397.2  MBps ] > [ EU1MB9902       | 192.168.3.0/24     ] Time elapsed: 28.8 seconds
+57/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 86.84  MBps ] > [ FRANK-FEM-F01   | 10.1.1.0/24        ] Time elapsed: 6.6 seconds
+58/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 401    MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 3.04 seconds
+59/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 81.72  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.51 seconds
+60/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 142    MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 10.36 seconds
+61/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 116.24 MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.06 seconds
+62/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 241.8  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 7.03 seconds
+63/91   [ 192.168.3.0/24     | EU1MB9901      ] < [ 118.18 MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 10.1 seconds
+64/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 105.8  MBps ] > [ FRANK-FEM-F01   | 10.1.1.0/24        ] Time elapsed: 6.59 seconds
+65/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 421.2  MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 32.66 seconds
+66/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 126.4  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.57 seconds
+67/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 82.98  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.05 seconds
+68/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 114.98 MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.06 seconds
+69/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 269.6  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.61 seconds
+70/91   [ 192.168.3.0/24     | EU1MB9902      ] < [ 107.56 MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9 seconds
+71/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 155.8  MBps ] > [ EU1MB9903       | 192.168.3.0/24     ] Time elapsed: 31 seconds
+72/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 371.2  MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.76 seconds
+73/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 461.4  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 8.99 seconds
+74/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 436    MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.01 seconds
+75/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 119    MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.52 seconds
+76/91   [ 10.1.1.0/24        | FRANK-FEM-F01  ] < [ 415.8  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9.25 seconds
+77/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 115.68 MBps ] > [ FRANK-FEM-F03   | 10.1.1.0/24        ] Time elapsed: 6.47 seconds
+78/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 136.8  MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.92 seconds
+79/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 82.5   MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.29 seconds
+80/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 239    MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.77 seconds
+81/91   [ 192.168.3.0/24     | EU1MB9903      ] < [ 111.5  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 10.17 seconds
+82/91   [ 10.1.1.0/24        | FRANK-FEM-F03  ] < [ 295    MBps ] > [ EU1FE9222       | 10.1.1.0/24        ] Time elapsed: 9.03 seconds
+83/91   [ 10.1.1.0/24        | FRANK-FEM-F03  ] < [ 335.8  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 7.01 seconds
+84/91   [ 10.1.1.0/24        | FRANK-FEM-F03  ] < [ 101.2  MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.92 seconds
+85/91   [ 10.1.1.0/24        | FRANK-FEM-F03  ] < [ 309    MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 9.83 seconds
+86/91   [ 10.1.1.0/24        | EU1FE9222      ] < [ 481.6  MBps ] > [ FRANK-FEM-F04   | 10.1.1.0/24        ] Time elapsed: 8.02 seconds
+87/91   [ 10.1.1.0/24        | EU1FE9222      ] < [ 113.62 MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.97 seconds
+88/91   [ 10.1.1.0/24        | EU1FE9222      ] < [ 471    MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 10.3 seconds
+89/91   [ 10.1.1.0/24        | FRANK-FEM-F04  ] < [ 107.98 MBps ] > [ FRANK-MBM-D35   | 192.168.3.0/24     ] Time elapsed: 6.56 seconds
+90/91   [ 10.1.1.0/24        | FRANK-FEM-F04  ] < [ 550.2  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 10.23 seconds
+91/91   [ 192.168.3.0/24     | FRANK-MBM-D35  ] < [ 119.4  MBps ] > [ EU1FE9111       | 10.1.1.0/24        ] Time elapsed: 10.22 seconds
 
 
 Count    : 91
-Average  : 233.112306112772
+Average  : 209.618462153843
 Sum      : 
-Maximum  : 536.599975585938
+Maximum  : 550.200012207031
 Minimum  : 0
 Property : AverageSpeed(MBps)
 
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 305.6
+Destination        : EU1FE3111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 214.2
+Destination        : EU1FE3112
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 71.9
+Destination        : FRANK-FEM-F02
+DestinationSubnet  : 192.168.2.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 276
+Destination        : EU1FE3113
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 107.1
+Destination        : EU1MB9901
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 121.18
+Destination        : EU1MB9902
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 318.8
+Destination        : FRANK-FEM-F01
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 122
+Destination        : EU1MB9903
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 251
+Destination        : FRANK-FEM-F03
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 392.4
+Destination        : EU1FE9222
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 375.6
+Destination        : FRANK-FEM-F04
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 106.62
+Destination        : FRANK-MBM-D35
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3110
+AverageSpeed(MBps) : 372.8
+Destination        : EU1FE9111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 288.8
+Destination        : EU1FE3112
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 129.2
+Destination        : FRANK-FEM-F02
+DestinationSubnet  : 192.168.2.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 296
+Destination        : EU1FE3113
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 116.8
+Destination        : EU1MB9901
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 126.2
+Destination        : EU1MB9902
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 318
+Destination        : FRANK-FEM-F01
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 132.6
+Destination        : EU1MB9903
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 288.2
+Destination        : FRANK-FEM-F03
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 307
+Destination        : EU1FE9222
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 324
+Destination        : FRANK-FEM-F04
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 111.6
+Destination        : FRANK-MBM-D35
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3111
+AverageSpeed(MBps) : 317
+Destination        : EU1FE9111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 103.8
+Destination        : FRANK-FEM-F02
+DestinationSubnet  : 192.168.2.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 321.8
+Destination        : EU1FE3113
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 99.36
+Destination        : EU1MB9901
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 102.82
+Destination        : EU1MB9902
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 313.6
+Destination        : FRANK-FEM-F01
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 128.6
+Destination        : EU1MB9903
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 385.2
+Destination        : FRANK-FEM-F03
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 282.4
+Destination        : EU1FE9222
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 286.6
+Destination        : FRANK-FEM-F04
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 98.42
+Destination        : FRANK-MBM-D35
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3112
+AverageSpeed(MBps) : 317.2
+Destination        : EU1FE9111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
 SourceSubnet       : 192.168.2.0/24
 Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 145.2
+AverageSpeed(MBps) : 0
+Destination        : EU1FE3113
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.2.0/24
+Source             : FRANK-FEM-F02
+AverageSpeed(MBps) : 0
+Destination        : EU1MB9901
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 192.168.2.0/24
+Source             : FRANK-FEM-F02
+AverageSpeed(MBps) : 0
+Destination        : EU1MB9902
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 192.168.2.0/24
+Source             : FRANK-FEM-F02
+AverageSpeed(MBps) : 134
 Destination        : FRANK-FEM-F01
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 192.168.2.0/24
 Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 0
+AverageSpeed(MBps) : 58.14
 Destination        : EU1MB9903
 DestinationSubnet  : 192.168.3.0/24
 Error              : 
@@ -115,35 +388,14 @@ Error              :
 SourceSubnet       : 192.168.2.0/24
 Source             : FRANK-FEM-F02
 AverageSpeed(MBps) : 0
-Destination        : EU1FE3110
+Destination        : FRANK-FEM-F03
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 192.168.2.0/24
 Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 0
-Destination        : EU1MB9902
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 192.168.2.0/24
-Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 0
-Destination        : EU1MB9901
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 192.168.2.0/24
-Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 111.78
-Destination        : EU1FE3113
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.2.0/24
-Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 149
-Destination        : EU1FE3111
+AverageSpeed(MBps) : 99.6
+Destination        : EU1FE9222
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
@@ -156,582 +408,330 @@ Error              :
 
 SourceSubnet       : 192.168.2.0/24
 Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 123.4
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.2.0/24
-Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 0
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.2.0/24
-Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 0
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.2.0/24
-Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 154
+AverageSpeed(MBps) : 135
 Destination        : FRANK-MBM-D35
 DestinationSubnet  : 192.168.3.0/24
 Error              : 
 
 SourceSubnet       : 192.168.2.0/24
 Source             : FRANK-FEM-F02
-AverageSpeed(MBps) : 0
+AverageSpeed(MBps) : 107.28
+Destination        : EU1FE9111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 109.2
+Destination        : EU1MB9901
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 132.6
+Destination        : EU1MB9902
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 312.2
+Destination        : FRANK-FEM-F01
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 132.8
+Destination        : EU1MB9903
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 360.4
 Destination        : FRANK-FEM-F03
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 283.8
+Destination        : EU1FE9222
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 309
+Destination        : FRANK-FEM-F04
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 34.88
+Destination        : FRANK-MBM-D35
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE3113
+AverageSpeed(MBps) : 293
+Destination        : EU1FE9111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9901
+AverageSpeed(MBps) : 397.2
+Destination        : EU1MB9902
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9901
+AverageSpeed(MBps) : 86.84
+Destination        : FRANK-FEM-F01
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9901
+AverageSpeed(MBps) : 401
+Destination        : EU1MB9903
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9901
+AverageSpeed(MBps) : 81.72
+Destination        : FRANK-FEM-F03
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9901
+AverageSpeed(MBps) : 142
+Destination        : EU1FE9222
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9901
+AverageSpeed(MBps) : 116.24
+Destination        : FRANK-FEM-F04
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9901
+AverageSpeed(MBps) : 241.8
+Destination        : FRANK-MBM-D35
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9901
+AverageSpeed(MBps) : 118.18
+Destination        : EU1FE9111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9902
+AverageSpeed(MBps) : 105.8
+Destination        : FRANK-FEM-F01
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9902
+AverageSpeed(MBps) : 421.2
+Destination        : EU1MB9903
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9902
+AverageSpeed(MBps) : 126.4
+Destination        : FRANK-FEM-F03
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9902
+AverageSpeed(MBps) : 82.98
+Destination        : EU1FE9222
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9902
+AverageSpeed(MBps) : 114.98
+Destination        : FRANK-FEM-F04
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9902
+AverageSpeed(MBps) : 269.6
+Destination        : FRANK-MBM-D35
+DestinationSubnet  : 192.168.3.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9902
+AverageSpeed(MBps) : 107.56
+Destination        : EU1FE9111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
 Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 193.2
+AverageSpeed(MBps) : 155.8
 Destination        : EU1MB9903
 DestinationSubnet  : 192.168.3.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
 Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 389.8
-Destination        : EU1FE3110
+AverageSpeed(MBps) : 371.2
+Destination        : FRANK-FEM-F03
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
 Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 190.6
-Destination        : EU1MB9902
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 183
-Destination        : EU1MB9901
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 231.2
-Destination        : EU1FE3113
+AverageSpeed(MBps) : 461.4
+Destination        : EU1FE9222
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
 Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 389.2
-Destination        : EU1FE3111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 459.8
+AverageSpeed(MBps) : 436
 Destination        : FRANK-FEM-F04
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
 Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 368.8
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 459.8
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 446.2
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 162.8
+AverageSpeed(MBps) : 119
 Destination        : FRANK-MBM-D35
 DestinationSubnet  : 192.168.3.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
 Source             : FRANK-FEM-F01
-AverageSpeed(MBps) : 341.8
+AverageSpeed(MBps) : 415.8
+Destination        : EU1FE9111
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 192.168.3.0/24
+Source             : EU1MB9903
+AverageSpeed(MBps) : 115.68
 Destination        : FRANK-FEM-F03
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 192.168.3.0/24
 Source             : EU1MB9903
-AverageSpeed(MBps) : 138
-Destination        : EU1FE3110
+AverageSpeed(MBps) : 136.8
+Destination        : EU1FE9222
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 192.168.3.0/24
 Source             : EU1MB9903
-AverageSpeed(MBps) : 514.6
-Destination        : EU1MB9902
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9903
-AverageSpeed(MBps) : 478.8
-Destination        : EU1MB9901
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9903
-AverageSpeed(MBps) : 167.6
-Destination        : EU1FE3113
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9903
-AverageSpeed(MBps) : 142.8
-Destination        : EU1FE3111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9903
-AverageSpeed(MBps) : 160.2
+AverageSpeed(MBps) : 82.5
 Destination        : FRANK-FEM-F04
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 192.168.3.0/24
 Source             : EU1MB9903
-AverageSpeed(MBps) : 138
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9903
-AverageSpeed(MBps) : 142.6
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9903
-AverageSpeed(MBps) : 154.8
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9903
-AverageSpeed(MBps) : 392.4
+AverageSpeed(MBps) : 239
 Destination        : FRANK-MBM-D35
 DestinationSubnet  : 192.168.3.0/24
 Error              : 
 
 SourceSubnet       : 192.168.3.0/24
 Source             : EU1MB9903
-AverageSpeed(MBps) : 153.4
-Destination        : FRANK-FEM-F03
+AverageSpeed(MBps) : 111.5
+Destination        : EU1FE9111
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 174
-Destination        : EU1MB9902
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 154.8
-Destination        : EU1MB9901
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 207.36
-Destination        : EU1FE3113
+Source             : FRANK-FEM-F03
+AverageSpeed(MBps) : 295
+Destination        : EU1FE9222
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 310
-Destination        : EU1FE3111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 393.6
+Source             : FRANK-FEM-F03
+AverageSpeed(MBps) : 335.8
 Destination        : FRANK-FEM-F04
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 310.8
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 407.2
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 398.4
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 142.8
+Source             : FRANK-FEM-F03
+AverageSpeed(MBps) : 101.2
 Destination        : FRANK-MBM-D35
 DestinationSubnet  : 192.168.3.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3110
-AverageSpeed(MBps) : 309.4
-Destination        : FRANK-FEM-F03
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 355
-Destination        : EU1MB9901
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 163.8
-Destination        : EU1FE3113
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 140.4
-Destination        : EU1FE3111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 153.6
-Destination        : FRANK-FEM-F04
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 133.2
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 164.4
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 144.4
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 266.8
-Destination        : FRANK-MBM-D35
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9902
-AverageSpeed(MBps) : 135.8
-Destination        : FRANK-FEM-F03
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9901
-AverageSpeed(MBps) : 117.4
-Destination        : EU1FE3113
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9901
-AverageSpeed(MBps) : 147.6
-Destination        : EU1FE3111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9901
-AverageSpeed(MBps) : 148.2
-Destination        : FRANK-FEM-F04
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9901
-AverageSpeed(MBps) : 123.4
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9901
-AverageSpeed(MBps) : 141.2
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9901
-AverageSpeed(MBps) : 143.2
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9901
-AverageSpeed(MBps) : 284.4
-Destination        : FRANK-MBM-D35
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 192.168.3.0/24
-Source             : EU1MB9901
-AverageSpeed(MBps) : 134.6
-Destination        : FRANK-FEM-F03
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3113
-AverageSpeed(MBps) : 305.4
-Destination        : EU1FE3111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3113
-AverageSpeed(MBps) : 336.8
-Destination        : FRANK-FEM-F04
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3113
-AverageSpeed(MBps) : 340.4
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3113
-AverageSpeed(MBps) : 314
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3113
-AverageSpeed(MBps) : 296.6
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3113
-AverageSpeed(MBps) : 126.8
-Destination        : FRANK-MBM-D35
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3113
-AverageSpeed(MBps) : 399.6
-Destination        : FRANK-FEM-F03
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3111
-AverageSpeed(MBps) : 348.2
-Destination        : FRANK-FEM-F04
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3111
-AverageSpeed(MBps) : 266.7
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3111
-AverageSpeed(MBps) : 338
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3111
-AverageSpeed(MBps) : 347.8
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3111
-AverageSpeed(MBps) : 137
-Destination        : FRANK-MBM-D35
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3111
-AverageSpeed(MBps) : 332.2
-Destination        : FRANK-FEM-F03
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F04
-AverageSpeed(MBps) : 331.8
-Destination        : EU1FE3112
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F04
-AverageSpeed(MBps) : 536.6
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F04
-AverageSpeed(MBps) : 527.4
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F04
-AverageSpeed(MBps) : 138.6
-Destination        : FRANK-MBM-D35
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : FRANK-FEM-F04
-AverageSpeed(MBps) : 326.8
-Destination        : FRANK-FEM-F03
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3112
-AverageSpeed(MBps) : 320
-Destination        : EU1FE9222
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3112
-AverageSpeed(MBps) : 306.8
-Destination        : EU1FE9111
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3112
-AverageSpeed(MBps) : 131
-Destination        : FRANK-MBM-D35
-DestinationSubnet  : 192.168.3.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE3112
-AverageSpeed(MBps) : 466.4
-Destination        : FRANK-FEM-F03
-DestinationSubnet  : 10.1.1.0/24
-Error              : 
-
-SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE9222
-AverageSpeed(MBps) : 507.8
+Source             : FRANK-FEM-F03
+AverageSpeed(MBps) : 309
 Destination        : EU1FE9111
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
 Source             : EU1FE9222
-AverageSpeed(MBps) : 129.8
+AverageSpeed(MBps) : 481.6
+Destination        : FRANK-FEM-F04
+DestinationSubnet  : 10.1.1.0/24
+Error              : 
+
+SourceSubnet       : 10.1.1.0/24
+Source             : EU1FE9222
+AverageSpeed(MBps) : 113.62
 Destination        : FRANK-MBM-D35
 DestinationSubnet  : 192.168.3.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
 Source             : EU1FE9222
-AverageSpeed(MBps) : 260.58
-Destination        : FRANK-FEM-F03
+AverageSpeed(MBps) : 471
+Destination        : EU1FE9111
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE9111
-AverageSpeed(MBps) : 140.2
+Source             : FRANK-FEM-F04
+AverageSpeed(MBps) : 107.98
 Destination        : FRANK-MBM-D35
 DestinationSubnet  : 192.168.3.0/24
 Error              : 
 
 SourceSubnet       : 10.1.1.0/24
-Source             : EU1FE9111
-AverageSpeed(MBps) : 262.8
-Destination        : FRANK-FEM-F03
+Source             : FRANK-FEM-F04
+AverageSpeed(MBps) : 550.2
+Destination        : EU1FE9111
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
 SourceSubnet       : 192.168.3.0/24
 Source             : FRANK-MBM-D35
-AverageSpeed(MBps) : 148.6
-Destination        : FRANK-FEM-F03
+AverageSpeed(MBps) : 119.4
+Destination        : EU1FE9111
 DestinationSubnet  : 10.1.1.0/24
 Error              : 
 
