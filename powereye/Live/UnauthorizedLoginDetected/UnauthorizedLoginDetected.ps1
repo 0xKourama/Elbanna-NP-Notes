@@ -55,48 +55,70 @@ $LogoffScript = {
     }
 }
 
-<#
 #actions
-#1. logoff
+#1. change password
 #2. disable
-#3. change password
-#4. remove security group membership
+#3. remove security group membership
+#4. logoff
+
+$Secure_String_Pwd = ConvertTo-SecureString "$$UnAuthPwdChange$$" -AsPlainText -Force
 
 $LogoffScript = {
 
-    $Secure_String_Pwd = ConvertTo-SecureString "$$UnAuthPwdChange$$" -AsPlainText -Force
+    $Secure_String_Pwd = $args[2]
 
-    $Obj = New-Object -TypeName PSObject -Property ComputerName, Username, Scope, Logoff, PasswordChange, Disable, GroupMembershipsRemoval
+    $Obj = New-Object -TypeName PSObject -Property ComputerName, Username, Scope, Logoff, PasswordChange, Disable, GroupMembershipRemoval
+
+    $Obj.ComputerName = $env:COMPUTERNAME
+    $Obj.Username     = $args[1]
 
     if(Get-LocalUser -Name $args[1]){
+        $Obj.Scope = 'Local'
+
         Get-LocalUser -Name $args[1] | Set-LocalUser -Password $Secure_String_Pwd
+        if($?){$Obj.PasswordChange = 'Success'}
+        else{$Obj.PasswordChange = 'Fail'}
+
         Disable-LocalUser -Name $args[1]
-    }else{
-        
-    }
+        if($?){$Obj.Disable = 'Success'}
+        else{$Obj.Disable = 'Fail'}
 
-
-    logoff $args[0]
-    if($?){
-        $Obj.ComputerName = $env:COMPUTERNAME
-        $Obj.Username     = $args[1]
-        $Obj.Logoff       = 'Success'
+        Get-LocalGroup | ForEach-Object {Remove-LocalGroupMember $_ -Member $args[1] -ErrorAction SilentlyContinue}
+        $Obj.GroupMembershipRemoval = 'Success'
     }
     else{
-        $Obj.ComputerName = $env:COMPUTERNAME
-        $Obj.Username     = $args[1]
-        $Obj.Logoff       = 'Fail'
+        $Obj.Scope = 'ActiveDirectory'
     }
+    logoff $args[0]
+    if($?){$Obj.Logoff = 'Success'}
+    else{$Obj.Logoff = 'Fail'}
+
+    $Obj
 }
-#>
 
 
 $LogoffResults = @()
 
 $UnAuthorizedSessions | ForEach-Object {
-    $LogoffResults += Invoke-Command -ComputerName $_.ComputerName -ScriptBlock $LogoffScript -ArgumentList $_.ID, $_.Username |
+    $LogoffResults += Invoke-Command -ComputerName $_.ComputerName -ScriptBlock $LogoffScript -ArgumentList $_.ID, $_.Username, $Secure_String_Pwd |
                       Select-Object -Property * -ExcludeProperty PSComputerName, RunspaceId, PSShowComputerName
 }
+
+foreach($LogoffResult in ($LogoffResults | Where-Object {$_.Scope -eq 'ActiveDirectory'})){
+    Set-ADAccountPassword -Identity $LogoffResult.Username -Reset -NewPassword (ConvertTo-SecureString -AsPlainText $Secure_String_Pwd -Force)
+    if($?){$_.PasswordChange = 'Success'}
+    else{$_.PasswordChange = 'Fail'}
+
+    Get-ADUser -Filter {Name -eq $LogoffResult.username} | Disable-ADAccount
+    if($?){$_.Disable = 'Success'}
+    else{$_.Disable = 'Fail'}
+
+    (Get-ADUser -Filter {Name -eq $LogoffResult.username} -Properties MemberOf).MemberOf | ForEach-Object {
+        Get-ADGroup $_ | Remove-ADGroupMember -Members $LogoffResult.username
+    }
+    $Obj.GroupMembershipRemoval = 'Success'
+}
+
 
 $AuthorizedPersonnelList = @"
 <h3>Authorized Personnel</h3>
