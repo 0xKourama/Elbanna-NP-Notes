@@ -37,86 +37,80 @@ $Admin_Security_Groups = @(
 	'WP-Support-L2'
 )
 
-#location for the file to track membership data
-$Admin_Group_Tracker_Path = '.\GroupData.csv'
+$Script = {
+    #supress errors, only error is when there are no logs matching the criteria
+    #$ErrorActionPreference = 'SilentlyContinue'
 
-$Old_Group_Data = Import-Csv $Admin_Group_Tracker_Path | Sort-Object -Property Name
+    $EventID1 = 4728
+    $EventID2 = 4729
+    $XML_Path1 = "C:\Users\Public\Event_$EventID1`_LastCheck.xml"
+    $XML_Path2 = "C:\Users\Public\Event_$EventID2`_LastCheck.xml"
 
-#calculating the hash for the old data file
-$Old_Hash = (Get-FileHash -Path $Admin_Group_Tracker_Path).Hash
+    $Events = @()
 
-#loop here until the full membership data is present (sometimes group data is missing)
-do{
-    $New_Group_Data = @()
+    $Collected_Properties = @(
+        'ID'
+        'Message'
+        'TimeCreated'
+    )
 
-    #pulling the data from the high privelege groups from active directory
-    $Admin_Security_Groups | ForEach-Object {
-        $New_Group_Data += [PSCustomObject][Ordered]@{
-            Name    = $_
-            Members = (Get-ADGroup -Filter {name -eq $_} | Get-ADGroupMember -Recursive | Where-Object {$_.ObjectClass -eq 'user'} | 
-                        Select-Object -ExpandProperty SamAccountName | Sort-Object) -join ' | '
-        }
+    if(!(Test-Path -Path $XML_Path1)){
+        $Events += Get-WinEvent -FilterHashtable @{LogName = 'ForwardedEvents'; ID = $EventID1} | Select-Object -Property $Collected_Properties
+    }
+    else{
+        $Events += Get-WinEvent -FilterHashtable @{LogName = 'ForwardedEvents'; ID = $EventID1; StartTime = Import-Clixml -Path $XML_Path1} |
+                    Select-Object -Property $Collected_Properties
     }
 
-}while($New_Group_Data.Count -ne $Admin_Security_Groups.Count)
-
-$New_Group_Data | Export-Csv -NoTypeInformation $Admin_Group_Tracker_Path
-
-#calculating the hash of the new file to detect changes
-$New_Hash = (Get-FileHash -Path $Admin_Group_Tracker_Path).Hash
-
-#if the hash for the old file doesn't match the new one
-if($New_Hash -ne $Old_Hash){
-    $Difference_Array = @()
-    $Admin_Security_Groups | ForEach-Object {
-
-        $Group = $_
-        
-        $OldGroup = $Old_Group_Data | Where-Object {$_.name -eq $Group}
-        $NewGroup = $New_Group_Data | Where-Object {$_.name -eq $Group}
-
-        $OldGroupMembers = $OldGroup.Members -split ' \| ' | Where-Object {$_ -ne ''}
-        $NewGroupMembers = $NewGroup.Members -split ' \| ' | Where-Object {$_ -ne ''}
-
-        foreach($member1 in $OldGroupMembers){
-            if($NewGroupMembers -notcontains $member1){
-                Write-Host -ForegroundColor Yellow "[!] Recent $($NewGroup.Name) group data doesn't have $member1"
-                $Difference_Array += [PSCustomObject][Ordered]@{
-                    ChangedMember = $member1
-                    ChangedGroup  = $Group
-                    ChangeType    = 'Removal'
-                }
-            }
-            else{
-                Write-Host -ForegroundColor Cyan "[*] Recent $($NewGroup.Name) group data also has $member1"
-            }
-        }
-        foreach($member2 in $NewGroupMembers){
-            if($OldGroupMembers -notcontains $member2){
-                Write-Host -ForegroundColor Yellow "[!] Old $($OldGroup.Name) group data doesn't have $member2"
-                $Difference_Array += [PSCustomObject][Ordered]@{
-                    ChangedMember = $member2
-                    ChangedGroup  = $Group
-                    ChangeType    = 'Addition'
-                }
-            }
-            else{
-                Write-Host -ForegroundColor Cyan "[*] Old $($OldGroup.Name) group data also has $member2"
-            }
-        }
-
+    if(!(Test-Path -Path $XML_Path2)){
+        $Events += Get-WinEvent -FilterHashtable @{LogName = 'ForwardedEvents'; ID = $EventID2} | Select-Object -Property $Collected_Properties
     }
+    else{
+        $Events += Get-WinEvent -FilterHashtable @{LogName = 'ForwardedEvents'; ID = $EventID2; StartTime = Import-Clixml -Path $XML_Path2} |
+                  Select-Object -Property $Collected_Properties
+    }
+    Get-Date | Export-Clixml -Path $XML_Path1
+    Get-Date | Export-Clixml -Path $XML_Path2
 
-    Write-Output "$(Get-Date) [!] change detected. Sending mail."
-    Write-Output $Difference_Array
+    $Results = @()
 
-$Summary = @"
-<h3>Current Admin Group Membership Summary</h3>
-$($New_Group_Data | ConvertTo-Html -Fragment | Out-String)
-"@
+    foreach($Event in $Events){
+        $Message = $Event.Message -split '\n'
 
-    Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Difference_Array | ConvertTo-Html -Fragment | Out-String) $Summary"
+        $Subject_Part = ($Message | Select-String -Pattern '^Subject:\s+$' -Context 0,2).Context.PostContext
+        $Member_Part  = ($Message | Select-String -Pattern '^Member:\s+$'  -Context 0,2).Context.PostContext
+        $Group_Part   = ($Message | Select-String -Pattern '^Group:\s+$'   -Context 0,2).Context.PostContext
+
+        $Results += [PSCustomObject][Ordered]@{
+            Date          = $Event.TimeCreated
+            Action        = if($Event.Id -eq 4728){'Addition'}else{'Removal'}
+            Group         = ($Group_Part   | Select-String -Pattern '\s+Group Name:\s+(.*)\s+$'  ).Matches.Groups[1].Value
+            SourceAccount = ($Subject_Part | Select-String -Pattern '\s+Account Name:\s+(.*)\s+$').Matches.Groups[1].Value
+            TargetAccount = ($Member_Part  | Select-String -Pattern '\s+Account Name:\s+(.*)\s+$').Matches.Groups[1].Value
+        }
+    }
+    $Results
 }
-else{
-    Write-Output "$(Get-Date) [*] No change detected."
+
+$Results = Invoke-Command -ComputerName frank-eventlog -ScriptBlock $Script
+$NormalResults = $Results | Where-Object {$Admin_Security_Groups -notcontains $_.Group}
+$AdminResults  = $Results | Where-Object {$Admin_Security_Groups -contains    $_.Group}
+
+if($NormalResults){
+$Body += @"
+<h3>Normal Group Changes</h3>
+$($NormalResults | ConvertTo-Html -Fragment | Out-String)
+"@
+}
+
+if($AdminResults){
+$Body += @"
+<h3>Admin Group Changes</h3>
+$($AdminResults | ConvertTo-Html -Fragment | Out-String)
+"@
+}
+
+if($Results){
+    Send-MailMessage @MailSettings -BodyAsHtml "$Style $Body"
+    Clear-Variable -Name Body
 }
