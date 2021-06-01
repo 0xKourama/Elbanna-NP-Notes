@@ -120,3 +120,4 @@ if($Results){
 #testing
 #$Admin_Security_Groups | %{remove-ADGroupMember -Identity (Get-ADGroup -Identity $_) -Members unauthtest -Confirm:$false}
 #$Admin_Security_Groups | %{Add-ADGroupMember -Identity (Get-ADGroup -Identity $_) -Members unauthtest}
+#$Admin_Security_Groups | % {Write-Host $_ -ForegroundColor Cyan; Get-ADGroup -Identity $_ -Properties members| select -ExpandProperty members | % {$_  -replace ',\w{2}=.*' -replace 'CN='}; pause}
