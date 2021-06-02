@@ -92,6 +92,8 @@ $Script = {
     $Results
 }
 
+Import-Module '..\UtilityFunctions.ps1'
+
 $Results = Invoke-Command -ComputerName (Return-OnlineComputers -ComputerNames (Get-ADDomainController -Filter *).Name) -ScriptBlock $Script | 
            Select-Object -Property Date, @{n='ComputerName';e={$_.PSComputerName}}, Action, Group, SourceAccount, @{n='TagetAccount';e={$_.TargetAccount -replace ',\w{2}=.*' -replace 'CN='}}
 

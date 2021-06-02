@@ -44,6 +44,8 @@ $Script = {
     Write-Output $Results
 }
 
+Import-Module '..\UtilityFunctions.ps1'
+
 $Results = Invoke-Command -ComputerName (Return-ADOnlineComputers) -ScriptBlock $Script
 
 $UsersWithActivity = ($Results | Sort-Object -Property User -Unique).User
