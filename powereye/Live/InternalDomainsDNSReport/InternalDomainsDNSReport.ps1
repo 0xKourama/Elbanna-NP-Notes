@@ -1,7 +1,7 @@
 Param([int]$Timeout)
 
-#Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
-#Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
+Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
+Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $ErrorActionPreference = 'Stop'
 
@@ -154,4 +154,4 @@ $($Result_list | Where-Object {$_.TXTError -ne 'N/A' -and $_.TXTError -ne 'This 
 
 write-Output $Result_list
 
-#Send-MailMessage @MailSettings -BodyAsHtml "$Style $body"
+Send-MailMessage @MailSettings -BodyAsHtml "$Style $body"

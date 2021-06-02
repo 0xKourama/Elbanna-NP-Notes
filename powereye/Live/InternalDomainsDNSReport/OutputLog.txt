@@ -1250,9 +1250,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : DNS server failure
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : bioeco-servizi.it
 MX1             : True
@@ -1377,7 +1377,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : brighteyexpo.com
@@ -2862,7 +2862,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : ezz-eldeen.com
 MX1             : True
@@ -3015,7 +3015,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : DNS server failure
 
 Domain          : fruttella.com
@@ -3267,7 +3267,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : hartmannegypt.com
@@ -4457,7 +4457,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : odce-sa.com
@@ -5214,7 +5214,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : saratec.sa
 MX1             : True
@@ -5760,7 +5760,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : topio-urban.com
 MX1             : True

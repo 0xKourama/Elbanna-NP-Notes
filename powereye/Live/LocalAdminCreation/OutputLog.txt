@@ -1,16 +1,1 @@
-05/30/2021 16:42:52 [!] Local administrator additions detected. Sending mail.
-
-
-ComputerName        : FRANK-WSUS
-ChangeDate          : 5/30/2021 4:33:16 PM
-ActionSourceSID     : S-1-5-21-2956518221-444034542-2043350422-85795
-ActionSourceAccount : GabrUrgent
-ActionSourceDomain  : ROAYA
-TargetAccountSID    : S-1-5-21-2956518221-444034542-2043350422-92235
-TargetAccount       : unAuthTest
-GroupSID            : S-1-5-32-555
-GroupName           : Remote Desktop Users
-GroupDomain         : Builtin
-
-
-
+06/02/2021 11:25:22 [*] No Local administrator additions detected.

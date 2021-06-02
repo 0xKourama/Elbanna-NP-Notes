@@ -16,7 +16,7 @@ $Modules = @(
     [Module]@{
         Enabled = $true
         Name = 'Admin Group Change'
-        RunInterval = New-TimeSpan -Minutes 10
+        RunInterval = New-TimeSpan -Minutes 5
     }
     #2
     [Module]@{
@@ -136,7 +136,7 @@ $Modules = @(
     [Module]@{
         Enabled = $true
         Name = 'Local Group Report'
-        RunInterval = New-TimeSpan -Days 1
+        RunInterval = New-TimeSpan -Hours 12
     }
 )
 if(!$Runtime_Data){

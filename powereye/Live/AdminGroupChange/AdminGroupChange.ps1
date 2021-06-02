@@ -1,4 +1,4 @@
-Param([int]$Timeout)
+﻿Param([int]$Timeout)
 
 Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
@@ -37,87 +37,58 @@ $Admin_Security_Groups = @(
 	'WP-Support-L2'
 )
 
-$Script = {
-    #supress errors, only error is when there are no logs matching the criteria
-    $ErrorActionPreference = 'SilentlyContinue'
+$group_csv_path = '.\GroupData.csv'
 
-    $EventID1 = 4728
-    $EventID2 = 4729
-    $XML_Path1 = "C:\Users\Public\Event_$EventID1`_LastCheck.xml"
-    $XML_Path2 = "C:\Users\Public\Event_$EventID2`_LastCheck.xml"
+$old_Group_Data = Import-Csv $group_csv_path
 
-    $Events = @()
+$old_file_hash  = (Get-FileHash -Path $group_csv_path -Algorithm MD5).Hash
 
-    $Collected_Properties = @(
-        'ID'
-        'Message'
-        'TimeCreated'
-    )
+$New_Group_Data = @()
 
-    if(!(Test-Path -Path $XML_Path1)){
-        $Events += Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID1} | Select-Object -Property $Collected_Properties
+foreach($Admin_Group in $Admin_Security_Groups){
+    $New_Group_Data += [PSCustomObject][Ordered]@{
+        Name    = $Admin_Group
+        Members = ((Get-ADGroup -Identity $Admin_Group -Properties Members).Members | ForEach-Object {$_ -replace ',\w{2}=.*' -replace 'CN='}) -join ' | '
     }
-    else{
-        $Events += Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID1; StartTime = Import-Clixml -Path $XML_Path1} |
-                    Select-Object -Property $Collected_Properties
-    }
+}
 
-    if(!(Test-Path -Path $XML_Path2)){
-        $Events += Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID2} | Select-Object -Property $Collected_Properties
-    }
-    else{
-        $Events += Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID2; StartTime = Import-Clixml -Path $XML_Path2} |
-                  Select-Object -Property $Collected_Properties
-    }
+$New_Group_Data | Export-Csv $group_csv_path -NoTypeInformation
 
-    Get-Date | Export-Clixml -Path $XML_Path1
-    Get-Date | Export-Clixml -Path $XML_Path2
-    $Results = @()
+$New_file_hash  = (Get-FileHash -Path $group_csv_path -Algorithm MD5).Hash
 
-    foreach($Event in $Events){
-        $Message = $Event.Message -split '\n'
+if($New_file_hash -ne $old_Group_Data){
+    $Difference_array = @()
 
-        $Subject_Part = ($Message | Select-String -Pattern '^Subject:\s+$' -Context 0,2).Context.PostContext
-        $Member_Part  = ($Message | Select-String -Pattern '^Member:\s+$'  -Context 0,2).Context.PostContext
-        $Group_Part   = ($Message | Select-String -Pattern '^Group:\s+$'   -Context 0,2).Context.PostContext
-        
-        $Results += [PSCustomObject][Ordered]@{
-            Date          = $Event.TimeCreated
-            Action        = if($Event.Id -eq 4728){'Addition'}else{'Removal'}
-            Group         = ($Group_Part   | Select-String -Pattern '\s+Group Name:\s+(.*)\s+$'  ).Matches.Groups[1].Value
-            SourceAccount = ($Subject_Part | Select-String -Pattern '\s+Account Name:\s+(.*)\s+$').Matches.Groups[1].Value
-            TargetAccount = ($Member_Part  | Select-String -Pattern '\s+Account Name:\s+(.*)\s+$').Matches.Groups[1].Value
+    foreach($Group in $Admin_Security_Groups){
+        $old_group_members = ($old_Group_Data | Where-Object {$_.Name -eq $Group}).Members -split ' \| ' | Where-Object {$_ -ne ''}
+        $new_group_members = ($new_Group_Data | Where-Object {$_.Name -eq $Group}).Members -split ' \| ' | Where-Object {$_ -ne ''}
+        foreach($old_member in $old_group_members){
+            if($new_group_members -notcontains $old_member){
+                $Difference_array += [PSCustomObject][Ordered]@{
+                    Action = 'Removal'
+                    Group  = $Group
+                    Member = $old_member
+                }
+            }
+        }
+        foreach($new_member in $new_group_members){
+            if($old_group_members -notcontains $new_member){
+                $Difference_array += [PSCustomObject][Ordered]@{
+                    Action = 'Addition'
+                    Group  = $Group
+                    Member = $new_member
+                }
+            }
         }
     }
-    $Results
+    $Difference_array | Format-Table -AutoSize -Wrap
 }
 
-$Results = Invoke-Command -ComputerName (Return-OnlineComputers -ComputerNames (Get-ADDomainController -Filter *).Name) -ScriptBlock $Script | 
-           Select-Object -Property Date, @{n='ComputerName';e={$_.PSComputerName}}, Action, Group, SourceAccount, @{n='TagetAccount';e={$_.TargetAccount -replace ',\w{2}=.*' -replace 'CN='}}
-
-$NormalResults = $Results | Where-Object {$Admin_Security_Groups -notcontains $_.Group}
-$AdminResults  = $Results | Where-Object {$Admin_Security_Groups -contains    $_.Group}
-
-if($NormalResults){
-$Body += @"
-<h3>Normal Group Changes</h3>
-$($NormalResults | ConvertTo-Html -Fragment | Out-String)
+$Summary = @"
+<h3>Current Membership Data</h3>
+$($New_Group_Data | ConvertTo-Html -Fragment | Out-String)
 "@
-}
 
-if($AdminResults){
-$Body += @"
-<h3>Admin Group Changes</h3>
-$($AdminResults | ConvertTo-Html -Fragment | Out-String)
-"@
+if($Difference_array){
+    Send-MailMessage @MailSettings -BodyAsHtml "$Style $($Difference_array | ConvertTo-Html -Fragment | Out-String) $Summary"
 }
-
-if($Results){
-    Send-MailMessage @MailSettings -BodyAsHtml "$Style $Body"
-    Clear-Variable -Name Body
-}
-
-#testing
-#$Admin_Security_Groups | %{remove-ADGroupMember -Identity (Get-ADGroup -Identity $_) -Members unauthtest -Confirm:$false}
-#$Admin_Security_Groups | %{Add-ADGroupMember -Identity (Get-ADGroup -Identity $_) -Members unauthtest}
-#$Admin_Security_Groups | % {Write-Host $_ -ForegroundColor Cyan; Get-ADGroup -Identity $_ -Properties members| select -ExpandProperty members | % {$_  -replace ',\w{2}=.*' -replace 'CN='}; pause}

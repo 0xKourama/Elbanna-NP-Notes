@@ -134,10 +134,15 @@ foreach($entry in $Test_Segment_list){
             $Index
             $Test_Segment_list.Count
         )
-        $Obj.'AverageSpeed(MBps)' = Invoke-Command -ComputerName $Obj.Destination `
-                                                   -ScriptBlock $Connector_Code   `
-                                                   -ErrorAction Stop              `
-                                                   -ArgumentList $PassedArguments
+
+        Start-Sleep -Seconds 2
+
+        do{
+            $Obj.'AverageSpeed(MBps)' = Invoke-Command -ComputerName $Obj.Destination `
+                                                       -ScriptBlock $Connector_Code   `
+                                                       -ErrorAction Stop              `
+                                                       -ArgumentList $PassedArguments        
+        }while($Obj.'AverageSpeed(MBps)' -eq 0)
         #endregion
         
         #region stopping the timer and displaying time elapsed for each measurement
@@ -150,7 +155,7 @@ foreach($entry in $Test_Segment_list){
 
         Write-Host -NoNewline "Time elapsed: "
         Write-Host -NoNewline -ForegroundColor $TimeColor $ElapsedSeconds
-        Write-Host ' seconds'
+        Write-Host ' seconds'.PadRight(5)
         #endregion
 
         #stopping the server listener
@@ -178,6 +183,6 @@ $MeasurementsHTML = @"
 "@
 #endregion
 Write-Output $Measurements
-Write-Output $ResultArray
+$ResultArray | Format-Table -Wrap -AutoSize | Out-String
 
 Send-MailMessage @MailSettings -BodyAsHtml "$Style $header1 $measurementsHTML $Header2 $ResultHTML"
