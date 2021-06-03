@@ -457,18 +457,18 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : 2betech.com
-MX1             : True
-MX2             : True
+MX1             : False
+MX2             : False
 MX3             : False
-MX4             : True
-MXConfiguration : Partially Configured
-SRVConfigured   : True
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : DNS name does not exist
 
 Domain          : 2bsystems.com
 MX1             : True
@@ -1250,9 +1250,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : DNS server failure
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : bioeco-servizi.it
 MX1             : True
@@ -1377,7 +1377,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : brighteyexpo.com
@@ -2081,18 +2081,18 @@ TXTError        : N/A
 SRVError        : DNS name does not exist
 
 Domain          : deltacapital-eg.com
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
-SRVConfigured   : True
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
-TXTError        : N/A
-SRVError        : N/A
+MXError         : DNS server failure
+TXTError        : DNS server failure
+SRVError        : DNS server failure
 
 Domain          : dentalgate.org
 MX1             : True
@@ -2861,8 +2861,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : ezz-eldeen.com
 MX1             : True
@@ -2931,7 +2931,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : ferrometalco.com
@@ -3016,7 +3016,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : DNS server failure
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : fruttella.com
 MX1             : True
@@ -3268,7 +3268,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : hartmannegypt.com
 MX1             : True
@@ -3506,7 +3506,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : infotechs.co
 MX1             : True
@@ -4457,7 +4457,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : odce-sa.com
@@ -5213,7 +5213,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : saratec.sa
@@ -5760,7 +5760,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : topio-urban.com
 MX1             : True

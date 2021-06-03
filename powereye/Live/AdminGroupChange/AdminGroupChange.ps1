@@ -46,9 +46,16 @@ $old_file_hash  = (Get-FileHash -Path $group_csv_path -Algorithm MD5).Hash
 $New_Group_Data = @()
 
 foreach($Admin_Group in $Admin_Security_Groups){
+    $Tries = 3
+    Do{
+        $Pulled_members = (Get-ADGroup -Identity $Admin_Group -Properties Members).Members
+        $Tries--
+        Start-Sleep -Seconds 5
+    }While($Pulled_members.Count -eq 0 -and $Tries -ne 0)
+
     $New_Group_Data += [PSCustomObject][Ordered]@{
         Name    = $Admin_Group
-        Members = ((Get-ADGroup -Identity $Admin_Group -Properties Members).Members | ForEach-Object {$_ -replace ',\w{2}=.*' -replace 'CN='}) -join ' | '
+        Members = ($Pulled_members | ForEach-Object {$_ -replace ',\w{2}=.*' -replace 'CN='}) -join ' | '
     }
 }
 
@@ -84,11 +91,17 @@ if($New_file_hash -ne $old_Group_Data){
     $Difference_array | Format-Table -AutoSize -Wrap
 }
 
+$Header = '<h3>Admin Group Change</h3>'
+
 $Summary = @"
 <h3>Current Membership Data</h3>
 $($New_Group_Data | ConvertTo-Html -Fragment | Out-String)
 "@
 
 if($Difference_array){
+    Write-Host "[*] [$(Get-Date)] Admin group changes detected. Sending mail."
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $($Difference_array | ConvertTo-Html -Fragment | Out-String) $Summary"
+}
+else{
+    Write-Host "[*] [$(Get-Date)] No admin group changes detected."
 }

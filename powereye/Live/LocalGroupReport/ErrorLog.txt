@@ -64,6 +64,27 @@ Group Remote Desktop Users was not found.
 Group Administrators was not found.
     + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
     + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + PSComputerName        : FRANK-DC01
+ 
+Group Power Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + PSComputerName        : FRANK-DC01
+ 
+Group Backup Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + PSComputerName        : FRANK-DC01
+ 
+Group Remote Desktop Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
+   tion
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + PSComputerName        : FRANK-DC01
+ 
+Group Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
     + PSComputerName        : FRANK-ADC-02
  
 Group Power Users was not found.
@@ -102,27 +123,6 @@ Group Remote Desktop Users was not found.
    tion
     + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
     + PSComputerName        : FRANK-ADC-03
- 
-Group Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-DC01
- 
-Group Power Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-DC01
- 
-Group Backup Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-DC01
- 
-Group Remote Desktop Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
-   tion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-DC01
  
 Group Administrators was not found.
     + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException

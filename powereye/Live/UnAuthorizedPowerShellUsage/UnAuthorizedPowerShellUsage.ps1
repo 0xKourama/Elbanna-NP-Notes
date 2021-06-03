@@ -56,25 +56,7 @@ $UsersWithActivity | ForEach-Object {
     }
 }
 
-$Authorized_PowerShell_Users = @(
-	'NT Service\SQLSERVERAGENT'
-	'ROAYA\GabrUrgent'
-	'ROAYA\maliurgent'
-	'ROAYA\pepourgent'
-	'ROAYA\solidadmin'
-	'ROAYA\SYSTEM'
-)
-
-if($UsersWithActivity){
-
-$PowerShellActiveUsers = @"
-<h3>Recent Usage</h3>
-$($UsersWithActivity | ForEach-Object -Begin {'<ul>'} -Process {"<li>$_</li>"} -End {'</ul>'})
-"@
-
-}
-
-$UnAuthorizedUsage = $Results | Where-Object {$Authorized_PowerShell_Users -notcontains $_.User}
+$UnAuthorizedUsage = $Results | Where-Object {$PowerShellUserList -notcontains $_.User}
 
 if($UnAuthorizedUsage){
 
@@ -83,13 +65,11 @@ $UnAuthorizedUsage = @"
 $($UnAuthorizedUsage | ConvertTo-Html -Fragment | Out-String)
 "@
 
-}
-
 $Summary = @"
 <h3>Historical Usage Sources</h3>
-$(Get-Content $PowerShellUserListPath | ForEach-Object -Begin {'<ul>'} -Process {"<li>$_</li>"} -End {'</ul>'})
+$($PowerShellUserList | ForEach-Object -Begin {'<ul>'} -Process {"<li>$_</li>"} -End {'</ul>'})
 "@
 
-if($UsersWithActivity){
-    Send-MailMessage @MailSettings -BodyAsHtml "$Style $UnAuthorizedUsage $PowerShellActiveUsers $Summary"
+Send-MailMessage @MailSettings -BodyAsHtml "$Style $UnAuthorizedUsage $Summary"
+
 }

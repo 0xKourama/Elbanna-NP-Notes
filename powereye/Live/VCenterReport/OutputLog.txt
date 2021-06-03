@@ -24,10 +24,10 @@ AllUsers                                     Ignore
 IsConnected   : True
 Id            : /VIServer=worldposta.com\powercli@10.5.5.20:443/
 ServiceUri    : https://10.5.5.20/sdk
-SessionSecret : "f944b5ab6fce1407a0c91e0e00599119af5977f4"
+SessionSecret : "4c3727da75f383f87f6255fc862b1ef54638f828"
 Name          : 10.5.5.20
 Port          : 443
-SessionId     : "f944b5ab6fce1407a0c91e0e00599119af5977f4"
+SessionId     : "4c3727da75f383f87f6255fc862b1ef54638f828"
 User          : WORLDPOSTA.COM\powercli
 Uid           : /VIServer=worldposta.com\powercli@10.5.5.20:443/
 Version       : 6.7.0
@@ -37,7 +37,7 @@ InstanceUuid  : 9455ae5e-3f2e-4be3-b798-68d38b0c59a7
 RefCount      : 1
 ExtensionData : VMware.Vim.ServiceInstance
 
-06/01/2021 14:04:24 [+] Report generated. Sending mail.
+06/02/2021 14:07:33 [+] Report generated. Sending mail.
 
 Name           : FortiGate
 PowerState     : PoweredOff
@@ -74,7 +74,7 @@ PowerState     : PoweredOn
 NumCpu         : 30
 CoresPerSocket : 15
 MemoryGB       : 350
-UsedSpaceGB    : 1531.34
+UsedSpaceGB    : 1801.11
 ResourcePool   : Resources
 CreateDate     : 12/7/2019 3:55:19 PM
 
@@ -84,7 +84,7 @@ PowerState     : PoweredOn
 NumCpu         : 32
 CoresPerSocket : 16
 MemoryGB       : 96
-UsedSpaceGB    : 426.45
+UsedSpaceGB    : 426.33
 ResourcePool   : Resources
 CreateDate     : 3/24/2020 11:40:21 AM
 
@@ -104,7 +104,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 36.35
+UsedSpaceGB    : 36.41
 ResourcePool   : Resources
 CreateDate     : 1/11/2021 7:37:49 AM
 
@@ -124,7 +124,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 2027.64
+UsedSpaceGB    : 2027.28
 ResourcePool   : Resources
 CreateDate     : 4/22/2021 12:01:21 PM
 
@@ -144,7 +144,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 506.65
+UsedSpaceGB    : 507.35
 ResourcePool   : Resources
 CreateDate     : 12/28/2020 11:13:52 PM
 
@@ -164,7 +164,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 200.68
+UsedSpaceGB    : 203.23
 ResourcePool   : Resources
 CreateDate     : 3/15/2021 1:47:59 PM
 
@@ -194,7 +194,7 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 8
 MemoryGB       : 64
-UsedSpaceGB    : 801.15
+UsedSpaceGB    : 802.04
 ResourcePool   : Resources
 CreateDate     : 1/11/2021 4:08:15 PM
 
@@ -214,7 +214,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 56.40
+UsedSpaceGB    : 56.42
 ResourcePool   : Resources
 CreateDate     : 5/1/2021 3:19:54 PM
 
@@ -264,7 +264,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 8
-UsedSpaceGB    : 1911.59
+UsedSpaceGB    : 1962.77
 ResourcePool   : Resources
 CreateDate     : 4/18/2020 10:56:58 AM
 
@@ -284,7 +284,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 31.44
+UsedSpaceGB    : 31.55
 ResourcePool   : Resources
 CreateDate     : 4/19/2021 1:43:41 PM
 
@@ -304,7 +304,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 2
 MemoryGB       : 20
-UsedSpaceGB    : 43.35
+UsedSpaceGB    : 43.37
 ResourcePool   : Resources
 CreateDate     : 4/17/2021 12:12:51 PM
 
@@ -314,7 +314,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 36.31
+UsedSpaceGB    : 36.36
 ResourcePool   : Resources
 CreateDate     : 3/4/2021 7:21:26 PM
 
@@ -324,7 +324,7 @@ PowerState     : PoweredOn
 NumCpu         : 32
 CoresPerSocket : 16
 MemoryGB       : 192
-UsedSpaceGB    : 628.05
+UsedSpaceGB    : 627.68
 ResourcePool   : Resources
 CreateDate     : 4/17/2020 4:09:14 AM
 
@@ -334,7 +334,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 40.05
+UsedSpaceGB    : 40.08
 ResourcePool   : Resources
 CreateDate     : 2/14/2021 10:57:33 AM
 
@@ -344,7 +344,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 205.86
+UsedSpaceGB    : 208.44
 ResourcePool   : Resources
 CreateDate     : 3/15/2021 1:40:03 PM
 
@@ -384,7 +384,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 2
 MemoryGB       : 24
-UsedSpaceGB    : 4207.95
+UsedSpaceGB    : 4208.21
 ResourcePool   : Resources
 CreateDate     : 3/4/2021 12:05:08 PM
 
@@ -394,7 +394,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 95.19
+UsedSpaceGB    : 96.23
 ResourcePool   : Resources
 CreateDate     : 2/23/2020 12:25:13 PM
 
@@ -414,7 +414,7 @@ PowerState     : PoweredOn
 NumCpu         : 20
 CoresPerSocket : 10
 MemoryGB       : 90
-UsedSpaceGB    : 828.19
+UsedSpaceGB    : 825.26
 ResourcePool   : Resources
 CreateDate     : 12/18/2019 8:07:31 AM
 
@@ -434,7 +434,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 24
-UsedSpaceGB    : 1281.45
+UsedSpaceGB    : 1281.37
 ResourcePool   : Resources
 CreateDate     : 4/5/2021 3:05:16 PM
 
@@ -444,7 +444,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 26.13
+UsedSpaceGB    : 26.15
 ResourcePool   : Resources
 CreateDate     : 4/21/2021 10:29:00 AM
 
@@ -464,7 +464,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 36.82
+UsedSpaceGB    : 36.79
 ResourcePool   : Resources
 CreateDate     : 12/25/2020 2:52:12 PM
 
@@ -484,7 +484,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 118.26
+UsedSpaceGB    : 122.89
 ResourcePool   : Resources
 CreateDate     : 3/10/2021 7:14:08 AM
 
@@ -494,7 +494,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 2
 MemoryGB       : 4
-UsedSpaceGB    : 73.46
+UsedSpaceGB    : 73.62
 ResourcePool   : Resources
 CreateDate     : 5/31/2020 3:53:33 PM
 
@@ -524,7 +524,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 16
-UsedSpaceGB    : 27.02
+UsedSpaceGB    : 27.06
 ResourcePool   : Resources
 CreateDate     : 5/23/2021 1:09:08 PM
 
@@ -534,7 +534,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 29.38
+UsedSpaceGB    : 30.81
 ResourcePool   : Resources
 CreateDate     : 4/26/2021 10:05:42 AM
 
@@ -544,7 +544,7 @@ PowerState     : PoweredOn
 NumCpu         : 32
 CoresPerSocket : 16
 MemoryGB       : 128
-UsedSpaceGB    : 947.00
+UsedSpaceGB    : 956.15
 ResourcePool   : Resources
 CreateDate     : 7/20/2020 8:04:54 PM
 
@@ -564,7 +564,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 27.38
+UsedSpaceGB    : 27.50
 ResourcePool   : Resources
 CreateDate     : 2/15/2021 12:23:36 PM
 
@@ -584,7 +584,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 650.27
+UsedSpaceGB    : 650.24
 ResourcePool   : Resources
 CreateDate     : 12/23/2020 9:45:10 PM
 
@@ -594,7 +594,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 34.56
+UsedSpaceGB    : 34.44
 ResourcePool   : Resources
 CreateDate     : 12/29/2020 10:59:21 AM
 
@@ -604,7 +604,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 40.51
+UsedSpaceGB    : 40.60
 ResourcePool   : Resources
 CreateDate     : 3/17/2021 2:11:20 PM
 
@@ -614,7 +614,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 201.22
+UsedSpaceGB    : 203.71
 ResourcePool   : Resources
 CreateDate     : 3/15/2021 1:34:38 PM
 
@@ -644,7 +644,7 @@ PowerState     : PoweredOn
 NumCpu         : 32
 CoresPerSocket : 16
 MemoryGB       : 256
-UsedSpaceGB    : 432.23
+UsedSpaceGB    : 432.44
 ResourcePool   : Resources
 CreateDate     : 11/18/2020 11:57:53 AM
 
@@ -654,7 +654,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 36.99
+UsedSpaceGB    : 37.03
 ResourcePool   : Resources
 CreateDate     : 3/7/2021 7:12:58 PM
 
@@ -664,7 +664,7 @@ PowerState     : PoweredOn
 NumCpu         : 30
 CoresPerSocket : 15
 MemoryGB       : 120
-UsedSpaceGB    : 1052.19
+UsedSpaceGB    : 1060.11
 ResourcePool   : Resources
 CreateDate     : 10/4/2020 7:53:04 AM
 
@@ -674,7 +674,7 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 8
 MemoryGB       : 40
-UsedSpaceGB    : 667.46
+UsedSpaceGB    : 667.71
 ResourcePool   : Resources
 CreateDate     : 10/8/2020 9:53:28 PM
 
@@ -684,7 +684,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 53.10
+UsedSpaceGB    : 53.12
 ResourcePool   : Resources
 CreateDate     : 5/15/2020 1:59:23 PM
 
@@ -694,7 +694,7 @@ PowerState     : PoweredOn
 NumCpu         : 20
 CoresPerSocket : 10
 MemoryGB       : 200
-UsedSpaceGB    : 1367.37
+UsedSpaceGB    : 1485.27
 ResourcePool   : Resources
 CreateDate     : 11/17/2020 11:03:13 AM
 
@@ -724,7 +724,7 @@ PowerState     : PoweredOn
 NumCpu         : 50
 CoresPerSocket : 25
 MemoryGB       : 700
-UsedSpaceGB    : 2039.98
+UsedSpaceGB    : 2078.19
 ResourcePool   : Resources
 CreateDate     : 11/18/2020 12:55:11 PM
 
@@ -764,7 +764,7 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 8
 MemoryGB       : 64
-UsedSpaceGB    : 720.39
+UsedSpaceGB    : 720.52
 ResourcePool   : Resources
 CreateDate     : 1/11/2021 4:10:45 PM
 
@@ -774,7 +774,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 63.88
+UsedSpaceGB    : 63.90
 ResourcePool   : Resources
 CreateDate     : 2/8/2021 9:31:54 AM
 
@@ -784,7 +784,7 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 8
 MemoryGB       : 64
-UsedSpaceGB    : 1504.92
+UsedSpaceGB    : 1517.19
 ResourcePool   : Resources
 CreateDate     : 6/14/2020 11:03:42 AM
 
@@ -794,7 +794,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 36.80
+UsedSpaceGB    : 36.52
 ResourcePool   : Resources
 CreateDate     : 1/11/2021 7:25:29 AM
 
@@ -804,7 +804,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 119.33
+UsedSpaceGB    : 119.58
 ResourcePool   : Resources
 CreateDate     : 5/13/2020 7:25:41 AM
 
@@ -834,7 +834,7 @@ PowerState     : PoweredOn
 NumCpu         : 20
 CoresPerSocket : 10
 MemoryGB       : 256
-UsedSpaceGB    : 558.77
+UsedSpaceGB    : 562.92
 ResourcePool   : Resources
 CreateDate     : 3/8/2021 4:08:16 PM
 
@@ -884,7 +884,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 35.06
+UsedSpaceGB    : 35.05
 ResourcePool   : Resources
 CreateDate     : 12/21/2020 10:46:01 AM
 
@@ -894,7 +894,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 28.86
+UsedSpaceGB    : 29.34
 ResourcePool   : Resources
 CreateDate     : 5/23/2021 7:09:04 PM
 
@@ -934,7 +934,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 321.48
+UsedSpaceGB    : 321.50
 ResourcePool   : Resources
 CreateDate     : 12/28/2020 9:50:41 PM
 
@@ -964,7 +964,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 2
 MemoryGB       : 18
-UsedSpaceGB    : 338.16
+UsedSpaceGB    : 338.20
 ResourcePool   : Resources
 CreateDate     : 12/21/2020 11:07:00 AM
 
@@ -1004,7 +1004,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 2
 MemoryGB       : 20
-UsedSpaceGB    : 294.01
+UsedSpaceGB    : 295.16
 ResourcePool   : Resources
 CreateDate     : 12/21/2020 12:37:40 PM
 
@@ -1024,7 +1024,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 32
-UsedSpaceGB    : 603.99
+UsedSpaceGB    : 603.95
 ResourcePool   : Resources
 CreateDate     : 3/24/2021 12:07:31 PM
 
@@ -1034,7 +1034,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 16
-UsedSpaceGB    : 49.92
+UsedSpaceGB    : 49.24
 ResourcePool   : Resources
 CreateDate     : 5/9/2021 1:48:50 PM
 
@@ -1054,7 +1054,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 201.85
+UsedSpaceGB    : 204.17
 ResourcePool   : Resources
 CreateDate     : 3/15/2021 2:12:04 PM
 
@@ -1104,7 +1104,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 2
 MemoryGB       : 4
-UsedSpaceGB    : 44.77
+UsedSpaceGB    : 44.80
 ResourcePool   : Resources
 CreateDate     : 5/13/2020 7:21:12 AM
 
@@ -1134,7 +1134,7 @@ PowerState     : PoweredOn
 NumCpu         : 32
 CoresPerSocket : 16
 MemoryGB       : 420
-UsedSpaceGB    : 3208.84
+UsedSpaceGB    : 3216.97
 ResourcePool   : Resources
 CreateDate     : 10/8/2020 10:00:07 PM
 
@@ -1174,7 +1174,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 252.91
+UsedSpaceGB    : 252.86
 ResourcePool   : Resources
 CreateDate     : 12/23/2020 10:33:17 AM
 
@@ -1194,7 +1194,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 1
 MemoryGB       : 16
-UsedSpaceGB    : 174.15
+UsedSpaceGB    : 174.75
 ResourcePool   : Resources
 CreateDate     : 7/3/2019 7:52:18 AM
 
@@ -1214,7 +1214,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 625.32
+UsedSpaceGB    : 625.34
 ResourcePool   : Resources
 CreateDate     : 3/16/2020 8:36:57 AM
 
@@ -1234,7 +1234,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 142.20
+UsedSpaceGB    : 142.26
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 8:11:36 PM
 
@@ -1244,7 +1244,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 41.70
+UsedSpaceGB    : 41.67
 ResourcePool   : Resources
 CreateDate     : 1/23/2021 9:27:56 AM
 
@@ -1254,7 +1254,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 4
-UsedSpaceGB    : 11732.34
+UsedSpaceGB    : 11732.44
 ResourcePool   : Resources
 CreateDate     : 7/8/2020 11:21:49 AM
 
@@ -1264,7 +1264,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 98.67
+UsedSpaceGB    : 98.34
 ResourcePool   : Resources
 CreateDate     : 3/31/2021 12:11:10 PM
 
@@ -1274,7 +1274,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 1935.98
+UsedSpaceGB    : 2053.39
 ResourcePool   : Resources
 CreateDate     : 12/22/2020 2:25:08 PM
 
@@ -1294,7 +1294,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 19.07
+UsedSpaceGB    : 19.04
 ResourcePool   : Resources
 CreateDate     : 3/17/2021 9:59:30 AM
 
@@ -1304,7 +1304,7 @@ PowerState     : PoweredOn
 NumCpu         : 32
 CoresPerSocket : 16
 MemoryGB       : 128
-UsedSpaceGB    : 1317.94
+UsedSpaceGB    : 1332.25
 ResourcePool   : Resources
 CreateDate     : 2/23/2020 12:22:24 PM
 
@@ -1314,7 +1314,7 @@ PowerState     : PoweredOn
 NumCpu         : 24
 CoresPerSocket : 1
 MemoryGB       : 48
-UsedSpaceGB    : 275.67
+UsedSpaceGB    : 276.61
 ResourcePool   : Resources
 CreateDate     : 6/17/2020 7:15:39 AM
 
@@ -1344,7 +1344,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 100.38
+UsedSpaceGB    : 100.15
 ResourcePool   : Resources
 CreateDate     : 3/31/2021 12:03:10 PM
 
@@ -1364,7 +1364,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 20.18
+UsedSpaceGB    : 20.21
 ResourcePool   : Resources
 CreateDate     : 3/21/2021 12:27:14 PM
 
@@ -1384,7 +1384,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 32
-UsedSpaceGB    : 92.23
+UsedSpaceGB    : 92.25
 ResourcePool   : Resources
 CreateDate     : 12/23/2020 11:37:56 AM
 
@@ -1394,7 +1394,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 2
 MemoryGB       : 32
-UsedSpaceGB    : 83.76
+UsedSpaceGB    : 83.89
 ResourcePool   : Resources
 CreateDate     : 3/24/2021 12:12:36 PM
 
@@ -1464,7 +1464,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 54.91
+UsedSpaceGB    : 54.99
 ResourcePool   : Resources
 CreateDate     : 12/18/2020 1:08:05 PM
 
@@ -1474,7 +1474,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 195.66
+UsedSpaceGB    : 195.83
 ResourcePool   : Resources
 CreateDate     : 12/15/2020 12:45:11 AM
 
@@ -1544,7 +1544,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 1
 MemoryGB       : 24
-UsedSpaceGB    : 224.84
+UsedSpaceGB    : 224.97
 ResourcePool   : Resources
 CreateDate     : 6/8/2020 7:15:52 AM
 
@@ -1644,7 +1644,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 71.27
+UsedSpaceGB    : 71.32
 ResourcePool   : Resources
 CreateDate     : 5/20/2019 8:47:52 AM
 
@@ -1664,7 +1664,7 @@ PowerState     : PoweredOn
 NumCpu         : 3
 CoresPerSocket : 3
 MemoryGB       : 16
-UsedSpaceGB    : 460.55
+UsedSpaceGB    : 459.16
 ResourcePool   : Resources
 CreateDate     : 1/18/2019 4:30:42 PM
 
@@ -1754,7 +1754,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 24.92
+UsedSpaceGB    : 24.95
 ResourcePool   : Resources
 CreateDate     : 4/20/2021 10:38:30 AM
 
@@ -1764,7 +1764,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 55.20
+UsedSpaceGB    : 55.28
 ResourcePool   : Resources
 CreateDate     : 12/30/2020 2:22:38 PM
 
@@ -1804,7 +1804,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 559.59
+UsedSpaceGB    : 559.62
 ResourcePool   : Resources
 CreateDate     : 2/1/2021 9:53:02 AM
 
@@ -1814,7 +1814,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 578.53
+UsedSpaceGB    : 578.57
 ResourcePool   : Resources
 CreateDate     : 1/31/2021 9:25:47 PM
 
@@ -1844,7 +1844,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 26.81
+UsedSpaceGB    : 26.89
 ResourcePool   : Resources
 CreateDate     : 4/28/2021 9:31:55 AM
 
@@ -1854,7 +1854,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 20
-UsedSpaceGB    : 37.58
+UsedSpaceGB    : 37.59
 ResourcePool   : Resources
 CreateDate     : 1/3/2021 7:25:47 AM
 
@@ -1944,7 +1944,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 16.53
+UsedSpaceGB    : 16.88
 ResourcePool   : Resources
 CreateDate     : 4/23/2019 9:06:36 AM
 
@@ -1964,7 +1964,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 565.84
+UsedSpaceGB    : 566.19
 ResourcePool   : Resources
 CreateDate     : 1/31/2021 9:32:38 PM
 
@@ -1984,7 +1984,7 @@ PowerState     : PoweredOn
 NumCpu         : 10
 CoresPerSocket : 5
 MemoryGB       : 40
-UsedSpaceGB    : 87.24
+UsedSpaceGB    : 87.25
 ResourcePool   : Resources
 CreateDate     : 12/25/2020 10:10:46 AM
 
@@ -2004,7 +2004,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 593.13
+UsedSpaceGB    : 593.21
 ResourcePool   : Resources
 CreateDate     : 1/31/2021 9:34:51 PM
 
@@ -2014,7 +2014,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 12
-UsedSpaceGB    : 469.53
+UsedSpaceGB    : 471.68
 ResourcePool   : Resources
 CreateDate     : 1/18/2019 8:40:33 PM
 
@@ -2024,7 +2024,7 @@ PowerState     : PoweredOn
 NumCpu         : 10
 CoresPerSocket : 1
 MemoryGB       : 44.921875
-UsedSpaceGB    : 16578.27
+UsedSpaceGB    : 16578.43
 ResourcePool   : Resources
 CreateDate     : 1/28/2019 3:15:03 AM
 
@@ -2044,7 +2044,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 25
-UsedSpaceGB    : 90.58
+UsedSpaceGB    : 90.82
 ResourcePool   : Resources
 CreateDate     : 1/22/2019 6:54:53 AM
 
@@ -2064,7 +2064,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 69.75
+UsedSpaceGB    : 69.79
 ResourcePool   : Resources
 CreateDate     : 4/27/2021 10:30:14 AM
 
@@ -2084,7 +2084,7 @@ PowerState     : PoweredOn
 NumCpu         : 10
 CoresPerSocket : 10
 MemoryGB       : 85
-UsedSpaceGB    : 372.61
+UsedSpaceGB    : 372.67
 ResourcePool   : Resources
 CreateDate     : 12/6/2020 12:00:55 PM
 
@@ -2104,7 +2104,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 1
 MemoryGB       : 16
-UsedSpaceGB    : 566.91
+UsedSpaceGB    : 566.95
 ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
 CreateDate     : 3/10/2021 12:56:56 PM
 
@@ -2114,7 +2114,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 25
-UsedSpaceGB    : 170.14
+UsedSpaceGB    : 170.59
 ResourcePool   : Resources
 CreateDate     : 4/14/2019 12:51:06 PM
 
@@ -2384,7 +2384,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 8
-UsedSpaceGB    : 39.37
+UsedSpaceGB    : 39.46
 ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
 CreateDate     : 12/30/2020 10:12:23 AM
 
@@ -2394,7 +2394,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 8
-UsedSpaceGB    : 24.45
+UsedSpaceGB    : 24.50
 ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
 CreateDate     : 5/27/2021 2:52:34 PM
 
@@ -2404,7 +2404,7 @@ PowerState     : PoweredOn
 NumCpu         : 24
 CoresPerSocket : 12
 MemoryGB       : 320
-UsedSpaceGB    : 551.33
+UsedSpaceGB    : 554.31
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/9/2021 10:03:32 AM
 
@@ -2414,7 +2414,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 10
-UsedSpaceGB    : 20.10
+UsedSpaceGB    : 20.23
 ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
 CreateDate     : 5/28/2021 2:10:20 PM
 
@@ -2454,7 +2454,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 28.83
+UsedSpaceGB    : 28.95
 ResourcePool   : venus-group (0eff2d47-682e-45f0-9cc4-706eb199ab84)
 CreateDate     : 5/24/2021 11:13:07 AM
 
@@ -2474,7 +2474,7 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 8
 MemoryGB       : 32
-UsedSpaceGB    : 95.31
+UsedSpaceGB    : 95.21
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 6:47:47 PM
 
@@ -2494,7 +2494,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 12.84
+UsedSpaceGB    : 12.86
 ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
 CreateDate     : 5/28/2021 1:53:01 PM
 
@@ -2504,7 +2504,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 24
-UsedSpaceGB    : 55.71
+UsedSpaceGB    : 55.70
 ResourcePool   : medisteel (e2c0dec0-d64a-408e-af0c-606785d58854)
 CreateDate     : 5/26/2021 12:35:08 PM
 
@@ -2514,7 +2514,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 4
-UsedSpaceGB    : 25.88
+UsedSpaceGB    : 25.93
 ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
 CreateDate     : 5/23/2021 1:44:54 PM
 
@@ -2524,7 +2524,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 24
-UsedSpaceGB    : 1071.67
+UsedSpaceGB    : 1072.28
 ResourcePool   : Reyada-New (c1be55ad-75b1-45fe-b008-267d8bf9a548)
 CreateDate     : 3/3/2021 3:10:31 PM
 
@@ -2534,7 +2534,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 15.09
+UsedSpaceGB    : 16.19
 ResourcePool   : ioda-tenant (8cf54a4a-8b06-4ac3-986b-5dbbbf22e1ef)
 CreateDate     : 5/27/2021 6:15:39 PM
 
@@ -2564,7 +2564,7 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 2
 MemoryGB       : 32
-UsedSpaceGB    : 622.84
+UsedSpaceGB    : 612.40
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 4:29:25 PM
 
@@ -2574,7 +2574,7 @@ PowerState     : PoweredOn
 NumCpu         : 12
 CoresPerSocket : 6
 MemoryGB       : 24
-UsedSpaceGB    : 92.34
+UsedSpaceGB    : 92.35
 ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
 CreateDate     : 11/17/2020 12:29:05 PM
 
@@ -2644,7 +2644,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 32
-UsedSpaceGB    : 88.28
+UsedSpaceGB    : 88.30
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/9/2021 9:51:58 AM
 
@@ -2654,7 +2654,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 44.40
+UsedSpaceGB    : 44.08
 ResourcePool   : Egypt-Cables (e61fc5b0-5df1-4dc4-a91b-2b9942e27d65)
 CreateDate     : 1/31/2021 1:46:08 PM
 
@@ -2704,7 +2704,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 2065.47
+UsedSpaceGB    : 2065.51
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 9:21:05 PM
 
@@ -2724,7 +2724,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 72.52
+UsedSpaceGB    : 72.54
 ResourcePool   : ACT-Company (5b315590-4e76-4bfc-94da-24f81b0f4095)
 CreateDate     : 1/27/2021 12:27:36 PM
 
@@ -2744,7 +2744,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 10
-UsedSpaceGB    : 20.47
+UsedSpaceGB    : 20.46
 ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
 CreateDate     : 5/31/2021 1:12:21 PM
 
@@ -2754,7 +2754,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 4
-UsedSpaceGB    : 14.46
+UsedSpaceGB    : 14.62
 ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
 CreateDate     : 5/31/2021 1:14:12 PM
 
@@ -2764,7 +2764,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 246.15
+UsedSpaceGB    : 246.35
 ResourcePool   : hefny-pharma (023412af-2720-4f64-a1e3-ee14ab18e440)
 CreateDate     : 5/20/2021 10:56:23 AM
 
@@ -2774,7 +2774,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 15
-UsedSpaceGB    : 32.01
+UsedSpaceGB    : 32.95
 ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
 CreateDate     : 6/1/2021 8:25:08 AM
 
@@ -2794,7 +2794,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 48
-UsedSpaceGB    : 267.07
+UsedSpaceGB    : 267.10
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/9/2021 9:58:31 AM
 
@@ -2814,7 +2814,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 32
-UsedSpaceGB    : 108.60
+UsedSpaceGB    : 108.29
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/9/2021 9:29:46 AM
 
@@ -2824,7 +2824,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 10
-UsedSpaceGB    : 20.46
+UsedSpaceGB    : 20.43
 ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
 CreateDate     : 5/31/2021 1:10:44 PM
 
@@ -2834,7 +2834,7 @@ PowerState     : PoweredOn
 NumCpu         : 10
 CoresPerSocket : 5
 MemoryGB       : 100
-UsedSpaceGB    : 325.83
+UsedSpaceGB    : 325.84
 ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
 CreateDate     : 12/25/2020 10:18:51 PM
 
@@ -2844,7 +2844,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 16
-UsedSpaceGB    : 59.98
+UsedSpaceGB    : 59.99
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 7:26:29 PM
 
@@ -2874,17 +2874,17 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 318.13
+UsedSpaceGB    : 318.91
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 9:52:29 PM
 
 
 Name           : Windows-nUZG
-PowerState     : PoweredOn
+PowerState     : PoweredOff
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 29.03
+UsedSpaceGB    : 20.95
 ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
 CreateDate     : 3/1/2021 8:43:39 AM
 
@@ -2894,7 +2894,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 10
-UsedSpaceGB    : 20.47
+UsedSpaceGB    : 20.43
 ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
 CreateDate     : 5/31/2021 1:11:32 PM
 
@@ -2904,7 +2904,7 @@ PowerState     : PoweredOn
 NumCpu         : 10
 CoresPerSocket : 5
 MemoryGB       : 10
-UsedSpaceGB    : 11.04
+UsedSpaceGB    : 11.05
 ResourcePool   : ioda-tenant (8cf54a4a-8b06-4ac3-986b-5dbbbf22e1ef)
 CreateDate     : 5/27/2021 6:14:07 PM
 
@@ -2914,7 +2914,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 17.38
+UsedSpaceGB    : 18.22
 ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
 CreateDate     : 6/1/2021 8:23:39 AM
 
@@ -2927,6 +2927,16 @@ MemoryGB       : 24
 UsedSpaceGB    : 35.98
 ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
 CreateDate     : 1/24/2021 1:18:13 PM
+
+
+Name           : Esxi2-xWJF
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 15
+UsedSpaceGB    : 15.56
+ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
+CreateDate     : 6/2/2021 9:27:56 AM
 
 
 Name           : windows 10-NcDO
@@ -2984,7 +2994,7 @@ PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 7.90
+UsedSpaceGB    : 7.92
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/10/2021 12:14:32 PM
 
@@ -2994,7 +3004,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 24.07
+UsedSpaceGB    : 24.40
 ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
 CreateDate     : 1/14/2021 12:38:45 PM
 
@@ -3024,7 +3034,7 @@ PowerState     : PoweredOn
 NumCpu         : 12
 CoresPerSocket : 6
 MemoryGB       : 200
-UsedSpaceGB    : 387.25
+UsedSpaceGB    : 390.85
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/9/2021 10:05:07 AM
 
@@ -3034,7 +3044,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 56.28
+UsedSpaceGB    : 59.09
 ResourcePool   : ElBatal (e5ee0316-8a1e-4544-a472-bef42d482268)
 CreateDate     : 2/23/2021 10:14:08 AM
 
@@ -3044,7 +3054,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 24
-UsedSpaceGB    : 191.73
+UsedSpaceGB    : 191.54
 ResourcePool   : Liptis (89ff27c1-f68d-4e9f-be81-48000fad2ff5)
 CreateDate     : 12/10/2020 12:06:51 PM
 
@@ -3064,7 +3074,7 @@ PowerState     : PoweredOn
 NumCpu         : 12
 CoresPerSocket : 6
 MemoryGB       : 128
-UsedSpaceGB    : 356.33
+UsedSpaceGB    : 358.56
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/9/2021 10:06:59 AM
 
@@ -3074,7 +3084,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 16
-UsedSpaceGB    : 38.82
+UsedSpaceGB    : 39.03
 ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
 CreateDate     : 3/24/2021 6:49:54 PM
 
@@ -3084,7 +3094,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 83.41
+UsedSpaceGB    : 86.19
 ResourcePool   : Gabr (8ce16d02-122d-4be0-b5d3-e3619d15a56c)
 CreateDate     : 1/26/2021 9:38:32 AM
 
@@ -3124,7 +3134,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 16
-UsedSpaceGB    : 105.97
+UsedSpaceGB    : 105.96
 ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
 CreateDate     : 12/25/2020 10:01:03 PM
 
@@ -3144,7 +3154,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 13.57
+UsedSpaceGB    : 13.58
 ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
 CreateDate     : 5/28/2021 2:13:25 PM
 
@@ -3154,7 +3164,7 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 8
 MemoryGB       : 16
-UsedSpaceGB    : 63.23
+UsedSpaceGB    : 63.25
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 7:12:08 PM
 
@@ -3164,7 +3174,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 16
-UsedSpaceGB    : 61.32
+UsedSpaceGB    : 61.38
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 7:33:31 PM
 
@@ -3204,7 +3214,7 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 161.38
+UsedSpaceGB    : 161.72
 ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
 CreateDate     : 12/30/2020 10:09:55 AM
 
@@ -3214,7 +3224,7 @@ PowerState     : PoweredOn
 NumCpu         : 10
 CoresPerSocket : 5
 MemoryGB       : 100
-UsedSpaceGB    : 327.15
+UsedSpaceGB    : 327.24
 ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
 CreateDate     : 12/25/2020 10:18:19 AM
 
@@ -3224,7 +3234,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 16
-UsedSpaceGB    : 274.01
+UsedSpaceGB    : 274.08
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 7:18:53 PM
 
@@ -3234,17 +3244,17 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 32
-UsedSpaceGB    : 57.53
+UsedSpaceGB    : 57.57
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/9/2021 10:00:50 AM
 
 
 Name           : server2019-xb1o
-PowerState     : PoweredOff
+PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 45.33
+UsedSpaceGB    : 52.54
 ResourcePool   : Ahussein (6f14ea01-2924-4034-8153-5771adfecd8f)
 CreateDate     : 5/17/2021 12:35:04 PM
 
@@ -3264,7 +3274,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 4
-UsedSpaceGB    : 83.76
+UsedSpaceGB    : 85.06
 ResourcePool   : ioda-tenant (8cf54a4a-8b06-4ac3-986b-5dbbbf22e1ef)
 CreateDate     : 5/30/2021 6:24:22 PM
 
@@ -3274,7 +3284,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 36.15
+UsedSpaceGB    : 36.10
 ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
 CreateDate     : 1/17/2021 5:29:05 PM
 
@@ -3294,7 +3304,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 27.44
+UsedSpaceGB    : 27.57
 ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
 CreateDate     : 9/21/2020 1:38:26 PM
 
@@ -3304,29 +3314,19 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 8
-UsedSpaceGB    : 313.09
+UsedSpaceGB    : 313.06
 ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
 CreateDate     : 12/30/2020 10:11:04 AM
 
 
-Name           : esxi1-MMyP
+Name           : Esxi1-MYTr
 PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 15
-UsedSpaceGB    : 15.09
+UsedSpaceGB    : 36.38
 ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 6/1/2021 8:26:34 AM
-
-
-Name           : Esxi2-PbYd
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 15
-UsedSpaceGB    : 515.08
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 6/1/2021 8:28:58 AM
+CreateDate     : 6/2/2021 9:12:53 AM
 
 
 Name           : linux-HauX
@@ -3340,11 +3340,11 @@ CreateDate     : 4/15/2021 12:58:28 PM
 
 
 Name           : win10-EePF
-PowerState     : PoweredOn
+PowerState     : Suspended
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 23.55
+UsedSpaceGB    : 23.47
 ResourcePool   : Ahussein (6f14ea01-2924-4034-8153-5771adfecd8f)
 CreateDate     : 5/17/2021 5:54:12 PM
 
@@ -3369,22 +3369,12 @@ ResourcePool   : Concrete-Plus (0d993844-2dec-4f74-93f0-e9c61d1bc42e)
 CreateDate     : 3/31/2021 12:38:48 PM
 
 
-Name           : windows7-dXas
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 10.70
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 3/16/2021 7:03:41 AM
-
-
 Name           : server-2-IpQB
 PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 10
-UsedSpaceGB    : 20.45
+UsedSpaceGB    : 20.41
 ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
 CreateDate     : 5/31/2021 1:06:22 PM
 
@@ -3394,7 +3384,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 153.16
+UsedSpaceGB    : 153.21
 ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
 CreateDate     : 3/9/2021 9:22:13 AM
 
@@ -3404,19 +3394,9 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 10
-UsedSpaceGB    : 19.50
+UsedSpaceGB    : 19.55
 ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
 CreateDate     : 5/27/2021 2:55:05 PM
-
-
-Name           : windows7-9aXt
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 10.63
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 3/16/2021 7:04:32 AM
 
 
 Name           : ACT-VM-03-igWB
@@ -3424,7 +3404,7 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 109.66
+UsedSpaceGB    : 109.62
 ResourcePool   : ACT-Company (5b315590-4e76-4bfc-94da-24f81b0f4095)
 CreateDate     : 1/27/2021 12:05:25 PM
 
@@ -3434,7 +3414,7 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 8
 MemoryGB       : 280
-UsedSpaceGB    : 564.94
+UsedSpaceGB    : 565.01
 ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
 CreateDate     : 1/24/2021 11:38:19 AM
 
@@ -3464,7 +3444,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 32.94
+UsedSpaceGB    : 33.31
 ResourcePool   : Global-Technology (5a59374c-7635-4926-803f-e4ed01a3b9c7)
 CreateDate     : 12/3/2020 3:15:00 PM
 
@@ -3504,7 +3484,7 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 22.63
+UsedSpaceGB    : 22.64
 ResourcePool   : peter-tenant (8f7a64d4-f84b-4475-9c1e-b3cea25606a3)
 CreateDate     : 3/17/2021 11:03:46 AM
 
@@ -3514,7 +3494,7 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 12
-UsedSpaceGB    : 89.03
+UsedSpaceGB    : 89.70
 ResourcePool   : peter-tenant (8f7a64d4-f84b-4475-9c1e-b3cea25606a3)
 CreateDate     : 2/12/2021 11:47:35 PM
 
@@ -3747,24 +3727,24 @@ CreateDate    : 6/1/2021 8:23:39 AM
 
 
 Index         : 32
-Name          : server2019-xb1o
-DataStoreName : datastore1 (5)
-PowerState    : PoweredOff
-CreateDate    : 5/17/2021 12:35:04 PM
+Name          : Esxi2-xWJF
+DataStoreName : datastore1 (2)
+PowerState    : PoweredOn
+CreateDate    : 6/2/2021 9:27:56 AM
 
 
 Index         : 33
-Name          : esxi1-MMyP
-DataStoreName : 93-SSD-1.2T
+Name          : server2019-xb1o
+DataStoreName : datastore1 (5)
 PowerState    : PoweredOn
-CreateDate    : 6/1/2021 8:26:34 AM
+CreateDate    : 5/17/2021 12:35:04 PM
 
 
 Index         : 34
-Name          : Esxi2-PbYd
+Name          : Esxi1-MYTr
 DataStoreName : 93-SSD-1.2T
 PowerState    : PoweredOn
-CreateDate    : 6/1/2021 8:28:58 AM
+CreateDate    : 6/2/2021 9:12:53 AM
 
 
 Index         : 35
@@ -3777,25 +3757,11 @@ CreateDate    : 4/15/2021 12:58:28 PM
 Index         : 36
 Name          : win10-EePF
 DataStoreName : 93-NVME-800G
-PowerState    : PoweredOn
+PowerState    : Suspended
 CreateDate    : 5/17/2021 5:54:12 PM
 
 
 Index         : 37
-Name          : windows7-dXas
-DataStoreName : 93-NVME-800G
-PowerState    : PoweredOff
-CreateDate    : 3/16/2021 7:03:41 AM
-
-
-Index         : 38
-Name          : windows7-9aXt
-DataStoreName : 93-SSD-1.2T
-PowerState    : PoweredOff
-CreateDate    : 3/16/2021 7:04:32 AM
-
-
-Index         : 39
 Name          : Win-Seven-wPSJ
 DataStoreName : 11-datastore
 PowerState    : PoweredOff

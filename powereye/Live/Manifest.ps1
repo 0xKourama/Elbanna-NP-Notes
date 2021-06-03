@@ -16,7 +16,7 @@ $Modules = @(
     [Module]@{
         Enabled = $true
         Name = 'Admin Group Change'
-        RunInterval = New-TimeSpan -Minutes 5
+        RunInterval = New-TimeSpan -Minutes 10
     }
     #2
     [Module]@{
@@ -137,6 +137,12 @@ $Modules = @(
         Enabled = $true
         Name = 'Local Group Report'
         RunInterval = New-TimeSpan -Hours 12
+    }
+    #22
+    [Module]@{
+        Enabled = $true
+        Name = 'UnAuthorized PowerShell Usage'
+        RunInterval = New-TimeSpan -Minutes 10
     }
 )
 if(!$Runtime_Data){

@@ -116,4 +116,5 @@ $($AdminResults | ConvertTo-Html -Fragment | Out-String)
 
 if($Results){
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Body"
+    Clear-Variable -Name Body
 }

@@ -1,1 +1,1 @@
-06/02/2021 11:18:48 [*] No computer domain joins detected.
+06/03/2021 12:47:22 [*] No computer domain joins detected.
