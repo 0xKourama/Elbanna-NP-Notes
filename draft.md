@@ -3,7 +3,7 @@
 
 `CanonicalName: Roaya.loc/WP Admins/Gabr Urgent`
 
-
+---
 
 `ssh root@146.0.237.169`
 
@@ -55,3 +55,7 @@ ss -antp | grep ":80"
         ServerName roaya.co
 
 </VirtualHost>
+
+
+# selinux commands:
+sestatus
