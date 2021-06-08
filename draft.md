@@ -58,4 +58,5 @@ ss -antp | grep ":80"
 
 
 # selinux commands:
+sudo setenforce 0
 sestatus
