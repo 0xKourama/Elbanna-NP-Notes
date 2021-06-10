@@ -70,3 +70,31 @@ All exchange + All DCs + PST-SERVER1 + office online (FRANK-OOS-O02, FRANK-OOS-O
 9. Islam
 10. Mali
 11. Sara
+
+https://www.itprotoday.com/windows-78/implementing-least-privilege-ad
+
+# what are the privileges of all built-in roles?
+# what is the location of documentation on this?
+# what would help find the privileges associated with services? AD, Exchange, IIS
+# what can be done to find the privileges of the local groups?
+# what needs to be done to track user activity?
+# what in audit logs can be used to find user activity?
+# what the practical steps to implement
+# what workstations needs to be accesed by
+1. high MGMT
+2. exchange
+3. Devs
+4. generic
+# what shortcuts are decent enough to make the project easier?
+# what default groups can be used for managing administration tasks?
+1. server operators
+2. backup operators
+3. power users
+# what makes least privilege concept frustrating?
+1. figuring out which exact privilege is required
+2. admins aren't thrilled by the idea of limiting their access
+# what audit types are required?
+Audit privilege use
+Audit object access
+Audit directory service access >> MMC Domain Controller Security Policy snap-in
+log on as a nonadministrator and try to perform the task. After your attempt fails, check the Security log for failed events that identify which right you lacked or which object you weren't able to access.
