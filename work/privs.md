@@ -1,4 +1,4 @@
-#Administrators
+# Administrators
 1. Access this computer from the network
 2. Adjust memory quotas for a process
 3. Allow log on locally
@@ -21,7 +21,7 @@
 20. Shut down the system
 21. Take ownership of files or other objects
 
-#Backup Operators
+# Backup Operators
 1. Access this computer from the network
 2. Allow log on locally
 3. Back up files and directories
@@ -29,7 +29,7 @@
 5. Restore files and directories
 6. Shut down the system
 
-#Power Users
+# Power Users
 1. Access this computer from the network
 2. Allow log on locally
 3. Bypass traverse checking
@@ -38,20 +38,20 @@
 6. Remove computer from docking station
 7. Shut down the system
 
-#Remote Desktop Users
+# Remote Desktop Users
 1. Allow log on through Terminal Services
 
-#Users
+# Users
 1. Access this computer from the network; Allow log on locally; Bypass traverse checking
 
-#Network Configuration Operators
+# Network Configuration Operators
 1. Members of this group can make changes to TCP/IP settings and renew and release TCP/IP addresses. This group has no default members.
 
-#Performance Monitor Users
+# Performance Monitor Users
 1. Members of this group can monitor performance counters on the server locally and from remote clients without being a member of the Administrators or Performance Log Users groups.
 
-#Event Log Readers
+# Event Log Readers
 1. Members of this group can read event logs from local machine
 
-#Remote Management Users
+# Remote Management Users
 1. Members of this group can access WMI resources over management protocols (such as WS-Management via the Windows Remote Management service). This applies only to WMI namespaces that grant access to the user.
