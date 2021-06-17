@@ -42,7 +42,9 @@
 1. Allow log on through Terminal Services
 
 # Users
-1. Access this computer from the network; Allow log on locally; Bypass traverse checking
+1. Access this computer from the network
+2. Allow log on locally
+3. Bypass traverse checking
 
 # Network Configuration Operators
 1. Members of this group can make changes to TCP/IP settings and renew and release TCP/IP addresses. This group has no default members.
