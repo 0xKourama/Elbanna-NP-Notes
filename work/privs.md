@@ -38,6 +38,15 @@
 6. Remove computer from docking station
 7. Shut down the system
 
+# Server Operators
+1. Allow log on locally
+2. Back up files and directories
+3. Change the system time
+4. Change the time zone
+5. Force shutdown from a remote system
+6. Restore files and directories SeRestorePrivilege
+7. Shut down the system
+
 # Remote Desktop Users
 1. Allow log on through Terminal Services
 
