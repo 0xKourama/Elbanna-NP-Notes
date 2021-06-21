@@ -3,15 +3,48 @@
 # what do you expect from this course?
 # what would you do after you have learned powershell?
 
+# what's the difference between powershell/cmd/bash?
+1. format (powershell follows the verb-noun convention)
+2. powershell is object oriented (allows for filtering and selection) and not plain text
+3. using the .NET framework, PowerShell has soo many functionalities (math operations, GUI, date operations etc.)
+
+# what are the steps of writing a script?
+1. breaking down the task into the smallest steps
+2. finding as much as we can about the details
+3. finding the errors (what could go wrong)
+4. testing, testing & then more testing :D
+
+# what are the main concepts of powershell?
+1. the pipeline --> (multiple operations in a single line of code)
+2. dealing with objects --> (exploring attributes and functionalities)
+3. filtering --> (limiting the objects to just what we need)
+4. sorting --> (highlighing the needed data)
+5. selection --> (getting just the data that we need) (expanding and excluding) (first, last, skipping)
+6. formatting --> (viewing data on the console)
+7. exporting --> (saving output to files)
+8. looping --> (operating on multiple objects) (less code repitition)
+9. flow-control --> (writing smart scripts)
+10. variables --> (storing and working with data)
+11. operators --> (comparison)
+12. Switches & Parameters --> (command diverse functionality)
+
+# what makes want to teach this course?
+1. Passing knowledge
+4. supplying need for the marketplace
+2. Improving productivity
+3. Helping create more skilled system admins
+
 # what would help you understand powershell easier?
 1. asking me all the questions you can
 2. understanding commands, the pipeline, filtering, selection, formatting & exporting
+3. using the get-help command well and using the examples switch
 
 # what makes powershell easy?
 1. standard format for commands (VERB + NOUN)
 2. objects (easily filter)
+3. once understood, your IT life will be a LOT easier
 
-# what do I do?
+# what do I do for a living?
 1. Penetration Testing
 2. Incident Response
 3. Risk Assessment
@@ -21,9 +54,11 @@
 
 # what makes me qualified to teach this course?
 1. learned from the best (MVP Don Jones, Jeff Hicks)
-2. written PowerShell for 2+ years (almost daily)
+2. written PowerShell for 2+ years (almost daily) (tens of thousands in lines of code)
 3. two major projects (IT Toolkit, PowerEye)
-4. I teach PowerShell on a dialy basis
+4. teaching PowerShell on a dialy basis
+5. In-depth knowledge
+6. programming experience
 
 # what should you expect from this course?
 1. having skill to handle ANY task on windows using powershell
@@ -31,7 +66,7 @@
 3. having skill to automate tasks like a BOSS
 
 # what makes powershell important?
-1. automation (speed)
+1. automation (speed) (efficiency with bulk operations)
 2. reporting
 3. analysis
 4. integrates with everything (PowerCLI, Active Directory ... etc)
@@ -77,6 +112,24 @@
 2. storing data in correct format
 3. processing data correctly
 
+# what can you interact with using powershell?
+1. processes
+2. services
+3. scheduled tasks
+4. files
+5. disks
+6. VMs
+7. DNS/DHCP
+8. WSUS
+9. Exchange
+10. active directory
+11. the eventlog
+12. Azure
+13. sharepoint
+14. VMware
+15. PowerCLI
+## inshort: all windows components
+
 # what are the variable types in powershell?
 1. integers
 2. strings
@@ -105,6 +158,7 @@
 # what does the pipeline do? what makes it work?
 1. PSItem variable
 2. input-(command)-output --> input-(command)-output
+3. StdIn, StdOut, StdErr
 
 # what do we do when processing text (logs)?
 1. regular expressions
@@ -128,6 +182,10 @@
 # what are tricks to increase remoting speed?
 1. parallel remoting
 
+# what do we do to pass data into scripts?
+1. argumentlist
+2. finding arguments in the remote scope
+
 # what can we do to improve powershell everyday?
 1. check a random command everyday
 
@@ -149,6 +207,10 @@
 2. get disk space
 3. get RAM percent
 4. get CPU percent
+5. deploy software
+6. uninstall software
+7. restart computers
+8. automate active directory operations (user creation, security groups, OUs, group policies etc.)
 
 # what's important about powershell background jobs?
 1. some tasks need to run in parallel
@@ -163,7 +225,7 @@
 1. repeated use of commands
 
 # what do we do about errors?
-1. try/catch (erroraction preference)
+1. try/catch (erroraction preference) (which errors can be caught?)
 2. ErrorAction parameter
 3. the error object and the $error array
 
@@ -184,3 +246,39 @@
 1. using pause
 2. using the clipboard
 3. learning regular expressions
+4. compare-object
+5. group-object
+6. splatting
+7. timespans
+8. splits, joins & replaces
+9. sleep
+10. colored output
+
+# what makes us use custom objects?
+1. collections of data from multiple sources
+2. clean output and meaningful reports
+
+# what about sending mails?
+1. requirements
+2. HTML format and styling
+3. attachments
+
+# what do we do when we want to loop over data?
+1. loops (do-while, while, foreach, for-loops)
+
+# what do we do to modify stuff in the pipeline?
+1. @{n='';e={}}
+
+# what are modules and what makes them cool?
+1. added functionality
+
+# what are some important math operations?
+1. rounding
+2. power
+3. approximation
+4. absolute
+
+# what confirms if a command succeeded or not?
+1. the $? variable
+2. error handling
+3. the -passthru switch
