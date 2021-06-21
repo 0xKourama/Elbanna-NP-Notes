@@ -22,7 +22,7 @@
 2. dealing with objects --> (exploring attributes and functionalities)
 3. filtering --> (limiting the objects to just what we need)
 4. sorting --> (highlighing the needed data)
-5. selection --> (getting just the data that we need) (expanding and excluding) (first, last, skipping)
+5. selection --> (getting just the data that we need) (expanding and excluding) (first, last, skipping) (finding property names with either get-member or select -first 1 -property *)
 6. formatting --> (viewing data on the console)
 7. exporting --> (saving output to files)
 8. looping --> (operating on multiple objects) (less code repitition)
@@ -75,6 +75,7 @@
 3. having skill to automate tasks like a BOSS
 
 # what makes powershell important?
+0. complete windows environment management
 1. automation (speed) (efficiency with bulk operations)
 2. reporting
 3. analysis
