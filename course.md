@@ -14,6 +14,9 @@
 3. finding the errors (what could go wrong)
 4. testing, testing & then more testing :D
 
+# what is execution policy?
+1. it defines the policy on which powershell runs (restricted, unrestricted, remotesigned)
+
 # what are the main concepts of powershell?
 1. the pipeline --> (multiple operations in a single line of code)
 2. dealing with objects --> (exploring attributes and functionalities)
@@ -23,7 +26,7 @@
 6. formatting --> (viewing data on the console)
 7. exporting --> (saving output to files)
 8. looping --> (operating on multiple objects) (less code repitition)
-9. flow-control --> (writing smart scripts)
+9. flow-control --> (writing smart scripts) (using break & continue)
 10. variables --> (storing and working with data)
 11. operators --> (comparison)
 12. Switches & Parameters --> (command diverse functionality)
@@ -33,6 +36,12 @@
 4. supplying need for the marketplace
 2. Improving productivity
 3. Helping create more skilled system admins
+
+# what does a command do?
+1. create something
+2. read something
+3. update something
+4. delete something
 
 # what would help you understand powershell easier?
 1. asking me all the questions you can
@@ -102,6 +111,8 @@
 2. like/notlike (approximation)
 3. contains/notcontains (arrays/blacklists)
 4. match/notmatch (patterns)
+5. boolean operators (AND/OR etc.)
+6. replacement operators (regular expressions)
 
 # what's the source of computer related information?
 1. WMI (WMI Explorer)
@@ -116,19 +127,18 @@
 1. processes
 2. services
 3. scheduled tasks
-4. files
-5. disks
-6. VMs
-7. DNS/DHCP
-8. WSUS
-9. Exchange
-10. active directory
-11. the eventlog
-12. Azure
-13. sharepoint
-14. VMware
-15. PowerCLI
-## inshort: all windows components
+4. the eventlog
+5. files
+6. disks
+7. Registry
+8. VMs (Hyper-V/VMWare)
+9. DNS/DHCP
+10. WSUS
+11. Exchange
+12. active directory
+13. Azure
+14. sharepoint
+## inshort: all windows/server components & other items
 
 # what are the variable types in powershell?
 1. integers
@@ -253,6 +263,7 @@
 8. splits, joins & replaces
 9. sleep
 10. colored output
+11. sub-expressions
 
 # what makes us use custom objects?
 1. collections of data from multiple sources
