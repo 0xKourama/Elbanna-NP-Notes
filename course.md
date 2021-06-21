@@ -3,6 +3,14 @@
 # what do you expect from this course?
 # what would you do after you have learned powershell?
 
+# what would help you understand powershell easier?
+1. asking me all the questions you can
+2. understanding commands, the pipeline, filtering, selection, formatting & exporting
+
+# what makes powershell easy?
+1. standard format for commands (VERB + NOUN)
+2. objects (easily filter)
+
 # what do I do?
 1. Penetration Testing
 2. Incident Response
@@ -28,8 +36,11 @@
 3. analysis
 4. integrates with everything (PowerCLI, Active Directory ... etc)
 5. Many modules
-6. constantly improved
+6. constantly improved and developed by the PowerShell Team
 7. moving to linux
+8. its installed by default on every computer starting windows 7
+9. gives complete control of domain servers/computers
+10. opens the door for many fields in IT
 
 # what can powershell do?
 1. collect information from computers
@@ -72,7 +83,8 @@
 3. hashtables
 
 # what makes a script?
-1. a series of command
+1. a series of commands
+2. a single scope for variables
 
 # what can we do to make our script smart?
 1. if conditionals
