@@ -1,0 +1,1 @@
+$data.message | % {((($_ ) -split '\n') -replace "^\s+" | ? {$_ -ne ''}) -replace ':\s+',': '; Write-Host -ForegroundColor Yellow ('-' * $Host.UI.RAWUI.MaxWindowSize.Width);pause}
