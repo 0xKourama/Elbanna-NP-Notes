@@ -1,10 +1,10 @@
-# Security Awareness Training:
-
 ```
 # what makes a vulnerability?
 1. program
 2. credentials
 3. information leak
+
+---
 
 # what would make the training good?
 1. people gaining something that would benefit the company (why not benefit them as well)?
@@ -29,6 +29,7 @@
 3. weird (out-of-date) browsers
 4. web application attack demonstration
 ```
+# Security Awareness Training:
 
 # what is the purpose of this session?
 1. increasing security awareness for personal and company use
