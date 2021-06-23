@@ -115,6 +115,8 @@
 
 ## what can be done to resolve this?
 1. Multi-Factor Authentication whenever you can (this adds an easy layer of protection)
+	- What can you do to apply MFA?
+	every modern platform has multi-factor authentication (it would probably be around the Account Settings Area)
 2. generate unique passwords (reusing passwords enables an attacker to have access to more resources with the same data)
 3. generate complex passwords
 4. A long simple password might work just fine
