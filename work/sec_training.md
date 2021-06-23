@@ -45,6 +45,18 @@
 
 ---
 
+# what is the most simple and effective step we can take to improve our defense?
+1. improving password security
+
+---
+
+# what are the statistics?
+1. 51% reuse passwords across their business and personal accounts
+2. 67% do not use any form of two-factor authentication in their personal life, and 55% do not use it at work
+3. 57% expressed a preference for a login method that does not involve the use of passwords
+
+---
+
 # what would give an attacker access to your passwords?
 1. malicious links (clicking on ads, scareware, suspicious emails)
 2. Insecure websites = access to your browser and the passwords it contains
@@ -122,4 +134,4 @@
 ## what would stop a hacker after he has got your password?
 1. MFA (what's good about it? 1. easy to implement)
 2. Access list (trusted devices)
-3. frequent changes (a hacker needs time to be able to put your password to use)
+3. password rotation (a hacker needs time to be able to put your password to use)
