@@ -55,7 +55,7 @@
 3. a password is the most basic form of security
 
 ## what is an attacker doing?
-1. getting all employee names and collecting as much personal data about them to be used to generate passwords
+1. getting all employee names and collecting as much personal data about them to be used to generate usernames & passwords
 2. looking for all ways to access a network and applying those passwords to them using different techniques
 
 ## what are the ways a password can be exploited?
