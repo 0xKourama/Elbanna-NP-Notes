@@ -71,11 +71,6 @@
 
 ---
 
-## what an added benefit for this?
-1. it's good safety for all your data (addresses, bank account data, payment cards)
-
----
-
 ## what makes password-based attacks so powerful?
 1. makes an attacker login in an authorized way (you enter the house from the main door)
 2. doesn't matter how secure a system is once a password is taken
@@ -97,9 +92,9 @@
 ---
 
 ###	password list generation:
-1. common passwords
+1. common passwords (password lists)
 2. pattern guessing
-3. personal-data-based guessing (using birthdays, son/daughter names, nicknames and combinations of them)
+3. personal-data-based guessing (using birthdays, phone numbers, son/daughter names, nicknames and combinations of them)
 4. personal password reuse
 5. using letter translation methods for predictable passwords (using @ instead of A, $ intead of S)
 
@@ -109,7 +104,12 @@
 1. long and simple vs. short and complex
 2. easy to remember and hard to guess
 3. stay away from variations of the word password (ex: P@$$w0rD)
-4. rotation
+4. rotation (only useful if you're going to make a considerable change) (adding 1 or 123 at the end doesn't count)
+
+---
+
+## what can you do to generate & test your password strength?
+https://www.lastpass.com/password-generator
 
 ---
 
@@ -119,17 +119,22 @@
 	every modern platform has multi-factor authentication (it would probably be around the Account Settings Area)
 2. generate unique passwords (reusing passwords enables an attacker to have access to more resources with the same data)
 3. generate complex passwords
-4. A long simple password might work just fine
+4. A long simple password might work just fine if you want to have a memorable password
 
 ---
 
-## what's a good place to store passwords? what's a good name for the file containing passwords?
-1. Google chrome (best for browser-based applications)
+## what's a good place to store passwords?
+1. A password manager (lastpass, dashlane)
 2. Uncommon areas (avoiding common areas like (desktop, downloads, documents ..etc. is a good practice))
 3. Uncommon names for the credentials file (naming the file 'passwords.txt or credentials.csv' is good to express the purpose ... but also makes things easy for the attacker)
-4. Using a physical item to store passwords will limit the password access to people with physical access
-5. A password manager (lastpass, dashlane)
-6. google keep archive
+4. Google chrome (best for browser-based applications)
+5. Using a physical item to store passwords will limit the password access to people with physical access
+
+---
+
+## what's the benefit of using a password manager?
+1. just one master password to remember or keep
+2. freedom to generate and use complex passwords
 
 ---
 
@@ -137,3 +142,8 @@
 1. MFA (what's good about it? 1. easy to implement)
 2. Access list (trusted devices)
 3. password rotation (a hacker needs time to be able to put your password to use)
+
+---
+
+## what would you gain with improving password security?
+1. safety (your bank accounts, personal information & other important data would safer)
