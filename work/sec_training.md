@@ -8,7 +8,6 @@
 8. What would stop/slow down a hacker if he has gotten your password?
 9. What would you and I gain with improving password security?
 
-
 ```
 # what makes a vulnerability?
 1. program
