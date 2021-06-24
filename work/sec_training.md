@@ -1,3 +1,14 @@
+1. The purpose of the session
+2. What makes WorldPosta a valuable target for hackers?
+3. The first thing an attacker tries and the various techniques of passwords attacks
+4. The statistics worldwide regarding passwords
+5. The most simple and effective step we can take to improve our defens
+6. The challenge with passwords and what makes a good one
+7. Password Managers: what makes managing many strong passwords simpler & easier
+8. What would stop/slow down a hacker if he has gotten your password?
+9. What would you and I gain with improving password security?
+
+
 ```
 # what makes a vulnerability?
 1. program
@@ -31,7 +42,7 @@
 ```
 # Security Awareness Training:
 
-# what is the purpose of this session?
+# what is the purpose of the session?
 1. increasing security awareness for personal and company use
 2. increasing company security
 3. eliminate easy ways for an attacker to gain access
