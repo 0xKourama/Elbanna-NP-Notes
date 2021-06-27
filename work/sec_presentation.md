@@ -1,7 +1,7 @@
 # The purpose of the session
-1. `Removing the easy ways` a hacker can compromise our network
+1. Showing the importance of security
 2. Increasing `overall awareness` of our security situation
-3. Showing the importance of security
+3. `Removing the easy ways` a hacker can compromise our network through personal accounts
 
 # What makes WorldPosta a valuable target for hackers?
 1. `data of 200+ clients` presents a chance for hackers to make `millions of dollars`
