@@ -8,3 +8,4 @@ Disable-LocalUser -Name <LOCALUSER>
 Get-ADUSer -Filter {Name -eq '<LOCALUSER>'} | Disable-ADAccount 
 
 # what changes the password for local/domain user?
+fine-grained password policy
