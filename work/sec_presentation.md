@@ -8,7 +8,7 @@
 # What would get us hacked?
 1. being unaware of magnitude of the threat
 2. taking security lightly
-3. prefering convenience over safety (leaving your house's door is convenient but you will get robbed for sure)
+3. valuing convenience over safety (leaving your house's door is convenient but you will get robbed for sure)
 4. leaving all responibility in the hands of the security team
 
 # The first thing an attacker tries and the various techniques of passwords attacks
