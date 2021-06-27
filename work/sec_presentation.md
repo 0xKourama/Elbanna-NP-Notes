@@ -40,7 +40,7 @@
 
 *this makes passwords attacks the easiest and simplest way to gain access*
 
-*what's good is that fixing this is also easy and simple*
+*what's good .... is that fixing this is also easy and simple*
 
 # The `most simple and effective step` we can take to improve our defense
 1. Having *good password hygeine*
@@ -53,13 +53,21 @@
 3. unique
 4. unpredictable
 
+*what we need is a safe way to store many strong passwords*
+
 # Password Managers: what makes managing many strong passwords simpler & easier
 1. Having a master password for `all your strong passwords`
 
-# What if the password manager company got hacked?
-`not that easy`
-1. you would know from the news
-2. you would have `enough time to change your passwords` in that scenario
+# what makes you trust password manager companies?
+1. zero-knowledge model: they don't know your passwords
+2. two-step verification is required for all employees inside
+3. white-hat hackers are continously testing the application for vulnerabilities to improve their security
+4. a very elite group of hackers would need significant effort and help from the inside to accomplish such task
+
+# what can keep us safe in the chance they got hacked?
+1. Not that easy, In case of a breach, lastPass has teams for incident response ready to act immediately
+2. you would know from the news
+3. you would have `enough time to change your passwords` in that scenario
 
 # What would stop/slow down a hacker if he has gotten your password?
 1. Multi-factor authentication
