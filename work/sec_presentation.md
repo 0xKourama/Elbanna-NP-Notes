@@ -47,7 +47,7 @@
 2. Routine password changes for high-value credentials (a bank safe's password gets changed daily)
 
 # What would you and I gain with improving password security?
-1. job safety (your company loses = you lose)
+1. job safety (your company's loss = your loss)
 2. personal account safety
 	1. facebook hacked = extortion
 	2. bank account hacked = bankrupcy
