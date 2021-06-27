@@ -86,3 +86,4 @@
 `getting used to a good authentication strategy only requires time`
 
 # what are your concerns? what still requires clarification?
+# what have you learned from the session? what would be your next step?
