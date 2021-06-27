@@ -7,6 +7,13 @@
 1. `data of 200+ clients` presents a chance for hackers to make `millions of dollars`
 2. a group hackers `wouldn't mind investing a year in hacking us` (hacking 200 companies in a single go isn't a waste of time at all)
 
+# What would happen if we got hacked?
+1. many `clients' data and business could be at risk`
+2. many people could `lose their jobs` if the attack was successful
+3. many `lawsuits could be raised` against us if the cause of breach was from our end
+
+*putting such important data at risk could have major consequences*
+
 # What would get us hacked?
 1. Being `unaware of magnitude of the threat`
 2. Taking security lightly
