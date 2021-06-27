@@ -1,4 +1,5 @@
 # The purpose of the session
+0. Sharing Knowledge of what hackers do
 1. Showing the importance of security
 2. Increasing `overall awareness` of our security situation
 3. `Increasing motivation` for improving security in the organization
@@ -9,6 +10,7 @@
 # What makes WorldPosta a valuable target for hackers?
 1. `data of 200+ clients` presents a chance for hackers to make `millions of dollars`
 2. a group hackers `wouldn't mind investing a year in hacking us` (hacking 200 companies in a single go isn't a waste of time at all)
+3. holding data ransom = good money if you have data for 200 clients
 
 *it's not a bad idea for hacker to want to get us*
 
@@ -84,6 +86,12 @@
 2. `enabling MFA` is usually `very easy` as answering a text containing a verification code
 
 `getting used to a good authentication strategy only requires time`
+
+
+# to sum up:
+1. your company is a target so don't take security lightly
+2. your password is important but easy to improve
+3. use a password manager
 
 # what are your concerns? what still requires clarification?
 # what have you learned from the session? what would be your next step?
