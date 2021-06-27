@@ -9,7 +9,7 @@
 1. being unaware of magnitude of the threat
 2. taking security lightly
 3. valuing convenience over safety (leaving your house's door is convenient but you will get robbed for sure)
-4. leaving all responibility in the hands of the security team
+4. leaving all security responibility in the hands of the Security team ... Collaboration is the way to go
 
 # The first thing an attacker tries and the various techniques of passwords attacks
 1. trying common passwords (summer2021)
