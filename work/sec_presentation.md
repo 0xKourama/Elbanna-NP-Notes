@@ -7,17 +7,17 @@
 2. a group hackers `wouldn't mind investing a year in hacking us` (hacking 200 companies in a single go isn't a waste of time at all)
 
 # What would get us hacked?
-1. being `unaware of magnitude of the threat`
-2. taking security lightly
-3. valuing `convenience over safety` (leaving your house's door is convenient but you will get robbed for sure)
+1. Being `unaware of magnitude of the threat`
+2. Taking security lightly
+3. Valuing `convenience over safety` (leaving your house's door is convenient but you will get robbed for sure)
 4. Putting `all security responibility on the shoulders of the Security team` ... `Collaboration is the way to go`
 
 # The `first thing` an attacker tries and the various techniques of passwords attacks
 *looking for ways to log in and gain access*
-1. trying `common passwords` (summer2021)
-2. guessing passwords using personal data from employee social media
-3. guessing passwords based on company name
-4. applying the credentials to any login page
+1. Trying `common passwords` (summer2021)
+2. Guessing passwords using personal data from employee social media
+3. Guessing passwords based on company name (any password including Roaya/WorldPosta)
+4. Applying the credentials to any available login form
 
 # The statistics worldwide regarding passwords
 1. 51% `reuse passwords` across their `business` and `personal` accounts
