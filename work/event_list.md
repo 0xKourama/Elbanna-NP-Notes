@@ -8,6 +8,10 @@
 4740, #user locked out
 4767, #user unlocked
 4781, #user name changed
+4741, #Computer account created
+4742, #Computer account changed
+4743, #Computer account was deleted
+4764, #Groups type changed
 4731, #local sec group created
 4735, #local sec group changed
 4734, #local sec group deleted
@@ -38,15 +42,11 @@
 4763, #universal distribution group deleted
 4761, #universal distribution group member added
 4762, #universal distribution group member removed
-5136
-5137
-5138
-5139
-5141
-4794
-5376
-5377
-4741
-4742
-4743
-4764
+5137, #ADobject Created
+5136, #ADObject Modified
+5139, #ADObject Moved
+5141, #ADObject deleted
+5138, #ADObject Undeleted
+4794, #Attempt to set DSRM Administrator password
+5376, #Credential Manager credentials backed up
+5377, #Credential Manager credentials restored from backedup
