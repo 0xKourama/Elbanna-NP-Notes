@@ -1,55 +1,52 @@
-[ ] 4661 (too deep)
-[ ] 4662 (Of course I don't recommend auditing read only accesses on AD objects since the value is questionable and would typically generate many, many events.  So on the whole I regard this event as noise and recommend disabling the "Directory Service Access" subcategory in your audit policy on domain controllers.)
-[+] 5136 (better than 4662)
-[+] 5137
-[+] 5138
-[+] 5139 (AD Move)
-[+] 5141
-[+] 4720
-[+] 4722
-[ ] 4723
-[ ] 4724 (already done)
-[+] 4725
-[+] 4726
-[+] 4738
-[+] 4740
-[+] 4767
-[ ] 4780
-[+] 4781
-[+] 4794
-[+] 5376
-[+] 5377
-[+] 4741
-[+] 4742
-[+] 4743
-[+] 4727
-[ ] 4728 (already done)
-[ ] 4729 (already done)
-[+] 4730
-[+] 4731
-[ ] 4732 (already done)
-[+] 4733
-[ ] 4734
-[ ] 4735
-[ ] 4737
-[+] 4754
-[ ] 4755
-[+] 4756
-[+] 4757
-[+] 4758
-[+] 4764
-[+] 4744
-[+] 4745
-[+] 4746
-[+] 4747
-[+] 4748
-[+] 4749
-[+] 4750
-[+] 4751
-[+] 4752
-[+] 4753
-[+] 4759
-[+] 4760
-[+] 4761
-[+] 4762
-[+] 4763
+4720, #user created
+4726, #user deleted
+4722, #user enabled
+4725, #user disabled
+4723, #user changed his own password
+4724, #admin changed a user's password
+4738, #user changed
+4740, #user locked out
+4767, #user unlocked
+4781, #user name changed
+4731, #local sec group created
+4735, #local sec group changed
+4734, #local sec group deleted
+4732, #local sec group member added
+4733, #local sec group member removed
+4727, #global sec group created
+4737, #global sec group changed
+4730, #global sec group deleted
+4728, #global sec group member added
+4729, #global sec group member removed
+4754, #universal sec group created
+4755, #universal sec group changed
+4758, #universal sec group deleted
+4756, #universal sec group member added
+4757, #universal sec group member removed
+4744, #local distribution group created
+4745, #local distribution group changed
+4748, #local distribution group deleted
+4746, #local distribution group member added
+4747, #local distribution group member removed
+4749, #global distribution group created
+4750, #global distribution group changed
+4753, #global distribution group deleted
+4751, #global distribution group member added
+4752, #global distribution group member removed
+4759, #universal distribution group created
+4760, #universal distribution group changed
+4763, #universal distribution group deleted
+4761, #universal distribution group member added
+4762, #universal distribution group member removed
+5136
+5137
+5138
+5139
+5141
+4794
+5376
+5377
+4741
+4742
+4743
+4764
