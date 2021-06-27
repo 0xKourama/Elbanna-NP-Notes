@@ -6,10 +6,9 @@
 2. a group hackers wouldn't mind investing a year in hacking us (hacking 200 companies in a single go isn't a waste of time at all)
 
 # What would get us hacked?
-1. being unaware of magnitude of the threat
-2. taking security lightly
-3. valuing convenience over safety (leaving your house's door is convenient but you will get robbed for sure)
-4. leaving all security responibility in the hands of the Security team ... Collaboration is the way to go
+1. being unaware of magnitude of the threat makes us take security lightly
+2. valuing convenience over safety (leaving your house's door is convenient but you will get robbed for sure)
+3. Putting all security responibility on the shoulders of the Security team ... `Collaboration is the way to go`
 
 # The first thing an attacker tries and the various techniques of passwords attacks
 1. trying common passwords (summer2021)
