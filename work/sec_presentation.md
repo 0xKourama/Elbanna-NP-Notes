@@ -4,9 +4,13 @@
 3. `Increasing motivation` for improving security in the organization
 4. `Removing the easy ways` a hacker can compromise our network through personal accounts
 
+*Attention and diligence is what we can do to improve our safety*
+
 # What makes WorldPosta a valuable target for hackers?
 1. `data of 200+ clients` presents a chance for hackers to make `millions of dollars`
 2. a group hackers `wouldn't mind investing a year in hacking us` (hacking 200 companies in a single go isn't a waste of time at all)
+
+*it's not a bad idea for hacker to want to get us*
 
 # What would happen if we got hacked?
 1. many `clients' data and business could be at risk`
@@ -22,7 +26,9 @@
 4. Putting `all security responibility on the shoulders of the Security team` ... `Collaboration is the way to go`
 
 # The `first thing` an attacker tries and the various techniques of passwords attacks
+
 *looking for ways to log in and gain access*
+
 1. Trying `common passwords` (summer2021)
 2. Guessing passwords using personal data from employee social media
 3. Guessing passwords based on company name (any password including Roaya/WorldPosta)
@@ -31,6 +37,10 @@
 # The statistics worldwide regarding passwords
 1. 51% `reuse passwords` across their `business` and `personal` accounts
 2. 67% do not use `any form of two-factor authentication` in their personal life, and 55% do not use it at work
+
+*this makes passwords attacks the easiest and simplest way to gain access*
+
+*what's good is that fixing this is also easy and simple*
 
 # The `most simple and effective step` we can take to improve our defense
 1. Having *good password hygeine*
