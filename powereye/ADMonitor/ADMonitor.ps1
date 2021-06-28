@@ -30,23 +30,23 @@ $Script = {
 
         [Event]@{ID=4764; Title='A Group type was changed'}
 
-        [Event]@{ID=4731; Title='Local sec group created'}
-        [Event]@{ID=4735; Title='Local sec group changed'}
-        [Event]@{ID=4734; Title='Local sec group deleted'}
-        [Event]@{ID=4732; Title='Local sec group member added'}
-        [Event]@{ID=4733; Title='Local sec group member removed'}
+        [Event]@{ID=4731; Title='Local security group created'}
+        [Event]@{ID=4735; Title='Local security group changed'}
+        [Event]@{ID=4734; Title='Local security group deleted'}
+        [Event]@{ID=4732; Title='Local security group member added'}
+        [Event]@{ID=4733; Title='Local security group member removed'}
 
-        [Event]@{ID=4727; Title='Global sec group created'}
-        [Event]@{ID=4737; Title='Global sec group changed'}
-        [Event]@{ID=4730; Title='Global sec group deleted'}
-        [Event]@{ID=4728; Title='Global sec group member added'}
-        [Event]@{ID=4729; Title='Global sec group member removed'}
+        [Event]@{ID=4727; Title='Global security group created'}
+        [Event]@{ID=4737; Title='Global security group changed'}
+        [Event]@{ID=4730; Title='Global security group deleted'}
+        [Event]@{ID=4728; Title='Global security group member added'}
+        [Event]@{ID=4729; Title='Global security group member removed'}
 
-        [Event]@{ID=4754; Title='Universal sec group created'}
-        [Event]@{ID=4755; Title='Universal sec group changed'}
-        [Event]@{ID=4758; Title='Universal sec group deleted'}
-        [Event]@{ID=4756; Title='Universal sec group member added'}
-        [Event]@{ID=4757; Title='Universal sec group member removed'}
+        [Event]@{ID=4754; Title='Universal security group created'}
+        [Event]@{ID=4755; Title='Universal security group changed'}
+        [Event]@{ID=4758; Title='Universal security group deleted'}
+        [Event]@{ID=4756; Title='Universal security group member added'}
+        [Event]@{ID=4757; Title='Universal security group member removed'}
 
         [Event]@{ID=4744; Title='Local distribution group created'}
         [Event]@{ID=4745; Title='Local distribution group changed'}
@@ -82,17 +82,17 @@ $Script = {
 
     foreach($Event in $EventList){
         $XML_Path = "C:\Users\Public\ADMon_Event_$($Event.ID)`_LastCheck.xml"
-        #region if the date of last query is found, we query events from that point forward, otherwise, we query all events
-        #if(!(Test-Path -Path $XML_Path)){
+        region if the date of last query is found, we query events from that point forward, otherwise, we query all events
+        if(!(Test-Path -Path $XML_Path)){
             $CollectedEvents = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $Event.ID} |
-                               Select-Object -Property Message, TimeCreated -First 5
-        <#}
+                               Select-Object -Property Message, TimeCreated
+        }
         else{
             $CollectedEvents = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $Event.ID; StartTime = Import-Clixml -Path $XML_Path} |
                                Select-Object -Property Message, TimeCreated
-        }#>
+        }
         #update the tracker XML file
-        #Get-Date | Export-Clixml -Path $XML_Path
+        Get-Date | Export-Clixml -Path $XML_Path
         #endregion
 
         #region parse event messages into an object
