@@ -73,36 +73,37 @@ $Script = {
         5377  #Credential Manager credentials restored from backedup
     )
 
-    $XML_Path = "C:\Users\Public\Event_$EventID`_LastCheck.xml"
-
     $Results = @()
 
-    #region if the date of last query is found, we query events from that point forward, otherwise, we query all events
-    if(!(Test-Path -Path $XML_Path)){
-        $Events = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID} |
-                  Select-Object -Property Message, TimeCreated
-    }
-    else{
-        $Events = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID; StartTime = Import-Clixml -Path $XML_Path} |
-                  Select-Object -Property Message, TimeCreated
-    }
-    #update the tracker XML file
-    Get-Date | Export-Clixml -Path $XML_Path
-    #endregion
-
-    #region parse event messages into an object
-    $Events | ForEach-Object {
-        $Message = $_.Message -split '\n'
-
-        $Results += [PSCustomObject][Ordered]@{
-            ComputerName  = $env:COMPUTERNAME
-            Date          = $_.TimeCreated
-            SID           = ($Message | Select-String -Pattern '^\s+Security ID:\s+(.*)\s+$').Matches.Groups[1].Value
-            AccountName   = ($Message | Select-String -Pattern '^\s+Account Name:\s+(.*)\s+$').Matches.Groups[1].Value
-            AccountDomain = ($Message | Select-String -Pattern '^\s+Domain Name:\s+(.*)\s+$').Matches.Groups[1].Value
+    foreach($EventID in $EventList){
+        $XML_Path = "C:\Users\Public\ADMon_Event_$EventID`_LastCheck.xml"
+        #region if the date of last query is found, we query events from that point forward, otherwise, we query all events
+        if(!(Test-Path -Path $XML_Path)){
+            $Events = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID} |
+                      Select-Object -Property Message, TimeCreated
         }
+        else{
+            $Events = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID; StartTime = Import-Clixml -Path $XML_Path} |
+                      Select-Object -Property Message, TimeCreated
+        }
+        #update the tracker XML file
+        Get-Date | Export-Clixml -Path $XML_Path
+        #endregion
+
+        #region parse event messages into an object
+
+        if($Events){
+            Foreach ($Event in $Events) {
+                $Message = $_.Message -split '\n'
+                $Results += [PSCustomObject][Ordered]@{
+                    ComputerName  = $env:COMPUTERNAME
+                    TimeGenerated = $Event.TimeCreated
+                    Content       = $Event.Message | ForEach-Object {((($_ ) -split '\n') -replace "^\s+" | ? {$_ -ne ''}) -replace ':\s+',': '}
+                }
+            }        
+        }
+        #endregion
     }
-    #endregion
 
     Write-Output $Results
 }
@@ -115,10 +116,10 @@ $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Prope
 #invoke the script over the remote computers
 $Result = Invoke-Command -ComputerName $Online -ScriptBlock $Script |
           Select-Object -Property * -ExcludeProperty RunSpaceID, PSShowComputerName, PSComputerName |
-          Sort-Object -Property ChangeDate -Descending
+          Sort-Object -Property TimeGenerated -Descending
 
 if($Result){
-    Write-Output "$(Get-Date) [!] Security Event log clear(s) detected. Sending mail."
+    Write-Output "$(Get-Date) [!] AD Changes detected. Sending mail."
     Write-Output $Result
 
     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Result | ConvertTo-Html)"
