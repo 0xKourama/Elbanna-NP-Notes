@@ -7,98 +7,104 @@ $Script = {
     #supress errors, only error is when there are no logs matching the criteria
     $ErrorActionPreference = 'SilentlyContinue'
 
+    Class Event{
+        [Int]$ID
+        [String]$Title
+    }
+
     $EventList = @(
-        4720, #user created
-        4726, #user deleted
-        4722, #user enabled
-        4725, #user disabled
-        4723, #user changed his own password
-        4724, #admin changed a user's password
-        4738, #user changed
-        4740, #user locked out
-        4767, #user unlocked
-        4781, #user name changed
+[Event]@{ID=4720; Title='user created'}
+        [Event]@{ID=4726; Title='user deleted'}
+        [Event]@{ID=4722; Title='user enabled'}
+        [Event]@{ID=4725; Title='user disabled'}
+        [Event]@{ID=4723; Title='user changed his own password'}
+        [Event]@{ID=4724; Title='admin changed a user password'}
+        [Event]@{ID=4738; Title='user changed'}
+        [Event]@{ID=4740; Title='user locked out'}
+        [Event]@{ID=4767; Title='user unlocked'}
+        [Event]@{ID=4781; Title='user name changed'}
 
-        4741, #Computer account created
-        4742, #Computer account changed
-        4743, #Computer account was deleted
+        [Event]@{ID=4741; Title='Computer account created'}
+        [Event]@{ID=4742; Title='Computer account changed'}
+        [Event]@{ID=4743; Title='Computer account was deleted'}
 
-        4764, #Groups type changed
+        [Event]@{ID=4764; Title='Groups type changed'}
 
-        4731, #local sec group created
-        4735, #local sec group changed
-        4734, #local sec group deleted
-        4732, #local sec group member added
-        4733, #local sec group member removed
+        [Event]@{ID=4731; Title='local sec group created'}
+        [Event]@{ID=4735; Title='local sec group changed'}
+        [Event]@{ID=4734; Title='local sec group deleted'}
+        [Event]@{ID=4732; Title='local sec group member added'}
+        [Event]@{ID=4733; Title='local sec group member removed'}
 
-        4727, #global sec group created
-        4737, #global sec group changed
-        4730, #global sec group deleted
-        4728, #global sec group member added
-        4729, #global sec group member removed
+        [Event]@{ID=4727; Title='global sec group created'}
+        [Event]@{ID=4737; Title='global sec group changed'}
+        [Event]@{ID=4730; Title='global sec group deleted'}
+        [Event]@{ID=4728; Title='global sec group member added'}
+        [Event]@{ID=4729; Title='global sec group member removed'}
 
-        4754, #universal sec group created
-        4755, #universal sec group changed
-        4758, #universal sec group deleted
-        4756, #universal sec group member added
-        4757, #universal sec group member removed
+        [Event]@{ID=4754; Title='universal sec group created'}
+        [Event]@{ID=4755; Title='universal sec group changed'}
+        [Event]@{ID=4758; Title='universal sec group deleted'}
+        [Event]@{ID=4756; Title='universal sec group member added'}
+        [Event]@{ID=4757; Title='universal sec group member removed'}
 
-        4744, #local distribution group created
-        4745, #local distribution group changed
-        4748, #local distribution group deleted
-        4746, #local distribution group member added
-        4747, #local distribution group member removed
+        [Event]@{ID=4744; Title='local distribution group created'}
+        [Event]@{ID=4745; Title='local distribution group changed'}
+        [Event]@{ID=4748; Title='local distribution group deleted'}
+        [Event]@{ID=4746; Title='local distribution group member added'}
+        [Event]@{ID=4747; Title='local distribution group member removed'}
 
-        4749, #global distribution group created
-        4750, #global distribution group changed
-        4753, #global distribution group deleted
-        4751, #global distribution group member added
-        4752, #global distribution group member removed
+        [Event]@{ID=4749; Title='global distribution group created'}
+        [Event]@{ID=4750; Title='global distribution group changed'}
+        [Event]@{ID=4753; Title='global distribution group deleted'}
+        [Event]@{ID=4751; Title='global distribution group member added'}
+        [Event]@{ID=4752; Title='global distribution group member removed'}
 
-        4759, #universal distribution group created
-        4760, #universal distribution group changed
-        4763, #universal distribution group deleted
-        4761, #universal distribution group member added
-        4762, #universal distribution group member removed
+        [Event]@{ID=4759; Title='universal distribution group created'}
+        [Event]@{ID=4760; Title='universal distribution group changed'}
+        [Event]@{ID=4763; Title='universal distribution group deleted'}
+        [Event]@{ID=4761; Title='universal distribution group member added'}
+        [Event]@{ID=4762; Title='universal distribution group member removed'}
 
-        5137, #ADobject Created
-        5136, #ADObject Modified
-        5139, #ADObject Moved
-        5141, #ADObject deleted
-        5138, #ADObject Undeleted
+        [Event]@{ID=5137; Title='ADobject Created'}
+        [Event]@{ID=5136; Title='ADObject Modified'}
+        [Event]@{ID=5139; Title='ADObject Moved'}
+        [Event]@{ID=5141; Title='ADObject deleted'}
+        [Event]@{ID=5138; Title='ADObject Undeleted'}
 
-        4794, #Attempt to set DSRM Administrator password
+        [Event]@{ID=4794; Title='Attempt to set DSRM Administrator password'}
 
-        5376, #Credential Manager credentials backed up
-        5377  #Credential Manager credentials restored from backedup
+        [Event]@{ID=5376; Title='Credential Manager credentials backed up'}
+        [Event]@{ID=5377; Title='Credential Manager credentials restored from backedup'}
     )
 
     $Results = @()
 
-    foreach($EventID in $EventList){
-        $XML_Path = "C:\Users\Public\ADMon_Event_$EventID`_LastCheck.xml"
+    foreach($Event in $EventList){
+        $XML_Path = "C:\Users\Public\ADMon_Event_$($Event.ID)`_LastCheck.xml"
         #region if the date of last query is found, we query events from that point forward, otherwise, we query all events
-        if(!(Test-Path -Path $XML_Path)){
-            $Events = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID} |
-                      Select-Object -Property Message, TimeCreated
-        }
+        #if(!(Test-Path -Path $XML_Path)){
+            $CollectedEvents = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $Event.ID} |
+                               Select-Object -Property Message, TimeCreated
+        <#}
         else{
-            $Events = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $EventID; StartTime = Import-Clixml -Path $XML_Path} |
-                      Select-Object -Property Message, TimeCreated
-        }
+            $CollectedEvents = Get-WinEvent -FilterHashtable @{LogName = 'Security'; ID = $Event.ID; StartTime = Import-Clixml -Path $XML_Path} |
+                               Select-Object -Property Message, TimeCreated
+        }#>
         #update the tracker XML file
-        Get-Date | Export-Clixml -Path $XML_Path
+        #Get-Date | Export-Clixml -Path $XML_Path
         #endregion
 
         #region parse event messages into an object
 
-        if($Events){
-            Foreach ($Event in $Events) {
+        if($CollectedEvents){
+            Foreach ($CollectedEvent in $CollectedEvents) {
                 $Message = $_.Message -split '\n'
                 $Results += [PSCustomObject][Ordered]@{
                     ComputerName  = $env:COMPUTERNAME
-                    TimeGenerated = $Event.TimeCreated
-                    Content       = $Event.Message | ForEach-Object {((($_ ) -split '\n') -replace "^\s+" | ? {$_ -ne ''}) -replace ':\s+',': '}
+                    Title         = $Event.Title
+                    TimeGenerated = $CollectedEvent.TimeCreated
+                    Content       = $CollectedEvent.Message | ForEach-Object {"<p>$(((($_ ) -split '\n') -replace "^\s+" | ? {$_ -ne ''}) -replace ':\s+',': ')</p>"}
                 }
             }        
         }
@@ -111,7 +117,7 @@ $Script = {
 Import-Module '..\UtilityFunctions.ps1'
 
 #testing connectivity for all domain computers
-$Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address}).Name
+$Online = Return-ADOnlineComputers
 
 #invoke the script over the remote computers
 $Result = Invoke-Command -ComputerName $Online -ScriptBlock $Script |

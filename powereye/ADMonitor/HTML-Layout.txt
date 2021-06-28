@@ -1,4 +1,4 @@
-$Header = "<h3>Computer Domain Join</h3>"
+$Header = "<h3>AD Monitor</h3>"
 
 $Style = @"
 <style>
@@ -14,7 +14,7 @@ table{
 h3{
     color: white;
     padding: 3px;
-    background-color: #2cc900;
+    background-color: #fc9d03;
     text-align: Center;
     border: 2px solid black;
 }
