@@ -63,7 +63,7 @@ Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
         [Event]@{ID=4762; Title='Universal distribution group member removed'}
 
         [Event]@{ID=5137; Title='ADobject Created'}
-        [Event]@{ID=5136; Title='ADObject Modified'}
+        #[Event]@{ID=5136; Title='ADObject Modified'}
         [Event]@{ID=5139; Title='ADObject Moved'}
         [Event]@{ID=5141; Title='ADObject deleted'}
         [Event]@{ID=5138; Title='ADObject Undeleted'}
@@ -72,6 +72,8 @@ Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
         [Event]@{ID=5376; Title='Credential Manager credentials backed up'}
         [Event]@{ID=5377; Title='Credential Manager credentials restored from backedup'}
+
+        [Event]@{ID=5136; Title='ADObject Modified'}
     )
 
 $Script = {
@@ -149,7 +151,7 @@ $Script = {
         [Event]@{ID=4762; Title='Universal distribution group member removed'}
 
         [Event]@{ID=5137; Title='ADobject Created'}
-        [Event]@{ID=5136; Title='ADObject Modified'}
+        #[Event]@{ID=5136; Title='ADObject Modified'}
         [Event]@{ID=5139; Title='ADObject Moved'}
         #[Event]@{ID=5141; Title='ADObject deleted'}
         [Event]@{ID=5138; Title='ADObject Undeleted'}
@@ -158,6 +160,8 @@ $Script = {
 
         [Event]@{ID=5376; Title='Credential Manager credentials backed up'}
         [Event]@{ID=5377; Title='Credential Manager credentials restored from backedup'}
+
+        [Event]@{ID=5136; Title='ADObject Modified'}
     )
 
     $Results = @()
