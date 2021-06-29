@@ -1,5 +1,3 @@
-$Header = "<h3>Disk Usage Warning</h3>"
-
 $Style = @"
 <style>
 th, td {

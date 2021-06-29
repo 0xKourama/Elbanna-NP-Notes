@@ -56,6 +56,9 @@ $UsersWithActivity | ForEach-Object {
     }
 }
 
+#export solidadmin script activity
+$Results | Where-Object {$_.User -eq 'ROAYA\solidadmin'} | Select-Object -Property ComputerName, Date, Command | Export-Csv -NoTypeInformation -Append Solid_PowerShell_Activity.csv
+
 $UnAuthorizedUsage = $Results | Where-Object {$PowerShellUserList -notcontains $_.User}
 
 if($UnAuthorizedUsage){

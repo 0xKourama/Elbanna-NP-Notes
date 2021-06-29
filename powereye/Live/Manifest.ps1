@@ -81,7 +81,7 @@ $Modules = @(
     #12
     [Module]@{
         Enabled = $true
-        Name = 'Local Admin Creation'
+        Name = 'Local Security Group Addition'
         RunInterval = New-TimeSpan -Minutes 10
     }
     #13
@@ -142,6 +142,18 @@ $Modules = @(
     [Module]@{
         Enabled = $true
         Name = 'UnAuthorized PowerShell Usage'
+        RunInterval = New-TimeSpan -Minutes 10
+    }
+    #23
+    [Module]@{
+        Enabled = $true
+        Name = 'AD Monitor'
+        RunInterval = New-TimeSpan -Minutes 10
+    }
+    #24
+    [Module]@{
+        Enabled = $true
+        Name = 'Unprotected OUs Detected'
         RunInterval = New-TimeSpan -Minutes 10
     }
 )

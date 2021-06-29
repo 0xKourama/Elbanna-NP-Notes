@@ -8,6 +8,9 @@ $Groups = @(
     'Power Users'
     'Backup Operators'
     'Remote Desktop Users'
+    'Server Operators'
+    'Network Configuration Operators'
+    'WSUS Administrators'
 )
 
 $LocalGroupScript = {

@@ -555,14 +555,14 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : abrahamsdescendantsafterhim.org
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
-SRVConfigured   : True
-SPFConfigured   : True
-DKIMConfigured  : True
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Not Configured
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
@@ -630,13 +630,13 @@ MX2             : True
 MX3             : True
 MX4             : True
 MXConfiguration : Fully Configured
-SRVConfigured   : True
+SRVConfigured   : False
 SPFConfigured   : True
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : acumaticaeg.com
 MX1             : False
@@ -648,9 +648,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS name does not exist
-TXTError        : DNS name does not exist
-SRVError        : DNS name does not exist
+MXError         : DNS server failure
+TXTError        : DNS server failure
+SRVError        : DNS server failure
 
 Domain          : adalaa.com
 MX1             : True
@@ -812,13 +812,13 @@ MX2             : True
 MX3             : True
 MX4             : True
 MXConfiguration : Fully Configured
-SRVConfigured   : True
+SRVConfigured   : False
 SPFConfigured   : True
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : alhayahuniversity.info
 MX1             : True
@@ -835,17 +835,17 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : aliandco.com.eg
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
-SPFConfigured   : True
+SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
-TXTError        : N/A
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : N/A
 
 Domain          : alico.law
@@ -961,17 +961,17 @@ TXTError        : N/A
 SRVError        : DNS name does not exist
 
 Domain          : alunaut.com.eg
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
-SPFConfigured   : True
+SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
-TXTError        : N/A
+MXError         : DNS server failure
+TXTError        : DNS server failure
 SRVError        : N/A
 
 Domain          : amenli.com
@@ -979,12 +979,12 @@ MX1             : False
 MX2             : False
 MX3             : False
 MX4             : False
-MXConfiguration : Different MX Present
+MXConfiguration : N/A
 SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : True
-MXError         : N/A
+MXError         : This operation returned because the timeout period expired
 TXTError        : N/A
 SRVError        : N/A
 
@@ -1003,17 +1003,17 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : amp.com.eg
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
-SPFConfigured   : True
+SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
-TXTError        : N/A
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : N/A
 
 Domain          : anameischanged.info
@@ -1232,13 +1232,13 @@ MX2             : True
 MX3             : True
 MX4             : True
 MXConfiguration : Fully Configured
-SRVConfigured   : True
-SPFConfigured   : True
+SRVConfigured   : False
+SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
-TXTError        : N/A
-SRVError        : N/A
+TXTError        : DNS server failure
+SRVError        : DNS server failure
 
 Domain          : bienetreinstitute.com
 MX1             : False
@@ -1250,7 +1250,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : DNS server failure
 SRVError        : DNS server failure
 
@@ -1293,7 +1293,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
-TXTError        : N/A
+TXTError        : DNS server failure
 SRVError        : N/A
 
 Domain          : bluebytehospitality.com
@@ -2050,7 +2050,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : DNS name does not exist
 
 Domain          : deglagroup.com
 MX1             : True
@@ -2081,18 +2081,18 @@ TXTError        : N/A
 SRVError        : DNS name does not exist
 
 Domain          : deltacapital-eg.com
-MX1             : False
-MX2             : False
-MX3             : False
-MX4             : False
-MXConfiguration : N/A
-SRVConfigured   : False
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
+SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : N/A
+TXTError        : N/A
+SRVError        : N/A
 
 Domain          : dentalgate.org
 MX1             : True
@@ -2287,8 +2287,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
-TXTError        : N/A
-SRVError        : DNS name does not exist
+TXTError        : DNS server failure
+SRVError        : DNS server failure
 
 Domain          : eeziclean.com
 MX1             : False
@@ -2441,7 +2441,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
-TXTError        : N/A
+TXTError        : DNS server failure
 SRVError        : N/A
 
 Domain          : elarabipharma.com
@@ -2590,25 +2590,25 @@ MX2             : True
 MX3             : True
 MX4             : True
 MXConfiguration : Fully Configured
-SRVConfigured   : True
+SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Ellaithy.com.eg
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
 SPFConfigured   : True
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
+MXError         : DNS server failure
 TXTError        : N/A
 SRVError        : N/A
 
@@ -2791,7 +2791,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
-TXTError        : N/A
+TXTError        : DNS server failure
 SRVError        : DNS name does not exist
 
 Domain          : ethos.ag
@@ -2799,7 +2799,7 @@ MX1             : False
 MX2             : False
 MX3             : False
 MX4             : False
-MXConfiguration : Different MX Present
+MXConfiguration : Not Configured
 SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
@@ -2931,7 +2931,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : ferrometalco.com
@@ -3015,7 +3015,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : fruttella.com
@@ -3268,7 +3268,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : hartmannegypt.com
 MX1             : True
@@ -3341,11 +3341,11 @@ TXTError        : DNS name does not exist
 SRVError        : DNS name does not exist
 
 Domain          : holytraveleg.com
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
 SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
@@ -3411,16 +3411,16 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : i2m-pharma.com
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
+MXError         : This operation returned because the timeout period expired
 TXTError        : N/A
 SRVError        : N/A
 
@@ -3505,8 +3505,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : infotechs.co
 MX1             : True
@@ -3537,18 +3537,18 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : inma.com.eg
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
-SRVConfigured   : True
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : True
 DMARCConfigured : False
-MXError         : N/A
+MXError         : This operation returned because the timeout period expired
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : DNS server failure
 
 Domain          : inmacommercial.com
 MX1             : True
@@ -3649,18 +3649,18 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : itcpro.co
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
-SRVConfigured   : True
-SPFConfigured   : True
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
+SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : DNS name does not exist
 
 Domain          : itvision-eg.com
 MX1             : True
@@ -3724,13 +3724,13 @@ MX2             : True
 MX3             : True
 MX4             : True
 MXConfiguration : Fully Configured
-SRVConfigured   : False
+SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : DNS name does not exist
+SRVError        : N/A
 
 Domain          : Kkc.ae
 MX1             : True
@@ -3892,13 +3892,13 @@ MX2             : True
 MX3             : True
 MX4             : True
 MXConfiguration : Fully Configured
-SRVConfigured   : True
+SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : mavendevelopments.com
 MX1             : True
@@ -3976,13 +3976,13 @@ MX2             : True
 MX3             : True
 MX4             : True
 MXConfiguration : Fully Configured
-SRVConfigured   : True
+SRVConfigured   : False
 SPFConfigured   : True
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : megatrust.net
 MX1             : True
@@ -4195,16 +4195,16 @@ TXTError        : N/A
 SRVError        : DNS name does not exist
 
 Domain          : morshedy.com
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
 SPFConfigured   : True
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
+MXError         : This operation returned because the timeout period expired
 TXTError        : N/A
 SRVError        : N/A
 
@@ -4251,11 +4251,11 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : ms-eg.net
-MX1             : False
-MX2             : False
-MX3             : False
-MX4             : False
-MXConfiguration : Not Configured
+MX1             : True
+MX2             : True
+MX3             : True
+MX4             : True
+MXConfiguration : Fully Configured
 SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
@@ -4489,17 +4489,17 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : omelmasryeenhospital.gov.eg
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
-SPFConfigured   : True
-DKIMConfigured  : True
+SPFConfigured   : False
+DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
-TXTError        : N/A
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : N/A
 
 Domain          : omni-es.com
@@ -4615,18 +4615,18 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : pharmaland.com.eg
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
-SRVConfigured   : True
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
+MXError         : DNS server failure
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : DNS server failure
 
 Domain          : pharopharma.com
 MX1             : True
@@ -5213,7 +5213,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : saratec.sa
@@ -5441,16 +5441,16 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : smartarrow.sa
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
 SPFConfigured   : True
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
+MXError         : This operation returned because the timeout period expired
 TXTError        : N/A
 SRVError        : N/A
 
@@ -5479,7 +5479,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : N/A
-TXTError        : N/A
+TXTError        : DNS server failure
 SRVError        : N/A
 
 Domain          : smg.com.eg
@@ -5567,16 +5567,16 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : swissinternationalhotels.com
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
 SRVConfigured   : True
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : N/A
+MXError         : This operation returned because the timeout period expired
 TXTError        : N/A
 SRVError        : N/A
 
@@ -5931,18 +5931,18 @@ TXTError        : N/A
 SRVError        : N/A
 
 Domain          : unicon-pumps.com
-MX1             : True
-MX2             : True
-MX3             : True
-MX4             : True
-MXConfiguration : Fully Configured
-SRVConfigured   : True
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : Different MX Present
+SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : True
 DMARCConfigured : False
 MXError         : N/A
 TXTError        : N/A
-SRVError        : N/A
+SRVError        : DNS name does not exist
 
 Domain          : uniqueimpacts.com
 MX1             : False
