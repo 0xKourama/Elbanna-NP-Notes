@@ -215,7 +215,7 @@ if($Results){
 
     Foreach($Event in $EventList){
         $Found_events = @()
-        $Found_events = $Results | Where-Object {$_.EventID -eq $Event.ID}
+        $Found_events += $Results | Where-Object {$_.EventID -eq $Event.ID}
             if($Found_events){
 $body += @"
 <h2>Event: $($Event.Title) [$($Found_events.count)]</h2>
