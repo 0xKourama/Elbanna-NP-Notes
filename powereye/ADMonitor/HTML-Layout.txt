@@ -11,8 +11,14 @@ table{
     border: 2px solid black;
     width: 100%;
 }
-h3{
+h2{
     color: white;
+    padding: 3px;
+    width: max-content;
+    background-color: #3252a8;
+    border: 2px solid black;
+}
+h3{
     padding: 3px;
     background-color: #fc9d03;
     text-align: Center;
