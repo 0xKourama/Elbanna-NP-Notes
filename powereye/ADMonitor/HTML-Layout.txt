@@ -14,8 +14,8 @@ table{
 h2{
     color: white;
     padding: 3px;
-    width: max-content;
     background-color: #3252a8;
+    text-align: Center;
     border: 2px solid black;
 }
 h3{
