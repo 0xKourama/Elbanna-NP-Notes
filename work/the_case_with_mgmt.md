@@ -52,12 +52,27 @@
 1. hiring a risk analyst as my supervisor would improve the security posture drastically in the organization
 
 # what is your plan?
-1. regathering all company assets and documenting them
-2. securing every point of entry into the network
-3. securing every critical component interal to the network using best practices
-4. securing the the network itself from network attacks
-5. securing our services from denial of service attacks
-6. hardening internal networks hosts
-7. mitigating any vulnerabilities inside the network
-8. implementing solutions for MFA within the company
-9. working on achieving compliance with world standards (NIST, ISO/IEC 27001 & GDPR)
+1. [identify] regathering all company assets and documenting them
+2. [identify] finding the points of highest risk and prioritizing them
+3. [protect] securing every point of entry into the network
+4. [protect] securing our web applications while working with developers team
+5. [protect] securing every critical components interal to the network using best practices
+6. [protect] securing the the network itself from network attacks
+7. [protect] securing our services from denial of service attacks
+8. [protect] hardening internal networks hosts
+9. [protect] mitigating any vulnerabilities inside the network
+10. [protect] implementing solutions for MFA within the company
+11. [protect] working on achieving compliance with world standards (NIST, ISO/IEC 27001 & GDPR)
+12. [protect] delivering constant security awarness training to company employees and showing the importance of cybersecurity
+12. [detect] work on impelementing detection mechanisms using powershell for standard attack regarind active directory
+13. [detect] work on impelementing a SOC environment
+14. [respond] work on developing emergency drills and study incident response
+15. [recover] work on making sure the recovery process is healthy and good to go
+
+*working on building a complete cybersecurity infrastructure & team using best practices*
+
+# what makes me capable of doing so?
+1. leadership and ownership of the situation + good presentation skills
+2. engineering background
+3. expertise in my field (2K+ hours, Worldwide course done, 200+ machines hacked)
+3. highly technical skills
