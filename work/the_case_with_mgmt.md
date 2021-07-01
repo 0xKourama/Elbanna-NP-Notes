@@ -38,6 +38,7 @@
 3. him having unrealistic expectations of what I can do ... when I didn't hack into the company ... I became a failure to him and so did cybersecurity (he was let down)
 4. him underestimating cybersecurity as a whole
 5. ego and being happy with his firewalls
+6. acknowledging my attack offends his protections
 
 # what's the fix for this?
 1. me sticking to my job profile and working according to risk methodology guidelines and best practices.
@@ -49,3 +50,14 @@
 
 # what is an alternative path?
 1. hiring a risk analyst as my supervisor would improve the security posture drastically in the organization
+
+# what is your plan?
+1. regathering all company assets and documenting them
+2. securing every point of entry into the network
+3. securing every critical component interal to the network using best practices
+4. securing the the network itself from network attacks
+5. securing our services from denial of service attacks
+6. hardening internal networks hosts
+7. mitigating any vulnerabilities inside the network
+8. implementing solutions for MFA within the company
+9. working on achieving compliance with world standards (NIST, ISO/IEC 27001 & GDPR)
