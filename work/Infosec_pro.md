@@ -1,3 +1,7 @@
+# what are the most likely points of attack?
+1. web applications?
+2. 
+
 # what is proper security?
 *ensuring that only the intended functions are carried out by the intended person*
 _authentication & limitation_
@@ -11,7 +15,7 @@ _authentication & limitation_
 1. https://app.pluralsight.com/library/courses/cyber-security-executive-briefing/table-of-contents
 
 # Cybersecurity roles:
-https://app.pluralsight.com/library/courses/cyber-security-careers-it-professionals/table-of-contents
+- https://app.pluralsight.com/library/courses/cyber-security-careers-it-professionals/table-of-contents
 ## Understanding Cyber Security Job Roles
 ## Landing Your First Cyber Security Job
 
@@ -71,12 +75,6 @@ Increasing cybersecurity awareness
 
 - https://app.pluralsight.com/paths/skills/security-awareness-for-business-professionals-skill
 
-## Firewalls
-Palo Alto
-
-## Mail Gateway
-IMSVA
-
 ## Cloud Security (VCloud and Tennat Security):
 https://www.mcafee.com/enterprise/en-us/security-awareness/cloud/cloud-security-best-practices.html
 
@@ -84,37 +82,38 @@ https://www.mcafee.com/enterprise/en-us/security-awareness/cloud/cloud-security-
 Unisphere
 iDRAC
 Best practices article:
-https://cypressdatadefense.com/blog/data-storage-security-best-practices/
+- https://cypressdatadefense.com/blog/data-storage-security-best-practices/
 
 ## Vcenter
-https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3F7F045A-C4E6-4891-9859-1FAC54E85E9D.html
+- https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3F7F045A-C4E6-4891-9859-1FAC54E85E9D.html
 
 ## ESXi/IPMI Security
-https://blog.netwrix.com/2020/01/16/vmware-security-best-practices/
+- https://blog.netwrix.com/2020/01/16/vmware-security-best-practices/
 
 ## NSX Security
-https://video.algosec.com/lesson-3-best-practices-for
+- https://video.algosec.com/lesson-3-best-practices-for
 
 ## Active Directory
-https://adsecurity.org/
-https://www.pentesteracademy.com > Attacking and Defending Active Directory
+- https://adsecurity.org/
+- https://www.pentesteracademy.com > Attacking and Defending Active Directory
 
 ## Network security
-https://app.pluralsight.com/library/courses/network-security-fundamentals/table-of-contents
+- https://app.pluralsight.com/library/courses/network-security-fundamentals/table-of-contents
 1. DoS
 2. MiTM --> improving encryption
 3. removing unnecessary ports
+### Palo Alto
 ### Network Monitoring:
-https://app.pluralsight.com/library/courses/security-onion-network-security-monitoring/table-of-contents
+- https://app.pluralsight.com/library/courses/security-onion-network-security-monitoring/table-of-contents
 
 ## Exchange Security:
-https://searchsecurity.techtarget.com/tip/12-Microsoft-Exchange-Server-security-best-practices
+- https://searchsecurity.techtarget.com/tip/12-Microsoft-Exchange-Server-security-best-practices
 
 ## Database Security:
-https://app.pluralsight.com/library/courses/software-development-security/table-of-contents
+- https://app.pluralsight.com/library/courses/software-development-security/table-of-contents
 
 ## Linux Host Security:
-https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-contents
+- https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-contents
 
 ## Windows Host Security:
 - https://app.pluralsight.com/library/courses/windows-server-2016-security-hardening/table-of-contents
@@ -136,7 +135,10 @@ https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-
 - https://app.pluralsight.com/library/courses/security-awareness-mobile-devices/table-of-contents
 
 ## Backup Security
-*backups are equal in importance to the real data. securing backups is equally important*
+*backups are equal in importance to the real data. securing backups is just as important*
+
+## Mail Gateway
+- IMSVA
 
 ## Achieving Security Compliance with worldwide standards
 ### Big picture
@@ -155,5 +157,5 @@ https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-
 2. Protect  --> try all known attacks --> apply best practices
 3. Detect   --> logs
 4. Respond  --> attack pattern identificaion (Incident response)
-	https://app.pluralsight.com/library/courses/security-event-triage-operationalizing-security-analysis/table-of-contents
+	- https://app.pluralsight.com/library/courses/security-event-triage-operationalizing-security-analysis/table-of-contents
 5. Recover  --> backup strategy
