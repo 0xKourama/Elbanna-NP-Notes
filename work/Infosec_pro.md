@@ -1,6 +1,5 @@
 # what are the most likely points of attack?
 1. web applications?
-2. 
 
 # what is proper security?
 *ensuring that only the intended functions are carried out by the intended person*
