@@ -103,6 +103,7 @@ Best practices article:
 2. MiTM --> improving encryption
 3. removing unnecessary ports
 ### Palo Alto
+- Optimization
 ### Network Monitoring:
 - https://app.pluralsight.com/library/courses/security-onion-network-security-monitoring/table-of-contents
 
