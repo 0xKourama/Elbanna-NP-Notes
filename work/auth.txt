@@ -1,18 +1,10 @@
-Jump Server:
-User: Gabr
-Pass: %dKj*k@P*5&6Tm!qSBa
----------------------------------------------------------------------------
-Roaya.co WordPress CentOS machine:
-User: wpadmin
-Pass: !$2zx4nLsD$5Fx%*3bN5
----------------------------------------------------------------------------
-Active directory:
-User: Gabrurgent
-Pass: 16yIX@es1fbAn16@x@pa
----------------------------------------------------------------------------
 Global Protect:
 User: MGabr
 Pass: iE$6!@gPCf!J#rK!tbBi
+---------------------------------------------------------------------------
+Jump Server:
+User: Gabr
+Pass: %dKj*k@P*5&6Tm!qSBa
 ---------------------------------------------------------------------------
 PA 220:
 User: MGabr
@@ -25,4 +17,12 @@ Pass: %#%I9XL3Dq7$VdTH&RDm
 IMSVA:
 User: MGabr
 Pass: xQ7r2!ix&5@$!*DE#%K^
+---------------------------------------------------------------------------
+Active directory:
+User: Gabrurgent
+Pass: 16yIX@es1fbAn16@x@pa
+---------------------------------------------------------------------------
+Roaya.co WordPress CentOS machine:
+User: wpadmin
+Pass: !$2zx4nLsD$5Fx%*3bN5
 ---------------------------------------------------------------------------
