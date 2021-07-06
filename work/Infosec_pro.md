@@ -1,3 +1,7 @@
+# what is proper security?
+*ensuring that only the intended functions are carried out by the intended person*
+_authentication & limitation_
+
 # What are the correct steps to apply the concept of least privilege?
 1. collecting information about roles and access requirements
 2. translating the roles to privileges
@@ -6,14 +10,10 @@
 # what are courses that have brief supporting material?
 1. https://app.pluralsight.com/library/courses/cyber-security-executive-briefing/table-of-contents
 
-
 # Cybersecurity roles:
 https://app.pluralsight.com/library/courses/cyber-security-careers-it-professionals/table-of-contents
 ## Understanding Cyber Security Job Roles
 ## Landing Your First Cyber Security Job
-
-# what is proper security?
-*ensuring that only the intended function is carried out by the intended person*
 
 # what is done in exploitation?
 1. what can we do with the functionality we have?
@@ -69,13 +69,15 @@ Increasing cybersecurity awareness
 4. emergency drill (what to do)
 5. adware, scareware
 
+- https://app.pluralsight.com/paths/skills/security-awareness-for-business-professionals-skill
+
 ## Firewalls
 Palo Alto
 
 ## Mail Gateway
 IMSVA
 
-## Cloud Security (VCloud):
+## Cloud Security (VCloud and Tennat Security):
 https://www.mcafee.com/enterprise/en-us/security-awareness/cloud/cloud-security-best-practices.html
 
 ## Storage:
@@ -91,7 +93,7 @@ https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GU
 https://blog.netwrix.com/2020/01/16/vmware-security-best-practices/
 
 ## NSX Security
-
+https://video.algosec.com/lesson-3-best-practices-for
 
 ## Active Directory
 https://adsecurity.org/
@@ -107,6 +109,9 @@ https://app.pluralsight.com/library/courses/security-onion-network-security-moni
 
 ## Exchange Security:
 https://searchsecurity.techtarget.com/tip/12-Microsoft-Exchange-Server-security-best-practices
+
+## Database Security:
+https://app.pluralsight.com/library/courses/software-development-security/table-of-contents
 
 ## Linux Host Security:
 https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-contents
@@ -143,6 +148,7 @@ https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-
 
 ### Resources:
 - https://app.pluralsight.com/paths/skill/survey-of-information-security-skill
+- https://app.pluralsight.com/library/courses/security-risks-assessing-mitigating/table-of-contents
 
 # NIST Framework:
 1. Identify --> data collection
