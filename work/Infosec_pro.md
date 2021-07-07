@@ -106,7 +106,7 @@ Increasing cybersecurity awareness
 - 1 iSCSI compromised = more than one operating system compromised
 - full data store compromised is more dangerous than compromising accounts
 
-## Vcenter
+## VCenter
 - https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3F7F045A-C4E6-4891-9859-1FAC54E85E9D.html
 - https://app.pluralsight.com/library/courses/vsphere-6-datacenter-security/table-of-contents
 
@@ -200,7 +200,7 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 - IMSVA
 
 ## Achieving Security Compliance with worldwide standards
-### Big picture
+### Big Picture
 - https://app.pluralsight.com/library/courses/security-compliance-big-picture/table-of-contents
 
 1. GDPR (https://gdpr.eu/checklist/) (https://app.pluralsight.com/library/courses/gdpr-big-picture)
