@@ -19,7 +19,7 @@ User: MGabr
 Pass: xQ7r2!ix&5@$!*DE#%K^
 ---------------------------------------------------------------------------
 Active directory:
-User: Gabrurgent
+User: GabrUrgent
 Pass: 16yIX@es1fbAn16@x@pa
 ---------------------------------------------------------------------------
 Roaya.co WordPress CentOS machine:
@@ -29,3 +29,4 @@ Pass: !$2zx4nLsD$5Fx%*3bN5
 Raduis MFA
 User: MFA-MGabr
 Pass: 6b%2#Y&Jx%x4os^#KZh2
+---------------------------------------------------------------------------
