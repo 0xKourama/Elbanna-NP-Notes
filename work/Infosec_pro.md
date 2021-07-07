@@ -4,6 +4,7 @@
 # what is proper security?
 *ensuring that only the intended functions are carried out by the intended person*
 _authentication & limitation_
+- https://app.pluralsight.com/library/courses/security-engineering/table-of-contents
 
 # What are the correct steps to apply the concept of least privilege?
 1. collecting information about roles and access requirements
@@ -35,14 +36,16 @@ _authentication & limitation_
 1. developers
 
 # what are the factors to be considered when measuring risk?
-1. Exploitability
+1. What initial access is required to carry out the attack?
+2. Exploitability
 	1. exploit available online?
 	2. exploit needs credentials?
 	3. exploit detectable?
-2. Impact (direct/indirect)
+3. Impact (direct/indirect)
 	1. Data
 	2. service
-3. Likelihood
+4. Likelihood
+5. Ransomwareable?
 
 # Phases
 1. External
@@ -61,33 +64,45 @@ https://app.pluralsight.com/library/courses/security-risk-management-concepts-pr
 1. Encryption strength --> protect against MiTM
 2. Authentication      --> MFA and reducing impact of password attacks
 3. Least privilege concept
+4. Isolate management plane
 
 # Company Assets
 
 ## Employees
 Increasing cybersecurity awareness
-1. phishing
+*demonstrations*
+1. phishing (PDF attacks, Macro Attacks)
 2. supply chain attacks
 3. malicious links
 4. emergency drill (what to do)
 5. adware, scareware
-
 - https://app.pluralsight.com/paths/skills/security-awareness-for-business-professionals-skill
+- https://app.pluralsight.com/library/courses/end-user-security-awareness/table-of-contents
 
-## Cloud Security (VCloud and Tennat Security):
+## Cloud Security (VCloud and Tennant Security):
 https://www.mcafee.com/enterprise/en-us/security-awareness/cloud/cloud-security-best-practices.html
 
 ## Storage:
-Unisphere
-iDRAC
-Best practices article:
+- Unisphere
+- iDRAC
+## Best practices article:
 - https://cypressdatadefense.com/blog/data-storage-security-best-practices/
+## iSCSI Security:
+- Authenticaion: CHAP (weak)
+- Authorization: Initiator Node names (spoof-able)
+- Encryption - IPSec shared secret (deployment challenges)
+## What makes iSCSI important?
+- 1 iSCSI compromised = more than one operating system compromised
+- full data store compromised is more dangerous than compromising accounts
 
 ## Vcenter
 - https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3F7F045A-C4E6-4891-9859-1FAC54E85E9D.html
 
 ## ESXi/IPMI Security
 - https://blog.netwrix.com/2020/01/16/vmware-security-best-practices/
+### IP Spoofing Attack
+- https://www.cloudflare.com/learning/ddos/glossary/ip-spoofing/
+https://www.kaspersky.com/resource-center/threats/ip-spoofing
 
 ## NSX Security
 - https://video.algosec.com/lesson-3-best-practices-for
@@ -95,8 +110,10 @@ Best practices article:
 ## Active Directory
 - https://adsecurity.org/
 - https://www.pentesteracademy.com > Attacking and Defending Active Directory
+- https://app.pluralsight.com/library/courses/troubleshooting-security-active-directory/table-of-contents
 
 ## Network security
+- https://app.pluralsight.com/library/courses/maximizing-nmap-security-auditing/table-of-contents
 - https://app.pluralsight.com/library/courses/network-security-fundamentals/table-of-contents
 1. DoS
 2. MiTM --> improving encryption
@@ -108,22 +125,33 @@ Best practices article:
 
 ## Exchange Security:
 - https://searchsecurity.techtarget.com/tip/12-Microsoft-Exchange-Server-security-best-practices
+- https://app.pluralsight.com/library/courses/designing-deploying-exchange-2016-70-345-recipients/table-of-contents
 
 ## Database Security:
+- https://app.pluralsight.com/library/courses/sql-server-compliance-and-auditing/table-of-contents
 - https://app.pluralsight.com/library/courses/software-development-security/table-of-contents
 
-## Linux Host Security:
+## Linux Security:
+- https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-contents
 - https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-contents
 
 ## Windows Host Security:
 - https://app.pluralsight.com/library/courses/windows-server-2016-security-hardening/table-of-contents
 - https://app.pluralsight.com/library/courses/windows-10-internals-threads-memory-security/table-of-contents
+- https://app.pluralsight.com/library/courses/linux-system-security-lpic-2/table-of-contents
 
 ## Web Application Security:
 - .NET security best practices (https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app.aspx) (https://docs.microsoft.com/en-us/dotnet/standard/security/)
+- https://app.pluralsight.com/library/courses/aspdotnet-security-secrets-revealed/table-of-contents
+- https://app.pluralsight.com/library/courses/asp-dot-net-and-core-configuring-security-headers/table-of-contents
+- https://app.pluralsight.com/library/courses/securely-handling-errors-logging-events-aspdotnet-aspdotnet-core/table-of-contents
 - Source Code review
-- SDL
-(https://app.pluralsight.com/library/courses/security-hackers-developers/table-of-contents)
+- SDL (https://app.pluralsight.com/library/courses/security-hackers-developers/table-of-contents)
+- https://app.pluralsight.com/library/courses/software-development-security-cissp-cert/table-of-contents
+- https://app.pluralsight.com/paths/skills/web-application-security
+- https://app.pluralsight.com/library/courses/defeating-cross-site-scripting-content-security-policy/table-of-contents
+- https://app.pluralsight.com/library/courses/php-web-application-security/table-of-contents
+- https://app.pluralsight.com/library/courses/code-auditing-security-hackers-developers/table-of-contents
 
 ## Webserver Security (Apache/IIS/NginX):
 - https://www.upguard.com/blog/10-steps-for-improving-iis-security
@@ -145,10 +173,13 @@ Best practices article:
 - https://app.pluralsight.com/library/courses/security-compliance-big-picture/table-of-contents
 
 1. GDPR (https://gdpr.eu/checklist/) (https://app.pluralsight.com/library/courses/gdpr-big-picture)
-2. ISO 27001 (https://app.pluralsight.com/library/courses/iso-iec-27001-information-security/table-of-contents)
+2. ISO 27001 (https://app.pluralsight.com/library/courses/iso-iec-27001-information-security/table-of-contents) (https://app.pluralsight.com/library/courses/information-security-threats-risks-iso-iec-27002/table-of-contents)
 3. CIS Controls (https://app.pluralsight.com/library/courses/implementing-cis-critical-security-controls/table-of-contents)
 
 ### Resources:
+- https://app.pluralsight.com/library/courses/manage-security-privacy-risk-nist-risk-management-framework/table-of-contents
+- https://app.pluralsight.com/library/courses/security-control-assessment/table-of-contents
+- https://app.pluralsight.com/library/courses/security-operations/table-of-contents
 - https://app.pluralsight.com/paths/skill/survey-of-information-security-skill
 - https://app.pluralsight.com/library/courses/security-risks-assessing-mitigating/table-of-contents
 
@@ -157,5 +188,5 @@ Best practices article:
 2. Protect  --> try all known attacks --> apply best practices
 3. Detect   --> logs
 4. Respond  --> attack pattern identificaion (Incident response)
-	- https://app.pluralsight.com/library/courses/security-event-triage-operationalizing-security-analysis/table-of-contents
+	- https://app.pluralsight.com/paths/skills/security-event-triage-skill
 5. Recover  --> backup strategy

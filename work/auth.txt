@@ -26,3 +26,6 @@ Roaya.co WordPress CentOS machine:
 User: wpadmin
 Pass: !$2zx4nLsD$5Fx%*3bN5
 ---------------------------------------------------------------------------
+Raduis MFA
+User: MFA-MGabr
+Pass: 6b%2#Y&Jx%x4os^#KZh2
