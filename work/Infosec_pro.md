@@ -1,5 +1,11 @@
+# Hacking steps:
+1. enumeration
+2. exploitation
+3. privilege escalation
+4. persistence
+
 # what are the most likely points of attack?
-1. web applications?
+1. web applications (Tools, CloudSpace, MyCloud)
 
 # what is proper security?
 *ensuring that only the intended functions are carried out by the intended person*
@@ -66,6 +72,9 @@ https://app.pluralsight.com/library/courses/security-risk-management-concepts-pr
 3. Least privilege concept
 4. Isolate management plane
 
+# Protection against RansomWare:
+- https://app.pluralsight.com/library/courses/advanced-malware-analysis-ransomware/table-of-contents
+
 # Company Assets
 
 ## Employees
@@ -80,7 +89,9 @@ Increasing cybersecurity awareness
 - https://app.pluralsight.com/library/courses/end-user-security-awareness/table-of-contents
 
 ## Cloud Security (VCloud and Tennant Security):
-https://www.mcafee.com/enterprise/en-us/security-awareness/cloud/cloud-security-best-practices.html
+- https://app.pluralsight.com/library/courses/cloud-computing-security-challenge/table-of-contents
+- https://www.mcafee.com/enterprise/en-us/security-awareness/cloud/cloud-security-best-practices.html
+- https://www.youtube.com/watch?v=2so9QONW75c
 
 ## Storage:
 - Unisphere
@@ -97,6 +108,7 @@ https://www.mcafee.com/enterprise/en-us/security-awareness/cloud/cloud-security-
 
 ## Vcenter
 - https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3F7F045A-C4E6-4891-9859-1FAC54E85E9D.html
+- https://app.pluralsight.com/library/courses/vsphere-6-datacenter-security/table-of-contents
 
 ## ESXi/IPMI Security
 - https://blog.netwrix.com/2020/01/16/vmware-security-best-practices/
@@ -115,12 +127,14 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 ## Network security
 - https://app.pluralsight.com/library/courses/maximizing-nmap-security-auditing/table-of-contents
 - https://app.pluralsight.com/library/courses/network-security-fundamentals/table-of-contents
+- https://app.pluralsight.com/library/courses/zero-trust-networking-big-picture/table-of-contents
 1. DoS
 2. MiTM --> improving encryption
 3. removing unnecessary ports
 ### Palo Alto
 - Optimization
 ### Network Monitoring:
+- https://app.pluralsight.com/library/courses/monitoring-analysis-network-cnd/table-of-contents
 - https://app.pluralsight.com/library/courses/security-onion-network-security-monitoring/table-of-contents
 
 ## Exchange Security:
@@ -135,16 +149,31 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 - https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-contents
 - https://app.pluralsight.com/library/courses/security-network-host-lfce/table-of-contents
 
-## Windows Host Security:
+## Windows Security:
 - https://app.pluralsight.com/library/courses/windows-server-2016-security-hardening/table-of-contents
 - https://app.pluralsight.com/library/courses/windows-10-internals-threads-memory-security/table-of-contents
 - https://app.pluralsight.com/library/courses/linux-system-security-lpic-2/table-of-contents
+- https://app.pluralsight.com/library/courses/windows-server-2016-auditing-security-practices/table-of-contents
+- https://app.pluralsight.com/library/courses/securing-windows-server-2019/table-of-contents
+- https://app.pluralsight.com/library/courses/windows-server-2016-identity-federation-access-solutions/table-of-contents
+- https://app.pluralsight.com/library/courses/windows-server-2019-efs-bitlocker-encryption/table-of-contents
+- https://app.pluralsight.com/library/courses/managing-privileged-identities-windows-server-2016/table-of-contents
 
 ## Web Application Security:
+- https://app.pluralsight.com/paths/skills/web-application-penetration-testing
+- https://app.pluralsight.com/library/courses/downgrade-attacks-in-apps-stop-man-in-the-middle/table-of-contents
+### scan automation:
+- https://app.pluralsight.com/library/courses/automate-web-app-scans-owasp-zap-python/table-of-contents
+### Security resources
+- https://app.pluralsight.com/guides/must-known-web-security-risks-for-developers
+- https://app.pluralsight.com/library/courses/secure-account-authentication-practices-asp-dot-net-core/table-of-contents
 - .NET security best practices (https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app.aspx) (https://docs.microsoft.com/en-us/dotnet/standard/security/)
+- https://app.pluralsight.com/library/courses/securing-application-secrets-in-asp-net-core/table-of-contents
+- https://app.pluralsight.com/library/courses/dotnet-cryptography-secure-applications/table-of-contents
 - https://app.pluralsight.com/library/courses/aspdotnet-security-secrets-revealed/table-of-contents
 - https://app.pluralsight.com/library/courses/asp-dot-net-and-core-configuring-security-headers/table-of-contents
 - https://app.pluralsight.com/library/courses/securely-handling-errors-logging-events-aspdotnet-aspdotnet-core/table-of-contents
+- https://app.pluralsight.com/library/courses/using-security-analysis-tools-protect-aspdotnet-core-applications/table-of-contents
 - Source Code review
 - SDL (https://app.pluralsight.com/library/courses/security-hackers-developers/table-of-contents)
 - https://app.pluralsight.com/library/courses/software-development-security-cissp-cert/table-of-contents
@@ -155,6 +184,8 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 
 ## Webserver Security (Apache/IIS/NginX):
 - https://www.upguard.com/blog/10-steps-for-improving-iis-security
+- https://app.pluralsight.com/library/courses/auditing-iis-web-servers-security-best-practices
+- https://app.pluralsight.com/library/courses/securing-iis-websites/table-of-contents
 
 ## AWS S3 Storage
 - https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html
@@ -173,7 +204,7 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 - https://app.pluralsight.com/library/courses/security-compliance-big-picture/table-of-contents
 
 1. GDPR (https://gdpr.eu/checklist/) (https://app.pluralsight.com/library/courses/gdpr-big-picture)
-2. ISO 27001 (https://app.pluralsight.com/library/courses/iso-iec-27001-information-security/table-of-contents) (https://app.pluralsight.com/library/courses/information-security-threats-risks-iso-iec-27002/table-of-contents)
+2. ISO 27001 (https://app.pluralsight.com/library/courses/iso-iec-27001-information-security/table-of-contents) (https://app.pluralsight.com/library/courses/information-security-threats-risks-iso-iec-27002/table-of-contents) (https://app.pluralsight.com/library/courses/preparing-organization-iso-27001-2013-certification/table-of-contents)
 3. CIS Controls (https://app.pluralsight.com/library/courses/implementing-cis-critical-security-controls/table-of-contents)
 
 ### Resources:
@@ -182,6 +213,7 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 - https://app.pluralsight.com/library/courses/security-operations/table-of-contents
 - https://app.pluralsight.com/paths/skill/survey-of-information-security-skill
 - https://app.pluralsight.com/library/courses/security-risks-assessing-mitigating/table-of-contents
+- https://app.pluralsight.com/library/courses/risk-assessment-management/table-of-contents
 
 # NIST Framework:
 1. Identify --> data collection
@@ -189,4 +221,5 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 3. Detect   --> logs
 4. Respond  --> attack pattern identificaion (Incident response)
 	- https://app.pluralsight.com/paths/skills/security-event-triage-skill
+	- https://app.pluralsight.com/library/courses/hands-on-incident-response-fundamentals/table-of-contents
 5. Recover  --> backup strategy
