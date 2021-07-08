@@ -164,12 +164,12 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 ## Web Application Security:
 - https://app.pluralsight.com/paths/skills/web-application-penetration-testing
 - https://app.pluralsight.com/library/courses/downgrade-attacks-in-apps-stop-man-in-the-middle/table-of-contents
-### scan automation:
+### Scan Automation:
 - https://app.pluralsight.com/library/courses/automate-web-app-scans-owasp-zap-python/table-of-contents
 ### Security resources
 - https://app.pluralsight.com/guides/must-known-web-security-risks-for-developers
 - https://app.pluralsight.com/library/courses/secure-account-authentication-practices-asp-dot-net-core/table-of-contents
-- .NET security best practices (https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app.aspx) (https://docs.microsoft.com/en-us/dotnet/standard/security/)
+- .NET Security Best Practices (https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app.aspx) (https://docs.microsoft.com/en-us/dotnet/standard/security/)
 - https://app.pluralsight.com/library/courses/securing-application-secrets-in-asp-net-core/table-of-contents
 - https://app.pluralsight.com/library/courses/dotnet-cryptography-secure-applications/table-of-contents
 - https://app.pluralsight.com/library/courses/aspdotnet-security-secrets-revealed/table-of-contents
@@ -184,7 +184,7 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 - https://app.pluralsight.com/library/courses/php-web-application-security/table-of-contents
 - https://app.pluralsight.com/library/courses/code-auditing-security-hackers-developers/table-of-contents
 
-## Webserver Security (Apache/IIS/NginX):
+## Web server Security (Apache/IIS/NginX):
 - https://www.upguard.com/blog/10-steps-for-improving-iis-security
 - https://app.pluralsight.com/library/courses/auditing-iis-web-servers-security-best-practices
 - https://app.pluralsight.com/library/courses/securing-iis-websites/table-of-contents
