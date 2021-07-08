@@ -94,6 +94,8 @@ https://app.pluralsight.com/library/courses/security-risk-management-concepts-pr
 ## Best practices article:
 - https://cypressdatadefense.com/blog/data-storage-security-best-practices/
 ## iSCSI Security:
+https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-2A7A942D-9279-47AC-AF40-5C7D684100EF.html
+https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-DFC745FB-CDD6-4828-8948-4D0E0561EEF8.html
 - Authenticaion: CHAP (weak)
 - Authorization: Initiator Node names (spoof-able)
 - Encryption - IPSec shared secret (deployment challenges)
