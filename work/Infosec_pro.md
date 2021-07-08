@@ -109,6 +109,8 @@ Increasing cybersecurity awareness
 ## VCenter
 - https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3F7F045A-C4E6-4891-9859-1FAC54E85E9D.html
 - https://app.pluralsight.com/library/courses/vsphere-6-datacenter-security/table-of-contents
+- https://app.pluralsight.com/library/courses/vsphere-6-5-foundations-perform-basic-monitoring/table-of-contents
+- https://app.pluralsight.com/paths/skills/implementing-and-managing-vmware-vsphere
 
 ## ESXi/IPMI Security
 - https://blog.netwrix.com/2020/01/16/vmware-security-best-practices/
