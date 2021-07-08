@@ -4,18 +4,15 @@
 3. privilege escalation
 4. persistence
 
-# what are the most likely points of attack?
-1. web applications (Tools, CloudSpace, MyCloud)
-
-# what is proper security?
+# Security Concepts
 *ensuring that only the intended functions are carried out by the intended person*
-_authentication & limitation_
+_authentication & authorization_
 - https://app.pluralsight.com/library/courses/security-engineering/table-of-contents
 
-# What are the correct steps to apply the concept of least privilege?
-1. collecting information about roles and access requirements
-2. translating the roles to privileges
-3. implementing the change without disrupting business (seamlessly)
+# What are the steps to apply the concept of least privilege?
+1. Collecting information about roles and access requirements
+2. Translating the roles to privileges
+3. Implementing the change without disrupting business (seamlessly)
 
 # what are courses that have brief supporting material?
 1. https://app.pluralsight.com/library/courses/cyber-security-executive-briefing/table-of-contents
@@ -23,7 +20,6 @@ _authentication & limitation_
 # Cybersecurity roles:
 - https://app.pluralsight.com/library/courses/cyber-security-careers-it-professionals/table-of-contents
 ## Understanding Cyber Security Job Roles
-## Landing Your First Cyber Security Job
 
 # what is done in exploitation?
 1. what can we do with the functionality we have?
@@ -78,8 +74,7 @@ https://app.pluralsight.com/library/courses/security-risk-management-concepts-pr
 # Company Assets
 
 ## Employees
-Increasing cybersecurity awareness
-*demonstrations*
+*Increasing cybersecurity awareness with attack demonstrations*
 1. phishing (PDF attacks, Macro Attacks)
 2. supply chain attacks
 3. malicious links
@@ -197,6 +192,8 @@ https://www.kaspersky.com/resource-center/threats/ip-spoofing
 
 ## Backup Security
 *backups are equal in importance to the real data. securing backups is just as important*
+- https://www.veeam.com/data-security-compliance-use-cases.html
+- https://helpcenter.veeam.com/docs/backup/vsphere/security_considerations.html?ver=110
 
 ## Mail Gateway
 - IMSVA
