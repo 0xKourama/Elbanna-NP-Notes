@@ -73,6 +73,18 @@ https://app.pluralsight.com/library/courses/security-risk-management-concepts-pr
 
 # Company Assets
 
+## VCenter
+- https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3F7F045A-C4E6-4891-9859-1FAC54E85E9D.html
+- https://app.pluralsight.com/library/courses/vsphere-6-datacenter-security/table-of-contents
+- https://app.pluralsight.com/library/courses/vsphere-6-5-foundations-perform-basic-monitoring/table-of-contents
+- https://app.pluralsight.com/paths/skills/implementing-and-managing-vmware-vsphere
+
+## ESXi/IPMI Security
+- https://blog.netwrix.com/2020/01/16/vmware-security-best-practices/
+### IP Spoofing Attack
+- https://www.cloudflare.com/learning/ddos/glossary/ip-spoofing/
+https://www.kaspersky.com/resource-center/threats/ip-spoofing
+
 ## Employees
 *Increasing cybersecurity awareness with attack demonstrations*
 1. phishing (PDF attacks, Macro Attacks)
@@ -99,21 +111,11 @@ https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GU
 - Authenticaion: CHAP (weak)
 - Authorization: Initiator Node names (spoof-able)
 - Encryption - IPSec shared secret (deployment challenges)
+
 ## What makes iSCSI important?
 - 1 iSCSI compromised = more than one operating system compromised
 - full data store compromised is more dangerous than compromising accounts
 
-## VCenter
-- https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-3F7F045A-C4E6-4891-9859-1FAC54E85E9D.html
-- https://app.pluralsight.com/library/courses/vsphere-6-datacenter-security/table-of-contents
-- https://app.pluralsight.com/library/courses/vsphere-6-5-foundations-perform-basic-monitoring/table-of-contents
-- https://app.pluralsight.com/paths/skills/implementing-and-managing-vmware-vsphere
-
-## ESXi/IPMI Security
-- https://blog.netwrix.com/2020/01/16/vmware-security-best-practices/
-### IP Spoofing Attack
-- https://www.cloudflare.com/learning/ddos/glossary/ip-spoofing/
-https://www.kaspersky.com/resource-center/threats/ip-spoofing
 
 ## NSX Security
 - https://video.algosec.com/lesson-3-best-practices-for
