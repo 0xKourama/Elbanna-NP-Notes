@@ -10,5 +10,7 @@ https://10.5.5.222
 https://192.168.3.152
 # AWS PA
 https://10.13.0.254
+# NSX-T PA
+https://10.5.5.230
 # VCenter
 https://10.5.5.20

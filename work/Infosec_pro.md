@@ -116,7 +116,6 @@ https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GU
 - 1 iSCSI compromised = more than one operating system compromised
 - full data store compromised is more dangerous than compromising accounts
 
-
 ## NSX Security
 - https://video.algosec.com/lesson-3-best-practices-for
 
