@@ -545,6 +545,15 @@ what are your values?
 5. disregarding petty problems saves the valuable time for thinking and analysis
 6. the pain of discipline is better than the pain of regret
 
+yarab:
+al 7ekma
+al sawab
+al taqwa
+al estiqama
+dawam el ne3ma
+
+thoughts
+wife social media usage
 
 what items will I need?
 {X} medicine (hair and leg and omega-3)
