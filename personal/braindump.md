@@ -742,3 +742,19 @@ what activies will I be doing inshallah?
 
 # what makes me averse to hurting people's feelings?
 1. empathy
+
+# what are my insecurities?
+1. 
+
+# what makes me so bad at dealing with scum people (thieves, hustlers, scammers)?
+1. despising them (they are less than that worthless)
+2. 
+
+# what's the right approach to handle chaos?
+1. losing rigidity
+	*what makes me so rigid?*
+	- having a seemingly perfect visualized plan makes it annoying to change it
+2. accepting change
+3. being highly adaptive
+	*what makes adaptation annoying?*
+	- because some changes are bigger than us and that forces us to be in a reactive mode.
