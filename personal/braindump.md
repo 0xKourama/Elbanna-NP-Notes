@@ -634,6 +634,8 @@ what activies will I be doing inshallah?
 	2. stupidity
 	3. selfishness
 	4. too many emotions
+	5. stubborn
+	6. dishonesty
 
 # what makes ignorance bad?
 1. not knowing something leads peope to assume rather than ask questions
@@ -647,3 +649,96 @@ what activies will I be doing inshallah?
 	2. in the Y statments I have found, what makes each and everyone true?
 	3. what are the reasonable conlusions that I can come up with?
 2. questioning the validity of the formed conclusions should help with finding the composing statements.
+
+# what makes stupidity bad?
+1. a stupid person can make things bad for everyone
+2. a stupid person has problems understanding
+3. a stupid person makes the seemingly easy situations difficult.
+4. a stupid person just makes bad decisions
+5. a stupid person has troubles trusting smart people. he fears their intelligence.
+
+# what makes selfishness bad?
+1. living in a society requires co-operation and collaboration
+2. being selfish forces us to compete and make everything zero-sum
+3. to a selfish person, everyone's existence is a nuisance. a selfish person wishes everyone else to just vanish.
+
+# what makes too much emotions bad?
+1. you can either feel or think ... too much feeling equals less thinking.
+2. 
+
+# what's bad about competition?
+1. there has to be a loser. there is no win-win situation.
+2. the only win is what the loser learns
+3. 
+
+# what making me lose efficiency?
+1. not going 100% into car situation
+2. wasting time playing those games
+3. thinking about work punks and their drama
+	1. tawfik
+	2. peter
+	3. diyaa
+	4. kareem
+4. not scheduling times to get things done
+5. not diving into the tashteeb shit
+	what bullshit can the tennants say?
+6. not raping the fucking OSCP once and for all
+
+# what's the benefit of stress and pressure?
+
+
+# what exercises can I do to improve driving?
+
+# what are the skills required for driving?
+1. awarness of the car's body
+2. fluency in switching gears (without thinking)
+3. awarness of the street (mirror usage)
+4. knowing where to go
+5. 
+
+1. Turns: speed and use of signals
+2. Braking smoothly: gradually slowing to a stop
+3. Accelerating smoothly: steadily increasing to a safe speed within the posted limit
+4. Approaching intersections controlled by stop signs or lights
+5. Determining right of way
+6. Single-lane and multi-lane roadways (low speeds)
+7. Changing lanes and how to merge into traffic safely
+8. Maintaining appropriate speed
+9. Scanning for and identifying hazards
+10. Keeping a safe following distance
+11. Sharing the road with cyclists, pedestrians and school buses
+12. Driving in a school zone
+13. Reacting to an approaching emergency vehicle
+14. Using turning lanes
+
+# what are the most common beginner mistakes?
+1. not expecting mistakes by others -> driving slow and giving room for error by people
+2. not reacting in time to challenging situations -> putting a safe zone around you just in case
+3. not following common road rules
+
+# what makes a task annoying?
+1. it involves more than one party
+2. it has many items
+3. it goes into a new domain
+4. it has variables
+5. it has risks
+6. it has processes or norms to follow
+7. it involves dealing with difficult people
+	1. selfish
+		[+] telling that person that it's unreasonable to wish for a situation that is fully in his/her favor.
+		[+] telling that person that as much as it would be convenient, the earth won't be fully his for the taking.
+		[+] convincing him that collaboration is the way for him to get what he wants.
+	2. dishonest
+		[+] overcoming the awkwardness of questioning the truthness of his words. asking him "how can I confirm that X is true?"
+		[+] being familiar with all the possible exploitations that can occur in the situation and what can be done to detect and mitigate it.
+	3. stubborn
+		[+] questioning the person for what's making him so determined on his position.
+	4. ignorant
+		[+] educating the person in a way he can understand
+	5. stupid
+		[+] educating and showing the person the right way to do things
+	6. emotional
+		[+] handling the person and diffusing his emotions
+
+# what makes me averse to hurting people's feelings?
+1. empathy
