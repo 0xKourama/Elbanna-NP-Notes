@@ -1,5 +1,50 @@
-[ 1] [ ] what makes me feel DISGUST > AVOIDANCE > HESITANT?
+[ 1] [X] what makes me feel DISGUST > AVOIDANCE > HESITANT?
+1. having single choice to meet everyone's needs (having no intersection)
+2. my preferance of meeting everyone's interest makes choosing difficult
+3. what causes me to hesitate? 
+	- wanting to please everyone with my actions 
+	- wanting to win everyone's approval 
+	- wanting to be everyone's friend 
+	- wanting peace 
+	- wanting to reduce conflict
+4. what makes want to reduce conflict?
+	- wanting to reduce the stress that comes from competing selfish parties or people who can't negotiate or compromise.
+5. what makes me hesitant?
+	- buying time to process a solution that fits all parties
+	- chasing after something perfect
+	- not wanting to hurt anyone's feelings
+	- putting the task of finding the best solution on my shoulders
+	- wanting to expand my options and move laterally
+	- wanting to be creative with problem solving
+	- wanting to ease up people's demands (humans need to instantly get what they want creates a ton of pressure)
+6. what makes humans lives difficult?
+	- when we want something, we want it NOW! and we want it with the least effort
+	- we tend to panic when we experience something new or bad
+	- we tend to give things way more than they deserve. we tend to enlarge things.
+		[+] unprocessed unpleasant or unwanted situations with no found solution yet can pose a threat until properly handled.
+		[+] 
+	- we tend to expect things to work out perfectly.
+		[+] Nothing reasonable should make us expect perfection. if it happens, it's a gift from God. it doesn't belong everywhere.
+	- we tend to complain more than act.
+		[+] the expression of the problem only fits when it's a problem-solving approach.
+	- we tend to make a lot of errors (assumptions, generalizations, jumping to conclusions, underthinking, overthinking)
+		[+] inspecting every idea only takes time to get used to. and, the more diligent we are in this process, the less effort we have to do in correcting wrong ideas or assumptions.
+	- we tend to be selfish, and we would rather compete or give up rather than collaborate.
+		[+] the only thing needed for collaboration is:
+			1. proper communication
+			2. proper collaboration
+			3. proper negotiation
+			4. proper empathy
+	- we tend to lack awareness.
+		[+] questioning our every thought and decision is the way to go. what's good about this ... is that it's worth the effort.
+	- we tend to forget many things.
+		[+] having technology for reminders should make our lives easier.
+	- we tend to always look for more. rather than be thankful for what we have.
+		[+] always remembering what we have is what keeps us satisfied while working to improve
+	- our gradually dying nature puts us always in survival mode. sometimes, illogically.
+		[+] what worries us ... when we basically need to do the least amount of work to survive?
 [ 2] [ ] what makes me feel DISGUST > AVOIDANCE > AVERSION?
+	- 
 [ 3] [ ] what makes me feel DISGUST > AWFUL > DETESTABLE?
 [ 4] [ ] what makes me feel DISGUST > AWFUL > REVULSION?
 [ 5] [ ] what makes me feel DISGUST > DISAPPOINTED > REVOLTED?

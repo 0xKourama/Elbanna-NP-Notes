@@ -569,8 +569,8 @@ what items will I need?
 {X} deodrant
 {X} champoo and cream
 {X} nescafe
-{ } sha7en latop
 { } laptop
+{ } sha7en latop
 
 
 what activies will I be doing inshallah?
@@ -599,3 +599,51 @@ what activies will I be doing inshallah?
 		sports and training (taking kids from and to training)
 		child raising (what's the best way to do it)
 		work drama and colleagues failing to act right and what do we feel about that and what can be done to resolve this assage
+
+# what are the known enemy's sources of power?
+# what is the enemy's strategy?
+# what are the enemy's motives?
+# what are the enemy's weaknesses?
+
+# what makes us want to show off?
+1. proving one-self
+2. saying im the strongest
+3. wanting to impress people/women
+
+# what makes men always want to impress women?
+1. attracting women equals reproduction equals survival
+
+# what's bad about showing off?
+1. it's unnecessary and excessive
+2. assumes that victory is sure
+3. is egotistic
+
+# what does perfectionism do to it's holder?
+1. [+] drives him to be better if he's working on it
+2. [+] add perseverance to the person
+2. [-] sets his expectations too high which sets him for disappointment.
+3. [-] removes his will to work if he's hopeless that he will ever reach it.
+
+# what's the great thing about handling?
+1. getting a handle on things is a degree of control.
+2. unhandled situations are an area of threat, unmanaged areas are a problem.
+
+# what makes a situation difficult to handle?
+1. dealing with:
+	1. ingorance
+	2. stupidity
+	3. selfishness
+	4. too many emotions
+
+# what makes ignorance bad?
+1. not knowing something leads peope to assume rather than ask questions
+2. the brain would rather assume than have a missing picture
+3. the brain's tendency to fill gaps with assumptions rather than collect information can be a root of many errors.
+	[+] questioning the correctness of every clause is important to form a sound conclusions.
+
+# what can be done to increase the correctness of every thought?
+1. asking questions:
+	1. what are the statements that I have in my mind right regarding X situation?
+	2. in the Y statments I have found, what makes each and everyone true?
+	3. what are the reasonable conlusions that I can come up with?
+2. questioning the validity of the formed conclusions should help with finding the composing statements.
