@@ -710,6 +710,28 @@ what activies will I be doing inshallah?
 12. Driving in a school zone
 13. Reacting to an approaching emergency vehicle
 14. Using turning lanes
+15. Higher speeds that call for longer stopping distances
+16. The need to check blind spots before changing lanes
+17. Driving near large trucks
+18. Anticipating interchanges by reading signs
+19. Allowing a "safety space" around you, in the event you need to pull off the road for another vehicle or debris
+20. Looking for traffic stopped or slowing ahead
+21. Merging into traffic
+22. Identifying road signs and exits
+23. Navigating toll booths
+24. Passing and being overtaken
+25. Maintaining proper speed
+26. Being courteous to others
+27. Keeping a safe following distance
+
+# What are the points to consider in driving?
+1. Practice in varying conditions --> ability to handle most situations
+2. The ability to detect hazards and react to them quickly
+3. Scanning for hazards has become a habit
+4. Wearing a seat belt
+5. Removing distractions like cell phones and pulling over when not in best shape
+6. Responsibility
+7. Safe driving rules
 
 # what are the most common beginner mistakes?
 1. not expecting mistakes by others -> driving slow and giving room for error by people
@@ -741,7 +763,9 @@ what activies will I be doing inshallah?
 		[+] handling the person and diffusing his emotions
 
 # what makes me averse to hurting people's feelings?
-1. empathy
+1. being smart; making enemies is not a clever thing to do; making friends is always better
+2. empathy
+3. making enemies would put more work and pressure to dealing with their attempts of revenge
 
 # what are my insecurities?
 1. 
@@ -758,3 +782,76 @@ what activies will I be doing inshallah?
 3. being highly adaptive
 	*what makes adaptation annoying?*
 	- because some changes are bigger than us and that forces us to be in a reactive mode.
+
+# what makes a failure bad?
+1. when it's exaggerated to affect a person's image of himself.
+	[+] what causes a failure is a factor or more being missed in doing the desired task. Figured out what the missed factors were is what increases the chances of success on the following attempts.
+2. when the failure doesn't teach much.
+	[+] a bad failure doesn't give much feedback and leaves you to figure out what caused it.
+3. when the failure's cost is big. not all failures are the same.
+	[+] trying to minimize the cost of certain failure is important. exposing oneself to a huge risk isn't a wise thing to do.
+
+# what makes something right?
+
+# what makes something wrong?
+
+# what is emotional diffusion?
+
+# what are the 48 laws of power?
+
+# what makes women objectified?
+1. a woman's body is a source of pleasure for a man.
+2. sleeping with a woman is an instinct within every man. A major task for him to accomplish.
+
+# what makes men not objectified?
+1. a man's body is not a source of pleasure for a woman. It is only when the man is skilled in intercourse.
+2. 
+
+# what does a woman provide?
+1. offspring
+2. nurturing for offspring
+3. pleasure for husband
+4. housekeeping
+5. support for husband
+
+# what does a man provide?
+1. covering cost of life (house, car, bills, education, vacations)
+2. safety & protection
+3. responsibility
+4. support for wife
+5. leadership and vision
+6. raising kids
+
+# what makes a person scary?
+1. power
+2. focus
+3. status
+4. size
+5. masculine features
+6. demeanor
+
+# what constitues my vision in marriage?
+1. putting God's rules first
+	*the main source of authority on right & wrong is God's word*
+2. putting the self last
+	*being selfish can work when you're single. teamwork is king in marriage <3*
+3. being thankful for what we have while working to improve
+4. 
+
+# what makes a bond unbreakable?
+1. both parties defending it
+2. both parties communicating efficiently
+3. both parties being grateful for eachother
+4. both parties negotiating properly
+5. having wisdom in the relationship to control bad things from happening
+
+# what makes communication important?
+1. expressing what made you upset is important to relay to your partner
+
+# what creates obstacles in communication?
+1. 
+
+# what my way in overcoming challenges?
+1. gathering information. Doing research. Asking as much good questions as I can.
+2. Doing deep analysis.
+3. exploring the tree.
