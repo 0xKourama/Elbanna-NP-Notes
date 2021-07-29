@@ -798,6 +798,54 @@ what activies will I be doing inshallah?
 # what is emotional diffusion?
 
 # what are the 48 laws of power?
+1. Never outshine the master
+2. Never put too much trust in frieds, learn how to use enemies
+3. Conceal your intentions
+4. Always say less than necessary
+5. So much depends on reputation, guard it with your life
+6. Court attention at all costs
+7. Get others to do the work for you, but always take the credit
+8. Make other people come to you, use bait if necessary
+9. Win through your actions, never through argument
+10. Infection: Avoid the unhappy and the unlucky
+11. Learn to keep people dependent on you
+12. Use selective honesty and Generousity to disarm your victim
+13. When Asking for Help, Appeal to the Self-interests of Others, Never to Their Mercy or Gratitude
+14. Pose as a friend, work as a spy
+15. Crush your enemy totally
+16. Use absence to increase respect and honor
+17. Keep others in suspended terror: Cultivate an Air or unpredictability
+18. Do Not Build Fortresses to Protect Yourself – Isolation is Dangerous
+19. Know Who You’re Dealing With – Don’t Offend the Wrong Person
+20. Don't commit to anyone
+21. Play a Sucker to Catch a Sucker – Appear Dumber Than Your Mark
+22. Use the Surrender Tactic: Transform Weakness Into Power
+23. Concentrate your forces
+24. Play the perfect courtier
+25. Recreate yourself
+26. Keep your hands clean
+27. Create a Cult-like Following by Playing on People’s Need to Believe
+28. Enter action with boldness
+29. Plan all the way to the end
+30. Make your accomplishments seem effortless
+31. Control the Options: Get Others to Play With the Cards You Deal
+32. Play into people's fantasies
+33. Discover each man's thumbscrew
+34. Be Royal in Your Own Fashion: Act Like a King to Be Treated Like One
+35. Master the art of timing
+36. Disdain Things You Cannot Have: Ignoring Them is the Best Revenge
+37. Create compelling spectacles
+38. Think as you like, but behave as others
+39. Stir up waters to catch fish
+40. Despise the free lunch
+41. Avoid stepping into a great man's shoes
+42. Strike the sheperd, and the sheep will scatter
+43. Work on the hearts and minds of others
+44. Disarm and infuriate with the mirror effect
+45. Disdain Things You Cannot Have: Ignoring Them is the Best Revenge
+46. Never Appear too Perfect
+47. Don’t Go Past the Mark You Aimed For: In Victory, Learn When to Stop
+48. Assume formlessness
 
 # what makes women objectified?
 1. a woman's body is a source of pleasure for a man.
@@ -855,3 +903,6 @@ what activies will I be doing inshallah?
 1. gathering information. Doing research. Asking as much good questions as I can.
 2. Doing deep analysis.
 3. exploring the tree.
+
+# what are the benefits of hiding one's motives?
+1. 
