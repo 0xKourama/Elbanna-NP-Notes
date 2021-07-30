@@ -906,3 +906,13 @@ what activies will I be doing inshallah?
 
 # what are the benefits of hiding one's motives?
 1. 
+
+# what are stuff that happens when you are good looking?
+*when you're beautiful, people will want to look at you and see you smile/laugh.*
+1. some people may think you are arrogant
+2. some people will do anything to get a smile from you
+3. some people will do anything to get you to laugh
+4. some people will just love/like you
+5. some people will forgive your mistakes
+6. some people will accept you easily
+7. 
