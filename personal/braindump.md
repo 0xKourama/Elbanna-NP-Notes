@@ -929,8 +929,8 @@ what activies will I be doing inshallah?
 	- she gives more than she receives
 3. Investing in herself before marriage
 4. Check market needs
-	- get more certifications
-	- check job requirements
+	- Get more certifications
+	- Check job requirements
 	- AUC trainer ... 6k cost
 5. 
 
