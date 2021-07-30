@@ -43,10 +43,34 @@
 		[+] always remembering what we have is what keeps us satisfied while working to improve
 	- our gradually dying nature puts us always in survival mode. sometimes, illogically.
 		[+] what worries us ... when we basically need to do the least amount of work to survive?
-[ 2] [ ] what makes me feel DISGUST > AVOIDANCE > AVERSION?
-	- 
-[ 3] [ ] what makes me feel DISGUST > AWFUL > DETESTABLE?
-[ 4] [ ] what makes me feel DISGUST > AWFUL > REVULSION?
+[ 2] [X] what makes me feel DISGUST > AVOIDANCE > AVERSION?
+	1. ugly projects -> where approaching perfection seems far
+		[+] doing the homework usually turns things around for the better
+	2. dealing with my father
+		[+] handling him requires a shit ton of negotiation
+	3. chaos
+		[+] finding the logic within chaos usually solves the problem. Only the effort at the beginning makes things annoying
+[ 3] [X] what makes me feel DISGUST > AWFUL > DETESTABLE?
+	1. people being stupid
+		[+] simplifying everything to the lowest level is the way to go when dealing with those
+	2. people being selfish and/or greedy
+		[+] stopping the person and triggering his empathy a bit more
+	3. people being stubborn
+		[+] asking what are the things that make him stubborn. even if he resists answering ... the question should trigger contemplation inside.
+	4. people being ignorant
+		[+] showing them what they don't know
+	5. people being immature
+		[+] handling them like babies and asking them what's upsetting them
+[ 4] [X] what makes me feel DISGUST > AWFUL > REVULSION?
+	1. people who put pleasure first without considering right/wrong
+		[+] knowing better would make them change their mind. if not, getting their fill would.
+	2. people who put themselves first without cosidering people's emotions
+		[+] evoking empathy is the key
+	3. poeple who don't improve and stay still
+	4. people who don't bother correcting what's wrong
+	5. people who are sarcastic
+		[+] asking them what's making them sad?
+		[+] asking them what's disappointing them?
 [ 5] [ ] what makes me feel DISGUST > DISAPPOINTED > REVOLTED?
 [ 6] [ ] what makes me feel DISGUST > DISAPPOINTED > REPUGNANT?
 [ 7] [ ] what makes me feel DISGUST > DISAPPROVAL > LOATHING?

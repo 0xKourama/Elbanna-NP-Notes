@@ -1,11 +1,9 @@
-self-negotiation
-remove self-resistances by understanding yourself and being receptive to what is has to say
-acknowledging your shadow self and negative emotions other than letting them fester like an infection while unexpressed
-cooperation with yourself
-getting out of your own way
-acknowledging your positive self and reinforcing it
-removing inner noise, inner conflict,
-creating inner peace
+# self-negotiation
+1. Remove self-resistances by understanding yourself and being receptive to what is has to say
+2. Acknowledging your shadow self and negative emotions other than letting them fester like an infection while unexpressed
+3. self-cooperation
+4. Acknowledging your positive self and reinforcing it
+5. Removing inner noise & conflict. Creating a lasting inner peace
 are you against .....?
 ................., would you disagree?
 Is it a ridiculous idea to ........?
@@ -13,31 +11,18 @@ if we say that ........, would we be wrong?
 what have we missed?
 how do we proceed?
 
-things that irritated me:
-1. wanting to work still -> manageable since she wants to sit down after children (a year can pass without problems). my offer for her to stay is not easy to decline.
-question: what do you want to accomplish in centro? what makes you want to do this for the rest of your life?
-what are you developing in yourself?
-
-2. possibility of a 3rd party interfering with internal affairs
-3. delay of medical checkup ... added task of monitoring holidays for unplanned shit
-5. OSCP nightmare return
-
-
-what's my way in doing a thing?
+# what's my way in doing a thing?
 1. self-convincing of importance
 2. collect information
 3. developing understanding
 4. doing deep analysis
 
-what was bad about the oscp?
+# what was bad about the oscp?
 1. not having clear thinking
 2. not being organized
 3. having the shit relationship going on a the same time
-4. 
 
-
-
-what was bad about the past relationship?
+# what was bad about the past relationship?
 1. the fact that the girl lived a whore's life
 2. the fact that the girl had no religion whatsoever
 3. the fact that her jealousy has overwhelming
@@ -47,10 +32,9 @@ what was bad about the past relationship?
 7. the fact that I was confused about so many things
 8. the fact that I was caught up in the trash happening in centro
 9. the fact that I was unaware of so many things
-10. 
 
-
-what improved after the past relationship?
+# what improved after the past relationship?
+1. 
 
 stuff needed for long sex sessions
 1. long well done foreplay
@@ -916,3 +900,82 @@ what activies will I be doing inshallah?
 5. some people will forgive your mistakes
 6. some people will accept you easily
 7. 
+
+# what are my repeated mistakes in life?
+1. not finishing stuff that I start
+2. depending on others
+3. complaining rather than accepting the challenge and working on it
+4. delaying important projects
+	1. OSCP
+	2. Driving
+	3. Real estate
+5. delaying ugly projects
+	1. buying a used car
+		people who can help:
+		1. gomgom
+		2. hosam
+		3. chico > karam
+
+# what am I doing wrong now at work?
+1. not accepting all the challenges
+2. wasting time without improving
+
+# what are the reasons for Alyaa's departure from Centro?
+1. Embare7 ... zawwa3't mel sho3'l
+	with hala 7amada
+	1. Create LinkedIn
+	2. 
+2. SWVL is bringing her down
+	- she gives more than she receives
+3. Investing in herself before marriage
+4. Check market needs
+	- get more certifications
+	- check job requirements
+	- AUC trainer ... 6k cost
+5. 
+
+# what are the news regardin swvl?
+1. everything is going under Centro's supervision
+	- revamp training with SWVL
+	- alice spent 1 year with SWVL
+
+# what she likes about centro?
+1. improving every year
+
+# what are her options?
+
+# what steps does she need to do in order to work in Amazon?
+1. prepare her linkedIn profile
+
+# what are the stuff that I need to analyze in order to have a better life?
+
+# what makes me defend God and Islam so hard?
+
+# what makes me hate sarcasm that much?
+
+# what makes people be mean to others?
+1. they are miserable themselves. spreading misery is their choice.
+
+# what the best way to deal with sarcasm?
+
+# what annoying about mismatching content and tone?
+1. it's insincere
+2. it requires a quick brain
+3. it's a hit below the belt 
+4. it's slower to understand
+5. it's intended
+6. it's cowardly
+
+# what's the normal rate for asking about Mr. yousef and his wife? what activities can be done with the guy?
+
+
+# what are the question words?
+1. when ---> what's the time
+2. where ---> what's the place
+3. why ---> what caused
+4. how --> what's the way
+5. how much --> what's the cost
+6. how many --> what's the number
+7. how old --> what's the age
+
+# what slowing down my career advances?
