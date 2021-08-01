@@ -72,6 +72,7 @@
 		[+] asking them what's making them sad?
 		[+] asking them what's disappointing them?
 [ 5] [ ] what makes me feel DISGUST > DISAPPOINTED > REVOLTED?
+	1. 
 [ 6] [ ] what makes me feel DISGUST > DISAPPOINTED > REPUGNANT?
 [ 7] [ ] what makes me feel DISGUST > DISAPPROVAL > LOATHING?
 [ 8] [ ] what makes me feel DISGUST > DISAPPROVAL > JUDGEMENTAL?

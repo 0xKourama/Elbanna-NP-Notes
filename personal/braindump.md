@@ -978,4 +978,37 @@ what activies will I be doing inshallah?
 6. how many --> what's the number
 7. how old --> what's the age
 
-# what slowing down my career advances?
+# what's slowing down my career advances?
+1. attention to marriage stuff
+2. attention towards driving
+3. attention towards the work drama
+
+# what steps can be taken to remove any upcoming drama in work?
+1. know exactly what the fuck does the company want
+2. know exactly the full cybersecurity architecture
+3. know 
+
+# what has upset me in the past?
+1. bullying at school by hisham sa3d and ali remah and other bitch kids
+2. bullying by father at home for wetting bed
+3. bullying by sister who constantly used sarcastic and provocative words
+4. meaningless bullshit at college
+5. terrible sister pouring all her emotional issues and PMS on our family
+6. negative dad who doesn't do anything positive around the house or outside
+7. complaining perfectionist mother who just poured all her problems and ambitions on me
+8. the stealing and the shitty team leader in vodafone UK
+9. the difficulty of finding a fucking job in IT
+10. dealing with the shit at Centro
+11. the EX ..... and all the fucking chaos and shit she brought
+12. putting up with shit at tattoo
+13. dealing with trash at Roaya
+
+# what were the positive things in the past?
+1. the real niggaz in my life: gomgom, hosam, hisham, adham, chico (support, sharing, good times, figuring out life)
+2. gaming (tibia, maplestory, cabal, tera, darksiders, legacy of kain) (skill, strategy, grinding, proving oneself, fighting)
+3. basketball (training, hardwork, technique, winning for the team, styling on them niggaz, proving oneself)
+4. gym (hard-work, being strong, proving oneself, doing research)
+5. movies (figruing out life, looking at warriors, heroes, wisemen, kings, masters)
+6. anime (figuring out life, friendship, looking at fighter, heroes, wisemen, kings, masters, good fighting evil, hero character development)
+7. music (hip-hop, rap, rock, DnB, trap)
+8. reading
