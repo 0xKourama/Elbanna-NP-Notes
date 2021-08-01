@@ -1214,6 +1214,7 @@ what activies will I be doing inshallah?
 
 # what makes difficult things take time
 
+
 # what were/are the attractice energies for me?
 - Fighters
 - Heroes
@@ -1223,6 +1224,7 @@ what activies will I be doing inshallah?
 - Masters
 
 # what's good/bad about ambition?
+
 
 # what adds to your chances of winning?
 - getting yourself in a favorable position or situation... now or in the future 
@@ -1240,7 +1242,57 @@ what activies will I be doing inshallah?
 5. looking for wisdom
 6. looking for what's right
 7. problem-solving
-8. 
+8. facing challenges
+9. reading
+10. Gym
+11. work
+12. friends
+13. cooperation
+14. looking for truths
+15. giving my best
+
+# what do I love?
+1. problem-solving
+2. untangling complex subjects
+3. understanding
+4. wisdom
+5. truth and honesty
+6. justice
+7. clarity
+8. simplicity
+9. bring happiness to people
+10. knowledge
+11. order
+12. maturity
+13. serenity
+14. collaboration
+15. understanding
+16. skill and mastery
+17. smoothness & ease
+
+# what do I hate?
+1.  injustice
+2.  arrogance
+3.  fallacy
+4.  stubborness
+5.  shallowness
+6.  complexity
+7.  ignorance
+8.  chaos
+9.  immaturity
+10. competition
+
+# what's the most important thing for me?
+*winning in both life & afterlife*
+
+# what do I think I lack?
+1. more faith
+2. more understanding of religion
+3. more wisdom
+4. more knowledge
+5. more experience
+6. more balance
+7. removal of the remaining wrong beliefs and bad traits
 
 # what quirks can be visible from outside?
 1. serious walk
@@ -1273,7 +1325,6 @@ what activies will I be doing inshallah?
 28. sharp desk
 29. 
 
-
 # what happens with emotions?
 1. an event happens
 2. interpretation of the event happens
@@ -1283,7 +1334,23 @@ what activies will I be doing inshallah?
 *a valid interpretation is important to decrease the chance of error*
 *the challenge with emotions lies in that: a wrong interpretation can give off an extreme emotion. which cancels thought and hiders clear proper thinking*
 
+# what do we need in order to live a good life?
+1. think
+2. communicate always
+
 # what make emotions so powerful in stopping thought?
+
 
 # what makes supression of orgasm difficult?
 1. the anticipation of rewards is too strong
+
+# what helps with balance?
+
+
+# what makes us skip verification of perception and jump to conclusions?
+
+
+# what makes people love music?
+
+
+# what evidence do I have to support X claim?
