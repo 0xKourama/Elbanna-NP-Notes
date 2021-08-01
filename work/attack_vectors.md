@@ -14,3 +14,13 @@ an attack can have a domain user created by adding his fake domain to tools
 5. web directories
 6. input fields
 7. output (blind, visible)
+
+# what are the possible web application attacks?
+1. SQL Injection
+2. Cross-Site Scripting
+3. Command Injection
+4. Server-Side Request forgery
+5. Brute-force
+6. Local/Remote File Inclusion
+7. XML Entity Injection
+8. Directory Traversal
