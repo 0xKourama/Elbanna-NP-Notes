@@ -1056,4 +1056,234 @@ what activies will I be doing inshallah?
 - what are my daily tasks?
 - what cyber security infrastructure is in place? 
 
-# 
+# what are the items that I use in my life?
+1. my phone & charger & my bluetooth headset
+2. my keys
+3. my wallet
+4. my clothes
+	- home (summer)
+	- home (winter)
+	- underwear (boxers, undershirts)
+	- socks, gloves, scarfs
+	- casual (summer)
+	- casual (winter)
+	- suits & ties
+	- shoes (gym, casual, formal, slippers)
+5. my glasses
+6. my chair
+7. my computer
+8. 
+
+# what makes us forget our blessings?
+
+
+# what makes a good question?
+
+
+# what determines a persons value?
+
+
+# what were the biggest mistakes I've made? what made me do them?
+
+
+# what is the benefit of post-processing?
+
+
+# what are the areas of improvement in our security?
+
+
+# what makes something vague?
+
+
+# what makes understanding easy?
+
+
+# what makes learning easy?
+
+
+# what makes development easy?
+
+
+# what makes searching easier?
+
+
+# what are the steps of effective troubleshooting?
+
+
+# what makes troubleshooting easy?
+
+
+# what makes a person emotionally stable?
+
+
+# what signs show that am in inner peace?
+
+
+# what does the word 'I' do?
+
+
+# what's painful in denying good deeds?
+
+
+# what causes human error?
+
+
+# what are your hopes?
+
+
+# what makes a person use indirect ways?
+
+
+# what's annoying about being sassy?
+
+
+# what are the guidelines and best practices for security? for making good decisions?
+
+
+# what are questions you can ask about a company before joining them?
+
+
+# what are good questions to ask?
+
+
+# what makes management important?
+
+
+# what makes a good manager?
+
+
+# what are the challenges with IT and security?
+
+
+# what stops me? 
+
+
+# Identify, Protect, Detect, Respond, Recover
+
+
+# what makes a good strategy? 
+
+
+# what are the most difficult things to do?
+
+
+# what do we need to convince people?
+
+
+# what's the importance of the method?
+
+
+# what are the differences between men and women?
+
+
+# what have I shown in my work duration?
+
+
+# ask the CEO or manager, what do you like? what do you hate?
+
+
+# what are valid reasons for rejection?
+
+
+# what does each server type do?
+
+
+# what makes the right hard and the wrong easy?
+
+
+# what do we know about the situation?
+
+
+# what are the drivers?
+
+
+# what is a reasonable desired outcome?
+
+
+# what can be done to achieve or move things towards that result?
+
+
+# what deserves focus?
+
+
+# what factors contribute to a person's character development?
+
+
+# what's the difference between being driven and leading?
+
+
+# what makes difficult things take time
+
+# what were/are the attractice energies for me?
+- Fighters
+- Heroes
+- Leaders
+- Kings
+- Sages
+- Masters
+
+# what's good/bad about ambition?
+
+# what adds to your chances of winning?
+- getting yourself in a favorable position or situation... now or in the future 
+- find the areas of power
+- eliminating opponent's areas of power
+- being careful not to make basic mistakes
+- thinking two steps ahead
+- finding enemy weaknesses and what can be done to exploit them.
+
+# What are my activities?
+1. thinking
+2. contemplating
+3. questioning
+4. analysis
+5. looking for wisdom
+6. looking for what's right
+7. problem-solving
+8. 
+
+# what quirks can be visible from outside?
+1. serious walk
+2. serious look
+3. smooth crossovers when walking
+4. calculated moves
+5. sure keyboard strokes
+6. clean face
+7. simple classic style
+8. comfortable shoes
+9. nice hair but not main priority
+10. practical backpack
+11. no social media ... no bullshit
+12. lots of books
+13. organized notes
+14. lots of notes and ideas
+15. warm, calm, thinking eyes
+16. healthy food
+17. supplements
+18. in shape without drawing attention
+19. calm low voice
+20. fighter music
+21. serene music
+22. speed and technique at work
+23. lots of ideals
+24. pain relieving words
+25. manners of a prince
+26. short wise sentences
+27. clean nose
+28. sharp desk
+29. 
+
+
+# what happens with emotions?
+1. an event happens
+2. interpretation of the event happens
+3. if the interpreted event is desired --> a pleasant emotional reaction happens
+4. if the interpreted event is NOT desired --> an unpleasant emotional reaction happens
+
+*a valid interpretation is important to decrease the chance of error*
+*the challenge with emotions lies in that: a wrong interpretation can give off an extreme emotion. which cancels thought and hiders clear proper thinking*
+
+# what make emotions so powerful in stopping thought?
+
+# what makes supression of orgasm difficult?
+1. the anticipation of rewards is too strong
