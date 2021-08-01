@@ -7,3 +7,6 @@ Get-VM | Foreach-Object { $_.ExtensionData.summary.guest | Select-Object -Proper
 		($_.ipaddress.length -le 15)
 } | format-table -AutoSize
 ```
+# Get the Resource pools and all the VMs under them with their data
+get-vm | select ResourcePool,Name,PowerState,NumCpu,MemoryGB,@{n='DiskSizeGB';e={$index=1;($_ |Get-HardDisk| select -ExpandProperty 
+CapacityGB| % {"HD#$index`: $_ GB"; $index++}) -join ', '}} | Export-Csv -NoTypeInformation ResourcePoolData.csv
