@@ -1010,5 +1010,50 @@ what activies will I be doing inshallah?
 4. gym (hard-work, being strong, proving oneself, doing research)
 5. movies (figruing out life, looking at warriors, heroes, wisemen, kings, masters)
 6. anime (figuring out life, friendship, looking at fighter, heroes, wisemen, kings, masters, good fighting evil, hero character development)
-7. music (hip-hop, rap, rock, DnB, trap)
-8. reading
+7. music (hip-hop, rap, rock, DnB, trap, chinese music, ego bullshit + warrior spirit music + harmony)
+8. reading (learning, knowledge, contemplation, )
+
+
+# Rules for work
+1. win everyone over and be diplomatic
+2. listen more than talk
+3. you can treat everyone the same
+4. how you present your work is equally important to the work itself
+5. advise the people who deserve
+6. be cautious when dealing with your colleagues. but don't be skeptical
+7. don't interfere in what doesn't concern you
+	*what concerns me?*
+8. don't do anyone's work. and don't let anyone do your work
+9. dignity comes first
+10. place boundaries without being blunt
+11. there's no career stabiltiy without improvement
+12. timing is important when making requests
+13. don't limit your work saying that the pay is low
+14. opportunity needs preparation
+15. don't make a decision while sad or annoyed
+16. don't ever return to a company that you left. unless they call you
+17. there's no work without problems
+18. work is fun .. try to enjoy it
+19. being impressed is one thing .. being an ass-kisser is another
+20. work shouldn't threaten the stability of your personal life
+
+# What are the areas to manage? 
+1. Emotions
+2. Time
+3. Relationships
+4. Conflict
+5. Challenges
+6. Money
+7. Expectations
+8. Clothing
+9. Health
+10. Energy 
+
+# What are questions to answer when wanting to move to another company?
+- what are the positives of wp?
+- what are the negatives?
+- what am I looking for?
+- what are my daily tasks?
+- what cyber security infrastructure is in place? 
+
+# 
