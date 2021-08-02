@@ -10,3 +10,8 @@ Get-VM | Foreach-Object { $_.ExtensionData.summary.guest | Select-Object -Proper
 # Get the Resource pools and all the VMs under them with their data
 get-vm | select ResourcePool,Name,PowerState,NumCpu,MemoryGB,@{n='DiskSizeGB';e={$index=1;($_ |Get-HardDisk| select -ExpandProperty 
 CapacityGB| % {"HD#$index`: $_ GB"; $index++}) -join ', '}} | Export-Csv -NoTypeInformation ResourcePoolData.csv
+
+
+# get used space of datastores
+Get-Datastore | Select-Object @{n='DataStore';e={$_.name}},@{n='UsedSpaceGB';e={[math]::round($_.CapacityGB - $_.FreeSpaceGB,2)}} | 
+Sort-Object -Property UsedSpaceGB -Descending | Export-Csv DataStores_UsedSpace.csv -NoTypeInformation
