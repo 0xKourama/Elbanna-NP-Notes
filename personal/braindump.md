@@ -1360,10 +1360,13 @@ what activies will I be doing inshallah?
 1. 
 
 # what do you know about people and human nature?
+1. 
 
 # what makes you happy?
+1. 
 
 # what makes you sad?
+1.
 
 # what distracts you?
 1. what my senses are exposed to
@@ -1390,6 +1393,7 @@ what activies will I be doing inshallah?
 4. 
 
 # what do you lack?
+1. 
 
 # what do you know about yourself? what don't you know?
 
@@ -1403,7 +1407,7 @@ what activies will I be doing inshallah?
 
 # what makes a leader?
 
-# what makes a good father/husband /brother /son/employee /worshipper/friend? 
+# what makes a good father/husband/brother/son/employee/worshipper/friend? 
 
 # what are my abilities?
 
@@ -1420,8 +1424,6 @@ what activies will I be doing inshallah?
 # what makes a topic sensitive?
 
 # what are sensitive topics?
-
-# *leadership questions*
 
 # what are the effects of stress?
 
@@ -1482,3 +1484,32 @@ what activies will I be doing inshallah?
 # what makes us lose patience?
 1. human nature. when a humans wants something, he wants it NOW
 	[+] nothing would happen if we don't get what we want; it's all about what we need to live.
+
+# what are energy foods?
+1. bananas
+2. sweet potato
+
+# what are the qualities of leadership?
+1. 
+
+# what experiences are vital to my development?
+1. 
+
+# what were the turning points in my life?
+1. 
+
+# what role has failure played in my life?
+1. 
+
+# what method is best for learning?
+1. 
+
+# what characters did I admire?
+1. 
+
+# what can organizations do to make/break leaders?
+1. 
+
+# what makes a hero?
+1. an unwavering sense of justice
+2. the will to face challenges
