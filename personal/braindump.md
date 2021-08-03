@@ -155,7 +155,6 @@ what's fun in life?
 3. making progress
 4. solving problems
 
-
 what are fun stuff to do with lolo?
 1. sex
 2. discovering each other
@@ -187,7 +186,6 @@ topics to chat with with Mrs. Mohga
 3. marriage rules
 4. work for women
 5. 
-
 
 topics to chat with marwan:
 1. anime
@@ -276,10 +274,8 @@ duties:
 
 
 
-
 house wife:
 negative
-
 
 positive
 free time for:
@@ -366,7 +362,6 @@ what's the thing about death?
 1. the new feeling and not knowing what to expect can be scary
 2. letting it happen is the way to go... since it cannot be controlled
 3. the self's instinct for survival and resisting the experience are what makes it difficult
-
 
 engagement areas of improvement:
 1. learn how to dance (slow and sha3bi)
@@ -472,7 +467,6 @@ what are the areas for highly-efficient thinking?
 1. targeted towards finding a solution
 2. targeted towards actionable items
 
-
 what's making mom exhausted?
 1. work
 2. hagar
@@ -488,7 +482,6 @@ what's making mom exhausted?
 				must be finished
 				must find a banking plan
 				must work with mortgage
-
 
 what items define success for me?
 1. wisdom
@@ -506,7 +499,6 @@ what are my areas of interest?
 
 what's so good about awareness?
 1. making sure one's not directed by an erroneous assumption or predisposition
-
 
 what has directed me in the past?
 1. proving myself
@@ -555,7 +547,6 @@ what items will I need?
 {X} nescafe
 { } laptop
 { } sha7en latop
-
 
 what activies will I be doing inshallah?
 1. socializing with family
@@ -669,7 +660,6 @@ what activies will I be doing inshallah?
 6. not raping the fucking OSCP once and for all
 
 # what's the benefit of stress and pressure?
-
 
 # what exercises can I do to improve driving?
 
@@ -968,7 +958,6 @@ what activies will I be doing inshallah?
 
 # what's the normal rate for asking about Mr. yousef and his wife? what activities can be done with the guy?
 
-
 # what are the question words?
 1. when ---> what's the time
 2. where ---> what's the place
@@ -1012,7 +1001,6 @@ what activies will I be doing inshallah?
 6. anime (figuring out life, friendship, looking at fighter, heroes, wisemen, kings, masters, good fighting evil, hero character development)
 7. music (hip-hop, rap, rock, DnB, trap, chinese music, ego bullshit + warrior spirit music + harmony)
 8. reading (learning, knowledge, contemplation, )
-
 
 # Rules for work
 1. win everyone over and be diplomatic
@@ -1076,144 +1064,97 @@ what activies will I be doing inshallah?
 
 # what makes us forget our blessings?
 
-
 # what makes a good question?
-
 
 # what determines a persons value?
 
-
 # what were the biggest mistakes I've made? what made me do them?
-
 
 # what is the benefit of post-processing?
 
-
 # what are the areas of improvement in our security?
-
 
 # what makes something vague?
 
-
 # what makes understanding easy?
-
 
 # what makes learning easy?
 
-
 # what makes development easy?
-
 
 # what makes searching easier?
 
-
 # what are the steps of effective troubleshooting?
-
 
 # what makes troubleshooting easy?
 
-
 # what makes a person emotionally stable?
-
 
 # what signs show that am in inner peace?
 
-
 # what does the word 'I' do?
-
 
 # what's painful in denying good deeds?
 
-
 # what causes human error?
-
 
 # what are your hopes?
 
-
 # what makes a person use indirect ways?
-
 
 # what's annoying about being sassy?
 
-
 # what are the guidelines and best practices for security? for making good decisions?
-
 
 # what are questions you can ask about a company before joining them?
 
-
 # what are good questions to ask?
-
 
 # what makes management important?
 
-
 # what makes a good manager?
-
 
 # what are the challenges with IT and security?
 
-
 # what stops me? 
-
 
 # Identify, Protect, Detect, Respond, Recover
 
-
 # what makes a good strategy? 
-
 
 # what are the most difficult things to do?
 
-
 # what do we need to convince people?
-
 
 # what's the importance of the method?
 
-
 # what are the differences between men and women?
-
 
 # what have I shown in my work duration?
 
-
 # ask the CEO or manager, what do you like? what do you hate?
-
 
 # what are valid reasons for rejection?
 
-
 # what does each server type do?
-
 
 # what makes the right hard and the wrong easy?
 
-
 # what do we know about the situation?
-
 
 # what are the drivers?
 
-
 # what is a reasonable desired outcome?
-
 
 # what can be done to achieve or move things towards that result?
 
-
 # what deserves focus?
-
 
 # what factors contribute to a person's character development?
 
-
 # what's the difference between being driven and leading?
 
-
 # what makes difficult things take time
-
 
 # what were/are the attractice energies for me?
 - Fighters
@@ -1224,7 +1165,6 @@ what activies will I be doing inshallah?
 - Masters
 
 # what's good/bad about ambition?
-
 
 # what adds to your chances of winning?
 - getting yourself in a favorable position or situation... now or in the future 
@@ -1332,25 +1272,213 @@ what activies will I be doing inshallah?
 4. if the interpreted event is NOT desired --> an unpleasant emotional reaction happens
 
 *a valid interpretation is important to decrease the chance of error*
-*the challenge with emotions lies in that: a wrong interpretation can give off an extreme emotion. which cancels thought and hiders clear proper thinking*
+*the challenge with emotions lies in that: a wrong interpretation can give off an extreme emotion. which cancels thought and hinders clear proper thinking*
 
 # what do we need in order to live a good life?
 1. think
 2. communicate always
 
 # what make emotions so powerful in stopping thought?
-
+1. they are a reaction to a certain interpretation. so, this means thinking has already stopped with a conclusion. that leaves only reaction
 
 # what makes supression of orgasm difficult?
 1. the anticipation of rewards is too strong
 
 # what helps with balance?
-
+1. emotional balance meaning to be calm and never moved by emotion. rather by steady calculated thoughts.
 
 # what makes us skip verification of perception and jump to conclusions?
-
+1. not knowing better
+2. trying to take action quickly
 
 # what makes people love music?
-
+1. pleasant music give pleasant emotions (motivation, relaxation, celebration)
+2. with pleasant emotions. mental state could be improved.
 
 # what evidence do I have to support X claim?
+
+# what could threaten your inner peace? what causes disturbance?
+1. feeding/building an ego
+2. being blind to/unaware of something
+3. being overwhelmed with challenges
+4. being tricked/manipulated/exploited
+5. being violated
+6. being done wrong
+7. losing balance
+8. blind rage
+
+# what could ruin your life?
+1. losing faith in God/Islam (afterlife too)
+2. bad marriage
+3. bad kids
+4. illness
+5. corruption in self
+6. fatal mistakes
+7. acting on blind rage
+
+# what drives you?
+1. excellence
+2. desire for a smooth easy life of overcoming challenges with elegance
+3. desire to set things right
+4. desire for maturity, understanding and wisdom
+5. desire to become better
+6. desire to never stopping and keep on going
+
+# what could threaten your confidence?
+1. finding people who are way better
+2. finding someone whose thinking puts mine to shame
+3. being outclassed hard by a peer
+
+# what brings the worst in you?
+1. being unaware
+2. losing morale
+3. losing vision
+4. being done wrong
+5. losing to provocation
+
+# what brings the best in you?
+1. having a noble mission
+2. being right
+3. facing tough odds
+4. being looked down on
+5. finding a strong opponent
+6. fighting something evil
+7. helping someone
+8. doing something meaningful
+9. doing something heroic
+10. fighting for redemption (tipping the scales, turning the tables, turning things aruond and making a comeback)
+11. moving towards battle
+
+# what are you assuming in life?
+1. people are smart
+2. people want what's right
+3. people are kind inside
+4. people are straight inside
+5. people know better
+
+# what do you know about life?
+1. 
+
+# what do you know about people and human nature?
+
+# what makes you happy?
+
+# what makes you sad?
+
+# what distracts you?
+1. what my senses are exposed to
+2. 
+
+# what do you wish to accomplish?
+1. get married
+2. drive
+3. being a good husband
+4. being a good father
+5. being a good son
+6. being a good brother
+7. being a good worshipper (close to God)
+8. being a mature wise man
+9. being a strong fighter
+10. being a highly-skilled employee
+11. being a good leader
+12. making the world a better a place (for as much people as I can)
+
+# what scares you?
+1. what I don't know that I don't know (totally unaware of)
+2. being corrupt/evil/ a tyrant
+3. losing sight of what's right
+4. 
+
+# what do you lack?
+
+# what do you know about yourself? what don't you know?
+
+# what intervals in your life lack awareness?
+
+# what are the challenges in your life?
+
+# what are your dreams?
+
+# what comforts you?
+
+# what makes a leader?
+
+# what makes a good father/husband /brother /son/employee /worshipper/friend? 
+
+# what are my abilities?
+
+# what's my capacity?
+
+# what would be a good achievement?
+
+# context?
+
+# discrete
+
+# what do I need to unlearn?
+
+# what makes a topic sensitive?
+
+# what are sensitive topics?
+
+# *leadership questions*
+
+# what are the effects of stress?
+
+# what causes stress?
+
+# areas to manage: stress
+
+# what can be done to study behavior? IT and people
+
+# what are common human weaknesses and biases?
+
+# what are noble goals?
+
+# what makes a goal noble?
+
+# what disarma people?
+
+# what brings peace?
+
+# what causes war?
+
+# what wins people over?
+
+# what makes people favor peace over war? ia it a strong opponent?
+
+# what remains to be understood?
+
+# what are the effects of good manners?
+
+# what makes anger contagious?
+
+# what makes some emotions contagious?
+
+# what are the effects of mirror neurons?
+
+# what are thr most common diseases?
+
+# what are the ways to prevent them?
+
+# what are the most inefficient thought processes?
+
+# what are the main sources of stress?
+
+# what are the best ways to relieve stress?
+
+# what inspires people?
+
+# what gives people hope?
+
+# what are the signs of corruption in our world now? 
+
+# what makes a person self-concious?
+
+# what makes want to rush things?
+1. thinking something would happen to us if we don't get what we want.
+2. associated that thing with our own value
+
+# what makes us lose patience?
+1. human nature. when a humans wants something, he wants it NOW
+	[+] nothing would happen if we don't get what we want; it's all about what we need to live.
