@@ -1390,7 +1390,7 @@ what activies will I be doing inshallah?
 1. what I don't know that I don't know (totally unaware of)
 2. being corrupt/evil/ a tyrant
 3. losing sight of what's right
-4. 
+4. losing to corruption
 
 # what do you lack?
 1. 
@@ -1404,10 +1404,26 @@ what activies will I be doing inshallah?
 # what are your dreams?
 
 # what comforts you?
+1. hope that things will turn out for the better
+2. belief that inshallah i'll be able to overcome the upcoming challenges
+3. being in the company of people that know God and follow his word
+4. seeing righteous people
 
 # what makes a leader?
 
-# what makes a good father/husband/brother/son/employee/worshipper/friend? 
+# what makes a good father?
+
+# what makes a good husband?
+
+# what makes a good brother?
+
+# what makes a good son?
+
+# what makes a good employee?
+
+# what makes a good worshipper?
+
+# what makes a good friend?
 
 # what are my abilities?
 
@@ -1483,7 +1499,7 @@ what activies will I be doing inshallah?
 7.  Entertainment having more audience than actual food for thought
 8.  Entertainers making more money than people with actual jobs
 9.  Prevalence of drugs and narcotics
-10. Gender wars (Feminisim, M.G.T.O.W)
+10. Gender wars (Feminisim & M.G.T.O.W)
 11. Civil Wars
 12. Gun Trading
 13. Praising wrong deeds
@@ -1492,6 +1508,11 @@ what activies will I be doing inshallah?
 16. Lack of guidance for youth
 17. Sex being taken lightly
 18. Spirituality being dropped for material endeavors
+19. Increase in mental illness
+20. Prevalence of divorce
+21. Difficulty in being righteous
+22. Low ethical standards
+23. Ethics being disregarded as fictional
 
 # what makes a person self-concious?
 1. 
@@ -1532,3 +1553,18 @@ what activies will I be doing inshallah?
 # what are energy foods?
 1. bananas
 2. sweet potato
+
+# what the deal with the baby voice?
+1. disarming
+2. este3bat
+3. trying to escape responsibility
+4. 
+
+# what negatives appeared?
+1. rule manipulation
+2. darda7a more than needed
+3. sneaking behind her father
+
+# what has she done to provoke you?
+1. dodging a lot of topics
+2. 
