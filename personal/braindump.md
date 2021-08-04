@@ -1567,4 +1567,42 @@ what activies will I be doing inshallah?
 
 # what has she done to provoke you?
 1. dodging a lot of topics
-2. 
+2. este3bat (wore something short on test call fail day + wore heavy make up + said we should hide our beauty which is makeup removal + asked for abuse)
+3. 
+
+# positive things:
+1. Religious
+	1. prayed when we were at coffee shop company
+	2. has religious knowledge
+	3. 
+2. clean
+	1. was shy in engagement (in slow dance)
+	2. got super sweaty when I touched her hands
+	3. 
+2. Loves me
+3. Positive
+4. Energetic
+5. Direct
+6. Reads books (Psychology)
+7. Highly Aware
+8. Collaborative
+9. Respectful
+10. Funny
+11. Playful
+12. Improves
+13. Hears other opinions
+14. Kind
+15. Honest
+16. Practical
+17. Secure & Confident
+18. Tender
+19. Has high standards
+20. Has a SOLID character
+
+# what's upsetting me?
+1. being forced to let out at the engagement
+2. abusing
+3. chat going out of hand
+4. her pushing
+5. her male relationships at work
+6. her dress and makeup at work
