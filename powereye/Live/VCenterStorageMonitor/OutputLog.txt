@@ -1,0 +1,4150 @@
+WARNING: Please consider joining the VMware Customer Experience Improvement Program, so you can help us make PowerCLI a
+ better product. You can join using the following command:
+
+Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $true
+
+VMware's Customer Experience Improvement Program ("CEIP") provides VMware with information that enables VMware to 
+improve its products and services, to fix problems, and to advise you on how best to deploy and use our products.  As 
+part of the CEIP, VMware collects technical information about your organizationƒ?Ts use of VMware products and services
+ on a regular basis in association with your organizationƒ?Ts VMware license key(s).  This information does not 
+personally identify any individual.
+
+For more details: type "help about_ceip" to see the related help article.
+
+To disable this warning and set your preference use the following command and restart PowerShell: 
+Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $true or $false.
+
+Scope    ProxyPolicy     DefaultVIServerMode InvalidCertificateAction  DisplayDeprecationWarnings WebOperationTimeout
+                                                                                                  Seconds            
+-----    -----------     ------------------- ------------------------  -------------------------- -------------------
+Session  UseSystemProxy  Single              Ignore                    True                       300                
+User                     Single              Ignore                                                                  
+AllUsers                                     Ignore                                                                  
+
+IsConnected   : True
+Id            : /VIServer=worldposta.com\powercli@10.5.5.20:443/
+ServiceUri    : https://10.5.5.20/sdk
+SessionSecret : "960c1a612d6fcb5b963ea4012069b1fc42b2e675"
+Name          : 10.5.5.20
+Port          : 443
+SessionId     : "960c1a612d6fcb5b963ea4012069b1fc42b2e675"
+User          : WORLDPOSTA.COM\powercli
+Uid           : /VIServer=worldposta.com\powercli@10.5.5.20:443/
+Version       : 6.7.0
+Build         : 18010599
+ProductLine   : vpx
+InstanceUuid  : 9455ae5e-3f2e-4be3-b798-68d38b0c59a7
+RefCount      : 1
+ExtensionData : VMware.Vim.ServiceInstance
+
+08/04/2021 11:59:53 [+] Report generated. Sending mail.
+
+VMName                       : ALFA-DAXRPT-COPY
+TotalSpaceGB                 : 650
+ProvisionedSpaceGB           : 845.61
+UsedSpaceGB                  : 324.80
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 324.80
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Jump-server-Abdo
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.09
+UsedSpaceGB                  : 160.76
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 160.08
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-SAP-H-DB
+TotalSpaceGB                 : 6186.4
+ProvisionedSpaceGB           : 6536.54
+UsedSpaceGB                  : 1601.08
+UsageDifferenceGB            : 8
+Tuesday August 3 UsedSpaceGB : 1592.70
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MISR-TSMS
+TotalSpaceGB                 : 60
+ProvisionedSpaceGB           : 68.09
+UsedSpaceGB                  : 54.92
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 54.91
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Jump-Server-Moataz
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 27.45
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 27.45
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-Prod-APP-copy
+TotalSpaceGB                 : 2048
+ProvisionedSpaceGB           : 2336.40
+UsedSpaceGB                  : 440.78
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 440.73
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-ERPPRDDB
+TotalSpaceGB                 : 3072
+ProvisionedSpaceGB           : 3914.38
+UsedSpaceGB                  : 2362.49
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 2362.17
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : RADUIS-Server
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.09
+UsedSpaceGB                  : 29.25
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 28.50
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-CAR-PRD APP Server
+TotalSpaceGB                 : 2048
+ProvisionedSpaceGB           : 2080.09
+UsedSpaceGB                  : 95.98
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 95.96
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : frank-d35
+TotalSpaceGB                 : 8392
+ProvisionedSpaceGB           : 8416.09
+UsedSpaceGB                  : 4233.89
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 4234.13
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : sofos_virtual_vm8
+TotalSpaceGB                 : 96
+ProvisionedSpaceGB           : 100.19
+UsedSpaceGB                  : 4.01
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 4.01
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : el batal crm
+TotalSpaceGB                 : 340
+ProvisionedSpaceGB           : 454.25
+UsedSpaceGB                  : 133.82
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 132.90
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : AWS-SMS-Connector
+TotalSpaceGB                 : 299
+ProvisionedSpaceGB           : 301.19
+UsedSpaceGB                  : 299.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 299.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-Manage
+TotalSpaceGB                 : 550
+ProvisionedSpaceGB           : 554.08
+UsedSpaceGB                  : 59.43
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 59.42
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MIS-CRM-PRD APP Server
+TotalSpaceGB                 : 2000
+ProvisionedSpaceGB           : 2096.14
+UsedSpaceGB                  : 426.25
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 426.24
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : VMware vCenter Server Appliance 6.7-Witness
+TotalSpaceGB                 : 1123.66
+ProvisionedSpaceGB           : 1123.74
+UsedSpaceGB                  : 31.13
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 31.13
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : centos-kibana
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 508.08
+UsedSpaceGB                  : 14.16
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 14.16
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1FE3113
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.09
+UsedSpaceGB                  : 222.83
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 221.76
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ERP-DEV-sQmN
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 324.21
+UsedSpaceGB                  : 65.66
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 65.66
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1FE9333
+TotalSpaceGB                 : 1000
+ProvisionedSpaceGB           : 1032.09
+UsedSpaceGB                  : 167.87
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 166.91
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-ADC-02
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 38.14
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 38.21
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WorldPosta-WebSite
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 216.20
+UsedSpaceGB                  : 13.23
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 13.23
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : tiba group
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.09
+UsedSpaceGB                  : 27.52
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 27.52
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1FE3110
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.09
+UsedSpaceGB                  : 187.09
+UsageDifferenceGB            : 2
+Tuesday August 3 UsedSpaceGB : 184.88
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : frank-veeamone
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 220.09
+UsedSpaceGB                  : 43.56
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 43.55
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Jump-Nada
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 208.09
+UsedSpaceGB                  : 41.96
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 41.90
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Jump-Server-MAli
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 34.83
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 34.83
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : temp-v
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 208.21
+UsedSpaceGB                  : 200.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 200.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-KSE-SQL
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 266.09
+UsedSpaceGB                  : 65.50
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 65.47
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : shared iso
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 308.21
+UsedSpaceGB                  : 13.52
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 13.52
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Jump-Server-Karim
+TotalSpaceGB                 : 700
+ProvisionedSpaceGB           : 716.09
+UsedSpaceGB                  : 179.86
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 179.12
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-e-commerce
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 158.09
+UsedSpaceGB                  : 158.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 158.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1FE9111
+TotalSpaceGB                 : 1000
+ProvisionedSpaceGB           : 1032.09
+UsedSpaceGB                  : 158.79
+UsageDifferenceGB            : -1
+Tuesday August 3 UsedSpaceGB : 159.68
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-CARPRDDB
+TotalSpaceGB                 : 1810
+ProvisionedSpaceGB           : 2216.14
+UsedSpaceGB                  : 2216.14
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 2216.14
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developers-VM6-Copy
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.20
+UsedSpaceGB                  : 32.71
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 32.71
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1FE9444
+TotalSpaceGB                 : 1000
+ProvisionedSpaceGB           : 1032.09
+UsedSpaceGB                  : 173.80
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 172.54
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-PST-New01
+TotalSpaceGB                 : 7318
+ProvisionedSpaceGB           : 7334.09
+UsedSpaceGB                  : 6660.53
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 6660.97
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1FE3111
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.09
+UsedSpaceGB                  : 188.68
+UsageDifferenceGB            : 2
+Tuesday August 3 UsedSpaceGB : 186.60
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MISR-IVENDMC2
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 59.10
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 59.10
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vcenter-clone
+TotalSpaceGB                 : 1123.66
+ProvisionedSpaceGB           : 1171.89
+UsedSpaceGB                  : 183.25
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 183.25
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : jump-hamd
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 308.08
+UsedSpaceGB                  : 17.46
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 17.44
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : jump-wahba
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 35.52
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 35.75
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : jump-eslam
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 308.09
+UsedSpaceGB                  : 67.26
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 66.85
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EventLog-Analyzer
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 508.09
+UsedSpaceGB                  : 29.22
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 29.23
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-ERP DEV-PRD APP Server
+TotalSpaceGB                 : 2000
+ProvisionedSpaceGB           : 2750.09
+UsedSpaceGB                  : 765.39
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 765.36
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Sama
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 208.09
+UsedSpaceGB                  : 20.68
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 20.68
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-ADC-03
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 38.27
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 38.46
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MIS-CRM-PRD DB Server
+TotalSpaceGB                 : 2000
+ProvisionedSpaceGB           : 2192.14
+UsedSpaceGB                  : 627.77
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 627.77
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : nextcloud-nfs
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 508.21
+UsedSpaceGB                  : 4.29
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 4.29
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-Web Server-copy
+TotalSpaceGB                 : 80
+ProvisionedSpaceGB           : 84.08
+UsedSpaceGB                  : 50.70
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 50.71
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WP-Messanger-DB-WIN .72
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 510.22
+UsedSpaceGB                  : 31.28
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 31.28
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : jump-gabr
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 216.09
+UsedSpaceGB                  : 216.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 216.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : infected ihpgco Kuwait Windows (ransomware)
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 254.21
+UsedSpaceGB                  : 69.67
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 69.67
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MISR-CARQASAPP
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 1160.13
+UsedSpaceGB                  : 198.78
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 198.76
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : jump-solex
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 208.09
+UsedSpaceGB                  : 100.87
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 100.72
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-MBX
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 132.09
+UsedSpaceGB                  : 75.81
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 75.80
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-Newvm
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.08
+UsedSpaceGB                  : 46.79
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 46.79
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-SQL-Instance
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 1280.15
+UsedSpaceGB                  : 797.84
+UsageDifferenceGB            : -12
+Tuesday August 3 UsedSpaceGB : 809.53
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Office Libre-Production New 1104
+TotalSpaceGB                 : 160
+ProvisionedSpaceGB           : 195.19
+UsedSpaceGB                  : 34.13
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 34.13
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-Backup
+TotalSpaceGB                 : 3132
+ProvisionedSpaceGB           : 3140.10
+UsedSpaceGB                  : 1963.28
+UsageDifferenceGB            : -410
+Tuesday August 3 UsedSpaceGB : 2373.04
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : esxi2
+TotalSpaceGB                 : 1000
+ProvisionedSpaceGB           : 1016.09
+UsedSpaceGB                  : 59.05
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 58.94
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : FortiGate
+TotalSpaceGB                 : 32
+ProvisionedSpaceGB           : 34.19
+UsedSpaceGB                  : 32.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 32.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WP-Syslog-New
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 1040.09
+UsedSpaceGB                  : 36.96
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 36.96
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Identity Server-Dev
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 106.21
+UsedSpaceGB                  : 25.64
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 25.64
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Real-ip
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.21
+UsedSpaceGB                  : 13.79
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 13.79
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-RODC-01
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 42.89
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 42.99
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : SQL-Server-Solid
+TotalSpaceGB                 : 750
+ProvisionedSpaceGB           : 768.10
+UsedSpaceGB                  : 213.36
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 211.73
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : J-S-Hamd
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.21
+UsedSpaceGB                  : 10.41
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 10.41
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : HAProxy
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 323.91
+UsedSpaceGB                  : 7.84
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 7.84
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU100S602
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 216.09
+UsedSpaceGB                  : 47.83
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 47.79
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : sandbox
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 316.22
+UsedSpaceGB                  : 19.93
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 19.93
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-Winsows2012R2
+TotalSpaceGB                 : 3098
+ProvisionedSpaceGB           : 3188.12
+UsedSpaceGB                  : 864.85
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 864.87
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WP-Frank-Database3
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 416.21
+UsedSpaceGB                  : 400.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 400.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : NFS-NEXTCLOUD-01
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 508.21
+UsedSpaceGB                  : 5.14
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 5.14
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MISR-SAP-CARDB-copy
+TotalSpaceGB                 : 2048
+ProvisionedSpaceGB           : 2176.14
+UsedSpaceGB                  : 896.88
+UsageDifferenceGB            : 10
+Tuesday August 3 UsedSpaceGB : 887.32
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ihpgco Kuwait Windows - Backup(new)
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 254.08
+UsedSpaceGB                  : 162.95
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 162.95
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : SolarWind-SAM
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 431.43
+UsedSpaceGB                  : 127.75
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 127.75
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : jump-ahmed
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 408.09
+UsedSpaceGB                  : 32.72
+UsageDifferenceGB            : -1
+Tuesday August 3 UsedSpaceGB : 33.50
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-ERPDEVDB
+TotalSpaceGB                 : 2355.2
+ProvisionedSpaceGB           : 2925.38
+UsedSpaceGB                  : 1502.41
+UsageDifferenceGB            : 10
+Tuesday August 3 UsedSpaceGB : 1492.22
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-ADC-01
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 38.62
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 38.58
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-Tableau
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 166.09
+UsedSpaceGB                  : 126.14
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 126.19
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WP-RootCA
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 146.38
+UsedSpaceGB                  : 61.27
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 61.27
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MISR-NFS
+TotalSpaceGB                 : 13362
+ProvisionedSpaceGB           : 13366.09
+UsedSpaceGB                  : 11735.05
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 11735.05
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-DNS-MGMNT
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 166.09
+UsedSpaceGB                  : 50.63
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 50.64
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-Additioanal Domain
+TotalSpaceGB                 : 50
+ProvisionedSpaceGB           : 54.08
+UsedSpaceGB                  : 23.48
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 23.48
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-Qatr
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 655.92
+UsedSpaceGB                  : 185.75
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 185.75
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-Kbase-Source
+TotalSpaceGB                 : 1124
+ProvisionedSpaceGB           : 1140.09
+UsedSpaceGB                  : 297.38
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 297.38
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : wp-frank-antivirus (DB)-cpoy
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 416.21
+UsedSpaceGB                  : 146.37
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 146.37
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-MTBIDEVAPP
+TotalSpaceGB                 : 510
+ProvisionedSpaceGB           : 719.04
+UsedSpaceGB                  : 216.65
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 216.65
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-MBM-D36
+TotalSpaceGB                 : 4296
+ProvisionedSpaceGB           : 4320.10
+UsedSpaceGB                  : 1262.30
+UsageDifferenceGB            : -9
+Tuesday August 3 UsedSpaceGB : 1271.39
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : esxi1
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 420.09
+UsedSpaceGB                  : 29.33
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 29.32
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-tools01.Roaya.loc_replica
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 596.16
+UsedSpaceGB                  : 70.95
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 70.95
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-OfficeOnline01
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 217.07
+UsedSpaceGB                  : 145.61
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 145.16
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WP-Messanger-Centos .73-copy
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 1032.21
+UsedSpaceGB                  : 23.68
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 23.68
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : J-S-Peter
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 116.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 116.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MISR-SAP-CARAPP
+TotalSpaceGB                 : 2048
+ProvisionedSpaceGB           : 2112.10
+UsedSpaceGB                  : 116.57
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 116.56
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : SQL-Server-Solid2
+TotalSpaceGB                 : 700
+ProvisionedSpaceGB           : 720.09
+UsedSpaceGB                  : 222.24
+UsageDifferenceGB            : 4
+Tuesday August 3 UsedSpaceGB : 218.01
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-OfficeOnline02
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 179.63
+UsedSpaceGB                  : 104.94
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 104.94
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-Wsus-new
+TotalSpaceGB                 : 580
+ProvisionedSpaceGB           : 600.09
+UsedSpaceGB                  : 318.33
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 318.33
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-EventLog
+TotalSpaceGB                 : 4024
+ProvisionedSpaceGB           : 4032.09
+UsedSpaceGB                  : 3092.62
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 3092.60
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DAXRDS-yhsv-Copy
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 367.95
+UsedSpaceGB                  : 142.85
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 142.85
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-Solman Server
+TotalSpaceGB                 : 2100
+ProvisionedSpaceGB           : 2132.09
+UsedSpaceGB                  : 627.03
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 627.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-CARPRDAPP
+TotalSpaceGB                 : 810
+ProvisionedSpaceGB           : 974.11
+UsedSpaceGB                  : 974.11
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 974.11
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1FE3112
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.10
+UsedSpaceGB                  : 194.41
+UsageDifferenceGB            : 2
+Tuesday August 3 UsedSpaceGB : 191.99
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1FE9222
+TotalSpaceGB                 : 1000
+ProvisionedSpaceGB           : 1032.09
+UsedSpaceGB                  : 676.34
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 675.06
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-ENTERPRISESRV
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 1074.12
+UsedSpaceGB                  : 1074.12
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1074.12
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-Trend2019-DEV
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 508.21
+UsedSpaceGB                  : 47.08
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 47.08
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EU1OOS601
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 216.09
+UsedSpaceGB                  : 27.33
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 27.39
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : next-cloud-NFS-server
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 552.46
+UsedSpaceGB                  : 56.93
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 56.93
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-CAR-PRD DB Server
+TotalSpaceGB                 : 2048
+ProvisionedSpaceGB           : 2176.14
+UsedSpaceGB                  : 1165.28
+UsageDifferenceGB            : 12
+Tuesday August 3 UsedSpaceGB : 1152.56
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : PowerEye
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.09
+UsedSpaceGB                  : 27.66
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 27.53
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : centos-block-storage
+TotalSpaceGB                 : 14836
+ProvisionedSpaceGB           : 14848.09
+UsedSpaceGB                  : 14354.21
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 14354.21
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MISR-MTBIDEVDB
+TotalSpaceGB                 : 1310
+ProvisionedSpaceGB           : 2176.21
+UsedSpaceGB                  : 1885.74
+UsageDifferenceGB            : 149
+Tuesday August 3 UsedSpaceGB : 1736.65
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vROps-Tenant-App-for-vCD-2.3.0.33067-14826907
+TotalSpaceGB                 : 87
+ProvisionedSpaceGB           : 95.08
+UsedSpaceGB                  : 20.59
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 20.59
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MISR-CARQASDB
+TotalSpaceGB                 : 2048
+ProvisionedSpaceGB           : 2168.14
+UsedSpaceGB                  : 802.48
+UsageDifferenceGB            : 7
+Tuesday August 3 UsedSpaceGB : 795.25
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-ADC-04
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 39.33
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 39.28
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-ERP DEV-PRD DB Server
+TotalSpaceGB                 : 2398
+ProvisionedSpaceGB           : 2960.12
+UsedSpaceGB                  : 740.81
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 740.80
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-ERPQASDB
+TotalSpaceGB                 : 3072
+ProvisionedSpaceGB           : 6696.77
+UsedSpaceGB                  : 3645.05
+UsageDifferenceGB            : 15
+Tuesday August 3 UsedSpaceGB : 3629.91
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-PIPRD
+TotalSpaceGB                 : 1910
+ProvisionedSpaceGB           : 2070.11
+UsedSpaceGB                  : 2070.11
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 2070.11
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WP-OdOO
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 202.20
+UsedSpaceGB                  : 14.77
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 14.77
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : VMware vCenter Server Appliance 6.7-Passive
+TotalSpaceGB                 : 1123.66
+ProvisionedSpaceGB           : 1386.95
+UsedSpaceGB                  : 333.70
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 333.34
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-OpenManage_Integration
+TotalSpaceGB                 : 85.98
+ProvisionedSpaceGB           : 94.28
+UsedSpaceGB                  : 85.98
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 85.98
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-SQL-2019
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 408.09
+UsedSpaceGB                  : 408.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 408.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : copy-DeepSecurity
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 166.21
+UsedSpaceGB                  : 150.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 150.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Diyaa-LAB
+TotalSpaceGB                 : 650
+ProvisionedSpaceGB           : 666.09
+UsedSpaceGB                  : 666.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 666.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : replaymanager
+TotalSpaceGB                 : 540
+ProvisionedSpaceGB           : 552.22
+UsedSpaceGB                  : 240.10
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 240.10
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Jump-Server-Tawfik
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 78.04
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 77.99
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-DC01
+TotalSpaceGB                 : 140
+ProvisionedSpaceGB           : 320.24
+UsedSpaceGB                  : 168.29
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 168.29
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : EX-04
+TotalSpaceGB                 : 600
+ProvisionedSpaceGB           : 728.10
+UsedSpaceGB                  : 728.10
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 728.10
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-DC02
+TotalSpaceGB                 : 140
+ProvisionedSpaceGB           : 172.09
+UsedSpaceGB                  : 172.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 172.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Exchange-DEV
+TotalSpaceGB                 : 650
+ProvisionedSpaceGB           : 670.09
+UsedSpaceGB                  : 520.19
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 520.19
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-Router-02
+TotalSpaceGB                 : 60
+ProvisionedSpaceGB           : 80.10
+UsedSpaceGB                  : 43.82
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 43.82
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : VMware vCenter Server Appliance 6.7
+TotalSpaceGB                 : 1123.66
+ProvisionedSpaceGB           : 1171.89
+UsedSpaceGB                  : 45.37
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 45.37
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : VMware-NSX-Manager
+TotalSpaceGB                 : 60
+ProvisionedSpaceGB           : 60.09
+UsedSpaceGB                  : 60.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 60.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Mis-CRM QAS & Dev DB Server
+TotalSpaceGB                 : 2048
+ProvisionedSpaceGB           : 2240.14
+UsedSpaceGB                  : 594.20
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 594.20
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : VMware_vCloud_Director-10.0.0.4649-15450333
+TotalSpaceGB                 : 112
+ProvisionedSpaceGB           : 272.10
+UsedSpaceGB                  : 210.62
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 210.46
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Misr-Router-01
+TotalSpaceGB                 : 60
+ProvisionedSpaceGB           : 76.09
+UsedSpaceGB                  : 76.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 76.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Elbassiouni WebSite Production
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 212.04
+UsedSpaceGB                  : 123.07
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 122.92
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : md-masterbatch-website
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 128.63
+UsedSpaceGB                  : 42.55
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 42.55
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : joy&roy
+TotalSpaceGB                 : 220
+ProvisionedSpaceGB           : 236.20
+UsedSpaceGB                  : 45.83
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 45.83
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : elbassiony-Copy
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 830.80
+UsedSpaceGB                  : 475.83
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 475.08
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Ceramica-Cleoptra
+TotalSpaceGB                 : 180
+ProvisionedSpaceGB           : 244.70
+UsedSpaceGB                  : 74.28
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 74.28
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-IMSVA-Child-01
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 1032.09
+UsedSpaceGB                  : 600.53
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 600.43
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WorldPosta Website 02
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 316.09
+UsedSpaceGB                  : 316.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 316.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MyCloud-AppLaunchPad
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 23.85
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 23.85
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Router-01
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 180.10
+UsedSpaceGB                  : 180.10
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 180.10
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-IMSVA-Child-03
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 1032.09
+UsedSpaceGB                  : 579.38
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 579.38
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ubuntu-dev
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 208.09
+UsedSpaceGB                  : 25.59
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 25.59
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WorldPosta WebSite
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 316.09
+UsedSpaceGB                  : 57.23
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 57.23
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Router-02
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 170.09
+UsedSpaceGB                  : 37.83
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 37.83
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-NSX-Controller-01-NSX-controller-1
+TotalSpaceGB                 : 28
+ProvisionedSpaceGB           : 28.09
+UsedSpaceGB                  : 28.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 28.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-IMSVA-Child-04
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 1032.09
+UsedSpaceGB                  : 563.44
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 563.38
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MinIO
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 1149.99
+UsedSpaceGB                  : 130.59
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 130.59
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-PA-02
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 140.10
+UsedSpaceGB                  : 140.10
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 140.10
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : NextCloud 31-1-2021
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.09
+UsedSpaceGB                  : 516.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 516.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : dev-ubuntu-21
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 508.09
+UsedSpaceGB                  : 27.96
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 27.95
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Gabr-Kali-Server
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 216.21
+UsedSpaceGB                  : 200.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 200.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-IMSVA-Child-02
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 1032.09
+UsedSpaceGB                  : 603.87
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 603.85
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : centos-Backup-vcenter
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 512.30
+UsedSpaceGB                  : 37.56
+UsageDifferenceGB            : 2
+Tuesday August 3 UsedSpaceGB : 35.74
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DSITV-06.00.00.165
+TotalSpaceGB                 : 10
+ProvisionedSpaceGB           : 18.08
+UsedSpaceGB                  : 18.08
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 18.08
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WP-Coturn-Videostreaming
+TotalSpaceGB                 : 160
+ProvisionedSpaceGB           : 164.09
+UsedSpaceGB                  : 16.14
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 16.12
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MyCloud-AMQP
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 116.09
+UsedSpaceGB                  : 22.52
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 22.52
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-NSX-Controller-03-NSX-controller-3
+TotalSpaceGB                 : 28
+ProvisionedSpaceGB           : 28.09
+UsedSpaceGB                  : 28.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 28.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-NSX-Controller-02-NSX-controller-2
+TotalSpaceGB                 : 28
+ProvisionedSpaceGB           : 28.09
+UsedSpaceGB                  : 28.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 28.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-PA-01
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 190.10
+UsedSpaceGB                  : 87.82
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 87.82
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DSMBuildVM-20
+TotalSpaceGB                 : 50
+ProvisionedSpaceGB           : 58.08
+UsedSpaceGB                  : 19.36
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 19.36
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : MyCloud-NFS
+TotalSpaceGB                 : 600
+ProvisionedSpaceGB           : 616.09
+UsedSpaceGB                  : 218.79
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 218.79
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-IMSVA-Parent 1022021
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.09
+UsedSpaceGB                  : 516.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 516.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Roaya WebSite
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 266.26
+UsedSpaceGB                  : 167.54
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 167.54
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Dell-EMC-01
+TotalSpaceGB                 : 10
+ProvisionedSpaceGB           : 18.08
+UsedSpaceGB                  : 18.08
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 18.08
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-Tools
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 125.22
+UsedSpaceGB                  : 18.27
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 18.27
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : nextcloud-dev-new-production
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 1015.99
+UsedSpaceGB                  : 529.87
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 529.77
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : frank-Migr.Roaya.loc
+TotalSpaceGB                 : 127
+ProvisionedSpaceGB           : 191.44
+UsedSpaceGB                  : 77.86
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 77.86
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-MBX02 - Clone 12-6-2020
+TotalSpaceGB                 : 570
+ProvisionedSpaceGB           : 655.10
+UsedSpaceGB                  : 372.80
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 372.86
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developers-VM8-jTLN
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 341.64
+UsedSpaceGB                  : 56.74
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 56.67
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Solid-CP-DB-copy-13
+TotalSpaceGB                 : 600
+ProvisionedSpaceGB           : 925.04
+UsedSpaceGB                  : 487.95
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 487.95
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Nextcloud-Ubuntu-Prodaction-FromSnap
+TotalSpaceGB                 : 20600
+ProvisionedSpaceGB           : 35037.24
+UsedSpaceGB                  : 16617.81
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 16617.77
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WP-Syslog
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 1024.09
+UsedSpaceGB                  : 172.60
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 172.77
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developers-VM9-g6uv
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 1056.78
+UsedSpaceGB                  : 568.91
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 568.89
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developers-VM6-Q6b7
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 1055.26
+UsedSpaceGB                  : 574.19
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 574.18
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Frank-tools01.Roaya.loc
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 525.19
+UsedSpaceGB                  : 91.12
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 90.90
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-el bassiony (27dff168-a339-48b9-90af-c7f34c7d2f47)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-LeadersCO (e518df4f-a749-4c07-8e0b-5abac75e25c3)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Delta-Pharma-ESG (0ed9c57a-8bba-4476-b544-4d48226b0897)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Hefny-Pharma-Edge (cdaefd93-2720-437f-bdd0-a6487e5160a2)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Family-Corp (fa2e6e64-c575-468a-bf34-a8c1415d3ea5)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Edge-AlfaMarket-Lan (718d9b5e-62e1-4cd1-9a90-693eae41b6bb)-0
+TotalSpaceGB                 : 3.07
+ProvisionedSpaceGB           : 7.16
+UsedSpaceGB                  : 7.16
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 7.16
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-the-concrete (95a00dfd-3eb6-476f-b8a5-6d3f4b35650f)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Demo (2a1cd3aa-1b88-4de4-a85d-7c05601d750f)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-El Doha-Edge (c36206fb-388c-4207-94a8-81ada6f158fd)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Liptis (cc0de151-6dcf-4413-8151-a1b32925ab90)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Edge-Future-ERP (2171c296-7643-4d4c-90ee-e7c56e7eb668)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-peter-new-tenant (38d400ef-1ca3-438f-b131-738fb4017ff2)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Family-Edge-PA (4fcca189-f7a0-444f-bade-2471f5bb51ba)-0
+TotalSpaceGB                 : 3.07
+ProvisionedSpaceGB           : 7.16
+UsedSpaceGB                  : 7.16
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 7.16
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Edge-ABDO (e673e19e-1c38-4c3d-8d92-1954a4a7fbe7)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-venus-group (f62ce961-18dc-4a4f-91c1-8f9d8ac19131)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-elbatal-test (8f5c9001-85bc-40a7-a286-d1e537a89b2e)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-new-eslam (899bd341-ce21-4c6a-953a-1fbefdb22d22)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-solex-edge (fab0b166-093a-431b-bdb0-08bc63a71b24)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Ahessien-Edge (85eabc8d-9111-4a6c-a374-3ea1f068c3be)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Egypt-Cables-Edge (fb2efcf5-80ce-4248-bce2-9903891f3a73)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-ioda-edge (1641a623-4b51-46d4-b0c5-643d0d143900)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-ACT-Company (e251c8fb-4dfb-469c-b93f-ef2a8487c5c6)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-RENTEX CARS (4971e2a7-8d66-4cab-8cdd-9d6cefbeaf68)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Gabr-edg (fa1964f7-de42-4f8c-8edc-93f2db32cc25)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Hamd (7e683317-9d42-490d-aeaa-917b77577ce6)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-venus-alexandria (f675cded-711e-4a22-bd51-1524a850f661)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Future-ERP-Edge-New (fd1668ba-fb29-442b-af13-84b259b14191)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-IGI (71406d74-8aa6-4f9d-8b98-4703ec25c2c6)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Developers-Edg (11641040-df75-423a-8c7d-70cd44f84c78)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-Edge-Reyada-New (4b7fca73-588f-4f03-ae24-0360538272b2)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-kuwait (8589cebd-4ad3-49d7-859a-17cd4189a086)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.51
+UsedSpaceGB                  : 1.07
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.07
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-karim-test (3b5e3e22-1ab3-4c5b-85ff-e34e3544e466)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.65
+UsedSpaceGB                  : 1.65
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.65
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-ELbatal (86554aa4-be8b-4aeb-9084-675da6a39c49)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.51
+UsedSpaceGB                  : 1.07
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.07
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vse-nada (35b6a75e-6362-4f02-a66b-84221f17b44c)-0
+TotalSpaceGB                 : 1.07
+ProvisionedSpaceGB           : 1.40
+UsedSpaceGB                  : 1.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-DAXAOS-LhCj
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 332.12
+UsedSpaceGB                  : 87.32
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 86.98
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developer-VM5-BhRt
+TotalSpaceGB                 : 256
+ProvisionedSpaceGB           : 272.09
+UsedSpaceGB                  : 40.23
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 40.23
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developers-VM7-kKia
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.09
+UsedSpaceGB                  : 17.54
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 17.54
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : adobe-document-2gal
+TotalSpaceGB                 : 178
+ProvisionedSpaceGB           : 202.09
+UsedSpaceGB                  : 100.49
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 100.48
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : LEADERS-COIN+RETAIL-T2mK
+TotalSpaceGB                 : 350
+ProvisionedSpaceGB           : 366.09
+UsedSpaceGB                  : 37.27
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 37.27
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ACT-VM-03-igWB
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.21
+UsedSpaceGB                  : 77.57
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 77.57
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Demo-Ikjw
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 266.10
+UsedSpaceGB                  : 28.88
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 28.90
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Family-Corp-ERP-DEV-pHPo
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 324.10
+UsedSpaceGB                  : 97.91
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 97.78
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : venus-2-WYQO
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 304.08
+UsedSpaceGB                  : 15.27
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 15.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : LedersSTA-SQL01-JuYQ
+TotalSpaceGB                 : 700
+ProvisionedSpaceGB           : 764.09
+UsedSpaceGB                  : 75.53
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 75.50
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DP-Solman-4AXz
+TotalSpaceGB                 : 774
+ProvisionedSpaceGB           : 822.09
+UsedSpaceGB                  : 268.50
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 268.48
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Leaders-FUTUREN-ELXx
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 216.08
+UsedSpaceGB                  : 27.45
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 27.42
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ELDoha-2eTo
+TotalSpaceGB                 : 180
+ProvisionedSpaceGB           : 207.42
+UsedSpaceGB                  : 33.71
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 33.71
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-SQL-Server-qecU
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.10
+UsedSpaceGB                  : 516.10
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 516.10
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DP-Jump-Machine-LYHf
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 408.09
+UsedSpaceGB                  : 155.58
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 155.59
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Esxi-02-2m2u
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 525.21
+UsedSpaceGB                  : 1.38
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.38
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : venus-1-j62Y
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 308.09
+UsedSpaceGB                  : 24.86
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 24.58
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developer-VM4-4Uso
+TotalSpaceGB                 : 160
+ProvisionedSpaceGB           : 168.09
+UsedSpaceGB                  : 19.11
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 19.11
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DP-S4H-APP-QAS-PRxw
+TotalSpaceGB                 : 875
+ProvisionedSpaceGB           : 1075.10
+UsedSpaceGB                  : 414.68
+UsageDifferenceGB            : 2
+Tuesday August 3 UsedSpaceGB : 412.56
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Family-Corp-ERP-QAS-jG26
+TotalSpaceGB                 : 174
+ProvisionedSpaceGB           : 198.09
+UsedSpaceGB                  : 35.95
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 35.94
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Esxi-01-Bgfe
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 525.21
+UsedSpaceGB                  : 36.25
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 36.25
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Gabr-VM-OhJC
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 216.09
+UsedSpaceGB                  : 89.93
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 89.91
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : vcenter1-qSqL
+TotalSpaceGB                 : 128
+ProvisionedSpaceGB           : 132.19
+UsedSpaceGB                  : 128.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 128.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Leaders-STA-8-0mRF
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 216.08
+UsedSpaceGB                  : 27.46
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 27.46
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Liptis-Windows-7oXx
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 324.10
+UsedSpaceGB                  : 197.01
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 196.71
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : LEADERS-SUNRISE-QrlC
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.09
+UsedSpaceGB                  : 34.97
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 34.97
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : my-domain-IhLX
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.09
+UsedSpaceGB                  : 25.56
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 25.56
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Family-Corp-RDP-7wzY
+TotalSpaceGB                 : 280
+ProvisionedSpaceGB           : 302.80
+UsedSpaceGB                  : 191.84
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 191.84
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ACT-01-cFSc
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.21
+UsedSpaceGB                  : 463.22
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 463.22
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : machine1-kuet
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 258.08
+UsedSpaceGB                  : 257.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 257.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Family-Odoo-Mfv6
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.09
+UsedSpaceGB                  : 26.50
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 26.15
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : FEM-001-SbZt
+TotalSpaceGB                 : 40
+ProvisionedSpaceGB           : 50.20
+UsedSpaceGB                  : 38.78
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 38.78
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : venus-Database-KNXi
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 406.08
+UsedSpaceGB                  : 228.11
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 227.12
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : IscsiStorage-FACr
+TotalSpaceGB                 : 2128
+ProvisionedSpaceGB           : 2133.20
+UsedSpaceGB                  : 2128.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 2128.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Concrete-1-kweI
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 166.09
+UsedSpaceGB                  : 35.13
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 35.01
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DP-S4H-APP-DEV-IWVB
+TotalSpaceGB                 : 875
+ProvisionedSpaceGB           : 1003.10
+UsedSpaceGB                  : 375.31
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 373.52
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-Test-uCQi
+TotalSpaceGB                 : 80
+ProvisionedSpaceGB           : 93.89
+UsedSpaceGB                  : 18.68
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 18.68
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Egypt-Cables-5001-sRfn
+TotalSpaceGB                 : 340
+ProvisionedSpaceGB           : 372.09
+UsedSpaceGB                  : 44.68
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 44.65
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : LEADERS-DB FUTURERS+FUTURAHK-Bqjv
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 432.09
+UsedSpaceGB                  : 50.56
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 50.56
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Family-Corp-HANA-QAS-Q6kF
+TotalSpaceGB                 : 690
+ProvisionedSpaceGB           : 970.11
+UsedSpaceGB                  : 571.60
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 571.54
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ACT-VM-04-h3lb
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.21
+UsedSpaceGB                  : 11.57
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 11.57
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Future-ERP-System-5Phq-r3lw
+TotalSpaceGB                 : 880
+ProvisionedSpaceGB           : 896.21
+UsedSpaceGB                  : 521.45
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 521.45
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developer-VM3-9Ioi
+TotalSpaceGB                 : 160
+ProvisionedSpaceGB           : 168.09
+UsedSpaceGB                  : 69.61
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 69.46
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Copy-El-Reyada-VM-EcJu
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 2060.90
+UsedSpaceGB                  : 1075.72
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 1075.49
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Axapta-DB-IGI-9LD9
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 202.09
+UsedSpaceGB                  : 202.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 202.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Family-Corp-SAP-Router-Vtvz
+TotalSpaceGB                 : 25
+ProvisionedSpaceGB           : 29.08
+UsedSpaceGB                  : 29.08
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 29.08
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : NFS-Shared-eg7E
+TotalSpaceGB                 : 1084
+ProvisionedSpaceGB           : 1088.08
+UsedSpaceGB                  : 987.68
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 987.68
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Family-Web -dispatcher-OoDw
+TotalSpaceGB                 : 25
+ProvisionedSpaceGB           : 29.08
+UsedSpaceGB                  : 9.04
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 9.04
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : concrete-2-i4LC
+TotalSpaceGB                 : 150
+ProvisionedSpaceGB           : 166.08
+UsedSpaceGB                  : 30.70
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 30.58
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : IGI-Axapta-APP-yIZe
+TotalSpaceGB                 : 110
+ProvisionedSpaceGB           : 112.15
+UsedSpaceGB                  : 112.15
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 112.15
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Family-Corp-HANA-DEV-jnC6
+TotalSpaceGB                 : 1500
+ProvisionedSpaceGB           : 1756.14
+UsedSpaceGB                  : 755.35
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 755.35
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : SAP-ROUTER-vyos
+TotalSpaceGB                 : 80
+ProvisionedSpaceGB           : 84.08
+UsedSpaceGB                  : 8.13
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 8.11
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : hefny-pharma-5l7S
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 710.48
+UsedSpaceGB                  : 322.27
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 322.16
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ser19-DbcF
+TotalSpaceGB                 : 600
+ProvisionedSpaceGB           : 608.09
+UsedSpaceGB                  : 75.40
+UsageDifferenceGB            : 7
+Tuesday August 3 UsedSpaceGB : 67.95
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DP-S4H-APP-PRD-RgdR
+TotalSpaceGB                 : 306
+ProvisionedSpaceGB           : 338.09
+UsedSpaceGB                  : 57.92
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 57.88
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ACT-VM-02-MAgt
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.21
+UsedSpaceGB                  : 102.48
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 102.48
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : machine2-NyKd
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 258.08
+UsedSpaceGB                  : 92.91
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 92.91
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DP-HANA-Cockpit-6lDc
+TotalSpaceGB                 : 112
+ProvisionedSpaceGB           : 144.09
+UsedSpaceGB                  : 88.30
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 88.28
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : 4Am-DAXRDS-yhsv-Copy-10GU
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 368.07
+UsedSpaceGB                  : 106.40
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 106.40
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Elbatal-VM-HeOb
+TotalSpaceGB                 : 180
+ProvisionedSpaceGB           : 258.34
+UsedSpaceGB                  : 88.23
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 88.23
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ADC-fpzQ
+TotalSpaceGB                 : 40
+ProvisionedSpaceGB           : 44.19
+UsedSpaceGB                  : 9.15
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 9.15
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-DAXRDS-zvo6
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 368.07
+UsedSpaceGB                  : 96.39
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 96.39
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DP-Business-Int-h9iA
+TotalSpaceGB                 : 464
+ProvisionedSpaceGB           : 496.09
+UsedSpaceGB                  : 110.55
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 110.48
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Solex-Oxv0
+TotalSpaceGB                 : 1249
+ProvisionedSpaceGB           : 1549.12
+UsedSpaceGB                  : 661.87
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 660.77
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ACt-VM-05-WlaE
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 532.21
+UsedSpaceGB                  : 41.07
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 41.07
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Future-ERP-01-mj5z
+TotalSpaceGB                 : 880
+ProvisionedSpaceGB           : 896.20
+UsedSpaceGB                  : 14.27
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 14.27
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Rentex-VM-B4AZ
+TotalSpaceGB                 : 1024
+ProvisionedSpaceGB           : 1088.21
+UsedSpaceGB                  : 38.57
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 38.57
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : GlobalTech-Ubu-SAVs
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 408.09
+UsedSpaceGB                  : 34.46
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 33.70
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : DP-S4H-DB-PRD-6x2M
+TotalSpaceGB                 : 978
+ProvisionedSpaceGB           : 1298.13
+UsedSpaceGB                  : 533.20
+UsageDifferenceGB            : 2
+Tuesday August 3 UsedSpaceGB : 531.06
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-Test 10 Days-16Sk
+TotalSpaceGB                 : 400
+ProvisionedSpaceGB           : 416.09
+UsedSpaceGB                  : 328.36
+UsageDifferenceGB            : 17
+Tuesday August 3 UsedSpaceGB : 310.72
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : solex-S4-HANA-EQQ7
+TotalSpaceGB                 : 974
+ProvisionedSpaceGB           : 1274.11
+UsedSpaceGB                  : 304.39
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 304.35
+Monday August 2 UsedSpaceGB  : 
+Sunday August 1 UsedSpaceGB  : 
+Saturday July 31 UsedSpaceGB : 
+Friday July 30 UsedSpaceGB   : 
+Thursday July 29 UsedSpaceGB : 
+
+
+VMName                       : Alfa-DAXEP-O9sY
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 266.10
+UsedSpaceGB                  : 60.29
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 60.28
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-DAXRPT-bA5n
+TotalSpaceGB                 : 650
+ProvisionedSpaceGB           : 845.49
+UsedSpaceGB                  : 331.46
+UsageDifferenceGB            : -55
+Tuesday August 3 UsedSpaceGB : 385.81
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : PRO_ODOOOVF-rUDa
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.09
+UsedSpaceGB                  : 516.09
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 516.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : mailbox server-01-F4Ms
+TotalSpaceGB                 : 60
+ProvisionedSpaceGB           : 70.20
+UsedSpaceGB                  : 44.29
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 44.29
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-DAXRT-Yqno
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 266.10
+UsedSpaceGB                  : 61.72
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 61.69
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : ping test-GDpi
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 104.21
+UsedSpaceGB                  : 100.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 100.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Hamd-RootCA-M8aT
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 516.09
+UsedSpaceGB                  : 38.22
+UsageDifferenceGB            : 2
+Tuesday August 3 UsedSpaceGB : 36.21
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Esxi-03-yAu6
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 508.21
+UsedSpaceGB                  : 1.15
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 1.15
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Client-7ug4
+TotalSpaceGB                 : 40
+ProvisionedSpaceGB           : 44.19
+UsedSpaceGB                  : 19.50
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 19.50
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : CRM-siko
+TotalSpaceGB                 : 340
+ProvisionedSpaceGB           : 485.33
+UsedSpaceGB                  : 116.60
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 116.60
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-Backup-us3m
+TotalSpaceGB                 : 2128
+ProvisionedSpaceGB           : 2141.90
+UsedSpaceGB                  : 1551.11
+UsageDifferenceGB            : 51
+Tuesday August 3 UsedSpaceGB : 1500.09
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : dns&veam&stoage-q5zH
+TotalSpaceGB                 : 650
+ProvisionedSpaceGB           : 666.20
+UsedSpaceGB                  : 158.61
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 158.61
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-ADD-ySut
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 308.10
+UsedSpaceGB                  : 27.43
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 27.45
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-DAXAOSB-YyLF
+TotalSpaceGB                 : 250
+ProvisionedSpaceGB           : 266.12
+UsedSpaceGB                  : 55.02
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 54.83
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Alfa-DAXDB-7Qts
+TotalSpaceGB                 : 1250
+ProvisionedSpaceGB           : 1619.04
+UsedSpaceGB                  : 748.30
+UsageDifferenceGB            : 12
+Tuesday August 3 UsedSpaceGB : 736.17
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : venus-app-twM3
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 210.09
+UsedSpaceGB                  : 80.06
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 79.81
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Hamd-HAProxy-1UmZ
+TotalSpaceGB                 : 128
+ProvisionedSpaceGB           : 140.09
+UsedSpaceGB                  : 18.47
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 18.47
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Copy-Developer-VM1-rxGz-Njvp
+TotalSpaceGB                 : 260
+ProvisionedSpaceGB           : 276.09
+UsedSpaceGB                  : 169.44
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 169.41
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : windows-2016-JY8V
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.20
+UsedSpaceGB                  : 15.99
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 15.99
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Wahba-IMSVA-2RzS
+TotalSpaceGB                 : 200
+ProvisionedSpaceGB           : 204.20
+UsedSpaceGB                  : 14.20
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 14.20
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Developer-VM2-Ddj3
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 508.09
+UsedSpaceGB                  : 324.60
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 324.67
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Wahba-Win10-XrBT
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.20
+UsedSpaceGB                  : 19.10
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 19.10
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : front-end-01-p8aV
+TotalSpaceGB                 : 160
+ProvisionedSpaceGB           : 170.20
+UsedSpaceGB                  : 0.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 0.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : solex-solman7-2-PnPZ
+TotalSpaceGB                 : 600
+ProvisionedSpaceGB           : 728.11
+UsedSpaceGB                  : 137.51
+UsageDifferenceGB            : 1
+Tuesday August 3 UsedSpaceGB : 137.26
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : HAProxy-PvxS
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 316.09
+UsedSpaceGB                  : 25.80
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 25.80
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Wahba-Exchange-I6xk
+TotalSpaceGB                 : 500
+ProvisionedSpaceGB           : 510.20
+UsedSpaceGB                  : 161.33
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 161.33
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : Wahba-AD-TiZL
+TotalSpaceGB                 : 300
+ProvisionedSpaceGB           : 316.22
+UsedSpaceGB                  : 22.05
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 22.05
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WPEU1MB9001-cfmy
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 108.21
+UsedSpaceGB                  : 14.60
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 14.60
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WPEU1DCPOOL-kx0o
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 102.21
+UsedSpaceGB                  : 16.00
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 16.00
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+VMName                       : WPEU1DCM101-sEHM
+TotalSpaceGB                 : 100
+ProvisionedSpaceGB           : 102.21
+UsedSpaceGB                  : 18.60
+UsageDifferenceGB            : 0
+Tuesday August 3 UsedSpaceGB : 18.60
+Monday August 2 UsedSpaceGB  : N/A
+Sunday August 1 UsedSpaceGB  : N/A
+Saturday July 31 UsedSpaceGB : N/A
+Friday July 30 UsedSpaceGB   : N/A
+Thursday July 29 UsedSpaceGB : N/A
+
+
+
