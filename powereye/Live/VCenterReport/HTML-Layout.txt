@@ -1,12 +1,9 @@
-$Header1 = "<h3>VCenter Report</h3>"
-
-$Header2 = "<h3>VCenter Local DataStore Report</h3>"
-
 $Style = @"
 <style>
 th, td {
     border: 2px solid black;
     text-align: center;
+    font-weight:bold;
 }
 table{
     border-collapse: collapse;

@@ -148,13 +148,19 @@ $Modules = @(
     [Module]@{
         Enabled = $true
         Name = 'AD Monitor'
-        RunInterval = New-TimeSpan -Minutes 10
+        RunInterval = New-TimeSpan -Hours 1
     }
     #24
     [Module]@{
         Enabled = $true
         Name = 'Unprotected OUs Detected'
-        RunInterval = New-TimeSpan -Minutes 10
+        RunInterval = New-TimeSpan -Days 1
+    }
+    #25
+    [Module]@{
+        Enabled = $true
+        Name = 'VCenter Storage Monitor'
+        RunInterval = New-TimeSpan -Days 1
     }
 )
 if(!$Runtime_Data){

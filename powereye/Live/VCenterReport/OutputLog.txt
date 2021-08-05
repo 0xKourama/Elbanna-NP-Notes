@@ -17,17 +17,17 @@ Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $true or $false.
 Scope    ProxyPolicy     DefaultVIServerMode InvalidCertificateAction  DisplayDeprecationWarnings WebOperationTimeout
                                                                                                   Seconds            
 -----    -----------     ------------------- ------------------------  -------------------------- -------------------
-Session  UseSystemProxy  Multiple            Ignore                    True                       300                
-User                                         Ignore                                                                  
+Session  UseSystemProxy  Single              Ignore                    True                       300                
+User                     Single              Ignore                                                                  
 AllUsers                                     Ignore                                                                  
 
 IsConnected   : True
 Id            : /VIServer=worldposta.com\powercli@10.5.5.20:443/
 ServiceUri    : https://10.5.5.20/sdk
-SessionSecret : "4957782d123111998557cc6891028eccce0585ff"
+SessionSecret : "f71048bc650ef8d28ff7862c10c99407efbc1b06"
 Name          : 10.5.5.20
 Port          : 443
-SessionId     : "4957782d123111998557cc6891028eccce0585ff"
+SessionId     : "f71048bc650ef8d28ff7862c10c99407efbc1b06"
 User          : WORLDPOSTA.COM\powercli
 Uid           : /VIServer=worldposta.com\powercli@10.5.5.20:443/
 Version       : 6.7.0
@@ -37,526 +37,26 @@ InstanceUuid  : 9455ae5e-3f2e-4be3-b798-68d38b0c59a7
 RefCount      : 1
 ExtensionData : VMware.Vim.ServiceInstance
 
-06/29/2021 13:50:07 [+] Report generated. Sending mail.
+08/05/2021 12:00:19 [+] Report generated. Sending mail.
 
-Name           : jump-solex
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 25.96
-ResourcePool   : solex (cc08f52b-3fb3-4e23-b7f0-76b332d33873)
-CreateDate     : 6/29/2021 7:28:43 AM
-
-
-Name           : test
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 15.77
-ResourcePool   : ElBatal (e5ee0316-8a1e-4544-a472-bef42d482268)
-CreateDate     : 6/27/2021 1:49:50 PM
-
-
-Name           : EU100S602
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 48.53
-ResourcePool   : Resources
-CreateDate     : 6/19/2021 2:43:06 PM
-
-
-Name           : Misr-Newvm
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 36.88
-ResourcePool   : Resources
-CreateDate     : 6/17/2021 8:15:56 AM
-
-
-Name           : infected ihpgco Kuwait Windows (ransomware)
-PowerState     : PoweredOff
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 69.67
-ResourcePool   : Resources
-CreateDate     : 5/31/2020 3:53:33 PM
-
-
-Name           : esxi
-PowerState     : PoweredOff
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 100.00
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 6/8/2021 9:33:50 AM
-
-
-Name           : FortiGate
-PowerState     : PoweredOff
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 2
-UsedSpaceGB    : 32.00
-ResourcePool   : Resources
-CreateDate     : 2/3/2021 11:47:55 AM
-
-
-Name           : Misr-PIPRD
-PowerState     : PoweredOn
-NumCpu         : 16
-CoresPerSocket : 8
-MemoryGB       : 160
-UsedSpaceGB    : 2070.11
-ResourcePool   : Resources
-CreateDate     : 1/4/2021 2:10:23 PM
-
-
-Name           : MISR-CARQASAPP
-PowerState     : PoweredOn
-NumCpu         : 26
-CoresPerSocket : 13
-MemoryGB       : 136
-UsedSpaceGB    : 198.76
-ResourcePool   : Resources
-CreateDate     : 10/4/2020 8:02:38 AM
-
-
-Name           : Mis-SAP-H-DB
-PowerState     : PoweredOn
-NumCpu         : 30
-CoresPerSocket : 15
-MemoryGB       : 350
-UsedSpaceGB    : 1286.12
-ResourcePool   : Resources
-CreateDate     : 12/7/2019 3:55:19 PM
-
-
-Name           : MIS-CRM-PRD APP Server
-PowerState     : PoweredOn
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 96
-UsedSpaceGB    : 426.18
-ResourcePool   : Resources
-CreateDate     : 3/24/2020 11:40:21 AM
-
-
-Name           : Mis-Additioanal Domain
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 23.58
-ResourcePool   : Resources
-CreateDate     : 3/9/2020 12:03:33 PM
-
-
-Name           : Frank-ADC-02
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 37.57
-ResourcePool   : Resources
-CreateDate     : 1/11/2021 7:37:49 AM
-
-
-Name           : Misr-MTBIDEVAPP
-PowerState     : PoweredOn
-NumCpu         : 12
-CoresPerSocket : 6
-MemoryGB       : 70
-UsedSpaceGB    : 215.33
-ResourcePool   : Resources
-CreateDate     : 11/17/2020 10:57:41 AM
-
-
-Name           : Frank-EventLog
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 3032.01
-ResourcePool   : Resources
-CreateDate     : 4/22/2021 12:01:21 PM
-
-
-Name           : AAAA
-PowerState     : PoweredOff
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 40
-ResourcePool   : Resources
-CreateDate     : 5/3/2021 10:36:34 AM
-
-
-Name           : Jump-Server-Karim
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 156.35
-ResourcePool   : Resources
-CreateDate     : 12/28/2020 11:13:52 PM
-
-
-Name           : Misr-CARPRDDB
-PowerState     : PoweredOn
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 406
-UsedSpaceGB    : 2216.14
-ResourcePool   : Resources
-CreateDate     : 1/4/2021 3:48:13 PM
-
-
-Name           : EU1FE3113
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 272.79
-ResourcePool   : Resources
-CreateDate     : 3/15/2021 1:47:59 PM
-
-
-Name           : Developers-VM6-Copy
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 32.71
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 4/11/2021 11:41:01 AM
-
-
-Name           : Frank-SMT-P02
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 151.26
-ResourcePool   : Resources
-CreateDate     : 2/2/2021 11:30:09 AM
-
-
-Name           : Frank-FEM-F03
-PowerState     : PoweredOn
-NumCpu         : 16
-CoresPerSocket : 8
-MemoryGB       : 64
-UsedSpaceGB    : 799.33
-ResourcePool   : Resources
-CreateDate     : 1/11/2021 4:08:15 PM
-
-
-Name           : Misr-Qatr
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 185.62
-ResourcePool   : Resources
-CreateDate     : 4/21/2020 4:38:53 PM
-
-
-Name           : next-cloud-NFS-server
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 56.90
-ResourcePool   : Resources
-CreateDate     : 5/1/2021 3:19:54 PM
-
-
-Name           : Ramy-Mahrous
-PowerState     : PoweredOff
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 5
-UsedSpaceGB    : 40.00
-ResourcePool   : Resources
-CreateDate     : 8/30/2020 2:42:05 PM
-
-
-Name           : Frank-Trend2019-DEV
+Name           : test sophos
 PowerState     : PoweredOff
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 47.08
-ResourcePool   : Resources
-CreateDate     : 7/11/2020 6:14:41 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Misr-ENTERPRISESRV
-PowerState     : PoweredOn
-NumCpu         : 12
-CoresPerSocket : 6
-MemoryGB       : 50
-UsedSpaceGB    : 1074.12
-ResourcePool   : Resources
-CreateDate     : 2/16/2021 3:16:53 PM
-
-
-Name           : Jump-tawfeek
-PowerState     : PoweredOff
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 16
-UsedSpaceGB    : 300.00
-ResourcePool   : Resources
-CreateDate     : 3/24/2021 11:40:21 AM
-
-
-Name           : Mis-Backup
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 8
-UsedSpaceGB    : 1901.18
-ResourcePool   : Resources
-CreateDate     : 4/18/2020 10:56:58 AM
-
-
-Name           : Office Libre-Production New 1104
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 34.13
-ResourcePool   : Resources
-CreateDate     : 4/11/2020 11:33:21 AM
-
-
-Name           : Frank-pst
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 33.59
-ResourcePool   : Resources
-CreateDate     : 4/19/2021 1:43:41 PM
-
-
-Name           : nextcloud-nfs
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 4.29
-ResourcePool   : Resources
-CreateDate     : 5/1/2021 1:26:58 PM
-
-
-Name           : frank-veeamone
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 2
-MemoryGB       : 20
-UsedSpaceGB    : 45.45
-ResourcePool   : Resources
-CreateDate     : 4/17/2021 12:12:51 PM
-
-
-Name           : Frank-ADC-03
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 37.31
-ResourcePool   : Resources
-CreateDate     : 3/4/2021 7:21:26 PM
-
-
-Name           : MIS-CRM-PRD DB Server
-PowerState     : PoweredOn
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 192
-UsedSpaceGB    : 627.64
-ResourcePool   : Resources
-CreateDate     : 4/17/2020 4:09:14 AM
-
-
-Name           : Frank-RODC-01
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 42.23
-ResourcePool   : Resources
-CreateDate     : 2/14/2021 10:57:33 AM
-
-
-Name           : EU1FE3110
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 274.62
-ResourcePool   : Resources
-CreateDate     : 3/15/2021 1:40:03 PM
-
-
-Name           : EU1OOS601
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 28.67
-ResourcePool   : Resources
-CreateDate     : 6/20/2021 12:48:16 PM
-
-
-Name           : Jump-Server-Peter -- Delete
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 42.35
-ResourcePool   : Resources
-CreateDate     : 12/28/2020 11:25:21 PM
-
-
-Name           : WorldPosta-WebSite
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 13.23
-ResourcePool   : Resources
-CreateDate     : 6/30/2020 1:58:53 PM
-
-
-Name           : frank-d35
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 2
-MemoryGB       : 24
-UsedSpaceGB    : 4220.49
-ResourcePool   : Resources
-CreateDate     : 3/4/2021 12:05:08 PM
-
-
-Name           : Mis-CAR-PRD APP Server
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 95.20
-ResourcePool   : Resources
-CreateDate     : 2/23/2020 12:25:13 PM
-
-
-Name           : sandbox
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 16
-UsedSpaceGB    : 37.37
-ResourcePool   : Resources
-CreateDate     : 6/9/2021 4:58:38 PM
-
-
-Name           : WP-Frank-Database3
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 16
-UsedSpaceGB    : 400.00
-ResourcePool   : Resources
-CreateDate     : 6/18/2019 8:17:56 AM
-
-
-Name           : Mis-Winsows2012R2
-PowerState     : PoweredOn
-NumCpu         : 20
-CoresPerSocket : 10
-MemoryGB       : 90
-UsedSpaceGB    : 825.87
-ResourcePool   : Resources
-CreateDate     : 12/18/2019 8:07:31 AM
-
-
-Name           : Frank-tools01.Roaya.loc_replica
+Name           : ALFA-DAXRPT-COPY
 PowerState     : PoweredOff
 NumCpu         : 8
 CoresPerSocket : 4
-MemoryGB       : 25
-UsedSpaceGB    : 70.95
-ResourcePool   : Resources
-CreateDate     : 1/22/2019 6:54:53 AM
-
-
-Name           : Frank-MBM-D36
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 24
-UsedSpaceGB    : 1289.04
-ResourcePool   : Resources
-CreateDate     : 4/5/2021 3:05:16 PM
-
-
-Name           : EventLog-Analyzer
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 30.71
-ResourcePool   : Resources
-CreateDate     : 4/21/2021 10:29:00 AM
-
-
-Name           : Real-ip
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 14.70
-ResourcePool   : Resources
-CreateDate     : 6/21/2021 10:12:52 AM
-
-
-Name           : Identity Server-Dev
-PowerState     : PoweredOff
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 6
-UsedSpaceGB    : 25.64
-ResourcePool   : Resources
-CreateDate     : 2/19/2020 7:50:17 AM
-
-
-Name           : WP-Syslog-New
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 37.07
-ResourcePool   : Resources
-CreateDate     : 12/25/2020 2:52:12 PM
-
-
-Name           : WP-OdOO
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 2
-UsedSpaceGB    : 14.77
-ResourcePool   : Resources
-CreateDate     : 11/13/2019 11:18:32 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Jump-server-Abdo
@@ -564,189 +64,19 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 163.39
-ResourcePool   : Resources
-CreateDate     : 3/10/2021 7:14:08 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Misr-e-commerce
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 158.09
-ResourcePool   : Resources
-CreateDate     : 3/12/2021 11:48:56 AM
-
-
-Name           : temp-v
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 200.00
-ResourcePool   : Resources
-CreateDate     : 4/13/2021 11:39:33 AM
-
-
-Name           : tiba group
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 16
-UsedSpaceGB    : 27.18
-ResourcePool   : Resources
-CreateDate     : 5/23/2021 1:09:08 PM
-
-
-Name           : jump-ahmed
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 31.01
-ResourcePool   : Resources
-CreateDate     : 4/26/2021 10:05:42 AM
-
-
-Name           : MISR-SAP-CARDB-copy
-PowerState     : PoweredOn
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 128
-UsedSpaceGB    : 731.51
-ResourcePool   : Resources
-CreateDate     : 7/20/2020 8:04:54 PM
-
-
-Name           : SolarWind-SAM
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 20
-UsedSpaceGB    : 127.75
-ResourcePool   : Resources
-CreateDate     : 1/18/2021 7:22:20 AM
-
-
-Name           : Jump-Server-Moataz
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 27.45
-ResourcePool   : Resources
-CreateDate     : 2/15/2021 12:23:36 PM
-
-
-Name           : F5-LTMOld
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 1
-MemoryGB       : 16
-UsedSpaceGB    : 80.00
-ResourcePool   : Resources
-CreateDate     : 11/25/2020 8:29:24 AM
-
-
-Name           : VEEM-Backup
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 650.90
-ResourcePool   : Resources
-CreateDate     : 12/23/2020 9:45:10 PM
-
-
-Name           : Jump-Server-MAli
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 34.95
-ResourcePool   : Resources
-CreateDate     : 12/29/2020 10:59:21 AM
-
-
-Name           : Jump-Nada
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 47.60
-ResourcePool   : Resources
-CreateDate     : 3/17/2021 2:11:20 PM
-
-
-Name           : EU1FE3112
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 276.31
-ResourcePool   : Resources
-CreateDate     : 3/15/2021 1:34:38 PM
-
-
-Name           : Centos01_replica
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 4.38
-ResourcePool   : Resources
-CreateDate     : 12/31/2020 1:22:01 PM
-
-
-Name           : Mis-Manage
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 59.46
-ResourcePool   : Resources
-CreateDate     : 4/18/2020 10:21:01 AM
-
-
-Name           : Mis-Prod-APP-copy
-PowerState     : PoweredOn
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 256
-UsedSpaceGB    : 432.56
-ResourcePool   : Resources
-CreateDate     : 11/18/2020 11:57:53 AM
-
-
-Name           : Frank-ADC-04
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 40.47
-ResourcePool   : Resources
-CreateDate     : 3/7/2021 7:12:58 PM
-
-
-Name           : MISR-CARQASDB
+Name           : Mis-SAP-H-DB
 PowerState     : PoweredOn
 NumCpu         : 30
 CoresPerSocket : 15
-MemoryGB       : 120
-UsedSpaceGB    : 1281.06
-ResourcePool   : Resources
-CreateDate     : 10/4/2020 7:53:04 AM
-
-
-Name           : Mis-ERP DEV-PRD DB Server
-PowerState     : PoweredOn
-NumCpu         : 16
-CoresPerSocket : 8
-MemoryGB       : 40
-UsedSpaceGB    : 669.33
-ResourcePool   : Resources
-CreateDate     : 10/8/2020 9:53:28 PM
+MemoryGB       : 350
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : MISR-TSMS
@@ -754,39 +84,29 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 53.93
-ResourcePool   : Resources
-CreateDate     : 5/15/2020 1:59:23 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : MISR-MTBIDEVDB
+Name           : Jump-Server-Moataz
 PowerState     : PoweredOn
-NumCpu         : 20
-CoresPerSocket : 10
-MemoryGB       : 200
-UsedSpaceGB    : 1496.35
-ResourcePool   : Resources
-CreateDate     : 11/17/2020 11:03:13 AM
-
-
-Name           : vROps-Tenant-App-for-vCD-2.3.0.33067-14826907
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 20.52
-ResourcePool   : Resources
-CreateDate     : 6/17/2020 9:59:24 AM
-
-
-Name           : centos-kibana
-PowerState     : PoweredOff
 NumCpu         : 4
 CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 4.22
-ResourcePool   : Resources
-CreateDate     : 5/24/2021 7:26:13 AM
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-Prod-APP-copy
+PowerState     : PoweredOn
+NumCpu         : 32
+CoresPerSocket : 16
+MemoryGB       : 256
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Misr-ERPPRDDB
@@ -794,359 +114,49 @@ PowerState     : PoweredOn
 NumCpu         : 50
 CoresPerSocket : 25
 MemoryGB       : 700
-UsedSpaceGB    : 1700.45
-ResourcePool   : Resources
-CreateDate     : 11/18/2020 12:55:11 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : centos-test2
+Name           : RADUIS-Server
 PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 15.77
-ResourcePool   : Resources
-CreateDate     : 5/14/2021 1:59:12 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : MISR-SAP-CARAPP
+Name           : Mis-CAR-PRD APP Server
 PowerState     : PoweredOn
-NumCpu         : 12
-CoresPerSocket : 6
-MemoryGB       : 64
-UsedSpaceGB    : 115.87
-ResourcePool   : Resources
-CreateDate     : 7/28/2020 7:31:47 AM
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Postfix01
+Name           : frank-d35
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 2
+MemoryGB       : 24
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : sofos_virtual_vm8
 PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 14.41
-ResourcePool   : Resources
-CreateDate     : 1/19/2021 1:34:18 PM
-
-
-Name           : Frank-FEM-F04
-PowerState     : PoweredOn
-NumCpu         : 16
-CoresPerSocket : 8
-MemoryGB       : 64
-UsedSpaceGB    : 724.40
-ResourcePool   : Resources
-CreateDate     : 1/11/2021 4:10:45 PM
-
-
-Name           : Frank-KSE-SQL
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 67.23
-ResourcePool   : Resources
-CreateDate     : 2/8/2021 9:31:54 AM
-
-
-Name           : Misr-ERPDEVDB
-PowerState     : PoweredOn
-NumCpu         : 16
-CoresPerSocket : 8
-MemoryGB       : 64
-UsedSpaceGB    : 1025.20
-ResourcePool   : Resources
-CreateDate     : 6/14/2020 11:03:42 AM
-
-
-Name           : Frank-ADC-01
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 37.31
-ResourcePool   : Resources
-CreateDate     : 1/11/2021 7:25:29 AM
-
-
-Name           : Misr-Tableau
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 124.84
-ResourcePool   : Resources
-CreateDate     : 5/13/2020 7:25:41 AM
-
-
-Name           : WP-RootCA
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 60.25
-ResourcePool   : Resources
-CreateDate     : 1/12/2021 9:01:51 AM
-
-
-Name           : Mis-CRM QAS & Dev APP Server
-PowerState     : PoweredOff
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 96
-UsedSpaceGB    : 284.28
-ResourcePool   : Resources
-CreateDate     : 2/21/2020 11:29:13 AM
-
-
-Name           : Misr-SQL-Instance
-PowerState     : PoweredOn
-NumCpu         : 20
-CoresPerSocket : 10
-MemoryGB       : 256
-UsedSpaceGB    : 653.96
-ResourcePool   : Resources
-CreateDate     : 3/8/2021 4:08:16 PM
-
-
-Name           : WIN-2016-Temp-Diyaa
-PowerState     : PoweredOff
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 140.00
-ResourcePool   : Resources
-CreateDate     : 12/14/2020 10:50:34 PM
-
-
-Name           : J-S-Peter
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 116.09
-ResourcePool   : Resources
-CreateDate     : 3/22/2021 10:14:31 AM
-
-
-Name           : WP-Messanger-Centos .73-copy
-PowerState     : PoweredOff
-NumCpu         : 4
+NumCpu         : 1
 CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 23.68
-ResourcePool   : Resources
-CreateDate     : 5/20/2019 8:52:36 AM
-
-
-Name           : Frank-OfficeOnline01
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 25
-UsedSpaceGB    : 146.22
-ResourcePool   : Resources
-CreateDate     : 12/23/2020 9:44:19 AM
-
-
-Name           : jump-wahba
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 35.76
-ResourcePool   : Resources
-CreateDate     : 12/21/2020 10:46:01 AM
-
-
-Name           : jump-eslam
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 42.32
-ResourcePool   : Resources
-CreateDate     : 5/23/2021 7:09:04 PM
-
-
-Name           : Frank-OfficeOnline02
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 25
-UsedSpaceGB    : 105.60
-ResourcePool   : Resources
-CreateDate     : 12/23/2020 9:35:27 AM
-
-
-Name           : Frank-Wsus-new
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 20
-UsedSpaceGB    : 308.41
-ResourcePool   : Resources
-CreateDate     : 12/24/2020 7:33:59 PM
-
-
-Name           : centos-block-storage
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 2
-MemoryGB       : 12
-UsedSpaceGB    : 14354.21
-ResourcePool   : Resources
-CreateDate     : 5/17/2021 1:50:08 PM
-
-
-Name           : Jump-Server-Fahmy
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 305.49
-ResourcePool   : Resources
-CreateDate     : 12/28/2020 9:50:41 PM
-
-
-Name           : HAProxy
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 7.84
-ResourcePool   : Resources
-CreateDate     : 12/10/2020 8:33:44 AM
-
-
-Name           : J-S-Hamd
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 10.41
-ResourcePool   : Resources
-CreateDate     : 3/15/2021 2:15:00 PM
-
-
-Name           : SQL-Server-Solid
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 2
-MemoryGB       : 18
-UsedSpaceGB    : 389.11
-ResourcePool   : Resources
-CreateDate     : 12/21/2020 11:07:00 AM
-
-
-Name           : Windows 8.1
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 0.00
-ResourcePool   : Resources
-CreateDate     : 3/15/2021 10:39:16 AM
-
-
-Name           : NFS-NEXTCLOUD-01
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 5.14
-ResourcePool   : Resources
-CreateDate     : 4/5/2021 1:55:32 PM
-
-
-Name           : WP-DATABASE2
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 6
-UsedSpaceGB    : 22.80
-ResourcePool   : Resources
-CreateDate     : 6/2/2019 10:57:47 AM
-
-
-Name           : SQL-Server-Solid2
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 2
-MemoryGB       : 20
-UsedSpaceGB    : 356.35
-ResourcePool   : Resources
-CreateDate     : 12/21/2020 12:37:40 PM
-
-
-Name           : Solid-CP-DB-copy-13
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 12
-UsedSpaceGB    : 328.96
-ResourcePool   : Resources
-CreateDate     : 1/18/2019 8:40:33 PM
-
-
-Name           : EU1FE9222
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 32
-UsedSpaceGB    : 659.82
-ResourcePool   : Resources
-CreateDate     : 3/24/2021 12:07:31 PM
-
-
-Name           : MISR-IVENDMC2
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 16
-UsedSpaceGB    : 50.51
-ResourcePool   : Resources
-CreateDate     : 5/9/2021 1:48:50 PM
-
-
-Name           : Mis-CRM QAS & Dev DB Server
-PowerState     : PoweredOff
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 192
-UsedSpaceGB    : 402.06
-ResourcePool   : Resources
-CreateDate     : 2/21/2020 11:30:46 AM
-
-
-Name           : EU1FE3111
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 273.39
-ResourcePool   : Resources
-CreateDate     : 3/15/2021 2:12:04 PM
-
-
-Name           : Misr-IvendCRM
-PowerState     : PoweredOff
-NumCpu         : 16
-CoresPerSocket : 8
-MemoryGB       : 32
-UsedSpaceGB    : 1000.00
-ResourcePool   : Resources
-CreateDate     : 3/2/2021 1:23:05 PM
-
-
-Name           : Frank-SMT-P01
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 159.91
-ResourcePool   : Resources
-CreateDate     : 2/2/2021 11:42:00 AM
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : el batal crm
@@ -1154,9 +164,9 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 3
 MemoryGB       : 32
-UsedSpaceGB    : 45.22
-ResourcePool   : Resources
-CreateDate     : 6/28/2021 10:13:55 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : AWS-SMS-Connector
@@ -1164,289 +174,29 @@ PowerState     : PoweredOff
 NumCpu         : 2
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 299.00
-ResourcePool   : Resources
-CreateDate     : 2/3/2021 8:25:57 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : centos-LOGStash
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 4.22
-ResourcePool   : Resources
-CreateDate     : 5/23/2021 2:23:56 PM
-
-
-Name           : Misr-Web Server-copy
+Name           : Mis-Manage
 PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 49.95
-ResourcePool   : Resources
-CreateDate     : 5/13/2020 7:21:12 AM
-
-
-Name           : WP-Messanger-DB-WIN .72
-PowerState     : PoweredOff
-NumCpu         : 6
-CoresPerSocket : 1
-MemoryGB       : 10
-UsedSpaceGB    : 31.28
-ResourcePool   : Resources
-CreateDate     : 5/19/2019 11:04:34 AM
-
-
-Name           : jump-gabr
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 216.09
-ResourcePool   : Resources
-CreateDate     : 4/2/2021 1:16:57 PM
-
-
-Name           : Misr-ERPQASDB-copy
-PowerState     : PoweredOn
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 420
-UsedSpaceGB    : 2798.86
-ResourcePool   : Resources
-CreateDate     : 10/8/2020 10:00:07 PM
-
-
-Name           : Frank-DNS-02
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 100.00
-ResourcePool   : Resources
-CreateDate     : 1/11/2021 7:31:14 AM
-
-
-Name           : Mis-ERP DEV-PRD APP Server
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 20
-UsedSpaceGB    : 765.23
-ResourcePool   : Resources
-CreateDate     : 2/27/2020 8:23:29 AM
-
-
-Name           : Veeam-11
-PowerState     : PoweredOff
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 32
-UsedSpaceGB    : 39.20
-ResourcePool   : Resources
-CreateDate     : 3/4/2021 7:18:09 AM
-
-
-Name           : Frank-Kbase-Source
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 252.81
-ResourcePool   : Resources
-CreateDate     : 12/23/2020 10:33:17 AM
-
-
-Name           : Frank-DNS-01
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 100.00
-ResourcePool   : Resources
-CreateDate     : 1/11/2021 7:29:17 AM
-
-
-Name           : wp-frank-antivirus (DB)-cpoy
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 16
-UsedSpaceGB    : 165.31
-ResourcePool   : Resources
-CreateDate     : 7/3/2019 7:52:18 AM
-
-
-Name           : Misr-CARPRDAPP
-PowerState     : PoweredOn
-NumCpu         : 18
-CoresPerSocket : 9
-MemoryGB       : 164
-UsedSpaceGB    : 974.11
-ResourcePool   : Resources
-CreateDate     : 1/4/2021 3:13:36 PM
-
-
-Name           : Mis-Solman Server
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 626.86
-ResourcePool   : Resources
-CreateDate     : 3/16/2020 8:36:57 AM
-
-
-Name           : 22-GREEN-WEB
-PowerState     : PoweredOff
 NumCpu         : 1
 CoresPerSocket : 1
-MemoryGB       : 0.125
-UsedSpaceGB    : 0.25
-ResourcePool   : Resources
-CreateDate     : 11/28/2020 12:36:36 PM
-
-
-Name           : DAXRDS-yhsv-Copy
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 146.72
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 8:11:36 PM
-
-
-Name           : Frank-DNS-MGMNT
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 42.76
-ResourcePool   : Resources
-CreateDate     : 1/23/2021 9:27:56 AM
-
-
-Name           : MISR-NFS
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
 MemoryGB       : 4
-UsedSpaceGB    : 11733.86
-ResourcePool   : Resources
-CreateDate     : 7/8/2020 11:21:49 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : EU1FE9444
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 155.30
-ResourcePool   : Resources
-CreateDate     : 3/31/2021 12:11:10 PM
-
-
-Name           : Frank-PST-New01
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 2834.85
-ResourcePool   : Resources
-CreateDate     : 12/22/2020 2:25:08 PM
-
-
-Name           : Front-Test
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 58.97
-ResourcePool   : Resources
-CreateDate     : 3/21/2021 2:28:29 PM
-
-
-Name           : PowerEye
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 24.41
-ResourcePool   : Resources
-CreateDate     : 3/17/2021 9:59:30 AM
-
-
-Name           : Mis-CAR-PRD DB Server
+Name           : MIS-CRM-PRD APP Server
 PowerState     : PoweredOn
 NumCpu         : 32
 CoresPerSocket : 16
-MemoryGB       : 128
-UsedSpaceGB    : 634.99
-ResourcePool   : Resources
-CreateDate     : 2/23/2020 12:22:24 PM
-
-
-Name           : VMware vCenter Server Appliance 6.7-Passive
-PowerState     : PoweredOn
-NumCpu         : 24
-CoresPerSocket : 1
-MemoryGB       : 48
-UsedSpaceGB    : 303.15
-ResourcePool   : Resources
-CreateDate     : 6/17/2020 7:15:39 AM
-
-
-Name           : linux-web
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 4.45
-ResourcePool   : Resources
-CreateDate     : 3/24/2021 12:21:35 PM
-
-
-Name           : Jump-Server-Othman
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 11.49
-ResourcePool   : Resources
-CreateDate     : 12/28/2020 11:37:27 PM
-
-
-Name           : EU1FE9333
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 152.46
-ResourcePool   : Resources
-CreateDate     : 3/31/2021 12:03:10 PM
-
-
-Name           : ERP-DEV-sQmN
-PowerState     : PoweredOff
-NumCpu         : 12
-CoresPerSocket : 6
-MemoryGB       : 24
-UsedSpaceGB    : 65.66
-ResourcePool   : Resources
-CreateDate     : 11/17/2020 12:29:05 PM
-
-
-Name           : Sama
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 20.36
-ResourcePool   : Resources
-CreateDate     : 3/21/2021 12:27:14 PM
+MemoryGB       : 96
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : VMware vCenter Server Appliance 6.7-Witness
@@ -1454,19 +204,169 @@ PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 1
-UsedSpaceGB    : 31.13
-ResourcePool   : Resources
-CreateDate     : 6/17/2020 7:21:16 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Frank-MBX
+Name           : centos-kibana
 PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU1FE3113
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 76.03
-ResourcePool   : Resources
-CreateDate     : 12/23/2020 11:37:56 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : ERP-DEV-sQmN
+PowerState     : PoweredOff
+NumCpu         : 12
+CoresPerSocket : 6
+MemoryGB       : 24
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU1FE9333
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-ADC-02
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WorldPosta-WebSite
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : tiba group
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU1FE3110
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : frank-veeamone
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 2
+MemoryGB       : 20
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Jump-Nada
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Jump-Server-MAli
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : temp-v
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-KSE-SQL
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : shared iso
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Jump-Server-Karim
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-e-commerce
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : EU1FE9111
@@ -1474,29 +374,889 @@ PowerState     : PoweredOn
 NumCpu         : 6
 CoresPerSocket : 2
 MemoryGB       : 32
-UsedSpaceGB    : 141.49
-ResourcePool   : Resources
-CreateDate     : 3/24/2021 12:12:36 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : EX-04
+Name           : Misr-CARPRDDB
+PowerState     : PoweredOn
+NumCpu         : 32
+CoresPerSocket : 16
+MemoryGB       : 406
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Developers-VM6-Copy
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU1FE9444
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-PST-New01
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU1FE3111
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MISR-IVENDMC2
+PowerState     : PoweredOn
+NumCpu         : 6
+CoresPerSocket : 3
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vcenter-clone
+PowerState     : PoweredOff
+NumCpu         : 24
+CoresPerSocket : 1
+MemoryGB       : 48
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : jump-hamd
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : jump-wahba
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : jump-eslam
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EventLog-Analyzer
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-ERP DEV-PRD APP Server
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 20
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Sama
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-ADC-03
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MIS-CRM-PRD DB Server
+PowerState     : PoweredOn
+NumCpu         : 32
+CoresPerSocket : 16
+MemoryGB       : 192
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : nextcloud-nfs
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-Web Server-copy
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 2
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WP-Messanger-DB-WIN .72
+PowerState     : PoweredOff
+NumCpu         : 6
+CoresPerSocket : 1
+MemoryGB       : 10
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : jump-gabr
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : infected ihpgco Kuwait Windows (ransomware)
+PowerState     : PoweredOff
+NumCpu         : 2
+CoresPerSocket : 2
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MISR-CARQASAPP
+PowerState     : PoweredOn
+NumCpu         : 26
+CoresPerSocket : 13
+MemoryGB       : 136
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : jump-solex
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-MBX
+PowerState     : PoweredOn
+NumCpu         : 6
+CoresPerSocket : 3
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-Newvm
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 1
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-SQL-Instance
+PowerState     : PoweredOn
+NumCpu         : 32
+CoresPerSocket : 16
+MemoryGB       : 256
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Office Libre-Production New 1104
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-Backup
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : esxi2
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : FortiGate
+PowerState     : PoweredOff
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 2
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WP-Syslog-New
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Identity Server-Dev
+PowerState     : PoweredOff
+NumCpu         : 2
+CoresPerSocket : 2
+MemoryGB       : 6
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Real-ip
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-RODC-01
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : SQL-Server-Solid
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 2
+MemoryGB       : 18
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : J-S-Hamd
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : HAProxy
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU100S602
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : sandbox
+PowerState     : PoweredOff
+NumCpu         : 6
+CoresPerSocket : 3
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-Winsows2012R2
+PowerState     : PoweredOn
+NumCpu         : 20
+CoresPerSocket : 10
+MemoryGB       : 90
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WP-Frank-Database3
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : NFS-NEXTCLOUD-01
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MISR-SAP-CARDB-copy
+PowerState     : PoweredOn
+NumCpu         : 32
+CoresPerSocket : 16
+MemoryGB       : 128
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : ihpgco Kuwait Windows - Backup(new)
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 2
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : SolarWind-SAM
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 20
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : jump-ahmed
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-ERPDEVDB
+PowerState     : PoweredOn
+NumCpu         : 16
+CoresPerSocket : 8
+MemoryGB       : 64
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-ADC-01
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-Tableau
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WP-RootCA
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MISR-NFS
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-DNS-MGMNT
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-Additioanal Domain
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 2
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-Qatr
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-Kbase-Source
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : wp-frank-antivirus (DB)-cpoy
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-MTBIDEVAPP
 PowerState     : PoweredOn
 NumCpu         : 12
-CoresPerSocket : 1
-MemoryGB       : 128
-UsedSpaceGB    : 728.10
-ResourcePool   : Resources
-CreateDate     : 12/15/2020 5:38:41 AM
+CoresPerSocket : 6
+MemoryGB       : 70
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Frank-SQL-2019
+Name           : Frank-MBM-D36
 PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 24
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : esxi1
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 20
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-tools01.Roaya.loc_replica
+PowerState     : PoweredOff
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 25
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-OfficeOnline01
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 25
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WP-Messanger-Centos .73-copy
+PowerState     : PoweredOff
 NumCpu         : 4
 CoresPerSocket : 1
 MemoryGB       : 8
-UsedSpaceGB    : 408.09
-ResourcePool   : Resources
-CreateDate     : 8/18/2019 7:38:52 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : J-S-Peter
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MISR-SAP-CARAPP
+PowerState     : PoweredOn
+NumCpu         : 12
+CoresPerSocket : 6
+MemoryGB       : 64
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : SQL-Server-Solid2
+PowerState     : PoweredOn
+NumCpu         : 6
+CoresPerSocket : 2
+MemoryGB       : 20
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-OfficeOnline02
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 25
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-Wsus-new
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 20
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-EventLog
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : DAXRDS-yhsv-Copy
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-Solman Server
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-CARPRDAPP
+PowerState     : PoweredOn
+NumCpu         : 18
+CoresPerSocket : 9
+MemoryGB       : 164
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU1FE3112
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU1FE9222
+PowerState     : PoweredOn
+NumCpu         : 6
+CoresPerSocket : 3
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-ENTERPRISESRV
+PowerState     : PoweredOn
+NumCpu         : 12
+CoresPerSocket : 6
+MemoryGB       : 50
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-Trend2019-DEV
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : EU1OOS601
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : next-cloud-NFS-server
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-CAR-PRD DB Server
+PowerState     : PoweredOn
+NumCpu         : 32
+CoresPerSocket : 16
+MemoryGB       : 128
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : PowerEye
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : centos-block-storage
+PowerState     : PoweredOn
+NumCpu         : 6
+CoresPerSocket : 2
+MemoryGB       : 12
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MISR-MTBIDEVDB
+PowerState     : PoweredOn
+NumCpu         : 20
+CoresPerSocket : 10
+MemoryGB       : 200
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vROps-Tenant-App-for-vCD-2.3.0.33067-14826907
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 1
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MISR-CARQASDB
+PowerState     : PoweredOn
+NumCpu         : 30
+CoresPerSocket : 15
+MemoryGB       : 120
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-ADC-04
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-ERP DEV-PRD DB Server
+PowerState     : PoweredOn
+NumCpu         : 16
+CoresPerSocket : 8
+MemoryGB       : 40
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-ERPQASDB
+PowerState     : PoweredOn
+NumCpu         : 32
+CoresPerSocket : 16
+MemoryGB       : 420
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Misr-PIPRD
+PowerState     : PoweredOn
+NumCpu         : 16
+CoresPerSocket : 8
+MemoryGB       : 160
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WP-OdOO
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 2
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : VMware vCenter Server Appliance 6.7-Passive
+PowerState     : PoweredOn
+NumCpu         : 24
+CoresPerSocket : 1
+MemoryGB       : 48
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Frank-OpenManage_Integration
@@ -1504,19 +1264,29 @@ PowerState     : PoweredOff
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 85.98
-ResourcePool   : Resources
-CreateDate     : 4/19/2020 12:03:46 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Frank-Veeam-Monitor
+Name           : Frank-SQL-2019
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : copy-DeepSecurity
 PowerState     : PoweredOff
 NumCpu         : 4
-CoresPerSocket : 2
+CoresPerSocket : 1
 MemoryGB       : 16
-UsedSpaceGB    : 75.63
-ResourcePool   : Resources
-CreateDate     : 9/28/2020 3:32:42 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Diyaa-LAB
@@ -1524,9 +1294,9 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 666.09
-ResourcePool   : Resources
-CreateDate     : 12/14/2020 6:54:38 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : replaymanager
@@ -1534,9 +1304,9 @@ PowerState     : PoweredOff
 NumCpu         : 8
 CoresPerSocket : 2
 MemoryGB       : 12
-UsedSpaceGB    : 240.10
-ResourcePool   : Resources
-CreateDate     : 12/15/2020 12:19:10 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Jump-Server-Tawfik
@@ -1544,9 +1314,9 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 84.90
-ResourcePool   : Resources
-CreateDate     : 12/18/2020 1:08:05 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Frank-DC01
@@ -1554,19 +1324,19 @@ PowerState     : PoweredOff
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 168.29
-ResourcePool   : Resources
-CreateDate     : 12/15/2020 12:45:11 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Exchange-DEV
+Name           : EX-04
 PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 2
-MemoryGB       : 20
-UsedSpaceGB    : 520.19
-ResourcePool   : Resources
-CreateDate     : 12/18/2020 11:18:25 PM
+NumCpu         : 12
+CoresPerSocket : 1
+MemoryGB       : 128
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Frank-DC02
@@ -1574,19 +1344,19 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 32
-UsedSpaceGB    : 172.09
-ResourcePool   : Resources
-CreateDate     : 12/15/2020 2:39:16 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : copy-DeepSecurity
+Name           : Exchange-DEV
 PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 16
-UsedSpaceGB    : 166.09
-ResourcePool   : Resources
-CreateDate     : 6/29/2019 7:58:17 PM
+NumCpu         : 8
+CoresPerSocket : 2
+MemoryGB       : 20
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Misr-Router-02
@@ -1594,39 +1364,9 @@ PowerState     : PoweredOn
 NumCpu         : 10
 CoresPerSocket : 5
 MemoryGB       : 20
-UsedSpaceGB    : 43.66
-ResourcePool   : Resources
-CreateDate     : 12/21/2020 9:54:25 PM
-
-
-Name           : VMware-NSX-Manager
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 16
-UsedSpaceGB    : 60.09
-ResourcePool   : Resources
-CreateDate     : 6/8/2020 3:19:46 PM
-
-
-Name           : Mis-CRM QAS & Dev DB Server
-PowerState     : PoweredOn
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 192
-UsedSpaceGB    : 594.19
-ResourcePool   : Resources
-CreateDate     : 2/21/2020 11:30:46 AM
-
-
-Name           : VMware_vCloud_Director-10.0.0.4649-15450333
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 24
-UsedSpaceGB    : 179.34
-ResourcePool   : Resources
-CreateDate     : 6/8/2020 7:15:52 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : VMware vCenter Server Appliance 6.7
@@ -1634,19 +1374,39 @@ PowerState     : PoweredOff
 NumCpu         : 24
 CoresPerSocket : 1
 MemoryGB       : 48
-UsedSpaceGB    : 45.37
-ResourcePool   : Resources
-CreateDate     : 6/16/2020 9:41:49 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Frank-PA-01 - Backup
-PowerState     : PoweredOff
-NumCpu         : 10
-CoresPerSocket : 5
-MemoryGB       : 40
-UsedSpaceGB    : 15.65
-ResourcePool   : Resources
-CreateDate     : 12/13/2020 9:23:21 PM
+Name           : VMware-NSX-Manager
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Mis-CRM QAS & Dev DB Server
+PowerState     : PoweredOn
+NumCpu         : 32
+CoresPerSocket : 16
+MemoryGB       : 192
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : VMware_vCloud_Director-10.0.0.4649-15450333
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 24
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Misr-Router-01
@@ -1654,109 +1414,9 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 16
-UsedSpaceGB    : 76.09
-ResourcePool   : Resources
-CreateDate     : 12/14/2020 7:02:48 AM
-
-
-Name           : Misr-Router-02 22-11-2020
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 12
-UsedSpaceGB    : 60.00
-ResourcePool   : Resources
-CreateDate     : 11/22/2020 10:16:21 AM
-
-
-Name           : Frank-PA-01-108-Backup
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 20
-UsedSpaceGB    : 24.69
-ResourcePool   : Resources
-CreateDate     : 12/13/2020 10:28:15 PM
-
-
-Name           : PaloAlto-Production
-PowerState     : PoweredOff
-NumCpu         : 10
-CoresPerSocket : 2
-MemoryGB       : 30
-UsedSpaceGB    : 100.00
-ResourcePool   : Resources
-CreateDate     : 6/13/2020 1:38:47 PM
-
-
-Name           : PA-VM-ESX-10.0.3-01
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 20
-UsedSpaceGB    : 7.37
-ResourcePool   : Resources
-CreateDate     : 1/3/2021 7:24:26 AM
-
-
-Name           : Tawfik-Test-02
-PowerState     : PoweredOff
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 25
-UsedSpaceGB    : 567.49
-ResourcePool   : Resources
-CreateDate     : 11/11/2019 8:53:45 AM
-
-
-Name           : Tawfik-Test-01
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 30.34
-ResourcePool   : Resources
-CreateDate     : 3/27/2021 6:16:31 PM
-
-
-Name           : Ceramica-Cleoptra
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 72.48
-ResourcePool   : Resources
-CreateDate     : 5/20/2019 8:47:52 AM
-
-
-Name           : joy&roy
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 44.30
-ResourcePool   : Resources
-CreateDate     : 4/13/2021 1:26:25 PM
-
-
-Name           : elbassiony-Copy
-PowerState     : PoweredOn
-NumCpu         : 3
-CoresPerSocket : 3
-MemoryGB       : 16
-UsedSpaceGB    : 470.48
-ResourcePool   : Resources
-CreateDate     : 1/18/2019 4:30:42 PM
-
-
-Name           : md-masterbatch-website
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 2
-UsedSpaceGB    : 42.19
-ResourcePool   : Resources
-CreateDate     : 3/3/2020 5:15:01 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Elbassiouni WebSite Production
@@ -1764,279 +1424,49 @@ PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 6
-UsedSpaceGB    : 121.21
-ResourcePool   : Resources
-CreateDate     : 5/28/2020 11:45:30 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : 2B-01
-PowerState     : PoweredOff
+Name           : md-masterbatch-website
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 2
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : joy&roy
+PowerState     : Suspended
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 230.00
-ResourcePool   : Resources
-CreateDate     : 9/27/2020 5:50:08 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : WorldPosta Website 02
+Name           : elbassiony-Copy
 PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
+NumCpu         : 3
+CoresPerSocket : 3
 MemoryGB       : 16
-UsedSpaceGB    : 316.09
-ResourcePool   : Resources
-CreateDate     : 2/11/2021 7:19:16 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Dell-EMC-01
+Name           : Ceramica-Cleoptra
 PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 18.08
-ResourcePool   : Resources
-CreateDate     : 3/5/2020 5:55:52 PM
-
-
-Name           : MyCloud-AppLaunchPad
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 23.85
-ResourcePool   : Resources
-CreateDate     : 5/18/2020 11:46:54 AM
-
-
-Name           : Frank-DNS-03
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 116.09
-ResourcePool   : Resources
-CreateDate     : 1/15/2021 1:36:40 PM
-
-
-Name           : DSITV-06.00.00.165
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 18.08
-ResourcePool   : Resources
-CreateDate     : 12/27/2020 3:12:03 PM
-
-
-Name           : ubuntu-dev
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 25.62
-ResourcePool   : Resources
-CreateDate     : 4/20/2021 10:38:30 AM
-
-
-Name           : WorldPosta WebSite
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 56.85
-ResourcePool   : Resources
-CreateDate     : 12/30/2020 2:22:38 PM
-
-
-Name           : T-WebServer
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 6.02
-ResourcePool   : Resources
-CreateDate     : 12/27/2020 9:37:20 AM
-
-
-Name           : Centos-ssh test
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 13.18
-ResourcePool   : Resources
-CreateDate     : 3/22/2021 7:27:03 PM
-
-
-Name           : Frank-NSX-Controller-01-NSX-controller-1
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 1
 MemoryGB       : 4
-UsedSpaceGB    : 28.09
-ResourcePool   : Resources
-CreateDate     : 6/8/2020 4:09:53 PM
-
-
-Name           : Frank-IMSVA-Child-04
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 560.07
-ResourcePool   : Resources
-CreateDate     : 2/1/2021 9:53:02 AM
-
-
-Name           : Frank-IMSVA-Child-03
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 578.89
-ResourcePool   : Resources
-CreateDate     : 1/31/2021 9:25:47 PM
-
-
-Name           : Gabr-Kali-Server
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 216.09
-ResourcePool   : Resources
-CreateDate     : 2/9/2021 7:00:29 AM
-
-
-Name           : Router-01
-PowerState     : PoweredOn
-NumCpu         : 12
-CoresPerSocket : 2
-MemoryGB       : 30
-UsedSpaceGB    : 180.10
-ResourcePool   : Resources
-CreateDate     : 12/14/2020 3:43:01 PM
-
-
-Name           : dev-ubuntu-21
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 27.98
-ResourcePool   : Resources
-CreateDate     : 4/28/2021 9:31:55 AM
-
-
-Name           : Router-02
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 20
-UsedSpaceGB    : 37.71
-ResourcePool   : Resources
-CreateDate     : 1/3/2021 7:25:47 AM
-
-
-Name           : NextCloud 31-1-2021
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 516.09
-ResourcePool   : Resources
-CreateDate     : 1/31/2021 7:25:10 AM
-
-
-Name           : MinIO
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 131.37
-ResourcePool   : Resources
-CreateDate     : 3/24/2021 12:35:38 PM
-
-
-Name           : Frank-PA-02
-PowerState     : PoweredOn
-NumCpu         : 10
-CoresPerSocket : 5
-MemoryGB       : 40
-UsedSpaceGB    : 140.10
-ResourcePool   : Resources
-CreateDate     : 6/10/2020 6:07:17 PM
-
-
-Name           : DSMBuildVM-20
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 19.36
-ResourcePool   : Resources
-CreateDate     : 1/3/2021 12:39:16 PM
-
-
-Name           : MyCloud-NFS
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 16
-UsedSpaceGB    : 218.79
-ResourcePool   : Resources
-CreateDate     : 5/10/2020 10:36:08 AM
-
-
-Name           : Frank-IMSVA-Parent 1022021
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 516.09
-ResourcePool   : Resources
-CreateDate     : 1/31/2021 9:28:16 PM
-
-
-Name           : Roaya WebSite
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 167.32
-ResourcePool   : Resources
-CreateDate     : 1/13/2021 1:29:10 PM
-
-
-Name           : Frank-NSX-Controller-03-NSX-controller-3
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 28.09
-ResourcePool   : Resources
-CreateDate     : 6/8/2020 4:48:38 PM
-
-
-Name           : WP-Coturn-Videostreaming
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 16.48
-ResourcePool   : Resources
-CreateDate     : 4/23/2019 9:06:36 AM
-
-
-Name           : MyCloud-AMQP
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 22.52
-ResourcePool   : Resources
-CreateDate     : 6/8/2020 7:51:09 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Frank-IMSVA-Child-01
@@ -2044,39 +1474,149 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 582.56
-ResourcePool   : Resources
-CreateDate     : 1/31/2021 9:32:38 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Frank-NSX-Controller-02-NSX-controller-2
+Name           : WorldPosta Website 02
 PowerState     : PoweredOn
 NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 28.09
-ResourcePool   : Resources
-CreateDate     : 6/8/2020 4:21:25 PM
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Frank-PA-01
+Name           : MyCloud-AppLaunchPad
 PowerState     : PoweredOn
-NumCpu         : 10
-CoresPerSocket : 5
-MemoryGB       : 40
-UsedSpaceGB    : 87.71
-ResourcePool   : Resources
-CreateDate     : 12/25/2020 10:10:46 AM
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : centos-Backup-vcenter
+Name           : Router-01
+PowerState     : PoweredOn
+NumCpu         : 12
+CoresPerSocket : 2
+MemoryGB       : 30
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-IMSVA-Child-03
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : ubuntu-dev
 PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 23.29
-ResourcePool   : Resources
-CreateDate     : 5/27/2021 8:09:23 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WorldPosta WebSite
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Router-02
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 20
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-NSX-Controller-01-NSX-controller-1
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-IMSVA-Child-04
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MinIO
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-PA-02
+PowerState     : PoweredOn
+NumCpu         : 10
+CoresPerSocket : 5
+MemoryGB       : 40
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : NextCloud 31-1-2021
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : dev-ubuntu-21
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Gabr-Kali-Server
+PowerState     : PoweredOff
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Frank-IMSVA-Child-02
@@ -2084,29 +1624,129 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 599.67
-ResourcePool   : Resources
-CreateDate     : 1/31/2021 9:34:51 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Solid-CP-DB-copy-13
+Name           : centos-Backup-vcenter
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : DSITV-06.00.00.165
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 1
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : WP-Coturn-Videostreaming
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MyCloud-AMQP
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-NSX-Controller-03-NSX-controller-3
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-NSX-Controller-02-NSX-controller-2
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 1
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Frank-PA-01
+PowerState     : PoweredOn
+NumCpu         : 10
+CoresPerSocket : 5
+MemoryGB       : 40
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : DSMBuildVM-20
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 1
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : MyCloud-NFS
 PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 4
-MemoryGB       : 12
-UsedSpaceGB    : 479.08
-ResourcePool   : Resources
-CreateDate     : 1/18/2019 8:40:33 PM
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Nextcloud-Ubuntu-Prodaction-FromSnap
+Name           : Frank-IMSVA-Parent 1022021
 PowerState     : PoweredOn
-NumCpu         : 10
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Roaya WebSite
+PowerState     : PoweredOn
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Dell-EMC-01
+PowerState     : PoweredOn
+NumCpu         : 2
 CoresPerSocket : 1
-MemoryGB       : 44.921875
-UsedSpaceGB    : 16613.86
-ResourcePool   : Resources
-CreateDate     : 1/28/2019 3:15:03 AM
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Frank-Tools
@@ -2114,29 +1754,9 @@ PowerState     : PoweredOff
 NumCpu         : 8
 CoresPerSocket : 4
 MemoryGB       : 25
-UsedSpaceGB    : 18.27
-ResourcePool   : Resources
-CreateDate     : 12/28/2020 12:59:35 PM
-
-
-Name           : Frank-tools01.Roaya.loc
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 25
-UsedSpaceGB    : 91.27
-ResourcePool   : Resources
-CreateDate     : 1/22/2019 6:54:53 AM
-
-
-Name           : Developers-VM6-Q6b7
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 574.33
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 2/10/2021 3:54:02 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : nextcloud-dev-new-production
@@ -2144,29 +1764,9 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 71.36
-ResourcePool   : Resources
-CreateDate     : 4/27/2021 10:30:14 AM
-
-
-Name           : Developers-VM8-jTLN
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 57.00
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 2/28/2021 11:36:26 AM
-
-
-Name           : Frank-MBX02 - Clone 12-6-2020
-PowerState     : PoweredOn
-NumCpu         : 10
-CoresPerSocket : 10
-MemoryGB       : 85
-UsedSpaceGB    : 371.92
-ResourcePool   : Resources
-CreateDate     : 12/6/2020 12:00:55 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : frank-Migr.Roaya.loc
@@ -2174,19 +1774,49 @@ PowerState     : PoweredOn
 NumCpu         : 8
 CoresPerSocket : 8
 MemoryGB       : 16
-UsedSpaceGB    : 78.34
-ResourcePool   : Resources
-CreateDate     : 1/21/2019 11:47:08 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Developers-VM9-g6uv
+Name           : Frank-MBX02 - Clone 12-6-2020
+PowerState     : PoweredOn
+NumCpu         : 10
+CoresPerSocket : 10
+MemoryGB       : 85
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Developers-VM8-jTLN
 PowerState     : PoweredOn
 NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Solid-CP-DB-copy-13
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 12
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Nextcloud-Ubuntu-Prodaction-FromSnap
+PowerState     : PoweredOn
+NumCpu         : 10
 CoresPerSocket : 1
-MemoryGB       : 16
-UsedSpaceGB    : 569.24
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 3/10/2021 12:56:56 PM
+MemoryGB       : 44.921875
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : WP-Syslog
@@ -2194,89 +1824,39 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 25
-UsedSpaceGB    : 171.81
-ResourcePool   : Resources
-CreateDate     : 4/14/2019 12:51:06 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : vse-solex-edge (fab0b166-093a-431b-bdb0-08bc63a71b24)-0
+Name           : Developers-VM9-g6uv
 PowerState     : PoweredOn
-NumCpu         : 1
+NumCpu         : 4
 CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 6/28/2021 7:39:33 PM
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : vse-Demo (2a1cd3aa-1b88-4de4-a85d-7c05601d750f)-0
+Name           : Developers-VM6-Q6b7
 PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/26/2021 12:15:09 PM
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : vse-kuwait (8589cebd-4ad3-49d7-859a-17cd4189a086)-0
+Name           : Frank-tools01.Roaya.loc
 PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 6/15/2021 7:53:00 AM
-
-
-Name           : vse-peter-new-tenant (38d400ef-1ca3-438f-b131-738fb4017ff2)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/31/2021 12:34:13 PM
-
-
-Name           : vse-ACT-Company (e251c8fb-4dfb-469c-b93f-ef2a8487c5c6)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 1/21/2021 10:23:43 AM
-
-
-Name           : vse-Future-ERP-Edge-New (fd1668ba-fb29-442b-af13-84b259b14191)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 12/28/2020 10:20:37 AM
-
-
-Name           : vse-Gabr-edg (fa1964f7-de42-4f8c-8edc-93f2db32cc25)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 1/26/2021 9:25:54 AM
-
-
-Name           : vse-RENTEX CARS (4971e2a7-8d66-4cab-8cdd-9d6cefbeaf68)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 3/1/2021 1:12:39 PM
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 25
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : vse-el bassiony (27dff168-a339-48b9-90af-c7f34c7d2f47)-0
@@ -2284,39 +1864,19 @@ PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/3/2021 10:38:00 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : vse-the-concrete (95a00dfd-3eb6-476f-b8a5-6d3f4b35650f)-0
+Name           : vse-LeadersCO (e518df4f-a749-4c07-8e0b-5abac75e25c3)-0
 PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 6/5/2021 10:47:18 AM
-
-
-Name           : vse-Edge-AlfaMarket-Lan (718d9b5e-62e1-4cd1-9a90-693eae41b6bb)-0
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 7.16
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 4/29/2021 11:05:16 PM
-
-
-Name           : vse-Ahessien-Edge (85eabc8d-9111-4a6c-a374-3ea1f068c3be)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 4/13/2021 8:11:54 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : vse-Delta-Pharma-ESG (0ed9c57a-8bba-4476-b544-4d48226b0897)-0
@@ -2324,129 +1884,9 @@ PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 3/9/2021 6:56:48 PM
-
-
-Name           : vse-Edge-ABDO (e673e19e-1c38-4c3d-8d92-1954a4a7fbe7)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 6/10/2021 8:30:27 AM
-
-
-Name           : vse-Family-Edge-PA (4fcca189-f7a0-444f-bade-2471f5bb51ba)-0
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 7.16
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 1/14/2021 1:15:08 PM
-
-
-Name           : vse-ELbatal (86554aa4-be8b-4aeb-9084-675da6a39c49)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 6/21/2021 9:22:14 AM
-
-
-Name           : vse-nada (35b6a75e-6362-4f02-a66b-84221f17b44c)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/27/2021 9:55:36 AM
-
-
-Name           : vse-Developers-Edg (11641040-df75-423a-8c7d-70cd44f84c78)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 3/18/2021 1:26:23 PM
-
-
-Name           : vse-Edge-Reyada-New (4b7fca73-588f-4f03-ae24-0360538272b2)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/3/2021 10:03:53 AM
-
-
-Name           : vse-venus-alexandria (f675cded-711e-4a22-bd51-1524a850f661)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 6/3/2021 8:49:00 AM
-
-
-Name           : vse-Hamd (7e683317-9d42-490d-aeaa-917b77577ce6)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 12/27/2020 11:25:43 AM
-
-
-Name           : vse-new-eslam (899bd341-ce21-4c6a-953a-1fbefdb22d22)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/26/2021 11:18:20 AM
-
-
-Name           : vse-venus-group (f62ce961-18dc-4a4f-91c1-8f9d8ac19131)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/24/2021 11:07:23 AM
-
-
-Name           : vse-Egypt-Cables-Edge (fb2efcf5-80ce-4248-bce2-9903891f3a73)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 1/31/2021 12:44:05 PM
-
-
-Name           : vse-Edge-Future-ERP (2171c296-7643-4d4c-90ee-e7c56e7eb668)-0
-PowerState     : PoweredOn
-NumCpu         : 1
-CoresPerSocket : 1
-MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 10/22/2020 11:00:42 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : vse-Hefny-Pharma-Edge (cdaefd93-2720-437f-bdd0-a6487e5160a2)-0
@@ -2454,9 +1894,9 @@ PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/20/2021 10:42:38 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : vse-Family-Corp (fa2e6e64-c575-468a-bf34-a8c1415d3ea5)-0
@@ -2464,29 +1904,39 @@ PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 11/17/2020 12:49:08 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : vse-ioda-edge (1641a623-4b51-46d4-b0c5-643d0d143900)-0
+Name           : vse-Edge-AlfaMarket-Lan (718d9b5e-62e1-4cd1-9a90-693eae41b6bb)-0
+PowerState     : PoweredOn
+NumCpu         : 6
+CoresPerSocket : 1
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-the-concrete (95a00dfd-3eb6-476f-b8a5-6d3f4b35650f)-0
 PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 5/27/2021 2:14:30 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : vse-Liptis (cc0de151-6dcf-4413-8151-a1b32925ab90)-0
+Name           : vse-Demo (2a1cd3aa-1b88-4de4-a85d-7c05601d750f)-0
 PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 12/10/2020 12:21:31 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : vse-El Doha-Edge (c36206fb-388c-4207-94a8-81ada6f158fd)-0
@@ -2494,839 +1944,259 @@ PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
 MemoryGB       : 0.5
-UsedSpaceGB    : 1.40
-ResourcePool   : System vDC (95a8778a-f521-4f6f-a26e-3fc31c441fb7)
-CreateDate     : 4/7/2021 2:04:41 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Hamd-ESXi-02-E7N7
-PowerState     : PoweredOn
-NumCpu         : 10
-CoresPerSocket : 5
-MemoryGB       : 100
-UsedSpaceGB    : 325.99
-ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
-CreateDate     : 12/25/2020 10:18:51 PM
-
-
-Name           : venus-Database-KNXi
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 6
-UsedSpaceGB    : 175.42
-ResourcePool   : venus-alexandria (12a3ddb2-7f28-4ad1-b04c-73f3d8cf3a16)
-CreateDate     : 6/3/2021 9:06:09 AM
-
-
-Name           : Family-Web -dispatcher-OoDw
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 9.03
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 4/4/2021 2:13:51 PM
-
-
-Name           : 4Am-DAXRDS-yhsv-Copy-10GU
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 106.40
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 8:11:36 PM
-
-
-Name           : Alfa-DAXRDS-zvo6
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 96.39
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 8:11:36 PM
-
-
-Name           : NFS-Shared-eg7E
+Name           : vse-Liptis (cc0de151-6dcf-4413-8151-a1b32925ab90)-0
 PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 987.33
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/16/2021 2:00:46 PM
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Family-Corp-HANA-QAS-Q6kF
-PowerState     : PoweredOn
-NumCpu         : 16
-CoresPerSocket : 8
-MemoryGB       : 280
-UsedSpaceGB    : 565.13
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 1/24/2021 11:38:19 AM
-
-
-Name           : Esxi02-2QVF
-PowerState     : PoweredOff
-NumCpu         : 20
-CoresPerSocket : 10
-MemoryGB       : 80
-UsedSpaceGB    : 1500.00
-ResourcePool   : Resources
-CreateDate     : 4/4/2021 6:00:25 PM
-
-
-Name           : Developer-VM3-9Ioi
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 8
-UsedSpaceGB    : 39.01
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 12/30/2020 10:12:23 AM
-
-
-Name           : NewEsxi-01-PHZQ
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 20
-UsedSpaceGB    : 320.00
-ResourcePool   : Resources
-CreateDate     : 5/25/2021 10:34:48 AM
-
-
-Name           : ser19-DbcF
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 11.29
-ResourcePool   : Ahussein (6f14ea01-2924-4034-8153-5771adfecd8f)
-CreateDate     : 5/17/2021 12:36:20 PM
-
-
-Name           : NewEsxi-03-liX4
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 20
-UsedSpaceGB    : 320.00
-ResourcePool   : Resources
-CreateDate     : 5/25/2021 11:17:14 AM
-
-
-Name           : ADC-fpzQ
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 13.21
-ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
-CreateDate     : 5/28/2021 1:53:01 PM
-
-
-Name           : SAP-ROUTER-vyos
+Name           : vse-Edge-Future-ERP (2171c296-7643-4d4c-90ee-e7c56e7eb668)-0
 PowerState     : PoweredOn
 NumCpu         : 1
 CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 7.98
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/10/2021 12:14:32 PM
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : lunix2-rDv3
-PowerState     : PoweredOff
-NumCpu         : 2
+Name           : vse-peter-new-tenant (38d400ef-1ca3-438f-b131-738fb4017ff2)-0
+PowerState     : PoweredOn
+NumCpu         : 1
 CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 128.00
-ResourcePool   : Resources
-CreateDate     : 5/18/2021 11:34:26 AM
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : NewEsxi-02-S0Uv
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 20
-UsedSpaceGB    : 320.00
-ResourcePool   : Resources
-CreateDate     : 5/25/2021 10:36:04 AM
-
-
-Name           : Peter-VM3-llkX
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 12
-UsedSpaceGB    : 78.94
-ResourcePool   : Resources
-CreateDate     : 2/12/2021 11:49:50 PM
-
-
-Name           : ACT-VM-02-MAgt
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 134.23
-ResourcePool   : ACT-Company (5b315590-4e76-4bfc-94da-24f81b0f4095)
-CreateDate     : 1/27/2021 12:04:15 PM
-
-
-Name           : store-sGo4
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 14.16
-ResourcePool   : Ahussein (6f14ea01-2924-4034-8153-5771adfecd8f)
-CreateDate     : 6/1/2021 7:26:33 AM
-
-
-Name           : Future-ERP-System-5Phq-r3lw
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 521.56
-ResourcePool   : Future-ERP (83c1986e-0079-4753-b6a5-f2f7c79f59e8)
-CreateDate     : 10/22/2020 10:42:54 AM
-
-
-Name           : DP-HANA-Cockpit-6lDc
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 32
-UsedSpaceGB    : 88.28
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/9/2021 9:51:58 AM
-
-
-Name           : Egypt-Cables-5001-sRfn
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 44.35
-ResourcePool   : Egypt-Cables (e61fc5b0-5df1-4dc4-a91b-2b9942e27d65)
-CreateDate     : 1/31/2021 1:46:08 PM
-
-
-Name           : ACT-VM-04-h3lb
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 43.65
-ResourcePool   : ACT-Company (5b315590-4e76-4bfc-94da-24f81b0f4095)
-CreateDate     : 1/27/2021 12:16:58 PM
-
-
-Name           : Hamd-HAProxy-1UmZ
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 12
-UsedSpaceGB    : 18.35
-ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
-CreateDate     : 1/12/2021 2:33:11 PM
-
-
-Name           : Alfa-Test-uCQi
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 18.68
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/30/2020 10:34:38 AM
-
-
-Name           : Alfa-Backup-us3m
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 2066.80
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 9:21:05 PM
-
-
-Name           : Alfa-DAXRPT-bA5n
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 16
-UsedSpaceGB    : 287.68
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 7:18:53 PM
-
-
-Name           : GlobalTech-Ubu-SAVs
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 33.87
-ResourcePool   : Global-Technology (5a59374c-7635-4926-803f-e4ed01a3b9c7)
-CreateDate     : 12/3/2020 3:15:00 PM
-
-
-Name           : ACt-VM-05-WlaE
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 72.87
-ResourcePool   : ACT-Company (5b315590-4e76-4bfc-94da-24f81b0f4095)
-CreateDate     : 1/27/2021 12:27:36 PM
-
-
-Name           : server-4-67GR
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 10
-UsedSpaceGB    : 11.70
-ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
-CreateDate     : 5/31/2021 1:12:21 PM
-
-
-Name           : server-5-gflY
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 10.97
-ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
-CreateDate     : 5/31/2021 1:14:12 PM
-
-
-Name           : hefny-pharma-5l7S
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 316.53
-ResourcePool   : hefny-pharma (023412af-2720-4f64-a1e3-ee14ab18e440)
-CreateDate     : 5/20/2021 10:56:23 AM
-
-
-Name           : Solex-Oxv0
-PowerState     : PoweredOn
-NumCpu         : 24
-CoresPerSocket : 12
-MemoryGB       : 300
-UsedSpaceGB    : 304.75
-ResourcePool   : solex (cc08f52b-3fb3-4e23-b7f0-76b332d33873)
-CreateDate     : 6/28/2021 8:15:05 PM
-
-
-Name           : Family-Corp-HANA-DEV-jnC6
-PowerState     : PoweredOn
-NumCpu         : 32
-CoresPerSocket : 16
-MemoryGB       : 256
-UsedSpaceGB    : 755.20
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 11/17/2020 12:41:48 PM
-
-
-Name           : DP-Solman-4AXz
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 48
-UsedSpaceGB    : 267.55
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/9/2021 9:58:31 AM
-
-
-Name           : Future-ERP-01-mj5z
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 14.27
-ResourcePool   : Future-ERP (83c1986e-0079-4753-b6a5-f2f7c79f59e8)
-CreateDate     : 12/28/2020 6:50:37 AM
-
-
-Name           : DP-Business-Int-h9iA
+Name           : vse-Family-Edge-PA (4fcca189-f7a0-444f-bade-2471f5bb51ba)-0
 PowerState     : PoweredOn
 NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 32
-UsedSpaceGB    : 109.48
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/9/2021 9:29:46 AM
-
-
-Name           : Alfa-DAXEP-O9sY
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 16
-UsedSpaceGB    : 60.26
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 7:26:29 PM
-
-
-Name           : Rentex-VM-B4AZ
-PowerState     : PoweredOff
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 64
-UsedSpaceGB    : 38.57
-ResourcePool   : RENTEX-CARS (eb05d4f1-8e7c-42c2-8f6c-0872047ac6dc)
-CreateDate     : 3/1/2021 1:17:14 PM
-
-
-Name           : Alfa-Test 10 Days-16Sk
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 347.87
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 9:52:29 PM
-
-
-Name           : FEM-001-SbZt
-PowerState     : PoweredOn
-NumCpu         : 2
 CoresPerSocket : 1
-MemoryGB       : 10
-UsedSpaceGB    : 48.82
-ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
-CreateDate     : 5/28/2021 2:10:20 PM
-
-
-Name           : my-domain-IhLX
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 11.03
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 6/1/2021 8:23:39 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Family-Corp-ERP-QAS-jG26
+Name           : vse-Edge-ABDO (e673e19e-1c38-4c3d-8d92-1954a4a7fbe7)-0
 PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 24
-UsedSpaceGB    : 34.87
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 1/24/2021 1:18:13 PM
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Esxi2-xWJF
+Name           : vse-venus-group (f62ce961-18dc-4a4f-91c1-8f9d8ac19131)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-elbatal-test (8f5c9001-85bc-40a7-a286-d1e537a89b2e)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-new-eslam (899bd341-ce21-4c6a-953a-1fbefdb22d22)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-solex-edge (fab0b166-093a-431b-bdb0-08bc63a71b24)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-Ahessien-Edge (85eabc8d-9111-4a6c-a374-3ea1f068c3be)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-Egypt-Cables-Edge (fb2efcf5-80ce-4248-bce2-9903891f3a73)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-ioda-edge (1641a623-4b51-46d4-b0c5-643d0d143900)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-ACT-Company (e251c8fb-4dfb-469c-b93f-ef2a8487c5c6)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-RENTEX CARS (4971e2a7-8d66-4cab-8cdd-9d6cefbeaf68)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-Gabr-edg (fa1964f7-de42-4f8c-8edc-93f2db32cc25)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-Hamd (7e683317-9d42-490d-aeaa-917b77577ce6)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-venus-alexandria (f675cded-711e-4a22-bd51-1524a850f661)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-Future-ERP-Edge-New (fd1668ba-fb29-442b-af13-84b259b14191)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-IGI (71406d74-8aa6-4f9d-8b98-4703ec25c2c6)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-Developers-Edg (11641040-df75-423a-8c7d-70cd44f84c78)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-Edge-Reyada-New (4b7fca73-588f-4f03-ae24-0360538272b2)-0
+PowerState     : PoweredOn
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : vse-kuwait (8589cebd-4ad3-49d7-859a-17cd4189a086)-0
 PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 15
-UsedSpaceGB    : 0.91
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 6/2/2021 9:27:56 AM
+NumCpu         : 1
+CoresPerSocket : 1
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : windows 10-NcDO
-PowerState     : PoweredOff
+Name           : vse-karim-test (3b5e3e22-1ab3-4c5b-85ff-e34e3544e466)-0
+PowerState     : PoweredOn
 NumCpu         : 2
 CoresPerSocket : 1
 MemoryGB       : 1
-UsedSpaceGB    : 64.00
-ResourcePool   : islam (fd19a32c-6369-4977-8462-946705e2b1d9)
-CreateDate     : 12/7/2020 12:59:39 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : El-Reyada-VM-VGzI
+Name           : vse-ELbatal (86554aa4-be8b-4aeb-9084-675da6a39c49)-0
 PowerState     : PoweredOff
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 24
-UsedSpaceGB    : 1019.58
-ResourcePool   : Reyada-New (c1be55ad-75b1-45fe-b008-267d8bf9a548)
-CreateDate     : 3/3/2021 3:10:31 PM
-
-
-Name           : Developer-VM4-4Uso
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 19.46
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 1/10/2021 11:50:53 AM
-
-
-Name           : vcenter1-qSqL
-PowerState     : PoweredOff
-NumCpu         : 2
+NumCpu         : 1
 CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 128.00
-ResourcePool   : Resources
-CreateDate     : 4/5/2021 12:03:38 PM
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Family-Odoo-Mfv6
+Name           : vse-nada (35b6a75e-6362-4f02-a66b-84221f17b44c)-0
 PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 25.46
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 1/14/2021 12:38:45 PM
-
-
-Name           : IscsiStorage-FACr
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 5
-UsedSpaceGB    : 2128.00
-ResourcePool   : Resources
-CreateDate     : 4/2/2021 9:13:57 AM
-
-
-Name           : T-VM2-kAeN
-PowerState     : PoweredOff
-NumCpu         : 10
-CoresPerSocket : 5
-MemoryGB       : 50
-UsedSpaceGB    : 200.00
-ResourcePool   : Tawfik (315e8c74-e070-4b67-bbd3-b958c18a2fb1)
-CreateDate     : 3/31/2021 8:22:23 PM
-
-
-Name           : DP-S4H-APP-QAS-PRxw
-PowerState     : PoweredOn
-NumCpu         : 12
-CoresPerSocket : 6
-MemoryGB       : 200
-UsedSpaceGB    : 409.51
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/9/2021 10:05:07 AM
-
-
-Name           : Liptis-Windows-7oXx
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 24
-UsedSpaceGB    : 196.13
-ResourcePool   : Liptis (89ff27c1-f68d-4e9f-be81-48000fad2ff5)
-CreateDate     : 12/10/2020 12:06:51 PM
-
-
-Name           : Family-Corp-RDP-7wzY
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 191.35
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 11/17/2020 4:45:53 PM
-
-
-Name           : DP-S4H-APP-DEV-IWVB
-PowerState     : PoweredOn
-NumCpu         : 12
-CoresPerSocket : 6
-MemoryGB       : 128
-UsedSpaceGB    : 372.04
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/9/2021 10:06:59 AM
-
-
-Name           : Concrete-1-kweI
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 30.95
-ResourcePool   : Concrete-Plus (0d993844-2dec-4f74-93f0-e9c61d1bc42e)
-CreateDate     : 6/4/2021 8:45:42 PM
-
-
-Name           : Wahba-AD-TiZL
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 16
-UsedSpaceGB    : 39.04
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 3/24/2021 6:49:54 PM
-
-
-Name           : Gabr-VM-OhJC
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 87.48
-ResourcePool   : Gabr (8ce16d02-122d-4be0-b5d3-e3619d15a56c)
-CreateDate     : 1/26/2021 9:38:32 AM
-
-
-Name           : Elbatal-VM-HeOb
-PowerState     : PoweredOn
-NumCpu         : 2
+NumCpu         : 1
 CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 78.45
-ResourcePool   : ElBatal (e5ee0316-8a1e-4544-a472-bef42d482268)
-CreateDate     : 2/23/2021 10:14:08 AM
-
-
-Name           : Demo-Ikjw
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 16
-UsedSpaceGB    : 68.73
-ResourcePool   : Demo (e2c0dec0-d64a-408e-af0c-606785d58854)
-CreateDate     : 5/26/2021 12:35:08 PM
-
-
-Name           : Office Online-Ef8C
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 1
-MemoryGB       : 5
-UsedSpaceGB    : 31.64
-ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
-CreateDate     : 6/22/2021 7:43:08 AM
-
-
-Name           : venus-app-twM3
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 10
-UsedSpaceGB    : 63.35
-ResourcePool   : venus-alexandria (12a3ddb2-7f28-4ad1-b04c-73f3d8cf3a16)
-CreateDate     : 6/3/2021 9:07:03 AM
-
-
-Name           : Esxi-01-Bgfe
-PowerState     : PoweredOn
-NumCpu         : 10
-CoresPerSocket : 5
-MemoryGB       : 25
-UsedSpaceGB    : 54.58
-ResourcePool   : ioda-tenant (8cf54a4a-8b06-4ac3-986b-5dbbbf22e1ef)
-CreateDate     : 6/14/2021 10:58:24 AM
-
-
-Name           : server-2-IpQB
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 10
-UsedSpaceGB    : 71.73
-ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
-CreateDate     : 5/31/2021 1:06:22 PM
-
-
-Name           : PDC-8PQK
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 34.52
-ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
-CreateDate     : 5/27/2021 2:52:34 PM
-
-
-Name           : Wahba-Exchange-I6xk
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 10
-UsedSpaceGB    : 155.36
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 5/23/2021 1:44:54 PM
-
-
-Name           : Alfa-DAXDB-7Qts
-PowerState     : PoweredOn
-NumCpu         : 16
-CoresPerSocket : 2
-MemoryGB       : 32
-UsedSpaceGB    : 662.98
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 4:29:25 PM
-
-
-Name           : Esxi-03-yAu6
-PowerState     : PoweredOn
-NumCpu         : 10
-CoresPerSocket : 5
-MemoryGB       : 8
-UsedSpaceGB    : 9.14
-ResourcePool   : ioda-tenant (8cf54a4a-8b06-4ac3-986b-5dbbbf22e1ef)
-CreateDate     : 6/14/2021 11:01:17 AM
-
-
-Name           : dns&veam&stoage-q5zH
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 163.72
-ResourcePool   : ioda-tenant (8cf54a4a-8b06-4ac3-986b-5dbbbf22e1ef)
-CreateDate     : 6/14/2021 10:56:20 AM
-
-
-Name           : CRm-sdkH
-PowerState     : PoweredOff
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 32
-UsedSpaceGB    : 6.67
-ResourcePool   : ElBatal (e5ee0316-8a1e-4544-a472-bef42d482268)
-CreateDate     : 6/21/2021 9:30:06 AM
-
-
-Name           : concrete-2-i4LC
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 36.27
-ResourcePool   : Concrete-Plus (0d993844-2dec-4f74-93f0-e9c61d1bc42e)
-CreateDate     : 6/5/2021 11:29:40 AM
-
-
-Name           : Developers-VM7-kKia
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 8
-UsedSpaceGB    : 17.53
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 2/11/2021 11:43:19 AM
-
-
-Name           : EM-72Ze
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 16
-UsedSpaceGB    : 104.56
-ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
-CreateDate     : 12/25/2020 10:01:03 PM
-
-
-Name           : ELDoha-2eTo
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 33.20
-ResourcePool   : EL Doha (c63287bb-2c11-41ea-bdbc-1575dd693d11)
-CreateDate     : 4/7/2021 12:48:00 PM
-
-
-Name           : Client-7ug4
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 22.23
-ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
-CreateDate     : 5/28/2021 2:13:25 PM
-
-
-Name           : Alfa-DAXAOSB-YyLF
-PowerState     : PoweredOn
-NumCpu         : 16
-CoresPerSocket : 8
-MemoryGB       : 16
-UsedSpaceGB    : 62.79
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 7:12:08 PM
-
-
-Name           : Alfa-DAXRT-Yqno
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 16
-UsedSpaceGB    : 63.20
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 7:33:31 PM
-
-
-Name           : ACT-01-cFSc
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 495.31
-ResourcePool   : ACT-Company (5b315590-4e76-4bfc-94da-24f81b0f4095)
-CreateDate     : 2/8/2021 9:09:58 AM
-
-
-Name           : HAProxy-PvxS
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 25.80
-ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
-CreateDate     : 1/12/2021 2:57:22 PM
-
-
-Name           : CRM-siko
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 32
-UsedSpaceGB    : 78.35
-ResourcePool   : ElBatal (e5ee0316-8a1e-4544-a472-bef42d482268)
-CreateDate     : 6/22/2021 3:02:45 PM
-
-
-Name           : DP-S4H-APP-PRD-RgdR
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 32
-UsedSpaceGB    : 57.68
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/9/2021 10:00:50 AM
-
-
-Name           : server2019-xb1o
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 11.45
-ResourcePool   : Ahussein (6f14ea01-2924-4034-8153-5771adfecd8f)
-CreateDate     : 5/17/2021 12:35:04 PM
-
-
-Name           : Developer-VM5-BhRt
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 40.18
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 1/15/2021 5:07:31 PM
+MemoryGB       : 0.5
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Alfa-DAXAOS-LhCj
@@ -3334,69 +2204,29 @@ PowerState     : PoweredOn
 NumCpu         : 16
 CoresPerSocket : 8
 MemoryGB       : 32
-UsedSpaceGB    : 124.10
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 6:47:47 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Hamd-RootCA-M8aT
+Name           : Developer-VM5-BhRt
 PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 36.47
-ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
-CreateDate     : 1/17/2021 5:29:05 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : ping test-GDpi
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 100.00
-ResourcePool   : el-bassiony (9a16dd28-36f9-48d5-a5be-6b808bc80aae)
-CreateDate     : 5/3/2021 9:46:20 PM
-
-
-Name           : DP-S4H-DB-PRD-6x2M
+Name           : Developers-VM7-kKia
 PowerState     : PoweredOn
-NumCpu         : 24
-CoresPerSocket : 12
-MemoryGB       : 320
-UsedSpaceGB    : 510.36
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/9/2021 10:03:32 AM
-
-
-Name           : Alfa-ADD-ySut
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
+NumCpu         : 8
+CoresPerSocket : 4
 MemoryGB       : 8
-UsedSpaceGB    : 30.14
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 9/21/2020 1:38:26 PM
-
-
-Name           : Developer-VM2-Ddj3
-PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 8
-UsedSpaceGB    : 314.73
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 12/30/2020 10:11:04 AM
-
-
-Name           : Win-Seven-wPSJ
-PowerState     : PoweredOff
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 17.32
-ResourcePool   : Resources
-CreateDate     : 3/21/2021 2:35:11 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : adobe-document-2gal
@@ -3404,29 +2234,39 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 24
-UsedSpaceGB    : 100.44
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 5/24/2021 1:47:24 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : ihpgco Kuwait Windows - Backup-AmVE
+Name           : LEADERS-COIN+RETAIL-T2mK
 PowerState     : PoweredOn
-NumCpu         : 2
+NumCpu         : 4
 CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 70.60
-ResourcePool   : kuwait (3192b696-7925-434e-9117-a68fe6f673e9)
-CreateDate     : 5/31/2020 3:53:33 PM
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Hamd-ESXi-01-xseb
+Name           : ACT-VM-03-igWB
+PowerState     : PoweredOff
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 32
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Demo-Ikjw
 PowerState     : PoweredOn
-NumCpu         : 10
-CoresPerSocket : 5
-MemoryGB       : 100
-UsedSpaceGB    : 330.70
-ResourcePool   : Hamd (d45bcbc1-9d1f-495b-a811-15aafcb02e9e)
-CreateDate     : 12/25/2020 10:18:19 AM
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Family-Corp-ERP-DEV-pHPo
@@ -3434,129 +2274,59 @@ PowerState     : PoweredOn
 NumCpu         : 12
 CoresPerSocket : 6
 MemoryGB       : 24
-UsedSpaceGB    : 94.66
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 11/17/2020 12:29:05 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Copy-Developer-VM1-rxGz-Njvp
+Name           : venus-2-WYQO
 PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 2
-MemoryGB       : 16
-UsedSpaceGB    : 163.77
-ResourcePool   : Developers (718a1e56-8d60-405c-80fb-2af5303112db)
-CreateDate     : 12/30/2020 10:09:55 AM
-
-
-Name           : server-1-hRqD
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 10
-UsedSpaceGB    : 11.93
-ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
-CreateDate     : 5/31/2021 1:10:44 PM
-
-
-Name           : Wahba-IMSVA-2RzS
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 18.01
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 5/23/2021 9:26:24 AM
-
-
-Name           : linux-ijKm
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 16.66
-ResourcePool   : Ahussein (6f14ea01-2924-4034-8153-5771adfecd8f)
-CreateDate     : 6/6/2021 4:29:09 PM
-
-
-Name           : file-server-aOl3
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 12.05
-ResourcePool   : Ahussein (6f14ea01-2924-4034-8153-5771adfecd8f)
-CreateDate     : 6/6/2021 11:42:13 AM
-
-
-Name           : server-Fppk
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 6
-UsedSpaceGB    : 10.12
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 6/6/2021 10:21:40 AM
-
-
-Name           : venus-1-j62Y
-PowerState     : PoweredOff
-NumCpu         : 3
+NumCpu         : 2
 CoresPerSocket : 1
-MemoryGB       : 8
-UsedSpaceGB    : 17.02
-ResourcePool   : venus-cairo (0eff2d47-682e-45f0-9cc4-706eb199ab84)
-CreateDate     : 5/24/2021 11:13:07 AM
-
-
-Name           : Mb-001-Pblg
-PowerState     : PoweredOn
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 8
-UsedSpaceGB    : 90.03
-ResourcePool   : nada (57c457ec-76f0-469b-8089-25a330e49a61)
-CreateDate     : 6/2/2021 2:29:15 PM
-
-
-Name           : Esxi1-MYTr
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 15
-UsedSpaceGB    : 44.64
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 6/2/2021 9:12:53 AM
-
-
-Name           : linux-HauX
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
 MemoryGB       : 4
-UsedSpaceGB    : 12.78
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 4/15/2021 12:58:28 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Copy-El-Reyada-VM-EcJu
+Name           : LedersSTA-SQL01-JuYQ
 PowerState     : PoweredOn
-NumCpu         : 6
-CoresPerSocket : 3
-MemoryGB       : 24
-UsedSpaceGB    : 1073.61
-ResourcePool   : Reyada-New (c1be55ad-75b1-45fe-b008-267d8bf9a548)
-CreateDate     : 3/3/2021 3:10:31 PM
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 64
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : server-3-r1Zp
-PowerState     : PoweredOff
-NumCpu         : 4
-CoresPerSocket : 2
-MemoryGB       : 10
-UsedSpaceGB    : 10.60
-ResourcePool   : peter-new-tenant (129acf7b-54fd-4476-a9c3-b2f94f36c944)
-CreateDate     : 5/31/2021 1:11:32 PM
+Name           : DP-Solman-4AXz
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 48
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Leaders-FUTUREN-ELXx
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 1
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : ELDoha-2eTo
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 1
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Alfa-SQL-Server-qecU
@@ -3564,29 +2334,9 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 516.10
-ResourcePool   : AlfaMarket (a50f9170-cb4a-4a8f-8917-452b1573afb2)
-CreateDate     : 4/29/2021 7:47:28 PM
-
-
-Name           : PRO_ODOOOVF-rUDa
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 1
-MemoryGB       : 16
-UsedSpaceGB    : 516.09
-ResourcePool   : Concrete-Plus (0d993844-2dec-4f74-93f0-e9c61d1bc42e)
-CreateDate     : 3/31/2021 12:38:48 PM
-
-
-Name           : venus-2-WYQO
-PowerState     : PoweredOff
-NumCpu         : 2
-CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 11.03
-ResourcePool   : venus-cairo (0eff2d47-682e-45f0-9cc4-706eb199ab84)
-CreateDate     : 5/24/2021 11:17:33 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : DP-Jump-Machine-LYHf
@@ -3594,351 +2344,3071 @@ PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 154.15
-ResourcePool   : Delta-Pharma (cb882197-fb4e-444b-8cf8-ec81818915f1)
-CreateDate     : 3/9/2021 9:22:13 AM
-
-
-Name           : ACT-VM-03-igWB
-PowerState     : PoweredOn
-NumCpu         : 8
-CoresPerSocket : 4
-MemoryGB       : 32
-UsedSpaceGB    : 109.61
-ResourcePool   : ACT-Company (5b315590-4e76-4bfc-94da-24f81b0f4095)
-CreateDate     : 1/27/2021 12:05:25 PM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Name           : Esxi-02-2m2u
-PowerState     : PoweredOn
+PowerState     : PoweredOff
 NumCpu         : 10
 CoresPerSocket : 5
 MemoryGB       : 25
-UsedSpaceGB    : 26.32
-ResourcePool   : ioda-tenant (8cf54a4a-8b06-4ac3-986b-5dbbbf22e1ef)
-CreateDate     : 6/14/2021 10:59:43 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Family-Corp-SAP-Router-Vtvz
+Name           : venus-1-j62Y
 PowerState     : PoweredOn
-NumCpu         : 2
+NumCpu         : 3
 CoresPerSocket : 1
-MemoryGB       : 4
-UsedSpaceGB    : 29.08
-ResourcePool   : Family-Corp (e649c57a-5590-4f82-819f-7dc19dc7bbbf)
-CreateDate     : 3/31/2021 6:21:19 PM
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Wahba-Win10-XrBT
+Name           : Developer-VM4-4Uso
 PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 8
-UsedSpaceGB    : 25.95
-ResourcePool   : Abdo-Tenant (a701d9b2-699b-4e99-9259-5fc950bae4fb)
-CreateDate     : 5/19/2021 7:06:50 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Peter-VM1-Slcb
+Name           : DP-S4H-APP-QAS-PRxw
+PowerState     : PoweredOn
+NumCpu         : 12
+CoresPerSocket : 6
+MemoryGB       : 200
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Family-Corp-ERP-QAS-jG26
 PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
-MemoryGB       : 12
-UsedSpaceGB    : 16.75
-ResourcePool   : peter-tenant (8f7a64d4-f84b-4475-9c1e-b3cea25606a3)
-CreateDate     : 2/12/2021 11:46:10 PM
+MemoryGB       : 24
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : WPEU1DCM101-sEHM
+Name           : Esxi-01-Bgfe
+PowerState     : PoweredOff
+NumCpu         : 10
+CoresPerSocket : 5
+MemoryGB       : 25
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Gabr-VM-OhJC
 PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 20.68
-ResourcePool   : peter-tenant (8f7a64d4-f84b-4475-9c1e-b3cea25606a3)
-CreateDate     : 3/17/2021 10:53:02 AM
-
-
-Name           : WPEU1DCPOOL-kx0o
-PowerState     : PoweredOn
-NumCpu         : 2
-CoresPerSocket : 2
-MemoryGB       : 4
-UsedSpaceGB    : 18.06
-ResourcePool   : peter-tenant (8f7a64d4-f84b-4475-9c1e-b3cea25606a3)
-CreateDate     : 3/17/2021 10:49:16 AM
-
-
-Name           : WPEU1MB9001-cfmy
-PowerState     : PoweredOn
-NumCpu         : 2
+NumCpu         : 4
 CoresPerSocket : 2
 MemoryGB       : 16
-UsedSpaceGB    : 22.67
-ResourcePool   : peter-tenant (8f7a64d4-f84b-4475-9c1e-b3cea25606a3)
-CreateDate     : 3/17/2021 11:03:46 AM
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
-Name           : Peter-VM2-B5WR
+Name           : vcenter1-qSqL
+PowerState     : PoweredOff
+NumCpu         : 2
+CoresPerSocket : 1
+MemoryGB       : 4
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Leaders-STA-8-0mRF
+PowerState     : PoweredOn
+NumCpu         : 2
+CoresPerSocket : 1
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : Liptis-Windows-7oXx
+PowerState     : PoweredOn
+NumCpu         : 8
+CoresPerSocket : 4
+MemoryGB       : 24
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : LEADERS-SUNRISE-QrlC
 PowerState     : PoweredOn
 NumCpu         : 4
 CoresPerSocket : 2
-MemoryGB       : 12
-UsedSpaceGB    : 93.71
-ResourcePool   : peter-tenant (8f7a64d4-f84b-4475-9c1e-b3cea25606a3)
-CreateDate     : 2/12/2021 11:47:35 PM
+MemoryGB       : 16
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 4
+CoresPerSocket : 2
+MemoryGB       : 8
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
+
+
+Name           : 
+PowerState     : 
+NumCpu         : 
+CoresPerSocket : 
+MemoryGB       : 
+UsedSpaceGB    : 0
+ResourcePool   : 
+CreateDate     : 
 
 
 Index         : 1
-Name          : Frank-Trend2019-DEV
-DataStoreName : Host-1-SSD-1.37T
+Name          : test sophos
+DataStoreName : 
 PowerState    : PoweredOff
-CreateDate    : 7/11/2020 6:14:41 PM
+CreateDate    : 
 
 
 Index         : 2
-Name          : Frank-pst
-DataStoreName : 10-DataStore
-PowerState    : PoweredOn
-CreateDate    : 4/19/2021 1:43:41 PM
+Name          : ALFA-DAXRPT-COPY
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
 
 
 Index         : 3
-Name          : frank-veeamone
-DataStoreName : 9-DataStore
+Name          : Jump-server-Abdo
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 4/17/2021 12:12:51 PM
+CreateDate    : 
 
 
 Index         : 4
-Name          : frank-d35
-DataStoreName : 9-DataStore
+Name          : Mis-SAP-H-DB
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 3/4/2021 12:05:08 PM
+CreateDate    : 
 
 
 Index         : 5
-Name          : Frank-tools01.Roaya.loc_replica
-DataStoreName : 10-DataStore
-PowerState    : PoweredOff
-CreateDate    : 1/22/2019 6:54:53 AM
+Name          : MISR-TSMS
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 6
-Name          : F5-LTMOld
-DataStoreName : Host-1-datastore1
-PowerState    : PoweredOff
-CreateDate    : 11/25/2020 8:29:24 AM
+Name          : Jump-Server-Moataz
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 7
-Name          : VEEM-Backup
-DataStoreName : 10-DataStore
+Name          : Mis-Prod-APP-copy
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 12/23/2020 9:45:10 PM
+CreateDate    : 
 
 
 Index         : 8
-Name          : centos-kibana
-DataStoreName : 9-DataStore
-PowerState    : PoweredOff
-CreateDate    : 5/24/2021 7:26:13 AM
+Name          : Misr-ERPPRDDB
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 9
-Name          : centos-test2
-DataStoreName : 92-NVME-1TB
+Name          : RADUIS-Server
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 5/14/2021 1:59:12 PM
+CreateDate    : 
 
 
 Index         : 10
-Name          : WIN-2016-Temp-Diyaa
-DataStoreName : 10-DataStore
-PowerState    : PoweredOff
-CreateDate    : 12/14/2020 10:50:34 PM
+Name          : Mis-CAR-PRD APP Server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 11
-Name          : Frank-Wsus-new
-DataStoreName : 10-DataStore
+Name          : frank-d35
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 12/24/2020 7:33:59 PM
+CreateDate    : 
 
 
 Index         : 12
-Name          : centos-block-storage
-DataStoreName : 9-DataStore
-PowerState    : PoweredOn
-CreateDate    : 5/17/2021 1:50:08 PM
+Name          : sofos_virtual_vm8
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
 
 
 Index         : 13
-Name          : WP-DATABASE2
-DataStoreName : Host-1-SSD-1.37T
-PowerState    : PoweredOff
-CreateDate    : 6/2/2019 10:57:47 AM
+Name          : el batal crm
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 14
-Name          : Solid-CP-DB-copy-13
-DataStoreName : 9-DataStore
+Name          : AWS-SMS-Connector
+DataStoreName : 
 PowerState    : PoweredOff
-CreateDate    : 1/18/2019 8:40:33 PM
+CreateDate    : 
 
 
 Index         : 15
-Name          : el batal crm
-DataStoreName : 93-SSD-1.2T
+Name          : Mis-Manage
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 6/28/2021 10:13:55 AM
+CreateDate    : 
 
 
 Index         : 16
-Name          : centos-LOGStash
-DataStoreName : 9-DataStore
-PowerState    : PoweredOff
-CreateDate    : 5/23/2021 2:23:56 PM
+Name          : MIS-CRM-PRD APP Server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 17
-Name          : Veeam-11
-DataStoreName : 9-DataStore
-PowerState    : PoweredOff
-CreateDate    : 3/4/2021 7:18:09 AM
+Name          : VMware vCenter Server Appliance 6.7-Witness
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 18
-Name          : 22-GREEN-WEB
-DataStoreName : Host-1-SSD-1.37T
-PowerState    : PoweredOff
-CreateDate    : 11/28/2020 12:36:36 PM
+Name          : centos-kibana
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 19
-Name          : Frank-PST-New01
-DataStoreName : 10-DataStore
+Name          : EU1FE3113
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 12/22/2020 2:25:08 PM
+CreateDate    : 
 
 
 Index         : 20
-Name          : linux-web
-DataStoreName : 92-NVME-1TB
+Name          : ERP-DEV-sQmN
+DataStoreName : 
 PowerState    : PoweredOff
-CreateDate    : 3/24/2021 12:21:35 PM
+CreateDate    : 
 
 
 Index         : 21
-Name          : ERP-DEV-sQmN
-DataStoreName : Host-1-SSD-1.37T
-PowerState    : PoweredOff
-CreateDate    : 11/17/2020 12:29:05 PM
+Name          : EU1FE9333
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 22
-Name          : Frank-PA-01 - Backup
-DataStoreName : 91-NVME-800G
-PowerState    : PoweredOff
-CreateDate    : 12/13/2020 9:23:21 PM
+Name          : Frank-ADC-02
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 23
-Name          : PaloAlto-Production
-DataStoreName : Host-3-SSD-2T
+Name          : WorldPosta-WebSite
+DataStoreName : 
 PowerState    : PoweredOff
-CreateDate    : 6/13/2020 1:38:47 PM
+CreateDate    : 
 
 
 Index         : 24
-Name          : Tawfik-Test-02
-DataStoreName : 10-DataStore
-PowerState    : PoweredOff
-CreateDate    : 11/11/2019 8:53:45 AM
+Name          : tiba group
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 25
-Name          : Frank-PA-01
-DataStoreName : 91-NVME-800G
+Name          : EU1FE3110
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 12/25/2020 10:10:46 AM
+CreateDate    : 
 
 
 Index         : 26
-Name          : centos-Backup-vcenter
-DataStoreName : 9-DataStore
+Name          : frank-veeamone
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 5/27/2021 8:09:23 AM
+CreateDate    : 
 
 
 Index         : 27
-Name          : Developers-VM9-g6uv
-DataStoreName : 91-SSD-1.26T
+Name          : Jump-Nada
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 3/10/2021 12:56:56 PM
+CreateDate    : 
 
 
 Index         : 28
-Name          : ser19-DbcF
-DataStoreName : datastore1 (4)
-PowerState    : PoweredOff
-CreateDate    : 5/17/2021 12:36:20 PM
+Name          : Jump-Server-MAli
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 29
-Name          : store-sGo4
-DataStoreName : Host-4-datastore1
+Name          : temp-v
+DataStoreName : 
 PowerState    : PoweredOff
-CreateDate    : 6/1/2021 7:26:33 AM
+CreateDate    : 
 
 
 Index         : 30
-Name          : my-domain-IhLX
-DataStoreName : datastore1 (2)
-PowerState    : PoweredOff
-CreateDate    : 6/1/2021 8:23:39 AM
+Name          : Frank-KSE-SQL
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 31
-Name          : Esxi2-xWJF
-DataStoreName : datastore1 (2)
+Name          : shared iso
+DataStoreName : 
 PowerState    : PoweredOff
-CreateDate    : 6/2/2021 9:27:56 AM
+CreateDate    : 
 
 
 Index         : 32
-Name          : server2019-xb1o
-DataStoreName : datastore1 (5)
-PowerState    : PoweredOff
-CreateDate    : 5/17/2021 12:35:04 PM
+Name          : Jump-Server-Karim
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 33
-Name          : linux-ijKm
-DataStoreName : 93-NVME-800G
+Name          : Misr-e-commerce
+DataStoreName : 
 PowerState    : PoweredOn
-CreateDate    : 6/6/2021 4:29:09 PM
+CreateDate    : 
 
 
 Index         : 34
-Name          : server-Fppk
-DataStoreName : datastore1
-PowerState    : PoweredOff
-CreateDate    : 6/6/2021 10:21:40 AM
+Name          : EU1FE9111
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 35
-Name          : Esxi1-MYTr
-DataStoreName : 93-SSD-1.2T
-PowerState    : PoweredOff
-CreateDate    : 6/2/2021 9:12:53 AM
+Name          : Misr-CARPRDDB
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
 
 
 Index         : 36
-Name          : linux-HauX
-DataStoreName : datastore1
+Name          : Developers-VM6-Copy
+DataStoreName : 
 PowerState    : PoweredOff
-CreateDate    : 4/15/2021 12:58:28 PM
+CreateDate    : 
+
+
+Index         : 37
+Name          : EU1FE9444
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 38
+Name          : Frank-PST-New01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 39
+Name          : EU1FE3111
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 40
+Name          : MISR-IVENDMC2
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 41
+Name          : vcenter-clone
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 42
+Name          : jump-hamd
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 43
+Name          : jump-wahba
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 44
+Name          : jump-eslam
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 45
+Name          : EventLog-Analyzer
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 46
+Name          : Mis-ERP DEV-PRD APP Server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 47
+Name          : Sama
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 48
+Name          : Frank-ADC-03
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 49
+Name          : MIS-CRM-PRD DB Server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 50
+Name          : nextcloud-nfs
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 51
+Name          : Misr-Web Server-copy
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 52
+Name          : WP-Messanger-DB-WIN .72
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 53
+Name          : jump-gabr
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 54
+Name          : infected ihpgco Kuwait Windows (ransomware)
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 55
+Name          : MISR-CARQASAPP
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 56
+Name          : jump-solex
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 57
+Name          : Frank-MBX
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 58
+Name          : Misr-Newvm
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 59
+Name          : Misr-SQL-Instance
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 60
+Name          : Office Libre-Production New 1104
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 61
+Name          : Mis-Backup
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 62
+Name          : esxi2
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 63
+Name          : FortiGate
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 64
+Name          : WP-Syslog-New
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 65
+Name          : Identity Server-Dev
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 66
+Name          : Real-ip
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 67
+Name          : Frank-RODC-01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 68
+Name          : SQL-Server-Solid
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 69
+Name          : J-S-Hamd
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 70
+Name          : HAProxy
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 71
+Name          : EU100S602
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 72
+Name          : sandbox
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 73
+Name          : Mis-Winsows2012R2
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 74
+Name          : WP-Frank-Database3
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 75
+Name          : NFS-NEXTCLOUD-01
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 76
+Name          : MISR-SAP-CARDB-copy
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 77
+Name          : ihpgco Kuwait Windows - Backup(new)
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 78
+Name          : SolarWind-SAM
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 79
+Name          : jump-ahmed
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 80
+Name          : Misr-ERPDEVDB
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 81
+Name          : Frank-ADC-01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 82
+Name          : Misr-Tableau
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 83
+Name          : WP-RootCA
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 84
+Name          : MISR-NFS
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 85
+Name          : Frank-DNS-MGMNT
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 86
+Name          : Mis-Additioanal Domain
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 87
+Name          : Misr-Qatr
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 88
+Name          : Frank-Kbase-Source
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 89
+Name          : wp-frank-antivirus (DB)-cpoy
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 90
+Name          : Misr-MTBIDEVAPP
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 91
+Name          : Frank-MBM-D36
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 92
+Name          : esxi1
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 93
+Name          : Frank-tools01.Roaya.loc_replica
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 94
+Name          : Frank-OfficeOnline01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 95
+Name          : WP-Messanger-Centos .73-copy
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 96
+Name          : J-S-Peter
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 97
+Name          : MISR-SAP-CARAPP
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 98
+Name          : SQL-Server-Solid2
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 99
+Name          : Frank-OfficeOnline02
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 100
+Name          : Frank-Wsus-new
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 101
+Name          : Frank-EventLog
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 102
+Name          : DAXRDS-yhsv-Copy
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 103
+Name          : Mis-Solman Server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 104
+Name          : Misr-CARPRDAPP
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 105
+Name          : EU1FE3112
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 106
+Name          : EU1FE9222
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 107
+Name          : Misr-ENTERPRISESRV
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 108
+Name          : Frank-Trend2019-DEV
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 109
+Name          : EU1OOS601
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 110
+Name          : next-cloud-NFS-server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 111
+Name          : Mis-CAR-PRD DB Server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 112
+Name          : PowerEye
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 113
+Name          : centos-block-storage
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 114
+Name          : MISR-MTBIDEVDB
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 115
+Name          : vROps-Tenant-App-for-vCD-2.3.0.33067-14826907
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 116
+Name          : MISR-CARQASDB
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 117
+Name          : Frank-ADC-04
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 118
+Name          : Mis-ERP DEV-PRD DB Server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 119
+Name          : Misr-ERPQASDB
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 120
+Name          : Misr-PIPRD
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 121
+Name          : WP-OdOO
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 122
+Name          : VMware vCenter Server Appliance 6.7-Passive
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 123
+Name          : Frank-OpenManage_Integration
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 124
+Name          : Frank-SQL-2019
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 125
+Name          : copy-DeepSecurity
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 126
+Name          : Diyaa-LAB
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 127
+Name          : replaymanager
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 128
+Name          : Jump-Server-Tawfik
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 129
+Name          : Frank-DC01
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 130
+Name          : EX-04
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 131
+Name          : Frank-DC02
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 132
+Name          : Exchange-DEV
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 133
+Name          : Misr-Router-02
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 134
+Name          : VMware vCenter Server Appliance 6.7
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 135
+Name          : VMware-NSX-Manager
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 136
+Name          : Mis-CRM QAS & Dev DB Server
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 137
+Name          : VMware_vCloud_Director-10.0.0.4649-15450333
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 138
+Name          : Misr-Router-01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 139
+Name          : Elbassiouni WebSite Production
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 140
+Name          : md-masterbatch-website
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 141
+Name          : joy&roy
+DataStoreName : 
+PowerState    : Suspended
+CreateDate    : 
+
+
+Index         : 142
+Name          : elbassiony-Copy
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 143
+Name          : Ceramica-Cleoptra
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 144
+Name          : Frank-IMSVA-Child-01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 145
+Name          : WorldPosta Website 02
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 146
+Name          : MyCloud-AppLaunchPad
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 147
+Name          : Router-01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 148
+Name          : Frank-IMSVA-Child-03
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 149
+Name          : ubuntu-dev
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 150
+Name          : WorldPosta WebSite
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 151
+Name          : Router-02
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 152
+Name          : Frank-NSX-Controller-01-NSX-controller-1
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 153
+Name          : Frank-IMSVA-Child-04
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 154
+Name          : MinIO
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 155
+Name          : Frank-PA-02
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 156
+Name          : NextCloud 31-1-2021
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 157
+Name          : dev-ubuntu-21
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 158
+Name          : Gabr-Kali-Server
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 159
+Name          : Frank-IMSVA-Child-02
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 160
+Name          : centos-Backup-vcenter
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 161
+Name          : DSITV-06.00.00.165
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 162
+Name          : WP-Coturn-Videostreaming
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 163
+Name          : MyCloud-AMQP
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 164
+Name          : Frank-NSX-Controller-03-NSX-controller-3
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 165
+Name          : Frank-NSX-Controller-02-NSX-controller-2
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 166
+Name          : Frank-PA-01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 167
+Name          : DSMBuildVM-20
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 168
+Name          : MyCloud-NFS
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 169
+Name          : Frank-IMSVA-Parent 1022021
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 170
+Name          : Roaya WebSite
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 171
+Name          : Dell-EMC-01
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 172
+Name          : Frank-Tools
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 173
+Name          : nextcloud-dev-new-production
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 174
+Name          : frank-Migr.Roaya.loc
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 175
+Name          : Frank-MBX02 - Clone 12-6-2020
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 176
+Name          : Developers-VM8-jTLN
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 177
+Name          : Solid-CP-DB-copy-13
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 178
+Name          : Nextcloud-Ubuntu-Prodaction-FromSnap
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 179
+Name          : WP-Syslog
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 180
+Name          : Developers-VM9-g6uv
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 181
+Name          : Developers-VM6-Q6b7
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 182
+Name          : Frank-tools01.Roaya.loc
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 183
+Name          : vse-el bassiony (27dff168-a339-48b9-90af-c7f34c7d2f47)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 184
+Name          : vse-LeadersCO (e518df4f-a749-4c07-8e0b-5abac75e25c3)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 185
+Name          : vse-Delta-Pharma-ESG (0ed9c57a-8bba-4476-b544-4d48226b0897)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 186
+Name          : vse-Hefny-Pharma-Edge (cdaefd93-2720-437f-bdd0-a6487e5160a2)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 187
+Name          : vse-Family-Corp (fa2e6e64-c575-468a-bf34-a8c1415d3ea5)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 188
+Name          : vse-Edge-AlfaMarket-Lan (718d9b5e-62e1-4cd1-9a90-693eae41b6bb)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 189
+Name          : vse-the-concrete (95a00dfd-3eb6-476f-b8a5-6d3f4b35650f)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 190
+Name          : vse-Demo (2a1cd3aa-1b88-4de4-a85d-7c05601d750f)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 191
+Name          : vse-El Doha-Edge (c36206fb-388c-4207-94a8-81ada6f158fd)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 192
+Name          : vse-Liptis (cc0de151-6dcf-4413-8151-a1b32925ab90)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 193
+Name          : vse-Edge-Future-ERP (2171c296-7643-4d4c-90ee-e7c56e7eb668)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 194
+Name          : vse-peter-new-tenant (38d400ef-1ca3-438f-b131-738fb4017ff2)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 195
+Name          : vse-Family-Edge-PA (4fcca189-f7a0-444f-bade-2471f5bb51ba)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 196
+Name          : vse-Edge-ABDO (e673e19e-1c38-4c3d-8d92-1954a4a7fbe7)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 197
+Name          : vse-venus-group (f62ce961-18dc-4a4f-91c1-8f9d8ac19131)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 198
+Name          : vse-elbatal-test (8f5c9001-85bc-40a7-a286-d1e537a89b2e)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 199
+Name          : vse-new-eslam (899bd341-ce21-4c6a-953a-1fbefdb22d22)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 200
+Name          : vse-solex-edge (fab0b166-093a-431b-bdb0-08bc63a71b24)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 201
+Name          : vse-Ahessien-Edge (85eabc8d-9111-4a6c-a374-3ea1f068c3be)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 202
+Name          : vse-Egypt-Cables-Edge (fb2efcf5-80ce-4248-bce2-9903891f3a73)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 203
+Name          : vse-ioda-edge (1641a623-4b51-46d4-b0c5-643d0d143900)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 204
+Name          : vse-ACT-Company (e251c8fb-4dfb-469c-b93f-ef2a8487c5c6)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 205
+Name          : vse-RENTEX CARS (4971e2a7-8d66-4cab-8cdd-9d6cefbeaf68)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 206
+Name          : vse-Gabr-edg (fa1964f7-de42-4f8c-8edc-93f2db32cc25)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 207
+Name          : vse-Hamd (7e683317-9d42-490d-aeaa-917b77577ce6)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 208
+Name          : vse-venus-alexandria (f675cded-711e-4a22-bd51-1524a850f661)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 209
+Name          : vse-Future-ERP-Edge-New (fd1668ba-fb29-442b-af13-84b259b14191)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 210
+Name          : vse-IGI (71406d74-8aa6-4f9d-8b98-4703ec25c2c6)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 211
+Name          : vse-Developers-Edg (11641040-df75-423a-8c7d-70cd44f84c78)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 212
+Name          : vse-Edge-Reyada-New (4b7fca73-588f-4f03-ae24-0360538272b2)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 213
+Name          : vse-kuwait (8589cebd-4ad3-49d7-859a-17cd4189a086)-0
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 214
+Name          : vse-karim-test (3b5e3e22-1ab3-4c5b-85ff-e34e3544e466)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 215
+Name          : vse-ELbatal (86554aa4-be8b-4aeb-9084-675da6a39c49)-0
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 216
+Name          : vse-nada (35b6a75e-6362-4f02-a66b-84221f17b44c)-0
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 217
+Name          : Alfa-DAXAOS-LhCj
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 218
+Name          : Developer-VM5-BhRt
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 219
+Name          : Developers-VM7-kKia
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 220
+Name          : adobe-document-2gal
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 221
+Name          : LEADERS-COIN+RETAIL-T2mK
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 222
+Name          : ACT-VM-03-igWB
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 223
+Name          : Demo-Ikjw
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 224
+Name          : Family-Corp-ERP-DEV-pHPo
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 225
+Name          : venus-2-WYQO
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 226
+Name          : LedersSTA-SQL01-JuYQ
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 227
+Name          : DP-Solman-4AXz
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 228
+Name          : Leaders-FUTUREN-ELXx
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 229
+Name          : ELDoha-2eTo
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 230
+Name          : Alfa-SQL-Server-qecU
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 231
+Name          : DP-Jump-Machine-LYHf
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 232
+Name          : Esxi-02-2m2u
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 233
+Name          : venus-1-j62Y
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 234
+Name          : Developer-VM4-4Uso
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 235
+Name          : DP-S4H-APP-QAS-PRxw
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 236
+Name          : Family-Corp-ERP-QAS-jG26
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 237
+Name          : Esxi-01-Bgfe
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 238
+Name          : Gabr-VM-OhJC
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 239
+Name          : vcenter1-qSqL
+DataStoreName : 
+PowerState    : PoweredOff
+CreateDate    : 
+
+
+Index         : 240
+Name          : Leaders-STA-8-0mRF
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 241
+Name          : Liptis-Windows-7oXx
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 242
+Name          : LEADERS-SUNRISE-QrlC
+DataStoreName : 
+PowerState    : PoweredOn
+CreateDate    : 
+
+
+Index         : 243
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 244
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 245
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 246
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 247
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 248
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 249
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 250
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 251
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 252
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 253
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 254
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 255
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 256
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 257
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 258
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 259
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 260
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 261
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 262
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 263
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 264
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 265
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 266
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 267
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 268
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 269
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 270
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 271
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 272
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 273
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 274
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 275
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 276
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 277
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 278
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 279
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 280
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 281
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 282
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 283
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 284
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 285
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 286
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 287
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 288
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 289
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 290
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 291
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 292
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 293
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 294
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 295
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 296
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 297
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 298
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 299
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 300
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 301
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 302
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 303
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 304
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 305
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 306
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 307
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 308
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 309
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 310
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 311
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 312
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 313
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 314
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 315
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
+
+
+Index         : 316
+Name          : 
+DataStoreName : 
+PowerState    : 
+CreateDate    : 
 
 
 

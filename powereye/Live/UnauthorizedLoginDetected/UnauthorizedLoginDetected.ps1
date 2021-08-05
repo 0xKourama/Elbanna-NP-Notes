@@ -37,7 +37,7 @@ $UnAuthorizedSessions = Invoke-Command -ComputerName $Online -ErrorAction Silent
                         Where-Object {$AuthorizedPersonnel -notcontains $_.Username -and $_.Username -ne 'NONE'} |
                         Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID
 
-$Secure_String_Pwd = ConvertTo-SecureString "$$UnAuthPwdChange$$" -AsPlainText -Force
+$Secure_String_Pwd = ConvertTo-SecureString '$$UnAuthorizedLoginDetected$$' -AsPlainText -Force
 
 $LogoffScript = {
 

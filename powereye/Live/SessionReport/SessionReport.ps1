@@ -56,7 +56,7 @@ $session_script = {
 
 $Online = Return-OnlineComputers -ComputerNames (Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address}).Name
 
-$session_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script | Where-Object {$_.ComputerName -ne 'PowerEye'} |
+$session_summary = Invoke-Command -ComputerName $Online -ErrorAction SilentlyContinue -ScriptBlock $session_script | Where-Object {$_.ComputerName -notmatch 'PowerEye|PST-Server1'} |
                    Sort-Object -Property ComputerName | Select-Object -Property * -ExcludeProperty PSComputerName, PSShowComputerName, RunSpaceID
 
 [PSCustomObject[]]$session_CONSOLE_summary  = $session_summary | Where-Object {$_.SessionType -eq 'CONSOLE' } | Select-Object -Property * -ExcludeProperty IdleSpan, ID
