@@ -36,127 +36,26 @@ how do we proceed?
 # what improved after the past relationship?
 1. 
 
-stuff needed for long sex sessions
-1. long well done foreplay
-2. zero stress (low heart rate)
-3. desensitiser
-4. viagra
-5. good cardiac health
-1. lubricant
-2. water (flavored for extra chill)
-3. towels
-4. communication
-	what spot needs attention?
-	what do you like?
-5. air conditioning
-
-components of good sex
-1. convenience
-	water
-	cleanliness
-	towers
-	lube
-	comfort
-		finding the right positions
-		comfortable positions:
-			doggy
-			missionary
-			cowgirl / reverse
-2. 
-
-what views are sexiest?
-1. tits & nipples
-2. ass and thighs
-3. penetration
-4. bouncing
-5. face
-6. long hair
-7. big dick
-8. licking lips
-9. eyes
-10. back
-11. dick sucking
-12. lust in eyes
-13. exposed pussy to fucking
-14. seeing an inviting pussy
-15. vulnerable feamle
-16. waist
-
-what sounds are sexiest
-1. moans
-2. kissing
-3. bodies bumping
-	pelvis to ass
-	tits to chest
-	bellies
-4. slurping
-5. asking me to stop
-6. admiration quotes
-7. instructions
-
-what feelings are sexiest?
-1. hands intertwining
-2. vagina warmth
-3. vagina wetness
-4. vagina grip
-5. realization of having sex
-6. tits feel
-7. lips feel
-8. ass feel
-9. hands on dick feel
-10. lips on dick
-11. being the guy
-12. being dominant
-13. initial entry
-
-sexy smells
-1. heat
-2. sweat
-sexy tastes:
-1. skin
-2. lips
-3. inner mouth
-
-what makes delaying ejaculation difficult?
+# what makes delaying ejaculation difficult?
 1. the rush for pleasure
 2. wanting to end an instict task
 3. wanting to explode
 4. excitement and arousal
 
-what worries are going through her hed?
+# what worries are going through her hed?
 1. am I sexy enough ---> telling her she's sexy
 2. is my body weird ---> telling her that her body's great
 3. is he pleased    ---> kissing her and telling her am pleased
 4. i am nervous     ---> asking her what's making her nervous and hugging her.
 5. am I performing well --> you are performing great
 
-what makes me want to cum?
-1. penetration (deep strokes)
-2. looking at my big dick
-3. sexy sounds
-4. female body parts bouncing (hair, tits, ass)
-5. feeling the sensations in my penis
-
-what makes it so hard to focus during sex?
-1. experience is overwheling to the senses
-2. huge instict inside the brain
-3. having the penis full of nerve endings--> they hijack the focus
-
-what can be a helping distraction?
-1. trying to guess what she's feeling
-2. guessing if something is paining her
-
-what makes a guy super im bed?
-1. removing stress from self and partner
-
-what's fun in life?
+# what's fun in life?
 1. finishing tasks
 2. achieving goals
 3. making progress
 4. solving problems
 
-what are fun stuff to do with lolo?
-1. sex
+# what are fun stuff to do with lolo?
 2. discovering each other
 3. discussing controversial topics
 4. reading together
@@ -170,7 +69,7 @@ what are fun stuff to do with lolo?
 12. going places
 13. laughing
 
-topics to chat with with Mr. yousef:
+# topics to chat with with Mr. yousef:
 1. impression of hagar
 2. impression of mom
 3. impression of dad
@@ -180,20 +79,19 @@ topics to chat with with Mr. yousef:
 7. religion
 8. his favourite TV shows
 
-topics to chat with with Mrs. Mohga
+# topics to chat with with Mrs. Mohga
 1. human development
 2. psychology
 3. marriage rules
 4. work for women
 5. 
 
-topics to chat with marwan:
+# topics to chat with marwan:
 1. anime
 2. computers
 3. his family
-4. 
 
-duties:
+# duties:
 1. cooking
 	1. average meal time (2-3 hours)
 	2. freezer (one month interval)
@@ -272,69 +170,96 @@ duties:
 	
 7. house needs
 
+# what are the negatives of being house wife?
 
 
-house wife:
-negative
+# what are the positives of being house wife?
+1. free time for:
+	- activies
+	- hobbies
+	- health
+	- reading
+	- study for kids
 
-positive
-free time for:
-	activies
-	hobbies
-	health
-	reading
-	study for kids
-
+# what are the traits of masculine women?
 1. women who love cursing.
 2. women who provide for men.
 3. The SJW (being a warrior ain't feminine).
 4. who physically and verbally challenge men.
 5. who neglect their appearance.
-6. who denies help of any kind.
-7. nasty attitude and defends that nasty attitude (disrespectful).
+6. who deny help of any kind.
+7. Nasty attitude and defends that nasty attitude (disrespectful).
 8. women who lead with strength instead of feminity (it's not a woman's job to impress a man).
+9. Women who don't respect men or women who want to control a man. who see man's leadership as domination, tyranny or abuse.
+10. who aren't submissive.
+*a woman should find a good man and submit to his leadership.*
 
-bonus: women who don't respect men or women who want to control a man. who see man's leadership as domination, tyranny or abuse. who aren't submissive.
-a woman should find a good man and submit to his leadership.
+# what are the traits of feminine men?
+1. men who expect women to take care of them.
+2. they have women's ways. (overly emotional).
+3. full of excuses. (they suggest fifty-fifty) who see themselves as victims. (they focus on problems instead of solutions).
+4. who gossip.
+5. are selfish.
+6. who don't work.
+7. stuck and stagnant (lack purpose).
 
-providing, protecting & feeling needed.
+# what are the man duties?
+1. providing (stability)
+2. protecting (security)
 
-"masculine women attract feminine men"
-men are wired to lead.
+# what motivates a man?
+1. being needed
+2. responsibility
 
-men who expect women to take care of them.
-they have women's ways. (overly emotional).
-protection, stability and security.
-feminine: full of excuses. (they suggest fifty-fifty) who see themselves as victims. (they focus on problems instead of solutions).
-who gossip.
-they are selfish.
-who don't work.
-stuck and stagnant (lack purpose).
+*masculine women attract feminine men*
+*men are wired to lead*
 
-what am I trying to accomplish?
-what were the biggest mistakes I've made? what made me do them?
-what are the areas of improvement in our security?
-what are the steps of effective troubleshooting?
-what is the benefit of post-processing?
-what makes a person emotionally stable?
-what signs show that am in inner peace?
-what makes a person use indirect ways?
-what makes us forget our blessings?
-what's annoying about being sassy?
-what determines a persons value?
-what makes troubleshooting easy?
-what makes understanding easy?
-what makes searching easier?
-what makes development easy?
-what makes a good question?
-what makes something vague?
-what does the word 'I' do?
-what makes learning easy?
-what causes human error?
-what are your hopes?
-ايه اللي يؤلم في انكار الجميل؟
+# what am I trying to accomplish?
 
-stuff that are irreplacable about alyaa?
+# what were the biggest mistakes I've made? what made me do them?
+
+# what are the areas of improvement in our security?
+
+# what are the steps of effective troubleshooting?
+
+# what is the benefit of post-processing?
+
+# what makes a person emotionally stable?
+
+# what signs show that am in inner peace?
+
+# what makes a person use indirect ways?
+
+# what makes us forget our blessings?
+
+# what's annoying about being sassy?
+
+# what determines a persons value?
+
+# what makes troubleshooting easy?
+
+# what makes understanding easy?
+
+# what makes searching easier?
+
+# what makes development easy?
+
+# what makes a good question?
+
+# what makes something vague?
+
+# what does the word 'I' do?
+
+# what makes learning easy?
+
+# what causes human error?
+
+# what are your hopes?
+
+# what's painful in denying the good things a person has done?
+
+
+# what are the stuff that are irreplacable about alyaa?
 1. tenderness
 2. following (she follows the right thing <3)
 3. caring (showing up for me 1st time at carrefour, cancelling her work and to meet me and think about our relationship)
@@ -344,42 +269,36 @@ stuff that are irreplacable about alyaa?
 7. learned emotionial diffusion on her own.
 8. copied many of my techniques <3
 
-what are her sources of past pain?
+# what are her sources of past pain?
 1. unfulfilled relationships
 2. not getting what she wanted sometimes
 3. being used in centro
 4. being controlled by her father so much
 
-what am I living for?
+# what am I living for?
 1. nothing major, meeting God is greater than all of the things in life.
 
-what are the thing that you want to do in your life?
+# what are the thing that you want to do in your life?
 1. get married
 2. build a home
 3. build a family
 
-what's the thing about death?
+# what's the thing about death?
 1. the new feeling and not knowing what to expect can be scary
-2. letting it happen is the way to go... since it cannot be controlled
-3. the self's instinct for survival and resisting the experience are what makes it difficult
+	[+] letting it happen is the way to go... since it cannot be controlled
+	[+] the self's instinct for survival and resisting the experience are what makes it difficult
 
-engagement areas of improvement:
-1. learn how to dance (slow and sha3bi)
-2. get a shirt puller (get that shit now)
-3. get a comfy leather shoe
-4. 
+# engagement areas of improvement:
+1. get a comfy leather shoe
 
-hygiene areas of improvement:
-1. farting in the right place
-2. pissing in the right place
-3. not eating my boogers
-4. managing my clothes
+# hygiene areas of improvement:
+1. managing my clothes
 
-bathroom items:
+# bathroom items:
 1. sink & counter
 2. tub
 3. mirror
-4. towels (big and small (ass towels))
+4. towels (big and small)
 5. toilet
 6. cupboard
 7. washing machine
@@ -394,7 +313,7 @@ bathroom items:
 3. added money
 4. more structure to the day
 
-what are the bad stuff about work?
+# what are the bad stuff about work?
 1. inconsiderate people
 2. pressure
 3. stress
@@ -402,25 +321,24 @@ what are the bad stuff about work?
 5. commuting
 6. annoying men
 
-what are the good stuff about homemaking?
+# what are the good stuff about homemaking?
 1. you are your own boss
 2. less stress, less pressure
 3. more time for hobbies, self-care
 4. safety
 5. calmness and ease
 
-what are the bad stuff about homemaking?
+# what are the bad stuff about homemaking?
 1. boredom
 2. less money
 3. less challenge
 4. less
 
-what are the positives of negotiation?
-1. it's good when dealing with conflicting interests
+# what are the positives of negotiation?
+1. it's good when dealing with conflicting interests (high contraints)
 2. it's good when dealing with difficult people
-3. 
 
-what makes a person difficult?
+# what makes a person difficult?
 1. being stubborn
 2. being skeptical
 3. being a miser
@@ -429,35 +347,43 @@ what makes a person difficult?
 6. being stupid
 7. being unwise
 
-what's bad about competition?
+# what's bad about competition?
 1. limiting oneself to his competitor(s)
 2. limiting scope of competition the area of the competitor's interest
 3. being judged as inadequate for not having interest in the area of competition
 
-what the way to gain wisdom?
+# what's good about competition?
+1. being immersed
+2. bringing your best
+
+# what the way to gain wisdom?
 1. awareness --> calm analysis + conscous thinking
 2. clarity of thought --> emotion management + self-checking for motives
 3. knowledge --> research and books
 4. 
 
-what are the areas that am lacking in knowledge of?
+# what are the areas that am lacking in knowledge of?
 1. banking
 2. cars and driving
-3. 
+3. home stuff
+	1. electricity
+	2. plumbing
+	3. carpentry
+	4. plastering
 
-what does improving one's thinking do?
+# what does improving one's thinking do?
 1. efficient thinking
 2. clear thinking
 3. quick thinking
 4. better results
 
-what makes a thinking good?
+# what makes a thinking good?
 1. efficiency
 2. right focus
 3. coherent thoughts
 4. true statements
 
-what makes thinking inefficient?
+# what makes thinking inefficient?
 1. complaining
 2. untargeted
 3. targeted towards unnecessary items
@@ -1599,10 +1525,54 @@ what activies will I be doing inshallah?
 19. Has high standards
 20. Has a SOLID character
 
+# what's annoying me?
+1. what makes her not care about what she says?
+2. what makes her wear herself out that hard?
+3. what makes her reluctant about her health?
+4. what makes her cool with wasting my time?
+5. what makes her take what I do lightly?
+
 # what's upsetting me?
-1. being forced to let out at the engagement
+1. being forced to go out at the engagement
 2. abusing
 3. chat going out of hand
 4. her pushing
 5. her male relationships at work
 6. her dress and makeup at work
+
+# what are the negatives of that first year and what are the mitigations?
+1. lack of availability (commuting + work > 8 hours a day)
+	[+] part-time & work from home are the way to go
+2. being given the remainder of her health
+	*I come second: the man of the house (provider & protector) gets small time with a tired woman* <-- what's fair here?
+3. losing health for company with no financial need
+4. putting relationship at risk in favor of personal meaning
+	*there's no meaning in marriage?*
+	*what's the real motive here?*
+		what makes this lofty goal bullshit?
+			it has no end
+			it should stop her from getting married
+			it so grand. having kids would slow her down
+
+5. sit for kids only?
+	*what's to be interpreted here, I don't deserve you? but kids do?*
+6. 
+
+# what the situation here?
+1. girl with freedom issues from her father control -> wants to get as much freedom as possible -> using some lofty ideal to get this by
+2. projecting all her fears on me ... just becase am a fucking guy too
+3. having no proper thinking
+
+# what makes this lofty ideal bullshitty bull?
+1. it's too dramatic (unrealistic)
+2. 
+
+# what will be her points?
+1. yesteday's incident
+	*what caused the situation*
+	1. missed the fact of test calls were being done on that day --> being all taken and absent minded
+	2. not knowing her PMS was still active
+	3. talking about alternative roads --> made her think I suspect her
+2. 
+
+*leaving you to make that decision is equivalent to ruining your life*
