@@ -3,13 +3,12 @@ Param([int]$Timeout)
 Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
-$Message_Count_threshold = 25
+$Message_Count_threshold = 50
 
 $Exchange_Servers = @(
-    'frank-fem-f01.roaya.loc:8080'
-    'frank-fem-f02.roaya.loc:8080'
-    'frank-fem-f03.roaya.loc:8080'
-    'frank-fem-f04.roaya.loc:8080'
+    'EU1MB9901.Roaya.loc'
+    'EU1MB9902.Roaya.loc'
+    'EU1MB9903.Roaya.loc'
 )
 
 $username = 'QueueMonitor'

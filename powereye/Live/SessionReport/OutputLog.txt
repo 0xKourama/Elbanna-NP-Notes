@@ -1,0 +1,48 @@
+08/05/2021 14:05:19 [*] Sending mail
+
+
+ComputerName : EU1FE3111
+Username     : PEPOURGENT
+LogonTime    : 8/5/2021 12:14 PM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 1 hour(s) 35 minute(s)
+
+ComputerName : EU1MB9901
+Username     : NADAURGENT
+LogonTime    : 8/5/2021 9:15 AM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 1 hour(s) 17 minute(s)
+
+ComputerName : EU1MB9901
+Username     : PEPOURGENT
+LogonTime    : 8/5/2021 8:59 AM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 1 hour(s) 19 minute(s)
+
+ComputerName : FRANK-MBM-D35
+Username     : PEPOURGENT
+LogonTime    : 8/5/2021 10:55 AM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 1 hour(s) 49 minute(s)
+
+ComputerName : FRANK-MBM-D35
+Username     : ISLAMADMIN
+LogonTime    : 8/5/2021 5:09 AM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 3 hour(s) 09 minute(s)
+
+ComputerName : FRANK-PDC
+Username     : GABRURGENT
+LogonTime    : 8/5/2021 9:37 AM
+State        : ACTIVE
+SessionType  : RDP
+IdleDuration : 0 day(s) 0 hour(s) 49 minute(s)
+
+08/05/2021 14:05:19 [*] Sessions were found. Sending mail.
+
+

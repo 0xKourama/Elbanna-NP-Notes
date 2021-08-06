@@ -4,10 +4,9 @@ Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Exchange_Servers = @(
-    'frank-fem-f01.roaya.loc:8080'
-    'frank-fem-f02.roaya.loc:8080'
-    'frank-fem-f03.roaya.loc:8080'
-    'frank-fem-f04.roaya.loc:8080'
+    'EU1MB9901.Roaya.loc'
+    'EU1MB9902.Roaya.loc'
+    'EU1MB9903.Roaya.loc'
 )
 
 $ExternalSenderList = @(
@@ -28,7 +27,7 @@ $password = '97$p$*J5f7$#3$0DnA'
 
 foreach($Exchange_Server in $Exchange_Servers){
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
-                                -ConnectionUri "http://$Exchange_Server/PowerShell/" `
+                                -ConnectionUri "http://$Exchange_Server/powershell" `
                                 -Authentication Kerberos `
                                 -Credential $UserCredential
 
