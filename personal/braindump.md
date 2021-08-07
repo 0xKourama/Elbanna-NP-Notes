@@ -12,7 +12,7 @@ what have we missed?
 how do we proceed?
 
 # what's my way in doing a thing?
-1. self-convincing of importance
+1. self-convincing of importance (if it's not something alligned with my character)
 2. collect information
 3. developing understanding
 4. doing deep analysis
@@ -1611,20 +1611,30 @@ what activies will I be doing inshallah?
 8. religious person (no other female in my life, only contact with my computer)
 9. 
 
-
 # what do you want me to do for compensation?
 
-# punishment should teach you a lesson. fix what you did. don't get expelled.
+# what a proper punishment method?
+1. punishment should teach you a lesson. fix what you did. don't get expelled.
 
 # what do I want?
 1. a home
 2. a family
 3. a present wife
 
-# what annoying about this shit?
-1. the sacrifice mentality
-2. the win/lose situation
-3. the exaggerated view
-
 # what make women love drama so much?
 1. they care more about what they feel than the actual reality of things
+
+# what was your primary source of power (after God)?
+1. fighter stance
+2. gathering information and obtaining knowledge and going for wisdom
+3. 
+
+# what so cool about transformation?
+1. the change to a stronger form
+
+# girl transformations:
+1. lots of colors
+2. lots of shine
+3. hearts, flowers, cuteness
+4. overdone and dramatic: flamboyant
+5. always to something beautiful
