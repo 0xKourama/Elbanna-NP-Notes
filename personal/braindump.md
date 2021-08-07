@@ -1743,7 +1743,6 @@ what activies will I be doing inshallah?
 # 
 
 -----------------------------------------------
-
 # what's the good thing about seeing movies?
 1. concept of warriors, heroes, leaders in almost legendary forms
 
@@ -1764,10 +1763,11 @@ been a while since she worked puzzles
 
 she tooks the entire task in her hands
 -----------------------------------------------
-elvira supported her in a couple of problems
+*elvira supported her in a couple of problems*
 
 # what makes us sigh?
 
+------------------------------------------------------------------------
 # what do me and Alyaa do together?
 1. go out
 2. talk
@@ -1778,3 +1778,50 @@ elvira supported her in a couple of problems
 1. course
 2. reading
 3. games (chess, connect-4)
+------------------------------------------------------------------------
+# things to do to make PMS a better experience?
+*2-3 days before --> something wants to get out*
+1. too much food in the uterus = bloating
+2. feeling that will explode (back, chest and head ... severe pain). extreme headache
+
+*emotionally ... don't want to see anyone or get out ... just lay down and sleep but pain is too much*
+total: 2 before (hard) --- 2-3 during (manageable) ---
+						   1. must eat to compensate loss of blood
+*workout is preferable while there's no bleeding*
+
+3. flow can be stopped by sitting down or laying down
+------------------------------------------------------------------------
+# what are things to do?
+1. heating pads ....... 2erba so5na (kol 7aga 2afsha ... warmth helps). 
+2. being around is good (good effect on her physically)
+3. other stuff after getting married
+4. being present (putting my hand on her back)
+------------------------------------------------------------------------
+# what's bad?
+1. being upset without finding the reason
+2. being happy without finding the reason
+3. 
+------------------------------------------------------------------------
+# foods.
+------------------------------------------------------------------------
+# what's a man's weapon?
+1. the gift to change from emotion to thought at an eye's glance
+2. the ability to chase down a solution ignoring the emotional reaction
+------------------------------------------------------------------------
+# what are the common things that bring a person down?
+1. his illusions (bullshit excuses)
+2. being a victim
+3. being lost (having no higher purpose or meaning)
+4. being disappointed
+5. seeing no right way
+6. regarding lofty ideals as movie stuff and not chasing them practically
+------------------------------------------------------------------------
+# what is IMS (irritable male sydrome)?
+1. 
+------------------------------------------------------------------------
+# what's the impact of journalism?
+1. 
+------------------------------------------------------------------------
+# asking the right question to get the right answer
+*90% of questions are unanswered*
+# what are the positives of imagination?
