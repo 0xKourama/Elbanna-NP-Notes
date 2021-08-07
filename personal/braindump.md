@@ -1627,7 +1627,11 @@ what activies will I be doing inshallah?
 # what was your primary source of power (after God)?
 1. fighter stance
 2. gathering information and obtaining knowledge and going for wisdom
-3. 
+3. pulling abstract concepts and applying over many areas
+	1. load sharing
+	2. parallel work
+	3. applying pressure to root problems
+	4. 
 
 # what so cool about transformation?
 1. the change to a stronger form
@@ -1638,3 +1642,139 @@ what activies will I be doing inshallah?
 3. hearts, flowers, cuteness
 4. overdone and dramatic: flamboyant
 5. always to something beautiful
+
+# guy transformations:
+1. minimal and attention pulling
+2. 
+
+# nature of your work
+1. there's training give training ()
+	steve
+	*rule: no 2 trainig at the same time*
+2. no training:
+	1. meetings
+
+	*SWVL = everything's changed*
+	*SWVL = way more work added*
+		1. new work:
+			1. quality
+			2. create process
+			3. create material
+			4. traning
+			5. gathering matieral
+			6. attending meetings
+			7. calibration --> allignment with all departments
+			8. new queue (finance) --> she finished it
+				- sit with all stakeholders
+				- she had many objections --> client said alice would do it
+				- composed material
+				- give training
+			9. captain support --> didn't want it
+				- ayat --> lady with attitude
+				- depends on logic
+				- not documented
+				- pure catastrophe --> lots of problem
+				- when talked about problems. she faced rudeness
+				- she needed material without obtaining it
+				- elvira wanted her to chill
+				- her values pressured her to save the guys
+				- managers don't solutions, they give emotional support and say "ma3lesh"
+				
+				# reasons why she accepted it.
+				- client wanted to try alice
+				*20 business days without assistance*
+				- her aunt died
+					- she was wearing black
+				- her voice dissappeared in training
+				- Ayat was the one delivering the training
+				- Ayat was dedicated to assisting her
+
+
+				# reason she loves hala
+				- she fought anyone who did her wrong.
+				- 
+
+				# who are the other trainers?
+
+
+# what their workload?
+*Elvira*
+1. Sky (delegate TL .. over xander)
+2. Xander
+3. Lenz
+
+4. Alice
+- SWVL: captain finance
+- SWVL: CX queue (client delivers)
+- SWVL: captain support
+- SWVL: Corporate Help --> change knowledge base --> training with Alice
+- SWVL: Corporate (amazon transportation)
+- SWVL: CX Experience
+- SWVL: Travel
+
+# Last Week
+1. 8-10 corporate amazon2
+2. 
+
+# business dev:
+1. expand internally (existing CX brings more work)
+2. expand externally (bring more )
+
+# what's the source of pain?
+1. dropping all load on Alice
+2. she's the only SME
+	- knowledge
+	- operation 
+	- historical (from the beginning)
+3. she wanted to be with the captain support certification
+
+# problem
+1. 2 of the best failed --> that trigger her to doubt injustice
+2. she wanted to know the criteria on which they failed
+
+3. find out tolerable vs intolerable areas
+
+# what the case?
+1. case of judgement on whether a person is qualified or not
+
+# what's the challenge with captain support?
+1. 
+
+# 
+
+-----------------------------------------------
+
+# what's the good thing about seeing movies?
+1. concept of warriors, heroes, leaders in almost legendary forms
+
+# 
+
+
+# what can I do about my focus problems?
+
+-----------------------------------------------
+many trainings
+lacking energy
+right after engagment
+people    --> 3-4 poeple low
+headaches --> ad hocs
+
+biggest positives:
+been a while since she worked puzzles
+
+she tooks the entire task in her hands
+-----------------------------------------------
+elvira supported her in a couple of problems
+
+# what makes us sigh?
+
+# what do me and Alyaa do together?
+1. go out
+2. talk
+3. watch movies
+4. shopping
+
+# what we can do more?
+1. course
+2. reading
+3. games (chess, connect-4)
