@@ -1575,4 +1575,134 @@ what activies will I be doing inshallah?
 	3. talking about alternative roads --> made her think I suspect her
 2. 
 
-*leaving you to make that decision is equivalent to ruining your life*
+*leaving you to make the decision (of ending the relationship) is equivalent to ruining your life*
+# what made this so?
+*what type of man would like those conditions?*
+1. one who benefits financially from you
+2. one who doesn't want to spend time with you
+3. one who doesn't care about your health
+4. one who doesn't get jealous from your seeing and talking to other men
+5. 
+
+# what's different with alyaa?
+1. she care way too much about the traininess
+2. she associates waay too many things with her work
+	1. meaning of life
+	2. identity
+	3. freedom
+	4. impact
+
+# what's the challenges with work?
+1. takes up waaaaaay too much time --> from me
+2. take sup waaaaaay too much energy
+3. gives me less room to be around
+4. gives me the added hassle of handling work drama
+5. gives me a lonely life
+6. 
+
+# what I putting in this relationship?
+1. good salary
+2. good standard of living
+3. the option of resting from work
+4. hours and hours of human development work on myself
+5. ability to handle and diffuse emotions
+6. huge-problem solving ability
+7. full care of all aspects of the relationship (her health, the kid's health)
+8. religious person (no other female in my life, only contact with my computer)
+9. 
+
+
+# what do you want me to do for compensation?
+
+# punishment should teach you a lesson. fix what you did. don't get expelled.
+
+# what do I want?
+1. a home
+2. a family
+3. a present wife
+
+# what annoying about this shit?
+1. the sacrifice mentality
+2. the win/lose situation
+3. the exaggerated view
+
+# what make women love drama so much?
+1. they care more about what they feel than the actual reality of things
+
+# eva gets immersed into the book. she hates the book because of the bad ending .. anne frank does die in the end
+
+# one student likes the library
+
+# she asks the students to write a letter to miep gies .. the lady who sheltered anne frank
+
+# kids start to get excited the lady who sheltered miep gies
+
+# kids start to change
+
+# the emotional diffusion in writing the diaries helped change students lives
+
+# classroom becomes a great place for her and the kids. she starts to hang out with them at parties
+
+# mip gies comes to classroom and talks to kids
+
+# she starts to be a success
+
+# kids says mip gies is his hero. but she said she's a normal person who did the right thing. and she said any person can make a change no matter how small.
+
+# she heard about their stories and told them they are heroes every day. and that she will remember them
+
+# Eva gets mad for having snitch in order to protect her own.
+
+# fat black kids visits his mom and asks his hmom to come home
+
+# Eva says the truth at court. specially when she sees the family of the black man. -> that gets her into trouble because she snitched. and she is abandoned by her kin for being a traitor. -> her father won't talk to her anymore.
+
+# she talks to the teacher and asks to stay at the teacher's home. teacher supports her without asking for her husband's permission.
+
+# the asian girls supports eva and racial barriers drop between them.
+
+# kids get better grades
+
+# teacher continues to work double jobs to support the payments
+
+# kids started to see stories of people challenging racism. real life heroes.
+
+# at home, she finds her husband with his bags. ready to leave.
+
+# she thinks he's leaving because she doesn't pay attention to him
+
+# he's leaving because she's making him feel bad about himself. she's making him feel like a loser.
+
+# she finds meaning in her job. and he doesn't feel that way about his job
+[+] what meaning isn't there in living a family life?
+
+# he said that she wants to be in class not with him. he says "you don't love me. you love the idea of me"
+
+# one kid sees bullshit in life. and doesn't believe in the hope of books.
+
+# kids are made because the teacher won't be there next year.
+
+# kids like it because they get along well in class
+
+# the kids want to change and make the teacher theirs for the rest of their education
+
+# father says she has done great thing ... she's a great teacher.
+# he admires her and he's lucky to be her father
+
+# manager is against her being promoted. and is pulling up obstacles against it.
+
+# she hates her because she's making her feel incompetent.
+
+# she confronts andre for being missing. and tries to remove the negativity in his spirit.
+
+# she acts like a mother for all those kids. and tries to do the same for her husband.
+
+# she tells them they don't need her anymore.
+
+# she has one project project. to make books of their diaries. to tell people everywhere about their lives what they have learned and share with other people.
+
+# a final meeting happens, where the manager puts obstacles as usual .. but she gets a good news ... she is going to be there teacher for the upcoming years.
+
+# the freedom writes batch graduated from college and some of them became teachers.
+
+# the class started the freedom writers foundation dedicated to reacreating the success of room 203
