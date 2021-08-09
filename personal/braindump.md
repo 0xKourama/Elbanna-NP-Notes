@@ -1892,3 +1892,68 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # what were the greatest moments of my life?
 # what the importance of an Axis?
 # what the importance of Articulation?
+------------------------------------------------------------------------
+# What functions does a leader do?
+1. remove the worst in people
+2. bring out the best in people
+3. sets noble and great goals for them to lift them from turmoil to prosperity
+4. delete the victim mentality from their minds and motivate them to defeat their challenges
+5. raises them higher
+------------------------------------------------------------------------
+# what's the benefit of passion?
+# what gives a person passion?
+# what are the constraints?
+# what are the best things in life?
+# getting a reward
+# what's difficult in facing a crowd with controversy ?
+------------------------------------------------------------------------
+# what's the impact/damage of the major sins?
+# what are the common devil attacks?
+# what are the benefits of leaving loose guidelines on purpose?
+# what are the benefits of hunting?
+------------------------------------------------------------------------
+# What are the dangers of devil's decoration?
+# God wants to distinguish the good from the bad and rewarding the good and punish the bad <3 ... what's possibly bad to bet angered about?
+------------------------------------------------------------------------
+*sometimes, your parameters if perfection give you lots of more work*
+------------------------------------------------------------------------
+# what hardens people?
+# what makes people do a poor job? karwata?
+------------------------------------------------------------------------
+# make a fully-detailed roadmap for marriage.
+1. apartment
+2. driving
+3. daily life
+4. fun activities
+5. goals
+6. areas to manage
+7. points to care of
+------------------------------------------------------------------------
+# What are all Electrical devices?
+1. ACs
+2. Fans
+
+3. Stove
+4. Small Oven
+5. Kettle
+6. Mixer
+
+7. Fridge
+8. Deep Freezer
+9. Water Cooler
+
+10. Iron
+11. Washing Machine
+12. TV
+------------------------------------------------------------------------
+# what are the attributes of the devil?
+1. always angry
+2. always hateful
+3. always envious
+4. restless
+# what are the positives of sports?
+
+# what are the negativces of sports?
+
+# Tactful
+------------------------------------------------------------------------
