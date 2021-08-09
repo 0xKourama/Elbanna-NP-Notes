@@ -1853,9 +1853,17 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 5. condensed skills (without thought)
 6. 
 ------------------------------------------------------------------------
-# what class can we use to organize our brains?
+# what classes can we use to organize our brains?
 1. goals
 2. knowledge fields
 3. repeated patterns
 4. skills
 5. memories
+6. emotions
+------------------------------------------------------------------------
+# what are some of the areas im week in?
+1. 
+------------------------------------------------------------------------
+# what role do facial expressions play in communication?
+# what role does tone of voice play in communication?
+------------------------------------------------------------------------
