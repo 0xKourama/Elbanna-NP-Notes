@@ -1839,3 +1839,9 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 
 # summarized by successes and moments of redemption
 ------------------------------------------------------------------------
+# Context
+# Articulation
+# Cognitive Bias
+# Defense mechanisms
+# Honour (high level of respect)
+# Axis
