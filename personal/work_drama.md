@@ -48,3 +48,74 @@
 5. weak in linux
 6. weak in cybersec
 7. unordered
+
+# What possible impressions do people have on me at work?
+1. CEO
+	- genius
+	- can do anything
+	- very technical
+	- can be trouble
+	- not to be lost
+2. Tawfik
+	- very skilled
+	- well educated
+	- kind
+	- can be trouble
+	- not easy
+3. Peter
+4. Abdo
+5. Hussien
+6. Islam
+7. Nada
+8. Wahba
+9. A. Ali
+10. M. Ali
+11. Amgad
+12. H
+13. Radwan
+14. Sama
+15. M. Atef
+16. Attia
+17. Emad-Dev
+18. Moataz
+19. Sara
+20. Emad Finance
+21. Fouad
+22. Ahmed
+21. Ehab
+22. Fatma
+23. A. Abdo
+24. Madeleine
+
+# What possible impressions do I have on people at work?
+1. CEO
+2. Tawfik
+	- very skilled
+	- well educated
+	- kind
+	- can be trouble
+	- not easy
+3. Peter
+4. Abdo
+5. Hussien
+6. Islam
+7. Nada
+8. Wahba
+9. A. Ali
+10. M. Ali
+11. Amgad
+12. H
+13. Radwan
+14. Sama
+15. M. Atef
+16. Attia
+17. Emad-Dev
+18. Moataz
+19. Sara
+20. Emad Finance
+21. Fouad
+22. Ahmed
+21. Ehab
+22. Fatma
+23. A. Abdo
+24. Madeleine
