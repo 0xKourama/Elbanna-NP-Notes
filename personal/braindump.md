@@ -1825,3 +1825,9 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # asking the right question to get the right answer
 *90% of questions are unanswered*
 # what are the positives of imagination?
+
+
+# what the common troubleshooting steps?
+1. what am I trying to accomplish? what result am I trying to reach?
+	- what can be done to accomplish that?
+2. what are the components/conditions necessary for what I want to accomplish?
