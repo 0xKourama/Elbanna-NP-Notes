@@ -36,12 +36,6 @@ how do we proceed?
 # what improved after the past relationship?
 1. 
 
-# what makes delaying ejaculation difficult?
-1. the rush for pleasure
-2. wanting to end an instict task
-3. wanting to explode
-4. excitement and arousal
-
 # what worries are going through her hed?
 1. am I sexy enough ---> telling her she's sexy
 2. is my body weird ---> telling her that her body's great
@@ -49,8 +43,10 @@ how do we proceed?
 4. i am nervous     ---> asking her what's making her nervous and hugging her.
 5. am I performing well --> you are performing great
 
+------------------------------------------------------------------------
+
 # what's fun in life?
-1. finishing tasks
+1. finishing tasks --> getting rewarded
 2. achieving goals
 3. making progress
 4. solving problems
@@ -84,7 +80,6 @@ how do we proceed?
 2. psychology
 3. marriage rules
 4. work for women
-5. 
 
 # topics to chat with marwan:
 1. anime
@@ -171,7 +166,7 @@ how do we proceed?
 7. house needs
 
 # what are the negatives of being house wife?
-
+1. society's opinion
 
 # what are the positives of being house wife?
 1. free time for:
@@ -1812,19 +1807,18 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 1. his illusions (bullshit excuses)
 2. being a victim
 3. being lost (having no higher purpose or meaning)
-4. being disappointed
+4. being disappointed --> having too high expectations
 5. seeing no right way
 6. regarding lofty ideals as movie stuff and not chasing them practically
-------------------------------------------------------------------------
-# what is IMS (irritable male sydrome)?
-1. 
+7. being unreasonable
 ------------------------------------------------------------------------
 # what's the impact of journalism?
-1. 
+1. shedding light on important topics and problems
 ------------------------------------------------------------------------
 # asking the right question to get the right answer
 *90% of questions are unanswered*
 # what are the positives of imagination?
+<<<<<<< HEAD
 ------------------------------------------------------------------------
 # what are the Greatest moments of my life?
 1. winning that mundo match in LoL
@@ -1845,3 +1839,54 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # Defense mechanisms
 # Honour (high level of respect)
 # Axis
+=======
+
+
+# what the common troubleshooting steps?
+1. what am I trying to accomplish? what result am I trying to reach?
+	- what can be done to accomplish that?
+2. what are the components/conditions necessary for what I want to accomplish?
+------------------------------------------------------------------------
+# what benefit does a man get from wanting to impress a woman?
+1. pushing himself to be the best he can be
+------------------------------------------------------------------------
+# what's the importance of knowing people's impression of you?
+1. that determines how they treat you
+2. bad impressions requires some correction on your end to keep things smooth
+------------------------------------------------------------------------
+# what's my impression of Lolla?
+1. clever
+2. kind
+3. lively
+4. smart mouth
+	+ intelligence
+	+ gets what she wants
+	- 
+------------------------------------------------------------------------
+# what defense mechanism does a woman develop?
+1. sharp tongue
+2. double messages --> positive content + nasty tone
+------------------------------------------------------------------------
+# what are the abilities of the brain?
+1. memory
+2. focus (switching between topics and loading relevant information)
+3. information connections
+4. grouping relevant information with several criteria (emotion, pattern, *what are the other criteria?*)
+5. condensed skills (without thought)
+6. 
+------------------------------------------------------------------------
+# what classes can we use to organize our brains?
+1. goals
+2. knowledge fields
+3. repeated patterns
+4. skills
+5. memories
+6. emotions
+------------------------------------------------------------------------
+# what are some of the areas im week in?
+1. 
+------------------------------------------------------------------------
+# what role do facial expressions play in communication?
+# what role does tone of voice play in communication?
+------------------------------------------------------------------------
+>>>>>>> 5f6b0ca48dee81c78d557fdce5398c5cc91227f1
