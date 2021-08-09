@@ -1889,4 +1889,6 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # what role do facial expressions play in communication?
 # what role does tone of voice play in communication?
 ------------------------------------------------------------------------
->>>>>>> 5f6b0ca48dee81c78d557fdce5398c5cc91227f1
+# what were the greatest moments of my life?
+# what the importance of an Axis?
+# what the importance of Articulation?
