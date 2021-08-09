@@ -1957,3 +1957,5 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 
 # Tactful
 ------------------------------------------------------------------------
+# what makes us want to be perfect when only God has perfection?
+------------------------------------------------------------------------
