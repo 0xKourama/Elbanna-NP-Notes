@@ -2060,3 +2060,5 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 
 # what makes something unknown?
 1. no attention was allocated there
+
+*object exploration is important to become more objective*
