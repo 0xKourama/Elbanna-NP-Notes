@@ -2026,3 +2026,7 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 
 *object-handling words are way nicer. because they deal with handleable objects. this needs observation and object identification*
 *language of nouns and verbs and adjectives and adverbs play a very important role*
+
+*a common symptom of immaturity is enlarging or diminishing things. finding the right size for everything is important to stay level-headed*
+
+*in order to get out something. you ought to be able to properly articulate it into a good sentence. you have to be able to construct the basis of your argument*
