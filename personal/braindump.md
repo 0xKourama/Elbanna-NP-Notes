@@ -2121,3 +2121,6 @@ a set of processes that happen to lead to a given outcome
 9. reaction to danger
 10. proteciton of offspring
 *it's like the body has it's own set of important processes that it maintaines without us needing to know*
+# what's facinating about the human body and nature?
+1. they show splendid design and architecture ... that are prove God and his genuis.
+2. the amount of amazing detail and harmony is just overwhelming
