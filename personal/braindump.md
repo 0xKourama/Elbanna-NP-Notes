@@ -2025,3 +2025,4 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 1. learning it gives me uniqueness
 
 *object-handling words are way nicer. because they deal with handleable objects. this needs observation and object identification*
+*language of nouns and verbs and adjectives and adverbs play a very important role*
