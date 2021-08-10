@@ -1989,3 +1989,16 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 ------------------------------------------------------------------------
 # what makes something oredered?
 # what makes people change topics?
+# what a proper source of a person's power and authority?
+*any form of weakness is not something people like to show <-- jeopardizes safety and security*
+*punishing mistakes and vulnerabilities helps with winning*
+# what are the benefits of acting a fool?
+1. lower the guard of your opponent
+2. use the element of surprise
+
+# what is a role?
+1. set of:
+	- tasks (responsibilities)
+	- authorization (privilege)
+# what are the points to consider in a job?
+# what is a good model for organizing information? what makes a model good?

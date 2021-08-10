@@ -158,3 +158,7 @@ depend on the system that the user targets, who the user is, and how policies ar
 2. Passwords for vCenter Server Direct Console User Interface Users
 ----------------------------
 # vSphere Permissions and User Management Tasks
+
+# what are roles?
+- Sets of privileges
+
