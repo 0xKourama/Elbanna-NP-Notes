@@ -1982,3 +1982,4 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # what is the definition of everything?
 *a proper definition of everything is needed*
 ------------------------------------------------------------------------
+# what standards are needed?
