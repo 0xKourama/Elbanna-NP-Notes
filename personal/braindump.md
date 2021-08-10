@@ -1969,3 +1969,5 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # what's the situation with IT Certifications?
 1. making sure information is practical
 2. asking about what makes the course context X important?
+------------------------------------------------------------------------
+*female characteristics have the effect of automatically triggering male reproductive system*

@@ -40,7 +40,17 @@
 
 
 # Securing vCenter Server Systems and Associated Services
-1. Authentication -> VCenter SSO
-2. Authorization  -> VCenter Server permissions model
+*Authentication -> VCenter SSO*
+*Authorization  -> VCenter Server permissions model*
 
-1. 
+1. Harden all vCenter host machines
+	- hardening each machine on which vCenter Server or an associated service runs
+
+2. Learn about the vCenter certificate model
+	- VMware Certificate Authority (VMCA)  provisions each ESXi host and each machine in the environment with a certificate signed by VMCA
+
+3. Configure vCenter Single Sign-On
+
+4. Assign roles to named users or groups
+	1. associate each permission that you give on an object with a named user or group and a predefined role or custom role
+	*Restrict administrator privileges and the use of the administrator role. If possible, do not use the anonymous Administrator user.*
