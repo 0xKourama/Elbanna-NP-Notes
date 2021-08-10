@@ -2020,3 +2020,8 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 
 *99.9% of questions are unanswered. what we have for sure is ignorance. being aware of that ignorance is the first step towards any form of knowledge.*
 *dumb people think they have all the answers*
+
+# what made me prefer linux to windows?
+1. learning it gives me uniqueness
+
+*object-handling words are way nicer. because they deal with handleable objects*
