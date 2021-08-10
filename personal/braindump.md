@@ -2047,3 +2047,6 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 3. a tough hard journey to reach
 # what the outcome?
 1. finding the ultimate way of dealing with life challenges
+------------------------------------
+*dealing with everything as an object makes things so much manageable*
+------------------------------------
