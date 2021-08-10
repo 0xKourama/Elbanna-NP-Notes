@@ -2016,6 +2016,7 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # what makes me talk too much?
 1. wanting to change people for the better
 2. wanting to spread my best ideas
+*only talking when spoken to is a more favorable position. it's more quiet and silent*
 
 *99.9% of questions are unanswered. what we have for sure is ignorance. being aware of that ignorance is the first step towards any form of knowledge.*
 *dumb people think they have all the answers*
