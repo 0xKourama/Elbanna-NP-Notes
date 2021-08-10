@@ -2055,3 +2055,8 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 2. you get arrogant
 3. you go rampant .. become a tyrant
 4. you become selfish
+
+*Question the identifiable objects in your brain. and try to identify what's not identified*
+
+# what makes something unknown?
+1. no attention was allocated there
