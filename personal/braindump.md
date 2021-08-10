@@ -2002,3 +2002,20 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 	- authorization (privilege)
 # what are the points to consider in a job?
 # what is a good model for organizing information? what makes a model good?
+# design
+# what is God's design?
+# What can cause problems for a smart person?
+1. causing trouble
+2. talking too much
+3. trying to change things fast
+4. making too much noise
+5. wanting to absorb too much power
+
+# what the benefit of a good way of delivery?
+
+# what makes me talk too much?
+1. wanting to change people for the better
+2. wanting to spread my best ideas
+
+*99.9% of questions are unanswered. what we have for sure is ignorance. being aware of that ignorance is the first step towards any form of knowledge.*
+*dumb people think they have all the answers*
