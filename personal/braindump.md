@@ -2105,7 +2105,7 @@ a complex heirarchy of objects that is constantly changing states
 # what's the benefit of a model/skeleton?
 1. connects pieces together to form an understandable form
 # what is a system?
-a set of processes
+a set of processes that happen to lead to a given outcome
 # what are automatic goals (instincts) in any human?
 1. survival
 2. reproduction
