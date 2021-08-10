@@ -1971,3 +1971,6 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 2. asking about what makes the course context X important?
 ------------------------------------------------------------------------
 *female characteristics have the effect of automatically triggering male reproductive system*
+------------------------------------------------------------------------
+*labelling allows the brain to deal with explicit objects and that makes things much more efficient*
+------------------------------------------------------------------------

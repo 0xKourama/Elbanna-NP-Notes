@@ -119,3 +119,17 @@
 22. Fatma
 23. A. Abdo
 24. Madeleine
+
+# what are the situations at work? what information can be inferred from those?
+1. my incident with MT
+2. CEO incident with Nada
+3. MT incident with A.Ali
+4.
+
+# what's driving me to work in a big corp?
+1. status (bragging)
+2. money
+3. seeing real enterprise
+4. working with top pros
+
+# mad told MT that I wanted to increase my bundle? is there a steady channel? what goes into that channel?

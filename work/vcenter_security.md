@@ -54,3 +54,68 @@
 4. Assign roles to named users or groups
 	1. associate each permission that you give on an object with a named user or group and a predefined role or custom role
 	*Restrict administrator privileges and the use of the administrator role. If possible, do not use the anonymous Administrator user.*
+
+5. Set up PTP or NTP
+	- Set up PTP or NTP for each node in your environment. The certificate infrastructure requires an accurate time stamp and does not work correctly if the nodes are out of sync
+
+# Securing Virtual Machines
+1. Protect the guest operating system
+	- most recent patches
+	- anti-spyware
+	- anti-malware
+
+2. Disable unnecessary functionality
+	- Remove unnecessary hardware
+	- disable certain features such as:
+		- host-guest filesystem (HGFS)
+		- copy and paste between the virtual machine and a remote console.
+
+3. Minimize use of the virtual machine console
+	- Users with access to a virtual machine console have access to:
+		1. virtual machine power management
+		2. removable device connectivity controls
+		*As a result, virtual machine console access might allow a malicious attack on a virtual machine.*
+
+4. Consider UEFI secure boot
+	*ou can configure your virtual machine to use UEFI boot. If the operating system supports secure UEFI boot, you can select that option for your VMs for additional security*
+
+5. Consider Carbon Black Cloud Workload
+
+# Securing the Virtual Networking Layer
+- virtual network adapters
+- virtual switches
+- distributed virtual switches
+- ports
+- port groups
+*ESXi uses the virtual networking layer to communicate with iSCSI SANs, NAS storage, and so on*
+
+1. Isolate network traffic
+	- A management network isolates client traffic, command-line interface (CLI) or API traffic, and third-party software traffic from normal traffic.
+	- Ensure that the management network is accessible only by system, network, and security administrators.
+
+2. Use firewalls to secure virtual network elements
+	- You can open and close firewall ports and secure each element in the virtual network separately
+	- For ESXi hosts, firewall rules associate services with corresponding firewalls and can open and close the firewall according to the status of the service
+	- You can also open ports on vCenter Server instances explicitly
+	- List of VMware products ports: https://ports.vmware.com/
+
+3. Consider network security policies
+	-  Network security policies provide protection of traffic against MAC address impersonation and unwanted port scanning. The security policy of a standard or distributed switch is implemented in Layer 2 (Data Link Layer) of the network protocol stack. The three elements of the security policy are promiscuous mode, MAC address changes, and forged transmits
+
+4. Secure VM networking
+	*Virtual switches and distributed virtual switches provide significant protection when used with other common security practices, such as installing firewalls*
+
+5. Consider VLANs to protect your environment
+	- You can use VLANs to further protect the VM network or storage configuration
+	- two VMs on the same physical network cannot send packets to or receive packets from each other unless they are on the same VLAN
+
+6. Secure connections to virtualized storage
+
+
+# what are my questions?
+1. what is a distributed virtual switch? what do we use it for?
+2. what is the link between NSX and VCenter?
+3. what is a port group?
+4. what is NVDS?
+5. what are the convenience features that would be annoying if removed for security?
+6. 
