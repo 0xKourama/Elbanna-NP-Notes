@@ -1966,3 +1966,6 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # Honour (high level of respect)
 # Axis
 ------------------------------------------------------------------------
+# what's the situation with IT Certifications?
+1. making sure information is practical
+2. asking about what makes the course context X important?
