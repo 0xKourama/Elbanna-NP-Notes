@@ -4254,3 +4254,15 @@ a set of processes that happen to lead to a given outcome
 # what humbles us with God?
 1. we didn't create a single thing
 2. the level of genuis and detail in everything is just astonishing. knowing more about it easily just puts us in our place
+# what is a question?
+a request for information
+# what are food types?
+1. energy foods
+2. cellular repair
+3. water
+# what are nutrient types?
+1. vitamins
+2. minerals
+3. protein
+4. carbohydrates
+5. 
