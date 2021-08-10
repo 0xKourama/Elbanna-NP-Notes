@@ -2037,3 +2037,7 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 - sitting at the top of a mountain in a never-ending pursuit of truth, wisdom and perfection.
 # what about that?
 1. improving yourself and going higher .. using the correct way .. is something amazing and fulfilling.
+# what is the purpose of this?
+1. doing the best thing I can.
+# what is about this?
+1. it's a bit lonely.
