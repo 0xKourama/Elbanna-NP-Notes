@@ -1,3 +1,12 @@
+# what are my questions?
+1. what is a distributed virtual switch? what do we use it for? it a centralized switch across all ESXi hosts to allow for networking management
+2. what is the link between NSX and VCenter?
+3. what is a port group? a group of virtual distributed switch ports that make up a network
+4. what is NVDS?
+5. what are the convenience features that would be annoying if removed for security?
+6. what is the use of domains on vsphere?
+7. what's an identity source?
+
 # what are the out-of-the-box security features?
 1. authentication
 2. authorization
@@ -110,12 +119,22 @@
 	- two VMs on the same physical network cannot send packets to or receive packets from each other unless they are on the same VLAN
 
 6. Secure connections to virtualized storage
+	- A VM stores operating system files, application files, and other data on a virtual disk
+	- Each virtual disk appears to the VM as a SCSI drive that is connected to a SCSI controller
+	- A VM is isolated from storage details and cannot access the information about the LUN where its virtual disk resides.
+	- The Virtual Machine File System (VMFS) is a distributed file system and volume manager that presents virtual volumes to the ESXi host.
+	- You are responsible for securing the connection to storage. For example, if you are using iSCSI storage, you can set up your environment to use CHAP. If required by company policy, you can set up mutual CHAP. Use the vSphere Client or CLIs to set up CHAP.
 
+7. Evaluate the use of IPSec
+	- ESXi supports IPSec over IPv6. You cannot use IPSec over IPv4.
 
-# what are my questions?
-1. what is a distributed virtual switch? what do we use it for?
-2. what is the link between NSX and VCenter?
-3. what is a port group?
-4. what is NVDS?
-5. what are the convenience features that would be annoying if removed for security?
-6. 
+# Passwords in vSphere Environment
+*Password restrictions, password expiration, and account lockout in your vSphere environment
+depend on the system that the user targets, who the user is, and how policies are set*
+
+1. ESXi Passwords
+2. Passwords for vCenter Server and Other vCenter Services
+
+1. vCenter Single Sign-On Administrator
+	- The password for the administrator@vsphere.local user, or the administrator@mydomain user if you selected a different domain during installation, does not expire and is not subject to the lockout policy. In all other regards, the password must follow the restrictions that are set in the vCenter Single Sign-On password policy
+

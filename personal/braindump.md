@@ -1974,3 +1974,11 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 ------------------------------------------------------------------------
 *labelling allows the brain to deal with explicit objects and that makes things much more efficient*
 ------------------------------------------------------------------------
+*connecting information together to form the skeleton is important for a cohesive body of knowledge*
+------------------------------------------------------------------------
+# what are the most mis-understood things in life?
+# What do I know about anything?
+# what makes humans so ignorant?
+# what is the definition of everything?
+*a proper definition of everything is needed*
+------------------------------------------------------------------------
