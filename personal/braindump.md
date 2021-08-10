@@ -2088,10 +2088,14 @@ a complex heirarchy of objects that is constantly changing states
 2. a body with a multitude of systems for maintaining life
 	1. respiratory (energy)
 	2. digestive (energy)
-	3. nervous (control)
+	3. nervous (control and sensing and processing)
 	4. muscular and skeletal (motion and holding body together)
-	5. reproductive
-	6. execretory
+	5. reproductive (life continuity --> indirect survival)
+	6. execretory (waste mangement)
+	7. cardiovascular (circulation --> interacts with all systems)
+	8. endocrine system (influences body function using hormones)
+	9. Immune system (security)
+	10. 
 3. senses for interacting with the environment on many channels
 	1. visual
 	2. auditory
@@ -2100,3 +2104,20 @@ a complex heirarchy of objects that is constantly changing states
 	5. taste
 # what's the benefit of a model/skeleton?
 1. connects pieces together to form an understandable form
+# what is a system?
+a set of processes
+# what are automatic goals (instincts) in any human?
+1. survival
+2. reproduction
+# what are the non-voluntary processes in a human?
+1. breathing
+2. heartbeat
+3. sensing
+4. balance
+5. execretion
+6. sweating
+7. emotion and feeling
+8. digestion
+9. reaction to danger
+10. proteciton of offspring
+*it's like the body has it's own set of important processes that it maintaines without us needing to know*
