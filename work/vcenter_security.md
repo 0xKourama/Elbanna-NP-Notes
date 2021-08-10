@@ -6,12 +6,29 @@
 5. what are the convenience features that would be annoying if removed for security?
 6. what is the use of domains on vsphere?
 7. what's an identity source?
-
+----------------------------
+# What does this manual include?
+Best practices for the *different components of your vSphere infrastructure*
+----------------------------
+# what are the complimentatry resources?
+1. Information on ESXi and vCenter Server security and operations, including secure configuration and hypervisor security.
+	https://core.vmware.com/security
+2. VMware security policy, up-to-date security alerts, security downloads, and focus discussions of security topics
+	http://www.vmware.com/go/security
+3. Compliance and security standards, and partner solutions and in-depth content about virtualization and compliance
+	https://core.vmware.com/compliance
+4. Information on security certifications and validations such as CCEVS and FIPS for different versions of the components of vSphere
+	https://www.vmware.com/support/support-resources/certifications.html
+5. Security configuration guides (formerly known as hardening guides) for different versions of vSphere and other VMware products
+	https://core.vmware.com/security
+6. Security of the VMware vSphere Hypervisor white paper
+	http://www.vmware.com/files/pdf/techpaper/vmw-wp-secrty-vsphrhyprvsr-uslet-101.pdf
+----------------------------
 # what are the out-of-the-box security features?
 1. authentication
 2. authorization
 3. firewall on each ESXi
-
+----------------------------
 # what can be done for security?
 1. set permissions on Vcenter objects
 	- vcenter servers
@@ -20,13 +37,14 @@
 	- network objects
 	- storage objects
 2. open/close firewall ports
-
+----------------------------
+# what are the main topics?
 1. Secure ESXi
 2. Vcenter Servers & Associated Services
 3. VMs
 4. Virtual Networking Layer
 5. Passwords
-
+----------------------------
 # Securing ESXi Hypervisor
 1. Limit ESXi access
 	1. Disable ESXi Shell
@@ -46,8 +64,7 @@
 	1. SSH
 	2. vSphere Web Services SDK
 	*The Direct Console Interface (DCUI) and the ESXi Shell do not support account lockout*
-
-
+----------------------------
 # Securing vCenter Server Systems and Associated Services
 *Authentication -> VCenter SSO*
 *Authorization  -> VCenter Server permissions model*
@@ -66,7 +83,7 @@
 
 5. Set up PTP or NTP
 	- Set up PTP or NTP for each node in your environment. The certificate infrastructure requires an accurate time stamp and does not work correctly if the nodes are out of sync
-
+----------------------------
 # Securing Virtual Machines
 1. Protect the guest operating system
 	- most recent patches
@@ -89,7 +106,7 @@
 	*ou can configure your virtual machine to use UEFI boot. If the operating system supports secure UEFI boot, you can select that option for your VMs for additional security*
 
 5. Consider Carbon Black Cloud Workload
-
+----------------------------
 # Securing the Virtual Networking Layer
 - virtual network adapters
 - virtual switches
@@ -127,7 +144,7 @@
 
 7. Evaluate the use of IPSec
 	- ESXi supports IPSec over IPv6. You cannot use IPSec over IPv4.
-
+----------------------------
 # Passwords in vSphere Environment
 *Password restrictions, password expiration, and account lockout in your vSphere environment
 depend on the system that the user targets, who the user is, and how policies are set*
@@ -135,7 +152,9 @@ depend on the system that the user targets, who the user is, and how policies ar
 1. ESXi Passwords
 2. Passwords for vCenter Server and Other vCenter Services
 
-1. vCenter Single Sign-On Administrator
+1. vCenter Single Sign-On Administrator/Other Users of the vCenter Single Sign-On Domain/Other Users
 	- The password for the administrator@vsphere.local user, or the administrator@mydomain user if you selected a different domain during installation, does not expire and is not subject to the lockout policy. In all other regards, the password must follow the restrictions that are set in the vCenter Single Sign-On password policy
 
 2. Passwords for vCenter Server Direct Console User Interface Users
+----------------------------
+# vSphere Permissions and User Management Tasks

@@ -1986,3 +1986,6 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # what are the qualities of the ultimate human? what can be done for those to be achieved?
 ------------------------------------------------------------------------
 *a person's goals have a big effect in shaping who he is. a person with great goals is different from a person with lowly ones*
+------------------------------------------------------------------------
+# what makes something oredered?
+# what makes people change topics?
