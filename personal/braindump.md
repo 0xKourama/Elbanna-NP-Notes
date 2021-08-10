@@ -2050,3 +2050,8 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 ------------------------------------
 *dealing with everything as an object makes things so much manageable*
 ------------------------------------
+# what bad stuff can result from being at the top?
+1. you lose compassion and become cruel
+2. you get arrogant
+3. you go rampant .. become a tyrant
+4. you become selfish
