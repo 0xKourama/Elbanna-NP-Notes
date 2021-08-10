@@ -162,3 +162,5 @@ depend on the system that the user targets, who the user is, and how policies ar
 # what are roles?
 - Sets of privileges
 
+# what are the vCenter Server Permissions?
+- Global Permissions

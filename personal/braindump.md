@@ -2030,3 +2030,10 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 *a common symptom of immaturity is enlarging or diminishing things. finding the right size for everything is important to stay level-headed*
 
 *in order to get out something. you ought to be able to properly articulate it into a good sentence. you have to be able to construct the basis of your argument*
+
+# what makes a person/idea unshakeable/unchangeable?
+
+# what's your image of perfection?
+- sitting at the top of a mountain in a never-ending pursuit of truth, wisdom and perfection.
+# what about that?
+1. improving yourself and going higher .. using the correct way .. is something amazing and fulfilling.
