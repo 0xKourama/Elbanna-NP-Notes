@@ -2062,3 +2062,41 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 1. no attention was allocated there
 
 *object exploration is important to become more objective*
+------------------------------------
+# what does the brain do?
+abstractly, it processes objects
+# what are the classifications of objects?
+
+# what is a statement?
+string of pieces of information that lead up to a conclusion or a piece of knowledge about a given object
+# what is knowledge?
+body of information about a certain object
+# what is wisdom?
+knowing the truth of an object and acting correctly upon it
+# what is reality?
+a set of inferred statements about the nature of an object
+# what happens in life on earth?
+a complex heirarchy of objects that is constantly changing states
+# what's common in life?
+1. human beings are the unit
+# what simplifies things?
+1. understanding the nature of human beings
+# what are the components of a human being?
+1. consciousness and a brain capable of processing complex objects
+2. emotions:
+	reactions based on the interpreted outcome (pleasant/unpleasant)
+2. a body with a multitude of systems for maintaining life
+	1. respiratory (energy)
+	2. digestive (energy)
+	3. nervous (control)
+	4. muscular and skeletal (motion and holding body together)
+	5. reproductive
+	6. execretory
+3. senses for interacting with the environment on many channels
+	1. visual
+	2. auditory
+	3. smell
+	4. touch
+	5. taste
+# what's the benefit of a model/skeleton?
+1. connects pieces together to form an understandable form
