@@ -1959,3 +1959,10 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 ------------------------------------------------------------------------
 # what makes us want to be perfect when only God has perfection?
 ------------------------------------------------------------------------
+# Context
+# Articulation
+# Cognitive Bias
+# Defense mechanisms
+# Honour (high level of respect)
+# Axis
+------------------------------------------------------------------------
