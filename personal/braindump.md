@@ -2024,4 +2024,4 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # what made me prefer linux to windows?
 1. learning it gives me uniqueness
 
-*object-handling words are way nicer. because they deal with handleable objects*
+*object-handling words are way nicer. because they deal with handleable objects. this needs observation and object identification*
