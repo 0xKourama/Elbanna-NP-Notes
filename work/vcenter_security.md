@@ -138,3 +138,4 @@ depend on the system that the user targets, who the user is, and how policies ar
 1. vCenter Single Sign-On Administrator
 	- The password for the administrator@vsphere.local user, or the administrator@mydomain user if you selected a different domain during installation, does not expire and is not subject to the lockout policy. In all other regards, the password must follow the restrictions that are set in the vCenter Single Sign-On password policy
 
+2. Passwords for vCenter Server Direct Console User Interface Users

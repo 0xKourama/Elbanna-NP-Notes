@@ -1983,3 +1983,6 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 *a proper definition of everything is needed*
 ------------------------------------------------------------------------
 # what standards are needed?
+# what are the qualities of the ultimate human? what can be done for those to be achieved?
+------------------------------------------------------------------------
+*a person's goals have a big effect in shaping who he is. a person with great goals is different from a person with lowly ones*
