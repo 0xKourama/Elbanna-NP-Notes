@@ -2034,10 +2034,16 @@ total: 2 before (hard) --- 2-3 during (manageable) ---
 # what makes a person/idea unshakeable/unchangeable?
 
 # what's your image of perfection?
-- sitting at the top of a mountain in a never-ending pursuit of truth, wisdom and perfection.
+- sitting at the top of a mountain in a never-ending pursuit of truth, wisdom and perfection. chasing God.
 # what about that?
 1. improving yourself and going higher .. using the correct way .. is something amazing and fulfilling.
 # what is the purpose of this?
 1. doing the best thing I can.
 # what is about this?
 1. it's a bit lonely.
+# what's so beautiful about the top of the mountain?
+1. calm and serene
+2. at the top
+3. a tough hard journey to reach
+# what the outcome?
+1. finding the ultimate way of dealing with life challenges

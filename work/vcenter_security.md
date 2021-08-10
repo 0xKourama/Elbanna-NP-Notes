@@ -164,3 +164,5 @@ depend on the system that the user targets, who the user is, and how policies ar
 
 # what are the vCenter Server Permissions?
 - Global Permissions
+- Group Membership in vCenter Single Sign-On Groups
+- ESXi Local Host Permissions
