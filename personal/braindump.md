@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # self-negotiation
 1. Remove self-resistances by understanding yourself and being receptive to what is has to say
 2. Acknowledging your shadow self and negative emotions other than letting them fester like an infection while unexpressed
@@ -4266,3 +4265,10 @@ a request for information
 3. protein
 4. carbohydrates
 5. 
+
+*doing something meaninful is one of the most rewarding things ever*
+
+# what are the drawbacks of being too self-concious?
+
+# what are the most poisoning thoughts?
+1. 
