@@ -4344,3 +4344,15 @@ a request for information
 
 # what's the benefit of contructing useful sentences?
 1. it drops into the mind smoothely
+
+*listening is so good ... because it is a stance of information gathering*
+*listening is passive though. asking the questions and listening for the answer takes more charge*
+
+# what are my fantasies?
+1. becoming and ultimate being
+2. fighting evil
+3. finding truth and wisdom
+
+# what conditions signals you have reached wisdom?
+
+# what are your beliefs?
