@@ -4272,3 +4272,42 @@ a request for information
 
 # what are the most poisoning thoughts?
 1. 
+
+# what are the most common patterns in life?
+1. humans increasing
+2. temperature rising
+3. entertainment rising
+4. technology increasing
+	- jobs becoming more complex
+5. old wisdom questioning
+6. science revealing secrets
+	- humans have more information
+8. 
+
+# what are possible reasons for humans to pursue knowledge?
+1. power
+
+# what makes me get emotional?
+1. warrior spirit ... changing stance to it. stopping something bad.
+2. finding meaning
+3. 
+
+# what's my top weapon?
+1. pulling information from all dimensions and condensing them to have solidified unshakeable truths
+2. staying centered and analysing elements that can decenter me
+
+# what can push me off my center?
+1. disobeying God
+2. misnuderstanding something
+3. getting selfish
+4. losing objective and vision
+5. losing focus
+6. losing passion
+
+# what makes a fighter undefeatable?
+1. he keeps coming back
+2. he isn't finished quickly
+3. he's impossible to shake
+	he has an unshakeable center
+		he's right and correct and knows it
+4. he's impossible to distract
