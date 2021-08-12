@@ -4303,6 +4303,7 @@ a request for information
 4. losing objective and vision
 5. losing focus
 6. losing passion
+7. surprises
 
 # what makes a fighter undefeatable?
 1. he keeps coming back
@@ -4311,3 +4312,35 @@ a request for information
 	he has an unshakeable center
 		he's right and correct and knows it
 4. he's impossible to distract
+5. he's quick
+6. he's well-prepared
+7. he can quickly adapt to new information (suprise)
+8. his sense of right and wrong is extremely strong
+9. he's methodical with facing challenges
+	he automated the process of breaking down complex objectives and fulling them
+
+# what's the situation with warrior transformation?
+1. it's a transformation not a permanent form
+2. 
+
+# what can get me surprised?
+1. thinking I have everything under control
+2. thinking I know enough --> the door for ignorance --> knowing that you don't know enough prepares you for suprises.
+
+# what makes us think we know enough when the only things we know for sure are very little? when everything is in a constant state of change. What's true now can be false the next second
+
+# what can tell us more about human behaviour?
+1. knowing what happens in a humans mind
+2. knowing what drives humans and what they want
+3. knowing what makes a human choose to do something a certain way instead of another
+
+*the more knowledge you have.. the more ways you have of getting something done*
+
+# what's the benefit of giving examples to deliver a piece or model of information?
+1. visual representation shows the algorithm
+
+# what drives you sometimes?
+1. fantasies of legendarily strong figures
+
+# what's the benefit of contructing useful sentences?
+1. it drops into the mind smoothely
