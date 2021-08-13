@@ -4420,3 +4420,28 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 
 # what makes something a game?
 1. 
+
+# what gives a question it's power?
+
+*changing people is way stronger than killing them*
+
+# what can a person do to change another?
+1. show him another better way
+2. appeal to his needs
+
+# what makes a person right for power?
+1. when he can find his way for what's right (on a large scale)
+
+# what are provocative moves in our world?
+1. 
+
+# what can tracked from the media?
+1. women movement
+
+# what are the war-inducing movements in our world?
+
+# what strategy must the enemy use?
+1. splitting poeple apart by highlighting their differences instead of their similarities
+	1. pushing those ideas through the media subconciously
+2. selling weapons
+3. 
