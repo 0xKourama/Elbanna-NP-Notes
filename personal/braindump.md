@@ -4356,3 +4356,67 @@ a request for information
 # what conditions signals you have reached wisdom?
 
 # what are your beliefs?
+
+# Managerial ability and taking responsibility
+# Decision making and prioritisation
+# Organisational skills
+# Interpersonal skills
+# Time management and awareness
+# Computer literacy
+# Understanding of organisational issues i.e. organisational culture/change
+
+
+# What is a critical thinking test?
+Critical reasoning tests, also known as critical thinking tests, are psychometric tests commonly used in graduate, professional and managerial recruitment. These high-level analytical test are most commonly encountered in the legal sector, but other organisations such as the Bank of England also use them as part of their selection process. This test may be pencil and paper or it may be administered online depending on the format and the structure of the recruitment process. The questions will be multiple choice format and will usually be administered under time constraints
+
+Critical thinking can be defined as ‘the ability to consider a range of information derived from many different sources, to process this information in a creative and logical manner, challenging it, analysing it and arriving at considered conclusions which can be defended and justified’ (Moon, 2008). If we lack critical thinking skills, it is possible to be misguided into believing that an argument is strong, when in actual fact there is little evidence to support it. Critical thinking skills therefore include the ability to structure a sound, solid argument, to analyse and synthesise available information, and to make assumptions and inferences. Critical thinking skills are also about being able to evaluate the information and draw conclusions that can be supported.
+
+- Analysing Arguments
+- Assumptions
+- Deductions
+- Inferences
+- Interpreting Information
+
+*getting excited when anticipating win can cause loss of focus.*
+*the excessive lust and anticipation before victory can ruin it badly*
+
+# what brain abilities are needed for the OSCP?
+1. critical thinking
+2. lateral thinking
+
+# what does objectivity add to you?
+1. removal of wasted effort and time
+2. defined targets and clarity of thought
+
+# what can annoy you?
+1. distraction
+2. not understand the purpose of what am doing
+
+*changing mental tasks is fucking taxing hahahahahahahahhahahahah*
+
+# what's taxing in it?
+1. learning the new task
+2. adjusting to it and automating it
+
+*a new workout is definitely soring xD*
+
+# what's taxing in aptitude tests?
+1. they challenge the brain
+	limited time
+
+# what's the deal with risk taking?
+
+# what makes a person prepared?
+
+# what the benefit of attention to detail?
+
+# what makes me never ask for what I want?
+
+# what can make me afraid of failing?
+
+# what makes dicision making hard?
+- not having enough information
+- not having criteria
+
+# what makes something a game?
+1. 
