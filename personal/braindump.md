@@ -4503,3 +4503,10 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 # what's the downside of democracy?
 1. exposure to ignorant minds
 2. exposure to many ideas
+
+
+# what time we stopped at sadat documentary?
+4:43
+
+# what keeps aligned with God's way?
+1. constantly detecting and adjusting ourselves for the better
