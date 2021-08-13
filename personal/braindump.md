@@ -4445,3 +4445,61 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 	1. pushing those ideas through the media subconciously
 2. selling weapons
 3. 
+
+# what's the danger of having powerful ideas?
+1. they can create a cult quickly
+
+# what's the deal with youth?
+1. easy to influence
+2. clean slate
+3. loads of energy wanting to explode
+
+# what does the youth need?
+1. a goal
+2. meaning of their lives
+
+# what did nasser do?
+1. won people
+	muslims: azhar
+	russians:
+
+
+# what dropped i5wan?
+1. wanting to take over the throne
+
+# what are other powerful forces?
+1. ideas --> instilled in the heads of youth
+
+# what makes big players so good?
+1. they closely monitor and learn from their opponent
+2. they probe and collect information from many sources
+3. they are steady and keep many options for play open
+4. they are skilled at hiding their next moves
+5. they can distract their opponent
+6. they are masters of nature
+7. they can take advantage of the context and the tides of battle
+8. they can use their surroundings and the circumstances
+
+*being jumpy can cost a person a LOT!*
+
+# what does charisma do?
+1. charms people
+2. appeals to the fantasies of poeple who have them
+
+3. if the character is a symbol of good. that gives them hope
+
+# what makes me think im so unique?
+
+*underestimating the world is a big mistake*
+
+# what can be done to measure someone's power?
+# what makes measuring someone's power important?
+1. the person with more power can overtake <<<-------- the rule of the jungle
+2. the most wise and righteous idea should rule <<<--------- this sounds way better
+
+*what appears is that our makind's way has always been competing for power and influence.*
+*collaborating in finding the best for everyone is the correct way.*
+
+# what's the downside of democracy?
+1. exposure to ignorant minds
+2. exposure to many ideas
