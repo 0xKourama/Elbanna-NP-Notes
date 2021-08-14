@@ -4365,7 +4365,6 @@ a request for information
 # Computer literacy
 # Understanding of organisational issues i.e. organisational culture/change
 
-
 # What is a critical thinking test?
 Critical reasoning tests, also known as critical thinking tests, are psychometric tests commonly used in graduate, professional and managerial recruitment. These high-level analytical test are most commonly encountered in the legal sector, but other organisations such as the Bank of England also use them as part of their selection process. This test may be pencil and paper or it may be administered online depending on the format and the structure of the recruitment process. The questions will be multiple choice format and will usually be administered under time constraints
 
