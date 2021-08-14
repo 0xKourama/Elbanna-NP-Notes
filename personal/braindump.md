@@ -4507,3 +4507,32 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 1. constantly detecting and adjusting ourselves for the better
 
 # what's the difference between eshterakeya and ra2maleya?
+
+# what good objectives should be on my daily routine?
+1. understanding stuff by analyzing them
+2. knowing lolo more
+3. thanking God
+4. analyzing my emotions and keeping my emotional stability
+5. reading more books and sorting my head
+6. knowing more about building my home
+
+# what are the positives of swearing?
+1. for being normal with friends
+2. 
+
+# what does understanding give?
+1. 
+
+# what are my areas of interest?
+1. psychology
+2. social psychology
+3. neuroscience
+4. policial science
+5. economics
+6. islamic philosophy (creed)
+7. law
+8. problem-solving
+9. thinking types
+10. education
+11. child development
+12. medicine
