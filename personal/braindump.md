@@ -4494,8 +4494,8 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 
 # what can be done to measure someone's power?
 # what makes measuring someone's power important?
-1. the person with more power can overtake <<<-------- the rule of the jungle
-2. the most wise and righteous idea should rule <<<--------- this sounds way better
+1. the person with more power can overtake      <<<--- the rule of the jungle
+2. the most wise and righteous idea should rule <<<--- this sounds way better
 
 *what appears is that our makind's way has always been competing for power and influence.*
 *collaborating in finding the best for everyone is the correct way.*
@@ -4504,9 +4504,7 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 1. exposure to ignorant minds
 2. exposure to many ideas
 
-
-# what time we stopped at sadat documentary?
-4:43
-
 # what keeps aligned with God's way?
 1. constantly detecting and adjusting ourselves for the better
+
+# what's the difference between eshterakeya and ra2maleya?
