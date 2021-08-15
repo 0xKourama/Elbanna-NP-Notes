@@ -4536,3 +4536,17 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 10. education
 11. child development
 12. medicine
+
+# what are the laws of the jungle?
+1. the strongest stays
+
+# what are the two poles of ruling?
+1. love
+2. power
+
+# what improves reasoning?
+
+*subjecting subjects to adversity test their core*
+
+# what makes a change dangerous?
+1. if the component in question in integrated with any service

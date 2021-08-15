@@ -5,7 +5,28 @@
 4. what is NVDS?
 5. what are the convenience features that would be annoying if removed for security?
 6. what is the use of domains on vsphere?
-7. what's an identity source?
+7. what's an identity source? what's it's importance?
+8. what is the network layout?
+9. what does an edge do?
+10. what is a cluster?
+11. what is PTP?
+12. what is a distributed port group?
+13. what is the Vcenter architecture?
+14. what is an uplink?
+15. what is a standard switch?
+16. what is vService manager?
+17. what is the VPX user?
+18. what is VMkernel?
+19. what is vSAN?
+20. vMotion?
+21. IP storage?
+22. Fault Tolerance?
+23. vSAN?
+----------------------------
+# what are the permissions that Abdo,Ahmed,Islam,Tawfik Need?
+1. 
+
+# what are the permissions there? what's the location of the permissions?
 ----------------------------
 # What does this manual include?
 Best practices for the *different components of your vSphere infrastructure*
@@ -41,8 +62,8 @@ Best practices for the *different components of your vSphere infrastructure*
 # what are the main topics?
 1. Secure ESXi
 2. Vcenter Servers & Associated Services
-3. VMs
-4. Virtual Networking Layer
+3. Virtual Networking Layer
+4. VMs
 5. Passwords
 ----------------------------
 # Securing ESXi Hypervisor
@@ -166,3 +187,53 @@ depend on the system that the user targets, who the user is, and how policies ar
 - Global Permissions
 - Group Membership in vCenter Single Sign-On Groups
 - ESXi Local Host Permissions
+
+# what is the Vcenter architecture?
+1. storage folder
+	1. what is a datastore?
+	2. what is a datastore cluster?
+2. network folder
+	1. VDS
+		1. distributed port group
+	2. Standard Switch
+3. host folder
+	1. host
+		1. resource pool
+			1. virtual machine
+			2. vApp
+				1. resource pool
+	2. cluster
+		1. resource pool
+			1. virtual machine
+			2. vApp
+				1. resource pool
+4. VM folder
+	1. virtual machine
+
+*child permissions are more specific and override parent-set permissions*
+
+# what is validation?
+1. periodic process that checks users and their permissions every interval
+
+# what are the VM attribues?
+1. processing
+2. memory
+3. networking
+4. storage
+
+# what is the benefit of creating a custom role?
+1. taylor the privileges to the exact tasks
+
+# what the location of privileges?
+Administration -> Roles -> Privileges
+
+*Best practice is to create a user at the root level and assign the Administrator role to that user. After creating a named user with Administrator privileges, you can remove the root user from any permissions or change its role to No Access*
+
+# what's the benefit of propagation?
+1. permissions apply to newly-created VMs in the folder
+
+# Best Practices for Roles and Permissions
+1. Best Practices for Roles and Permissions
+2. Grant permissions only on the objects where they are needed, and assign privileges only to users or groups that must have them. Use the minimum number of permissions to make it easier to understand and manage your permissions structure.
+3. If you assign a restrictive role to a group, check that the group does not contain the Administrator user or other users with administrative privileges. Otherwise, you migh unintentionally restrict administrators' privileges in the parts of the inventory hierarchy where you have assigned that group the restrictive role.
+4. Use folders to group objects. For example, to grant modify permission on one set of hosts and view permission on another set of hosts, place each set of hosts in a folder
