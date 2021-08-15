@@ -22,6 +22,10 @@
 21. IP storage?
 22. Fault Tolerance?
 23. vSAN?
+24. vSphere ESX Agent Manager?
+25. VIB?
+26. what's the difference between local and shared datastores?
+27. What are our host types? SuperMicro + Dell
 ----------------------------
 # what are the permissions that Abdo,Ahmed,Islam,Tawfik Need?
 1. 
@@ -237,3 +241,34 @@ Administration -> Roles -> Privileges
 2. Grant permissions only on the objects where they are needed, and assign privileges only to users or groups that must have them. Use the minimum number of permissions to make it easier to understand and manage your permissions structure.
 3. If you assign a restrictive role to a group, check that the group does not contain the Administrator user or other users with administrative privileges. Otherwise, you migh unintentionally restrict administrators' privileges in the parts of the inventory hierarchy where you have assigned that group the restrictive role.
 4. Use folders to group objects. For example, to grant modify permission on one set of hosts and view permission on another set of hosts, place each set of hosts in a folder
+5. Use caution when adding a permission to the root vCenter Server objects. Users with privileges at the root level have access to global data on vCenter Server, such as roles, custom attributes, vCenter Server settings
+6. Consider enabling propagation when you assign permissions to an object. Propagation ensures that new objects in the object hierarchy inherit permissions. For example, you can assign a permission to a virtual machine folder and enable propagation to ensure that the permission applies to all VMs in the folder
+7. Use the No Access role to mask specific areas of the hierarchy. The No Access role restricts access for the users or groups with that role
+
+# Securing ESXi Hosts
+# ESXi security features:
+1. CPU Isolation
+2. Memory Isolation
+3. Device Isolation
+4. Lockdown Mode
+5. ceritifcate replacement
+6. firewall
+7. ESXi Shell
+
+# Built-In Security Features
+1. ESXi Shell and SSH interfaces --> Disabled By default
+	*keep disabled unless for admin purposes*
+2. Only a limited number of firewall ports are open by default
+3. ESXi runs only services that are essential to managing its functions
+4. By default, all ports that are not required for management access to the host are closed
+5. weak ciphers are disabled and communications from clients are secured by SSL
+6. An internal web service is used by ESXi to support access by Web clients
+7. To protect hosts from loading drivers and applications that are not cryptographically signed, use UEFI Secure boot. Enabling Secure Boot is done at the system BIOS
+8. If your ESXi host has a TPM 2.0 chip, enable and configure the chip in the system BIOS. Working together with Secure Boot, TPM 2.0 provides enhanced security and trust assurance rooted in hardware
+
+# Additional Security Measures:
+## Limit Access:
+- Disable access to DCUI, ESXi Shell & SSH
+## Do not access managed hosts directly:
+- Use the vSphere Client to administer ESXi hosts that are managed by a vCenter Server. Do not access managed hosts directly with the VMware Host Client, and do not change managed hosts from the DCUI
+## USE DCUI for troubleshooting only
