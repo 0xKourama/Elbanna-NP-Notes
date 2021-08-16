@@ -4632,3 +4632,55 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 9. Can open doors to new opportunities
 10. Helps you perform better at interviews and meetings 
 11. The listeners are more attentive when you speak because you make your point well
+
+# WHAT MAKES US INARTICULATE?
+- Mumbling or speaking softly: The absence of enunciation (articulation) is a big reason for not being articulate. Since articulation is clarity in our thoughts and speech, mumbling is a no-no.
+- Language barriers: Limited vocabulary, long, winding sentences – affect articulation. It can confuse your listeners. So less than ideal level of language skills can deeply affect your ability to be articulate. And this is the most important aspect most people need work on.
+- Trailing off: Articulation is starting strong and ending the same way. Trailing off shows that you are unsure of your ideas
+- Upspeak: Women are more guilty of this than men. When you end your sentences on a high tone to sound like a question, it undermines your ability as a speaker.
+
+# what makes us more articulate?
+1. EXPAND YOUR VOCABULARY
+2. BANISH FILLER WORDS
+3. BE CONCISE  
+4. STRUCTURE AND ARRANGEMENT 
+
+# what increases with age?
+1. experience
+2. character development
+3. knowledge increase
+4. exposure to many situations
+
+*the rate of exposure determine the contents of age not the time passed. time is only the duration. not the experience*
+
+# what new age stuff contribute to this? what are the added areas of exposure?
+1. internet (social media, movies, games)
+2. television
+3. population increase
+
+*the increasing rate of exposure leaves little room for comprehension. the new age are expected to dissapointed by their incapability to form correct ideas about life.*
+*deep analysis of many situations is one way of increasing wisdom*
+
+# what's the benefits of logs?
+1. monitoring
+2. aggregate date and do analysis
+
+# what's the benefit of analysis?
+1. gaining insights
+
+# what are the methods of verbal abuse (attacks)?
+1. provocation
+2. yelling
+3. insults
+
+# what makes a person verbally abusive?
+
+# what do you need to master verbal abuse?
+
+# what's the best way to respond to verbal abuse? what can be done to be immune to all its forms?
+
+# what quick responses that can be used?
+
+# what are the terms relating to psychology and mental processes?
+
+# what we learn from a person's body language?

@@ -41,11 +41,10 @@
 36. what is VECS?
 37. what is a SAN, what is NAS?
 38. what is vSphere Authentication Proxy?
-39. what would happen if we move AD to azure?
+39. what is DRS?
 ----------------------------
 # what are the permissions that Abdo,Ahmed,Islam,Tawfik Need?
-1. 
-
+----------------------------
 # what are the permissions there? what's the location of the permissions?
 ----------------------------
 # What does this manual include?
@@ -322,3 +321,36 @@ Good for scripting on multiple hosts and setting security configuration
 - Assigning Permissions to Standalone ESXi Hosts
 - UEFI Secure Boot for ESXi Hosts
 	- Secure boot is part of the UEFI firmware standard. With secure boot enabled, a machine refuses to load any UEFI driver or app unless the operating system bootloader is cryptographically signed. Starting with vSphere 6.5, ESXi supports secure boot if it is enabled in the hardware.
+- Securing ESXi Hosts with Trusted Platform Module
+	*secure cryptoprocessors that enhance host security by providing a trust assurance rooted in hardware as opposed to software*
+	*The TPM 2.0 chip records and securely stores measurements of the software modules booted in the system, which vCenter Server remotely verifies.*
+- ESXi Log Files
+	Log files are an important component of troubleshooting attacks and obtaining information about breaches. Logging to a secure, centralized log server can help prevent log tampering. Remote logging also provides a long-term audit record
+- To increase the security of the host, take the following measures.
+	1. Configure persistent logging to a datastore. By default, the logs on ESXi hosts are stored in the in-memory file system. Therefore, they are lost when you reboot the host, and only 24 hours of log data is stored. When you enable persistent logging, you have a dedicated activity record for the host
+	2. Remote logging to a central host allows you to gather log files on a central host. From that host, you can monitor all hosts with a single tool, do aggregate analysis, and search log data. This approach facilitates monitoring and reveals information about coordinated attacks on multiple hosts.
+	3. Configure the remote secure syslog on ESXi hosts by using ESXCLI or PowerCLI, or by using an API client
+	4. Query the syslog configuration to make sure that the syslog server and port are valid.
+
+# Securing Fault Tolerance Logging Traffic
+*VMware Fault Tolerance (FT) captures inputs and events that occur on a primary VM and sends them to the secondary VM, which is running on another host. This logging traffic between the primary and secondary VMs is unencrypted and contains guest network and storage I/O data, as well as the memory contents of the guest operating system. This traffic might include sensitive data such as passwords in plaintext. To avoid such data being divulged, ensure that this network is secured, especially to avoid man-in-the-middle attacks. For example, use a private network for FT logging traffic*
+
+# Securing the ESXi Configuration
+*Many ESXi services store secrets in their configuration files. These configurations persist in an ESXi host's boot bank as an archived file. Beginning in vSphere 7.0 Update 2, this archived file is encrypted. As a result, attackers cannot read or alter this file directly, even if they have physical access to the ESXi host's storage*
+
+# Secure ESXi Configuration Requirements
+- ESXi 7.0 Update 2
+- TPM 2.0 for configuration encryption and ability to use a sealing policy
+# Secure ESXi Configuration Recovery Key
+*A secure ESXi configuration includes a recovery key. If you must recover the ESXi secure configuration, you use a recovery key whose contents you enter as a command-line boot option. You can list the recovery key to create a recovery key backup. You can also rotate the recovery key as part of your security requirements. Taking a backup of the recovery key is an important part of managing your secure ESXi configuration. vCenter Server generates an alarm to remind you to back up the recovery key*
+
+# Best Practices for Secure ESXi Configuration
+## Best practices for the recovery key:
+### When you list a recovery key, it is temporarily displayed in an untrusted environment and is in memory. Remove traces of the key.
+- Rebooting the host removes the residual key in memory.
+- For enhanced protection, you can enable encryption mode on the host. 
+### When you perform a recovery: 
+- To eliminate any traces of the recovery key in an untrusted environment, reboot the host. 
+- For enhanced security, rotate the recovery key to use a new key after having recovered the key one time.
+
+*Secure boot is part of the UEFI firmware standard. With UEFI Secure Boot enabled, a host refuses to load any UEFI driver or app unless the operating system bootloader has a valid digital signature*
