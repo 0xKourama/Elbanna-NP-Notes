@@ -1,3 +1,7 @@
+# Mission: Find all the hardening procedures and what's applicable to implement?
+1. what needs to be known?
+- the details of every prodecure
+
 # what are my questions?
 1. what is a distributed virtual switch? what do we use it for? it a centralized switch across all ESXi hosts to allow for networking management
 2. what is the link between NSX and VCenter?
@@ -23,9 +27,21 @@
 22. Fault Tolerance?
 23. vSAN?
 24. vSphere ESX Agent Manager?
-25. VIB?
+25. VIB? what are the acceptance levels?
 26. what's the difference between local and shared datastores?
 27. What are our host types? SuperMicro + Dell
+28. What is a host profile?
+29. What is auto deploy?
+30. what is ESXi Web Proxy?
+31. what is WS-MAN?
+32. what is ESXCLI?
+33. What is the CIM Service?
+34. what is VMCA Mode?
+35. what is Thumbprint mode?
+36. what is VECS?
+37. what is a SAN, what is NAS?
+38. what is vSphere Authentication Proxy?
+39. what would happen if we move AD to azure?
 ----------------------------
 # what are the permissions that Abdo,Ahmed,Islam,Tawfik Need?
 1. 
@@ -284,5 +300,25 @@ Good for scripting on multiple hosts and setting security configuration
 
 ## ESXi Networking Security Recommendations
 - vSphere infrastructure networks are used for features such as vSphere vMotion, VMware vSphere Fault Tolerance, VMware vSAN, and storage. Isolate these networks for their specific functions. It is often not necessary to route these networks outside a single physical server rack.
-- A management network isolates client traffic, command-line interface (CLI) or API traffic, and third-party software traffic from other traffic. This network should be accessible only by system, network, and security administrators. Use jump box or virtual private network (VPN) to secure access to the management network. Strictly control access within this network.
-- 
+- A management network isolates client traffic, command-line interface (CLI) or API traffic, and third-party software traffic from other traffic. This network should be accessible only by system, network, and security administrators. Use jump box or virtual private network (VPN) to secure access to the management network. Strictly control access within this network. 
+
+*VMCA certificates require ESXi 6.5 or later*
+
+# Add Allowed IP Addresses for an ESXi Host
+- restrict traffic, change each service to allow traffic only from your management subnet
+- Incoming and Outgoing Firewall Ports for ESXi Hosts
+- https://ports.vmware.com/
+- disable any NFS rules not in use
+- disable any uncessary services
+- lockdown mode:
+	1. restricts operations to be done through VCenter only
+	2. Direct Console User Interface (DCUI) service is disabled
+	3. Exception user list with admin privileges can access functions normally (DCUI, ESXi Shell and SSH)
+*All access is logged for both strict and normal lockdown mode*
+*Lockdown mode behaviour reference: page 88*
+- add service accounts such as a backup agent to the Exception Users list.
+*The Exception Users list is meant for service accounts that perform very specific tasks, and not for administrators. Adding administrator users to the Exception Users list defeats the purpose of lockdown mode*
+- Best practice is to create at least one named user account, assign it full administrative privileges on the host, and use this account instead of the root account. Set a highly complex password for the root account and limit the use of the root account. Do not remove the root account.
+- Assigning Permissions to Standalone ESXi Hosts
+- UEFI Secure Boot for ESXi Hosts
+	- Secure boot is part of the UEFI firmware standard. With secure boot enabled, a machine refuses to load any UEFI driver or app unless the operating system bootloader is cryptographically signed. Starting with vSphere 6.5, ESXi supports secure boot if it is enabled in the hardware.

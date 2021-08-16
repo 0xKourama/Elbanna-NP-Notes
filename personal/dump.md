@@ -4552,3 +4552,83 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 1. if the component in question in integrated with any service
 
 *one question: WHAT ARE YOU GOING TO DO ABOUT THAT?*
+
+# what are the intelligence types?
+
+# what improves the quality of doing something?
+1. analyzing the techniques of successful peopl
+2. knowing what made them successful
+
+# what's good in teaching?
+1. articulating the information
+2. simplifying the material --> condensing it to simplest forms
+3. finding all components of it
+
+# what are concepts in IT?
+0. Object
+1. load balancing
+2. encryption
+3. client
+4. server
+5. policy
+6. permission
+7. authorization
+8. authentication
+9. connectivity
+10. backup
+11. failover
+12. high availability
+13. network
+14. services
+15. Ports
+16. switching
+17. routing
+18. ethernet
+19. TCP/IP
+20. File
+21. Database
+22. Firewall
+23. redundancy
+24. single point of failure
+25. centralized management
+26. disaster recovery
+27. management plane
+28. data plane
+29. Object oriented
+30. overhead
+31. administration
+32. anomaly detection
+33. lateral movement
+34. privilege escalation
+35. least privilege concept
+36. just in time administration
+37. automation
+38. configuration management
+
+# what are the things done for optimization?
+1. redundancy removal
+2. 
+
+*in IT, it's the skill of dealing with abstract concepts*
+# what makes a person better at that?
+1. using this model in his thinking
+
+# what makes a piece of information more learnable?
+1. actionable
+2. appeals to a need
+
+# what are the stuff that should be allowed in my life?
+1. what's right
+
+# what are the benefits of being articulate?
+1. It helps us express our thoughts more clearly
+2. It makes our thoughts easy to understand
+3. Saves time during meetings
+4. Avoids miscommunication
+5. Cuts out verbosity
+6. Demonstrates leadership skills
+7. Works wonders for your communication skills
+8. Gives you the confidence to speak up in meetings
+9. Can open doors to new opportunities
+10. Helps you perform better at interviews and meetings 
+11. The listeners are more attentive when you speak because you make your point well
