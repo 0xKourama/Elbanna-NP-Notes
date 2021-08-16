@@ -272,3 +272,17 @@ Administration -> Roles -> Privileges
 ## Do not access managed hosts directly:
 - Use the vSphere Client to administer ESXi hosts that are managed by a vCenter Server. Do not access managed hosts directly with the VMware Host Client, and do not change managed hosts from the DCUI
 ## USE DCUI for troubleshooting only
+## Use only VMware sources to upgrade ESXi components
+*The host runs several third-party packages to support management interfaces or tasks that you must perform. VMware only supports upgrades to these packages that come from a VMware source. If you use a download or patch from another source, you might compromise management interface security or functions. Check third-party vendor sites and the VMware knowledge base for security alerts*
+
+## Configure ESXi Hosts with Host Profiles
+Good for scripting on multiple hosts and setting security configuration
+
+## Using the VMware DirectPath I/O feature to pass through a PCI or PCIe device to a virtual machine results in a potential security vulnerability
+
+## Disable the Managed Object Browser
+
+## ESXi Networking Security Recommendations
+- vSphere infrastructure networks are used for features such as vSphere vMotion, VMware vSphere Fault Tolerance, VMware vSAN, and storage. Isolate these networks for their specific functions. It is often not necessary to route these networks outside a single physical server rack.
+- A management network isolates client traffic, command-line interface (CLI) or API traffic, and third-party software traffic from other traffic. This network should be accessible only by system, network, and security administrators. Use jump box or virtual private network (VPN) to secure access to the management network. Strictly control access within this network.
+- 

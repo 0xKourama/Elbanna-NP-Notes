@@ -4550,3 +4550,5 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 
 # what makes a change dangerous?
 1. if the component in question in integrated with any service
+
+*one question: WHAT ARE YOU GOING TO DO ABOUT THAT?*
