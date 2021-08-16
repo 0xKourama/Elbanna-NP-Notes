@@ -4643,7 +4643,21 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 1. EXPAND YOUR VOCABULARY
 2. BANISH FILLER WORDS
 3. BE CONCISE  
-4. STRUCTURE AND ARRANGEMENT 
+4. STRUCTURE AND ARRANGEMENT
+
+# what proper structure?
+## Introduction – this is where you clearly state your point of view (minus, the upspeak, remember)
+
+## Point 1 – this is where you elaborate what you stated in the introduction
+### Supporting point 1 –  this could be an example or an illustration to support your point (or a reason why you said what you said)
+
+## Point 2 – if you have another point to explain your introduction
+### Supporting point 2 – example or illustration for your second point
+
+## Conclusion – this is where you tie your points up and summarise your stand
+
+# what are my points in X topic? what evidence support my points?
+# what's my introduction and conclusion?
 
 # what increases with age?
 1. experience

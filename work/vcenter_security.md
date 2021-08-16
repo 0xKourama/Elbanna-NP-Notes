@@ -354,3 +354,60 @@ Good for scripting on multiple hosts and setting security configuration
 - For enhanced security, rotate the recovery key to use a new key after having recovered the key one time.
 
 *Secure boot is part of the UEFI firmware standard. With UEFI Secure Boot enabled, a host refuses to load any UEFI driver or app unless the operating system bootloader has a valid digital signature*
+
+# vCenter Server Security Best Practices
+## vCenter Server Access Control
+*Do not allow users to log directly in to the vCenter Server host machine. Users who are logged in to the vCenter Server host machine can cause harm, either intentionally or unintentionally, by altering settings and modifying processes. Those users also have potential access to vCenter credentials, such as the SSL certificate. Allow only users who have legitimate
+ tasks to perform to log in to the system and ensure that login events are audited.*
+
+## Restrict Users From Running Commands in a Virtual Machine
+- By default, a user with the vCenter Server Administrator role can interact with files and programs within a virtual machine's guest operating system. To reduce the risk of breaching guest confidentiality, availability, or integrFor improved security, avoid putting the vCenter Server system on any network other than a management network, and ensure that vSphere management traffic is on a restricted network. By limiting network connectivity, you limit certain types of attackity, create a custom nonguest access role without the Guest Operations privilege. See
+
+## Reestablish a named administrator account and assign the Administrator role to that account to avoid using the anonymous vCenter Single Sign-On administrator account (administrator@vsphere.local by default).
+[+] Benefit: an attacker wont know which account to bruteforce. and if he does, he would get a normal account when successful
+
+## Use High RDP Encryption Levels
+On each Windows computer in the infrastructure, ensure that Remote Desktop Host Configuration settings are set to ensure the highest level of encryption appropriate for your environment
+
+## Limiting vCenter Server Network Connectivity
+- For improved security, avoid putting the vCenter Server system on any network other than a management network, and ensure that vSphere management traffic is on a restricted network. By limiting network connectivity, you limit certain types of attack
+- vCenter Server requires access to a management network only. Avoid putting the vCenter Server system on other networks such as your production network or storage network, or on any network with access to the Internet. vCenter Server does not need access to the network where vMotion operates
+
+### vCenter Server requires network connectivity to the following systems:
+- All ESXi hosts.
+- The vCenter Server database
+- Systems that are authorized to run management clients. For example, the vSphere Client, a Windows system where you use the PowerCLI, or any other SDK-based client
+- DNS
+
+*Use the firewall on the vCenter Server. Include IP-based access restrictions so that only necessary components can communicate with the vCenter Server system*
+
+## Examine Client Plug-Ins
+any vulnerable plug-in can lead to code execution with the privileges of the user
+
+# vCenter Server Security Best Practices
+## vCenter Password Requirements and Lockout Behavior
+Administrator Password: Has to be MAX Complexity
+
+## Required Ports for vCenter Server
+- 22 TCP System port for SSHD
+- 53 DNS service
+- 80 TCP vCenter Server requires port 80 for direct HTTP connections. Port 80 redirects requests to HTTPS port 443. This redirection is useful if you accidentally use http://server instead of https:// server. WS-Management (also requires port 443 to be open)
+- 443 TCP The default port that the vCenter Server system uses to listen for connections from the vSphere Client. To enable the vCenter Server system to receive data from the vSphere Client, open port 443 in the firewall. The vCenter Server system also uses port 443 to monitor data transfer from SDK clients. This port is also used for the following services: n WS-Management (also requires port 80 to be open) n Third-party network management client connections to vCenter Server n Third-party network management clients access to hosts
+- 514 TCP/UDP vSphere Syslog Service port for the vCenter Server appliance.
+- 902 TCP/UDP The default port that the vCenter Server system uses to send data to managed hosts. Managed hosts also send a regular heartbeat over UDP port 902 to the vCenter Server system. This port must not be blocked by firewalls between the server and the hosts or between hosts. Port 902 must not be blocked between the VMware Host Client and the hosts. The VMware Host Client uses this port to display virtual machine consoles
+- 1514 TCP vSphere Syslog Service TLS port for the vCenter Server appliance.
+- 2012 TCP Control interface RPC for vCenter Single Sign-On
+- 2014 TCP RPC port for all VMCA (VMware Certificate Authority) APIs
+- 2015 TCP DNS management
+- 2020 TCP/UDP Authentication framework management
+- 5480 TCP Appliance Management Interface Open endpoint serving all HTTPS, XMLRPS, and JSON-RPC requests over HTTPS
+- 6500 TCP/UDP ESXi Dump Collector port
+- 7080, 12721 TCP Secure Token Service
+- 7081 TCP vSphere Client
+- 8200, 8201, 8300, 8301 TCP Appliance management
+- 8084 TCP vSphere Lifecycle Manager SOAP port The port used by vSphere Lifecycle Manager client plug-in to connect to the vSphere Lifecycle Manager SOAP server
+- 9084 TCP vSphere Lifecycle Manager Web Server Port The HTTP port used by ESXi hosts to access host patch files from vSphere Lifecycle Manager server
+- 9087 TCP vSphere Lifecycle Manager Web SSL Port The HTTPS port used by vSphere Lifecycle Manager client plug-in to upload host upgrade files to vSphere Lifecycle Manager server.
+- 9443 TCP vSphere Client HTTPS
+
+# Securing Virtual Machines
