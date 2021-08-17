@@ -429,3 +429,27 @@ $vm.ExtensionData.ReconfigVM($spec)
 *Any service that is running in a virtual machine provides the potential for attack. By disabling system components that are not necessary to support the application or service that is running on the system, you reduce the potential.*
 ## General Virtual Machine Protection
 1. Patches and other protection
+2. Serial ports
+*Serial ports are interfaces for connecting peripherals to the virtual machine. They are often used on physical systems to provide a direct, low-level connection to the console of a server, and a virtual serial port allows for the same access to a virtual machine. Serial ports allow for low-level access, which often does not have strong controls like logging or privileges.*
+
+### Remove Unnecessary Hardware Devices
+*Any enabled or connected device represents a potential attack channel. Users and processes with privileges on a virtual machine can connect or disconnect hardware devices, such as network adapters and CD-ROM drives. Attackers can use this capability to breach virtual machine security. Removing unnecessary hardware devices can help prevent attacks. An attacker with access to a virtual machine can connect a disconnected hardware device and access sensitive information on media that is left in a hardware device. The attacker can potentially disconnect a network adapter to isolate the virtual machine from its network, resulting in a denial of service.*
+- Do not connect unauthorized devices to the virtual machine.
+- Remove unneeded or unused hardware devices.
+- Disable unnecessary virtual devices from within a virtual machine
+- Ensure that only required devices are connected to a virtual machine. Virtual machines rarely use serial or parallel ports. As a rule, CD/DVD drives are connected only temporarily during software installation.
+### Disable Unused Display Features
+Attackers can use an unused display feature as a vector for inserting malicious code into your environment. Disable features that are not in use in your environment
+### Disable Unexposed Features
+VMware virtual machines can work both in a vSphere environment and on hosted virtualization platforms such as VMware Workstation and VMware Fusion. Certain virtual machine parameters do not need to be enabled when you run a virtual machine in a vSphere environment. Disable these parameters to reduce the potential for vulnerabilities.
+VM > Edit Settings > VM Options:
+- isolation.tools.unity.push.update.disable
+- isolation.tools.ghi.launchmenu.change
+- isolation.tools.memSchedFakeSampleStats.disable
+- isolation.tools.getCreds.disable
+- isolation.tools.ghi.autologon.disable
+- isolation.bios.bbs.disable
+- isolation.tools.hgfsServerSet.disable
+### Disable VMware Shared Folders Sharing Host Files to the Virtual Machine
+In high-security environments, you can disable certain components to minimize the risk that an attacker can use the host guest file system (HGFS) to transfer files inside the guest operating system. Modifying the parameters described in this section affects only the Shared Folders feature and does not affect the HGFS server running as part of tools in the guest virtual machines. Also, these parameters do not affect the auto-upgrade and VIX commands that use the tools' file transfers
+### Make sure Copy and Paste Operations Between Guest Operating System and Remote Console are disabled
