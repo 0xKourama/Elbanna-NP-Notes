@@ -411,3 +411,21 @@ Administrator Password: Has to be MAX Complexity
 - 9443 TCP vSphere Client HTTPS
 
 # Securing Virtual Machines
+## Enable or Disable UEFI Secure Boot for a Virtual Machine
+```
+$vm = Get-VM TestVM
+$spec = New-Object VMware.Vim.VirtualMachineConfigSpec
+$spec.Firmware = [VMware.Vim.GuestOsDescriptorFirmwareType]::efi
+$vm.ExtensionData.ReconfigVM($spec)
+```
+## Limit Informational Messages from Virtual Machines to VMX Files
+## Prevent Virtual Disk Shrinking
+*Nonadministrative users in the guest operating system can shrink virtual disks. Shrinking a virtual disk reclaims the disk's unused space. However, if you shrink a virtual disk repeatedly, the disk can become unavailable and cause a denial of service. To prevent this, disable the ability to shrink virtual disks*
+## Virtual Machine Security Best Practices
+1. use templates for deploying hardened Operating Systems
+2. Minimize Use of the Virtual Machine Console
+*Users with access to the virtual machine console have access to virtual machine power management and removable device connectivity controls. Console access might therefore allow a malicious attack on a virtual machine.*
+3. Close down any ununsed ports/services.
+*Any service that is running in a virtual machine provides the potential for attack. By disabling system components that are not necessary to support the application or service that is running on the system, you reduce the potential.*
+## General Virtual Machine Protection
+1. Patches and other protection

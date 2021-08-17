@@ -4698,3 +4698,10 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 # what are the terms relating to psychology and mental processes?
 
 # what we learn from a person's body language?
+
+# what are the effects of the objective technique?
+1. very firm
+2. pulls attention to the max
+3. requires the other person to squeeze his brain for answers
+4. makes the other person fearful when you are demanding an answer or explanation in a very direct way
+5. it's good to cut down the fat to just the facts. leaves very little room for wandering.
