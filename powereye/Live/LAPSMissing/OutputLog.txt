@@ -1,1 +1,1 @@
-08/05/2021 12:34:14 [*] LAPS found on all contacted hosts.
+08/18/2021 02:17:20 [*] LAPS found on all contacted hosts.
