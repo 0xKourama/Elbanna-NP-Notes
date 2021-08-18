@@ -4705,3 +4705,68 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 3. requires the other person to squeeze his brain for answers
 4. makes the other person fearful when you are demanding an answer or explanation in a very direct way
 5. it's good to cut down the fat to just the facts. leaves very little room for wandering.
+
+# what are the main sources of power?
+0. what's right (only if understood by power holders)
+1. God
+2. Society
+	1. needs
+	2. trends
+3. Survival Needs
+	1. Job
+	2. Marriage
+	3. health
+4. the unknown
+
+# what are the sources of stress at work?
+1. taking orders
+	1. business needs
+	2. manager vision
+
+# what are the areas of body that respond to stress?
+
+# what makes people use defense mechanisms?
+
+# what embarasses people?
+
+# what makes a person trusted?
+
+# what makes something stressful?
+
+# what are the classes of objects in my brain?
+# what do we gain from building a strong foundation?
+1. scaling out easily
+2. flexiblity
+
+# what's the good thing about oscillation?
+1. identifying extremes to find balance
+
+# what are stuff that we learn in a company?
+1. operations
+2. people
+3. power flow
+
+# what convinces people?
+1. something makes sense
+2. seems like a good investment of their time and effort
+	allign with their needs/wants
+
+# what's the importance of context?
+1. track the development in a given situation and their impact
+	1. the positions of every party in it
+2. understanding the winds & tides of change
+	1. the fluctuations in the world
+3. seeing the big picture
+
+# what are the processes of learning?
+1. listing the objects
+2. exploring their attributes and their functionalitites
+3. exploring how objects interact together in their system
+
+# what are the components of a system?
+1. processes
+2. bodies
+
+# what is a concept?
+
+https://www.skillsyouneed.com/learn/learning-approaches.html

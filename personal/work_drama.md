@@ -295,3 +295,6 @@
 6. cute
 7. incredibly smart
 8. "you're all wrong. This is not the right way. And I'm proving it"
+
+# what are my sources of power?
+1. 

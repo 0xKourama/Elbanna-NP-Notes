@@ -2,6 +2,16 @@
 1. what needs to be known?
 - the details of every prodecure
 
+# what are the questions on every hardening technique?
+1. what does this feature do?
+	- what does protect against?
+2. what are the procedures to get it done?
+3. what are the requirements to apply it?
+4. what are the consequences of applying it?
+5. what can we do to gaurantee the safety of applying it?
+	*snapshotsssssssss*
+	- what testing can be done?
+
 # what are my questions?
 1. what is a distributed virtual switch? what do we use it for? it a centralized switch across all ESXi hosts to allow for networking management
 2. what is the link between NSX and VCenter?
@@ -42,6 +52,10 @@
 37. what is a SAN, what is NAS?
 38. what is vSphere Authentication Proxy?
 39. what is DRS?
+40. what is vSGX?
+41. what is EFI firmware?
+42. vSphere Trust Authority?
+43. 
 ----------------------------
 # what are the permissions that Abdo,Ahmed,Islam,Tawfik Need?
 ----------------------------
@@ -453,3 +467,5 @@ VM > Edit Settings > VM Options:
 ### Disable VMware Shared Folders Sharing Host Files to the Virtual Machine
 In high-security environments, you can disable certain components to minimize the risk that an attacker can use the host guest file system (HGFS) to transfer files inside the guest operating system. Modifying the parameters described in this section affects only the Shared Folders feature and does not affect the HGFS server running as part of tools in the guest virtual machines. Also, these parameters do not affect the auto-upgrade and VIX commands that use the tools' file transfers
 ### Make sure Copy and Paste Operations Between Guest Operating System and Remote Console are disabled
+--------------------
+*When you encrypt an existing virtual machine, you need at least twice the space that the virtual machine is currently using*
