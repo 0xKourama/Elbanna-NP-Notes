@@ -4770,3 +4770,14 @@ Critical thinking can be defined as ‘the ability to consider a range of inform
 # what is a concept?
 
 https://www.skillsyouneed.com/learn/learning-approaches.html
+
+-------------------------------
+### What's your idea?
+Add a description of your idea
+
+### What will this improve?
+Add a description of what this will improve...think about the customer you are helping (new users, our dev team, the QA team, etc...)
+
+### What support do you need?
+List out who you need help from (design, QA, PM, another developer, etc...) in order to complete this project.
+-------------------------------
