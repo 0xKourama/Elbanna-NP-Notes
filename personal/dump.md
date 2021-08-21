@@ -5115,3 +5115,19 @@ Remember the Titans (2000)
 1. hustle you for your money
 2. exploit your ingnorance
 3. more money ... less effort
+
+# what increased my suffernig back then?
+1. taking too long to accept reality
+2. being too deep in my emotional world
+
+# what makes fighters size up one another?
+1. figuring out what to do
+2. knowing what the enemy is capable of
+
+# what happens in training?
+1. studying the nature of the skill
+2. understanding the details
+3. finding the components
+4. finding the dependencies
+5. finding and overcoming the obstacles and limitations
+
