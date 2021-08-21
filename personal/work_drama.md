@@ -297,4 +297,22 @@
 8. "you're all wrong. This is not the right way. And I'm proving it"
 
 # what are my sources of power?
-1. 
+1. powershell
+2. linux
+3. palo alto administration
+4. cybersec
+5. technical power
+
+# what are my duties and responsibilities?
+1. understand complex technical issues and manage them within a fast-paced business environment
+2. documenting security certification
+3. identifying current and emerging technology issues including security trends, vulnerabilities & threats
+4. threat intelligence
+5. sourcing and implementing new security solutions to better protect the organization
+6. conducting proactive research to analyze security weaknesses and recommend appropriate strategies
+7. research weaknesses and find ways to counter them
+8. find cost-effective solutions to cybersecurity problems
+9. develop best practices and security standards for the organization
+10. Engineering, implementing and mointoring security measures for the protection of computer systems, networks & information
+11. identifying and defining system security requirements
+12. prepare and document standard operating procedures and protocols

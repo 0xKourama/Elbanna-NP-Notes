@@ -4781,3 +4781,74 @@ Add a description of what this will improve...think about the customer you are h
 ### What support do you need?
 List out who you need help from (design, QA, PM, another developer, etc...) in order to complete this project.
 -------------------------------
+
+# what's making me too lazy to finish up the document?
+1. feeling i want to relax
+2. feeling i want to lay back
+	
+# what's making IT take the least of my attention?
+1. being attracted to leadership and life wisdom more
+2. 
+
+# what are the boosters for mastering IT and security?
+1. the pleasure of mastery
+2. the dominance of it
+3. hacking through many layers and mastering multiple areas in IT is cool
+	*the fantasy of toying with multiple technologies and them integrated together the way hackers do*
+4. 
+
+# what lessons have I learned from my life?
+
+# what lessons have we learned from history?
+1. forcing people just doesn't work --> convincing is better --> them finding out the truth themselves is even better
+
+# what are my fantasies?
+1. understanding as much dimensions as I can and overwhelming life's challenges
+2. standing up to evil and stopping it --> crushing it
+3. sexual domination
+
+# what are the dangers of anger?
+1. it overwhelms the mind and inhibits clear thinking
+2. it energizes us
+3. it can make you displace
+*ultimately, it is root in the events that we don't like and want to change*
+[+] asking what made this event happen is a way we can switch to thinking and resolution
+
+# what do I hate so bad?
+1. what I don't understand
+2. stubborness
+3. fixing something I didn't ruin
+4. 
+
+# what's reasonably expected in the vcenter hardening task?
+1. not all measures can be applied
+2. abdelrahman and hussein would have more work with me
+3. a lot of learning is expected for both the vmware team and me
+4. 
+
+# what's funny about me?
+1. being benignly out of the norm
+
+# what makes me out of the norm?
+1. being too straightforward
+2. being too simple
+3. being dreamy
+4. not joking at all
+5. not knowing arabic movie expressions
+6. having radical views
+
+# what are the downsides of complexity?
+1. 
+
+# what are the main causes of war?
+1. Economic Gain
+2. Territorial Gain
+3. Religion
+4. Nationalism
+5. Revenge
+6. Civil War
+7. Revolutionary War
+8. Defensive War
+
+# what do people do when stating motives?
+1. they mask the bad motives with good, more noble ones
