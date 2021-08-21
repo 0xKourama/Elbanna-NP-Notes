@@ -5004,3 +5004,114 @@ Remember the Titans (2000)
 1. proof that humans are worse than jinn?
 2. rebellion against God?
 3. vengeance? devil can blame us for his future misery ... since he's already desperate for forgiveness from God
+
+# what repeats in life?
+
+
+# what are the needs
+1. Physiological needs:
+	1. food and water
+	2. sufficient rest
+	3. clothing
+	4. shelter
+	5. overall health
+	6. reproduction
+2. Safety needs:
+	1. protection from violence and theft
+	2. emotional stability and well-being
+	3. health security
+	4. financial security
+3. Love and belonging needs:
+	1. friendships and family bonds—both with biological family (parents, siblings, children) and chosen family (spouses and partners)
+	2. Physical and emotional intimacy ranging from sexual relationships to intimate emotional bonds are important to achieving a feeling of elevated kinship.
+	3. membership in social groups contributes to meeting this need, from belonging to a team of coworkers to forging an identity in a union, club, or group of hobbyists.
+4. Esteem needs:
+	1. Self-respect (the belief that you are valuable and deserving of dignity)
+	2. and self-esteem (confidence in your potential for personal growth and accomplishments).
+	*Esteem which is based on respect and acknowledgment from others*
+	*and esteem which is based on your own self-assessment*
+5. Self-actualization needs:
+	1. Education
+	2. skill development
+
+# what's my life story?
+1. polite lovely kid
+2. raging father
+3. amazing mother
+4. crazy sister
+5. inspriring grandfather
+6. amazing grandmother
+7. cool uncle
+8. supportive aunt
+9. kind but weak aunt
+10. maggot uncle
+11. pessimist uncle
+12. konafa uncle
+13. dead crazy uncle
+14. loved as a kid
+15. inferiority complex at school
+16. just one friend
+17. victory and fake friends
+18. tired of swimming and wanting to achieve at petty school or sports
+19. basketball: more show, train alone for greatness, win the crowd, soar, smooth and swagger, carry the team, hit game winners ... it's so amazing!
+20. thanweya 3amma part #1: cool marks
+21. thanweya 3amma part #2: dad fight --> no droos -> league of legends with gomgom
+22. thawra? really? this is fucking eventful XD
+23. final stand at tattoo: let's bring it home ... but no high expectations
+24. dad cries? let's get you into engineering rather than CS. lots of struggle
+	- his regret forced him to do wonders to make me an engineer ... ego didn't let him fall back on his word though. not that it would have mattered
+25. Helwan? what the fuck is this place?
+	the ugliness and lack luster of the place was a disappointment of ENGINEERING! fuck that miserable place.
+	*after the struggle in thanweya 3amma, you would thing you would get into heaven! but fuck no!*
+26. Lot's of good movies about life. Lots of gaming ... I just don't give a fuck about anything. all of that struggle is just meaningless.
+27. k. yasser corners me into taking care of this shit. goddammit ... here we go again. but it should be cool. we had a shit load of fun. hahahahahahaha
+28. let's get my prayers there. thank God for what I have <3
+29. let's get this forma going. get that confidence and willpower going
+30. my first love, really? just fuck that ... no time for that bullshit
+31. athiesm? we fighting that too :D
+32. build my brain? we doing that too nigga!
+33. fucked up family? we fixing that shit too!!! get them self-help books!!
+34. achieving something amazing in gaming? tera ... bring that +13 dual swords nigga!!!!!
+35. humanities? psychology has many answers!!! we going for that nigga!!!!!! :D
+36. low energy levels? get them nutrition books nigga!!!!!!!!!
+37. 7egama? we doing that shit nigga!!!!! cold showers? we on that shit nigga?
+38. friends? we blocking them posing motherfuckers ... wait hold on ... they ain't posing ... their misery isn't bad as mine that's all. I'm not fucking with those normal ass people. where them depressed losers at?
+39. wisdom? we be needing that shit son. ma nigga H where you at?
+40. graduation? we going for that
+41. gomgom wants to do call center? we riding with the homie till we die!!!!!
+42. vodafone UK. we fighting that good fight nigga!!
+43. crazy TL and a corrupt company? ... we OUT nigga!!!!!!!
+44. course with a weird girl that wants to marry me? I aint ready ... and you ain't my type ... and you hella pushy .. and I am not rude enough to tell you to GET THE FUCK OUT!!!!!!!!!
+44. depressed of world corruption? becoming one with the universe and getting closer to god? becoming one with God? becoming God? ... hold your hourses bruh ... you need to get your ass back on the groud bro cuz you're going into banana planet.
+45. goddammit here we go again. we are at dear rock bottom. we need that comeback... GABR!!!!!!!! bring your ass back!!!!!!!!!!!!!!!!!!!! we got shit to do niggaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+46. teleperformance ... am crazy but am tryna get my shit under control
+47. we switching to part time and studying and looking for a job. well .... mostly anime and gaming ... maybe studying.
+48. we becoming english teachers nigga XDDDDD goddamit we lost as fuck bro hahahahahahahahahahahha
+49. crossed max limit in english? goddamit we good at something. all them books I guess. that sense of mastery and superiority is kinda good ma nigga.
+50. Centro? goddamit there's a fucking interview at last! can we do it?
+51. desperate. don't know shit about any of this? what the fuck is active directory?
+52. we accepted? am fighting for my life on this job. all this warrior shit is going into your faces :D
+53. sister is crazy ... I'm kicked out. I guess having a regular life isn't an option ........ hahahahahahahahahaha. Im paying rent. I ain't no freeloader. we warriors ... and warriors have honor.
+54. I hate this shit so bad .... what's the therapy shit about? we need that ... we ain't gonna be at work and get married without first recovering from that deep psychological pains we went in.
+55. that doctor is the bees knees. I love her. we bringing it back this time inshallah ... let's fucking go!
+56. no sysadmin? nothing? cybersec ... here we fucking GO!!!!!!!!!!!!
+57. get that desk, get them screens ... we gon be fighting!!!!!!!
+58. mo5abrat. we need your shit.
+59. k yasser: you're going for that OSCP. and you have a deadline :D ... goddammit who the fuck do these guys think I am?
+60. a girl walks into my life ...... athiest and feminist ... during mo5abrat and OSCP? ... what else can I handle? :D ... oh wait, make a project with abdelrahman ... just in case you weren't busy enough.
+61. we fighting athiesm and feminisim and the OSCP and dealing with mo5abrat all in one go. Goddammit we got only one life. we're spending that energy :D
+61. oh hey gabr .... since you got that extreme momentum going into the OSCP ... we figured we pull you back to sysadmin. ... really?! FUCK YOU AND CENTRO. GO TO HELL YOU SONS OF BITCHES!!!!!!!!!!!
+62. oh you're becoming muslim? a gift from the heavens?!!!!!!!!
+63. oh ... so you were a whore? .... thanks for letting me know ... just what I needed before going into the OSCP
+64. I need to get rid of you... you're just a pain in the assssssss man
+65. oscp fail .... well ... we tried.
+66. sysadmin vacancy? nope :D .... network vacancy? also nope :D .... I came all the way back to be disresptected right? hahahahahahah
+67. we got that cyber sec gig? .... hold up ... wait ... goddamit no that's not it. hahahahahahhahahahahahaha
+68. art of negotiation? we need that in that marriage project. hold on! now that's the upgrade :D :D :D let's GO!!!!!!!!!!!!!!!!!
+69. get her back? ... hold on ... seems God has something else in mind :D there you go :D I love you GOD!!!!!!!!! <3
+70. you're getting married bro :D dreams are starting to come true :D
+
+# what do buyers want?
+1. hustle you for your money
+2. exploit your ingnorance
+3. more money ... less effort
