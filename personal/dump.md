@@ -1,3 +1,12 @@
+# what is my mission?
+1. achieve mastery of everything
+	1. achieve understanding of everything
+		1. find the common areas of everything
+			1. everything has attributes
+				1. a purpose
+				2. a state
+				3. a function
+
 # self-negotiation
 1. Remove self-resistances by understanding yourself and being receptive to what is has to say
 2. Acknowledging your shadow self and negative emotions other than letting them fester like an infection while unexpressed
@@ -4852,3 +4861,146 @@ List out who you need help from (design, QA, PM, another developer, etc...) in o
 
 # what do people do when stating motives?
 1. they mask the bad motives with good, more noble ones
+
+# what is failure's role?
+1. teach you what's missing
+
+# what makes people which they can predict the future?
+1. undo mistakes using the lessons they've learned
+
+# what makes people cheer the underdog?
+1. seeing him win against odds gives them hope
+2. 
+
+# what does hope do?
+1. keeps you going
+2. make you hold your ground
+
+Anger Management Workbook for Men
+
+# what are my tasks?
+1. be good at my job
+2. get married and all that entails
+3. be good in bed
+4. be a good husband
+5. be a good father
+6. buy a good car & be a good driver
+
+# what forces us to upskill in IT?
+1. the growing pace of the field
+2. the huge number of graduates invading the workspace
+
+# what are the expected changes in the world?
+1. technology-based work increasing
+2. 
+
+# what do hackers exploit?
+1. convenience
+2. trust
+3. ignorance
+4. lazyness
+5. operation functionality
+
+# what is the use of a mask?
+1. conceal true intentions
+
+# what declines with age?
+
+# what are movies on leadership?
+1. 12 angry men
+2. patton
+3. The Social Network
+4. The Bridge Over the River Kwai
+5. Apollo 13
+6. It's A Wonderful Life
+7. Gladiator
+8. Band of Brothers
+9. The Wire
+10. MCFARLAND, USA
+11. THE REVENANT
+12. THE PURSUIT OF HAPPYNESS
+13. MADE IN DAGENHAM
+14. KUNG FU PANDA 3
+15. Tesla
+16. Erin Brokovich
+17. Coded Bias (2020)
+18. 42
+19. Hidden Figures
+20. Big
+21. The Intern
+22. Moneyball
+
+# what are inspiring movies?
+1. The Shawshank Redemption
+2. Rocky
+3. 127 Hours
+4. Into The Wild
+5. Schindler's List
+6. Amelie
+7. The World's Fastest Indian
+8. Forrest Gump
+9. The Green Mile
+10. A Beautiful Mind
+11. Life of Pi
+12. The Pianist
+13. Rush
+14. Life is Beautiful
+The Greatest Game Ever Played
+The Blind Side
+The Aviator
+The Imitation Game
+Good Will Hunting (1997)
+Million Dollar Baby (2004)
+Hotel Rwanda (2004)
+Scent of a Woman (1992)
+Searching for Bobby Fischer (1993)
+39. An Inconvenient Truth (2006)
+Coach Carter (2005)
+Invincible (2006)
+Remember the Titans (2000)
+
+# what are the sources of ideas?
+1. movies
+2. television
+3. internet
+	1. youtube
+	2. social media
+		1. facebook
+		2. twitter
+		3. tiktok
+		4. instagram
+4. school
+5. 
+
+# what makes a human hate God?
+1. taking orders
+2. not seeing him
+3. not solving all his problems
+4. not making his life easy
+5. testing him
+6. being stronger than jim
+7. not seeing reason for his creation
+8. thinking he's a sadist
+9. thinking he's unjust
+10. thinking he's playing
+*summarized in thinking bad of him*
+
+# what does a human gain from denying God's existence?
+1. less rules
+2. no fear of punishment in the afterlife
+3. less worry
+4. less questions
+5. less annoyance of have someone stronger than him as a creature
+
+# what makes fighting God pathetic?
+1. God created everything ... e v e r y .... t h i n g
+2. God gave us all our power and abilities (brain, technology)
+3. God awaits us after death
+4. denying the truth is just pathetic ... challenging your creator is more pathetic
+5. finding joy in evolving and giving yourself hope that you can beat God is waaay more arrogant and shallow and pathetic.
+6. thinking you're on that level of competing is pathetic
+
+# what does the devil gain from getting us?
+1. proof that humans are worse than jinn?
+2. rebellion against God?
+3. vengeance? devil can blame us for his future misery ... since he's already desperate for forgiveness from God
