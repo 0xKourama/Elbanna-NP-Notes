@@ -317,63 +317,14 @@
 11. identifying and defining system security requirements
 12. prepare and document standard operating procedures and protocols
 
-# cybersecurity books:
-1. CULT OF THE DEAD COW
-This is a book by Joseph Menn and is one of the oldest books which serves as a major source of information for people. This is one of the best books to learn cyber Security for beginners which briefs all about how a progressive approach to Cybersecurity can help a nation grow amazingly.
-
-2. PRACTICAL MALWARE ANALYSIS
-Michael Sikorski’s work often termed as one of the best Cyber Security books, takes the readers deep into the world of cybercrimes and the solutions to them. Readers can know the keys to setting up safe virtual environments so that no pirates can claim access to the system. This serves as another top Cybersecurity reference book.
-
-3. THE CYBER EFFECT
-Mary Aiken’s work draws the attention of the reads to her experience of being a psychologist in the cyber forensic department. She brings the attention of readers to how the behavioral pattern of human beings is evolving due to the interference of cyberspace in life. This literature provides the basis for new learners to get in the depths of this concept and is, therefore, one of the best books to learn cybersecurity for beginners.
-
-4. THE ART OF INVISIBILITY
-This is one of the classics by Kevin Mitnick which becomes one of the best books to read for Cybersecurity. The book can undoubtedly entice you by letting you know how big companies make money by spying on our mundane moves.
-
-5. GHOST IN THE WIRES
-This book is by Kevin Mitnick that not just stands out in the list of top cybersecurity books but is also an enjoyable thriller read. This is a book that brings the readers a true and heavily interesting story. He enlists his experience of violating cyber securities of huge brands such as Motorola, Sun Microsystems, etc. This can be referred to as a memoir of a proficient hacker.
-
-6. CYBER WARS
-You can know how leveling up the security protocols of the companies can help in the development of the nation. It is one of the most highly recommended Cyber Security books for beginners to realize the vitality of Cybersecurity.
-
-7. COUNTDOWN TO ZERO-DAY
-This book is by Brian Craig who has been a legal analyst. This is one of the must-read Cyber Security books which enlightens readers regarding the laws associated with Cybersecurity.
-
-8. HACKING – THE ART OF EXPLOITATION
-This is another popular book by Kevin Mitnick where he throws light on the importance of being conscious in this era of data theft. This is surely one of the good books on Cyber Security. The beginning of his career was with a post of a novice IT employee. With his vastly growing knowledge in the field, he went on to be the world’s most notorious hacker. Filmmakers are even attempting to turn this amazing thriller read into a movie. This is one of the best Cybersecurity books for beginners wherein they can not only learn about a true happening in the Cybersecurity history but can also relish the thrill element in it.
-
-9. THE CODE BOOK
-This book by Simon Singh brings forth the importance of encryption and how they are responsible for shaping the world since the ancient days. The Code Book is one of those cybersecurity basic books that you should read as soon as possible.
-
-10. SOCIAL ENGINEERING
-It is a book by Christopher Hadnagy. This book made the term “social engineering” quite popular. Amongst many cybersecurity books for beginners, this one has made it amazing. This book tells us why cybersecurity is more of a social issue than a technical one.
-
-11. THE HACKER PLAYBOOK 3
-This book by Peter Kim is a practical Guide to Penetration Testing. The author has been quite a well-known expert in the industry of Cybersecurity. Hence, this work of him can be considered to be one of the best books to learn about Cybersecurity.
-
-12. NO MORE MAGIC WANDS
-George Finney has let the secret out for the world through his work, where security will be taught to the readers with the metaphors referring to fairy tales. This is one of the best books about Cybersecurity.
-
-13. METASPLOIT
-David Kennedy’s book reveals all about the Metasploit Project. This is one of the must-read cybersecurity books which can help readers know more about the testing of the exploits.
-
-14. THE CYBERSECURITY DILEMMA
-Ben Bunchan’s work is a must-read for beginners to have encapsulated information about the industry. This has been one of the best selling Cyber Security books.
-
-15. DARK TERRITORY
-Fred Kaplan has done a wonderful work bringing this book to exist. The alarming issue of cyberwar is well-detailed in this book.  This counts as one of the top Cyber Security books in spreading awareness about the cyberwar.
-
-16. WORLD-CLASS RISK MANAGEMENT
-This book by Norman Marks owns all the brownie points to serve as a guide for entrepreneurs, in managing cyber risks. If you are looking for books to learn about Cybersecurity, then your search must end here.
-
-17. WOMEN IN CYBERSECURITY
-Good cybersecurity books serve you detailed information, and this masterpiece is one of them. This book has served as a relevant source of information for people. If the authenticity of the information matters most to you, then this read is exactly what you need. You can come across many cybersecurity books, but we would recommend you to not skip this cybersecurity essentials book if you truly look forward to learning more about the industries.
-
-18. HACKING EXPOSED 7
-It is a book which is written by George Kurtz, Stuart McClure, and Joel Sacmbray who are well-known cybersecurity  experts on a global level. They have experienced hacking through schooling in academics. This book is more of an informative read, enabling the readers to widen their perspective about cyber securities and is a good book on cybersecurity.
-
-19. THE CERT GUIDE TO INSIDER THREATS
-Here comes another must-read in the list of the best Cyber Security books for beginners in the world. This is one of the top books on cybersecurity which is written by Andrew P. Moore and Dawn M. Cappelli. This book reveals the most overshadowed part of the industry and that is the “Insider Threat”.
-
-20. THREAT MODELLING
-Adam Shostack, being an expert in Microsoft Security Development, has done justice in highlighting building security. This top cybersecurity book is a strong recommendation for the people who are linked or look forward to associating themselves with the cybersecurity industry. Adam has intuitively introduced such a vital topic, highlighting the matter adequately.
+# what's the bad shit for tawfik?
+1. being tasked with soloing the NSX-T
+2. being outclassed in some stuff by me
+3. having to handle management of the team
+4. being disrespected in front of the team
+5. being shown he's less in every interaction
+6. thinking he's a source of blessing for me and me biting his hand
+7. having prostate problems
+8. taking care of his family
+9. doing interviews on the daily
+10. handling stupid tickets

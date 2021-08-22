@@ -1,3 +1,25 @@
+# cybersecurity books:
+1. CULT OF THE DEAD COW
+2. PRACTICAL MALWARE ANALYSIS
+3. THE CYBER EFFECT
+4. THE ART OF INVISIBILITY
+5. GHOST IN THE WIRES
+6. CYBER WARS
+7. COUNTDOWN TO ZERO-DAY
+8. HACKING – THE ART OF EXPLOITATION
+9. THE CODE BOOK
+10. SOCIAL ENGINEERING
+11. THE HACKER PLAYBOOK 3
+12. NO MORE MAGIC WANDS
+13. METASPLOIT
+14. THE CYBERSECURITY DILEMMA
+15. DARK TERRITORY
+16. WORLD-CLASS RISK MANAGEMENT
+17. WOMEN IN CYBERSECURITY
+18. HACKING EXPOSED 7
+19. THE CERT GUIDE TO INSIDER THREATS
+20. THREAT MODELLING
+
 # what is my mission?
 1. achieve mastery of everything
 	1. achieve understanding of everything
@@ -5036,9 +5058,49 @@ Remember the Titans (2000)
 
 # what's my life story?
 1. polite lovely kid
+	- what made choose to be so?
+	[+] being weak doesn't leave you much options
 2. raging father
+	- what made him so?
+	[+] maybe feeling disrespected made him so
+	[+] maybe feeling hated by his wife and children made him so
+	[+] maybe moving was stressful for him
+	[+] maybe spending a shit ton of money
+	[+] maybe not being convinced of language schools
 3. amazing mother
+	- what made her so?
+	[+] pushing for development in education
+	[+] pushing for development in sports
+	[+] pushing for me to be an engineer
+	[+] pushing me for that therapist
+	[+] giving me the gold
+	[+] teaching me how to drive
+	[+] pushing me for IELTS
+	[+] pushing me to be a warrior
+	[+] pushing me to be a better man
+	[+] respecting and honoring me
+	*pushing me to be a better man*
 4. crazy sister
+	- what made her so?
+	[+] maybe not being as gifted as me
+	[+] maybe not receiving the same spoiling as me
+	[+] being a girl
+	[+] having a stressful childhood
+	[+] being outsmarted by me
+	[+] having me control over her in adolesence
+	[+] having a raging father
+	[+] having no room of her own
+	[+] being disappointed in thanweya 3amma
+	[+] having to quit swimming before achieving anything
+	[+] having a period
+	[+] being not as genius as me
+	[+] having so many fears
+	[+] having no privilege to go out
+	- what made me hate her so much?
+	[+] having too much shit to handle
+	[+] her provocation was strong
+	[+] her jealousy was very strong
+	[+] 
 5. inspriring grandfather
 6. amazing grandmother
 7. cool uncle
@@ -5131,3 +5193,72 @@ Remember the Titans (2000)
 4. finding the dependencies
 5. finding and overcoming the obstacles and limitations
 
+# what do I hate in athiesm?
+1. childishness
+2. endless dispute
+3. removal of religion and humans delving into the pleasures of sex like animals
+4. 
+
+# what makes me hate adultery so much?
+1. infedelity is brutal
+2. big jealousy force within me
+
+# what are my worst nightmares?
+1. losing faith
+2. being cuckolded
+3. losing my mind
+4. 
+
+# what made hagar such a bully?
+1. she was a master of provocation ()
+2. you can't beat her. she fights to hurt you (went for my eye)
+3. she can kill you and get away with it (she's got the papers for it)
+
+# what are the positives of hiding you intentions?
+1. your enemies don't know your next move. and so, they won't interfere with what you want to do. that also gives more to think about and predict
+
+# what can be done to improve prediction?
+1. studying the context
+2. 
+
+# what are the positives of talking less?
+1. we have more questions than answers. we have more ignorance than knowledge. so what makes us talk that much?
+2. 
+
+# what made me love God that much?
+1. his blessings
+	- giving me a beautiful face
+	- giving me a beautiful mother
+	- giving me lots of abilities
+	- giving me a beautiful wife inshallah <3
+	- giving me everything
+
+
+# what were my warrior spirit triggers?
+1. warrior moments in anime
+2. warrior moments in movies
+3. epic music
+4. warrior moments in sports
+
+# what made me love guitar solos so much?
+1. the moment you shine
+2. your time
+3. the peak of self-expression
+4. breaking your limits
+5. going on your rythm
+6. ecstacy
+7. 
+
+# what's stopping me from going full speed?
+1. wanting a smooth stress less life :D
+2. not believing in having to struggle ... success should come easy
+3. finding the smart ways to do something is the way to go :D
+
+# what rapes plans?
+1. thinking they are perfect
+2. 
+
+# what the best way of dealing with a lifelong pain?
+1. accepting it
+2. finding ways to circumvent it
+3. memorizing its patterns
