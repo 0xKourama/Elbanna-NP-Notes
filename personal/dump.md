@@ -5262,3 +5262,67 @@ Remember the Titans (2000)
 1. accepting it
 2. finding ways to circumvent it
 3. memorizing its patterns
+
+# what makes movies/anime/series/youtube/games/porn/music/food more exciting and rewarding than working?
+
+
+# what are the sources of pleasure?
+1. motion pictures
+2. games
+3. porn/sex
+4. food
+5. understanding
+6. mastery
+7. defeating your challenges
+8. doing something meaningful
+9. being legendary
+10. ease
+
+# what makes something rewarding?
+
+# what rewards do we get from being good at what we do?
+
+# what are the required items for access?
+
+# what causes a lockout situation?
+1. playing in access / connectivity controls
+
+# what motivates us?
+1. reward/punishment
+2. survival
+*positive and negative*
+
+# what are the networking services?
+1. switching
+2. routing
+3. access control
+4. firewalling
+5. QoS
+
+# what do we get from NSX?
+1. software networking flexibility
+2. zero-trust model
+3. scalability with business growth
+
+# what access controls do we have in PA
+1. app-based access control
+2. port-based access control
+3. ip-based access control
+4. user-based access control
+5. zone-based access control
+6. device-based access control
+
+# what are the benefits of automation?
+1. speed
+2. task complete breakdown
+3. less human error
+
+# what are the benefits of programability?
+1. flexibility
+2. automatability
+
+# what does each interface type do?
+1. vlan
+2. loopback
+3. layer 2
+4. layer 3
