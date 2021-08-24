@@ -5326,3 +5326,21 @@ Remember the Titans (2000)
 2. loopback
 3. layer 2
 4. layer 3
+
+# what makes attention to detail important?
+*ability to maintain high accuracy and thoroughness when executing tasks*
+1. increase effectiveness/productivity
+2. decrease error
+3. high quality work
+
+# what are the sub-skills?
+1. Time management skills
+	*Time management is your ability to split time between different projects or tasks for maximum productivity. Excellent time management skills will increase your efficiency and allow you to contribute more meaningfully to the company bottom line.*
+2. Analytical skills
+	*Analytical skills help you collate and analyze the information about a problem to provide a solution. With good analytical skills, it becomes easy to proffer solutions to issues that arise while working on projects. Analytical skills include research skills, creativity, hypothesis formation, and problem-solving.*
+3. Active listening
+	*Active listening is the ability to focus on what someone says during a conversation for improved understanding. An active listener processes a speaker’s words carefully before formulating a response. Being an active listener is important for effective communication. It can also improve interpersonal relationships because it gives the person speaking to you the feeling that you value their ideas.*
+4. Organizational skills
+	*Organizational skill is related to your ability to use the physical space, energy, and mental power to achieve desired results. These skills range include the ability to keep track of projects, maintaining an uncluttered workspace, and efficient prioritization.*
+5. Observational skills
+	*Observation is the ability to direct your focus to an object or individual to gather information. Powerful observational skills allow you to identify unique qualities and details about people and improves your interactions and relationships.*
