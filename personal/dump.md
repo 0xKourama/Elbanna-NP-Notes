@@ -5344,3 +5344,4 @@ Remember the Titans (2000)
 	*Organizational skill is related to your ability to use the physical space, energy, and mental power to achieve desired results. These skills range include the ability to keep track of projects, maintaining an uncluttered workspace, and efficient prioritization.*
 5. Observational skills
 	*Observation is the ability to direct your focus to an object or individual to gather information. Powerful observational skills allow you to identify unique qualities and details about people and improves your interactions and relationships.*
+
