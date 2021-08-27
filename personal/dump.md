@@ -5345,3 +5345,176 @@ Remember the Titans (2000)
 5. Observational skills
 	*Observation is the ability to direct your focus to an object or individual to gather information. Powerful observational skills allow you to identify unique qualities and details about people and improves your interactions and relationships.*
 
+# what are the reasons I am not competing for #1?
+1. not planning well
+2. not wanting things enough
+	- not feeling the reward as worth it
+	- seeing chasing things in life as play
+3. not feeling smart/competent enough
+
+# what motivates me to do my best?
+1. seeing the end result as satisfying
+2. seeing someone who is better than me
+3. seeing the end result as meeting a fantasy of mine
+
+# what would I do If I knew I couldn't fail?
+1. be a president of the world
+
+# what defines the best in IT?
+1. deep understanding of every technology
+	TCP/IP
+	Operating Systems
+	Protocols
+	Company Infrastructure
+	All Technologies
+2. very high problem-solving skills
+3. very high critical thinking skills
+4. very high lateral thinking skills
+5. very high analytical skills
+6. extremely perceptive
+7. can explain everything very simply
+8. can answer any question/tricky questions
+
+# what makes me shy away from challenges?
+
+# what does a person's face say about them?
+1. cholestrol
+	1. fat?
+		- greed
+		- lazyness
+		- comfort preferance
+		- 
+	2. fit > cares about his health
+	3. skinny > 
+
+# what makes us lazy?
+1. Lack of motivation
+	1. negative self talk
+2. No specific goal in life
+3. fear of responsibility and accountability
+4. 
+
+# what made me depressed before?
+1. not knowing the way to defeat my challenges
+
+# what made me such a big fan of planning?
+1. thinking I can't handle the situation on spot
+2. being too rigid sometimes
+3. being a perfectionist
+4. 
+
+# what do I spend money on (pre-marriage)?
+0. transportation
+1. suplements
+2. health foods
+	- nuts
+	- 
+3. cell phone bill
+4. rent
+5. snacks
+	- at work
+	- leb
+6. gym
+7. stuff-to-buy
+	- clothes:
+		- seasonal:
+			- summer:
+				- tshirts
+			- winter
+				- jackets
+				- pullovers
+		- neutral:
+			- pants
+			- underwear
+				- boxers
+				- unshirts 
+			- shoes
+				- gym
+				- formal
+				- casual
+			- socks
+		- [+] what makes clothes wear out?
+		1. 
+		- [+] what can be done to discern good from bad clothes?
+		1. if light passes through it, it's going to go away quickly
+	- shoe
+8. internet
+
+# what is expected to spend money on (post-marriage)?
+1. 
+
+# what stuff that I can do that can be traded for money?
+1. solve problems:
+	- computer-related
+	- 
+2. analysis
+	- what are areas that I can analyze in the company?
+3. 
+
+# what are the ways of analysis of humans?
+1. knowing what they like tells a lot about who they are
+	1. their choices tell so much about them
+
+# what does our choices say about us?
+1. our values
+2. our goals
+
+# what happens when your body is a source of pleasure?
+1. men will run after you
+2. you 
+
+# what happens you want to be an attractive woman?
+1. you want to look attractive:
+	1. wear makeup
+		- Primer
+		- Foundation
+		- Concealer
+		- Setting Powder
+		- BB Cream
+		- Rouge / Blush
+		- Contour Powder / Cream
+		- Highligher
+		- Eyeliner
+		- Mascara
+		- Eyeshadows
+		- Eyebrow pencil/powder
+		- Eyebrow Gel
+		- Lip Colors
+		- Lip Liner Pencil
+		- Lip Gloss
+		- Setting Spray
+	2. straighten your hair / do a hair style
+	3. put perfume
+	4. show some hairless skin
+	5. highlight some assets
+		- sleeveless shirts
+		- low cut shirts
+		- tight shirts
+		- tight pants
+		- tight + ass showing pants
+		- short skirts
+	6. manicure
+	7. wear carefully colored/designed clothes
+
+# what happens when you're overly emotional?
+
+# what happens when you go through extreme pain every month?
+1. you're irritable
+2. you start complaining about all the bad stuff in your life
+
+# what does having a period say about you?
+1. you're fertile
+
+# what makes a person have a quick tongue?
+1. having full attention to the situation
+2. knowing each person's nature
+	- what does he like?
+	- what does he hate?
+3. having an idea about that person's motives
+
+# what are the jobs with most obnoxious people?
+1. car repair people
+	- samkari/doko
+	- kahraba
+	- 3afsha
+	- 
