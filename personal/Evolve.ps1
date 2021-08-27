@@ -111,16 +111,16 @@ While($true){
         $level_progress_unit = '\' * $progress_bars_number
 
         Clear-Host
-        Write-Host $Random_quote -ForegroundColor DarkRed
+        Write-Host $Random_quote -ForegroundColor Green
         Write-Host
-        Write-Host " $level_progress_unit".PadRight($level_progress_unit.Length + (($upper_border.Length - 2) - $level_progress_unit.Length)) -ForegroundColor DarkRed
+        Write-Host " $level_progress_unit".PadRight($level_progress_unit.Length + (($upper_border.Length - 2) - $level_progress_unit.Length)) -ForegroundColor Green
         Write-Host $middle_border
-        Write-Host " $session_progress_unit".PadRight($session_progress_unit.Length + (($middle_border.Length - 2) - $session_progress_unit.Length)) -ForegroundColor DarkRed
+        Write-Host " $session_progress_unit".PadRight($session_progress_unit.Length + (($middle_border.Length - 2) - $session_progress_unit.Length)) -ForegroundColor Green
         Write-Host
 
-        Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor DarkRed; Write-Host $($hours + 0.5)
-        Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkRed; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
-        Write-Host "Chn : $($Object.Chain) " -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkRed; Write-Host "$([int]$Object.Chain + 1)"
+        Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor Green; Write-Host $($hours + 0.5)
+        Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor Green; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
+        Write-Host "Chn : $($Object.Chain) " -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor Green; Write-Host "$([int]$Object.Chain + 1)"
         Write-Host "Strk: $($Object.Streak)"
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
         Write-Host "Mins: $Remaining_Minutes"

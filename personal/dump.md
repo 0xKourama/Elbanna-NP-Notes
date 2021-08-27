@@ -5414,7 +5414,7 @@ Remember the Titans (2000)
 5. snacks
 	- at work
 	- leb
-6. gym
+6. gym subscription
 7. stuff-to-buy
 	- clothes:
 		- seasonal:
@@ -5438,10 +5438,21 @@ Remember the Titans (2000)
 		- [+] what can be done to discern good from bad clothes?
 		1. if light passes through it, it's going to go away quickly
 	- shoe
-8. internet
+8. internet subscription
+9. 
 
 # what is expected to spend money on (post-marriage)?
-1. 
+1. fawateer (kahraba, 3'az, net, mayya)
+2. food
+3. supplements and medication (if applicable)
+4. clothing
+5. pregnancy
+6. baby needs (food, pampers ... etc.)
+7. pre-school
+8. school
+9. car + fuel + maintainance
+10. vacations
+11. any items we need
 
 # what stuff that I can do that can be traded for money?
 1. solve problems:
@@ -5522,6 +5533,14 @@ Remember the Titans (2000)
 	- toktok: worst
 	- microbas
 	- 
+3. 
+
+# what's common between those people?
+1. low or no education
+2. bottom of the social ladder
+	- what does this create?
+	1. many motives to hustle you
+	2. 
 
 # what made our world crazy?
 1. poeple with low/no ethics
