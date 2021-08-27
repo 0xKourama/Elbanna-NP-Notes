@@ -5518,3 +5518,14 @@ Remember the Titans (2000)
 	- kahraba
 	- 3afsha
 	- 
+2. sawa2
+	- toktok: worst
+	- microbas
+	- 
+
+# what made our world crazy?
+1. poeple with low/no ethics
+2. people who have no empathy
+3. people who have mediocre goals
+4. people who are dumb/ignorant
+5. incompetent people with power
