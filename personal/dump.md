@@ -5548,3 +5548,6 @@ Remember the Titans (2000)
 3. people who have mediocre goals
 4. people who are dumb/ignorant
 5. incompetent people with power
+
+# what am I shying away from?
+1. dominating alyaa
