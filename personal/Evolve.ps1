@@ -13,7 +13,7 @@ $skill_ranks = @(
     'Transcender'
 )
 
-Get-Content -Raw Quotes.txt | Invoke-Expression
+Get-Content -Raw ~\PowerShell\Quotes.txt | Invoke-Expression
 
 $Work_duration_minutes   = 30
 $Buffer_duration_minutes = 5
@@ -86,7 +86,7 @@ While($true){
         if ($Remaining_Minutes -eq $Buffer_duration_minutes){
             Start-Job -ScriptBlock {
                 $Working_directory = $args[0]
-                subl.exe "$Working_directory\five_mins_left.md"
+                subl.exe "$Working_directory\..\five_mins_left.md"
             } -ArgumentList $Working_directory
         }
 
@@ -178,7 +178,7 @@ While($true){
     } -ArgumentList $Working_directory | Wait-Job | Out-Null
     #endregion
      
-    subl.exe finished.md
+    subl.exe ..\finished.md
 
     Write-Host
     Pause
