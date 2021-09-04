@@ -5551,3 +5551,16 @@ Remember the Titans (2000)
 
 # what am I shying away from?
 1. dominating alyaa
+
+# what do I love in islam?
+1. the idea of a perfect God who is the creator
+2. the idea that he knows the nature of us humans and what's best for us
+3. the idea that forbids us from doing the things that damage us
+4. 
+
+# what the challenges with relaying the message and putting the test?
+1. beleif has to be a choice
+2. no complete proof can be
+
+# what sign would be a complete proof?
+1. 

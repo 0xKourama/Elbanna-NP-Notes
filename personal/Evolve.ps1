@@ -1,4 +1,5 @@
-﻿$Working_directory = Get-Location | Select-Object -ExpandProperty Path
+﻿Set-Location ~\PowerShell\personal
+$Working_directory = Get-Location | Select-Object -ExpandProperty Path
 
 $skill_ranks = @(
     'Novice',
