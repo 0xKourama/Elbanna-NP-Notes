@@ -28,6 +28,10 @@
 				1. a purpose
 				2. a state
 				3. a function
+				4. positives
+				5. negatives
+				6. spectrum
+				7. nature
 
 # self-negotiation
 1. Remove self-resistances by understanding yourself and being receptive to what is has to say
@@ -5610,3 +5614,63 @@ Remember the Titans (2000)
 # what's the benefit of criticism?
 1. determines the true worth of something
 2. removes our inflated views of ourselves
+
+# what are your achievements in life so far?
+1. passing primary education
+2. passing preparatory education
+3. passing secondary education
+4. passing higher education as an engineer
+5. top problem resolution rate in vodafone UK
+6. being senior at centro
+	1. resolving many issues from their root
+	2. correct many standards
+	3. providing unique value using powershell scripting
+7. cybersecurity
+	1. prepping for OSCP under 8 months
+	2. completing the entire OSCP lab
+	3. being considered for a job at goverment cybersec
+8. landing cybersec gig
+	1. BEC of 112 emails of a huge company
+	2. developing the powereye script engine
+	3. switching worklfow to comply with best practices and standards
+9. developing a standard method for analytical/critical problem-solving
+10. fending off many athiest attacks on my muslim creed
+11. completing many self-development books to improve myself
+12. attacking the heart of almost every single challenge i've faced
+13. improving my nutrition and overall health
+14. developing strength using bodybuilding
+15. improving my emotional stability
+16. spending countless hours in internal/external introspection instead of play
+17. being a source of help and support to every needing person
+
+# what qualifies you to be a good husband/father/son?
+
+# what stops you from competing?
+1. not wanting to be tested and be found lacking
+2. not wanting to appraised
+
+# what can be done to improve my password attack game?
+
+# what can be done to improve my Web Attack game?
+1. LFI/RFI
+2. Dir Traversal
+3. SQL Injection
+4. XSS
+5. XXE
+6. CSRF
+7. SSRF
+8. File Upload
+9. Command Injection
+10. 
+
+1. Learn API
+2. Master HTTP Protocol
+
+1. Learn Python for exploit development
+2. Learn JavaScript for client-side attacks
+3. Learn PHP
+4. Learn ASP.net
+6. Understand webserver administration
+	1. Apache
+	2. IIS
+	3. NginX
