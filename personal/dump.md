@@ -5600,3 +5600,13 @@ Remember the Titans (2000)
 # what can be done to overwhelm an attacker?
 1. seeing many security controls
 2. seeing Defense in Depth
+
+# what will an attacker need in order to access the network?
+1. vpn (cortex + creds) (possible through laptop compromise)
+2. 
+
+*securing any item in the chain of exploitation*
+
+# what's the benefit of criticism?
+1. determines the true worth of something
+2. removes our inflated views of ourselves
