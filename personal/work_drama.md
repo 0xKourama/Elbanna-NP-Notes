@@ -328,3 +328,7 @@
 8. taking care of his family
 9. doing interviews on the daily
 10. handling stupid tickets
+
+# what is the 3afreet of this sherka?
+
+# what are mt attack and defense mechanisms? 

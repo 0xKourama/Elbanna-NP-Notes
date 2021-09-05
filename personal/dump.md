@@ -5651,6 +5651,10 @@ Remember the Titans (2000)
 
 # what can be done to improve my password attack game?
 
+# what's my down in offsec?
+1. not knowing enough about everything (web mainly)
+2. 
+
 # what can be done to improve my Web Attack game?
 1. LFI/RFI
 2. Dir Traversal
@@ -5662,10 +5666,10 @@ Remember the Titans (2000)
 8. File Upload
 9. Command Injection
 10. 
-
+---
 1. Learn API
 2. Master HTTP Protocol
-
+---
 1. Learn Python for exploit development
 2. Learn JavaScript for client-side attacks
 3. Learn PHP
@@ -5680,3 +5684,101 @@ Remember the Titans (2000)
 
 # what are the steps of troubleshooting?
 # what makes a troubleshooting strategy good?
+
+# what are responsiblities?
+1. Firewall Administration
+2. Implementing Best Practices for Security on all elements of the organization
+	- Firewall
+	- Windows Servers/Desktops
+	- Linux Systems
+	- Virtualization Software
+	- 
+3. Responding to Incidents
+4. Providing training to improve cyber security awareness
+5. Performing Vulnerability Assessments
+
+# what can be done to measure a person?
+1. create tests
+	- test their religion
+	- test their conscience
+	- test their loyalty
+	- test their obedience
+	- 
+
+# what's her negatives?
+1. not taking much care of herself
+2. sometimes stubborn
+3. sometimes too butthurt
+4. a lawyer when upset
+5. can be really obnoxious if she wants
+6. can be slippery
+
+# what are the most annoying things about me?
+1. once obsessed, impossible to stop
+2. once handling a challenge. doesn't stop if he know he can overcome it
+3. being exessively objective and targeted sometimes. humans don't like that
+
+# what makes me like to obsess?
+1. finding how far does X thing go
+2. wandering about the possibilities that can be there
+3. 
+
+# what makes discipline difficult?
+1. wanting reward is natural. rewards motivate us
+2. 
+
+# what makes disciple easy?
+1. fear of regret
+2. wanting to have a happy ending
+
+# what would happen without discipline?
+1. complete indulgence --> many baaad things can happen
+2. failure to be consistent
+
+# what makes something difficult to share?
+1. 
+
+# what would happen if there were no mirror neurons?
+1. others wouldn't have that much effect on us
+
+# What are the benefits of working with a deadline?
+1. gets your max
+2. makes you pragmatic
+3. removes the slack and bullshit
+
+# draw organization chart for topology
+
+# what needs sorting, organizing or re-evaluation in my life?
+
+# what is the priority of X?
+
+*senses help with identifying the nature of objects*
+*abstraction means forming a mental image without the help of the senses. without the need to experience it*
+
+# what can overwhelm me?
+# what do vitamins do?
+# what do neurotransmitters do?
+# what do enzymes do?
+# what do minerals do?
+
+*our lack of knowledge should give us way more questions than answers :D*
+
+# compensation syndrome?
+# what makes a person want to compensate?
+# what's wrong in compensation?
+# what questions would be in the mind of a student in a boring class?
+# being able to construct your argument is a very important thing
+# articulation
+
+# problems with teaching?
+1. what would make me want to learn X topic
+2. what are applications in real life? 
+3. what's the importance and value of X? 
+4. 
+
+# habits
+# trigger
+# what are important qualities in life to have? 
+# what's the benefit of being able to measure people? size them up? 
+
+*The devil uses your natural inclinations to set you up*
