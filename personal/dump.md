@@ -5564,3 +5564,39 @@ Remember the Titans (2000)
 
 # what sign would be a complete proof?
 1. 
+
+# what are the areas of trust for employee X?
+
+# what are the areas of trust for me?
+1. mother
+2. tattoo
+3. geddo
+4. k. yasser
+
+# what makes a person trustworthy?
+
+# what's the downside of caring too much?
+
+# what makes an explanation better than the other?
+
+# what do I get from learning multiple languages?
+
+# what can be done to test the full range of knowledge?
+1. finding the definition
+2. finding the purpose. what made people create this?
+3. finding the dependencies 
+4. finding what would happen if X doesn't work?
+
+# what do I need in order to run a successful company?
+1. knowledge of all department functions
+2. money to start
+3. client base
+4. supreme management skills
+
+# what are the common items that can be reused accross multiple protocols?
+1. credentials?
+2. 
+
+# what can be done to overwhelm an attacker?
+1. seeing many security controls
+2. seeing Defense in Depth
