@@ -5789,3 +5789,5 @@ Remember the Titans (2000)
 	2. sexually
 	3. leadership
 2. my religion
+3. my understanding
+4. my way of doing things as the best
