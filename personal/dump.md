@@ -5674,3 +5674,9 @@ Remember the Titans (2000)
 	1. Apache
 	2. IIS
 	3. NginX
+
+# what do you wish to accomplish?
+1. master every important thing
+
+# what are the steps of troubleshooting?
+# what makes a troubleshooting strategy good?
