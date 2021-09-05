@@ -5782,3 +5782,10 @@ Remember the Titans (2000)
 # what's the benefit of being able to measure people? size them up? 
 
 *The devil uses your natural inclinations to set you up*
+
+# what am I keen on validating?
+1. my competency
+	1. technically
+	2. sexually
+	3. leadership
+2. my religion
