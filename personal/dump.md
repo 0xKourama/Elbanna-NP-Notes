@@ -5797,6 +5797,11 @@ Remember the Titans (2000)
 	1. at work
 	2. at the gym
 	3. with your homies
-	4. 
 2. getting shit done
 3. correcting every single thing you can according to what you see is right
+
+# what's upsetting you?
+1. feeling ridiculed
+2. feeling put down
+
+*not knowing well the state of the other person and context, a lot of mistakes can happen*
