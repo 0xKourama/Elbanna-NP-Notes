@@ -5791,3 +5791,12 @@ Remember the Titans (2000)
 2. my religion
 3. my understanding
 4. my way of doing things as the best
+
+# what's your behaviour?
+1. thinking (and trying to figure things out) while:
+	1. at work
+	2. at the gym
+	3. with your homies
+	4. 
+2. getting shit done
+3. correcting every single thing you can according to what you see is right
