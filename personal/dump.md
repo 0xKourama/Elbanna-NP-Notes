@@ -5805,3 +5805,9 @@ Remember the Titans (2000)
 2. feeling put down
 
 *not knowing well the state of the other person and context, a lot of mistakes can happen*
+
+# Foods containing high levels of antioxidant vitamins
+- Vitamin C  : Fresh or frozen fruits and vegetables
+- Vitamin E  : Vegetable oils, nuts, and seeds
+- Resveratrol: Grape skin, nuts and berries
+- Carotenoids: Fruit, vegetables and eggs
