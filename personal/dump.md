@@ -5811,3 +5811,7 @@ Remember the Titans (2000)
 - Vitamin E  : Vegetable oils, nuts, and seeds
 - Resveratrol: Grape skin, nuts and berries
 - Carotenoids: Fruit, vegetables and eggs
+
+# what are my attributes?
+1. sophisticated
+2. 
