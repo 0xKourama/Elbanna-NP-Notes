@@ -5814,4 +5814,8 @@ Remember the Titans (2000)
 
 # what are my attributes?
 1. sophisticated
-2. 
+2. elegant
+3. organized
+4. high degree of awareness
+5. planner
+6. 
