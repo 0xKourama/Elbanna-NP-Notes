@@ -5819,3 +5819,23 @@ Remember the Titans (2000)
 4. high degree of awareness
 5. planner
 6. 
+
+# what are my fears?
+1. not having a calm home and wife
+2. having a ruined rest of my life
+
+# what makes me super angry?
+1. being disrespected
+
+# what are my needs?
+1. understanding
+2. evolving
+3. wisdom
+4. elegance
+5. beauty
+6. femininity
+7. 
+
+# what do I do to learn?
+
+# what can be done to improve the learning process?
