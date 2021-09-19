@@ -5839,3 +5839,8 @@ Remember the Titans (2000)
 # what do I do to learn?
 
 # what can be done to improve the learning process?
+
+# what gives ideas their power?
+# what is the power of ideas?
+
+# what makes a definition so important?
