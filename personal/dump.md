@@ -5834,7 +5834,7 @@ Remember the Titans (2000)
 4. elegance
 5. beauty
 6. femininity
-7. 
+7. SEX
 
 # what do I do to learn?
 
@@ -5844,3 +5844,18 @@ Remember the Titans (2000)
 # what is the power of ideas?
 
 # what makes a definition so important?
+
+# what are the ideas i've learned throughout life?
+1. facing challenges and not running away is the way to go
+2. rectitude is paramount. 
+3. a person is largely ignorant. knowing this is very important
+4. asking the right questions is very important
+5. observation........
+6. a big percent of our self-image and self-talk is bullshit. a mountain full of ego build upon a heap of trash .. is exactly what you get when you can't fully do the math
+
+# what bullshit do I have?
+1. that I am good at what do I do. compared with who?
+2. that im smart. compared with who?
+3. that im hardworking. according to who?
+
+*a master is the only person capable of measuring and grading people. the flattery of amateurs is worthless*
