@@ -5859,3 +5859,19 @@ Remember the Titans (2000)
 3. that im hardworking. according to who?
 
 *a master is the only person capable of measuring and grading people. the flattery of amateurs is worthless*
+
+# what did I learn in IT?
+1. powershell scripting
+2. basics of networking
+3. basics of active directory
+4. basics of firewall administration
+5. basics of virtualization
+6. basics of linux
+7. basics of ethical hacking
+8. basics of cyber security
+9. using google to an extent
+10. sources to improve my knowledge
+11. 
+
+*seems like a formed my skillset (good start items) but slacking off from properly farming (going at my own pace) and following my mood and curiosity rather than mission critical stuff*
+*like my build is subconciously aimed at achieving ease of farming. but that doesn't remove farming*
