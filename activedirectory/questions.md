@@ -1,3 +1,15 @@
+# general learning notes
+1. create the overall model with a diagram or map
+2. grab the ideas from each sentence
+3. make sure you understand the purpose of every:
+	1. object
+	2. operation
+	3. idea
+4. rephrase each sentence
+	*changing it into your own words helps a lot*
+5. recap what you have learned making sure you get the ideas in your words before you sleep
+6. before the interview ... compress everything (clustering and mind mapping)
+
 # what does active directory do?
 1. stores info about objects on the network
 2. makes this info available to users and network admins
@@ -107,6 +119,10 @@ The client computes a cryptographic hash of the password and discards the actual
 5. The domain controller uses the user name to retrieve the hash of the user's password. It compares the encrypted challenge with the response by the client (in step 4). If they are identical, authentication is successful, and the domain controller notifies the server.
 6. The server then sends the appropriated response back to the client.
 
+## Kerberos:
+### Kerberos flow:
+1. 
+
 
 # infrastructure master and global catalog
 
@@ -143,3 +159,13 @@ go into microsoft documentation and smash it
 he prefers theoretical than practical
 
 GERMANY NIGGA!!!!!!!!!
+
+
+# Skillset          SMB       MEDIUM      LARGE         ENTERPRISE
+1. Google search    LOW       MEDIUM      HIGH          OFFICIAL DOC
+2. english          LOW        LOW       MED-HIGH       PROFICIENT
+3. analysis         NONE       LOW       MED-HIGH       MANDATORY
+4. scripting        NONE       NONE      LOW-MED        HIGH
+5. focus            NONE       LOW       MEDIUM         VERY HIGH
+6. organization     NONE       LOW       MED-HIGH       VERY HIGH
+7. process
