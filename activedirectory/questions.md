@@ -399,3 +399,201 @@ This prevents endless replication loops and leads to the behavior known as propa
 # User logon
 # Universal group membership caching
 # Exchange address book lookups
+
+
+----------------------------------------------------------------------------------
+
+# NTLM vs KERB
+
+# Windows New Technology LAN Manager (NTLM) is a suite of security protocols offered by Microsoft to authenticate users’ identity *AND* protect the integrity *AND* confidentiality of their activity.
+# At its core:
+- NTLM is a single sign on (SSO) tool that relies on a challenge-response protocol to confirm the user without requiring them to submit a password.
+
+------
+
+# challenge reponse:
+# In computer security:
+- challenge–response authentication is a family of protocols in which one party presents a question ("challenge") *AND* another party must provide a valid answer ("response") to be authenticated.[1]
+
+# The simplest example of a challenge–response protocol is password authentication:
+- where the challenge is asking for the password *AND* the valid response is the correct password.
+
+# Clearly an adversary who can eavesdrop on a password authentication can then authenticate itself in the same way.
+# One solution is to issue multiple passwords:
+- each of them marked with an identifier.
+# The verifier can ask for any of the passwords:
+- *AND* the prover must have that correct password for that identifier.
+# Assuming that the passwords are chosen independently:
+- an adversary who intercepts one challenge–response message pair has no clues to help with a different challenge at a different time.
+
+------
+
+# Despite known vulnerabilities:
+- NTLM remains widely deployed even on new systems in order to maintain compatibility with legacy clients *AND* servers.
+# While NTLM is still supported by Microsoft:
+- it has been replaced by Kerberos as the default authentication protocol in Windows 2000 *AND* subsequent Active Directory (AD) domains.
+
+# How Does the NTLM Protocol Work?
+## NTLM authenticates users through a challenge-response mechanism.
+## This process consists of three messages:
+
+## Negotiation message from the client
+## Challenge message from the server
+## Authentication message from the client
+
+# NTLM Authentication Process
+## NTLM authentication typically follows the following step-by-step process:
+
+## The user shares their username:
+- password *AND* domain name with the client.
+## The client develops a scrambled version of the password — *OR* hash — *AND* deletes the full password.
+## The client passes a plain text version of the username to the relevant server.
+## The server replies to the client with a challenge:
+- which is a 16-byte random number.
+## In response:
+- the client sends the challenge encrypted by the hash of the user’s password.
+## The server then sends the challenge:
+- response *AND* username to the domain controller (DC).
+## The DC retrieves the user’s password from the database *AND* uses it to encrypt the challenge.
+## The DC then compares the encrypted challenge *AND* client response.
+## If these two pieces match:
+- then the user is authenticated *AND* access is granted
+
+# The Difference Between NTLM and Kerberos?
+## Like NTLM:
+- Kerberos is an authentication protocol.
+## It replaced NTLM as the default/standard authentication tool on Windows 2000 *AND* later releases.
+
+## The main difference between NTLM *AND* Kerberos is in how the two protocols manage authentication.
+## NTLM relies on a three-way handshake between the client *AND* server to authenticate a user.
+## Kerberos uses a two-part process that leverages a ticket granting service *OR* key distribution center.
+
+## Another main difference is whether passwords are hashed *OR* encrypted.
+## NTLM relies on password hashing:
+- which is a one-way function that produces a string of text based on an input file --> Kerberos leverages encryption:
+- which is a two-way function that scrambles *AND* unlocks information using an encryption key *AND* decryption key respectively.
+
+## Even though the Kerberos protocol is Microsoft’s default authentication method today:
+- NTLM serves as a backup.
+## If Kerberos fails to authenticate the user:
+- the system will attempt to use NTLM instead.
+
+# Why Was NTLM Replaced by Kerberos?
+## NTLM was subject to several known security vulnerabilities related to password hashing *AND* salting.
+
+## In NTLM:
+- passwords stored on the server *AND* domain controller are not “salted” — meaning that a random string of characters is not added to the hashed password to further protect it from cracking techniques.
+## This means that adversaries who possess a password hash do not need the underlying password to authenticate a session.
+## As a result:
+- systems were vulnerable to brute force attacks:
+- which is when an attacker attempts to crack a password through multiple log-in attempts.
+## If the user selects a weak *OR* common password:
+- they are especially susceptible to such tactics.
+
+## NTLM’s cryptography also fails to take advantage of new advances in algorithms *AND* encryption that significantly enhance security capabilities.
+
+# Kerberos Protocol
+## Kerberos was developed by researchers at the Massachusetts Institute of Technology (MIT) in the 1980s.
+## The name is derived from the Greek mythological character Kerberos:
+- the three-headed dog who guards the underworld.
+
+## In practice:
+- the three security components in the Kerberos protocol are represented as:
+
+## A client seeking authentication
+## A server the client wants to access
+## The ticketing service *OR* key distribution center (KDC)
+
+# Kerberos Authentication
+
+## Here is the twelve-step process for Kerberos authentication:
+
+## The user shares their username:
+- password:
+- *AND* domain name with the client.
+## The client assembles a package — *OR* an authenticator — which contains all relevant information about the client:
+- including the user name:
+- date *AND* time.
+## All information contained in the authenticator:
+- aside from the user name:
+- is encrypted with the user’s password.
+## The client sends the encrypted authenticator to the KDC.
+## The KDC checks the user name to establish the identity of the client.
+## The KDC then checks the AD database for the user’s password.
+## It then attempts to decrypt the authenticator with the password.
+## If the KDC is able to decrypt the authenticator:
+- the identity of the client is verified.
+## Once the identity of the client is verified:
+- the KDC creates a ticket *OR* session key:
+- which is also encrypted *AND* sent to the client.
+## The ticket *OR* session key is stored in the client’s Kerberos tray --> the ticket can be used to access the server for a set time period:
+- which is typically 8 hours.
+## If the client needs to access another server:
+- it sends the original ticket to the KDC along with a request to access the new resource.
+## The KDC decrypts the ticket with its key.
+## (The client does not need to authenticate the user because the KDC can use the ticket to verify that the user’s identity has been confirmed previously).
+## The KDC generates an updated ticket *OR* session key for the client to access the new shared resource.
+## This ticket is also encrypted by the server’s key.
+## The KDC then sends this ticket to the client.
+## The client saves this new session key in its Kerberos tray:
+- *AND* sends a copy to the server.
+## The server uses its own password to decrypt the ticket.
+## If the server successfully decrypts the session key:
+- then the ticket is legitimate.
+## The server will then open the ticket *AND* review the access control list (ACL) to determine if the client has the necessary permission to access the resource.
+
+# Applications That Use NTLM
+## NTLM was replaced as the default authentication protocol in Windows 2000 by Kerberos.
+## However:
+- NTLM is still maintained in all Windows systems for compatibility purposes between older clients *AND* servers.
+
+## For example:
+- computers still running Windows 95:
+- Windows 98:
+- *OR* Windows NT 4.0 will use the NTLM protocol for network authentication with a Windows 2000 domain.
+## Meanwhile:
+- computers running Windows 2000 will use NTLM when authenticating servers with Windows NT 4.0 *OR* earlier:
+- as well as when accessing resources in Windows 2000 *OR* earlier domains.
+## NTLM is also used to authenticate local logons with non-domain controllers.
+
+# NTLM Benefits and Challenges
+## NTLM is considered an outdated protocol.
+## As such:
+- its benefits — when compared to a more modern solution:
+- such as Kerberos — are limited.
+## Yet the original promise of NTLM remains true: Clients use password hashing to avoid sending unprotected passwords over the network.
+
+## At this point there are several clear disadvantages to relying on NTLM authentication:
+
+## Single authentication.
+## NTLM is a single authentication method.
+## It relies on a challenge-response protocol to establish the user.
+## It does not support multifactor authentication (MFA):
+- which is the process of using two *OR* more pieces of information to confirm the identity of the user.
+## Security vulnerabilities.
+## The relatively simplistic form of password hashing makes NTLM systems vulnerable to several modes of attacks:
+- including pass-the-hash *AND* brute-force attacks.
+## Outdated cryptography.
+## NTLM does not leverage the latest advances in algorithmic thinking *OR* encryption to make passwords more secure.
+
+# How Can You Protect Your Network Using NTLM?
+
+## Given the known security risks associated with NTLM:
+- CrowdStrike recommends that organizations try to reduce NTLM usage in their network as much as possible.
+
+## For organizations still relying on NTLM for compatibility reasons:
+- CrowdStrike offers the following recommendations to enhance security *AND* minimize risk.
+
+## Enforce NTLM mitigations.
+## To be fully protected from NTLM relay attacks:
+- you will need to enable server signing *AND* EPA on all relevant servers.
+## Patch! Make sure your systems are fully protected with the latest security updates from Microsoft.
+## Use advanced techniques.
+## Apply advanced NTLM relay detection *AND* prevention techniques similar to the ones disclosed by Preempt (now CrowdStrike) in our Black Hat 2019 talk.
+## Identify weak variations.
+## Some NTLM clients use weak NTLM variations (e.g.:
+- don’t send a MIC).
+## This puts your network at a greater risk of being vulnerable to NTLM relay.
+## Monitor NTLM traffic in your network.
+## Try to restrict insecure NTLM traffic.
+## Get rid of clients sending LM responses *AND* set the Group Policy Object (GPO) network security: LAN Manager authentication level to refuse LM responses.
