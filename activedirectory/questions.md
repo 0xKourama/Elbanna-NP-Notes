@@ -597,3 +597,412 @@ This prevents endless replication loops and leads to the behavior known as propa
 ## Monitor NTLM traffic in your network.
 ## Try to restrict insecure NTLM traffic.
 ## Get rid of clients sending LM responses *AND* set the Group Policy Object (GPO) network security: LAN Manager authentication level to refuse LM responses.
+
+
+--------------------------------------------------------------------------------------------------------
+
+# NTLM vs KERB P2
+
+# Difference Between NTLM and Kerberos (With Table)
+
+## The NTLM authentication process solely involves the client *AND* the IIS7 server.
+## However:
+- under the ticket-based Kerberos protocol:
+- a trusted third party is also privy to this process of authentication.
+## This seminal difference between the two is highlighted further by the other dissimilarities apparent in a comparative analysis.
+
+# NTLM vs Kerberos
+
+## The difference between NTLM *AND* Kerberos is that the former is a challenge-response based authentication protocol:
+- while the latter is a ticket-based authentication protocol.
+## NTLM refers to an authentication protocol that is used by the older Windows models that are not members of an Active Directory domain:
+- while Kerberos is essentially a ticket-based authentication protocol used in the newer Windows models that are members of an Active Directory domain.
+
+
+# What is NTLM?
+
+## The NTLM protocol is a proprietary Windows authentication protocol that uses a challenge-response system to authenticate logins.
+## The NTLM system was prevalent in the older Windows computers that are not members of an Active Directory domain.
+
+## After the initiation of the authentication process by the client:
+- a three-way handshake between the client *AND* the server commences.
+## The process begins with the client sending a message specifying his *OR* her account name *AND* encryption capabilities.
+## Consequently:
+- the server responds with a 64-bit nonce.
+## This response is termed as the challenge.
+## The client’s response is composed of this value *AND* his *OR* her own password.
+
+## The security offered by the NTLM is inferior to those provided by the newer versions of other authentication protocols.
+## This authentication protocol does not use a tri-party procedure.
+## As a result:
+- it is deemed less secure.
+## Moreover:
+- smartcard logons:
+- mutual authentication:
+- delegation:
+- etc.
+## are not facilitated by this older protocol.
+
+# What is Kerberos?
+
+## Kerberos is a Window authentication protocol that is compatible with the latest models launched by the brand.
+## It is a ticket-based protocol that is used by those Windows PCs that are already members of an Active Directory domain.
+## The USP of this protocol is that it can effectively reduce the total number of passwords needed by a user to access the network to only one.
+
+## This secure:
+- sophisticated:
+- *AND* advanced authentication protocol was designed at MIT.
+## It has been accepted as the standard authentication protocol for all computers- right from the Windows 2000 model to other more recent models.
+## Kerberos also includes several formidable specs like mutual authentication *AND* a smart card logon.
+
+## The security assurance of the Kerberos protocol is unmatched.
+## It uses a third party to authenticate logins.
+## This ensures enhanced safety *AND* minimizes the vulnerability of confidential data.
+## By operating through centralized data centers:
+- Kerberos ensures further stability *AND* security.
+
+
+# Main Differences Between NTLM and Kerberos
+
+## The main difference between NTLM *AND* Kerberos is that NTLM is a challenge-response based Microsoft authentication protocol that is used in the older Windows models that are not members of an Active Directory domain:
+- while Kerberos is a ticket-based authentication protocol used in the newer variants of the Windows model.
+## Smart card logon through a two factor authentication protocol is supported by Kerberos.
+## NTLM does not support a smart card logon.
+## In terms of security:
+- Kerberos has an edge over NTLM.
+## NTLM is comparatively less secured than Kerberos.
+## Mutual authentication feature is available with Kerberos.
+## Contrarily:
+- NTLM does not offer the user this mutual authentication feature.
+## While Kerberos supports both delegation *AND* impersonation:
+- NTLM only supports impersonation.
+## The authentication process under the NTLM protocol involves the client *AND* the server.
+## However:
+- under the Kerberos protocol:
+- a reliable third party is privy to the authentication process.
+## The earlier Windows models use the NTLM protocol.
+## This includes versions like Windows 95:
+- Windows 98:
+- NT 4.0:
+- etc.
+## The Kerberos protocol is preinstalled on the newer models like Microsoft Windows 2000:
+- XP:
+- *AND* other latest models.
+
+# Conclusion
+
+## Both the NTLM *AND* Kerberos protocols are based on the symmetric key cryptography strategy *AND* both are strong:
+- pertinent authentication systems.
+## The two may seem overwhelmingly similar to novice users:
+- however:
+- the difference between the two is quite conspicuous.
+
+## NTLM is a challenge-response-based authentication protocol:
+- while Kerberos is a ticket-based authentication protocol.
+## The former is used mostly in the older Windows models.
+## Although Windows has maintained backward compatibility with this protocol:
+- its usage has significantly reduced over the years.
+
+## This change is largely attributed to the development of the more secured *AND* sophisticated protocols like Kerberos.
+## Kerberos offers enhanced features as well as an improved protective shield for the user.
+
+## Thus:
+- in a comparative choice between the two:
+- the newer Kerberos protocol emerges univocally successful.
+## It embodies some of the most coveted modern features that one can desire in an advanced authentication protocol.
+
+--------------------------------------------------------------------------------------------------------
+
+# NTLM vs KERB P3
+
+# A thorough understanding of Windows' authentication methods will enable you to troubleshoot problems *AND* improve network security.
+
+
+## If you're having problems logging in to a diverse *AND* properly secured network:
+- the solution may be just a matter of allowing the proper ports *AND* protocols between the devices to authenticate.
+## Before jumping into the ports *AND* protocols:
+- however:
+- it's important to understand the sequence of events that begin user authentication.
+
+## The WinLogon process
+## WinLogon's first phase is [Ctrl][Alt][Delete]:
+- Windows' default Security Attention Sequence (SAS).
+## This sequence signals to the operating system that someone is trying to log on.
+
+## When SAS is initiated:
+- all user mode applications pause until the security operation is completed *OR* cancelled.
+## This suspension of user mode applications is a significant security feature.
+## Keystroke loggers *OR* Trojan viruses are disabled *AND* prevented from recording keystrokes as users input their passwords.
+
+## The WinLogon process is a part of the Local Security Authority (LSA) for the Windows operating system logon procedure.
+## To complete this procedure:
+- the OS authenticates the user's credentials with a logon server and:
+- depending on the type of authentication:
+- the logon could fail if the proper ports *AND* protocols between the client *AND* the server aren't open.
+
+## NT LAN Manager (NTLM) is the default authentication scheme used by the WinLogon process --> it uses three ports between the client *AND* domain controller (DC):
+## UDP 137 - UDP 137 (NetBIOS Name)
+## UDP 138 - UDP 138 (NetBIOS Netlogon *AND* Browsing)
+## 1024-65535/TCP - TCP 139 (NetBIOS Session)
+
+## Logon authentications will succeed with these ports open between your clients and their domain controllers
+
+## Windows' default authentication equals poor security
+## By default:
+- the authentication scheme on both Windows NT *AND* Windows 2000 machines is set to LAN Manager (LM):
+- which transmits *AND* stores each user password hash using an extremely weak security algorithm.
+## This makes it easy for hackers to crack passwords once this weak password hash is captured.
+
+## Microsoft has upgraded its proprietary authentication scheme four times.
+## The current authentication standard for communications between NT clients *AND* NT/Win2K servers is now NTLMv2.
+## However:
+- if you haven't changed the LMCompatabilityLevel variable under the following registry key on both NT/Win2K clients *AND* servers:
+- by default you're still using the LM scheme—which greatly decreases the security of your entire network:
+## HKEY_Local_Machine\System\CurrentControlSet\control\LSA
+
+## Make sure that you're set to use only NTLMv2 *AND* that the Reg_Dword is set to at least Level 3.
+## This forces the clients to send NTLMv2 authentication only.
+## (For more information on this change:
+- read Microsoft Knowledge Base article 147706.)
+
+## After you make this change:
+- you'll still need to force the system to remove the LM hash.
+## Run Regedt32.exe *AND* go back to the same registry key.
+## On the Edit menu:
+- click Add Key:
+- add the key NoLMHash:
+- *AND* leave the class field empty.
+## (For more information on this registry change:
+- read Microsoft article 299656.)
+
+## This new registry key will force both NT *AND* Win2K to remove the LM hash:
+- which will reduce your vulnerability to password crackers.
+## However:
+- any registry changes you make won't take place until the user changes his *OR* her password *AND* a new hash is created
+
+## Now that you've gotten rid of the LM hash *AND* your network is using NTLMv2 for client authentication:
+- the next step for securing authentication traffic on Windows-based networks is upgrading your clients *AND* servers to take advantage of Kerberos:
+- the latest Windows authentication scheme.
+
+# What about Kerberos for NT?
+
+## There is no such thing as "Kerberos for NT." If you're still running NT clients:
+- you can install the Active Directory (AD) client *AND* make them Active Directory-aware:
+- *BUT* not Kerberos-enabled.
+## The AD client installs the Active Directory Service Interfaces (ADSI):
+- provides site awareness to NT computers so they can find the nearest domain controller:
+- *AND* enables NT to use Win2K's Dfs *AND* AD Windows Address Book.
+## This doesn't change the method NT computers use for authentication.
+
+## NT machines will use only NTLM to authenticate:
+- regardless of whether they're communicating with NT *OR* Win2K servers.
+## To allow your clients *AND* servers to communicate securely:
+- make sure the proper ports are open *AND* verify that your clients *AND* servers are set to use NTLMv2.
+
+--------------------------------------------------------------------------------------------------------
+
+# PASS THE HASH ATTACK 1
+
+# PASS THE HASH P1
+
+## We’ve done a lot of blogging at the Metadata Era warning you about basic attacks against passwords.
+## These can be mitigated by enforcing strong passwords:
+- eliminating vendor defaults:
+- *AND* enabling reasonable lockout settings in Active Directory.
+## But don’t rest yet! Hackers have another password trick that’s much more difficult to defend against.
+
+## Advanced password:
+- *OR* more precisely:
+- credential attacks are still very popular and:
+- unfortunately:
+- quite effective.
+## Known generically as pass-the-hash *OR* PtH:
+- these attacks are seen by some as more of an issue with older Windows systems.
+ Somewhat true:
+- *BUT* they’re still very much a menace: PtH is the subject of presentations at recent Black Hat conferences:
+-  several white papers from Microsoft’s own Trustworthy Computing division:
+- *AND* a security bulletin from the NSA (for what it’s worth!).
+
+# What’s a Hash?
+
+## Security researchers have known almost since the beginning of modern computing that storing plain-text passwords is a poor security practice.
+## Instead:
+- they came up with the idea of passing the plaintext string through a special 1-way encryption function to produce a hash.
+## You can read more about hashes in Rob’s excellent posts on the subject.
+
+## The key point is that in both Windows (and Linux systems too) the hashed password is stored instead of the readable password.
+ If you think about this a little:
+- the hash acts as a proxy for identity—if you can prove you have it:
+- it’s your ticket in.
+
+## In Windows:
+- the NTLM authentication protocol involves exchanging messages to validate that users have the hash without actually sending the hash over the wire.
+## This authentication technique is at the center of how Active Directory supports remote logins within a domain *AND* is also used for other Windows services:
+- most significantly remote file access
+
+## By the way:
+- vulnerabilities in earlier implementations of NTLM—since corrected—have led some to believe that PtH attacks are a thing of the past.
+## Not only is PtH still viable *BUT* the same idea—grabbing hashes from disk *OR* memory—can also be used against more sophisticated Kerboros authentication.
+
+# Don’t Crack the Hash, Pass it
+
+## Windows caches the hashed passwords in memory to implement Single Sign On *OR* SSO:
+- which is an essential feature of Windows enterprise environments.
+ So far:
+- so good.
+
+## For example:
+- on my Varonis laptop:
+- I logon once with my password:
+- Windows hashes it *AND* stores the code—currently 128-bits in NTLMv2— in memory  so that when:
+- say:
+- I mount a remote directory  *OR* use other services where I need to prove my identity:
+- I don’t have to re-enter my password— Windows instead uses the cached hash.
+
+## And that is enough of an opening for hackers to exploit.
+## We’ve seen other attacks:
+- most significantly with RAM scrapers used on Point-of-Sale devices:
+- where hackers use easily available software to peek into this memory.
+ Not surprisingly there are toolkits out there that will let hackers grab the credentials from memory:
+- *AND* log them in as that user—see SANS’ Why Crack When You Can Pass the Hash.
+
+## And that’s one of the major benefits of SSO:
+- so to speak:
+- for hackers: they don’t have to crack the hashes:
+- they just re-use *OR* pass them to an authenticating server!
+
+# PtH: It’s a Feature, Not a Bug
+
+## The assumption that this attack makes is that the cyber thief gains administrator-level permissions for a user’s machine.
+## Any expert will tell you:
+- that’s not necessarily difficult to pull off:
+- as we’ve seen in the Target hack.
+
+## In a typical exploit:
+- the hacker will grab some hashes:
+- log onto other servers:
+- *AND* continue the process of stockpiling credentials.
+## If they hit the jackpot—a domain controller *OR* SQL server—they may able to get the hashes of just about everyone.
+
+## As an aside:
+- we don’t know exactly how Snowden obtained employee logon credentials—social engineering likely played a part.
+## But his admin-level access would have made PtH a very good choice to extract the credentials of those with a higher security clearance than him.
+
+## Unfortunately:
+- pass-the-hash is a feature of Windows! After all:
+- the underlying NTLM authentication is effectively passing the hash to implement SSO:
+- saving you from password entry fatigue.
+## Hackers are just exploiting this feature for their own purposes.
+## Not to be too hard on Windows:
+- PtH is also an issue in Linux systems that implement Kerboros :
+- where you have an equivalent pass-the-ticket *OR* PtT attack.
+
+## Here’s the most important takeaway: you can’t prevent PtH:
+- you can only mitigate *OR* greatly reduce the possibility of this attack occurring.
+
+## Hold that thought *AND* we’ll take up PtH mitigation through smart configurations of Active Directory *AND* other services in the next post.
+
+--------------------------------------------------------------------------------------------------------
+
+# PASS THE HASH P2: PREVENTION:
+
+## Last week:
+- I attended a webinar that was intended to give IT attendees a snapshot of recent threats—a kind of hacker heads-up.
+## For their representative case:
+- the two sec gurus described a clever *AND* very targeted phishing attack.
+## It led to an APT being secretly deposited in a DLL.
+## Once the hackers were in:
+- I was a little surprised to see they were probing memory for password hashes.
+
+## Pass the Hash:
+- *OR* PtH:
+- I learned:
+- was a standard hacker trick for gaining new identities.
+## It makes sense.
+## Hackers prefer to use credentials taken this way *AND* logon directly as an existing user.
+## Without sophisticated monitoring in place:
+- they’re less likely to be spotted in real-time *OR* even forensically afterwards when appearing as ordinary insiders.
+
+# Beware of Local Admin
+
+## As I mentioned last time:
+- PtH assumes that an attacker has admin-level privileges on the machine they’ve first entered.
+## The hash:
+- which is kept in the memory space of a process with local admin permissions:
+- is by itself not used to establish identity.
+## Instead:
+- it becomes part of a secret key for encrypting *AND* decrypting messages in a challenge-response protocol.
+
+## In effect:
+- you need just the hash code to take over the identity of another user.
+## The hard part is getting local admin access.
+
+## Unfortunately:
+- this is not a major hurdle.
+## On older Windows systems (pre-Vista):
+- the local admin account is automatically created *AND* even worse:
+- IT may have given each user machine the same admin password.
+
+## Suppose a laptop is compromised through a phish-mail that deposits malware.
+ The malware succeeds in a brute force assault on the local admin passwords.
+## From this machine:
+- the hackers can leapfrog to other devices *AND* servers:
+- either through new credentials that’ve been scooped from memory by PtH toolkits *OR* by simply reusing the admin password.
+
+*it may be an annoyance for admins, but UAC is a  good defense against PtH.*
+
+## Thankfully:
+- newer Windows OSes—Windows 7 *AND* 8—by default don’t create a local admin account.
+## Even better:
+- Microsoft added a new malware defense known as User Account Controls *OR* UAC:
+- which requires explicit authorization for a user (or software) to gain elevated privileges.
+
+## Admins know UAC through the Consent *OR* Credential prompts (see pic) that pop up when they do legitimate work.
+## While they may find this somewhat inconvenient:
+- it does go a long way towards preventing malware *AND* APTs from getting a critical foot hold.
+
+## For organizations with older OSes:
+- IT can enforce a policy of creating unique *AND* robust admin passwords for each user machine.
+## It’s a low-effort remedy for preventing the hackers from easily guessing admin credentials *AND* then reusing hashes on other machines.
+## One simple trick is to append the machine name (or variation of it) to the password.
+
+# Stomp Out Local Network Logon Access
+
+## Another powerful mitigation that works on both old *AND* new Windows OSes is to prevent ordinary *AND* local admin users from directly networking into other users’ machines.
+## In an Active Directory environment:
+- you’d do that by using the Group Policy Object (GPO) Editor to disable Remote Desktop Connections.
+## You can read more about how to do this here.
+
+## Quick summary: disable network *AND* remote interactive logon privileges *AND* then link users *AND* groups to these specific User Rights policies.
+
+# And Just Limit Hashes
+
+## The above measures take care of a large part *BUT* not all the entry points for PtH attacks.
+ In the exploit that I opened this post up with the hackers used SQL injection techniques to hijack a database server that was already running with elevated privileges.
+## Result: they were able to scoop up high-level hashes.
+
+## The least privilege security principle now comes to the fore: don’t run services—SQL servers:
+- *AND* other IT infrastructure—with domain *OR* enterprise level access rights.
+## These permissions are far broader than what system tools *AND* services generally need to do the job:
+- *AND* if the software is ever compromised:
+- the shells *OR* commands that are spawned automatically run at elevated access.
+
+## However:
+- sometimes this may not be feasible:
+- *AND* of course:
+- there are always zero-day exploits waiting to happen.
+## So the key idea now is to limit the “bad” hashes—typically domain administrators—from spreading throughout the network.
+ Recall that with Single Sign On:
+- the hash:
+- even for DAs:
+- is always deposited in memory when logging onto a machine.
+
+## The rule is simple: only give domain administrators the right to access machines with equally high privilege levels—i.e.:
+- domain controllers—and never allow the same accounts access to plain-old employee laptops *AND* desktops.
+## You can always create a separate account for system admins for servicing user devices *BUT* with non-domain admin privileges.
+
+## That way:
+- if a hacker (or internal user) should ever get control of a machine:
+- they’ll never get the “keys to the kingdom”—a domain administrator’s hash that just happens to be in memory at the time.
+
+--------------------------------------------------------------------------------------------------------
