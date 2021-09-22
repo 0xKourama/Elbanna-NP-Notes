@@ -277,3 +277,125 @@ Inside each replication request, DCs also include their UTDV.
 Each DC maintains a UTDV for each NC replicated, and inside the UTDV the DC tracks the highest originating update USN for which it has received changes, for every DC replicating the NC.
 This prevents endless replication loops and leads to the behavior known as propagation dampening, which ensures that updates aren’t needlessly replicated.
 
+
+# Global catalog
+# The global catalog is a feature of Active Directory (“AD”) domain controllers that allows for a domain controller to provide information on any object in the forest:
+- regardless of whether the object is a member of the domain controller’s domain.
+
+# Domain controllers with the global catalog feature enabled are referred to as global catalog servers AND can perform several functions that are especially important in a multi-domain forest environment:
+
+# Authentication.
+# During an interactive domain logon:
+- a domain controller will process the authentication request *AND* provide authorization information regarding all of the groups of which the user account is a member for inclusion in the generated user access token.
+
+# User Principal Name Resolution.
+# Logon requests made using a user principal name (e.g.:
+- “username@domain.com”) require a search of the global catalog to identify the user account containing a matching userPrincipalName value.
+# This search is used to identify the distinguished name of the associated user object so the authentication request can be forwarded to a domain controller in the user object’s domain.
+
+# Universal Group Membership.
+# Logon requests made in multi-domain environments require the use of a global catalog that can check for the existence of any universal groups *AND* determine if the user logging on is a member of any of those groups.
+# Because the global catalog is the only source of universal groups membership information:
+- access to a global catalog server is a requirement for authentication in a multidomain forest.
+
+# Object Search.
+# The global catalog makes the directory structure within a forest transparent to users who perform a search.
+# For example:
+- any global catalog server in a forest is capable of identifying a user object given only the object’s samAccountName.
+# Without a global catalog server:
+- identifying a user object given only its samAccountName could require separate searches of every domain in the forest.
+
+# Active Directory Partitions
+# To understand how the global catalog works:
+- it is important to first understand a little bit about how the Active Directory database is structured.
+
+# Domain controllers store the Active Directory database in a single file:
+- NTDS.dit.
+# To simplify administration *AND* facilitate efficient replication:
+- the database itself is logically separated into partitions.
+
+# Every domain controller maintains at least three partitions:
+
+# The domain partition contains information about a domain’s objects *AND* their attributes.
+# Every domain controller contains a complete writable replica of its local domain partition.
+# The configuration partition contains information about the forest’s topology:
+- including domain controllers *AND* site links.
+# Every domain controller in a forest maintains a complete writable replica of the configuration partition.
+# The schema partition is a logical extension of the configuration partition *AND* contains definitions of every object class in the forest *AND* the rules that control the creation *AND* manipulation of those objects.
+# Every domain controller in a forest maintains a complete replica of the schema partition.
+# The schema partition is read-only on every domain controller except the domain controller that owns the Schema Master operations role for the forest.
+
+# Domain controllers may also maintain application partitions.
+# These partitions contain information relating to AD-integrated applications (e.g.:
+- AD-integrated DNS stores information in two application partitions:
+- DomainDNSZones *AND* ForestDNSZones) *AND* can contain any type of object except for security principals.
+# Application partitions have no specific replication requirements --> they are not required to replicate to other domain controllers *BUT* can be configured to replicate to any domain controller in a forest.
+
+# As the graphic illustrates:
+- each domain controller maintains a replica of its local domain partition:
+- the configuration partition:
+- *AND* the schema partition.
+# In a multi-domain forest like the one shown above:
+- global catalog servers also host an additional set of read-only partitions.
+# Each of these partitions contains a partial:
+- read-only replica of the domain partition from one of the other domains in the forest.
+
+# It is the information in these partial:
+- read-only partitions that allow global catalog servers to function as a reliable central repository of domain information.
+# As a result:
+- domain controllers that have been configured as global catalog servers are used to process authentication *AND* forest-wide search requests in a multi-domain forest.
+
+# The subset of object attributes that are replicated to global catalog servers is called the Partial Attribute Set (“PAS”).
+# The members of the Partial Attribute Set in a domain can be listed using the Get-ADObject PowerShell cmdlet:
+
+# In a single-domain forest:
+- all domain controllers host the only domain partition in the forest and:
+- consequently:
+- contain a record of all of the objects in the forest.
+# This results in all domain controllers in a single-domain forest being capable of processing authentication *AND* domain service requests.
+
+# Active Directory takes advantage of this by allowing any domain controller in a single-domain forest to function as a virtual global catalog server:
+- regardless of whether it has been configured as a global catalog server.
+# The only limitation to the virtual global catalog behavior is that only domain controllers configured as global catalog servers can respond to queries directed specifically to a global catalog.
+
+
+
+# Deploying Global Catalog Servers
+# When a new domain is created the first domain controller will be made a global catalog server.
+# Additional domain controllers can be configured as a global catalog by enabling the Global Catalog checkbox in the Server’s NTDS Settings properties in the Active Directory Sites *AND* Services management console *OR* the Set-ADObject PowerShell cmdlet:
+
+# Set-ADObject -Identity (Get-ADDomainController -Server <SERVER>).NTDSSettingsObjectDN -Replace @{options='1'} 
+
+# Each site in the forest should contain at least one global catalog server to eliminate the need for an authenticating domain controller to communicate across the network to retrieve global catalog information.
+
+# In situations where it is not feasible to deploy a global catalog server in a site:
+- such as a small remote branch office:
+- Universal Group Membership Caching can reduce authentication-related network traffic across a network *AND* allow for logon authentication even when communication with a global catalog server is inaccessible from within the remote site.
+
+# Enabling Universal Group Membership Caching allows for the remote site’s domain controller to process local site login requests using cached universal group membership information.
+# When an initial logon occurs:
+- the site’s domain controller passes the authentication request through to a global catalog server *AND* caches the response for use in processing subsequent login attempts.
+# This feature still requires communication with a global catalog server to process initial logons within the site *AND* perform search requests.
+
+# In any case:
+- it is recommended that all domain controllers be configured as global catalog servers unless there is a specific reason to avoid doing so.
+
+
+# A global catalog is a multi-domain catalog that allows for faster searching of objects without the need for a domain name.
+# It helps in locating an object from any domain by using its partial:
+- read-only replica stored in a domain controller.
+# As it uses only partial information *AND* a set of attributes that are most commonly used for searching:
+- the objects from all domains:
+- even in a large forest:
+- can be represented by a single database of a global catalog server.
+
+# A global catalog is created *AND* maintained by the AD DS replication system.
+# The predefined attributes that are copied into a global catalog are known as the Partial Attribute Set (PAS).
+# Users are allowed to add *OR* delete the attributes stored in a global catalog *AND* thus change the database schema.
+
+# Some of the common global catalog usage scenarios are as follows:
+
+# Forest-wide searches
+# User logon
+# Universal group membership caching
+# Exchange address book lookups
