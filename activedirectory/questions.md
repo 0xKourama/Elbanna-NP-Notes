@@ -1006,3 +1006,468 @@ This prevents endless replication loops and leads to the behavior known as propa
 - they’ll never get the “keys to the kingdom”—a domain administrator’s hash that just happens to be in memory at the time.
 
 --------------------------------------------------------------------------------------------------------
+
+## Replication of updates to Active Directory objects are transmitted between multiple domain controllers to keep replicas of directory partitions synchronized.
+## Multiple domains are common in large organizations:
+- as are multiple sites in disparate locations.
+## In addition:
+- domain controllers for the same domain are commonly placed in more than one site.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+## Therefore:
+- replication must often occur both within sites *AND* between sites to keep domain *AND* forest data consistent among domain controllers that store the same directory partitions.
+## Site objects can be configured to include a set of subnets that provide local area network (LAN) network speeds.
+## As such:
+- replication within sites generally occurs at high speeds between domain controllers that are on the same network segment.
+## Similarly:
+- site link objects can be configured to represent the wide area network (WAN) links that connect LANs.
+## Replication between sites usually occurs over these WAN links:
+- which might be costly in terms of bandwidth.
+## To accommodate the differences in distance *AND* cost of replication within a site *AND* replication between sites:
+- the intrasite replication topology is created to optimize speed:
+- *AND* the intersite replication topology is created to minimize cost.
+
+## The Knowledge Consistency Checker (KCC) is a distributed application that runs on every domain controller *AND* is responsible for creating the connections between domain controllers that collectively form the replication topology.
+## The KCC uses Active Directory data to determine where (from what source domain controller to what destination domain controller) to create these connections.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+- the intrasite replication topology is created to optimize speed:
+- *AND* the intersite replication topology is created to minimize cost.
+- the KCC runs on every DC
+- the connection of links form the replication topology
+- KCC determines connection direction
+### what are the terms and meanings?
+- Site objects can be configured to include a set of subnets that provide local area network (LAN) network speeds.
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+- replication must often occur both within sites *AND* between sites to keep domain *AND* forest data consistent among domain controllers that store the same directory partitions.
+
+----------------------------------------------------
+
+# Replication within and between sites:
+
+## The KCC creates separate replication topologies to transfer Active Directory updates within a site *AND* between all configured sites in the forest.
+## The connections that are used for replication within sites are created automatically with no additional configuration.
+```
+## Intrasite replication takes advantage of LAN network speeds by providing replication as soon as changes occur:
+- without the overhead of data compression:
+- thus maximizing CPU efficiency.
+```
+## Intrasite replication connections form a ring topology with extra shortcut connections where needed to decrease latency.
+## The fast replication of updates within sites facilitates timely updates of domain data.
+## In deployments where large datacenters constitute hub sites for the centralization of mission-critical operations:
+- directory consistency is critical.
+
+## Replication between sites is made possible by user-defined site *AND* site link objects that are created in Active Directory to represent the physical LAN *AND* WAN network infrastructure.
+## When Active Directory sites *AND* site links are configured:
+- the KCC creates an intersite topology so that replication flows between domain controllers across WAN links.
+## Intersite replication occurs according to a site link schedule so that WAN usage can be controlled:
+- *AND* is compressed to reduce network bandwidth requirements.
+## Site link settings can be managed to optimize replication routing over WAN links.
+## The connections that are created between sites form a spanning tree for each directory partition in the forest:
+- merging where common directory partitions can be replicated over the same connection.
+
+## In remote branch locations:
+- replication of updates from the hub sites is optimized for network availability.
+## Thus:
+- because intrasite replication is optimized for speed:
+- branch locations across WAN links can be assured of receiving data from hub sites that is up-to-date *AND* reliable --> *BUT* because intersite replication is scheduled:
+- branch sites receive this replication only at intervals that are deemed appropriate *AND* cost-effective for remote operations.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+`Intersite replication occurs according to a site link schedule so that WAN usage can be controlled:- *AND* is compressed to reduce network bandwidth requirements.`
+intrasite replication is seamless and quick ... intersite is calculated and scheduled
+### what are the terms and meanings?
+hub site, branch
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+- merging where common directory partitions can be replicated over the same connection.
+
+----------------------------------------------------
+
+# Technologies Related to Active Directory Replication Topology
+
+## File Replication Service
+## File Replication service (FRS) is related to Active Directory replication because it requires the Active Directory replication topology.
+## FRS is a multimaster replication service that is used to replicate files *AND* folders in the system volume (SYSVOL) shared folder on domain controllers *AND* in Distributed File System (DFS) shared folders.
+## FRS works by detecting changes to files *AND* folders *AND* then replicating the updated files *AND* folders to other replica members:
+- which are connected in a replication topology.
+
+## FRS uses the replication topology that is generated by the KCC to replicate the SYSVOL files to all domain controllers in the domain.
+## SYSVOL files are required by all domain controllers for Active Directory to function.
+## For more information about FRS *AND* how it uses the Active Directory replication topology:
+- see “FRS Technical Reference”.
+## For more information about SYSVOL:
+- see “Data Store Technical Reference.”
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# SMTP
+
+## Simple Mail Transfer Protocol (SMTP) is a packaging protocol that can be used as an alternative to the remote procedure call (RPC) replication transport.
+## SMTP can be used to transport nondomain replication over IP networks in mail-message format.
+## Where networks are not fully routed:
+- e-mail is sometimes the only transport method available.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Active Directory Replication Topology Dependencies
+
+## Active Directory replication topology has the following dependencies:
+
+## Routable IP infrastructure.
+## The replication topology is dependent upon a routable IP infrastructure from which you can map IP subnet address ranges to site objects.
+## This mapping generates the information that is used by client workstations to communicate with domain controllers that are close by:
+- when there is a choice:
+- rather than those that are located across WAN links.
+
+## DNS.
+## The Domain Name System (DNS) resolves DNS names to IP addresses.
+## Active Directory replication topology requires that DNS is properly designed *AND* deployed so that domain controllers can correctly resolve the DNS names of replication partners.
+
+## DNS also stores service (SRV) resource records that provide site affinity information to clients searching for domain controllers:
+- including domain controllers that are searching for replication partners.
+## Every domain controller registers these records so that they can be located according to site.
+
+## Net Logon service.
+## Net Logon is required for DNS registrations.
+
+## RPC.
+## Active Directory replication requires IP connectivity *AND* RPC to transfer updates between replication partners within sites.
+## RPC is required for replication between two sites containing domain controllers in the same domain:
+- *BUT* SMTP is an alternative where RPC cannot be used *AND* domain controllers for the same domain are all located in one site so that intersite replication of domain data is not required.
+
+## Intersite Messaging.
+## Intersite Messaging is required for SMTP intersite replication *AND* for site coverage calculations.
+## If the forest functional level is Windows 2000:
+- Intersite Messaging is also required for intersite topology generation.
+
+## The following diagram shows the interaction of these technologies with the replication topology:
+- which is indicated by the two-way connections between each set of domain controllers.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# How Active Directory Replication Topology Works
+
+## Active Directory implements a replication topology that takes advantage of the network speeds within sites:
+- which are ideally configured to be equivalent to local area network (LAN) connectivity (network speed of 10 megabits per second [Mbps] *OR* higher).
+## The replication topology also minimizes the use of potentially slow *OR* expensive wide area network (WAN) links between sites.
+
+## When you create a site object in Active Directory:
+- you associate one *OR* more Internet Protocol (IP) subnets with the site.
+## Each domain controller in a forest is associated with an Active Directory site.
+## A client workstation is associated with a site according to its IP address --> that is:
+- each IP address maps to one subnet:
+- which in turn maps to one site.
+
+## Active Directory uses sites to:
+
+## Optimize replication for speed *AND* bandwidth consumption between domain controllers.
+
+## Locate the closest domain controller for client logon:
+- services:
+- *AND* directory searches.
+
+## Direct a Distributed File System (DFS) client to the server that is hosting the requested data within the site.
+
+## Replicate the system volume (SYSVOL):
+- a collection of folders in the file system that exists on each domain controller in a domain *AND* is required for implementation of Group Policy.
+
+## The ideal environment for replication topology generation is a forest that has a forest functional level of at least Windows Server 2003.
+## In this case:
+- replication topology generation is faster *AND* can accommodate more sites *AND* domains than occurs when the forest has a forest functional level of Windows 2000.
+## When at least one domain controller in each site is running Windows Server 2003:
+- more domain controllers in each site can be used to replicate changes between sites than when all domain controllers are running Windows 2000 Server.
+
+## In addition:
+- replication topology generation requires the following conditions:
+
+## A Domain Name System (DNS) infrastructure that manages the name resolution for domain controllers in the forest.
+## Active Directory–integrated DNS is assumed:
+- wherein DNS zone data is stored in Active Directory *AND* is replicated to all domain controllers that are DNS servers.
+
+## All physical locations that are represented as site objects in Active Directory have LAN connectivity.
+
+## IP connectivity is available between each site *AND* all sites in the same forest that host operations master roles.
+
+## Domain controllers meet the hardware requirements for Windows Server 2008 R2:
+- Windows Server 2008:
+- Windows Server 2003:
+- Standard Edition --> Windows Server 2003:
+- Enterprise Edition --> *AND* Windows Server 2003:
+- Datacenter Edition.
+
+## The appropriate number of domain controllers is deployed for each domain that is represented in each site.
+
+## This section covers the replication components that create the replication topology *AND* how they work together:
+- plus the mechanisms *AND* rationale for routing replication traffic between domain controllers in the same site *AND* in different sites.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Active Directory KCC Architecture and Processes
+
+## The replication topology is generated by the Knowledge Consistency Checker (KCC):
+- a replication component that runs as an application on every domain controller *AND* communicates through the distributed Active Directory database.
+## The KCC functions locally by reading:
+- creating:
+- *AND* deleting Active Directory data.
+## Specifically:
+- the KCC reads configuration data *AND* reads *AND* writes connection objects.
+## The KCC also writes local:
+- nonreplicated attribute values that indicate the replication partners from which to request replication.
+
+## For most of its operation:
+- the KCC that runs on one domain controller does not communicate directly with the KCC on any other domain controller.
+## Rather:
+- all KCCs use the knowledge of the common:
+- global data that is stored in the configuration directory partition as input to the topology generation algorithm to converge on the same view of the replication topology.
+
+## Each KCC uses its in-memory view of the topology to create inbound connections locally:
+- manifesting only those results that apply to itself.
+## The KCC communicates with other KCCs only to make a remote procedure call (RPC) request for replication error information.
+## The KCC uses the error information to identify gaps in the replication topology.
+## A request for replication error information occurs only between domain controllers in the same site.
+
+## Note
+
+## The KCC uses only RPC to communicate with the directory service.
+## The KCC does not use Lightweight Directory Access Protocol (LDAP).
+## One domain controller in each site is selected as the Intersite Topology Generator (ISTG).
+## To enable replication across site links:
+- the ISTG automatically designates one *OR* more servers to perform site-to-site replication.
+## These servers are called bridgehead servers.
+## A bridgehead is a point where a connection leaves *OR* enters a site.
+
+## The ISTG creates a view of the replication topology for all sites:
+- including existing connection objects between all domain controllers that are acting as bridgehead servers.
+## The ISTG then creates inbound connection objects for servers in its site that it determines will act as bridgehead servers *AND* for which connection objects do not already exist.
+## Thus:
+- the scope of operation for the KCC is the local server only:
+- *AND* the scope of operation for the ISTG is a single site.
+
+## Each KCC has the following global knowledge about objects in the forest:
+- which it gets by reading objects in the Sites container of the configuration directory partition *AND* which it uses to generate a view of the replication topology:
+
+## Sites
+## Servers
+## Site affiliation of each server
+## Global catalog servers
+## Directory partitions stored by each server
+## Site links
+## Site link bridges
+
+## Detailed information about these configuration components *AND* their functionality is provided later in this section.
+
+## The following diagram shows the KCC architecture on servers in the same forest in two sites.
+
+## KCC Architecture *AND* Processes
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# The architecture and process components in the preceding diagram are described in the following table.
+
+## Knowledge Consistency Checker (KCC)
+## The application running on each domain controller that communicates directly with the Ntdsa.dll to read *AND* write replication objects.
+
+## Directory System Agent (DSA)
+## The directory service component that runs as Ntdsa.dll on each domain controller:
+- providing the interfaces through which services *AND* processes such as the KCC gain access to the directory database.
+
+## Extensible Storage Engine (ESE)
+## The directory service component that runs as Esent.dll.
+## ESE manages the tables of records:
+- each with one *OR* more columns.
+## The tables of records comprise the directory database.
+
+## Remote procedure call (RPC)
+## The Directory Replication Service (Drsuapi) RPC protocol:
+- used to communicate replication status *AND* topology to a domain controller.
+## The KCC also uses this protocol to communicate with other KCCs to request error information when building the replication topology.
+
+## Intersite Topology Generator (ISTG)
+- The single KCC in a site that manages intersite connection objects for the site.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+## The four servers in the preceding diagram create identical views of the servers in their site *AND* generate connection objects on the basis of the current state of Active Directory data in the configuration directory partition.
+## In addition to creating its view of the servers in its respective site:
+- the KCC that operates as the ISTG in each site also creates a view of all servers in all sites in the forest.
+## From this view:
+- the ISTG determines the connections to create on the bridgehead servers in its own site.
+
+## Note
+
+## A connection requires two endpoints: one for the destination domain controller *AND* one for the source domain controller.
+## Domain controllers creating an intrasite topology always use themselves as the destination end point *AND* must consider only the endpoint for the source domain controller.
+## The ISTG:
+- however:
+- must identify both endpoints in order to create connection objects between two other servers.
+## Thus:
+- the KCC creates two types of topologies: intrasite *AND* intersite.
+## Within a site:
+- the KCC creates a ring topology by using all servers in the site.
+## To create the intersite topology:
+- the ISTG in each site uses a view of all bridgehead servers in all sites in the forest.
+## The following diagram shows a high-level generalization of the view that the KCC sees of an intrasite ring topology *AND* the view that the ISTG sees of the intersite topology.
+## Lines between domain controllers within a site represent inbound *AND* outbound connections between the servers.
+## The lines between sites represent configured site links.
+## Bridgehead servers are represented as BH.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+ISTG views tree of bridgeheads
+KCC views bi-directional ring with shortcuts if a DC is more than 3 hops away
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Replication Topology Physical Structure
+
+## The Active Directory replication topology can use many different components.
+## Some components are required *AND* others are not required *BUT* are available for optimization.
+## The following diagram illustrates most replication topology components *AND* their place in a sample Active Directory multisite *AND* multidomain forest.
+## The depiction of the intersite topology that uses multiple bridgehead servers for each domain assumes that at least one domain controller in each site is running at least Windows Server 2003.
+## All components of this diagram *AND* their interactions are explained in detail later in this section.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+## In the preceding diagram:
+- all servers are domain controllers.
+## They independently use global knowledge of configuration data to generate one-way:
+- inbound connection objects.
+## The KCCs in a site collectively create an intrasite topology for all domain controllers in the site.
+## The ISTGs from all sites collectively create an intersite topology.
+## Within sites:
+- one-way arrows indicate the inbound connections by which each domain controller replicates changes from its partner in the ring.
+## For intersite replication:
+- one-way arrows represent inbound connections that are created by the ISTG of each site from bridgehead servers (BH) for the same domain (or from a global catalog server [GC] acting as a bridgehead if the domain is not present in the site) in other sites that share a site link.
+## Domains are indicated as D1:
+- D2:
+- D3:
+- *AND* D4.
+
+## Each site in the diagram represents a physical LAN in the network:
+- *AND* each LAN is represented as a site object in Active Directory.
+## Heavy solid lines between sites indicate WAN links over which two-way replication can occur:
+- *AND* each WAN link is represented in Active Directory as a site link object.
+## Site link objects allow connections to be created between bridgehead servers in each site that is connected by the site link.
+
+## Not shown in the diagram is that where TCP/IP WAN links are available:
+- replication between sites uses the RPC replication transport.
+## RPC is always used within sites.
+## The site link between Site A *AND* Site D uses the SMTP protocol for the replication transport to replicate the configuration *AND* schema directory partitions *AND* global catalog partial:
+- read-only directory partitions.
+## Although the SMTP transport cannot be used to replicate writable domain directory partitions:
+- this transport is required because a TCP/IP connection is not available between Site A *AND* Site D.
+## This configuration is acceptable for replication because Site D does not host domain controllers for any domains that must be replicated over the site link A-D.
+
+## By default:
+- site links A-B *AND* A-C are transitive (bridged):
+- which means that replication of domain D2 is possible between Site B *AND* Site C:
+- although no site link connects the two sites.
+## The cost values on site links A-B *AND* A-C are site link settings that determine the routing preference for replication:
+- which is based on the aggregated cost of available site links.
+## The cost of a direct connection between Site C *AND* Site B is the sum of costs on site links A-B *AND* A-C.
+## For this reason:
+- replication between Site B *AND* Site C is automatically routed through Site A to avoid the more expensive:
+- transitive route.
+## Connections are created between Site B *AND* Site C only if replication through Site A becomes impossible due to network *OR* bridgehead server conditions.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc755994(v=ws.10)
+
+# Performance Limits for Replication Topology Generation
