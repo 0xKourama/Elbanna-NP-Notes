@@ -1471,3 +1471,111 @@ KCC views bi-directional ring with shortcuts if a DC is more than 3 hops away
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc755994(v=ws.10)
 
 # Performance Limits for Replication Topology Generation
+
+## Active Directory topology generation performance is limited primarily by the memory on the domain controller.
+## KCC performance degrades at the physical memory limit.
+## In most deployments:
+- topology size will be limited by the amount of domain controller memory rather than CPU utilization required by the KCC.
+
+## Scaling of sites *AND* domains is improved in Windows Server 2003 by improving the algorithm that the KCC uses to generate the intersite replication topology.
+## Because all domain controllers must use the same algorithm to arrive at a consistent view of the replication topology:
+- the improved algorithm has a forest functional level requirement of Windows Server 2003 *OR* Windows Server 2003 interim.
+
+## KCC scalability was tested on domain controllers with 1.8 GHz processor speed:
+- 512 megabytes (MB) RAM:
+- *AND* small computer system interface (SCSI) disks.
+## KCC performance results at forest functional levels that are at least Windows Server 2003 are described in the following table.
+## The times shown are for the KCC to run where all new connections are needed (maximum) *AND* where no new connections are needed (minimum).
+## Because most organizations add domain controllers in increments:
+- the minimum generation times shown are closest to the actual runtimes that can be expected in deployments of comparable sizes.
+## The CPU *AND* memory usage values for the Local Security Authority (LSA) process (Lsass.exe) indicate the more significant impact of memory versus percent of CPU usage when the KCC runs.
+
+## Note
+
+## Active Directory runs as part of the LSA:
+- which manages authentication packages *AND* authenticates users *AND* services.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Goals of Replication Topology
+
+## The KCC generates a replication topology that achieves the following goals:
+
+## Connect every directory partition replica that must be replicated.
+
+## Control replication latency *AND* cost.
+
+## Route replication between sites.
+
+## Effect client affinity.
+
+## By default:
+- the replication topology is managed automatically *AND* optimizes existing connections.
+## However:
+- manual connections created by an administrator are not modified *OR* optimized.
+
+----------------------------------------------------
+
+# Connect Directory Partition Replicas
+
+## The total replication topology is actually composed of several underlying topologies:
+- one for each directory partition.
+## In the case of the schema *AND* configuration directory partitions:
+- a single topology is created.
+## The underlying topologies are merged to form the minimum number of connections that are required to replicate each directory partition between all domain controllers that store replicas.
+## Where the connections for directory partitions are identical between domain controllers — for example:
+- two domain controllers store the same domain directory partition — a single connection can be used for replication of updates to the domain:
+- schema:
+- *AND* configuration directory partitions.
+
+## A separate replication topology is also created for application directory partitions.
+## However:
+- in the same manner as schema *AND* configuration directory partitions:
+- application directory partitions can use the same topology as domain directory partitions.
+## When application *AND* domain directory partitions are common to the source *AND* destination domain controllers:
+- the KCC does not create a separate connection for the application directory partition.
+
+## A separate topology is not created for the partial replicas that are stored on global catalog servers.
+## The connections that are needed by a global catalog server to replicate each partial replica of a domain are part of the topology that is created for each domain.
+
+## The routes for the following directory partitions *OR* combinations of directory partitions are aggregated to arrive at the overall topology:
+
+## Configuration *AND* schema within a site.
+## Each writable domain directory partition within a site.
+## Each application directory partition within a site.
+## Global catalog read-only:
+- partial domain directory partitions within a site.
+
+## Configuration *AND* schema between sites.
+## Each writable domain directory partition between sites.
+## Each application directory partition between sites.
+## Global catalog read-only:
+- partial domain directory partitions between sites.
+
+## Replication transport protocols determine the manner in which replication data is transferred over the network media.
+## Your network environment *AND* server configuration dictates the transports that you can use.
+## For more information about transports:
+- see “Replication Transports” later in this section.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Control Replication Latency and Cost
+
