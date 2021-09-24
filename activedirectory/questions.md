@@ -17,3 +17,4 @@
 # what is a global catalog?
 # what are the active directory partitions? what does each contain? where are they located?
 # what the process in charge of authentication on windows?
+# what does netlogon do?

@@ -30,3 +30,6 @@
 # DCs of the same domain must replicate using RPC over IP. this means, that domains can span sites *ONLY* when RPC over IP is available.
 # synchronous connections are for fast & available connections while asynchronous connections are for slow intermittent connections.
 # the replication queue is formed of sync requests which are [partition to be synced + source DC]. each request is processed until complete, gets an error or pre-empted by a higher priority operation.
+# the KCC doesn't create SMTP transports unless,
+1. IIS is installed on both bridgeheads
+2. there's a CA that encrypts the replication reply message; the replication request doesn't contain domain data so it doesn't need to be encrypted.

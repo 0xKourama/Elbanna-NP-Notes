@@ -2405,3 +2405,152 @@ domain controller Locator
 ### what areas made your mind wander? what areas you didn't understand?
 
 ----------------------------------------------------
+
+# SMTP Replication and Intersite Messaging
+
+## Intersite Messaging is a component that is enabled when Active Directory is installed.
+## Intersite Messaging allows for multiple transports to be used as add-ins to the Intersite Messaging architecture.
+## Intersite Messaging enables messaging communication that can use SMTP servers other than those that are dedicated to processing e-mail applications.
+
+## When the forest has a functional level of at least Windows 2000,
+- Intersite Messaging also provides services to the KCC in the form of querying the available replication paths.
+## In addition,
+- Net Logon queries the connectivity data in Intersite Messaging when calculating site coverage.
+## By default,
+- Intersite Messaging rebuilds its database once a day,
+- *OR* when required by a site link change.
+
+## When the forest has a functional level of at least Windows Server 2003,
+- the KCC does *NOT* use Intersite Messaging for calculating the topology.
+## However,
+- regardless of forest functional level,
+- Intersite Messaging is still required for SMTP replication,
+- DFS,
+- universal group membership caching,
+- *AND* Net Logon automatic site coverage calculations.
+## Therefore,
+- if any of these features are in use,
+- do *NOT* stop Intersite Messaging.
+
+## For more information about site coverage *AND* how automatic site coverage is calculated,
+- see “How DNS Support for Active Directory Works.” For more information about DFS,
+- see “DFS Technical Reference.”
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Requirements for SMTP Replication
+
+## The KCC does *NOT* create connections that use SMTP until the following requirements are met:
+
+## Internet Information Services (IIS) is installed on both bridgehead servers.
+
+## An enterprise certification authority (CA) is installed *AND* configured on your network.
+## The CA signs *AND* encrypts SMTP messages that are exchanged between domain controllers,
+- ensuring the authenticity of directory updates.
+## *Specifically*,
+- a domain controller certificate must be present on the replicating domain controllers.
+## The replication request message,
+- *WHICH* contains no directory data,
+- is *NOT* encrypted.
+## The replication reply message,
+- *WHICH* does contain directory data,
+- is encrypted using a key length of 128 bits.
+
+## The sites are connected by SMTP site links.
+
+## The site link path between the sites has a lower cost than any IP/RPC site link that can reach the SMTP site.
+
+## You are *NOT* attempting to replicate writable replicas of the same domain (although replication of global catalog partial replicas is supported).
+
+## Each domain controller is configured to receive mail.
+
+## You must also determine if mail routing is necessary.
+## If the two replicating domain controllers have direct IP connectivity *AND* can send mail to each other,
+- no further configuration is required.
+## However,
+- if the two domain controllers must go through mail gateways to deliver mail to each other,
+- you must configure the domain controller to use the mail gateway.
+
+## Note
+
+## RPC is required for replicating the domain to a new domain controller *AND* for installing certificates.
+## If RPC is *NOT* available to the remote site,
+- the domain must be replicated *AND* certificates must be installed over RPC in a hub site *AND* the domain controller then shipped to the remote site.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Comparison of SMTP and RPC Replication
+
+## The following characteristics apply to both SMTP *AND* RPC with respect to Active Directory replication:
+
+## For replication <-- *BETWEEN* --> sites,
+- data that is replicated through *EITHER* transport is compressed.
+
+## Active Directory can respond with *ONLY* a fixed (maximum) number of changes per change request,
+- based on the size of the replication packet.
+## The size of the replication packet is configurable.
+## For information about configuring the replication packet size,
+- see “Replication Packet Size” later in this section.
+
+## Active Directory can apply a single set of changes at a time for a specific directory partition *AND* replication partner.
+
+## The response data (changes) are transported in one *OR* many frames,
+- based on the total number of changed *OR* new values.
+
+## TCP transports the data portion *BY* using the same algorithm for both SMTP *AND* RPC.
+
+## If transmission of the data portion fails,
+- complete retransmission is necessary.
+
+## Point-to-point synchronous RPC replication is available <-- BETWEEN --> sites to allow the flexibility of having domains that span multiple sites.
+## RPC is best used <-- BETWEEN --> sites that are connected *BY* WAN links because it involves lower latency.
+## SMTP is best used <-- BETWEEN --> sites where RPC over IP is *NOT* possible.
+## For example,
+- SMTP can be used *BY* companies that have a network backbone that is *NOT* based on TCP/IP,
+- such as companies that use an X.400 backbone.
+
+## Active Directory replication uses both transports to implement a request-response mechanism.
+## Active Directory issues requests for changes *AND* replies to requests for changes.
+## RPC maps these requests into RPC requests *AND* RPC replies.
+## SMTP,
+- on the other hand,
+- actually uses long-lived TCP connections (or X.400-based message transfer agents in non-TCP/IP networks) to deliver streams of mail in each direction.
+## Thus,
+- RPC transport expects a response to any request immediately *AND* can have a maximum of one active inbound RPC connection to a directory partition replica at a time.
+## The SMTP transport expects much longer delays <-- BETWEEN --> a request *AND* a response.
+## As a result,
+- multiple inbound SMTP connections to a directory partition replica can be active at the same time,
+- provided the requests are all for a different source domain controller or,
+- for the same source domain controller,
+- a different directory partition.
+## For more information,
+- see “Synchronous *AND* Asynchronous Communication” earlier in this section.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
