@@ -1,71 +1,58 @@
-# Markdown Cheat Sheet
-
-Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
-
-This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax) and [extended syntax](https://www.markdownguide.org/extended-syntax).
-
-## Basic Syntax
-
-These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
-
-### Heading
+Heading:
 
 # H1
 ## H2
 ### H3
-
-### Bold
+----------------------------------------
+Bold:
 
 **bold text**
-
-### Italic
+----------------------------------------
+Italic:
 
 *italicized text*
+----------------------------------------
 
-### Blockquote
+Blockquote:
 
 > blockquote
-
-### Ordered List
+----------------------------------------
+Ordered List:
 
 1. First item
 2. Second item
 3. Third item
-
-### Unordered List
+----------------------------------------
+Unordered List:
 
 - First item
 - Second item
 - Third item
-
-### Code
+----------------------------------------
+Code:
 
 `code`
-
-### Horizontal Rule
+----------------------------------------
+Horizontal Rule:
 
 ---
-
-### Link
+----------------------------------------
+Link:
 
 [title](https://www.example.com)
-
-### Image
+----------------------------------------
+Image:
 
 ![alt text](image.jpg)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-### Table
+----------------------------------------
+Table:
 
 | Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
 | Paragraph | Text |
-
-### Fenced Code Block
+----------------------------------------
+Fenced Code Block:
 
 ```
 {
@@ -74,28 +61,29 @@ These elements extend the basic syntax by adding additional features. Not all Ma
   "age": 25
 }
 ```
-
-### Footnote
+----------------------------------------
+Footnote:
 
 Here's a sentence with a footnote. [^1]
 
 [^1]: This is the footnote.
-
-### Heading ID
+----------------------------------------
+Heading ID:
 
 ### My Great Heading {#custom-id}
-
-### Definition List
+----------------------------------------
+Definition List:
 
 term
 : definition
-
-### Strikethrough
+----------------------------------------
+Strikethrough:
 
 ~~The world is flat.~~
-
-### Task List
+----------------------------------------
+Task List:
 
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
+----------------------------------------

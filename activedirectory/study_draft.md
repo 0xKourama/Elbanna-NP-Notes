@@ -1642,3 +1642,350 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 - what made me like OOP?
 - what made like development?
 ----------------------------------------------------
+
+# Route Replication Between Sites
+
+## The KCC uses the information in Active Directory to identify the least-cost routes for replication between sites.
+## If a domain controller is unavailable at the time the replication topology is created:
+- making replication through that site impossible:
+- the next least-cost route is used.
+## This rerouting is automatic when site links are bridged (transitive):
+- which is the default setting.
+
+## Replication is automatically routed around network failures *AND* offline domain controllers.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Effect Client Affinity
+
+## Active Directory clients locate domain controllers according to their site affiliation.
+## Domain controllers register SRV resource records in the DNS database that map the domain controller to a site.
+## When a client requests a connection to a domain controller (for example:
+- when logging on to a domain computer):
+- the domain controller Locator uses the site SRV resource record to locate a domain controller with good connectivity whenever possible.
+## In this way:
+- a client locates a domain controller within the same site:
+- thereby avoiding communications over WAN links.
+
+## Sites can also be used by certain applications:
+- such as DFS:
+- to ensure that clients locate servers that are within the site or:
+- if none is available:
+- a server in the next closest site.
+## If the ISTG is running Windows Server 2003 *OR* later server operating systems:
+- you can specify an alternate site based on connection cost if no same-site servers are available.
+## This DFS feature:
+- called “site costing,” is new in Windows Server 2003.
+
+## For more information about the domain controller Locator:
+- see “DNS Support for Active Directory Technical Reference.” For more information about DFS site costing:
+- see “DFS Technical Reference.”
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+Active Directory client
+domain controller Locator
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Topology-Related Objects in Active Directory
+
+## Active Directory stores replication topology information in the configuration directory partition.
+## Several configuration objects define the components that are required by the KCC to establish *AND* implement the replication topology.
+
+## Active Directory Sites *AND* Services is the Microsoft Management Console (MMC) snap-in that you can use to view *AND* manage the hierarchy of objects that are used by the KCC to construct the replication topology.
+## The hierarchy is displayed as the contents of the Sites container:
+- which is a child object of the Configuration container.
+## The Configuration container is not identified in the Active Directory Sites *AND* Services UI.
+## The Sites container contains an object for each site in the forest.
+## In addition:
+- Sites contains the Subnets container:
+- which contains subnet definitions in the form of subnet objects.
+
+## The following figure shows a sample hierarchy:
+- including two sites: Default-First-Site-Name *AND* Site A.
+## The selected NTDS Settings object of the server MHDC3 in the site Default-First-Site-Name displays the inbound connections from MHDC4 in the same site *AND* from A-DC-01 in Site A.
+## In addition to showing that MHDC3 *AND* MHDC4 perform intrasite replication:
+- this configuration indicates that MHDC3 *AND* A-DC-01 are bridgehead servers that are replicating the same domain between Site A *AND* Default-First-Site-Name.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Site and Subnet Objects
+
+## Sites are effective because they map to specific ranges of subnet addresses:
+- as identified in Active Directory by subnet objects.
+## The relationship between sites *AND* subnets is integral to Active Directory replication.
+
+----------------------------------------------------
+
+## Site Objects
+## A site object (class site) corresponds to a set of one *OR* more IP subnets that have LAN connectivity.
+## Thus:
+- by virtue of their subnet associations:
+- domain controllers that are in the same site are well connected in terms of speed.
+## Each site object has a child NTDS Site Settings object *AND* a Servers container.
+## The distinguished name of the Sites container is CN=Sites,CN=Configuration,DC=ForestRootDomainName.
+## The Configuration container is the topmost object in the configuration directory partition *AND* the Sites container is the topmost object in the hierarchy of objects that are used to manage *AND* implement Active Directory replication.
+
+## When you install Active Directory on the first domain controller in the forest:
+- a site object named Default-First-Site-Name is created in the Sites container in Active Directory.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Subnet Objects
+
+## Subnet objects (class subnet) define network subnets in Active Directory.
+## A network subnet is a segment of a TCP/IP network to which a set of logical IP addresses is assigned.
+## Subnets group computers in a way that identifies their physical proximity on the network.
+## Subnet objects in Active Directory are used to map computers to sites.
+## Each subnet object has a siteObject attribute that links it to a site object.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Subnet-to-Site Mapping
+
+## You associate a set of IP subnets with a site if they have high-bandwidth LAN connectivity:
+- possibly involving hops through high-performance routers.
+
+## Note
+
+## LAN connectivity assumes high-speed:
+- inexpensive bandwidth that allows similar *AND* reliable network performance:
+- regardless of which two computers in the site are communicating.
+## This quality of connectivity does not indicate that all servers in the site must be on the same network segment *OR* that hop counts between all servers must be identical.
+## Rather:
+- it is the measure by which you know that if a large amount of data needs to be copied from one server to another:
+- it does not matter which servers are involved.
+## If you find that you are concerned about such situations:
+- consider creating another site.
+
+## When you create subnet objects in Active Directory:
+- you associate them with site objects so that IP addresses can be localized according to sites.
+## During the process of domain controller location:
+- subnet information is used to find a domain controller in the same site as:
+- *OR* the site closest to:
+- the client computer.
+
+## The Net Logon service on a domain controller is able to identify the site of a client by mapping the client’s IP address to a subnet object in Active Directory.
+## Likewise:
+- when a domain controller is installed:
+- its server object is created in the site that contains the subnet that maps to its IP address.
+
+## You can use Active Directory Sites *AND* Services to define subnets:
+- *AND* then create a site *AND* associate the subnets with the site.
+## By default:
+- only members of the Enterprise Admins group have the right to create new sites:
+- although this right can be delegated.
+
+## In a default Active Directory installation:
+- there is no default subnet object:
+- so potentially a computer can be in the forest *BUT* have an IP subnet that is not contained in any site.
+## For private networks:
+- you can specify the network addresses that are provided by the Internet Assigned Numbers Authority (IANA).
+## By definition:
+- that range covers all of the subnets for the organization.
+## However:
+- where several class B *OR* class C addresses are assigned:
+- there would necessarily be multiple subnet objects that all mapped to the same default site.
+
+## To accommodate this situation:
+- use the following subnets:
+
+## For class B addresses:
+- subnet 128.0.0.0/2 covers all class B addresses.
+
+## For class C addresses:
+- subnet 192.0.0.0/3 covers all class C addresses.
+
+## Note
+
+## The Active Directory Sites *AND* Services MMC snap-in neither checks nor enforces IP address mapping when you move a server object to a different site.
+## You must manually change the IP address on the domain controller to ensure proper mapping of the IP address to a subnet in the appropriate site.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Server Objects
+
+## Server objects (class server) represent server computers:
+- including domain controllers:
+- in the configuration directory partition.
+## When you install Active Directory:
+- the installation process creates a server object in the Servers container within the site to which the IP address of the domain controller maps.
+## There is one server object for each domain controller in the site.
+
+## A server object is distinct from the computer object that represents the computer as a security principal.
+## These objects are in separate directory partitions *AND* have separate globally unique identifiers (GUIDs).
+## The computer object represents the domain controller in the domain directory partition --> the server object represents the domain controller in the configuration directory partition.
+## The server object contains a reference to the associated computer object.
+
+## The server object for the first domain controller in the forest is created in the Default-First-Site-Name site.
+## When you install Active Directory on subsequent servers:
+- if no other sites are defined:
+- server objects are created in Default-First-Site-Name.
+## If other sites have been defined *AND* subnet objects have been associated with these sites:
+- server objects are created as follows:
+
+## If additional sites have been defined in Active Directory *AND* the IP address of the installation computer matches an existing subnet in a defined site:
+- the domain controller is added to that site.
+
+## If additional sites have been defined in Active Directory *AND* the new domain controller's IP address does not match an existing subnet in one of the defined sites:
+- the new domain controller's server object is created in the site of the source domain controller from which the new domain controller receives its initial replication.
+
+## When Active Directory is removed from a server:
+- its NTDS Settings object is deleted from Active Directory:
+- *BUT* its server object remains because the server object might contain objects other than NTDS Settings.
+## For example:
+- when Microsoft Operations Manager *OR* Message Queuing is running on a domain controller:
+- these applications create child objects beneath the server object.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# NTDS Settings Objects
+
+## The NTDS Settings object (class nTDSDSA) represents an instantiation of Active Directory on that server *AND* distinguishes a domain controller from other types of servers in the site *OR* from decommissioned domain controllers.
+## For a specific server object:
+- the NTDS Settings object contains the individual connection objects that represent the inbound connections from other domain controllers in the forest that are currently available to send changes to this domain controller.
+
+## Note
+
+## The NTDS Settings object should not be manually deleted.
+## The hasMasterNCs multivalued attribute (where “NC” stands for “naming context,” a synonym for “directory partition”) of an NTDS Settings object contains the distinguished names for the set of writable (non-global-catalog) directory partitions that are located on that domain controller:
+- as follows:
+
+## DC=Configuration,DC=ForestRootDomainName
+
+## DC=Schema,DC=Configuration,DC=ForestRootDomainName
+
+## DC=DomainName,DC=ForestRootDomainName
+
+## The msDSHasMasterNCs attribute is new attribute introduced in Windows Server 2003:
+- *AND* this attribute of the NTDS Settings object contains values for the above-named directory partitions as well as any application directory partitions that are stored by the domain controller.
+## Therefore:
+- on domain controllers that are DNS servers *AND* use Active Directory–integrated DNS zones:
+- the following values appear in addition to the default directory partitions:
+
+## DC=ForestDNSZones,DC=ForestRootDomainName (domain controllers in the forest root domain only)
+
+## DC=DomainDNSZones,DC=DomainName,DC=ForestRootDomainName (all domain controllers)
+
+## Applications that need to retrieve the list of all directory partitions that are hosted by a domain controller can be updated *OR* written to use the msDSHasMasterNCs attribute.
+## Applications that need to retrieve only domain directory partitions can continue to use the hasMasterNCs attribute.
+
+## For more information about these attributes:
+- see Active Directory in the Microsoft Platform SDK on MSDN.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Connection Objects
+
+## A connection object (class nTDSConnection) defines a one-way:
+- inbound route from one domain controller (the source) to the domain controller that stores the connection object (the destination).
+## The KCC uses information in cross-reference objects to create the appropriate connection objects:
+- which enable domain controllers that store the same directory partitions to replicate with each other.
+## The KCC creates connections for every server object in the Sites container that has an NTDS Settings object.
+
+## The connection object is a child of the replication destination’s NTDS Settings object:
+- *AND* the connection object references the replication source domain controller in the fromServer attribute on the connection object — that is:
+- it represents the inbound half of a connection.
+## The connection object contains a replication schedule *AND* specifies a replication transport.
+## The connection object schedule is derived from the site link schedule for intersite connections.
+## For more information about intersite connection schedules:
+- see “Connection Object Schedule” later in this section.
+
+## A connection is unidirectional --> a bidirectional replication connection is represented as two inbound connection objects.
+## The KCC creates one connection object under the NTDS Settings object of each server that is used as an endpoint for the connection.
+
+## Connection objects are created in two ways:
+
+## Automatically by the KCC.
+
+## Manually by a directory administrator by using Active Directory Sites *AND* Services:
+- ADSI Edit:
+- *OR* scripts.
+
+## Intersite connection objects are created by the KCC that has the role of intersite topology generator (ISTG) in the site.
+## One domain controller in each site has this role:
+- *AND* the ISTG role owners in all sites use the same algorithm to collectively generate the intersite replication topology.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Ownership of Connection Objects
+
