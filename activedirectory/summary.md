@@ -26,6 +26,7 @@
 # NTDS site settings tell which server is the ISTG and has the option of switching on Universal Group Membership Caching and choosing which GC to obtain the information from
 # cross reference objects store the location of each directory partition
 # intra-site replication must happen using synchronous high-speed RPC over IP
-# inter-site Replication over asynchronous low-speed SMTP is supported for *ONLY* domain controllers of different domains. This means that *ONLY* schema, configuration and global gatalog can be replicated inter-site using SMTP transport# Replication between sites over SMTP is supported for *ONLY* domain controllers of different domains.
-# DCs of the same domain must replicate using RPC over IP. this means, that domains can span sites *ONLY* when RPC over IP is available
-# synchronous connections are for fast & available connections while asynchronous connections are for slow intermittent connections
+# inter-site Replication over asynchronous low-speed SMTP is supported for *ONLY* domain controllers of different domains. This means that *ONLY* schema, configuration and global gatalog can be replicated inter-site using SMTP transport.
+# DCs of the same domain must replicate using RPC over IP. this means, that domains can span sites *ONLY* when RPC over IP is available.
+# synchronous connections are for fast & available connections while asynchronous connections are for slow intermittent connections.
+# the replication queue is formed of sync requests which are [partition to be synced + source DC]. each request is processed until complete, gets an error or pre-empted by a higher priority operation.

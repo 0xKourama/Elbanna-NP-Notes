@@ -2331,3 +2331,77 @@ domain controller Locator
 ### what areas made your mind wander? what areas you didn't understand?
 
 ----------------------------------------------------
+
+# Replication Queue
+
+## Suppose a domain controller has five inbound replication connections.
+## As the domain controller formulates change requests,
+- *EITHER* by a schedule being reached *OR* from a notification,
+- it adds a work item for each request to the end of the queue of pending synchronization requests.
+## Each pending synchronization request represents one <source domain controller,
+- directory partition> pair,
+- such as “synchronize the schema directory partition from DC1,” *OR* “delete the ApplicationX directory partition.”
+
+## When a work item has been received into the queue,
+- notification *AND* polling intervals do not apply — the domain controller processes the item (begins synchronizing from that source) as soon as the item reaches the front of the queue,
+- *AND* continues until *EITHER* the destination is fully synchronized with the source domain controller,
+- an error occurs,
+- *OR* the synchronization is pre-empted by a higher-priority operation.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# SMTP Intersite Replication
+
+## When sites are on opposite ends of a WAN link (or the Internet),
+- it is not always desirable — *OR* even possible — to perform synchronous,
+- RPC-based directory replication.
+## In some cases,
+- the *ONLY* method of communication between two sites is e-mail.
+## When connectivity is intermittent *OR* when end-to-end IP connectivity is not available (an intermediate site does not support RPC/IP replication),
+- replication must be possible across asynchronous,
+- store-and-forward transports such as SMTP.
+
+## In addition,
+- where bandwidth is limited,
+- it can be disadvantageous to force an entire replication cycle of request for changes *AND* transfer of changes between two domain controllers to complete before another can begin (that is,
+- to use synchronous replication).
+## With SMTP,
+- several cycles can be processing simultaneously so that each cycle is being processed to some degree most of the time,
+- as opposed to receiving no attention for prolonged periods,
+- *WHICH* can result in RPC time-outs.
+
+## For intersite replication,
+- SMTP replication substitutes mail messaging for the RPC transport.
+## The message syntax is the same as for RPC-based replication.
+## There is no change notification for SMTP–based replication,
+- *AND* scheduling information for the site link object is used as follows:
+
+## By default,
+- SMTP replication ignores the Replication Available *AND* Replication Not Available settings on the site link schedule in Active Directory Sites *AND* Services (the information that indicates when these sites are connected).
+## Replication occurs according to the messaging system schedule.
+
+## Within the scope of the messaging system schedule,
+- SMTP replication uses the replication interval that is set on the SMTP site link to indicate how often the server requests changes.
+## The interval (Replicate every ____ minutes) is set in 15-minute increments on the General tab in site link Properties in Active Directory Sites *AND* Services.
+
+## The underlying SMTP messaging system is responsible for message routing between SMTP servers.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
