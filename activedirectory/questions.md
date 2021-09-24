@@ -1579,3 +1579,66 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 
 # Control Replication Latency and Cost
 
+## Replication latency is inherent in a multimaster directory service.
+## A period of replication latency begins when a directory update occurs on an originating domain controller *AND* ends when replication of the change is received on the last domain controller in the forest that requires the change.
+## Generally:
+- the latency that is inherent in a WAN link is relative to a combination of the speed of the connection *AND* the available bandwidth.
+## Replication cost is an administrative value that can be used to indicate the latency that is associated with different replication routes between sites.
+## A lower-cost route is preferred by the ISTG when generating the replication topology.
+
+## Site topology is the topology as represented by the physical network: the LANs *AND* WANs that connect domain controllers in a forest.
+## The replication topology is built to use the site topology.
+## The site topology is represented in Active Directory by site objects *AND* site link objects.
+## These objects influence Active Directory replication to achieve the best balance between replication speed *AND* the cost of bandwidth utilization by distinguishing between replication that occurs within a site *AND* replication that must span sites.
+## When the KCC creates replication connections between domain controllers to generate the replication topology:
+- it creates more connections between domain controllers in the same site than between domain controllers in different sites.
+## The results are lower replication latency within a site *AND* less replication bandwidth utilization between sites.
+
+## Within sites:
+- replication is optimized for speed as follows:
+## Connections between domain controllers in the same site are always arranged in a ring:
+- with possible additional connections to reduce latency.
+## Replication within a site is triggered by a change notification mechanism when an update occurs:
+- moderated by a short:
+- configurable delay (because groups of updates frequently occur together).
+## Data is sent uncompressed:
+- *AND* thus without the processing overhead of data compression.
+
+## Between sites:
+- replication is optimized for minimal bandwidth usage (cost) as follows:
+## Replication data is compressed to minimize bandwidth consumption over WAN links.
+## Store-and-forward replication makes efficient use of WAN links — each update crosses an expensive link only once.
+## Replication occurs at intervals that you can schedule so that use of expensive WAN links is managed.
+## The intersite topology is a layering of spanning trees (one intersite connection between any two sites for each directory partition) *AND* generally does not contain redundant connections.
+
+### what makes this important?
+### what are your questions?
+- what does the ISTG do again?
+```
+## The intersite topology generator is an Active Directory process that defines the replication between sites on a network.
+## A single domain controller in each site is automatically designated to be the intersite topology generator.
+## Because this action is performed by the intersite topology generator:
+- you are not required to take any action to determine the replication topology *AND* bridgehead server roles.
+
+## The domain controller that holds the intersite topology generator role performs two functions:
+
+## It automatically selects one *OR* more domain controllers to become bridgehead servers.
+## This way:
+- if a bridgehead server becomes unavailable:
+- it automatically selects another bridgehead server:
+- if possible.
+
+## It runs the KCC to determine the replication topology *AND* resultant connection objects that the bridgehead servers can use to communicate with bridgehead servers of other sites.
+```
+### what are the ideas?
+### what are the terms and meanings?
+- site topology
+- ISTG intersite topology generator
+- 
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+- what made me like OOP?
+- what made like development?
+----------------------------------------------------
