@@ -33,3 +33,20 @@
 # the KCC doesn't create SMTP transports unless,
 1. IIS is installed on both bridgeheads
 2. there's a CA that encrypts the replication reply message; the replication request doesn't contain domain data so it doesn't need to be encrypted.
+# if a DC was moved to a site, and the connection object remains, it gets changed to blank transport and the KCC doesn't work on it. The ISTG works on it by changing it to IP transport and determines whether to keep the connection or delete it and makes that server the bridgehead.
+# inter-site replication transfers domain updates when the domain is split accross multiple sites.
+# inter-site replication is required for schema, config and GC either way.
+# bridghead servers are the ones responsible for inter-site replication.
+# the KCC on the DC that holds the ISTG role is the one that selects the bridgeheads server.
+# two replication types are compressed:
+1. inter-site replication
+2. replication to a newly created domain controller
+*bridgehead server of version 2003 and above use a new compression algorithm that's 2-10 times faster than server 2000 and uses less CPU but the compression rate isn't as good as 2000*
+*naturally, using the 2003 algorith requires both bridgeheads to be 2003. reverting to 2000 can be done if we want to minimize bandwidth*
+# if a bridgehead has too many replication partners. it logs and event with current and recommended number of partners.
+# [me] using high processing power for bridgeheads is the way to go to prevent failure
+# site link are transitive:
+1. if site A linked to site B
+2. site B linked to site C
+3. site A can replicate with with site C without a link
+# connections can be created transitively when there's no global catalog/same domain in the nearby site. a connection gets created to replicate the partial attribute set.

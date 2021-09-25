@@ -2520,9 +2520,9 @@ domain controller Locator
 ## If transmission of the data portion fails,
 - complete retransmission is necessary.
 
-## Point-to-point synchronous RPC replication is available <-- BETWEEN --> sites to allow the flexibility of having domains that span multiple sites.
-## RPC is best used <-- BETWEEN --> sites that are connected *BY* WAN links because it involves lower latency.
-## SMTP is best used <-- BETWEEN --> sites where RPC over IP is *NOT* possible.
+## Point-to-point synchronous RPC replication is available <-- *BETWEEN* --> sites to allow the flexibility of having domains that span multiple sites.
+## RPC is best used <-- *BETWEEN* --> sites that are connected *BY* WAN links because it involves lower latency.
+## SMTP is best used <-- *BETWEEN* --> sites where RPC over IP is *NOT* possible.
 ## For example,
 - SMTP can be used *BY* companies that have a network backbone that is *NOT* based on TCP/IP,
 - such as companies that use an X.400 backbone.
@@ -2535,7 +2535,7 @@ domain controller Locator
 - actually uses long-lived TCP connections (or X.400-based message transfer agents in non-TCP/IP networks) to deliver streams of mail in each direction.
 ## Thus,
 - RPC transport expects a response to any request immediately *AND* can have a maximum of one active inbound RPC connection to a directory partition replica at a time.
-## The SMTP transport expects much longer delays <-- BETWEEN --> a request *AND* a response.
+## The SMTP transport expects much longer delays <-- *BETWEEN* --> a request *AND* a response.
 ## As a result,
 - multiple inbound SMTP connections to a directory partition replica can be active at the same time,
 - provided the requests are all for a different source domain controller or,
@@ -2554,3 +2554,240 @@ domain controller Locator
 ### what areas made your mind wander? what areas you didn't understand?
 
 ----------------------------------------------------
+
+# Replication Packet Size
+
+## Replication packet sizes are computed on the basis of memory size *UNLESS* you have more than 1 gigabyte (GB).
+## By default,
+- the system limits the packet size as follows:
+
+## The packet size in bytes is 1/100th the size of RAM,
+- with a minimum of 1 MB *AND* a maximum of 10 MB.
+
+## The packet size in objects is 1/1,000,000th the size of RAM,
+- with a minimum of 100 objects *AND* a maximum of 1,000 objects.
+## For general estimates when this entry is *NOT* set,
+- assume an approximate packet size of 100 objects.
+
+## There is one exception: the value of the Replicator async inter site packet size (bytes) registry entry is always 1 MB if it is *NOT* set (that is,
+- when the default value is in effect).
+## Many mail systems limit the amount of data that can be sent in a mail message (2 MB to 4 MB is common),
+- *ALTHOUGH* most Windows-based mail systems can handle large 10-MB mail messages.
+
+## Overriding these memory-based values might be beneficial in advanced bandwidth management scenarios.
+## You can edit the registry to set the maximum packet size.
+
+## Note
+
+## If you must edit the registry,
+- use extreme caution.
+## Registry information is provided here as a reference for use *BY* *ONLY* highly skilled directory service administrators.
+## It is recommended that you do *NOT* directly edit the registry unless,
+- as in this case,
+- there is no Group Policy *OR* other Windows tools to accomplish the task.
+## Modifications to the registry are *NOT* validated *BY* the registry editor *OR* *BY* Windows before they are applied,
+- *AND* as a result,
+- incorrect values can be stored.
+## Storage of incorrect values can result in unrecoverable errors in the system.
+## Setting the maximum packet size requires adding *OR* modifying entries in the following registry path with the REG_DWORD data type: HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters.
+## These entries can be used to determine the maximum number of objects per packet *AND* maximum size of the packets.
+## The minimum values are indicated as the lowest value in the range.
+
+## For RPC replication within a site:
+
+## Replicator intra site packet size (objects)
+
+## Range: >=2
+
+## Replicator intra site packet size (bytes)
+
+## Range: >=10 KB
+
+## For RPC replication <-- *BETWEEN* --> sites:
+
+## Replicator inter site packet size (objects)
+
+## Range: >=2
+
+## Replicator inter site packet size (bytes)
+
+## Range: >=10 KB
+
+## For SMTP replication <-- *BETWEEN* --> sites:
+
+## Replicator async inter site packet size (objects)
+
+## Range: >=2
+
+## Replicator async inter site packet size (bytes)
+
+## Range: >=10 KB
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Transport Type
+
+## The transportType attribute of a connection object specifies *WHICH* network transport is used when the connection is used for replication.
+## The transport type receives its value from the distinguished name of the container in the configuration directory partition that contains the site link over *WHICH* the connection occurs,
+- as follows:
+
+## Connection objects that use TCP/IP have the transportType value of CN=IP,CN=Inter-Site Transports,CN=IP,DC=Configuration,DC=ForestRootDomainName.
+
+## Connection objects that use SMTP/IP have the transportType value of CN=SMTP,CN=Inter-Site Transports,CN=IP,DC=Configuration,DC=ForestRootDomainName.
+
+## For intrasite connections,
+- transportType has no value --> Active Directory Sites *AND* Services shows the transport of “RPC” for connections that are from servers in the same site.
+
+## If you move a domain controller to a different site,
+- the connection objects from servers in the site from *WHICH* it was moved remain,
+- *BUT* the transport type is blank because it was an intrasite connection.
+## Because the connection has an endpoint outside of the site,
+- the local KCC in the server’s new site does *NOT* manage the connection.
+## When the ISTG runs,
+- if a blank transport type is found for a connection that is from a server in a different site,
+- the transportType value is automatically changed to IP.
+## The ISTG in the site determines whether to delete the connection object *OR* to retain it,
+- in *WHICH* case the server becomes a bridgehead server in its new site.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Replication Between Sites
+
+## Replication <-- *BETWEEN* --> sites transfers domain updates when domain controllers for a domain are located in more than one site.
+## Intersite replication of configuration *AND* schema changes is *ALWAYS* required when more than one site is configured in a forest.
+## Replication <-- *BETWEEN* --> sites is accomplished *BY* bridgehead servers,
+- *WHICH* replicate changes according to site link settings.
+
+# Bridgehead Servers
+
+## *WHEN* domain controllers for the same domain are located in different sites,
+- at least one bridgehead server per directory partition *AND* per transport (IP *OR* SMTP) replicates changes from one site to a bridgehead server in another site.
+## A single bridgehead server *CAN* serve multiple partitions per transport *AND* multiple transports.
+## Replication within the site allows updates to flow <-- *BETWEEN* --> the bridgehead servers *AND* the other domain controllers in the site.
+## Bridgehead servers help to ensure that the data replicated across WAN links is *NOT* stale *OR* redundant.
+
+## Any server that has a connection object with a “from” server in another site is acting as a destination bridgehead.
+## Any server that is acting as a source for a connection to another site acts as a source bridgehead.
+
+## Note
+
+## You *CAN* identify a KCC-selected bridgehead server in Active Directory Sites *AND* Services *BY* viewing connection objects for the server (select the NTDS Settings object below the server object) --> *IF* there are connections from servers in a different site *OR* sites,
+- the server represented *BY* the selected NTDS Settings object is a bridgehead server.
+ *IF* you have Windows Support Tools installed,
+- you *CAN* see all bridgehead servers *BY* using the command repadmin /bridgeheads.
+## KCC selection of bridgehead servers guarantees bridgehead servers that are capable of replicating all directory partitions that are needed in the site,
+- including partial global catalog partitions.
+## By default,
+- bridgehead servers are selected automatically *BY* the KCC on the domain controller that holds the ISTG role in each site.
+ *IF* you want to identify the domain controllers that *CAN* act as bridgehead servers,
+- you *CAN* designate preferred bridgehead servers,
+- from *WHICH* the ISTG selects all bridgehead servers.
+## Alternatively,
+- *IF* the ISTG is *NOT* used to generate the intersite topology,
+- you *CAN* create manual intersite connection objects on domain controllers to designate bridgehead servers.
+
+## In sites that have at least one domain controller that is running Windows Server 2003,
+- the ISTG *CAN* select bridgehead servers from all eligible domain controllers for each directory partition that is represented in the site.
+## For example,
+- *IF* three domain controllers in a site store replicas of the same domain *AND* domain controllers for this domain are also located in three *OR* more other sites,
+- the ISTG *CAN* spread the inbound connection objects from those sites among all three domain controllers,
+- including those that are running Windows 2000 Server.
+
+## In Windows 2000 forests,
+- a single bridgehead server per directory partition *AND* per transport is designated as the bridgehead server that is responsible for intersite replication of that directory partition.
+## *THEREFORE*,
+- for the preceding example,
+- *ONLY* one of the three domain controllers would be designated *BY* the ISTG as a bridgehead server for the domain,
+- *AND* all four connection objects from the four other sites would be created on the single bridgehead server.
+## In large hub sites,
+- a single domain controller might *NOT* be able to adequately respond to the volume of replication requests from perhaps thousands of branch sites.
+
+## For more information about how the KCC selects bridgehead servers,
+- see “Bridgehead Server Selection” later in this section.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Compression of Replication Data
+
+## Intersite replication is compressed *BY* default.
+## Compressing replication data allows the data to be transferred over WAN links more quickly,
+- thereby conserving network bandwidth.
+## The cost of this benefit is an increase in CPU utilization on bridgehead servers.
+
+## By default,
+- replication data is compressed under the following conditions:
+
+## Replication of updates <-- *BETWEEN* --> domain controllers in different sites.
+
+## Replication of Active Directory to a newly created domain controller.
+
+## A new compression algorithm is employed *BY* bridgehead servers that are running at least Windows Server 2003.
+## The new algorithm improves replication speed *BY* operating <-- *BETWEEN* --> two *AND* ten times faster than the Windows 2000 Server algorithm.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Windows 2000 Server Compression
+
+## The compression algorithm that is used *BY* domain controllers that are running Windows 2000 Server achieves a compression ratio of approximately 75% to 85%.
+## The cost of this compression in terms of CPU utilization *CAN* be as high as 50% for intersite Active Directory replication.
+## In some cases,
+- the CPUs on bridgehead servers that are running Windows 2000 Server *CAN* become overwhelmed with compression requests,
+- compounded *BY* the need to service outbound replication partners.
+## In a worst case scenario,
+- the bridgehead server becomes so overloaded that it cannot keep up with outbound replication.
+## This scenario is usually coupled with a replication topology issue where a domain controller has more outbound partners than necessary *OR* the replication schedule was overly aggressive for the number of direct replication partners.
+
+## Note
+
+## *IF* a bridgehead server has too many replication partners,
+- the KCC logs event ID 1870 in the Directory Service log,
+- indicating the current number of partners *AND* the recommended number of partners for the domain controller.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Windows Server 2003 Compression
