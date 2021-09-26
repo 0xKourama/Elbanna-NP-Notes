@@ -2791,3 +2791,326 @@ domain controller Locator
 ----------------------------------------------------
 
 # Windows Server 2003 Compression
+
+## On domain controllers that are running Windows Server 2003,
+- compression quality is comparable to Windows 2000 *BUT* the processing burden is greatly decreased.
+## The Windows Server 2003 algorithm produces a compression ratio of approximately 60%,
+- *WHICH* is slightly less compression than is achieved *BY* the Windows 2000 Server ratio,
+- *BUT* *WHICH* significantly reduces the processing load on bridgehead servers.
+## The new compression algorithm provides a good compromise *BY* significantly reducing the CPU load on bridgehead servers,
+- while *ONLY* slightly increasing the WAN traffic.
+## The new algorithm reduces the time taken *BY* compression from approximately 60% of replication time to 20%.
+
+## The Windows Server 2003 compression algorithm is used *ONLY* *WHEN* both bridgehead servers are running Windows Server 2003.
+## *IF* a bridgehead server that is running Windows Server 2003 replicates with a bridgehead server that is running Windows 2000 Server,
+- then the Windows 2000 compression algorithm is used.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Reverting to Windows 2000 Compression
+
+## For slow WAN links (for example,
+- 64 KB *OR* less),
+- *IF* more compression is preferable to a decrease in computation time,
+- you *CAN* change the compression algorithm to the Windows 2000 algorithm.
+## The compression algorithm is controlled *BY* the REG_DWORD registry entry HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NTDS\Parameters\Replicator compression algorithm.
+## By editing this registry entry,
+- you *CAN* change the algorithm that is used for compression to the Windows 2000 algorithm.
+
+## Note
+
+## *IF* you must edit the registry,
+- use extreme caution.
+## Registry information is provided here as a reference for use *BY* *ONLY* highly skilled directory service administrators.
+## It is recommended that you do *NOT* directly edit the registry *UNLESS*,
+- as in this case,
+- there is no Group Policy *OR* other Windows tools to accomplish the task.
+## Modifications to the registry are *NOT* validated *BY* the registry editor *OR* *BY* Windows before they are applied,
+- *AND* as a result,
+- incorrect values *CAN* be stored.
+## Storage of incorrect values *CAN* result in unrecoverable errors in the system.
+## The default value is 3,
+- *WHICH* indicates that the Windows Server 2003 algorithm is in effect.
+## By changing the value to 2,
+- the Windows 2000 algorithm is used for compression.
+## However,
+- switching to the Windows 2000 algorithm is *NOT* recommended *UNLESS* both bridgehead domain controllers serve relatively few branches *AND* have ample CPU (for example,
+- > dual processor 850 megahertz [MHz]).
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Site Link Settings and Their Effects on Intersite Replication
+
+## In Active Directory Sites *AND* Services,
+- the General tab of the site link Properties contains the following options for configuring site links to control the replication topology:
+
+## A list of two *OR* more sites to be connected.
+
+## A single numeric cost that is associated with communication over the link.
+## The default cost is 100,
+- *BUT* you *CAN* assign higher cost values to represent more expensive transmission.
+## For example,
+- sites that are connected *BY* low-speed *OR* dial-up connections would have high-cost site links <-- *BETWEEN* --> them.
+## Sites that are well connected through backbone lines would have low-cost site links.
+## Where multiple routes *OR* transports exist <-- *BETWEEN* --> two sites,
+- the least expensive route *AND* transport combination is used.
+
+## A schedule that determines days *AND* hours during *WHICH* replication *CAN* occur over the link (the link is available).
+## For example,
+- you might use the default (100 percent available) schedule on most links,
+- *BUT* block replication traffic during peak business hours on links to certain branches.
+## By blocking replication,
+- you give priority to other traffic,
+- *BUT* you also increase replication latency.
+
+## Note
+
+## Scheduling information is ignored *BY* site links that use SMTP transports --> the mail is stockpiled *AND* then exchanged at the times that are configured for your mail infrastructure.
+## An interval in minutes that determines how often replication *CAN* occur (default is every 180 minutes,
+- *OR* 3 hours).
+## The minimum interval is 15 minutes.
+## *IF* the interval exceeds the time allowed *BY* the schedule,
+- replication occurs once at the scheduled time.
+
+## A site *CAN* be connected to other sites *BY* any number of site links.
+## For example,
+- a hub site has site links to each of its branch sites.
+## Each site that contains a domain controller in a multisite directory must be connected to at least one other site *BY* at least one site link --> otherwise,
+- it cannot replicate with domain controllers in any other site.
+
+## The following diagram shows two sites that are connected *BY* a site link.
+## Domain controllers DC1 *AND* DC2 belong to the same domain *AND* are acting as partner bridgehead servers.
+## *WHEN* topology generation occurs,
+- the ISTG in each site creates an inbound connection object on the bridgehead server in its site from the bridgehead server in the opposite site.
+## With these objects in place,
+- replication *CAN* occur according to the settings on the SB site link.
+
+## Connections <-- *BETWEEN* --> Domain Controllers in Two Sites that Are Connected *BY* a Site Link
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Site Link Cost
+
+## The ISTG uses the cost settings on site links to determine the route of replication <-- *BETWEEN* --> three *OR* more sites that replicate the same directory partition.
+## The default cost value on a site link object is 100.
+## You *CAN* assign lower *OR* higher cost values to site links to favor inexpensive connections over expensive connections,
+- respectively.
+## Certain applications *AND* services,
+- such as domain controller Locator *AND* DFS,
+- also use site link cost information to locate nearest resources.
+## For example,
+- site link cost *CAN* be used to determine *WHICH* domain controller is contacted *BY* clients located in a site that does *NOT* include a domain controller for the specified domain.
+## The client contacts the domain controller in a different site according to the site link that has the lowest cost assigned to it.
+
+## Cost is usually assigned *NOT* *ONLY* on the basis of the total bandwidth of the link,
+- *BUT* also on the availability,
+- latency,
+- *AND* monetary cost of the link.
+## For example,
+- a 128-kilobits per second (Kbps) permanent link might be assigned a lower cost than a dial-up 128-Kbps dual ISDN link because the dial-up ISDN link has replication latency-producing delay that occurs as the links are being established *OR* removed.
+## Furthermore,
+- in this example,
+- the permanent link might have a fixed monthly cost,
+- whereas the ISDN line is charged according to actual usage.
+## Because the company is paying up-front for the permanent link,
+- the administrator might assign a lower cost to the permanent link to avoid the extra monetary cost of the ISDN connections.
+
+## The method used *BY* the ISTG to determine the least-cost path from each site to every other site for each directory partition is more efficient *WHEN* the forest has a functional level of *AT LEAST* Windows Server 2003 than it is at other levels.
+## For more information about how the KCC computes replication routes,
+- see “Automated Intersite Topology Generation” later in this section.
+## For more information about domain controller location,
+- see “How DNS Support for Active Directory Works.”
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Transitivity and Automatic Site Link Bridging
+
+## By default,
+- site links are transitive,
+- *OR* bridged.
+## *IF* site A has a common site link with site B,
+- site B also has a common site link with Site C,
+- *AND* the two site links are bridged,
+- domain controllers in site A *CAN* replicate directly with domain controllers in site C under certain conditions,
+- even though there is no site link <-- *BETWEEN* --> site A *AND* site C.
+## In other words,
+- the effect of bridged site links is that replication <-- *BETWEEN* --> sites in the bridge is transitive.
+
+## The setting that implements automatic site link bridges is Bridge all site links,
+- *WHICH* is found in Active Directory Sites *AND* Services in the properties of the IP *OR* SMTP intersite transport containers.
+## The default bridging of site links occurs automatically *AND* no directory object represents the default bridge.
+## *THEREFORE*,
+- in the common case of a fully routed IP network,
+- you do *NOT* need to create any site link bridge objects.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Transitivity and Rerouting
+
+## For a set of bridged site links,
+- where replication schedules in the respective site links overlap (replication is available on the site links during the same time period),
+- connection objects *CAN* be automatically created,
+- *IF* needed,
+- <-- *BETWEEN* --> sites that do *NOT* have site links that connect them directly.
+## All site links for a specific transport implicitly belong to a single site link bridge for that transport.
+
+## Site link transitivity enables the KCC to re-route replication *WHEN* necessary.
+## In the next diagram,
+- a domain controller that *CAN* replicate the domain is *NOT* available in Seattle.
+## In this case,
+- because the site links are transitive (bridged) *AND* the schedules on the two site links allow replication *AT THE SAME TIME*,
+- the KCC *CAN* re-route replication *BY* creating connections <-- *BETWEEN* --> DC3 in Portland *AND* DC2 in Boston.
+## Connections <-- *BETWEEN* --> domain controllers in Portland *AND* Boston might also be created *WHEN* a domain controller in Portland is a global catalog server,
+- *BUT* no global catalog server exists in the Seattle site *AND* the Boston site hosts a domain that is *NOT* present in the Seattle site.
+## In this case,
+- connections *CAN* be created <-- *BETWEEN* --> Portland *AND* Boston to replicate the global catalog partial,
+- read- *ONLY* replica.
+
+## Note
+
+## Overlapping schedules are required for site link transitivity,
+- even *WHEN* Bridge all site links is enabled.
+## In the example,
+- *IF* the site link schedules for SB *AND* PS do *NOT* overlap,
+- no connections are possible <-- *BETWEEN* --> Boston *AND* Portland.
+
+## In the preceding diagram,
+- creating a third site link to connect the Boston *AND* Portland sites is unnecessary *AND* counterproductive because of the way that the KCC uses cost to route replication.
+## In the configuration that is shown,
+- the KCC uses cost to choose *EITHER* the route <-- *BETWEEN* --> Portland *AND* Seattle *OR* the route <-- *BETWEEN* --> Portland *AND* Boston.
+## *IF* you wanted the KCC to use the route <-- *BETWEEN* --> Portland *AND* Boston,
+- you would create a site link <-- *BETWEEN* --> Portland *AND* Boston instead of the site link <-- *BETWEEN* --> Portland *AND* Seattle.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Aggregated Site Link Cost and Routing
+
+## *WHEN* site links are bridged,
+- the cost of replication from a domain controller at one end of the bridge to a domain controller at the other end is the sum of the costs on each of the intervening site links.
+## For this reason,
+- *IF* a domain controller in an interim site stores the directory partition that is being replicated,
+- the KCC will route replication to the domain controller in the interim site rather than to the more distant site.
+## The domain controller in the more distant site in turn receives replication from the interim site (store-and-forward replication).
+## *IF* the schedules of the two site links overlap,
+- this replication occurs in the same period of replication latency.
+
+## The following diagram illustrates an example where two site links connecting three sites that host the same domain are bridged automatically (Bridge all site links is enabled).
+## The aggregated cost of directly replicating <-- *BETWEEN* --> Portland *AND* Boston illustrates why the KCC routes replication from Portland to Seattle *AND* from Seattle to Boston in a store-and-forward manner.
+## Given the choice <-- *BETWEEN* --> replicating at a cost of 4 from Seattle *OR* a cost of 7 from Boston,
+- the ISTG in Portland chooses the lower cost *AND* creates the connection object on DC3 from DC1 in Seattle.
+
+## In the preceding diagram,
+- *IF* DC3 in Portland needs to replicate a directory partition that is hosted on DC2 in Boston *BUT* *NOT* *BY* any domain controller in Seattle,
+- *OR* *IF* the directory partition is hosted in Seattle *BUT* the Seattle site cannot be reached,
+- the ISTG creates the connection object from DC2 to DC3.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Significance of Overlapping Schedules
+
+## In the preceding diagram,
+- to replicate the same domain that is hosted in all three sites,
+- the Portland site replicates directly with Seattle *AND* Seattle replicates directly with Boston,
+- transferring Portland’s changes to Boston,
+- *AND* vice versa,
+- through store-and-forward replication.
+## Whether the schedules overlap has the following effects:
+
+## PS *AND* SB site link schedules have replication available during *AT LEAST* one common hour of the schedule:
+
+## Replication <-- *BETWEEN* --> these two sites occurs in the same period of replication latency,
+- being routed through Seattle.
+
+## *IF* Seattle is unavailable,
+- connections *CAN* be created <-- *BETWEEN* --> Portland *AND* Boston.
+
+## PS *AND* SB site link schedules have no common time:
+
+## Replication of changes <-- *BETWEEN* --> Portland *AND* Boston reach their destination in the next period of replication latency after reaching Seattle.
+
+## *IF* Seattle is unavailable,
+- no connections are possible <-- *BETWEEN* --> Portland *AND* Boston.
+
+## Note
+
+## *IF* Bridge all site links is disabled,
+- a connection is never created <-- *BETWEEN* --> Boston *AND* Portland,
+- *REGARDLESS* of schedule overlap,
+- *UNLESS* you manually create a site link bridge.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Site Link Changes and Replication Path
+

@@ -1,3 +1,11 @@
+# AD replication requires:
+1. a routable IP infrastructure
+2. DNS
+3. RPC
+4. Kerberos V5
+5. LDAP
+6. NETLOGON
+7. intersite message for (SMTP)
 # to avoid contacting domain controllers over costly WAN links *AND* to use domain controllers in the same site:
 - the *domain controller locator* uses the SRV records which map a domain controller to a site
 # the DC with the connection object linking with another site indicates that they are both the bridgeheads for intersite replication
@@ -22,6 +30,7 @@
 3. overloaded domain controllers
 4. too many updates
 5. networking connetivity problems
+6. security problems
 # global catalog servers have universal group memberships
 # NTDS site settings tell which server is the ISTG and has the option of switching on Universal Group Membership Caching and choosing which GC to obtain the information from
 # cross reference objects store the location of each directory partition
@@ -37,7 +46,7 @@
 # inter-site replication transfers domain updates when the domain is split accross multiple sites.
 # inter-site replication is required for schema, config and GC either way.
 # bridghead servers are the ones responsible for inter-site replication.
-# the KCC on the DC that holds the ISTG role is the one that selects the bridgeheads server.
+# the KCC on the DC that holds the ISTG role is the one that selects the bridgehead server(s) for a site.
 # two replication types are compressed:
 1. inter-site replication
 2. replication to a newly created domain controller
@@ -50,3 +59,8 @@
 2. site B linked to site C
 3. site A can replicate with with site C without a link
 # connections can be created transitively when there's no global catalog/same domain in the nearby site. a connection gets created to replicate the partial attribute set.
+# site link schedules must overlap before transitive replication can be done.
+# "Bridge all site links" connects two or more site links. Using this option requires that all sites are fully routable.
+# inter-site replication topology is calculated when the KCC on every site's ISTG runs and does replication path calculations according to cost
+# intra-site replication starts 15 seconds after a change has been made
+# SMTP transport doesn't support file replication (SYSVOL). Logon scripts and group policies won't be replicated
