@@ -10,6 +10,8 @@
 - the *domain controller locator* uses the SRV records which map a domain controller to a site
 # the DC with the connection object linking with another site indicates that they are both the bridgeheads for intersite replication
 # Site -> LAN
+# GCs store domain data for all objects in AD to save computers in the forest from querying exact domain controllers for domain data. it hosts full writable replicas for schema, configuration and the domain partition for the domain it's in. it also hold a read-only partial set of attributes of all other domains in the forest.
+# with universal group caching enabled, there isn't a need for a GC to be hosted in every site. This also reduces the logon time because the DCs doing the authentication don't need to access a GC for universal group membership data.
 # intrasite replication --> priority is speed
 # intersite replication --> priority is bandwidth utilization
 # A network subnet is a segment of a TCP/IP network to which a set of logical IP addresses is assigned.

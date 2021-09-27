@@ -282,6 +282,197 @@ This prevents endless replication loops and leads to the behavior known as propa
 # The global catalog is a feature of Active Directory (“AD”) domain controllers that allows for a domain controller to provide information on any object in the forest:
 - regardless of whether the object is a member of the domain controller’s domain.
 
+## A global catalog server is a domain controller that stores information about all objects in the forest,
+- so that applications *CAN* search AD DS without referring to specific domain controllers that store the requested data.
+## Like all domain controllers,
+- a global catalog server stores full,
+- writable replicas of the schema *AND* configuration directory partitions *AND* a full,
+- writable replica of the domain directory partition for the domain that it is hosting.
+## In addition,
+- a global catalog server stores a partial,
+- read- *ONLY* replica of every other domain in the forest.
+## Partial,
+- read- *ONLY* domain replicas contain every object in the domain *BUT* *ONLY* a subset of the attributes (those attributes that are most comm *ONLY* used for searching the object).
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Determining Changes to Replicate: Update Sequence Numbers
+
+## A source domain controller uses USNs to determine what changes have already been received *BY* a destination domain controller that is requesting changes.
+## The destination domain controller uses USNs to determine what changes it needs to request.
+
+## The current USN is a 64-bit counter that is maintained *BY* each Active Directory domain controller as the highestCommittedUsnattribute on the rootDSE object.
+## At the start of each update transaction (originating *OR* replicated),
+- the domain controller increments its current USN *AND* associates this new value with the update request.
+
+## Note
+
+## The rootDSE (DSA-specific Entry) represents the top of the logical namespace for one domain controller.
+## RootDSE has no hierarchical name *OR* schema class,
+- *BUT* it does have a set of attributes that identify the contents of a given domain controller.
+## The current USN value is stored on an updated object as follows:
+
+## Local USN: The USN for the update is stored in the metadata of each attribute that is changed *BY* the update as the local USN of that attribute (originating *AND* replicated writes).
+## As the name implies,
+- this value is local to the domain controller where the change occurs.
+
+## uSNChanged: The maximum local USN among *ALL* of an object’s attributes is stored as the object’s uSNChangedattribute (originating *AND* replicated writes).
+## The uSNChangedattribute is indexed,
+- *WHICH* allows objects to be enumerated efficiently in the order of their most recent attribute write.
+
+## Note
+
+## *WHEN* the forest functional level is Windows Server 2003 *OR* Windows Server 2003 interim,
+- discrete values of linked multivalued attributes *CAN* be updated individually.
+## In this case,
+- there is a uSNChangedassociated with each link in addition to the uSNChangedassociated with each object.
+## *THEREFORE*,
+- updates to individual values of linked multivalued attributes do *NOT* affect the local USN,
+- *ONLY* the uSNChangedattribute on the object.
+## Originating USN: For an originating write only,
+- the update’s USN value is stored with each updated attribute as the originating USN of that attribute.
+## Unlike the local USN *AND* uSNChanged,
+- the originating USN is replicated with the attribute’s value.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Universal group membership caching
+
+## Universal group membership caching allows the domain controller to cache universal group membership information for users.
+## You *CAN* enable domain controllers that are running Windows Server 2008 to cache universal group memberships *BY* using the Active Directory Sites *AND* Services snap-in.
+
+## Enabling universal group membership caching eliminates the need for a global catalog server at every site in a domain,
+- *WHICH* minimizes network bandwidth usage because a domain controller does *NOT* need to replicate all of the objects located in the forest.
+## It also reduces logon times because the authenticating domain controllers do *NOT* *ALWAYS* need to access a global catalog to obtain universal group membership information.
+## For more information about *WHEN* to use universal group membership caching,
+- see Planning Global Catalog Server Placement.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# failover functionality
+
+## Sites ensure that replication is routed around network failures *AND* offline domain controllers.
+## The KCC runs at specified intervals to adjust the replication topology for changes that occur in AD DS,
+- such as *WHEN* new domain controllers are added *AND* new sites are created.
+## The KCC reviews the replication status of existing connections to determine *IF* any connections are *NOT* working.
+## *IF* a connection is *NOT* working due to a failed domain controller,
+- the KCC automatically builds temporary connections to other replication partners (*IF* available) to ensure that replication occurs.
+## *IF* all the domain controllers in a site are unavailable,
+- the KCC automatically creates replication connections <-- *BETWEEN* --> domain controllers from another site.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# KCC
+
+## The KCC is a built-in process that runs on all domain controllers *AND* generates replication topology for the Active Directory forest.
+## The KCC creates separate replication topologies depending on whether replication is occurring within a site (intrasite) *OR* <-- *BETWEEN* --> sites (intersite).
+## The KCC also dynamically adjusts the topology to accommodate the addition of new domain controllers,
+- the removal of existing domain controllers,
+- the movement of domain controllers to *AND* from sites,
+- changing costs *AND* schedules,
+- *AND* domain controllers that are temporarily unavailable *OR* in an error state.
+
+## Within a site,
+- the connections <-- *BETWEEN* --> writable domain controllers are *ALWAYS* arranged in a bidirectional ring,
+- with additional shortcut connections to reduce latency in large sites.
+## On the other hand,
+- the intersite topology is a layering of spanning trees,
+- *WHICH* means one intersite connection exists <-- *BETWEEN* --> any two sites for each directory partition *AND* generally does *NOT* contain shortcut connections.
+## For more information about spanning trees *AND* Active Directory replication topology,
+- see Active Directory Replication Topology Technical Reference (https://go.microsoft.com/fwlink/?LinkID=93578).
+
+## On each domain controller,
+- the KCC creates replication routes *BY* creating one-way inbound connection objects that define connections from other domain controllers.
+## For domain controllers in the same site,
+- the KCC creates connection objects automatically without administrative intervention.
+## *WHEN* you have more than one site,
+- you configure site links <-- *BETWEEN* --> sites,
+- *AND* a single KCC in each site automatically creates connections <-- *BETWEEN* --> sites as well.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Active Directory Replication Model Architecture
+
+## Active Directory replication operates within the directory service component of the security subsystem.
+## The directory service component,
+- Ntdsa.dll,
+- is accessed through the Lightweight Directory Access Protocol (LDAP) network protocol *AND* LDAP C application programming interface (API) for directory service updates,
+- as implemented in Wldap32.dll.
+## The updates are transported over Internet Protocol (IP) as packaged *BY* the replication remote procedure call (RPC) protocol.
+## Simple Mail Transfer Protocol (SMTP) *CAN* also be used to prepare non-domain updates for Transmission Control Protocol (TCP) transport over IP.
+
+## The Directory Replication System (DRS) client *AND* server components interact to transfer *AND* apply Active Directory updates <-- *BETWEEN* --> domain controllers.
+
+## *WHEN* SMTP is used for the replication transport,
+- Ismserv.exe on the source domain controller uses the Collaborative Data Object (CDO) library to build an SMTP file on disk with the replication data as the attached mail message.
+## The message file is placed in a queue directory.
+## *WHEN* the mail is scheduled for transfer *BY* the mail server application,
+- the SMTP service (Smtpsvc) delivers the mail message to the destination domain controller over TCP/IP *AND* places the file in the drop directory on the destination domain controller.
+## Ismserv.exe applies the updates on the destination.
+
+## The following diagram shows the client-server architecture for replication clients *AND* LDAP clients.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc772726(v=ws.10)
+
+
+
+
 # Domain controllers with the global catalog feature enabled are referred to as global catalog servers AND can perform several functions that are especially important in a multi-domain forest environment:
 
 # Authentication.
