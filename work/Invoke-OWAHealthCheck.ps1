@@ -19,7 +19,7 @@ add-type @"
 ipconfig /flushdns | Out-Null
 Write-Host '[+] Local DNS Cache flushed' -ForegroundColor Green
 
-$IPAddresses = Resolve-DnsName -Name "mail.worldposta.com" | Select-Object -ExpandProperty IPAddress
+$IPAddresses = 'Mail','Autodiscover','IMAP'|%{Resolve-DnsName -Name "$_.worldposta.com" | Select-Object -ExpandProperty IPAddress}
 foreach ($IPAddress in $IPAddresses) {
     try{
         $Response    = Invoke-WebRequest "https://$IPAddress/owa/healthcheck.htm"
@@ -32,12 +32,12 @@ foreach ($IPAddress in $IPAddresses) {
         else{
             $color = 'Red'
         }
-        Write-Host "$server [" -NoNewline
+        Write-Host "[" -NoNewline
         Write-Host "$IPAddress" -ForegroundColor Cyan -NoNewline
-        write-host "]: " -NoNewline
+        write-host "] --> $server`: " -NoNewline
         write-host "$status_code $status_desc" -ForegroundColor $color
     }
     catch{
-        Write-Host "[!] An error occured $_" -ForegroundColor Yellow
+        Write-Host "[!] [$IPAddress] An error occured $_" -ForegroundColor Yellow
     }
 }

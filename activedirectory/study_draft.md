@@ -468,9 +468,21 @@ This prevents endless replication loops and leads to the behavior known as propa
 
 ----------------------------------------------------
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc772726(v=ws.10)
+# Active Directory Replication Model Physical Structure
 
+## The Active Directory replication model components that determine how Active Directory replication functions <-- *BETWEEN* --> domain controllers are associated with mechanisms that effect automatic transfer of changes <-- *BETWEEN* --> replicating domain controllers,
+- as described in the following table.
 
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
 
 
 # Domain controllers with the global catalog feature enabled are referred to as global catalog servers AND can perform several functions that are especially important in a multi-domain forest environment:
