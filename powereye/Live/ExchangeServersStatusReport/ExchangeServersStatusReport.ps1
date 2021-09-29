@@ -39,7 +39,7 @@ $smtpsettings=@{
 	To =  "Operation@Roaya.co"
 	From = "ExchangeServersStatusReport@PowerEye.Roaya.loc"
 	Subject = "Exchange Servers Status Report"
-	SmtpServer = "192.168.3.202"
+	SmtpServer = "192.168.2.1"
 }
 $reportime = Get-Date
 

@@ -1,26 +1,33 @@
-08/18/2021 09:26:35 [*] Sending mail
 
+
+ComputerName : FRANK-ADC-03
+Username     : MTAWFIKURGENT
+LogonTime    : 9/28/2021 12:29 AM
+State        : ACTIVE
+SessionType  : CONSOLE
+IdleDuration : 0 day(s) 0 hour(s) 0 minute(s)
+
+ComputerName : FRANK-ADC-04
+Username     : MTAWFIKURGENT
+LogonTime    : 9/28/2021 12:29 AM
+State        : ACTIVE
+SessionType  : CONSOLE
+IdleDuration : 0 day(s) 0 hour(s) 0 minute(s)
 
 ComputerName : EU1MB9901
-Username     : NADAURGENT
-LogonTime    : 8/18/2021 8:20 AM
+Username     : ISLAMADMIN
+LogonTime    : 9/29/2021 10:25 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 58 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 24 minute(s)
 
 ComputerName : FRANK-PDC
-Username     : MTAWFIKURGENT
-LogonTime    : 8/18/2021 9:07 AM
+Username     : GABRURGENT
+LogonTime    : 9/29/2021 10:21 AM
 State        : ACTIVE
 SessionType  : RDP
-IdleDuration : 0 day(s) 0 hour(s) 16 minute(s)
+IdleDuration : 0 day(s) 0 hour(s) 14 minute(s)
 
-ComputerName : EU1MB9901
-Username     : MWAHBAURGENT
-LogonTime    : 8/18/2021 8:17 AM
-State        : INACTIVE
-IdleDuration : 0 day(s) 1 hour(s) 07 minute(s)
-
-08/18/2021 09:26:35 [*] Sessions were found. Sending mail.
+09/29/2021 11:07:54 [*] Sessions were found. Sending mail.
 
 

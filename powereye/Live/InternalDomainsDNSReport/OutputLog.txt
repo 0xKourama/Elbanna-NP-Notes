@@ -1,417 +1,416 @@
-[1/414] [*] Quering 19011pharmacies.com
-[2/414] [*] Quering 2b.com.eg
-[3/414] [*] Quering 2bcomputer.com
-[4/414] [*] Quering 2betech.com
-[5/414] [*] Quering 2bsystems.com
-[6/414] [*] Quering 3een-eg.com
-[7/414] [*] Quering abdulghanigold.com
-[8/414] [*] Quering abdulghaniholding.com
-[9/414] [*] Quering abdulghanijewelry.com
-[10/414] [*] Quering Abouelenein.com
-[11/414] [*] Quering abrahamsdescendantsafterhim.org
-[12/414] [*] Quering abrajud.com
-[13/414] [*] Quering a-c.sa
-[14/414] [*] Quering accountants-group.com
-[15/414] [*] Quering accurateeg.com
-[16/414] [*] Quering Acrow.co
-[17/414] [*] Quering acumaticaeg.com
-[18/414] [*] Quering adalaa.com
-[19/414] [*] Quering afb-eg.com
-[20/414] [*] Quering alagzakhana.com
-[21/414] [*] Quering alamalegypt.com
-[22/414] [*] Quering alarabia-group.com
-[23/414] [*] Quering albarakaenergy.com
-[24/414] [*] Quering alchemiser.com
-[25/414] [*] Quering alcorfund.com
-[26/414] [*] Quering alezz-trade.com
-[27/414] [*] Quering alfadomain.local
-[28/414] [*] Quering alfamarket.com.eg
-[29/414] [*] Quering alhayahuniversity.com
-[30/414] [*] Quering alhayahuniversity.info
-[31/414] [*] Quering aliandco.com.eg
-[32/414] [*] Quering alico.law
-[33/414] [*] Quering ALKHABERY.COM
-[34/414] [*] Quering almorshedy.info
-[35/414] [*] Quering almottahedon-pharma.com
-[36/414] [*] Quering alnadapaints.com
-[37/414] [*] Quering alolatraining.com
-[38/414] [*] Quering alras.me
-[39/414] [*] Quering alsuae.com
-[40/414] [*] Quering alunaut.com.eg
-[41/414] [*] Quering amenli.com
-[42/414] [*] Quering ammlaky.com
-[43/414] [*] Quering amp.com.eg
-[44/414] [*] Quering anameischanged.info
-[45/414] [*] Quering arabia-holding.com
-[46/414] [*] Quering argonaut.ae
-[47/414] [*] Quering argo-naut.com
-[48/414] [*] Quering argonaut.com.eg
-[49/414] [*] Quering artboardsolutions.com
-[50/414] [*] Quering aswaqfathalla.com
-[51/414] [*] Quering bakelandegypt.com
-[52/414] [*] Quering balsamtrade.com
-[53/414] [*] Quering BatteryEgypt.com
-[54/414] [*] Quering beebreakegypt.com
-[55/414] [*] Quering beromedia.net
-[56/414] [*] Quering bestbuyegypt.com
-[57/414] [*] Quering BetaClubHouse.com
-[58/414] [*] Quering betaegypt.com
-[59/414] [*] Quering betna.com.eg
-[60/414] [*] Quering bienetreinstitute.com
-[61/414] [*] Quering bioeco-servizi.it
-[62/414] [*] Quering bio-medics.com
-[63/414] [*] Quering bluebus.com.eg
-[64/414] [*] Quering bluebytehospitality.com
-[65/414] [*] Quering blueskyegypt.net
-[66/414] [*] Quering blueskygroup.net
-[67/414] [*] Quering bottomline-psc.com
-[68/414] [*] Quering bouchamaoui.com
-[69/414] [*] Quering brighteye.info
-[70/414] [*] Quering brighteyexpo.com
-[71/414] [*] Quering buccaneershoes.com
-[72/414] [*] Quering cadcamcim.com
-[73/414] [*] Quering capital-egy.com
-[74/414] [*] Quering capital-ib.com
-[75/414] [*] Quering captinegypt.site
-[76/414] [*] Quering captin-egypt.site
-[77/414] [*] Quering careandcurepharma.com
-[78/414] [*] Quering careers.mobica.net
-[79/414] [*] Quering cashcool-dc.com
-[80/414] [*] Quering cbnewhomes-eg.com
-[81/414] [*] Quering Ceramicacleopatra.com
-[82/414] [*] Quering Ceramicacleopatragroup.com
-[83/414] [*] Quering cg-elsewedy.com
-[84/414] [*] Quering cguay.ca
-[85/414] [*] Quering checkwpcloudmail.com
-[86/414] [*] Quering circlecompany.com
-[87/414] [*] Quering citglobal.com
-[88/414] [*] Quering citizenship-souq.com
-[89/414] [*] Quering Clar.com
-[90/414] [*] Quering Cleopatra.group
-[91/414] [*] Quering Cleopatraagricultural.com
-[92/414] [*] Quering Cleopatraaviation.com
-[93/414] [*] Quering cleopatraceramics.com
-[94/414] [*] Quering Cleopatra-ceramics.com
-[95/414] [*] Quering Cleopatracsv.com
-[96/414] [*] Quering Cleopatra-Group.com
-[97/414] [*] Quering Cleopatraluxury.com
-[98/414] [*] Quering Cleopatraluxurymakadi.com
-[99/414] [*] Quering cleopatraluxurysharm.com
-[100/414] [*] Quering cleopatramall.com
-[101/414] [*] Quering Cleopatramedia.com
-[102/414] [*] Quering Cleopatrarealestate.com
-[103/414] [*] Quering Cleopatra-realestate.com
-[104/414] [*] Quering Cleopatra-realstate.co
-[105/414] [*] Quering Cleotravel.net
-[106/414] [*] Quering clipbucket.net
-[107/414] [*] Quering clue-ces.com
-[108/414] [*] Quering Cmaeg.com
-[109/414] [*] Quering com7.com.au
-[110/414] [*] Quering combatmedic.net
-[111/414] [*] Quering concordia-co.com
-[112/414] [*] Quering cosmotica.co
-[113/414] [*] Quering cosmotrade.co
-[114/414] [*] Quering ctgroups.net
-[115/414] [*] Quering dailyneedsgroup.com
-[116/414] [*] Quering deeinteriors.ae
-[117/414] [*] Quering degas-egy.com
-[118/414] [*] Quering deglagroup.com
-[119/414] [*] Quering delmar.com.eg
-[120/414] [*] Quering deltacapital-eg.com
-[121/414] [*] Quering dentalgate.org
-[122/414] [*] Quering developers-egypt.com
-[123/414] [*] Quering dilifoods.com
-[124/414] [*] Quering dorra.com
-[125/414] [*] Quering DorraGroup.net
-[126/414] [*] Quering Dorraresale.org
-[127/414] [*] Quering double-h-adv.com
-[128/414] [*] Quering eaco.co
-[129/414] [*] Quering eagle-chemicals.com
-[130/414] [*] Quering eaglepaint.com
-[131/414] [*] Quering easternegypt.com
-[132/414] [*] Quering echomarchi.com
-[133/414] [*] Quering economicgroup-eg.com
-[134/414] [*] Quering ees.com.eg
-[135/414] [*] Quering eeziclean.com
-[136/414] [*] Quering eg.fcm.travel
-[137/414] [*] Quering egycopp.com
-[138/414] [*] Quering egymec-eg.com
-[139/414] [*] Quering egy-pt.org
-[140/414] [*] Quering egyptbestproperties.com
-[141/414] [*] Quering egyptbestproperties.net
-[142/414] [*] Quering egypteurosuppliers.net
-[143/414] [*] Quering egyrobo.com
-[144/414] [*] Quering elahlyia.com
-[145/414] [*] Quering elahlyia.com.eg
-[146/414] [*] Quering elarabipharma.com
-[147/414] [*] Quering Elbalad.news
-[148/414] [*] Quering elbaladtv.net
-[149/414] [*] Quering elbannagroup.com
-[150/414] [*] Quering Elbassiouni.com
-[151/414] [*] Quering Elbassiouni.net
-[152/414] [*] Quering eldidiconcrete.com
-[153/414] [*] Quering eldidigroup.com
-[154/414] [*] Quering electrometer.com.gh
-[155/414] [*] Quering Elitehospital.org
-[156/414] [*] Quering elixirpharma-eg.com
-[157/414] [*] Quering Ellaithy.com.eg
-[158/414] [*] Quering elsherifontherun.com
-[159/414] [*] Quering elwatnya-co.com
-[160/414] [*] Quering emessadenim.com
-[161/414] [*] Quering emi-egypt.com
-[162/414] [*] Quering empire-cc.com
-[163/414] [*] Quering energyacables.com
-[164/414] [*] Quering energya-pts.com
-[165/414] [*] Quering engcomptec.com
-[166/414] [*] Quering epda-eg.com
-[167/414] [*] Quering eps-egypt.com
-[168/414] [*] Quering eps-egypt.org
-[169/414] [*] Quering erccegypt.com
-[170/414] [*] Quering etf.org.eg
-[171/414] [*] Quering ethos.ag
-[172/414] [*] Quering evacoeg.com
-[173/414] [*] Quering extramile-eg.co
-[174/414] [*] Quering eye-ltd.com
-[175/414] [*] Quering eye-ltd-eg.com
-[176/414] [*] Quering ezz-eldeen.com
-[177/414] [*] Quering fahmy-group.com
-[178/414] [*] Quering Farahboat.com
-[179/414] [*] Quering farmerbox.sa
-[180/414] [*] Quering fcportal.ae
-[181/414] [*] Quering ferrometalco.com
-[182/414] [*] Quering fgsltd.com
-[183/414] [*] Quering findwell-eg.com
-[184/414] [*] Quering floortec-psc.com
-[185/414] [*] Quering flygroup-eg.com
-[186/414] [*] Quering freddo-egypt.com
-[187/414] [*] Quering fruttella.com
-[188/414] [*] Quering gapit.us
-[189/414] [*] Quering gasmetro.com
-[190/414] [*] Quering Genena.com
-[191/414] [*] Quering genenaproj.com
-[192/414] [*] Quering genenavacation.com
-[193/414] [*] Quering GolfCorner.net
-[194/414] [*] Quering greens-pharmacies.com
-[195/414] [*] Quering greenways.com.pk
-[196/414] [*] Quering groupcleopatra.com
-[197/414] [*] Quering grubersqatar.com
-[198/414] [*] Quering gsa-egy.com
-[199/414] [*] Quering gt.com.eg
-[200/414] [*] Quering guideme4u.com
-[201/414] [*] Quering hanzamedic.com
-[202/414] [*] Quering happycloud.sa
-[203/414] [*] Quering happysweet.co
-[204/414] [*] Quering happysweet.org
-[205/414] [*] Quering hartmannegypt.com
-[206/414] [*] Quering hassab.com
-[207/414] [*] Quering hbsie.com
-[208/414] [*] Quering hipharm-eg.com
-[209/414] [*] Quering holytourseg.com
-[210/414] [*] Quering holytraveleg.com
-[211/414] [*] Quering HootAmmo.com
-[212/414] [*] Quering hopeegypt.com
-[213/414] [*] Quering ht-egy.com
-[214/414] [*] Quering hygeiagroup.net
-[215/414] [*] Quering i2m-pharma.com
-[216/414] [*] Quering ibs-construction.com
-[217/414] [*] Quering icestate.com
-[218/414] [*] Quering icgroupus.com
-[219/414] [*] Quering Ikthar.net
-[220/414] [*] Quering ilsme.com
-[221/414] [*] Quering imaegy.com
-[222/414] [*] Quering infotechs.co
-[223/414] [*] Quering inland-eg.com
-[224/414] [*] Quering inma.com.eg
-[225/414] [*] Quering inmacommercial.com
-[226/414] [*] Quering inmaconstruction.com
-[227/414] [*] Quering inmadevelopments.com
-[228/414] [*] Quering inmaproperties.com
-[229/414] [*] Quering inshieldinsurance.com
-[230/414] [*] Quering intertex-eg.com
-[231/414] [*] Quering itcegy.com
-[232/414] [*] Quering itcpro.co
-[233/414] [*] Quering itvision-eg.com
-[234/414] [*] Quering jbla.pt
-[235/414] [*] Quering Jetouregypt.com
-[236/414] [*] Quering jgtech.com.pa
-[237/414] [*] Quering kith-kin.net
-[238/414] [*] Quering Kkc.ae
-[239/414] [*] Quering lascopaque.com
-[240/414] [*] Quering lavvento.com
-[241/414] [*] Quering life4more.com
-[242/414] [*] Quering Livingin.com
-[243/414] [*] Quering login-sys.com
-[244/414] [*] Quering lutfidifc.com
-[245/414] [*] Quering luxury-living.me
-[246/414] [*] Quering mamibacare.com
-[247/414] [*] Quering masajid.com
-[248/414] [*] Quering massarsupplies.com
-[249/414] [*] Quering matjjari.com
-[250/414] [*] Quering mavendevelopments.com
-[251/414] [*] Quering mav-enterprise.com
-[252/414] [*] Quering md-masterbatch.com
-[253/414] [*] Quering medcom-hc.com
-[254/414] [*] Quering megaloja.pt
-[255/414] [*] Quering megancy.com
-[256/414] [*] Quering megatrust.net
-[257/414] [*] Quering melsyasa.com
-[258/414] [*] Quering memaaralmorshedy.com
-[259/414] [*] Quering metcegy.com
-[260/414] [*] Quering mgh.co.za
-[261/414] [*] Quering mgtechnik.com
-[262/414] [*] Quering Middleeastcomp.com
-[263/414] [*] Quering mindset-academy.net
-[264/414] [*] Quering minlo.com
-[265/414] [*] Quering misr2000online.net
-[266/414] [*] Quering misrpharmacies.com
-[267/414] [*] Quering mixta-egypt.com
-[268/414] [*] Quering mobica.net
-[269/414] [*] Quering modacasa.com
-[270/414] [*] Quering modern4concrete.com
-[271/414] [*] Quering morshedy.com
-[272/414] [*] Quering morshedygroup.com
-[273/414] [*] Quering mortgage-souq.com
-[274/414] [*] Quering moughrabi.com
-[275/414] [*] Quering ms-eg.net
-[276/414] [*] Quering mtbi-group.com
-[277/414] [*] Quering mt-egy.com
-[278/414] [*] Quering mubarakat.com
-[279/414] [*] Quering myasli.com
-[280/414] [*] Quering Nadapaints.com
-[281/414] [*] Quering neiscoegypt.com
-[282/414] [*] Quering nerhadou.com
-[283/414] [*] Quering networkback.com
-[284/414] [*] Quering newmixeg.com
-[285/414] [*] Quering nextv-eg.com
-[286/414] [*] Quering noblecatsociety.com
-[287/414] [*] Quering noon-center.com
-[288/414] [*] Quering noureldinelsherif.com
-[289/414] [*] Quering novochem.net
-[290/414] [*] Quering odce-sa.com
-[291/414] [*] Quering Olicolube.com
-[292/414] [*] Quering omelmasryeenhospital.gov.eg
-[293/414] [*] Quering omni-es.com
-[294/414] [*] Quering ontherun.co
-[295/414] [*] Quering optaline.com
-[296/414] [*] Quering orchidiapharmaceutical.com
-[297/414] [*] Quering orient-paints.com
-[298/414] [*] Quering os4it-sa.com
-[299/414] [*] Quering panda-leap.com
-[300/414] [*] Quering peking-eg.com
-[301/414] [*] Quering pharmaland.com.eg
-[302/414] [*] Quering pharopharma.com
-[303/414] [*] Quering phr-services.com
-[304/414] [*] Quering platinumtrading-eg.com
-[305/414] [*] Quering plumharbour.com
-[306/414] [*] Quering Poolsuae.com
-[307/414] [*] Quering PORTAWEST.COM
-[308/414] [*] Quering powerlube.net
-[309/414] [*] Quering presentation-eg.com
-[310/414] [*] Quering presentationsports.com
-[311/414] [*] Quering prokuala.com
-[312/414] [*] Quering propertystreet.org
-[313/414] [*] Quering Proteam-eg.com
-[314/414] [*] Quering provence-eg.com
-[315/414] [*] Quering provenceschool.com
-[316/414] [*] Quering pst.ae
-[317/414] [*] Quering ptc-eg.org
-[318/414] [*] Quering ptcprojects.com
-[319/414] [*] Quering pyramidseg.com
-[320/414] [*] Quering qasatli.com
-[321/414] [*] Quering QasemStore.com
-[322/414] [*] Quering qasern.com
-[323/414] [*] Quering qspacetraining.com
-[324/414] [*] Quering Qudra-hr.com
-[325/414] [*] Quering queendimarine.com
-[326/414] [*] Quering raatrading.com
-[327/414] [*] Quering rage3fady.com
-[328/414] [*] Quering raileibeachclub.com
-[329/414] [*] Quering rasport.com.eg
-[330/414] [*] Quering rawaj-eg.com
-[331/414] [*] Quering redconcon.com
-[332/414] [*] Quering roayamail.com
-[333/414] [*] Quering roayastore.com
-[334/414] [*] Quering roayatechnology.com
-[335/414] [*] Quering rootsib.com
-[336/414] [*] Quering Roshdy.co
-[337/414] [*] Quering roshdypharmacies.com
-[338/414] [*] Quering royalswisshotels.com
-[339/414] [*] Quering royalswisslahore.com
-[340/414] [*] Quering sakr-group.org
-[341/414] [*] Quering samritz.co.uk
-[342/414] [*] Quering sanda.email
-[343/414] [*] Quering sanoeg.com
-[344/414] [*] Quering saratec.sa
-[345/414] [*] Quering satta-pharma.com
-[346/414] [*] Quering scefirm.com
-[347/414] [*] Quering schlhomes.com
-[348/414] [*] Quering seifhealthcare.com
-[349/414] [*] Quering serayvacationclub.com
-[350/414] [*] Quering serenityhotelsegypt.com
-[351/414] [*] Quering servicesolutions.co.za
-[352/414] [*] Quering sewedy.com.eg
-[353/414] [*] Quering shamaliwaris.com
-[354/414] [*] Quering sharakkas.com
-[355/414] [*] Quering shieldeg.com
-[356/414] [*] Quering sigma-g.com
-[357/414] [*] Quering silicon21.com.eg
-[358/414] [*] Quering skinrulesegy.com
-[359/414] [*] Quering skygulftraining.com
-[360/414] [*] Quering smartarrow.sa
-[361/414] [*] Quering smartbirdtec.com
-[362/414] [*] Quering smartfurniture.com.eg
-[363/414] [*] Quering smg.com.eg
-[364/414] [*] Quering Solotex-eg.com
-[365/414] [*] Quering sorouj-eg.com
-[366/414] [*] Quering souqbrands.com
-[367/414] [*] Quering stylishbrands.shop
-[368/414] [*] Quering SultanPharmacies.com
-[369/414] [*] Quering swissinternationalhotels.com
-[370/414] [*] Quering swissspirithotels.com
-[371/414] [*] Quering tankwaters.com
-[372/414] [*] Quering tarabot-eg.com
-[373/414] [*] Quering taskedin.net
-[374/414] [*] Quering technocans.net
-[375/414] [*] Quering technoeg.com
-[376/414] [*] Quering techno-side.com
-[377/414] [*] Quering telebirdeg.com
-[378/414] [*] Quering terceirasoft.com
-[379/414] [*] Quering thefootpark.com
-[380/414] [*] Quering thesprinthub.com
-[381/414] [*] Quering tiba-group.com
-[382/414] [*] Quering tmcleaninguae.com
-[383/414] [*] Quering topio-urban.com
-[384/414] [*] Quering Topprintsolutions.com
-[385/414] [*] Quering traininggulf.com
-[386/414] [*] Quering transmisr.com
-[387/414] [*] Quering triviumbc.com
-[388/414] [*] Quering triviumzayed.com
-[389/414] [*] Quering truepulse.ae
-[390/414] [*] Quering tseppas.com
-[391/414] [*] Quering tu-rath.com
-[392/414] [*] Quering tvboxuae.com
-[393/414] [*] Quering uaealnuaimi.com
-[394/414] [*] Quering ubciseg.com
-[395/414] [*] Quering unicon-pumps.com
-[396/414] [*] Quering uniqueimpacts.com
-[397/414] [*] Quering UPE-egypt.com
-[398/414] [*] Quering valuemixers.com
-[399/414] [*] Quering venus-electric.net
-[400/414] [*] Quering virtualallianceltd.com
-[401/414] [*] Quering Whiteville.it
-[402/414] [*] Quering world-beds.com
-[403/414] [*] Quering worldposta.com
-[404/414] [*] Quering worldposta-trial.com
-[405/414] [*] Quering wp.uiy.com
-[406/414] [*] Quering wpcloud.info
-[407/414] [*] Quering Wxpo.com
-[408/414] [*] Quering xproaction.com
-[409/414] [*] Quering xproaction.online
-[410/414] [*] Quering zambiaelectrometer.co.zm
-[411/414] [*] Quering zarcouae.ae
-[412/414] [*] Quering zeelandiamisr.com
-[413/414] [*] Quering ziberna.us
-[414/414] [*] Quering zoono-sa.co.za
+[1/413] [*] Quering 19011pharmacies.com
+[2/413] [*] Quering 2b.com.eg
+[3/413] [*] Quering 2bcomputer.com
+[4/413] [*] Quering 2betech.com
+[5/413] [*] Quering 2bsystems.com
+[6/413] [*] Quering 3een-eg.com
+[7/413] [*] Quering abdulghanigold.com
+[8/413] [*] Quering abdulghaniholding.com
+[9/413] [*] Quering abdulghanijewelry.com
+[10/413] [*] Quering Abouelenein.com
+[11/413] [*] Quering abrahamsdescendantsafterhim.org
+[12/413] [*] Quering abrajud.com
+[13/413] [*] Quering a-c.sa
+[14/413] [*] Quering accountants-group.com
+[15/413] [*] Quering accurateeg.com
+[16/413] [*] Quering Acrow.co
+[17/413] [*] Quering acumaticaeg.com
+[18/413] [*] Quering adalaa.com
+[19/413] [*] Quering afb-eg.com
+[20/413] [*] Quering alagzakhana.com
+[21/413] [*] Quering alamalegypt.com
+[22/413] [*] Quering alarabia-group.com
+[23/413] [*] Quering albarakaenergy.com
+[24/413] [*] Quering alchemiser.com
+[25/413] [*] Quering alcorfund.com
+[26/413] [*] Quering alezz-trade.com
+[27/413] [*] Quering alfadomain.local
+[28/413] [*] Quering alfamarket.com.eg
+[29/413] [*] Quering alhayahuniversity.com
+[30/413] [*] Quering alhayahuniversity.info
+[31/413] [*] Quering aliandco.com.eg
+[32/413] [*] Quering alico.law
+[33/413] [*] Quering ALKHABERY.COM
+[34/413] [*] Quering almorshedy.info
+[35/413] [*] Quering almottahedon-pharma.com
+[36/413] [*] Quering alnadapaints.com
+[37/413] [*] Quering alolatraining.com
+[38/413] [*] Quering alras.me
+[39/413] [*] Quering alsuae.com
+[40/413] [*] Quering alunaut.com.eg
+[41/413] [*] Quering amenli.com
+[42/413] [*] Quering ammlaky.com
+[43/413] [*] Quering amp.com.eg
+[44/413] [*] Quering anameischanged.info
+[45/413] [*] Quering arabia-holding.com
+[46/413] [*] Quering argonaut.ae
+[47/413] [*] Quering argo-naut.com
+[48/413] [*] Quering argonaut.com.eg
+[49/413] [*] Quering artboardsolutions.com
+[50/413] [*] Quering aswaqfathalla.com
+[51/413] [*] Quering bakelandegypt.com
+[52/413] [*] Quering balsamtrade.com
+[53/413] [*] Quering BatteryEgypt.com
+[54/413] [*] Quering beebreakegypt.com
+[55/413] [*] Quering beromedia.net
+[56/413] [*] Quering bestbuyegypt.com
+[57/413] [*] Quering BetaClubHouse.com
+[58/413] [*] Quering betaegypt.com
+[59/413] [*] Quering betna.com.eg
+[60/413] [*] Quering bienetreinstitute.com
+[61/413] [*] Quering bioeco-servizi.it
+[62/413] [*] Quering bio-medics.com
+[63/413] [*] Quering bluebus.com.eg
+[64/413] [*] Quering bluebytehospitality.com
+[65/413] [*] Quering blueskyegypt.net
+[66/413] [*] Quering blueskygroup.net
+[67/413] [*] Quering bottomline-psc.com
+[68/413] [*] Quering bouchamaoui.com
+[69/413] [*] Quering brighteye.info
+[70/413] [*] Quering brighteyexpo.com
+[71/413] [*] Quering buccaneershoes.com
+[72/413] [*] Quering cadcamcim.com
+[73/413] [*] Quering capital-egy.com
+[74/413] [*] Quering capital-ib.com
+[75/413] [*] Quering captinegypt.site
+[76/413] [*] Quering captin-egypt.site
+[77/413] [*] Quering careandcurepharma.com
+[78/413] [*] Quering careers.mobica.net
+[79/413] [*] Quering cashcool-dc.com
+[80/413] [*] Quering cbnewhomes-eg.com
+[81/413] [*] Quering Ceramicacleopatra.com
+[82/413] [*] Quering Ceramicacleopatragroup.com
+[83/413] [*] Quering cg-elsewedy.com
+[84/413] [*] Quering cguay.ca
+[85/413] [*] Quering checkwpcloudmail.com
+[86/413] [*] Quering circlecompany.com
+[87/413] [*] Quering citglobal.com
+[88/413] [*] Quering citizenship-souq.com
+[89/413] [*] Quering Clar.com
+[90/413] [*] Quering Cleopatra.group
+[91/413] [*] Quering Cleopatraagricultural.com
+[92/413] [*] Quering Cleopatraaviation.com
+[93/413] [*] Quering cleopatraceramics.com
+[94/413] [*] Quering Cleopatra-ceramics.com
+[95/413] [*] Quering Cleopatracsv.com
+[96/413] [*] Quering Cleopatra-Group.com
+[97/413] [*] Quering Cleopatraluxury.com
+[98/413] [*] Quering Cleopatraluxurymakadi.com
+[99/413] [*] Quering cleopatraluxurysharm.com
+[100/413] [*] Quering cleopatramall.com
+[101/413] [*] Quering Cleopatramedia.com
+[102/413] [*] Quering Cleopatrarealestate.com
+[103/413] [*] Quering Cleopatra-realestate.com
+[104/413] [*] Quering Cleopatra-realstate.co
+[105/413] [*] Quering Cleotravel.net
+[106/413] [*] Quering clipbucket.net
+[107/413] [*] Quering clue-ces.com
+[108/413] [*] Quering Cmaeg.com
+[109/413] [*] Quering com7.com.au
+[110/413] [*] Quering combatmedic.net
+[111/413] [*] Quering concordia-co.com
+[112/413] [*] Quering cosmotica.co
+[113/413] [*] Quering cosmotrade.co
+[114/413] [*] Quering ctgroups.net
+[115/413] [*] Quering dailyneedsgroup.com
+[116/413] [*] Quering deeinteriors.ae
+[117/413] [*] Quering degas-egy.com
+[118/413] [*] Quering deglagroup.com
+[119/413] [*] Quering delmar.com.eg
+[120/413] [*] Quering deltacapital-eg.com
+[121/413] [*] Quering dentalgate.org
+[122/413] [*] Quering developers-egypt.com
+[123/413] [*] Quering dilifoods.com
+[124/413] [*] Quering dorra.com
+[125/413] [*] Quering DorraGroup.net
+[126/413] [*] Quering Dorraresale.org
+[127/413] [*] Quering double-h-adv.com
+[128/413] [*] Quering eaco.co
+[129/413] [*] Quering eagle-chemicals.com
+[130/413] [*] Quering eaglepaint.com
+[131/413] [*] Quering easternegypt.com
+[132/413] [*] Quering echomarchi.com
+[133/413] [*] Quering economicgroup-eg.com
+[134/413] [*] Quering ees.com.eg
+[135/413] [*] Quering eeziclean.com
+[136/413] [*] Quering eg.fcm.travel
+[137/413] [*] Quering egycopp.com
+[138/413] [*] Quering egymec-eg.com
+[139/413] [*] Quering egy-pt.org
+[140/413] [*] Quering egyptbestproperties.com
+[141/413] [*] Quering egyptbestproperties.net
+[142/413] [*] Quering egypteurosuppliers.net
+[143/413] [*] Quering egyrobo.com
+[144/413] [*] Quering elahlyia.com
+[145/413] [*] Quering elahlyia.com.eg
+[146/413] [*] Quering elarabipharma.com
+[147/413] [*] Quering Elbalad.news
+[148/413] [*] Quering elbaladtv.net
+[149/413] [*] Quering elbannagroup.com
+[150/413] [*] Quering Elbassiouni.com
+[151/413] [*] Quering Elbassiouni.net
+[152/413] [*] Quering eldidiconcrete.com
+[153/413] [*] Quering eldidigroup.com
+[154/413] [*] Quering electrometer.com.gh
+[155/413] [*] Quering Elitehospital.org
+[156/413] [*] Quering elixirpharma-eg.com
+[157/413] [*] Quering Ellaithy.com.eg
+[158/413] [*] Quering elsherifontherun.com
+[159/413] [*] Quering elwatnya-co.com
+[160/413] [*] Quering emessadenim.com
+[161/413] [*] Quering emi-egypt.com
+[162/413] [*] Quering empire-cc.com
+[163/413] [*] Quering energyacables.com
+[164/413] [*] Quering energya-pts.com
+[165/413] [*] Quering engcomptec.com
+[166/413] [*] Quering epda-eg.com
+[167/413] [*] Quering eps-egypt.com
+[168/413] [*] Quering eps-egypt.org
+[169/413] [*] Quering erccegypt.com
+[170/413] [*] Quering etf.org.eg
+[171/413] [*] Quering ethos.ag
+[172/413] [*] Quering evacoeg.com
+[173/413] [*] Quering extramile-eg.co
+[174/413] [*] Quering eye-ltd.com
+[175/413] [*] Quering eye-ltd-eg.com
+[176/413] [*] Quering ezz-eldeen.com
+[177/413] [*] Quering fahmy-group.com
+[178/413] [*] Quering Farahboat.com
+[179/413] [*] Quering farmerbox.sa
+[180/413] [*] Quering fcportal.ae
+[181/413] [*] Quering ferrometalco.com
+[182/413] [*] Quering fgsltd.com
+[183/413] [*] Quering findwell-eg.com
+[184/413] [*] Quering floortec-psc.com
+[185/413] [*] Quering flygroup-eg.com
+[186/413] [*] Quering freddo-egypt.com
+[187/413] [*] Quering fruttella.com
+[188/413] [*] Quering gapit.us
+[189/413] [*] Quering gasmetro.com
+[190/413] [*] Quering Genena.com
+[191/413] [*] Quering genenaproj.com
+[192/413] [*] Quering genenavacation.com
+[193/413] [*] Quering GolfCorner.net
+[194/413] [*] Quering greens-pharmacies.com
+[195/413] [*] Quering greenways.com.pk
+[196/413] [*] Quering groupcleopatra.com
+[197/413] [*] Quering grubersqatar.com
+[198/413] [*] Quering gsa-egy.com
+[199/413] [*] Quering gt.com.eg
+[200/413] [*] Quering guideme4u.com
+[201/413] [*] Quering hanzamedic.com
+[202/413] [*] Quering happycloud.sa
+[203/413] [*] Quering happysweet.co
+[204/413] [*] Quering happysweet.org
+[205/413] [*] Quering hartmannegypt.com
+[206/413] [*] Quering hassab.com
+[207/413] [*] Quering hbsie.com
+[208/413] [*] Quering hipharm-eg.com
+[209/413] [*] Quering holytourseg.com
+[210/413] [*] Quering holytraveleg.com
+[211/413] [*] Quering HootAmmo.com
+[212/413] [*] Quering hopeegypt.com
+[213/413] [*] Quering ht-egy.com
+[214/413] [*] Quering hygeiagroup.net
+[215/413] [*] Quering i2m-pharma.com
+[216/413] [*] Quering ibs-construction.com
+[217/413] [*] Quering icestate.com
+[218/413] [*] Quering icgroupus.com
+[219/413] [*] Quering Ikthar.net
+[220/413] [*] Quering ilsme.com
+[221/413] [*] Quering imaegy.com
+[222/413] [*] Quering infotechs.co
+[223/413] [*] Quering inland-eg.com
+[224/413] [*] Quering inma.com.eg
+[225/413] [*] Quering inmacommercial.com
+[226/413] [*] Quering inmaconstruction.com
+[227/413] [*] Quering inmadevelopments.com
+[228/413] [*] Quering inmaproperties.com
+[229/413] [*] Quering inshieldinsurance.com
+[230/413] [*] Quering intertex-eg.com
+[231/413] [*] Quering itcegy.com
+[232/413] [*] Quering itcpro.co
+[233/413] [*] Quering itvision-eg.com
+[234/413] [*] Quering jbla.pt
+[235/413] [*] Quering Jetouregypt.com
+[236/413] [*] Quering jgtech.com.pa
+[237/413] [*] Quering kith-kin.net
+[238/413] [*] Quering Kkc.ae
+[239/413] [*] Quering lascopaque.com
+[240/413] [*] Quering lavvento.com
+[241/413] [*] Quering life4more.com
+[242/413] [*] Quering Livingin.com
+[243/413] [*] Quering login-sys.com
+[244/413] [*] Quering lutfidifc.com
+[245/413] [*] Quering luxury-living.me
+[246/413] [*] Quering mamibacare.com
+[247/413] [*] Quering masajid.com
+[248/413] [*] Quering massarsupplies.com
+[249/413] [*] Quering matjjari.com
+[250/413] [*] Quering mavendevelopments.com
+[251/413] [*] Quering mav-enterprise.com
+[252/413] [*] Quering md-masterbatch.com
+[253/413] [*] Quering medcom-hc.com
+[254/413] [*] Quering megaloja.pt
+[255/413] [*] Quering megancy.com
+[256/413] [*] Quering megatrust.net
+[257/413] [*] Quering melsyasa.com
+[258/413] [*] Quering memaaralmorshedy.com
+[259/413] [*] Quering metcegy.com
+[260/413] [*] Quering mgh.co.za
+[261/413] [*] Quering mgtechnik.com
+[262/413] [*] Quering Middleeastcomp.com
+[263/413] [*] Quering mindset-academy.net
+[264/413] [*] Quering minlo.com
+[265/413] [*] Quering misr2000online.net
+[266/413] [*] Quering misrpharmacies.com
+[267/413] [*] Quering mixta-egypt.com
+[268/413] [*] Quering mobica.net
+[269/413] [*] Quering modacasa.com
+[270/413] [*] Quering modern4concrete.com
+[271/413] [*] Quering morshedy.com
+[272/413] [*] Quering morshedygroup.com
+[273/413] [*] Quering mortgage-souq.com
+[274/413] [*] Quering moughrabi.com
+[275/413] [*] Quering ms-eg.net
+[276/413] [*] Quering mtbi-group.com
+[277/413] [*] Quering mt-egy.com
+[278/413] [*] Quering mubarakat.com
+[279/413] [*] Quering myasli.com
+[280/413] [*] Quering Nadapaints.com
+[281/413] [*] Quering neiscoegypt.com
+[282/413] [*] Quering nerhadou.com
+[283/413] [*] Quering networkback.com
+[284/413] [*] Quering newmixeg.com
+[285/413] [*] Quering nextv-eg.com
+[286/413] [*] Quering noblecatsociety.com
+[287/413] [*] Quering noon-center.com
+[288/413] [*] Quering noureldinelsherif.com
+[289/413] [*] Quering novochem.net
+[290/413] [*] Quering odce-sa.com
+[291/413] [*] Quering Olicolube.com
+[292/413] [*] Quering omelmasryeenhospital.gov.eg
+[293/413] [*] Quering omni-es.com
+[294/413] [*] Quering ontherun.co
+[295/413] [*] Quering optaline.com
+[296/413] [*] Quering orchidiapharmaceutical.com
+[297/413] [*] Quering orient-paints.com
+[298/413] [*] Quering os4it-sa.com
+[299/413] [*] Quering panda-leap.com
+[300/413] [*] Quering peking-eg.com
+[301/413] [*] Quering pharmaland.com.eg
+[302/413] [*] Quering pharopharma.com
+[303/413] [*] Quering phr-services.com
+[304/413] [*] Quering platinumtrading-eg.com
+[305/413] [*] Quering plumharbour.com
+[306/413] [*] Quering Poolsuae.com
+[307/413] [*] Quering PORTAWEST.COM
+[308/413] [*] Quering powerlube.net
+[309/413] [*] Quering presentation-eg.com
+[310/413] [*] Quering presentationsports.com
+[311/413] [*] Quering prokuala.com
+[312/413] [*] Quering propertystreet.org
+[313/413] [*] Quering Proteam-eg.com
+[314/413] [*] Quering provence-eg.com
+[315/413] [*] Quering provenceschool.com
+[316/413] [*] Quering pst.ae
+[317/413] [*] Quering ptc-eg.org
+[318/413] [*] Quering ptcprojects.com
+[319/413] [*] Quering pyramidseg.com
+[320/413] [*] Quering qasatli.com
+[321/413] [*] Quering QasemStore.com
+[322/413] [*] Quering qasern.com
+[323/413] [*] Quering qspacetraining.com
+[324/413] [*] Quering Qudra-hr.com
+[325/413] [*] Quering queendimarine.com
+[326/413] [*] Quering raatrading.com
+[327/413] [*] Quering rage3fady.com
+[328/413] [*] Quering raileibeachclub.com
+[329/413] [*] Quering rasport.com.eg
+[330/413] [*] Quering rawaj-eg.com
+[331/413] [*] Quering redconcon.com
+[332/413] [*] Quering roayamail.com
+[333/413] [*] Quering roayastore.com
+[334/413] [*] Quering roayatechnology.com
+[335/413] [*] Quering rootsib.com
+[336/413] [*] Quering Roshdy.co
+[337/413] [*] Quering roshdypharmacies.com
+[338/413] [*] Quering royalswisshotels.com
+[339/413] [*] Quering royalswisslahore.com
+[340/413] [*] Quering sakr-group.org
+[341/413] [*] Quering samritz.co.uk
+[342/413] [*] Quering sanda.email
+[343/413] [*] Quering sanoeg.com
+[344/413] [*] Quering saratec.sa
+[345/413] [*] Quering satta-pharma.com
+[346/413] [*] Quering scefirm.com
+[347/413] [*] Quering schlhomes.com
+[348/413] [*] Quering seifhealthcare.com
+[349/413] [*] Quering serayvacationclub.com
+[350/413] [*] Quering serenityhotelsegypt.com
+[351/413] [*] Quering servicesolutions.co.za
+[352/413] [*] Quering sewedy.com.eg
+[353/413] [*] Quering shamaliwaris.com
+[354/413] [*] Quering sharakkas.com
+[355/413] [*] Quering shieldeg.com
+[356/413] [*] Quering sigma-g.com
+[357/413] [*] Quering silicon21.com.eg
+[358/413] [*] Quering skinrulesegy.com
+[359/413] [*] Quering skygulftraining.com
+[360/413] [*] Quering smartarrow.sa
+[361/413] [*] Quering smartbirdtec.com
+[362/413] [*] Quering smartfurniture.com.eg
+[363/413] [*] Quering smg.com.eg
+[364/413] [*] Quering Solotex-eg.com
+[365/413] [*] Quering sorouj-eg.com
+[366/413] [*] Quering souqbrands.com
+[367/413] [*] Quering stylishbrands.shop
+[368/413] [*] Quering SultanPharmacies.com
+[369/413] [*] Quering swissinternationalhotels.com
+[370/413] [*] Quering swissspirithotels.com
+[371/413] [*] Quering tankwaters.com
+[372/413] [*] Quering tarabot-eg.com
+[373/413] [*] Quering taskedin.net
+[374/413] [*] Quering technocans.net
+[375/413] [*] Quering technoeg.com
+[376/413] [*] Quering techno-side.com
+[377/413] [*] Quering telebirdeg.com
+[378/413] [*] Quering terceirasoft.com
+[379/413] [*] Quering thefootpark.com
+[380/413] [*] Quering thesprinthub.com
+[381/413] [*] Quering tiba-group.com
+[382/413] [*] Quering tmcleaninguae.com
+[383/413] [*] Quering topio-urban.com
+[384/413] [*] Quering Topprintsolutions.com
+[385/413] [*] Quering traininggulf.com
+[386/413] [*] Quering transmisr.com
+[387/413] [*] Quering triviumbc.com
+[388/413] [*] Quering triviumzayed.com
+[389/413] [*] Quering truepulse.ae
+[390/413] [*] Quering tseppas.com
+[391/413] [*] Quering tu-rath.com
+[392/413] [*] Quering tvboxuae.com
+[393/413] [*] Quering uaealnuaimi.com
+[394/413] [*] Quering ubciseg.com
+[395/413] [*] Quering unicon-pumps.com
+[396/413] [*] Quering uniqueimpacts.com
+[397/413] [*] Quering UPE-egypt.com
+[398/413] [*] Quering valuemixers.com
+[399/413] [*] Quering venus-electric.net
+[400/413] [*] Quering virtualallianceltd.com
+[401/413] [*] Quering Whiteville.it
+[402/413] [*] Quering world-beds.com
+[403/413] [*] Quering worldposta-trial.com
+[404/413] [*] Quering wp.uiy.com
+[405/413] [*] Quering wpcloud.info
+[406/413] [*] Quering Wxpo.com
+[407/413] [*] Quering xproaction.com
+[408/413] [*] Quering xproaction.online
+[409/413] [*] Quering zambiaelectrometer.co.zm
+[410/413] [*] Quering zarcouae.ae
+[411/413] [*] Quering zeelandiamisr.com
+[412/413] [*] Quering ziberna.us
+[413/413] [*] Quering zoono-sa.co.za
 
 
 Domain          : 19011pharmacies.com
@@ -439,7 +438,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : 2bcomputer.com
@@ -481,7 +480,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : 3een-eg.com
@@ -494,9 +493,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : abdulghanigold.com
 MX1             : False
@@ -522,7 +521,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -566,7 +565,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : abrajud.com
 MX1             : False
@@ -662,7 +661,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -705,7 +704,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : alarabia-group.com
@@ -746,7 +745,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -774,7 +773,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -804,7 +803,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : alhayahuniversity.com
 MX1             : False
@@ -830,9 +829,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : aliandco.com.eg
 MX1             : False
@@ -845,7 +844,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : alico.law
@@ -860,7 +859,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : ALKHABERY.COM
 MX1             : False
@@ -872,9 +871,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : almorshedy.info
 MX1             : False
@@ -914,7 +913,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -1068,9 +1067,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : argonaut.com.eg
 MX1             : False
@@ -1083,7 +1082,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : artboardsolutions.com
@@ -1097,8 +1096,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : aswaqfathalla.com
 MX1             : False
@@ -1140,7 +1139,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : BatteryEgypt.com
 MX1             : False
@@ -1167,7 +1166,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : beromedia.net
@@ -1209,7 +1208,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : betaegypt.com
@@ -1223,7 +1222,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : betna.com.eg
@@ -1236,7 +1235,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -1251,7 +1250,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : bioeco-servizi.it
@@ -1264,7 +1263,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -1292,7 +1291,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -1306,8 +1305,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+MXError         : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : blueskyegypt.net
@@ -1320,9 +1319,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : blueskygroup.net
 MX1             : False
@@ -1349,7 +1348,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : bouchamaoui.com
@@ -1377,7 +1376,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : brighteyexpo.com
@@ -1420,7 +1419,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : capital-egy.com
 MX1             : False
@@ -1433,7 +1432,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : capital-ib.com
@@ -1446,7 +1445,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -1476,7 +1475,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : careandcurepharma.com
 MX1             : False
@@ -1489,7 +1488,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : careers.mobica.net
@@ -1504,7 +1503,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : cashcool-dc.com
 MX1             : False
@@ -1532,7 +1531,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : Ceramicacleopatra.com
 MX1             : False
@@ -1544,9 +1543,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Ceramicacleopatragroup.com
 MX1             : False
@@ -1559,7 +1558,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : cg-elsewedy.com
@@ -1574,7 +1573,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : cguay.ca
 MX1             : False
@@ -1587,7 +1586,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : checkwpcloudmail.com
@@ -1614,8 +1613,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+MXError         : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : citglobal.com
@@ -1630,7 +1629,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : citizenship-souq.com
 MX1             : False
@@ -1642,7 +1641,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -1658,7 +1657,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Cleopatra.group
 MX1             : False
@@ -1685,7 +1684,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : Cleopatraaviation.com
@@ -1782,7 +1781,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -1797,7 +1796,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : cleopatramall.com
@@ -1810,9 +1809,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Cleopatramedia.com
 MX1             : False
@@ -1825,7 +1824,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : Cleopatrarealestate.com
@@ -1840,7 +1839,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Cleopatra-realestate.com
 MX1             : False
@@ -1853,7 +1852,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : Cleopatra-realstate.co
@@ -1866,9 +1865,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : Cleotravel.net
 MX1             : False
@@ -1880,7 +1879,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -1894,8 +1893,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+MXError         : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : clue-ces.com
@@ -1951,7 +1950,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : concordia-co.com
@@ -1980,7 +1979,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : cosmotrade.co
 MX1             : False
@@ -1994,7 +1993,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : ctgroups.net
 MX1             : False
@@ -2048,9 +2047,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : deglagroup.com
 MX1             : False
@@ -2090,8 +2089,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+MXError         : DNS server failure
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : dentalgate.org
@@ -2106,7 +2105,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : developers-egypt.com
 MX1             : False
@@ -2134,7 +2133,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : dorra.com
 MX1             : False
@@ -2176,7 +2175,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : double-h-adv.com
 MX1             : False
@@ -2188,7 +2187,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -2202,7 +2201,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -2217,7 +2216,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : eaglepaint.com
@@ -2258,9 +2257,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : economicgroup-eg.com
 MX1             : False
@@ -2273,7 +2272,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : ees.com.eg
@@ -2288,7 +2287,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : eeziclean.com
 MX1             : False
@@ -2301,8 +2300,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : eg.fcm.travel
 MX1             : False
@@ -2316,7 +2315,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : egycopp.com
 MX1             : False
@@ -2330,7 +2329,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : egymec-eg.com
 MX1             : False
@@ -2356,9 +2355,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : egyptbestproperties.com
 MX1             : False
@@ -2370,7 +2369,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : DNS server failure
 
@@ -2384,9 +2383,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : egypteurosuppliers.net
 MX1             : False
@@ -2400,7 +2399,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : egyrobo.com
 MX1             : False
@@ -2498,7 +2497,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Elbassiouni.com
 MX1             : False
@@ -2511,7 +2510,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : Elbassiouni.net
@@ -2524,9 +2523,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : eldidiconcrete.com
 MX1             : False
@@ -2539,7 +2538,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : eldidigroup.com
@@ -2552,9 +2551,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : electrometer.com.gh
 MX1             : False
@@ -2568,7 +2567,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Elitehospital.org
 MX1             : False
@@ -2580,8 +2579,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+MXError         : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : elixirpharma-eg.com
@@ -2596,7 +2595,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Ellaithy.com.eg
 MX1             : False
@@ -2609,7 +2608,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : elsherifontherun.com
@@ -2622,9 +2621,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : elwatnya-co.com
 MX1             : False
@@ -2638,7 +2637,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : emessadenim.com
 MX1             : False
@@ -2650,7 +2649,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -2665,7 +2664,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : empire-cc.com
@@ -2678,7 +2677,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -2720,7 +2719,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -2735,8 +2734,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : eps-egypt.com
 MX1             : False
@@ -2790,7 +2789,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -2805,8 +2804,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : evacoeg.com
 MX1             : False
@@ -2818,9 +2817,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : extramile-eg.co
 MX1             : False
@@ -2832,9 +2831,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : eye-ltd.com
 MX1             : False
@@ -2847,8 +2846,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : eye-ltd-eg.com
 MX1             : False
@@ -2874,7 +2873,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -2889,7 +2888,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : Farahboat.com
@@ -2902,9 +2901,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : farmerbox.sa
 MX1             : False
@@ -2917,8 +2916,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : fcportal.ae
 MX1             : False
@@ -2930,9 +2929,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : ferrometalco.com
 MX1             : False
@@ -2945,7 +2944,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : fgsltd.com
@@ -2958,9 +2957,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : findwell-eg.com
 MX1             : False
@@ -2972,8 +2971,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+MXError         : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : floortec-psc.com
@@ -2986,9 +2985,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : flygroup-eg.com
 MX1             : False
@@ -3000,9 +2999,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : freddo-egypt.com
 MX1             : False
@@ -3014,9 +3013,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : fruttella.com
 MX1             : False
@@ -3028,8 +3027,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : gapit.us
@@ -3042,8 +3041,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : This operation returned because the timeout period expired
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : gasmetro.com
@@ -3071,7 +3070,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : genenaproj.com
@@ -3100,7 +3099,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : GolfCorner.net
 MX1             : False
@@ -3113,7 +3112,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : greens-pharmacies.com
@@ -3126,9 +3125,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : greenways.com.pk
 MX1             : False
@@ -3140,8 +3139,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+MXError         : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : groupcleopatra.com
@@ -3154,9 +3153,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : grubersqatar.com
 MX1             : False
@@ -3169,7 +3168,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : gsa-egy.com
@@ -3182,9 +3181,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : gt.com.eg
 MX1             : False
@@ -3197,8 +3196,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : guideme4u.com
 MX1             : False
@@ -3210,8 +3209,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : hanzamedic.com
@@ -3224,9 +3223,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : happycloud.sa
 MX1             : False
@@ -3239,8 +3238,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : happysweet.co
 MX1             : False
@@ -3252,9 +3251,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : happysweet.org
 MX1             : False
@@ -3267,7 +3266,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : hartmannegypt.com
@@ -3280,9 +3279,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : hassab.com
 MX1             : False
@@ -3295,7 +3294,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : hbsie.com
@@ -3308,7 +3307,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -3323,7 +3322,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : holytourseg.com
@@ -3338,37 +3337,9 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
-
-Domain          : holytraveleg.com
-MX1             : False
-MX2             : False
-MX3             : False
-MX4             : False
-MXConfiguration : N/A
-SRVConfigured   : False
-SPFConfigured   : False
-DKIMConfigured  : False
-DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
-Domain          : HootAmmo.com
-MX1             : False
-MX2             : False
-MX3             : False
-MX4             : False
-MXConfiguration : N/A
-SRVConfigured   : False
-SPFConfigured   : False
-DKIMConfigured  : False
-DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
-
-Domain          : hopeegypt.com
+Domain          : holytraveleg.com
 MX1             : False
 MX2             : False
 MX3             : False
@@ -3382,6 +3353,34 @@ MXError         : This operation returned because the timeout period expired
 TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
+Domain          : HootAmmo.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
+Domain          : hopeegypt.com
+MX1             : False
+MX2             : False
+MX3             : False
+MX4             : False
+MXConfiguration : N/A
+SRVConfigured   : False
+SPFConfigured   : False
+DKIMConfigured  : False
+DMARCConfigured : False
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
+
 Domain          : ht-egy.com
 MX1             : False
 MX2             : False
@@ -3392,9 +3391,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : hygeiagroup.net
 MX1             : False
@@ -3421,7 +3420,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : ibs-construction.com
@@ -3476,9 +3475,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : ilsme.com
 MX1             : False
@@ -3491,8 +3490,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : imaegy.com
 MX1             : False
@@ -3504,9 +3503,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : infotechs.co
 MX1             : False
@@ -3532,9 +3531,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : inma.com.eg
 MX1             : False
@@ -3560,7 +3559,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -3574,9 +3573,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : inmadevelopments.com
 MX1             : False
@@ -3588,9 +3587,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : inmaproperties.com
 MX1             : False
@@ -3602,9 +3601,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : inshieldinsurance.com
 MX1             : False
@@ -3616,8 +3615,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : intertex-eg.com
@@ -3630,9 +3629,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : itcegy.com
 MX1             : False
@@ -3645,7 +3644,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : itcpro.co
@@ -3658,9 +3657,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : itvision-eg.com
 MX1             : False
@@ -3673,7 +3672,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : jbla.pt
@@ -3686,9 +3685,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Jetouregypt.com
 MX1             : False
@@ -3701,7 +3700,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : jgtech.com.pa
@@ -3714,7 +3713,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -3729,7 +3728,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : Kkc.ae
@@ -3742,9 +3741,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : DNS server failure
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : lascopaque.com
 MX1             : False
@@ -3770,7 +3769,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -3784,8 +3783,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : This operation returned because the timeout period expired
+MXError         : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : Livingin.com
@@ -3813,7 +3812,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : lutfidifc.com
@@ -3826,9 +3825,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : luxury-living.me
 MX1             : False
@@ -3841,7 +3840,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : mamibacare.com
@@ -3854,9 +3853,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : masajid.com
 MX1             : False
@@ -3869,7 +3868,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : massarsupplies.com
@@ -3882,7 +3881,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : DNS server failure
 
@@ -3897,8 +3896,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : mavendevelopments.com
 MX1             : False
@@ -3910,9 +3909,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : mav-enterprise.com
 MX1             : False
@@ -3924,9 +3923,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
-TXTError        : DNS server failure
-SRVError        : DNS server failure
+MXError         : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : md-masterbatch.com
 MX1             : False
@@ -3940,7 +3939,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : DNS server failure
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : medcom-hc.com
 MX1             : False
@@ -3966,7 +3965,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -3981,7 +3980,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : megatrust.net
@@ -3996,7 +3995,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : melsyasa.com
 MX1             : False
@@ -4009,7 +4008,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : memaaralmorshedy.com
@@ -4022,7 +4021,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -4050,9 +4049,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : mgtechnik.com
 MX1             : False
@@ -4065,7 +4064,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : Middleeastcomp.com
@@ -4078,9 +4077,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : mindset-academy.net
 MX1             : False
@@ -4093,7 +4092,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : minlo.com
@@ -4108,7 +4107,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : misr2000online.net
 MX1             : False
@@ -4177,7 +4176,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : modern4concrete.com
@@ -4190,7 +4189,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -4233,8 +4232,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : moughrabi.com
 MX1             : False
@@ -4261,7 +4260,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : mtbi-group.com
@@ -4289,7 +4288,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : mubarakat.com
@@ -4331,7 +4330,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : neiscoegypt.com
@@ -4442,7 +4441,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -4458,7 +4457,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : odce-sa.com
 MX1             : False
@@ -4528,7 +4527,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : optaline.com
 MX1             : False
@@ -4555,7 +4554,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : orient-paints.com
@@ -4582,9 +4581,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : panda-leap.com
 MX1             : False
@@ -4624,8 +4623,8 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+MXError         : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : pharopharma.com
@@ -4640,7 +4639,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : phr-services.com
 MX1             : False
@@ -4668,7 +4667,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : plumharbour.com
 MX1             : False
@@ -4694,7 +4693,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -4765,7 +4764,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : propertystreet.org
@@ -4834,7 +4833,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -4863,7 +4862,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : pyramidseg.com
@@ -4877,7 +4876,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : qasatli.com
@@ -4904,9 +4903,9 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : qasern.com
 MX1             : False
@@ -4960,7 +4959,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5128,7 +5127,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5185,7 +5184,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : sanda.email
@@ -5255,8 +5254,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
-SRVError        : This operation returned because the timeout period expired
+TXTError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : schlhomes.com
 MX1             : False
@@ -5282,7 +5281,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5310,7 +5309,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5338,7 +5337,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5381,7 +5380,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : sigma-g.com
@@ -5450,7 +5449,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5465,7 +5464,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : smartfurniture.com.eg
@@ -5478,7 +5477,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5534,7 +5533,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5577,7 +5576,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : swissspirithotels.com
@@ -5604,7 +5603,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5619,7 +5618,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : taskedin.net
@@ -5647,7 +5646,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : technoeg.com
@@ -5662,7 +5661,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : techno-side.com
 MX1             : False
@@ -5674,7 +5673,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5716,7 +5715,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5759,8 +5758,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+TXTError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : topio-urban.com
 MX1             : False
@@ -5786,7 +5785,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -5802,7 +5801,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : This operation returned because the timeout period expired
+SRVError        : DNS server failure
 
 Domain          : transmisr.com
 MX1             : False
@@ -5872,7 +5871,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : tu-rath.com
 MX1             : False
@@ -5969,7 +5968,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : valuemixers.com
@@ -5996,7 +5995,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -6012,7 +6011,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : Whiteville.it
 MX1             : False
@@ -6024,7 +6023,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : This operation returned because the timeout period expired
+MXError         : DNS server failure
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -6039,22 +6038,8 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
-
-Domain          : worldposta.com
-MX1             : False
-MX2             : False
-MX3             : False
-MX4             : False
-MXConfiguration : Not Configured
-SRVConfigured   : False
-SPFConfigured   : False
-DKIMConfigured  : False
-DMARCConfigured : False
-MXError         : N/A
-TXTError        : N/A
-SRVError        : DNS name does not exist
 
 Domain          : worldposta-trial.com
 MX1             : False
@@ -6081,7 +6066,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : wpcloud.info
@@ -6110,7 +6095,7 @@ DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
-SRVError        : DNS server failure
+SRVError        : This operation returned because the timeout period expired
 
 Domain          : xproaction.com
 MX1             : False
@@ -6137,7 +6122,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : DNS server failure
+TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : zambiaelectrometer.co.zm
@@ -6164,7 +6149,7 @@ SRVConfigured   : False
 SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
-MXError         : DNS server failure
+MXError         : This operation returned because the timeout period expired
 TXTError        : This operation returned because the timeout period expired
 SRVError        : This operation returned because the timeout period expired
 
@@ -6179,7 +6164,7 @@ SPFConfigured   : False
 DKIMConfigured  : False
 DMARCConfigured : False
 MXError         : This operation returned because the timeout period expired
-TXTError        : This operation returned because the timeout period expired
+TXTError        : DNS server failure
 SRVError        : This operation returned because the timeout period expired
 
 Domain          : ziberna.us

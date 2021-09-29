@@ -1,2 +1,2 @@
 [+] Session established with EU1MB9901.Roaya.loc
-08/18/2021 09:51:59 [*] Exchange queue threshold not exceeded.
+09/29/2021 11:27:33 [*] Exchange queue threshold not exceeded.

@@ -1,20 +1,17 @@
-WARNING: The network connection to FRANK-MIGR has been interrupted. Attempting to reconnect for up to 4 minutes...
-WARNING: Attempting to reconnect to FRANK-MIGR ...
-WARNING: The network connection to FRANK-MIGR has been restored.
-08/18/2021 09:46:40 [!] Disk usage percent exceeded threshold. Sending mail.
+09/29/2021 09:56:26 [!] Disk usage percent exceeded threshold. Sending mail.
 
 
-ComputerName         : FRANK-EVENTLOG
+ComputerName         : EU1FE3112
 DriveLetter          : C:
-TotalDiskSpace(GB)   : 4023.45
-FreeDiskSpace(GB)    : 939.09
-FreeDiskSpacePercent : 23.34
+TotalDiskSpace(GB)   : 499.66
+FreeDiskSpace(GB)    : 123.41
+FreeDiskSpacePercent : 24.7
 
 ComputerName         : FRANK-SQL2019
 DriveLetter          : C:
 TotalDiskSpace(GB)   : 79.4
-FreeDiskSpace(GB)    : 15.9
-FreeDiskSpacePercent : 20.03
+FreeDiskSpace(GB)    : 17.5
+FreeDiskSpacePercent : 22.05
 
 
 

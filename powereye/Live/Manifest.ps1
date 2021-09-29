@@ -95,6 +95,7 @@ $Modules = @(
         Enabled = $true
         Name = 'Session Report'
         RunInterval = New-TimeSpan -Hours 1
+        
     }
     #15
     [Module]@{

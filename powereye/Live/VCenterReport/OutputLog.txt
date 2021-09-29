@@ -1,42 +1,50 @@
-WARNING: Please consider joining the VMware Customer Experience Improvement Program, so you can help us make PowerCLI a
- better product. You can join using the following command:
+WARNING: Please consider joining the VMware Customer Experience Improvement Program, so you can 
+help us make PowerCLI a better product. You can join using the following command:
 
 Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $true
 
-VMware's Customer Experience Improvement Program ("CEIP") provides VMware with information that enables VMware to 
-improve its products and services, to fix problems, and to advise you on how best to deploy and use our products.  As 
-part of the CEIP, VMware collects technical information about your organizationƒ?Ts use of VMware products and services
- on a regular basis in association with your organizationƒ?Ts VMware license key(s).  This information does not 
-personally identify any individual.
+VMware's Customer Experience Improvement Program ("CEIP") provides VMware with information that 
+enables VMware to improve its products and services, to fix problems, and to advise you on how best
+ to deploy and use our products.  As part of the CEIP, VMware collects technical information about 
+your organizationƒ?Ts use of VMware products and services on a regular basis in association with 
+your organizationƒ?Ts VMware license key(s).  This information does not personally identify any 
+individual.
 
 For more details: type "help about_ceip" to see the related help article.
 
 To disable this warning and set your preference use the following command and restart PowerShell: 
 Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $true or $false.
 
-Scope    ProxyPolicy     DefaultVIServerMode InvalidCertificateAction  DisplayDeprecationWarnings WebOperationTimeout
-                                                                                                  Seconds            
------    -----------     ------------------- ------------------------  -------------------------- -------------------
-Session  UseSystemProxy  Single              Ignore                    True                       300                
-User                     Single              Ignore                                                                  
-AllUsers                                     Ignore                                                                  
-
-IsConnected   : True
-Id            : /VIServer=worldposta.com\powercli@10.5.5.20:443/
-ServiceUri    : https://10.5.5.20/sdk
-SessionSecret : "693b8d42e74e516acd20cf49374747c2037eeffa"
-Name          : 10.5.5.20
-Port          : 443
-SessionId     : "693b8d42e74e516acd20cf49374747c2037eeffa"
-User          : WORLDPOSTA.COM\powercli
-Uid           : /VIServer=worldposta.com\powercli@10.5.5.20:443/
-Version       : 6.7.0
-Build         : 18010599
-ProductLine   : vpx
-InstanceUuid  : 9455ae5e-3f2e-4be3-b798-68d38b0c59a7
-RefCount      : 1
-ExtensionData : VMware.Vim.ServiceInstance
-
-08/17/2021 13:30:31 [+] Report generated. Sending mail.
+Scope    ProxyPolicy     DefaultVIServerMode InvalidCertificateAction  DisplayDeprecationWarnings W
+                                                                                                  e
+                                                                                                  b
+                                                                                                  O
+                                                                                                  p
+                                                                                                  e
+                                                                                                  r
+                                                                                                  a
+                                                                                                  t
+                                                                                                  i
+                                                                                                  o
+                                                                                                  n
+                                                                                                  T
+                                                                                                  i
+                                                                                                  m
+                                                                                                  e
+                                                                                                  o
+                                                                                                  u
+                                                                                                  t
+                                                                                                  S
+                                                                                                  e
+                                                                                                  c
+                                                                                                  o
+                                                                                                  n
+                                                                                                  d
+                                                                                                  s
+-----    -----------     ------------------- ------------------------  -------------------------- -
+Session  UseSystemProxy  Single              Ignore                    True                       3
+User                     Single              Ignore                                                
+AllUsers                                     Ignore                                                
+09/28/2021 21:53:33 [+] Report generated. Sending mail.
 
 

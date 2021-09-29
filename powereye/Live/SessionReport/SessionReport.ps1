@@ -120,8 +120,6 @@ $($LogoffResults | ConvertTo-Html -Fragment)
 }
 #endregion
 
-Write-Output "$(Get-Date) [*] Sending mail"
-
 Write-Output $session_CONSOLE_summary
 Write-Output $session_RDP_summary
 Write-Output $session_inactive_summary
@@ -131,5 +129,5 @@ if($session_CONSOLE_summary -or $session_RDP_summary -or $session_inactive_summa
     Send-MailMessage @MailSettings -BodyAsHtml "$style $ConsoleSection $RDPSection $InactiveSection $CleanUpSection"
 }
 else{
-    Write-Output "$(Get-Date)[-] No Sessions were found"
+    Write-Output "$(Get-Date)[-] No Sessions were found."
 }

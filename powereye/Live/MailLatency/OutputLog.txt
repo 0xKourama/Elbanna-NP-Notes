@@ -1,23 +1,92 @@
 [+] Session established with EU1MB9901.Roaya.loc
-08/18/2021 09:52:07 [!] Mail latency threshold exceeded. Sending mail.
+09/29/2021 11:27:46 [!] Mail latency threshold exceeded. Sending mail.
 
-Server        MinimumLatency(S) MaximumLatency(S) AverageLatency(S)
-------        ----------------- ----------------- -----------------
-FRANK-MBM-D35              0.61              0.61              0.61
-EU1MB9903                  0.33             156.3              2.52
-EU1MB9901                  0.29            156.83              3.62
-EU1MB9902                  0.27            153.82              3.61
-                                                                   
-                                                                   
-                                                                   
-                                                                   
-                                                                   
-                                                                   
-                                                                   
-                                                                   
-FRANK-MBM-D35             10.05             10.05             10.05
-EU1MB9903                   0.6             11.49              2.01
-EU1MB9901                  0.58              4.35              1.58
-EU1MB9902                  0.58             11.43              1.61
+Server    MinimumLatency(S) MaximumLatency(S) AverageLatency(S)
+------    ----------------- ----------------- -----------------
+EU1MB9903              0.25            543.69              8.98
+EU1MB9901              0.27            544.71              8.92
+EU1MB9902              0.29            543.54              8.35
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+EU1MB9903              0.67             17.14              3.62
+EU1MB9901              0.65             16.15              3.57
+EU1MB9902              0.69              5.59              2.72
 
 

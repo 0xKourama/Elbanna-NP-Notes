@@ -1,761 +1,850 @@
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE3110
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE3110
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE3112
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE3112
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1MB9902
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1MB9902
  
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : CP01
- 
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : CP01
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : CP01
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1MB9903
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1MB9903
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE3112
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE3112
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1MB9901
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1MB9901
  
+Failed to compare two elements in the array.
+    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
+    + PSComputerName        : CP01
+ 
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : CP01
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : CP01
+ 
+Failed to compare two elements in the array.
+    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
+    + PSComputerName        : FRANK-OOS-O02
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-OOS-O02
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-OOS-O02
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1FE3111
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1FE3111
  
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-KBASE-01
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-KBASE-01
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-KBASE-01
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-MBM-D35
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-MBM-D35
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1OOS602
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1OOS602
- 
 Group Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], Grou 
+   pNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-ADC-04
  
 Group Power Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNo 
+   tFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-ADC-04
  
 Group Backup Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-ADC-04
  
 Group Remote Desktop Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
-   tion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember] 
+   , GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-ADC-04
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-ADC-04
  
 Group Network Configuration Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalGroupMember], GroupNo 
-   tFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalG 
+   roupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-ADC-04
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-ADC-04
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE3113
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE3113
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-EX-DEV
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-EX-DEV
- 
-Group Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-02
- 
-Group Power Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-02
- 
-Group Backup Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-02
- 
-Group Remote Desktop Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
-   tion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-02
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-02
- 
-Group Network Configuration Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalGroupMember], GroupNo 
-   tFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-02
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-02
  
 Failed to compare two elements in the array.
     + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-EVENTLOG
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
+    + PSComputerName        : FRANK-OOS-O01
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-EVENTLOG
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-OOS-O01
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-EVENTLOG
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-OOS-O01
+ 
+Failed to compare two elements in the array.
+    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
+    + PSComputerName        : FRANK-TOOLS01
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-TOOLS01
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-TOOLS01
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1FE9111
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1FE9111
  
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-MBX02
- 
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-MBX02
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-MBX02
- 
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-KSE-SQL
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-KSE-SQL
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-KSE-SQL
- 
-Group Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-03
- 
-Group Power Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-03
- 
-Group Backup Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-03
- 
-Group Remote Desktop Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
-   tion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-03
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-03
- 
-Group Network Configuration Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalGroupMember], GroupNo 
-   tFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-03
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-03
- 
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-OOS-O02
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-OOS-O02
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-OOS-O02
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE9444
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE9444
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE9222
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : EU1FE9222
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-EX1-X04
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-EX1-X04
  
 Failed to compare two elements in the array.
     + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-TOOLS01
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
+    + PSComputerName        : FRANK-MBX02
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-TOOLS01
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-MBX02
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-TOOLS01
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-MBX02
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE9444
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE9444
  
 Failed to compare two elements in the array.
     + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-SQL2019
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
+    + PSComputerName        : FRANK-KSE-SQL
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-SQL2019
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-KSE-SQL
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-SQL2019
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-KSE-SQL
+ 
+An unspecified error occurred: error code = 1789
+    + CategoryInfo          : NotSpecified: (Administrators:String) [Get-LocalGroupMember], Win32I 
+   nternalException
+    + FullyQualifiedErrorId : Win32Internal,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-MIGR
+ 
+An unspecified error occurred: error code = 1789
+    + CategoryInfo          : NotSpecified: (Power Users:String) [Get-LocalGroupMember], Win32Inte 
+   rnalException
+    + FullyQualifiedErrorId : Win32Internal,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-MIGR
  
 Failed to compare two elements in the array.
     + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
+    + PSComputerName        : POWEREYE
+ 
+An unspecified error occurred: error code = 1789
+    + CategoryInfo          : NotSpecified: (Remote Desktop Users:String) [Get-LocalGroupMember],  
+   Win32InternalException
+    + FullyQualifiedErrorId : Win32Internal,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-MIGR
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-MIGR
+ 
+An unspecified error occurred: error code = 1789
+    + CategoryInfo          : NotSpecified: (Network Configuration Operators:String) [Get-LocalGro 
+   upMember], Win32InternalException
+    + FullyQualifiedErrorId : Win32Internal,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-MIGR
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-MIGR
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-MBM-D36
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : POWEREYE
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-MBM-D36
- 
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-OOS-O01
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : POWEREYE
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-OOS-O01
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1OOS602
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-OOS-O01
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1OOS602
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-EX-DEV
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-EX-DEV
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE9222
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE9222
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1FE9333
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : EU1FE9333
  
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : POWEREYE
+Group Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], Grou 
+   pNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-03
+ 
+Group Power Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNo 
+   tFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-03
+ 
+Group Backup Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-03
+ 
+Group Remote Desktop Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember] 
+   , GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-03
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : POWEREYE
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-03
+ 
+Group Network Configuration Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalG 
+   roupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-03
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : POWEREYE
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-03
  
 Failed to compare two elements in the array.
     + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-WSUS
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
+    + PSComputerName        : FRANK-SQL2019
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-WSUS
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-SQL2019
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-SQL2019
  
 Group Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], Grou 
+   pNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-02
+ 
+Group Power Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNo 
+   tFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-02
+ 
+Group Backup Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-02
+ 
+Group Remote Desktop Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember] 
+   , GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-02
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-02
+ 
+Group Network Configuration Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalG 
+   roupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-02
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-02
+ 
+Group Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], Grou 
+   pNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-RODC-01
  
 Group Power Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNo 
+   tFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-RODC-01
  
 Group Backup Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-RODC-01
  
 Group Remote Desktop Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
-   tion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember] 
+   , GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-RODC-01
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-RODC-01
  
 Group Network Configuration Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalGroupMember], GroupNo 
+    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalG 
+   roupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-RODC-01
+ 
+Group Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], Grou 
+   pNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-01
+ 
+Group WSUS Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-RODC-01
+ 
+Group Power Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNo 
    tFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-RODC-01
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-01
  
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-RODC-01
+Group Backup Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-01
  
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-VEEAM-ONE
- 
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : WP-SYSLOG
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-VEEAM-ONE
+Group Remote Desktop Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember] 
+   , GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-01
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : WP-SYSLOG
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-01
+ 
+Group Network Configuration Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalG 
+   roupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-01
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-VEEAM-ONE
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-01
+ 
+Group Server Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE3110
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : WP-SYSLOG
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE3110
+ 
+Group Administrators was not found.
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], Grou 
+   pNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-D02
  
 Failed to compare two elements in the array.
     + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
     + PSComputerName        : PST-SERVER1
  
-Group Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-01
+Group Power Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNo 
+   tFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-D02
+ 
+Group Backup Operators was not found.
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-D02
+ 
+Group Remote Desktop Users was not found.
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember] 
+   , GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-D02
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : PST-SERVER1
  
-Group Power Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-01
- 
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : PST-SERVER1
  
-Group Backup Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-01
- 
-Group Remote Desktop Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
-   tion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-01
- 
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-01
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-D02
  
 Group Network Configuration Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalGroupMember], GroupNo 
-   tFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-01
+    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalG 
+   roupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-D02
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-ADC-01
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-D02
  
 Group Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-D02
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], Grou 
+   pNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-05
  
 Group Power Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-D02
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNo 
+   tFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-05
  
 Group Backup Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-D02
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-05
  
 Group Remote Desktop Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
-   tion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-D02
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember] 
+   , GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-05
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-D02
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-05
  
 Group Network Configuration Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalGroupMember], GroupNo 
-   tFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-D02
+    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalG 
+   roupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-05
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : FRANK-D02
- 
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : WP-ROOTCA
- 
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : WP-ROOTCA
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : WP-ROOTCA
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : WP-ROOTCA
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : FRANK-ADC-05
  
 Group Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Administrators:String) [Get-LocalGroupMember], Grou 
+   pNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-PDC
  
 Group Power Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Power Users:String) [Get-LocalGroupMember], GroupNo 
+   tFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-PDC
  
 Group Backup Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Backup Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-PDC
  
 Group Remote Desktop Users was not found.
-    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember], GroupNotFoundExcep 
-   tion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Remote Desktop Users:String) [Get-LocalGroupMember] 
+   , GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-PDC
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-PDC
  
 Group Network Configuration Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalGroupMember], GroupNo 
-   tFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Network Configuration Operators:String) [Get-LocalG 
+   roupMember], GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-PDC
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : FRANK-PDC
  
 Failed to compare two elements in the array.
     + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
     + PSComputerName        : SQL-SOLID1
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : SQL-SOLID1
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : SQL-SOLID1
  
 Failed to compare two elements in the array.
     + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : Listener
- 
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : SQLCluster
- 
-Failed to compare two elements in the array.
-    + CategoryInfo          : NotSpecified: (:) [Get-LocalGroupMember], InvalidOperationException
-    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLoca 
+   lGroupMemberCommand
     + PSComputerName        : SQL-SOLID2
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : SQLCluster
- 
-Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : SQLCluster
- 
-Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : SQL-SOLID2
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
     + PSComputerName        : SQL-SOLID2
  
 Group Server Operators was not found.
-    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], GroupNotFoundException
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : Listener
+    + CategoryInfo          : ObjectNotFound: (Server Operators:String) [Get-LocalGroupMember], Gr 
+   oupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE3113
  
 Group WSUS Administrators was not found.
-    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], GroupNotFoundExcept 
-   ion
-    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand
-    + PSComputerName        : Listener
+    + CategoryInfo          : ObjectNotFound: (WSUS Administrators:String) [Get-LocalGroupMember], 
+    GroupNotFoundException
+    + FullyQualifiedErrorId : GroupNotFound,Microsoft.PowerShell.Commands.GetLocalGroupMemberComma 
+   nd
+    + PSComputerName        : EU1FE3113
  

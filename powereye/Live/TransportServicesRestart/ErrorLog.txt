@@ -1,8 +1,0 @@
-Send-MailMessage : The operation has timed out.
-At C:\powereye\TransportServicesRestart\TransportServicesRestart.ps1:35 char:1
-+ Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Result  ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (System.Net.Mail.SmtpClient:SmtpClient) [Send-MailMessage], SmtpExcept 
-   ion
-    + FullyQualifiedErrorId : SmtpException,Microsoft.PowerShell.Commands.SendMailMessage
- 
