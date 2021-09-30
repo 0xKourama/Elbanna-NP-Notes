@@ -77,3 +77,5 @@
 15. Google drive access
 16. all VPN users
 17. all AD domain admin users
+18. install new OS on PC
+19. trend account
