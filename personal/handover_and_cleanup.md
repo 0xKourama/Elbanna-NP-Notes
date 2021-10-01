@@ -79,3 +79,4 @@
 17. all AD domain admin users
 18. install new OS on PC
 19. trend account
+20. user profiles on domain computers

@@ -5875,3 +5875,32 @@ Remember the Titans (2000)
 
 *seems like a formed my skillset (good start items) but slacking off from properly farming (going at my own pace) and following my mood and curiosity rather than mission critical stuff*
 *like my build is subconciously aimed at achieving ease of farming. but that doesn't remove farming*
+
+# what's to be expected?
+1. suprise
+2. hearing lots of talk being transferred ... means a lot of talk is going to be flowing around
+3. two or more weeks can be expected to be filled with snide remarks
+4. 
+
+# what's the correct reaction?
+1. ignore the bullshit and stay ice cool
+2. 
+
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc755994(v=ws.10)#topology-related-objects-in-active-directory
+
+# what makes a person hard to define?
+1. a person changes
+2. many things happen internally
+3. 
+
+
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc755994(v=ws.10)#topology-related-objects-in-active-directory
+
+# what do I love about feint - those eyes?
+1. it shows the story of progressing and hard work ... and going faster untill the limits are broken in speed of progression and true expression of self emerges.
+
+# price vs value
+
+# what are the ways that people use to put pressure on other people?
+
+*those people's strong idealogies make them persevere and can lure a lot of people into their webs*

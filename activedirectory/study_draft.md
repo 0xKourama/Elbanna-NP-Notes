@@ -3317,3 +3317,99 @@ domain controller Locator
 
 # Site Link Changes and Replication Path
 
+## The path that replication takes <- *BETWEEN* -> sites is computed from the information that is stored in the properties of the site link objects.
+## *WHEN* a change is made to a site link setting,
+- the following events *MUST* occur before the change takes effect:
+
+## The site link change *MUST* replicate to the ISTG of each site *BY* using the previous replication topology.
+
+## The KCC *MUST* run on each ISTG.
+
+## As the path of connections is transitively figured through a set of site links,
+- the attributes (settings) of the site link objects are combined along the path as follows:
+
+## Costs are added together.
+
+## The replication interval is the maximum of the intervals that are set for the site links along the path.
+
+## The options,
+- *IF* any are set,
+- are computed *BY* using the *AND* operation.
+
+## Note
+
+## Options are the values of the options attribute on the site link object.
+## The value of this attribute determines special behavior of the site link,
+- such as reciprocal replication *AND* intersite change notification.
+## Thus the site link schedule is the overlap of *ALL* of the schedules of the subpaths.
+## *IF* none of the schedules overlap,
+- the path is *NOT* used.
+
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
+
+# Bridging Site Links Manually
+
+## *IF* your IP network is composed of IP segments that are *NOT* fully routed,
+- you *CAN* disable Bridge *ALL* site links for the IP transport.
+## In this case,
+- *ALL* IP site links are considered nontransitive,
+- *AND* you *CAN* create *AND* configure site link bridge objects to model the actual routing behavior of your network.
+## A site link bridge has the effect of providing routing for a disjoint network (networks that are separate *AND* unaware of each other).
+## *WHEN* you add site links to a site link bridge,
+- *ALL* site links within the bridge *CAN* route transitively.
+
+## A site link bridge object represents a set of site links,
+- *ALL* of whose sites *CAN* communicate through some transport.
+## Site link bridges are necessary *IF* both of the following conditions are true:
+
+## A site contains a domain controller that hosts a domain directory partition that is *NOT* hosted *BY* a domain controller in an adjacent site (a site that is in the same site link).
+
+## That domain directory partition is hosted on a domain controller in *AT LEAST* one other site in the forest.
+
+## Note
+
+## Site link bridge objects are used *BY* the KCC *ONLY* *WHEN* the Bridge *ALL* site links setting is disabled.
+## Otherwise,
+- site link bridge objects are ignored.
+## Site link bridges *CAN* also be used to diminish potentially high CPU overhead of generating a large transitive replication topology.
+## In very large networks,
+- transitive site links *CAN* be an issue because the KCC considers every possible connection in the bridged network,
+- *AND* selects *ONLY* one.
+## *THEREFORE*,
+- in a Windows 2000 forest that has a very large network *OR* a Windows Server 2003 *OR* higher forest that consists of an extremely large hub-and-spoke topology,
+- you *CAN* reduce KCC-related CPU utilization *AND* run time *BY* turning off Bridge *ALL* site links *AND* creating manual site link bridges *ONLY* where they are required.
+
+## Note
+
+## Turning off Bridge *ALL* site links affects the ability of DFS clients to locate DFS servers in the closest site.
+## *IF* the ISTG is running *AT LEAST* Windows Server 2003,
+- the Bridge *ALL* site links *MUST* be enabled to generate the intersite cost matrix that DFS requires for its site-costing functionality.
+## *IF* the ISTG is running *AT LEAST* Windows Server 2003 with Service Pack 1 (SP1),
+- you *CAN* enable Bridge *ALL* site links *AND* then run the repadmin /siteoptions W2K3_BRIDGES_REQUIRED command on each site where you need to accommodate the DFS site-costing functionality.
+## This command disables automatic site link bridging for the KCC *BUT* allows default Intersite Messaging options to enable the site-costing calculation to occur for DFS.
+## For more information about turning off this functionality while accommodating DFS,
+- see "DFS Site Costing *AND* Windows Server 2003 SP1 Site Options" later in this section.
+## For more information about site link cost *AND* DFS,
+- see “DFS Technical Reference.”
+## You create a site link bridge object for a specific transport *BY* specifying two *OR* more site links for the specified transport.
+
+### why does this make sense?
+### what makes this important?
+### what are your questions?
+### what are the ideas?
+### what are the terms and meanings?
+### what did I learn? what is my paraphrase?
+### what connections can be made with previous knowledge?
+### what can be applied?
+### what areas made your mind wander? what areas you didn't understand?
+
+----------------------------------------------------
