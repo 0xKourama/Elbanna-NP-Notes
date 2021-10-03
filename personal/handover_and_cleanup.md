@@ -80,3 +80,6 @@
 18. install new OS on PC
 19. trend account
 20. user profiles on domain computers
+21. remove github repo
+22. slack account
+23. amazon s3
