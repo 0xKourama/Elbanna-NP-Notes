@@ -5904,3 +5904,10 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 # what are the ways that people use to put pressure on other people?
 
 *those people's strong idealogies make them persevere and can lure a lot of people into their webs*
+
+# Skills leared from gaming:
+1. two birds with one stone
+2. developing my character
+3. gaining skills rather than items
+4. watching my progress
+5. going into the unknown
