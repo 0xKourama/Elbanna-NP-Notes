@@ -5911,3 +5911,47 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 3. gaining skills rather than items
 4. watching my progress
 5. going into the unknown
+
+# social status grading criteria
+1. the area that a person lives in (higher price = higher social status)
+	*list the points of contact:*
+	1. neighbourhood
+	2. school friends
+	3. 
+2. parents jobs (jobs in medicine, engineering set a certain level of sophistication)
+3. schools (the quality of school tells about the social level that the children grew in + how much the parents value education)
+4. reputation (this eliminates big problems)
+5. facebook profile (tells about the intresets of the girl and her directions)
+6. relationship with father: the father is the first model she has for a husband and sets her expectations of a husband's behaviour.
+7. relationship with mother: the prime example for a wife's behavior
+8. sibling order:
+	- biggest: usually nice and calm and inherits attributes from parents
+		- examples:
+			1. me
+			2. mama
+			3. 3ammo nabil
+			4. ma7moud taha
+			5. ahmed a5o 7osam
+			6. o5t gomgom el kbera
+			7. seka
+			8. eng. diaa
+	- middle : usally very clever and slick
+	- small  : 
+9. choice of college (forced or chosen)
+10. what she values/loves/hates (not from a question --> from behavior)
+11. her opinion of herself
+12. reacion when mad (how she handles conflict)
+13. 
+
+# Life lessons based on situations:
+1. primary school
+	- not mingling with much friends
+	- social comparison
+		- clothes
+		- shoes
+		- grades
+		- pens and other tools
+		- toys
+2. getting #2 on 6th grade
+3. dina abdel-ghani revising grades just to get #1
+4. 

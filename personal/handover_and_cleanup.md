@@ -83,3 +83,4 @@
 21. remove github repo
 22. slack account
 23. amazon s3
+24. mouse and keyboard

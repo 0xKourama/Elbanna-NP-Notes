@@ -1,11 +1,13 @@
 # lessons learned:
 1. settle everything before the start
+	- do proper reconaissance first (check with Mrs. Naglaa on using police services)
 	- shabka
 	- who buys what
 	- el 2ayma
 	- mo2a55ar
 	- only rings at the beginning and let more time for knowing each other (1+ year)
-	- let the WOW phase go over
+	- engagement ceremony on the low and keep things secret
+	- let the WOW phase go over without committing
 	- small age
 	- stay-at-home girl (no more strong independent woman ... fuck that)
 	- religion (fo real not just islam knowledge and vocab)
