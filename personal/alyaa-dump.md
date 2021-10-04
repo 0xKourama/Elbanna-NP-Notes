@@ -8,6 +8,7 @@
 	- only rings at the beginning and let more time for knowing each other (1+ year)
 	- engagement ceremony on the low and keep things secret
 	- let the WOW phase go over without committing
+	- don't praise shit you haven't seen
 	- small age
 	- stay-at-home girl (no more strong independent woman ... fuck that)
 	- religion (fo real not just islam knowledge and vocab)
