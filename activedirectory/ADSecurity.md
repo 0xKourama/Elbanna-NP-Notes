@@ -535,3 +535,6 @@
 ----------------------------------------------------
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/avenues-to-compromise
+
+# Avenues to Compromise
+
