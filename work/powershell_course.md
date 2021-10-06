@@ -30,6 +30,7 @@
 10. variables --> (storing and working with data)
 11. operators --> (comparison)
 12. Switches & Parameters --> (command diverse functionality)
+13. powershell remoting
 
 # what makes want to teach this course?
 1. Passing knowledge
