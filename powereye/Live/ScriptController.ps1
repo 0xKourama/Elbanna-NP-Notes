@@ -62,7 +62,7 @@ while($true){
     ConvertTo-Html -Title 'PowerEye Dashboard' `
                    -Head '<h1>PowerEye Dashboard</h1>' `
                    -Body ($Modules | Sort-Object -Property MinutesTillNextRun | Select-Object -Property Enabled, Name, RunInterval, MinutesTillNextRun, RunOnDemand | ConvertTo-Html -Fragment) `
-                   -CssUri Dashboard.css | Out-File Dashboard.html
+                   -CssUri Dashboard.css > Dashboard.html
 
     #standing by for 1 minute
     Write-Host -ForegroundColor Cyan "[*] [$(Get-Date)] Standing by for 1 minute."
