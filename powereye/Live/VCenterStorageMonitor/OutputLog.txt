@@ -45,6 +45,4144 @@ Scope    ProxyPolicy     DefaultVIServerMode InvalidCertificateAction  DisplayDe
 Session  UseSystemProxy  Single              Ignore                    True                       3
 User                     Single              Ignore                                                
 AllUsers                                     Ignore                                                
-09/28/2021 21:53:34 [+] Report generated. Sending mail.
+
+IsConnected   : True
+Id            : /VIServer=worldposta.com\powercli@10.5.5.20:443/
+ServiceUri    : https://10.5.5.20/sdk
+SessionSecret : "e8a36a6d31f03babad9ffb1fdefcfd3aece690b9"
+Name          : 10.5.5.20
+Port          : 443
+SessionId     : "e8a36a6d31f03babad9ffb1fdefcfd3aece690b9"
+User          : WORLDPOSTA.COM\powercli
+Uid           : /VIServer=worldposta.com\powercli@10.5.5.20:443/
+Version       : 6.7.0
+Build         : 18485185
+ProductLine   : vpx
+InstanceUuid  : 9455ae5e-3f2e-4be3-b798-68d38b0c59a7
+RefCount      : 1
+ExtensionData : VMware.Vim.ServiceInstance
+
+10/16/2021 23:11:06 [+] Report generated. Sending mail.
+
+VMName                           : frank-veeamone
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 266.30
+UsedSpaceGB                      : 46.80
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 46.80
+Thursday October 14 UsedSpaceGB  : 66.69
+Wednesday October 13 UsedSpaceGB : 66.53
+Tuesday October 12 UsedSpaceGB   : 
+Monday October 11 UsedSpaceGB    : 45.22
+Sunday October 10 UsedSpaceGB    : 45.22
+
+
+VMName                           : Ahmed-centos-test
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 21.65
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 21.64
+Thursday October 14 UsedSpaceGB  : 21.53
+Wednesday October 13 UsedSpaceGB : 21.49
+Tuesday October 12 UsedSpaceGB   : 21.20
+Monday October 11 UsedSpaceGB    : 
+Sunday October 10 UsedSpaceGB    : 
+
+
+VMName                           : Madkour-Sharepoint-01
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 232.09
+UsedSpaceGB                      : 42.81
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 42.68
+Thursday October 14 UsedSpaceGB  : 42.21
+Wednesday October 13 UsedSpaceGB : 42.53
+Tuesday October 12 UsedSpaceGB   : 42.50
+Monday October 11 UsedSpaceGB    : 42.52
+Sunday October 10 UsedSpaceGB    : 
+
+
+VMName                           : Madkour-Exchange-01
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 232.09
+UsedSpaceGB                      : 71.18
+UsageDifferenceGB                : 29
+Friday October 15 UsedSpaceGB    : 42.27
+Thursday October 14 UsedSpaceGB  : 42.22
+Wednesday October 13 UsedSpaceGB : 42.13
+Tuesday October 12 UsedSpaceGB   : 42.52
+Monday October 11 UsedSpaceGB    : 42.55
+Sunday October 10 UsedSpaceGB    : 
+
+
+VMName                           : EL-DoctorFortiGate-VM64
+TotalSpaceGB                     : 102
+ProvisionedSpaceGB               : 106.09
+UsedSpaceGB                      : 7.55
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 7.54
+Thursday October 14 UsedSpaceGB  : 7.54
+Wednesday October 13 UsedSpaceGB : 7.54
+Tuesday October 12 UsedSpaceGB   : 7.54
+Monday October 11 UsedSpaceGB    : 7.54
+Sunday October 10 UsedSpaceGB    : 7.54
+
+
+VMName                           : solex-S4-HANA-R5OJ-9/29
+TotalSpaceGB                     : 974
+ProvisionedSpaceGB               : 2404.23
+UsedSpaceGB                      : 1577.06
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1577.06
+Thursday October 14 UsedSpaceGB  : 1815.90
+Wednesday October 13 UsedSpaceGB : 1811.85
+Tuesday October 12 UsedSpaceGB   : 1811.42
+Monday October 11 UsedSpaceGB    : 1882.13
+Sunday October 10 UsedSpaceGB    : 2008.82
+
+
+VMName                           : Diyaa-Lap
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 66.15
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 66.14
+Thursday October 14 UsedSpaceGB  : 66.12
+Wednesday October 13 UsedSpaceGB : 66.03
+Tuesday October 12 UsedSpaceGB   : 66.03
+Monday October 11 UsedSpaceGB    : 67.10
+Sunday October 10 UsedSpaceGB    : 67.15
+
+
+VMName                           : Misr-Newvm
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 108.08
+UsedSpaceGB                      : 52.51
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 52.51
+Thursday October 14 UsedSpaceGB  : 52.52
+Wednesday October 13 UsedSpaceGB : 52.52
+Tuesday October 12 UsedSpaceGB   : 54.61
+Monday October 11 UsedSpaceGB    : 54.61
+Sunday October 10 UsedSpaceGB    : 54.95
+
+
+VMName                           : NFS-Server-Nexcloud
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 512.09
+UsedSpaceGB                      : 512.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 512.09
+Thursday October 14 UsedSpaceGB  : 512.09
+Wednesday October 13 UsedSpaceGB : 512.09
+Tuesday October 12 UsedSpaceGB   : 512.09
+Monday October 11 UsedSpaceGB    : 512.09
+Sunday October 10 UsedSpaceGB    : 512.09
+
+
+VMName                           : jump-hamd
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 308.09
+UsedSpaceGB                      : 17.84
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 17.84
+Thursday October 14 UsedSpaceGB  : 17.83
+Wednesday October 13 UsedSpaceGB : 17.83
+Tuesday October 12 UsedSpaceGB   : 17.83
+Monday October 11 UsedSpaceGB    : 17.83
+Sunday October 10 UsedSpaceGB    : 17.83
+
+
+VMName                           : Frank-MBX
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 132.22
+UsedSpaceGB                      : 43.73
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 43.73
+Thursday October 14 UsedSpaceGB  : 43.73
+Wednesday October 13 UsedSpaceGB : 43.73
+Tuesday October 12 UsedSpaceGB   : 43.73
+Monday October 11 UsedSpaceGB    : 43.73
+Sunday October 10 UsedSpaceGB    : 43.73
+
+
+VMName                           : NFS-NEXTCLOUD-01
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 508.21
+UsedSpaceGB                      : 5.14
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 5.14
+Thursday October 14 UsedSpaceGB  : 5.14
+Wednesday October 13 UsedSpaceGB : 5.14
+Tuesday October 12 UsedSpaceGB   : 5.14
+Monday October 11 UsedSpaceGB    : 5.14
+Sunday October 10 UsedSpaceGB    : 5.14
+
+
+VMName                           : Misr-MagentoDB1
+TotalSpaceGB                     : 512
+ProvisionedSpaceGB               : 520.09
+UsedSpaceGB                      : 29.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 28.83
+Thursday October 14 UsedSpaceGB  : 28.57
+Wednesday October 13 UsedSpaceGB : 28.34
+Tuesday October 12 UsedSpaceGB   : 28.09
+Monday October 11 UsedSpaceGB    : 28.05
+Sunday October 10 UsedSpaceGB    : 28.79
+
+
+VMName                           : ALFA-DAXRPT-COPY
+TotalSpaceGB                     : 650
+ProvisionedSpaceGB               : 666.21
+UsedSpaceGB                      : 621.37
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 621.37
+Thursday October 14 UsedSpaceGB  : 621.37
+Wednesday October 13 UsedSpaceGB : 621.37
+Tuesday October 12 UsedSpaceGB   : 621.37
+Monday October 11 UsedSpaceGB    : 621.37
+Sunday October 10 UsedSpaceGB    : 621.37
+
+
+VMName                           : Frank-WP-WebSite
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 342.60
+UsedSpaceGB                      : 44.24
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 44.24
+Thursday October 14 UsedSpaceGB  : 44.24
+Wednesday October 13 UsedSpaceGB : 44.24
+Tuesday October 12 UsedSpaceGB   : 44.24
+Monday October 11 UsedSpaceGB    : 44.24
+Sunday October 10 UsedSpaceGB    : 44.24
+
+
+VMName                           : WorldPosta-WebSite
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 216.20
+UsedSpaceGB                      : 13.23
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 13.23
+Thursday October 14 UsedSpaceGB  : 13.23
+Wednesday October 13 UsedSpaceGB : 13.23
+Tuesday October 12 UsedSpaceGB   : 13.23
+Monday October 11 UsedSpaceGB    : 13.23
+Sunday October 10 UsedSpaceGB    : 13.23
+
+
+VMName                           : jump-ahmed
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 508.09
+UsedSpaceGB                      : 92.30
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 91.91
+Thursday October 14 UsedSpaceGB  : 93.03
+Wednesday October 13 UsedSpaceGB : 73.41
+Tuesday October 12 UsedSpaceGB   : 71.37
+Monday October 11 UsedSpaceGB    : 71.31
+Sunday October 10 UsedSpaceGB    : 71.05
+
+
+VMName                           : centos-kibana
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 508.08
+UsedSpaceGB                      : 14.16
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 14.16
+Thursday October 14 UsedSpaceGB  : 14.16
+Wednesday October 13 UsedSpaceGB : 14.16
+Tuesday October 12 UsedSpaceGB   : 14.16
+Monday October 11 UsedSpaceGB    : 14.16
+Sunday October 10 UsedSpaceGB    : 14.16
+
+
+VMName                           : Jump-Server-Karim
+TotalSpaceGB                     : 700
+ProvisionedSpaceGB               : 716.09
+UsedSpaceGB                      : 198.52
+UsageDifferenceGB                : -1
+Friday October 15 UsedSpaceGB    : 200.39
+Thursday October 14 UsedSpaceGB  : 198.32
+Wednesday October 13 UsedSpaceGB : 197.59
+Tuesday October 12 UsedSpaceGB   : 193.80
+Monday October 11 UsedSpaceGB    : 193.73
+Sunday October 10 UsedSpaceGB    : 193.63
+
+
+VMName                           : solex-S4-HANA-R5OJ-15/10
+TotalSpaceGB                     : 974
+ProvisionedSpaceGB               : 3015.33
+UsedSpaceGB                      : 2052.47
+UsageDifferenceGB                : 8
+Friday October 15 UsedSpaceGB    : 2044.21
+Thursday October 14 UsedSpaceGB  : 
+Wednesday October 13 UsedSpaceGB : 
+Tuesday October 12 UsedSpaceGB   : 
+Monday October 11 UsedSpaceGB    : 
+Sunday October 10 UsedSpaceGB    : 
+
+
+VMName                           : sofos_virtual_vm8
+TotalSpaceGB                     : 96
+ProvisionedSpaceGB               : 100.08
+UsedSpaceGB                      : 30.73
+UsageDifferenceGB                : 1
+Friday October 15 UsedSpaceGB    : 30.50
+Thursday October 14 UsedSpaceGB  : 30.37
+Wednesday October 13 UsedSpaceGB : 30.37
+Tuesday October 12 UsedSpaceGB   : 30.37
+Monday October 11 UsedSpaceGB    : 30.37
+Sunday October 10 UsedSpaceGB    : 30.37
+
+
+VMName                           : Jump-Server-Moataz
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 27.45
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 27.45
+Thursday October 14 UsedSpaceGB  : 27.44
+Wednesday October 13 UsedSpaceGB : 27.44
+Tuesday October 12 UsedSpaceGB   : 27.44
+Monday October 11 UsedSpaceGB    : 27.44
+Sunday October 10 UsedSpaceGB    : 27.44
+
+
+VMName                           : Mis-Additioanal Domain
+TotalSpaceGB                     : 50
+ProvisionedSpaceGB               : 54.08
+UsedSpaceGB                      : 23.81
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 23.81
+Thursday October 14 UsedSpaceGB  : 23.92
+Wednesday October 13 UsedSpaceGB : 23.96
+Tuesday October 12 UsedSpaceGB   : 24.02
+Monday October 11 UsedSpaceGB    : 24.04
+Sunday October 10 UsedSpaceGB    : 24.04
+
+
+VMName                           : Misr-MTBIDEVAPP
+TotalSpaceGB                     : 510
+ProvisionedSpaceGB               : 580.10
+UsedSpaceGB                      : 147.07
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 147.06
+Thursday October 14 UsedSpaceGB  : 147.06
+Wednesday October 13 UsedSpaceGB : 147.05
+Tuesday October 12 UsedSpaceGB   : 147.04
+Monday October 11 UsedSpaceGB    : 147.03
+Sunday October 10 UsedSpaceGB    : 147.04
+
+
+VMName                           : Misr-Web Server-copy
+TotalSpaceGB                     : 80
+ProvisionedSpaceGB               : 84.08
+UsedSpaceGB                      : 55.97
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 56.01
+Thursday October 14 UsedSpaceGB  : 56.01
+Wednesday October 13 UsedSpaceGB : 56.02
+Tuesday October 12 UsedSpaceGB   : 56.05
+Monday October 11 UsedSpaceGB    : 56.04
+Sunday October 10 UsedSpaceGB    : 56.06
+
+
+VMName                           : jump-gabr
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 216.09
+UsedSpaceGB                      : 216.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 216.09
+Thursday October 14 UsedSpaceGB  : 216.09
+Wednesday October 13 UsedSpaceGB : 216.09
+Tuesday October 12 UsedSpaceGB   : 216.09
+Monday October 11 UsedSpaceGB    : 216.09
+Sunday October 10 UsedSpaceGB    : 216.09
+
+
+VMName                           : WP-Messanger-DB-WIN .72
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 510.22
+UsedSpaceGB                      : 31.28
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 31.28
+Thursday October 14 UsedSpaceGB  : 31.28
+Wednesday October 13 UsedSpaceGB : 31.28
+Tuesday October 12 UsedSpaceGB   : 31.28
+Monday October 11 UsedSpaceGB    : 31.28
+Sunday October 10 UsedSpaceGB    : 31.28
+
+
+VMName                           : WP-OdOO
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 202.20
+UsedSpaceGB                      : 14.77
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 14.77
+Thursday October 14 UsedSpaceGB  : 14.77
+Wednesday October 13 UsedSpaceGB : 14.77
+Tuesday October 12 UsedSpaceGB   : 14.77
+Monday October 11 UsedSpaceGB    : 14.77
+Sunday October 10 UsedSpaceGB    : 14.77
+
+
+VMName                           : tiba group
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 516.22
+UsedSpaceGB                      : 11.37
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 11.37
+Thursday October 14 UsedSpaceGB  : 11.37
+Wednesday October 13 UsedSpaceGB : 11.37
+Tuesday October 12 UsedSpaceGB   : 11.37
+Monday October 11 UsedSpaceGB    : 11.37
+Sunday October 10 UsedSpaceGB    : 11.37
+
+
+VMName                           : Misr-CARPRDDB
+TotalSpaceGB                     : 1810
+ProvisionedSpaceGB               : 2216.14
+UsedSpaceGB                      : 2216.14
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 2216.14
+Thursday October 14 UsedSpaceGB  : 2216.14
+Wednesday October 13 UsedSpaceGB : 2216.14
+Tuesday October 12 UsedSpaceGB   : 2216.14
+Monday October 11 UsedSpaceGB    : 2216.14
+Sunday October 10 UsedSpaceGB    : 2216.14
+
+
+VMName                           : ERP-DEV-sQmN
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 324.21
+UsedSpaceGB                      : 65.66
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 65.66
+Thursday October 14 UsedSpaceGB  : 65.66
+Wednesday October 13 UsedSpaceGB : 65.66
+Tuesday October 12 UsedSpaceGB   : 65.66
+Monday October 11 UsedSpaceGB    : 65.66
+Sunday October 10 UsedSpaceGB    : 65.66
+
+
+VMName                           : Frank-tools01.Roaya.loc_replica
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 596.16
+UsedSpaceGB                      : 70.95
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 70.95
+Thursday October 14 UsedSpaceGB  : 70.95
+Wednesday October 13 UsedSpaceGB : 70.95
+Tuesday October 12 UsedSpaceGB   : 70.95
+Monday October 11 UsedSpaceGB    : 70.95
+Sunday October 10 UsedSpaceGB    : 70.95
+
+
+VMName                           : MISR-MTBIDEVDB
+TotalSpaceGB                     : 1310
+ProvisionedSpaceGB               : 1510.12
+UsedSpaceGB                      : 1070.50
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1070.36
+Thursday October 14 UsedSpaceGB  : 1070.22
+Wednesday October 13 UsedSpaceGB : 1069.11
+Tuesday October 12 UsedSpaceGB   : 921.80
+Monday October 11 UsedSpaceGB    : 920.29
+Sunday October 10 UsedSpaceGB    : 1072.88
+
+
+VMName                           : vROps-Tenant-App-for-vCD-2.3.0.33067-14826907
+TotalSpaceGB                     : 87
+ProvisionedSpaceGB               : 95.08
+UsedSpaceGB                      : 20.72
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 20.71
+Thursday October 14 UsedSpaceGB  : 20.71
+Wednesday October 13 UsedSpaceGB : 20.71
+Tuesday October 12 UsedSpaceGB   : 20.71
+Monday October 11 UsedSpaceGB    : 20.71
+Sunday October 10 UsedSpaceGB    : 20.71
+
+
+VMName                           : MISR-TSMS
+TotalSpaceGB                     : 60
+ProvisionedSpaceGB               : 68.09
+UsedSpaceGB                      : 56.16
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 56.16
+Thursday October 14 UsedSpaceGB  : 56.17
+Wednesday October 13 UsedSpaceGB : 58.97
+Tuesday October 12 UsedSpaceGB   : 55.96
+Monday October 11 UsedSpaceGB    : 55.93
+Sunday October 10 UsedSpaceGB    : 56.12
+
+
+VMName                           : IGI-Testing1
+TotalSpaceGB                     : 50
+ProvisionedSpaceGB               : 52.08
+UsedSpaceGB                      : 52.08
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 52.08
+Thursday October 14 UsedSpaceGB  : 52.08
+Wednesday October 13 UsedSpaceGB : 52.08
+Tuesday October 12 UsedSpaceGB   : 52.08
+Monday October 11 UsedSpaceGB    : 52.08
+Sunday October 10 UsedSpaceGB    : 52.08
+
+
+VMName                           : Misr-TestDB
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 104.08
+UsedSpaceGB                      : 12.19
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 12.02
+Thursday October 14 UsedSpaceGB  : 11.87
+Wednesday October 13 UsedSpaceGB : 11.73
+Tuesday October 12 UsedSpaceGB   : 11.45
+Monday October 11 UsedSpaceGB    : 11.35
+Sunday October 10 UsedSpaceGB    : 11.90
+
+
+VMName                           : Mis-Prod-APP-copy
+TotalSpaceGB                     : 2048
+ProvisionedSpaceGB               : 2304.14
+UsedSpaceGB                      : 2280.95
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 2280.93
+Thursday October 14 UsedSpaceGB  : 2281.04
+Wednesday October 13 UsedSpaceGB : 2281.10
+Tuesday October 12 UsedSpaceGB   : 2280.33
+Monday October 11 UsedSpaceGB    : 2280.45
+Sunday October 10 UsedSpaceGB    : 2280.54
+
+
+VMName                           : shared iso
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 308.21
+UsedSpaceGB                      : 13.52
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 13.52
+Thursday October 14 UsedSpaceGB  : 13.52
+Wednesday October 13 UsedSpaceGB : 13.52
+Tuesday October 12 UsedSpaceGB   : 13.52
+Monday October 11 UsedSpaceGB    : 13.52
+Sunday October 10 UsedSpaceGB    : 13.52
+
+
+VMName                           : Sap Router
+TotalSpaceGB                     : 20
+ProvisionedSpaceGB               : 24.19
+UsedSpaceGB                      : 20.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 20.00
+Thursday October 14 UsedSpaceGB  : 20.00
+Wednesday October 13 UsedSpaceGB : 20.00
+Tuesday October 12 UsedSpaceGB   : 20.00
+Monday October 11 UsedSpaceGB    : 20.00
+Sunday October 10 UsedSpaceGB    : 20.00
+
+
+VMName                           : Frank-OfficeOnline02
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 125.09
+UsedSpaceGB                      : 70.74
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 70.72
+Thursday October 14 UsedSpaceGB  : 71.04
+Wednesday October 13 UsedSpaceGB : 69.89
+Tuesday October 12 UsedSpaceGB   : 69.85
+Monday October 11 UsedSpaceGB    : 69.84
+Sunday October 10 UsedSpaceGB    : 69.81
+
+
+VMName                           : Frank-Wsus-new
+TotalSpaceGB                     : 580
+ProvisionedSpaceGB               : 600.09
+UsedSpaceGB                      : 327.18
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 327.18
+Thursday October 14 UsedSpaceGB  : 327.18
+Wednesday October 13 UsedSpaceGB : 327.18
+Tuesday October 12 UsedSpaceGB   : 327.18
+Monday October 11 UsedSpaceGB    : 327.18
+Sunday October 10 UsedSpaceGB    : 327.18
+
+
+VMName                           : Madkour-Domain-controller
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 208.08
+UsedSpaceGB                      : 25.44
+UsageDifferenceGB                : 6
+Friday October 15 UsedSpaceGB    : 18.72
+Thursday October 14 UsedSpaceGB  : 18.22
+Wednesday October 13 UsedSpaceGB : 18.52
+Tuesday October 12 UsedSpaceGB   : 18.47
+Monday October 11 UsedSpaceGB    : 18.57
+Sunday October 10 UsedSpaceGB    : 
+
+
+VMName                           : el batal crm
+TotalSpaceGB                     : 340
+ProvisionedSpaceGB               : 372.20
+UsedSpaceGB                      : 75.59
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 75.59
+Thursday October 14 UsedSpaceGB  : 75.59
+Wednesday October 13 UsedSpaceGB : 75.59
+Tuesday October 12 UsedSpaceGB   : 75.59
+Monday October 11 UsedSpaceGB    : 75.59
+Sunday October 10 UsedSpaceGB    : 75.59
+
+
+VMName                           : AWS-SMS-Connector
+TotalSpaceGB                     : 299
+ProvisionedSpaceGB               : 301.19
+UsedSpaceGB                      : 299.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 299.00
+Thursday October 14 UsedSpaceGB  : 299.00
+Wednesday October 13 UsedSpaceGB : 299.00
+Tuesday October 12 UsedSpaceGB   : 299.00
+Monday October 11 UsedSpaceGB    : 299.00
+Sunday October 10 UsedSpaceGB    : 299.00
+
+
+VMName                           : Frank-OfficeOnline01
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 125.09
+UsedSpaceGB                      : 82.39
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 82.34
+Thursday October 14 UsedSpaceGB  : 82.50
+Wednesday October 13 UsedSpaceGB : 80.04
+Tuesday October 12 UsedSpaceGB   : 80.04
+Monday October 11 UsedSpaceGB    : 80.03
+Sunday October 10 UsedSpaceGB    : 80.02
+
+
+VMName                           : WP-Messanger-Centos .73-copy
+TotalSpaceGB                     : 1024
+ProvisionedSpaceGB               : 1032.21
+UsedSpaceGB                      : 23.68
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 23.68
+Thursday October 14 UsedSpaceGB  : 23.68
+Wednesday October 13 UsedSpaceGB : 23.68
+Tuesday October 12 UsedSpaceGB   : 23.68
+Monday October 11 UsedSpaceGB    : 23.68
+Sunday October 10 UsedSpaceGB    : 23.68
+
+
+VMName                           : J-S-Peter
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 116.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 116.09
+Thursday October 14 UsedSpaceGB  : 116.09
+Wednesday October 13 UsedSpaceGB : 116.09
+Tuesday October 12 UsedSpaceGB   : 116.09
+Monday October 11 UsedSpaceGB    : 116.09
+Sunday October 10 UsedSpaceGB    : 116.09
+
+
+VMName                           : Elbatal-newcrm
+TotalSpaceGB                     : 170
+ProvisionedSpaceGB               : 202.09
+UsedSpaceGB                      : 60.72
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 60.69
+Thursday October 14 UsedSpaceGB  : 60.44
+Wednesday October 13 UsedSpaceGB : 60.28
+Tuesday October 12 UsedSpaceGB   : 60.27
+Monday October 11 UsedSpaceGB    : 59.33
+Sunday October 10 UsedSpaceGB    : 59.33
+
+
+VMName                           : test sophos
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 208.09
+UsedSpaceGB                      : 160.43
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 160.18
+Thursday October 14 UsedSpaceGB  : 158.55
+Wednesday October 13 UsedSpaceGB : 157.94
+Tuesday October 12 UsedSpaceGB   : 162.62
+Monday October 11 UsedSpaceGB    : 162.58
+Sunday October 10 UsedSpaceGB    : 162.55
+
+
+VMName                           : MISR-CARQASAPP
+TotalSpaceGB                     : 1024
+ProvisionedSpaceGB               : 1160.13
+UsedSpaceGB                      : 198.96
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 198.96
+Thursday October 14 UsedSpaceGB  : 198.96
+Wednesday October 13 UsedSpaceGB : 198.94
+Tuesday October 12 UsedSpaceGB   : 198.93
+Monday October 11 UsedSpaceGB    : 198.93
+Sunday October 10 UsedSpaceGB    : 198.92
+
+
+VMName                           : J-S-Hamd
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.21
+UsedSpaceGB                      : 10.57
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 10.57
+Thursday October 14 UsedSpaceGB  : 10.57
+Wednesday October 13 UsedSpaceGB : 10.57
+Tuesday October 12 UsedSpaceGB   : 10.57
+Monday October 11 UsedSpaceGB    : 10.57
+Sunday October 10 UsedSpaceGB    : 10.57
+
+
+VMName                           : Frank-veeammonitor
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 208.09
+UsedSpaceGB                      : 30.80
+UsageDifferenceGB                : 2
+Friday October 15 UsedSpaceGB    : 29.03
+Thursday October 14 UsedSpaceGB  : 27.24
+Wednesday October 13 UsedSpaceGB : 9.10
+Tuesday October 12 UsedSpaceGB   : 
+Monday October 11 UsedSpaceGB    : 
+Sunday October 10 UsedSpaceGB    : 
+
+
+VMName                           : infected ihpgco Kuwait Windows (ransomware)
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 254.21
+UsedSpaceGB                      : 69.67
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 69.67
+Thursday October 14 UsedSpaceGB  : 69.67
+Wednesday October 13 UsedSpaceGB : 69.67
+Tuesday October 12 UsedSpaceGB   : 69.67
+Monday October 11 UsedSpaceGB    : 69.67
+Sunday October 10 UsedSpaceGB    : 69.67
+
+
+VMName                           : ASFOUR-machine1
+TotalSpaceGB                     : 160
+ProvisionedSpaceGB               : 176.10
+UsedSpaceGB                      : 176.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 176.10
+Thursday October 14 UsedSpaceGB  : 176.10
+Wednesday October 13 UsedSpaceGB : 176.10
+Tuesday October 12 UsedSpaceGB   : 176.10
+Monday October 11 UsedSpaceGB    : 176.10
+Sunday October 10 UsedSpaceGB    : 176.10
+
+
+VMName                           : Sama
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 208.09
+UsedSpaceGB                      : 26.17
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 26.11
+Thursday October 14 UsedSpaceGB  : 26.14
+Wednesday October 13 UsedSpaceGB : 25.98
+Tuesday October 12 UsedSpaceGB   : 25.86
+Monday October 11 UsedSpaceGB    : 31.68
+Sunday October 10 UsedSpaceGB    : 31.68
+
+
+VMName                           : VMware vCenter Server Appliance 6.7-Witness
+TotalSpaceGB                     : 1123.66
+ProvisionedSpaceGB               : 1155.79
+UsedSpaceGB                      : 32.18
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 32.18
+Thursday October 14 UsedSpaceGB  : 32.18
+Wednesday October 13 UsedSpaceGB : 32.18
+Tuesday October 12 UsedSpaceGB   : 32.18
+Monday October 11 UsedSpaceGB    : 32.18
+Sunday October 10 UsedSpaceGB    : 32.18
+
+
+VMName                           : NFS-nextcloud-2021
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 512.09
+UsedSpaceGB                      : 28.83
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 28.78
+Thursday October 14 UsedSpaceGB  : 28.71
+Wednesday October 13 UsedSpaceGB : 28.67
+Tuesday October 12 UsedSpaceGB   : 28.65
+Monday October 11 UsedSpaceGB    : 28.59
+Sunday October 10 UsedSpaceGB    : 28.88
+
+
+VMName                           : Jump-server-Abdo
+TotalSpaceGB                     : 600
+ProvisionedSpaceGB               : 616.09
+UsedSpaceGB                      : 206.53
+UsageDifferenceGB                : -3
+Friday October 15 UsedSpaceGB    : 209.53
+Thursday October 14 UsedSpaceGB  : 209.11
+Wednesday October 13 UsedSpaceGB : 208.81
+Tuesday October 12 UsedSpaceGB   : 204.84
+Monday October 11 UsedSpaceGB    : 204.61
+Sunday October 10 UsedSpaceGB    : 204.40
+
+
+VMName                           : HAProxy
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 316.20
+UsedSpaceGB                      : 5.88
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 5.88
+Thursday October 14 UsedSpaceGB  : 5.88
+Wednesday October 13 UsedSpaceGB : 5.88
+Tuesday October 12 UsedSpaceGB   : 5.88
+Monday October 11 UsedSpaceGB    : 5.88
+Sunday October 10 UsedSpaceGB    : 5.88
+
+
+VMName                           : Misr-ERPQASDB
+TotalSpaceGB                     : 3072
+ProvisionedSpaceGB               : 3352.13
+UsedSpaceGB                      : 896.72
+UsageDifferenceGB                : 10
+Friday October 15 UsedSpaceGB    : 886.56
+Thursday October 14 UsedSpaceGB  : 875.93
+Wednesday October 13 UsedSpaceGB : 859.51
+Tuesday October 12 UsedSpaceGB   : 848.68
+Monday October 11 UsedSpaceGB    : 838.08
+Sunday October 10 UsedSpaceGB    : 1067.01
+
+
+VMName                           : WP-Syslog-New
+TotalSpaceGB                     : 1024
+ProvisionedSpaceGB               : 1040.21
+UsedSpaceGB                      : 20.90
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 20.90
+Thursday October 14 UsedSpaceGB  : 20.90
+Wednesday October 13 UsedSpaceGB : 20.90
+Tuesday October 12 UsedSpaceGB   : 20.90
+Monday October 11 UsedSpaceGB    : 20.90
+Sunday October 10 UsedSpaceGB    : 20.90
+
+
+VMName                           : Identity Server-Dev
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 106.21
+UsedSpaceGB                      : 25.64
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 25.64
+Thursday October 14 UsedSpaceGB  : 25.64
+Wednesday October 13 UsedSpaceGB : 25.64
+Tuesday October 12 UsedSpaceGB   : 25.64
+Monday October 11 UsedSpaceGB    : 25.64
+Sunday October 10 UsedSpaceGB    : 25.64
+
+
+VMName                           : Real-ip
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.21
+UsedSpaceGB                      : 13.79
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 13.79
+Thursday October 14 UsedSpaceGB  : 13.79
+Wednesday October 13 UsedSpaceGB : 13.79
+Tuesday October 12 UsedSpaceGB   : 13.79
+Monday October 11 UsedSpaceGB    : 13.79
+Sunday October 10 UsedSpaceGB    : 13.79
+
+
+VMName                           : Frank-RODC-01
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 52.42
+UsageDifferenceGB                : 1
+Friday October 15 UsedSpaceGB    : 50.58
+Thursday October 14 UsedSpaceGB  : 50.65
+Wednesday October 13 UsedSpaceGB : 52.77
+Tuesday October 12 UsedSpaceGB   : 52.76
+Monday October 11 UsedSpaceGB    : 52.83
+Sunday October 10 UsedSpaceGB    : 52.78
+
+
+VMName                           : next-cloud-NFS-server
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 552.59
+UsedSpaceGB                      : 45.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 45.10
+Thursday October 14 UsedSpaceGB  : 45.10
+Wednesday October 13 UsedSpaceGB : 45.10
+Tuesday October 12 UsedSpaceGB   : 45.10
+Monday October 11 UsedSpaceGB    : 45.10
+Sunday October 10 UsedSpaceGB    : 45.10
+
+
+VMName                           : Misr-MagentoWeb1
+TotalSpaceGB                     : 256
+ProvisionedSpaceGB               : 264.09
+UsedSpaceGB                      : 18.69
+UsageDifferenceGB                : 1
+Friday October 15 UsedSpaceGB    : 18.47
+Thursday October 14 UsedSpaceGB  : 18.22
+Wednesday October 13 UsedSpaceGB : 17.75
+Tuesday October 12 UsedSpaceGB   : 17.62
+Monday October 11 UsedSpaceGB    : 17.39
+Sunday October 10 UsedSpaceGB    : 18.30
+
+
+VMName                           : Misr-ENTERPRISESRV
+TotalSpaceGB                     : 1024
+ProvisionedSpaceGB               : 1074.10
+UsedSpaceGB                      : 1074.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1074.10
+Thursday October 14 UsedSpaceGB  : 1074.10
+Wednesday October 13 UsedSpaceGB : 1074.10
+Tuesday October 12 UsedSpaceGB   : 1074.10
+Monday October 11 UsedSpaceGB    : 1074.10
+Sunday October 10 UsedSpaceGB    : 1074.10
+
+
+VMName                           : Frank-EventLog
+TotalSpaceGB                     : 4024
+ProvisionedSpaceGB               : 4032.09
+UsedSpaceGB                      : 3095.03
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 3094.98
+Thursday October 14 UsedSpaceGB  : 3094.97
+Wednesday October 13 UsedSpaceGB : 3094.91
+Tuesday October 12 UsedSpaceGB   : 3094.92
+Monday October 11 UsedSpaceGB    : 3094.90
+Sunday October 10 UsedSpaceGB    : 3094.92
+
+
+VMName                           : RADUIS-Server
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 108.09
+UsedSpaceGB                      : 31.49
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 31.48
+Thursday October 14 UsedSpaceGB  : 31.48
+Wednesday October 13 UsedSpaceGB : 31.46
+Tuesday October 12 UsedSpaceGB   : 31.47
+Monday October 11 UsedSpaceGB    : 31.36
+Sunday October 10 UsedSpaceGB    : 31.36
+
+
+VMName                           : Mis-CAR-PRD APP Server
+TotalSpaceGB                     : 2048
+ProvisionedSpaceGB               : 2080.09
+UsedSpaceGB                      : 95.63
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 95.63
+Thursday October 14 UsedSpaceGB  : 95.63
+Wednesday October 13 UsedSpaceGB : 95.63
+Tuesday October 12 UsedSpaceGB   : 95.61
+Monday October 11 UsedSpaceGB    : 95.59
+Sunday October 10 UsedSpaceGB    : 95.60
+
+
+VMName                           : Misr-SQL-Instance
+TotalSpaceGB                     : 1024
+ProvisionedSpaceGB               : 1280.21
+UsedSpaceGB                      : 832.26
+UsageDifferenceGB                : -38
+Friday October 15 UsedSpaceGB    : 870.43
+Thursday October 14 UsedSpaceGB  : 875.28
+Wednesday October 13 UsedSpaceGB : 781.55
+Tuesday October 12 UsedSpaceGB   : 780.89
+Monday October 11 UsedSpaceGB    : 782.56
+Sunday October 10 UsedSpaceGB    : 782.43
+
+
+VMName                           : Misr-MagentoDB2
+TotalSpaceGB                     : 512
+ProvisionedSpaceGB               : 520.09
+UsedSpaceGB                      : 28.64
+UsageDifferenceGB                : 1
+Friday October 15 UsedSpaceGB    : 28.41
+Thursday October 14 UsedSpaceGB  : 28.27
+Wednesday October 13 UsedSpaceGB : 28.11
+Tuesday October 12 UsedSpaceGB   : 27.85
+Monday October 11 UsedSpaceGB    : 27.82
+Sunday October 10 UsedSpaceGB    : 28.40
+
+
+VMName                           : temp-v
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 208.21
+UsedSpaceGB                      : 200.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 200.00
+Thursday October 14 UsedSpaceGB  : 200.00
+Wednesday October 13 UsedSpaceGB : 200.00
+Tuesday October 12 UsedSpaceGB   : 200.00
+Monday October 11 UsedSpaceGB    : 200.00
+Sunday October 10 UsedSpaceGB    : 200.00
+
+
+VMName                           : MISR-NFS
+TotalSpaceGB                     : 13362
+ProvisionedSpaceGB               : 13366.09
+UsedSpaceGB                      : 11738.13
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 11737.96
+Thursday October 14 UsedSpaceGB  : 11737.89
+Wednesday October 13 UsedSpaceGB : 11737.78
+Tuesday October 12 UsedSpaceGB   : 11737.78
+Monday October 11 UsedSpaceGB    : 11737.78
+Sunday October 10 UsedSpaceGB    : 11737.78
+
+
+VMName                           : Frank-DNS-MGMNT
+TotalSpaceGB                     : 150
+ProvisionedSpaceGB               : 166.09
+UsedSpaceGB                      : 53.43
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 53.42
+Thursday October 14 UsedSpaceGB  : 53.43
+Wednesday October 13 UsedSpaceGB : 53.32
+Tuesday October 12 UsedSpaceGB   : 53.31
+Monday October 11 UsedSpaceGB    : 53.31
+Sunday October 10 UsedSpaceGB    : 53.32
+
+
+VMName                           : openmange-Idrace-Managment
+TotalSpaceGB                     : 412.51
+ProvisionedSpaceGB               : 428.60
+UsedSpaceGB                      : 428.60
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 428.60
+Thursday October 14 UsedSpaceGB  : 428.60
+Wednesday October 13 UsedSpaceGB : 428.60
+Tuesday October 12 UsedSpaceGB   : 428.60
+Monday October 11 UsedSpaceGB    : 428.60
+Sunday October 10 UsedSpaceGB    : 428.60
+
+
+VMName                           : Frank-Roaya-WebSite
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 308.09
+UsedSpaceGB                      : 24.61
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 24.60
+Thursday October 14 UsedSpaceGB  : 24.52
+Wednesday October 13 UsedSpaceGB : 24.50
+Tuesday October 12 UsedSpaceGB   : 24.49
+Monday October 11 UsedSpaceGB    : 24.39
+Sunday October 10 UsedSpaceGB    : 24.61
+
+
+VMName                           : vcenter-clone
+TotalSpaceGB                     : 1123.66
+ProvisionedSpaceGB               : 1171.89
+UsedSpaceGB                      : 183.25
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 183.25
+Thursday October 14 UsedSpaceGB  : 183.25
+Wednesday October 13 UsedSpaceGB : 183.25
+Tuesday October 12 UsedSpaceGB   : 183.25
+Monday October 11 UsedSpaceGB    : 183.25
+Sunday October 10 UsedSpaceGB    : 183.25
+
+
+VMName                           : Mis-CAR-PRD DB Server
+TotalSpaceGB                     : 2048
+ProvisionedSpaceGB               : 4183.33
+UsedSpaceGB                      : 2764.34
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 2764.34
+Thursday October 14 UsedSpaceGB  : 2764.34
+Wednesday October 13 UsedSpaceGB : 2764.34
+Tuesday October 12 UsedSpaceGB   : 2764.34
+Monday October 11 UsedSpaceGB    : 2764.32
+Sunday October 10 UsedSpaceGB    : 2772.83
+
+
+VMName                           : VMware vCenter Server Appliance 6.7-Passive
+TotalSpaceGB                     : 1123.66
+ProvisionedSpaceGB               : 1454.76
+UsedSpaceGB                      : 371.16
+UsageDifferenceGB                : 1
+Friday October 15 UsedSpaceGB    : 369.96
+Thursday October 14 UsedSpaceGB  : 368.91
+Wednesday October 13 UsedSpaceGB : 367.34
+Tuesday October 12 UsedSpaceGB   : 366.02
+Monday October 11 UsedSpaceGB    : 365.04
+Sunday October 10 UsedSpaceGB    : 364.25
+
+
+VMName                           : Misr-Testapp
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 104.08
+UsedSpaceGB                      : 12.25
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 12.13
+Thursday October 14 UsedSpaceGB  : 11.93
+Wednesday October 13 UsedSpaceGB : 11.52
+Tuesday October 12 UsedSpaceGB   : 11.39
+Monday October 11 UsedSpaceGB    : 11.20
+Sunday October 10 UsedSpaceGB    : 12.02
+
+
+VMName                           : Alfa-DAXRDS-yhsv-Copy
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 282.10
+UsedSpaceGB                      : 112.63
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 112.60
+Thursday October 14 UsedSpaceGB  : 112.61
+Wednesday October 13 UsedSpaceGB : 108.80
+Tuesday October 12 UsedSpaceGB   : 108.64
+Monday October 11 UsedSpaceGB    : 108.59
+Sunday October 10 UsedSpaceGB    : 108.30
+
+
+VMName                           : Misr-e-commerce
+TotalSpaceGB                     : 150
+ProvisionedSpaceGB               : 158.09
+UsedSpaceGB                      : 158.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 158.09
+Thursday October 14 UsedSpaceGB  : 158.09
+Wednesday October 13 UsedSpaceGB : 158.09
+Tuesday October 12 UsedSpaceGB   : 158.09
+Monday October 11 UsedSpaceGB    : 158.09
+Sunday October 10 UsedSpaceGB    : 158.09
+
+
+VMName                           : MIS-CRM-PRD DB Server
+TotalSpaceGB                     : 2000
+ProvisionedSpaceGB               : 2192.14
+UsedSpaceGB                      : 630.73
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 630.72
+Thursday October 14 UsedSpaceGB  : 630.72
+Wednesday October 13 UsedSpaceGB : 630.62
+Tuesday October 12 UsedSpaceGB   : 630.59
+Monday October 11 UsedSpaceGB    : 630.59
+Sunday October 10 UsedSpaceGB    : 630.63
+
+
+VMName                           : nextcloud-nfs
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 508.21
+UsedSpaceGB                      : 4.29
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 4.29
+Thursday October 14 UsedSpaceGB  : 4.29
+Wednesday October 13 UsedSpaceGB : 4.29
+Tuesday October 12 UsedSpaceGB   : 4.29
+Monday October 11 UsedSpaceGB    : 4.29
+Sunday October 10 UsedSpaceGB    : 4.29
+
+
+VMName                           : IGI-AX-app
+TotalSpaceGB                     : 50
+ProvisionedSpaceGB               : 52.09
+UsedSpaceGB                      : 24.26
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 24.26
+Thursday October 14 UsedSpaceGB  : 24.26
+Wednesday October 13 UsedSpaceGB : 24.26
+Tuesday October 12 UsedSpaceGB   : 24.26
+Monday October 11 UsedSpaceGB    : 24.26
+Sunday October 10 UsedSpaceGB    : 24.26
+
+
+VMName                           : Frank-ADC-03
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 41.15
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 41.05
+Thursday October 14 UsedSpaceGB  : 41.37
+Wednesday October 13 UsedSpaceGB : 41.18
+Tuesday October 12 UsedSpaceGB   : 41.93
+Monday October 11 UsedSpaceGB    : 41.94
+Sunday October 10 UsedSpaceGB    : 41.98
+
+
+VMName                           : Mis-ERP DEV-PRD APP Server
+TotalSpaceGB                     : 2000
+ProvisionedSpaceGB               : 2750.09
+UsedSpaceGB                      : 770.96
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 770.88
+Thursday October 14 UsedSpaceGB  : 770.88
+Wednesday October 13 UsedSpaceGB : 770.86
+Tuesday October 12 UsedSpaceGB   : 770.86
+Monday October 11 UsedSpaceGB    : 770.85
+Sunday October 10 UsedSpaceGB    : 770.85
+
+
+VMName                           : Mis-SAP-H-DB
+TotalSpaceGB                     : 6186.4
+ProvisionedSpaceGB               : 6536.54
+UsedSpaceGB                      : 1340.16
+UsageDifferenceGB                : 9
+Friday October 15 UsedSpaceGB    : 1331.16
+Thursday October 14 UsedSpaceGB  : 1316.46
+Wednesday October 13 UsedSpaceGB : 1303.24
+Tuesday October 12 UsedSpaceGB   : 1294.08
+Monday October 11 UsedSpaceGB    : 1284.41
+Sunday October 10 UsedSpaceGB    : 1388.05
+
+
+VMName                           : clone-nextcloud-dev-new-production
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 850.15
+UsedSpaceGB                      : 362.35
+UsageDifferenceGB                : -1
+Friday October 15 UsedSpaceGB    : 363.25
+Thursday October 14 UsedSpaceGB  : 363.25
+Wednesday October 13 UsedSpaceGB : 363.25
+Tuesday October 12 UsedSpaceGB   : 363.25
+Monday October 11 UsedSpaceGB    : 363.25
+Sunday October 10 UsedSpaceGB    : 363.26
+
+
+VMName                           : MIS-CRM-PRD APP Server
+TotalSpaceGB                     : 2000
+ProvisionedSpaceGB               : 2096.14
+UsedSpaceGB                      : 427.15
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 427.13
+Thursday October 14 UsedSpaceGB  : 427.11
+Wednesday October 13 UsedSpaceGB : 427.11
+Tuesday October 12 UsedSpaceGB   : 427.08
+Monday October 11 UsedSpaceGB    : 427.07
+Sunday October 10 UsedSpaceGB    : 427.09
+
+
+VMName                           : Misr-ERPDEVDB
+TotalSpaceGB                     : 2355.2
+ProvisionedSpaceGB               : 2419.31
+UsedSpaceGB                      : 506.37
+UsageDifferenceGB                : 14
+Friday October 15 UsedSpaceGB    : 491.80
+Thursday October 14 UsedSpaceGB  : 477.09
+Wednesday October 13 UsedSpaceGB : 453.88
+Tuesday October 12 UsedSpaceGB   : 440.27
+Monday October 11 UsedSpaceGB    : 424.71
+Sunday October 10 UsedSpaceGB    : 660.09
+
+
+VMName                           : Misr-Tableau
+TotalSpaceGB                     : 150
+ProvisionedSpaceGB               : 166.09
+UsedSpaceGB                      : 141.43
+UsageDifferenceGB                : -3
+Friday October 15 UsedSpaceGB    : 144.47
+Thursday October 14 UsedSpaceGB  : 142.95
+Wednesday October 13 UsedSpaceGB : 137.75
+Tuesday October 12 UsedSpaceGB   : 139.78
+Monday October 11 UsedSpaceGB    : 133.69
+Sunday October 10 UsedSpaceGB    : 126.78
+
+
+VMName                           : Misr-ERPPRDDB
+TotalSpaceGB                     : 3072
+ProvisionedSpaceGB               : 3772.18
+UsedSpaceGB                      : 3513.06
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 3513.06
+Thursday October 14 UsedSpaceGB  : 3513.06
+Wednesday October 13 UsedSpaceGB : 3513.06
+Tuesday October 12 UsedSpaceGB   : 3513.06
+Monday October 11 UsedSpaceGB    : 3513.06
+Sunday October 10 UsedSpaceGB    : 3513.06
+
+
+VMName                           : MISR-SAP-CARAPP
+TotalSpaceGB                     : 2048
+ProvisionedSpaceGB               : 2112.10
+UsedSpaceGB                      : 116.01
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 116.01
+Thursday October 14 UsedSpaceGB  : 116.01
+Wednesday October 13 UsedSpaceGB : 116.01
+Tuesday October 12 UsedSpaceGB   : 116.01
+Monday October 11 UsedSpaceGB    : 116.01
+Sunday October 10 UsedSpaceGB    : 116.60
+
+
+VMName                           : Jump-Server-MAli
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 34.74
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 34.74
+Thursday October 14 UsedSpaceGB  : 34.74
+Wednesday October 13 UsedSpaceGB : 34.72
+Tuesday October 12 UsedSpaceGB   : 34.81
+Monday October 11 UsedSpaceGB    : 34.82
+Sunday October 10 UsedSpaceGB    : 34.76
+
+
+VMName                           : Jump-Nada
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 208.09
+UsedSpaceGB                      : 46.03
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 45.76
+Thursday October 14 UsedSpaceGB  : 45.94
+Wednesday October 13 UsedSpaceGB : 46.18
+Tuesday October 12 UsedSpaceGB   : 45.89
+Monday October 11 UsedSpaceGB    : 45.87
+Sunday October 10 UsedSpaceGB    : 45.68
+
+
+VMName                           : Kayan-Egypt
+TotalSpaceGB                     : 320
+ProvisionedSpaceGB               : 336.09
+UsedSpaceGB                      : 127.70
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 127.69
+Thursday October 14 UsedSpaceGB  : 127.70
+Wednesday October 13 UsedSpaceGB : 123.62
+Tuesday October 12 UsedSpaceGB   : 118.27
+Monday October 11 UsedSpaceGB    : 117.90
+Sunday October 10 UsedSpaceGB    : 117.92
+
+
+VMName                           : Frank-Kbase-Source
+TotalSpaceGB                     : 1124
+ProvisionedSpaceGB               : 1140.09
+UsedSpaceGB                      : 335.96
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 335.53
+Thursday October 14 UsedSpaceGB  : 339.20
+Wednesday October 13 UsedSpaceGB : 339.30
+Tuesday October 12 UsedSpaceGB   : 338.70
+Monday October 11 UsedSpaceGB    : 347.31
+Sunday October 10 UsedSpaceGB    : 347.42
+
+
+VMName                           : IGI-AD
+TotalSpaceGB                     : 32
+ProvisionedSpaceGB               : 33.08
+UsedSpaceGB                      : 22.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 22.10
+Thursday October 14 UsedSpaceGB  : 22.10
+Wednesday October 13 UsedSpaceGB : 21.99
+Tuesday October 12 UsedSpaceGB   : 21.92
+Monday October 11 UsedSpaceGB    : 21.82
+Sunday October 10 UsedSpaceGB    : 21.74
+
+
+VMName                           : MISR-IVENDMC2
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 80.93
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 81.04
+Thursday October 14 UsedSpaceGB  : 81.03
+Wednesday October 13 UsedSpaceGB : 78.99
+Tuesday October 12 UsedSpaceGB   : 78.99
+Monday October 11 UsedSpaceGB    : 78.97
+Sunday October 10 UsedSpaceGB    : 73.67
+
+
+VMName                           : centos-block-storage
+TotalSpaceGB                     : 14836
+ProvisionedSpaceGB               : 14848.09
+UsedSpaceGB                      : 14354.21
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 14354.21
+Thursday October 14 UsedSpaceGB  : 14354.21
+Wednesday October 13 UsedSpaceGB : 14354.21
+Tuesday October 12 UsedSpaceGB   : 14354.21
+Monday October 11 UsedSpaceGB    : 14354.21
+Sunday October 10 UsedSpaceGB    : 14354.21
+
+
+VMName                           : jump-eslam
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 308.09
+UsedSpaceGB                      : 116.23
+UsageDifferenceGB                : 6
+Friday October 15 UsedSpaceGB    : 109.80
+Thursday October 14 UsedSpaceGB  : 109.19
+Wednesday October 13 UsedSpaceGB : 109.04
+Tuesday October 12 UsedSpaceGB   : 108.74
+Monday October 11 UsedSpaceGB    : 108.21
+Sunday October 10 UsedSpaceGB    : 108.17
+
+
+VMName                           : jump-wahba
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 38.62
+UsageDifferenceGB                : 1
+Friday October 15 UsedSpaceGB    : 38.17
+Thursday October 14 UsedSpaceGB  : 37.98
+Wednesday October 13 UsedSpaceGB : 38.22
+Tuesday October 12 UsedSpaceGB   : 38.50
+Monday October 11 UsedSpaceGB    : 37.33
+Sunday October 10 UsedSpaceGB    : 21.30
+
+
+VMName                           : FortiGate
+TotalSpaceGB                     : 32
+ProvisionedSpaceGB               : 34.19
+UsedSpaceGB                      : 32.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 32.00
+Thursday October 14 UsedSpaceGB  : 32.00
+Wednesday October 13 UsedSpaceGB : 32.00
+Tuesday October 12 UsedSpaceGB   : 32.00
+Monday October 11 UsedSpaceGB    : 32.00
+Sunday October 10 UsedSpaceGB    : 32.00
+
+
+VMName                           : esxi2
+TotalSpaceGB                     : 1500
+ProvisionedSpaceGB               : 1516.09
+UsedSpaceGB                      : 70.80
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 70.80
+Thursday October 14 UsedSpaceGB  : 70.80
+Wednesday October 13 UsedSpaceGB : 70.80
+Tuesday October 12 UsedSpaceGB   : 70.80
+Monday October 11 UsedSpaceGB    : 70.80
+Sunday October 10 UsedSpaceGB    : 70.80
+
+
+VMName                           : Developers-VM6-Copy
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 516.20
+UsedSpaceGB                      : 31.75
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 31.75
+Thursday October 14 UsedSpaceGB  : 31.75
+Wednesday October 13 UsedSpaceGB : 31.75
+Tuesday October 12 UsedSpaceGB   : 31.75
+Monday October 11 UsedSpaceGB    : 31.75
+Sunday October 10 UsedSpaceGB    : 31.75
+
+
+VMName                           : sandbox
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 316.22
+UsedSpaceGB                      : 19.93
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 19.93
+Thursday October 14 UsedSpaceGB  : 19.93
+Wednesday October 13 UsedSpaceGB : 19.93
+Tuesday October 12 UsedSpaceGB   : 19.93
+Monday October 11 UsedSpaceGB    : 19.93
+Sunday October 10 UsedSpaceGB    : 19.93
+
+
+VMName                           : Mis-Winsows2012R2
+TotalSpaceGB                     : 3098
+ProvisionedSpaceGB               : 3188.12
+UsedSpaceGB                      : 870.78
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 870.78
+Thursday October 14 UsedSpaceGB  : 870.78
+Wednesday October 13 UsedSpaceGB : 870.76
+Tuesday October 12 UsedSpaceGB   : 870.74
+Monday October 11 UsedSpaceGB    : 870.74
+Sunday October 10 UsedSpaceGB    : 870.73
+
+
+VMName                           : WP-Frank-Database3
+TotalSpaceGB                     : 400
+ProvisionedSpaceGB               : 416.21
+UsedSpaceGB                      : 400.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 400.00
+Thursday October 14 UsedSpaceGB  : 400.00
+Wednesday October 13 UsedSpaceGB : 400.00
+Tuesday October 12 UsedSpaceGB   : 400.00
+Monday October 11 UsedSpaceGB    : 400.00
+Sunday October 10 UsedSpaceGB    : 400.00
+
+
+VMName                           : Misr-MagentoDBLoad
+TotalSpaceGB                     : 128
+ProvisionedSpaceGB               : 136.09
+UsedSpaceGB                      : 22.69
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 22.55
+Thursday October 14 UsedSpaceGB  : 22.39
+Wednesday October 13 UsedSpaceGB : 22.19
+Tuesday October 12 UsedSpaceGB   : 21.99
+Monday October 11 UsedSpaceGB    : 21.70
+Sunday October 10 UsedSpaceGB    : 22.45
+
+
+VMName                           : esxi1
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 520.09
+UsedSpaceGB                      : 29.69
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 29.68
+Thursday October 14 UsedSpaceGB  : 29.67
+Wednesday October 13 UsedSpaceGB : 29.66
+Tuesday October 12 UsedSpaceGB   : 29.66
+Monday October 11 UsedSpaceGB    : 29.65
+Sunday October 10 UsedSpaceGB    : 29.65
+
+
+VMName                           : Mis-Manage
+TotalSpaceGB                     : 550
+ProvisionedSpaceGB               : 554.08
+UsedSpaceGB                      : 58.60
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 58.60
+Thursday October 14 UsedSpaceGB  : 58.62
+Wednesday October 13 UsedSpaceGB : 58.52
+Tuesday October 12 UsedSpaceGB   : 58.50
+Monday October 11 UsedSpaceGB    : 58.61
+Sunday October 10 UsedSpaceGB    : 58.67
+
+
+VMName                           : Misr-PIPRD
+TotalSpaceGB                     : 1910
+ProvisionedSpaceGB               : 2070.11
+UsedSpaceGB                      : 2070.11
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 2070.11
+Thursday October 14 UsedSpaceGB  : 2070.11
+Wednesday October 13 UsedSpaceGB : 2070.11
+Tuesday October 12 UsedSpaceGB   : 2070.11
+Monday October 11 UsedSpaceGB    : 2070.11
+Sunday October 10 UsedSpaceGB    : 2070.11
+
+
+VMName                           : Frank-ADC-04
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 42.59
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 42.58
+Thursday October 14 UsedSpaceGB  : 42.65
+Wednesday October 13 UsedSpaceGB : 43.77
+Tuesday October 12 UsedSpaceGB   : 42.61
+Monday October 11 UsedSpaceGB    : 42.61
+Sunday October 10 UsedSpaceGB    : 42.62
+
+
+VMName                           : IGI-windows8
+TotalSpaceGB                     : 32
+ProvisionedSpaceGB               : 36.08
+UsedSpaceGB                      : 30.24
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 30.24
+Thursday October 14 UsedSpaceGB  : 30.24
+Wednesday October 13 UsedSpaceGB : 30.24
+Tuesday October 12 UsedSpaceGB   : 30.24
+Monday October 11 UsedSpaceGB    : 30.24
+Sunday October 10 UsedSpaceGB    : 30.24
+
+
+VMName                           : Mis-ERP DEV-PRD DB Server
+TotalSpaceGB                     : 2398
+ProvisionedSpaceGB               : 2438.11
+UsedSpaceGB                      : 262.60
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 262.60
+Thursday October 14 UsedSpaceGB  : 262.68
+Wednesday October 13 UsedSpaceGB : 262.26
+Tuesday October 12 UsedSpaceGB   : 262.24
+Monday October 11 UsedSpaceGB    : 262.55
+Sunday October 10 UsedSpaceGB    : 262.60
+
+
+VMName                           : MISR-CARQASDB
+TotalSpaceGB                     : 2048
+ProvisionedSpaceGB               : 2168.14
+UsedSpaceGB                      : 421.55
+UsageDifferenceGB                : 11
+Friday October 15 UsedSpaceGB    : 410.62
+Thursday October 14 UsedSpaceGB  : 399.31
+Wednesday October 13 UsedSpaceGB : 382.95
+Tuesday October 12 UsedSpaceGB   : 372.34
+Monday October 11 UsedSpaceGB    : 362.06
+Sunday October 10 UsedSpaceGB    : 695.96
+
+
+VMName                           : IGI-AX DB
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 202.08
+UsedSpaceGB                      : 47.28
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 47.28
+Thursday October 14 UsedSpaceGB  : 47.28
+Wednesday October 13 UsedSpaceGB : 47.27
+Tuesday October 12 UsedSpaceGB   : 47.27
+Monday October 11 UsedSpaceGB    : 47.27
+Sunday October 10 UsedSpaceGB    : 47.27
+
+
+VMName                           : Misr-Qatr
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 532.09
+UsedSpaceGB                      : 530.94
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 530.89
+Thursday October 14 UsedSpaceGB  : 530.89
+Wednesday October 13 UsedSpaceGB : 530.89
+Tuesday October 12 UsedSpaceGB   : 530.88
+Monday October 11 UsedSpaceGB    : 530.89
+Sunday October 10 UsedSpaceGB    : 530.90
+
+
+VMName                           : IGI-jump server
+TotalSpaceGB                     : 32
+ProvisionedSpaceGB               : 36.08
+UsedSpaceGB                      : 21.76
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 21.76
+Thursday October 14 UsedSpaceGB  : 21.76
+Wednesday October 13 UsedSpaceGB : 21.76
+Tuesday October 12 UsedSpaceGB   : 21.77
+Monday October 11 UsedSpaceGB    : 21.77
+Sunday October 10 UsedSpaceGB    : 21.77
+
+
+VMName                           : Misr-MagentoWebLoad
+TotalSpaceGB                     : 128
+ProvisionedSpaceGB               : 136.09
+UsedSpaceGB                      : 18.78
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 18.59
+Thursday October 14 UsedSpaceGB  : 18.45
+Wednesday October 13 UsedSpaceGB : 18.29
+Tuesday October 12 UsedSpaceGB   : 18.13
+Monday October 11 UsedSpaceGB    : 18.12
+Sunday October 10 UsedSpaceGB    : 18.88
+
+
+VMName                           : Misr-CARPRDAPP
+TotalSpaceGB                     : 810
+ProvisionedSpaceGB               : 974.11
+UsedSpaceGB                      : 974.11
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 974.11
+Thursday October 14 UsedSpaceGB  : 974.11
+Wednesday October 13 UsedSpaceGB : 974.11
+Tuesday October 12 UsedSpaceGB   : 974.11
+Monday October 11 UsedSpaceGB    : 974.11
+Sunday October 10 UsedSpaceGB    : 974.11
+
+
+VMName                           : Mis-Solman Server
+TotalSpaceGB                     : 2100
+ProvisionedSpaceGB               : 2132.09
+UsedSpaceGB                      : 627.21
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 627.20
+Thursday October 14 UsedSpaceGB  : 627.20
+Wednesday October 13 UsedSpaceGB : 627.17
+Tuesday October 12 UsedSpaceGB   : 627.15
+Monday October 11 UsedSpaceGB    : 627.12
+Sunday October 10 UsedSpaceGB    : 627.20
+
+
+VMName                           : Misr-MagentoWeb2
+TotalSpaceGB                     : 256
+ProvisionedSpaceGB               : 264.09
+UsedSpaceGB                      : 20.72
+UsageDifferenceGB                : 1
+Friday October 15 UsedSpaceGB    : 20.46
+Thursday October 14 UsedSpaceGB  : 20.25
+Wednesday October 13 UsedSpaceGB : 19.85
+Tuesday October 12 UsedSpaceGB   : 19.63
+Monday October 11 UsedSpaceGB    : 19.53
+Sunday October 10 UsedSpaceGB    : 20.49
+
+
+VMName                           : Solex-demo-ectr
+TotalSpaceGB                     : 850
+ProvisionedSpaceGB               : 850.10
+UsedSpaceGB                      : 590.63
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 590.61
+Thursday October 14 UsedSpaceGB  : 590.60
+Wednesday October 13 UsedSpaceGB : 590.57
+Tuesday October 12 UsedSpaceGB   : 590.55
+Monday October 11 UsedSpaceGB    : 590.53
+Sunday October 10 UsedSpaceGB    : 590.52
+
+
+VMName                           : SolarWind-SAM
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 320.21
+UsedSpaceGB                      : 54.51
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 54.51
+Thursday October 14 UsedSpaceGB  : 54.51
+Wednesday October 13 UsedSpaceGB : 54.51
+Tuesday October 12 UsedSpaceGB   : 54.51
+Monday October 11 UsedSpaceGB    : 54.51
+Sunday October 10 UsedSpaceGB    : 99.00
+
+
+VMName                           : MISR-SAP-CARDB-copy
+TotalSpaceGB                     : 2048
+ProvisionedSpaceGB               : 2176.14
+UsedSpaceGB                      : 448.60
+UsageDifferenceGB                : 13
+Friday October 15 UsedSpaceGB    : 436.29
+Thursday October 14 UsedSpaceGB  : 424.28
+Wednesday October 13 UsedSpaceGB : 405.83
+Tuesday October 12 UsedSpaceGB   : 393.27
+Monday October 11 UsedSpaceGB    : 380.42
+Sunday October 10 UsedSpaceGB    : 631.24
+
+
+VMName                           : ihpgco Kuwait Windows - Backup(new)
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 254.08
+UsedSpaceGB                      : 166.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 166.12
+Thursday October 14 UsedSpaceGB  : 166.54
+Wednesday October 13 UsedSpaceGB : 165.47
+Tuesday October 12 UsedSpaceGB   : 165.58
+Monday October 11 UsedSpaceGB    : 165.66
+Sunday October 10 UsedSpaceGB    : 165.80
+
+
+VMName                           : SOLEX-SOLMAN-JAVA
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 332.06
+UsedSpaceGB                      : 123.68
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 123.68
+Thursday October 14 UsedSpaceGB  : 123.67
+Wednesday October 13 UsedSpaceGB : 123.67
+Tuesday October 12 UsedSpaceGB   : 123.64
+Monday October 11 UsedSpaceGB    : 123.63
+Sunday October 10 UsedSpaceGB    : 123.65
+
+
+VMName                           : Cloud Connector
+TotalSpaceGB                     : 20
+ProvisionedSpaceGB               : 24.19
+UsedSpaceGB                      : 20.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 20.00
+Thursday October 14 UsedSpaceGB  : 20.00
+Wednesday October 13 UsedSpaceGB : 20.00
+Tuesday October 12 UsedSpaceGB   : 20.00
+Monday October 11 UsedSpaceGB    : 20.00
+Sunday October 10 UsedSpaceGB    : 20.00
+
+
+VMName                           : Office Libre-Production New 1104
+TotalSpaceGB                     : 160
+ProvisionedSpaceGB               : 168.20
+UsedSpaceGB                      : 155.62
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 155.62
+Thursday October 14 UsedSpaceGB  : 155.62
+Wednesday October 13 UsedSpaceGB : 155.62
+Tuesday October 12 UsedSpaceGB   : 155.62
+Monday October 11 UsedSpaceGB    : 155.62
+Sunday October 10 UsedSpaceGB    : 155.62
+
+
+VMName                           : Mis-Backup
+TotalSpaceGB                     : 3132
+ProvisionedSpaceGB               : 3140.09
+UsedSpaceGB                      : 2424.17
+UsageDifferenceGB                : 197
+Friday October 15 UsedSpaceGB    : 2227.23
+Thursday October 14 UsedSpaceGB  : 2038.77
+Wednesday October 13 UsedSpaceGB : 2785.71
+Tuesday October 12 UsedSpaceGB   : 2569.31
+Monday October 11 UsedSpaceGB    : 2362.92
+Sunday October 10 UsedSpaceGB    : 2121.31
+
+
+VMName                           : Exchange-DEV
+TotalSpaceGB                     : 650
+ProvisionedSpaceGB               : 670.22
+UsedSpaceGB                      : 500.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 500.10
+Thursday October 14 UsedSpaceGB  : 500.10
+Wednesday October 13 UsedSpaceGB : 500.10
+Tuesday October 12 UsedSpaceGB   : 500.10
+Monday October 11 UsedSpaceGB    : 500.10
+Sunday October 10 UsedSpaceGB    : 500.10
+
+
+VMName                           : Jump-Server-Tawfik
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 120.09
+UsedSpaceGB                      : 100.48
+UsageDifferenceGB                : -1
+Friday October 15 UsedSpaceGB    : 100.98
+Thursday October 14 UsedSpaceGB  : 100.96
+Wednesday October 13 UsedSpaceGB : 102.17
+Tuesday October 12 UsedSpaceGB   : 98.70
+Monday October 11 UsedSpaceGB    : 98.42
+Sunday October 10 UsedSpaceGB    : 98.45
+
+
+VMName                           : Frank-OpenManage_Integration
+TotalSpaceGB                     : 85.98
+ProvisionedSpaceGB               : 94.28
+UsedSpaceGB                      : 85.98
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 85.98
+Thursday October 14 UsedSpaceGB  : 85.98
+Wednesday October 13 UsedSpaceGB : 85.98
+Tuesday October 12 UsedSpaceGB   : 85.98
+Monday October 11 UsedSpaceGB    : 85.98
+Sunday October 10 UsedSpaceGB    : 85.98
+
+
+VMName                           : replaymanager
+TotalSpaceGB                     : 540
+ProvisionedSpaceGB               : 552.22
+UsedSpaceGB                      : 240.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 240.10
+Thursday October 14 UsedSpaceGB  : 240.10
+Wednesday October 13 UsedSpaceGB : 240.10
+Tuesday October 12 UsedSpaceGB   : 240.10
+Monday October 11 UsedSpaceGB    : 240.10
+Sunday October 10 UsedSpaceGB    : 240.10
+
+
+VMName                           : VMware vCenter Server Appliance 6.7
+TotalSpaceGB                     : 1123.66
+ProvisionedSpaceGB               : 1171.89
+UsedSpaceGB                      : 45.37
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 45.37
+Thursday October 14 UsedSpaceGB  : 45.37
+Wednesday October 13 UsedSpaceGB : 45.37
+Tuesday October 12 UsedSpaceGB   : 45.37
+Monday October 11 UsedSpaceGB    : 45.37
+Sunday October 10 UsedSpaceGB    : 45.37
+
+
+VMName                           : Misr-Router-02
+TotalSpaceGB                     : 60
+ProvisionedSpaceGB               : 80.10
+UsedSpaceGB                      : 44.12
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 44.12
+Thursday October 14 UsedSpaceGB  : 44.12
+Wednesday October 13 UsedSpaceGB : 44.12
+Tuesday October 12 UsedSpaceGB   : 44.11
+Monday October 11 UsedSpaceGB    : 44.11
+Sunday October 10 UsedSpaceGB    : 44.10
+
+
+VMName                           : test
+TotalSpaceGB                     : 900
+ProvisionedSpaceGB               : 908.09
+UsedSpaceGB                      : 431.35
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 430.99
+Thursday October 14 UsedSpaceGB  : 428.16
+Wednesday October 13 UsedSpaceGB : 35.05
+Tuesday October 12 UsedSpaceGB   : 35.05
+Monday October 11 UsedSpaceGB    : 34.53
+Sunday October 10 UsedSpaceGB    : 31.50
+
+
+VMName                           : Win10-test
+TotalSpaceGB                     : 50
+ProvisionedSpaceGB               : 54.24
+UsedSpaceGB                      : 10.50
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 10.50
+Thursday October 14 UsedSpaceGB  : 10.50
+Wednesday October 13 UsedSpaceGB : 10.50
+Tuesday October 12 UsedSpaceGB   : 10.50
+Monday October 11 UsedSpaceGB    : 10.50
+Sunday October 10 UsedSpaceGB    : 10.50
+
+
+VMName                           : VMware-NSX-Manager
+TotalSpaceGB                     : 60
+ProvisionedSpaceGB               : 60.09
+UsedSpaceGB                      : 60.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 60.09
+Thursday October 14 UsedSpaceGB  : 60.09
+Wednesday October 13 UsedSpaceGB : 60.09
+Tuesday October 12 UsedSpaceGB   : 60.09
+Monday October 11 UsedSpaceGB    : 60.09
+Sunday October 10 UsedSpaceGB    : 60.09
+
+
+VMName                           : VMware_vCloud_Director-10.0.0.4649-15450333
+TotalSpaceGB                     : 112
+ProvisionedSpaceGB               : 136.09
+UsedSpaceGB                      : 136.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 136.09
+Thursday October 14 UsedSpaceGB  : 136.09
+Wednesday October 13 UsedSpaceGB : 136.09
+Tuesday October 12 UsedSpaceGB   : 136.09
+Monday October 11 UsedSpaceGB    : 136.09
+Sunday October 10 UsedSpaceGB    : 136.09
+
+
+VMName                           : Mis-CRM QAS & Dev DB Server
+TotalSpaceGB                     : 2048
+ProvisionedSpaceGB               : 2240.14
+UsedSpaceGB                      : 594.20
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 594.20
+Thursday October 14 UsedSpaceGB  : 594.20
+Wednesday October 13 UsedSpaceGB : 594.20
+Tuesday October 12 UsedSpaceGB   : 594.20
+Monday October 11 UsedSpaceGB    : 594.20
+Sunday October 10 UsedSpaceGB    : 594.20
+
+
+VMName                           : Misr-Router-01
+TotalSpaceGB                     : 60
+ProvisionedSpaceGB               : 76.09
+UsedSpaceGB                      : 76.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 76.09
+Thursday October 14 UsedSpaceGB  : 76.09
+Wednesday October 13 UsedSpaceGB : 76.09
+Tuesday October 12 UsedSpaceGB   : 76.09
+Monday October 11 UsedSpaceGB    : 76.09
+Sunday October 10 UsedSpaceGB    : 76.09
+
+
+VMName                           : Elbassiouni WebSite Production
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 106.08
+UsedSpaceGB                      : 106.03
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 106.03
+Thursday October 14 UsedSpaceGB  : 106.03
+Wednesday October 13 UsedSpaceGB : 106.03
+Tuesday October 12 UsedSpaceGB   : 106.03
+Monday October 11 UsedSpaceGB    : 106.03
+Sunday October 10 UsedSpaceGB    : 106.03
+
+
+VMName                           : md-masterbatch-website
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 102.08
+UsedSpaceGB                      : 36.05
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 36.05
+Thursday October 14 UsedSpaceGB  : 36.05
+Wednesday October 13 UsedSpaceGB : 36.05
+Tuesday October 12 UsedSpaceGB   : 36.05
+Monday October 11 UsedSpaceGB    : 36.05
+Sunday October 10 UsedSpaceGB    : 36.05
+
+
+VMName                           : Ceramica-Cleoptra
+TotalSpaceGB                     : 180
+ProvisionedSpaceGB               : 184.08
+UsedSpaceGB                      : 183.42
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 183.43
+Thursday October 14 UsedSpaceGB  : 183.43
+Wednesday October 13 UsedSpaceGB : 183.39
+Tuesday October 12 UsedSpaceGB   : 183.41
+Monday October 11 UsedSpaceGB    : 183.40
+Sunday October 10 UsedSpaceGB    : 183.43
+
+
+VMName                           : joy&roy
+TotalSpaceGB                     : 220
+ProvisionedSpaceGB               : 236.20
+UsedSpaceGB                      : 45.83
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 45.83
+Thursday October 14 UsedSpaceGB  : 45.83
+Wednesday October 13 UsedSpaceGB : 45.83
+Tuesday October 12 UsedSpaceGB   : 45.83
+Monday October 11 UsedSpaceGB    : 45.83
+Sunday October 10 UsedSpaceGB    : 45.83
+
+
+VMName                           : elbassiony-Copy
+TotalSpaceGB                     : 400
+ProvisionedSpaceGB               : 416.08
+UsedSpaceGB                      : 379.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 379.00
+Thursday October 14 UsedSpaceGB  : 379.05
+Wednesday October 13 UsedSpaceGB : 379.19
+Tuesday October 12 UsedSpaceGB   : 379.52
+Monday October 11 UsedSpaceGB    : 379.53
+Sunday October 10 UsedSpaceGB    : 379.52
+
+
+VMName                           : DSITV-06.00.00.165
+TotalSpaceGB                     : 10
+ProvisionedSpaceGB               : 18.08
+UsedSpaceGB                      : 18.08
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 18.08
+Thursday October 14 UsedSpaceGB  : 18.08
+Wednesday October 13 UsedSpaceGB : 18.08
+Tuesday October 12 UsedSpaceGB   : 18.08
+Monday October 11 UsedSpaceGB    : 18.08
+Sunday October 10 UsedSpaceGB    : 18.08
+
+
+VMName                           : Router-01
+TotalSpaceGB                     : 150
+ProvisionedSpaceGB               : 180.10
+UsedSpaceGB                      : 180.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 180.10
+Thursday October 14 UsedSpaceGB  : 180.10
+Wednesday October 13 UsedSpaceGB : 180.10
+Tuesday October 12 UsedSpaceGB   : 180.10
+Monday October 11 UsedSpaceGB    : 180.10
+Sunday October 10 UsedSpaceGB    : 180.10
+
+
+VMName                           : WorldPosta WebSite
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 316.09
+UsedSpaceGB                      : 57.85
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 57.85
+Thursday October 14 UsedSpaceGB  : 57.85
+Wednesday October 13 UsedSpaceGB : 57.85
+Tuesday October 12 UsedSpaceGB   : 57.85
+Monday October 11 UsedSpaceGB    : 57.85
+Sunday October 10 UsedSpaceGB    : 57.85
+
+
+VMName                           : ubuntu-dev
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 208.20
+UsedSpaceGB                      : 17.50
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 17.50
+Thursday October 14 UsedSpaceGB  : 17.50
+Wednesday October 13 UsedSpaceGB : 17.50
+Tuesday October 12 UsedSpaceGB   : 17.50
+Monday October 11 UsedSpaceGB    : 17.50
+Sunday October 10 UsedSpaceGB    : 17.50
+
+
+VMName                           : Router-02
+TotalSpaceGB                     : 150
+ProvisionedSpaceGB               : 170.09
+UsedSpaceGB                      : 38.28
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 38.28
+Thursday October 14 UsedSpaceGB  : 38.28
+Wednesday October 13 UsedSpaceGB : 38.28
+Tuesday October 12 UsedSpaceGB   : 38.27
+Monday October 11 UsedSpaceGB    : 38.27
+Sunday October 10 UsedSpaceGB    : 38.26
+
+
+VMName                           : Frank-PA-01
+TotalSpaceGB                     : 150
+ProvisionedSpaceGB               : 190.10
+UsedSpaceGB                      : 88.12
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 88.12
+Thursday October 14 UsedSpaceGB  : 88.12
+Wednesday October 13 UsedSpaceGB : 88.12
+Tuesday October 12 UsedSpaceGB   : 88.04
+Monday October 11 UsedSpaceGB    : 88.04
+Sunday October 10 UsedSpaceGB    : 88.04
+
+
+VMName                           : Frank-NSX-Controller-02-NSX-controller-2
+TotalSpaceGB                     : 28
+ProvisionedSpaceGB               : 28.09
+UsedSpaceGB                      : 28.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 28.09
+Thursday October 14 UsedSpaceGB  : 28.09
+Wednesday October 13 UsedSpaceGB : 28.09
+Tuesday October 12 UsedSpaceGB   : 28.09
+Monday October 11 UsedSpaceGB    : 28.09
+Sunday October 10 UsedSpaceGB    : 28.09
+
+
+VMName                           : MyCloud-AppLaunchPad
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 23.85
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 23.85
+Thursday October 14 UsedSpaceGB  : 23.85
+Wednesday October 13 UsedSpaceGB : 23.85
+Tuesday October 12 UsedSpaceGB   : 23.85
+Monday October 11 UsedSpaceGB    : 23.85
+Sunday October 10 UsedSpaceGB    : 23.85
+
+
+VMName                           : Frank-PA-02
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 140.10
+UsedSpaceGB                      : 140.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 140.10
+Thursday October 14 UsedSpaceGB  : 140.10
+Wednesday October 13 UsedSpaceGB : 140.10
+Tuesday October 12 UsedSpaceGB   : 140.10
+Monday October 11 UsedSpaceGB    : 140.10
+Sunday October 10 UsedSpaceGB    : 140.10
+
+
+VMName                           : MinIO
+TotalSpaceGB                     : 1024
+ProvisionedSpaceGB               : 1804.61
+UsedSpaceGB                      : 785.21
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 785.21
+Thursday October 14 UsedSpaceGB  : 785.20
+Wednesday October 13 UsedSpaceGB : 785.20
+Tuesday October 12 UsedSpaceGB   : 785.20
+Monday October 11 UsedSpaceGB    : 785.20
+Sunday October 10 UsedSpaceGB    : 785.20
+
+
+VMName                           : Roaya WebSite
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 232.10
+UsedSpaceGB                      : 133.58
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 133.57
+Thursday October 14 UsedSpaceGB  : 133.57
+Wednesday October 13 UsedSpaceGB : 133.55
+Tuesday October 12 UsedSpaceGB   : 133.55
+Monday October 11 UsedSpaceGB    : 133.55
+Sunday October 10 UsedSpaceGB    : 133.55
+
+
+VMName                           : dev-ubuntu-21
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 508.09
+UsedSpaceGB                      : 28.27
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 28.26
+Thursday October 14 UsedSpaceGB  : 28.22
+Wednesday October 13 UsedSpaceGB : 28.22
+Tuesday October 12 UsedSpaceGB   : 28.06
+Monday October 11 UsedSpaceGB    : 28.06
+Sunday October 10 UsedSpaceGB    : 28.23
+
+
+VMName                           : DSMBuildVM-20
+TotalSpaceGB                     : 50
+ProvisionedSpaceGB               : 58.21
+UsedSpaceGB                      : 11.28
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 11.28
+Thursday October 14 UsedSpaceGB  : 11.28
+Wednesday October 13 UsedSpaceGB : 11.28
+Tuesday October 12 UsedSpaceGB   : 11.28
+Monday October 11 UsedSpaceGB    : 11.28
+Sunday October 10 UsedSpaceGB    : 11.28
+
+
+VMName                           : MyCloud-NFS
+TotalSpaceGB                     : 600
+ProvisionedSpaceGB               : 616.09
+UsedSpaceGB                      : 218.79
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 218.79
+Thursday October 14 UsedSpaceGB  : 218.79
+Wednesday October 13 UsedSpaceGB : 218.79
+Tuesday October 12 UsedSpaceGB   : 218.79
+Monday October 11 UsedSpaceGB    : 218.79
+Sunday October 10 UsedSpaceGB    : 218.79
+
+
+VMName                           : WorldPosta Website 02
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 316.09
+UsedSpaceGB                      : 316.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 316.09
+Thursday October 14 UsedSpaceGB  : 316.09
+Wednesday October 13 UsedSpaceGB : 316.09
+Tuesday October 12 UsedSpaceGB   : 316.09
+Monday October 11 UsedSpaceGB    : 316.09
+Sunday October 10 UsedSpaceGB    : 316.09
+
+
+VMName                           : centos-Backup-vcenter
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 508.08
+UsedSpaceGB                      : 41.07
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 41.07
+Thursday October 14 UsedSpaceGB  : 41.07
+Wednesday October 13 UsedSpaceGB : 41.07
+Tuesday October 12 UsedSpaceGB   : 41.04
+Monday October 11 UsedSpaceGB    : 41.04
+Sunday October 10 UsedSpaceGB    : 41.04
+
+
+VMName                           : Frank-NSX-Controller-01-NSX-controller-1
+TotalSpaceGB                     : 28
+ProvisionedSpaceGB               : 28.09
+UsedSpaceGB                      : 28.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 28.09
+Thursday October 14 UsedSpaceGB  : 28.09
+Wednesday October 13 UsedSpaceGB : 28.09
+Tuesday October 12 UsedSpaceGB   : 28.09
+Monday October 11 UsedSpaceGB    : 28.09
+Sunday October 10 UsedSpaceGB    : 28.09
+
+
+VMName                           : Frank-NSX-Controller-03-NSX-controller-3
+TotalSpaceGB                     : 28
+ProvisionedSpaceGB               : 28.09
+UsedSpaceGB                      : 28.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 28.09
+Thursday October 14 UsedSpaceGB  : 28.09
+Wednesday October 13 UsedSpaceGB : 28.09
+Tuesday October 12 UsedSpaceGB   : 28.09
+Monday October 11 UsedSpaceGB    : 28.09
+Sunday October 10 UsedSpaceGB    : 28.09
+
+
+VMName                           : WP-Coturn-Videostreaming
+TotalSpaceGB                     : 160
+ProvisionedSpaceGB               : 164.09
+UsedSpaceGB                      : 16.77
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 16.77
+Thursday October 14 UsedSpaceGB  : 16.77
+Wednesday October 13 UsedSpaceGB : 16.44
+Tuesday October 12 UsedSpaceGB   : 16.27
+Monday October 11 UsedSpaceGB    : 16.10
+Sunday October 10 UsedSpaceGB    : 16.54
+
+
+VMName                           : MyCloud-AMQP
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.09
+UsedSpaceGB                      : 22.52
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 22.52
+Thursday October 14 UsedSpaceGB  : 22.52
+Wednesday October 13 UsedSpaceGB : 22.52
+Tuesday October 12 UsedSpaceGB   : 22.52
+Monday October 11 UsedSpaceGB    : 22.52
+Sunday October 10 UsedSpaceGB    : 22.52
+
+
+VMName                           : Dell-EMC-01
+TotalSpaceGB                     : 10
+ProvisionedSpaceGB               : 18.08
+UsedSpaceGB                      : 18.08
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 18.08
+Thursday October 14 UsedSpaceGB  : 18.08
+Wednesday October 13 UsedSpaceGB : 18.08
+Tuesday October 12 UsedSpaceGB   : 18.08
+Monday October 11 UsedSpaceGB    : 18.08
+Sunday October 10 UsedSpaceGB    : 18.08
+
+
+VMName                           : Solid-CP-DB-copy-13
+TotalSpaceGB                     : 600
+ProvisionedSpaceGB               : 612.21
+UsedSpaceGB                      : 339.43
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 339.43
+Thursday October 14 UsedSpaceGB  : 339.43
+Wednesday October 13 UsedSpaceGB : 339.43
+Tuesday October 12 UsedSpaceGB   : 339.43
+Monday October 11 UsedSpaceGB    : 339.43
+Sunday October 10 UsedSpaceGB    : 339.43
+
+
+VMName                           : Developers-VM9-g6uv
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 1067.08
+UsedSpaceGB                      : 569.12
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 569.11
+Thursday October 14 UsedSpaceGB  : 569.11
+Wednesday October 13 UsedSpaceGB : 569.11
+Tuesday October 12 UsedSpaceGB   : 569.11
+Monday October 11 UsedSpaceGB    : 569.11
+Sunday October 10 UsedSpaceGB    : 569.11
+
+
+VMName                           : Frank-Tools
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 125.22
+UsedSpaceGB                      : 18.27
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 18.27
+Thursday October 14 UsedSpaceGB  : 18.27
+Wednesday October 13 UsedSpaceGB : 18.27
+Tuesday October 12 UsedSpaceGB   : 18.27
+Monday October 11 UsedSpaceGB    : 18.27
+Sunday October 10 UsedSpaceGB    : 18.27
+
+
+VMName                           : Developers-VM8-jTLN
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 308.13
+UsedSpaceGB                      : 55.53
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 55.50
+Thursday October 14 UsedSpaceGB  : 55.50
+Wednesday October 13 UsedSpaceGB : 55.50
+Tuesday October 12 UsedSpaceGB   : 55.44
+Monday October 11 UsedSpaceGB    : 55.44
+Sunday October 10 UsedSpaceGB    : 55.46
+
+
+VMName                           : Developers-VM6-Q6b7
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 516.17
+UsedSpaceGB                      : 65.14
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 65.14
+Thursday October 14 UsedSpaceGB  : 65.14
+Wednesday October 13 UsedSpaceGB : 65.12
+Tuesday October 12 UsedSpaceGB   : 65.08
+Monday October 11 UsedSpaceGB    : 65.08
+Sunday October 10 UsedSpaceGB    : 65.10
+
+
+VMName                           : nextcloud-dev-new-production
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 1765.90
+UsedSpaceGB                      : 1301.31
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1301.31
+Thursday October 14 UsedSpaceGB  : 1296.91
+Wednesday October 13 UsedSpaceGB : 1272.34
+Tuesday October 12 UsedSpaceGB   : 1272.34
+Monday October 11 UsedSpaceGB    : 1272.34
+Sunday October 10 UsedSpaceGB    : 1710.64
+
+
+VMName                           : vse-Madkour-group (e251c8fb-4dfb-469c-b93f-ef2a8487c5c6)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 
+
+
+VMName                           : vse-Diyaa-LAP-EDGE (1641a623-4b51-46d4-b0c5-643d0d143900)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Asfour-Crystal (7f8b90ec-98b9-4ecd-afa3-c32f5b5d9bc2)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Ramy-mahrous (d2d14133-dd2b-4485-8ba7-a4a0cf64c282)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-IGI (71406d74-8aa6-4f9d-8b98-4703ec25c2c6)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-EL_Doctor_company (e1476256-9c5d-427b-ac8a-9fcca4ce43ae)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-ITVisionary (3f399e67-4b4d-4629-9702-396841db5f80)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-solex-edge (fab0b166-093a-431b-bdb0-08bc63a71b24)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Demo (2a1cd3aa-1b88-4de4-a85d-7c05601d750f)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Egypt-Cables-Edge (fb2efcf5-80ce-4248-bce2-9903891f3a73)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Ahessien-Edge (85eabc8d-9111-4a6c-a374-3ea1f068c3be)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-ElRabeh (b16f4dfe-be7b-4825-93d3-fd11b1d01012)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-kuwait (8589cebd-4ad3-49d7-859a-17cd4189a086)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.51
+UsedSpaceGB                      : 1.07
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.07
+Thursday October 14 UsedSpaceGB  : 1.07
+Wednesday October 13 UsedSpaceGB : 1.07
+Tuesday October 12 UsedSpaceGB   : 1.07
+Monday October 11 UsedSpaceGB    : 1.07
+Sunday October 10 UsedSpaceGB    : 1.07
+
+
+VMName                           : vse-karim-test (3b5e3e22-1ab3-4c5b-85ff-e34e3544e466)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.65
+UsedSpaceGB                      : 1.65
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.65
+Thursday October 14 UsedSpaceGB  : 1.65
+Wednesday October 13 UsedSpaceGB : 1.65
+Tuesday October 12 UsedSpaceGB   : 1.65
+Monday October 11 UsedSpaceGB    : 1.65
+Sunday October 10 UsedSpaceGB    : 1.65
+
+
+VMName                           : vse-solex-2 (54e22e37-7bee-4c5c-8611-93840452cabd)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Developers-Edg (11641040-df75-423a-8c7d-70cd44f84c78)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Edge-Reyada-New (4b7fca73-588f-4f03-ae24-0360538272b2)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-nada (35b6a75e-6362-4f02-a66b-84221f17b44c)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-ELbatal (86554aa4-be8b-4aeb-9084-675da6a39c49)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.51
+UsedSpaceGB                      : 1.07
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.07
+Thursday October 14 UsedSpaceGB  : 1.07
+Wednesday October 13 UsedSpaceGB : 1.07
+Tuesday October 12 UsedSpaceGB   : 1.07
+Monday October 11 UsedSpaceGB    : 1.07
+Sunday October 10 UsedSpaceGB    : 1.07
+
+
+VMName                           : vse-Family-Edge-PA (4fcca189-f7a0-444f-bade-2471f5bb51ba)-0
+TotalSpaceGB                     : 3.07
+ProvisionedSpaceGB               : 7.16
+UsedSpaceGB                      : 7.16
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 7.16
+Thursday October 14 UsedSpaceGB  : 7.16
+Wednesday October 13 UsedSpaceGB : 7.16
+Tuesday October 12 UsedSpaceGB   : 7.16
+Monday October 11 UsedSpaceGB    : 7.16
+Sunday October 10 UsedSpaceGB    : 7.16
+
+
+VMName                           : vse-Edge-ABDO (e673e19e-1c38-4c3d-8d92-1954a4a7fbe7)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Edge-Future-ERP (2171c296-7643-4d4c-90ee-e7c56e7eb668)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Gabr-edg (fa1964f7-de42-4f8c-8edc-93f2db32cc25)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-el bassiony (27dff168-a339-48b9-90af-c7f34c7d2f47)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-El Doha-Edge (c36206fb-388c-4207-94a8-81ada6f158fd)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Liptis (cc0de151-6dcf-4413-8151-a1b32925ab90)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Future-ERP-Edge-New (fd1668ba-fb29-442b-af13-84b259b14191)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Family-Corp (fa2e6e64-c575-468a-bf34-a8c1415d3ea5)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Hefny-Pharma-Edge (cdaefd93-2720-437f-bdd0-a6487e5160a2)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-EL-doctor (e9ff20d3-ab27-4462-8e38-eeec995b4e25)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Hamd (7e683317-9d42-490d-aeaa-917b77577ce6)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-venus-alexandria (f675cded-711e-4a22-bd51-1524a850f661)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-new-eslam (899bd341-ce21-4c6a-953a-1fbefdb22d22)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-elbatal-test (8f5c9001-85bc-40a7-a286-d1e537a89b2e)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-venus-group (f62ce961-18dc-4a4f-91c1-8f9d8ac19131)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-LeadersCO (e518df4f-a749-4c07-8e0b-5abac75e25c3)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Delta-Pharma-ESG (0ed9c57a-8bba-4476-b544-4d48226b0897)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Soltech-ksa (c52e258d-5e30-4449-9421-c4335ab42bc6)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-RENTEX CARS (4971e2a7-8d66-4cab-8cdd-9d6cefbeaf68)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-the-concrete (95a00dfd-3eb6-476f-b8a5-6d3f4b35650f)-0
+TotalSpaceGB                     : 1.07
+ProvisionedSpaceGB               : 1.40
+UsedSpaceGB                      : 1.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1.40
+Thursday October 14 UsedSpaceGB  : 1.40
+Wednesday October 13 UsedSpaceGB : 1.40
+Tuesday October 12 UsedSpaceGB   : 1.40
+Monday October 11 UsedSpaceGB    : 1.40
+Sunday October 10 UsedSpaceGB    : 1.40
+
+
+VMName                           : vse-Edge-AlfaMarket-Lan (718d9b5e-62e1-4cd1-9a90-693eae41b6bb)-0
+TotalSpaceGB                     : 3.07
+ProvisionedSpaceGB               : 7.16
+UsedSpaceGB                      : 7.16
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 7.16
+Thursday October 14 UsedSpaceGB  : 7.16
+Wednesday October 13 UsedSpaceGB : 7.16
+Tuesday October 12 UsedSpaceGB   : 7.16
+Monday October 11 UsedSpaceGB    : 7.16
+Sunday October 10 UsedSpaceGB    : 7.16
+
+
+VMName                           : WPEU1MB9001-cfmy
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 108.21
+UsedSpaceGB                      : 14.60
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 14.60
+Thursday October 14 UsedSpaceGB  : 14.60
+Wednesday October 13 UsedSpaceGB : 14.60
+Tuesday October 12 UsedSpaceGB   : 14.60
+Monday October 11 UsedSpaceGB    : 14.60
+Sunday October 10 UsedSpaceGB    : 14.60
+
+
+VMName                           : Developer-VM5-BhRt
+TotalSpaceGB                     : 256
+ProvisionedSpaceGB               : 272.09
+UsedSpaceGB                      : 40.71
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 40.71
+Thursday October 14 UsedSpaceGB  : 40.71
+Wednesday October 13 UsedSpaceGB : 40.71
+Tuesday October 12 UsedSpaceGB   : 40.71
+Monday October 11 UsedSpaceGB    : 40.70
+Sunday October 10 UsedSpaceGB    : 40.70
+
+
+VMName                           : NFS-Shared-eg7E
+TotalSpaceGB                     : 1084
+ProvisionedSpaceGB               : 1088.08
+UsedSpaceGB                      : 989.32
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 989.32
+Thursday October 14 UsedSpaceGB  : 989.31
+Wednesday October 13 UsedSpaceGB : 989.30
+Tuesday October 12 UsedSpaceGB   : 989.30
+Monday October 11 UsedSpaceGB    : 989.29
+Sunday October 10 UsedSpaceGB    : 989.28
+
+
+VMName                           : IGI-CRMDEV-3ZDw
+TotalSpaceGB                     : 550
+ProvisionedSpaceGB               : 566.10
+UsedSpaceGB                      : 383.72
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 383.72
+Thursday October 14 UsedSpaceGB  : 383.72
+Wednesday October 13 UsedSpaceGB : 383.72
+Tuesday October 12 UsedSpaceGB   : 383.72
+Monday October 11 UsedSpaceGB    : 383.72
+Sunday October 10 UsedSpaceGB    : 383.72
+
+
+VMName                           : Family-Corp-HANA-DEV-jnC6
+TotalSpaceGB                     : 1500
+ProvisionedSpaceGB               : 1756.14
+UsedSpaceGB                      : 874.76
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 874.75
+Thursday October 14 UsedSpaceGB  : 756.92
+Wednesday October 13 UsedSpaceGB : 756.86
+Tuesday October 12 UsedSpaceGB   : 756.84
+Monday October 11 UsedSpaceGB    : 756.73
+Sunday October 10 UsedSpaceGB    : 874.57
+
+
+VMName                           : Family-Corp-SAP-Router-Vtvz
+TotalSpaceGB                     : 25
+ProvisionedSpaceGB               : 29.08
+UsedSpaceGB                      : 29.08
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 29.08
+Thursday October 14 UsedSpaceGB  : 29.08
+Wednesday October 13 UsedSpaceGB : 29.08
+Tuesday October 12 UsedSpaceGB   : 29.08
+Monday October 11 UsedSpaceGB    : 29.08
+Sunday October 10 UsedSpaceGB    : 29.08
+
+
+VMName                           : Developer-VM3-9Ioi
+TotalSpaceGB                     : 160
+ProvisionedSpaceGB               : 168.10
+UsedSpaceGB                      : 70.69
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 70.62
+Thursday October 14 UsedSpaceGB  : 70.69
+Wednesday October 13 UsedSpaceGB : 70.61
+Tuesday October 12 UsedSpaceGB   : 70.47
+Monday October 11 UsedSpaceGB    : 70.47
+Sunday October 10 UsedSpaceGB    : 70.46
+
+
+VMName                           : IGI-ADSServer-eQKr
+TotalSpaceGB                     : 400
+ProvisionedSpaceGB               : 408.09
+UsedSpaceGB                      : 97.22
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 97.22
+Thursday October 14 UsedSpaceGB  : 97.21
+Wednesday October 13 UsedSpaceGB : 97.21
+Tuesday October 12 UsedSpaceGB   : 97.21
+Monday October 11 UsedSpaceGB    : 97.21
+Sunday October 10 UsedSpaceGB    : 97.20
+
+
+VMName                           : DP-S4H-APP-PRD-RgdR
+TotalSpaceGB                     : 306
+ProvisionedSpaceGB               : 338.09
+UsedSpaceGB                      : 58.25
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 58.23
+Thursday October 14 UsedSpaceGB  : 58.22
+Wednesday October 13 UsedSpaceGB : 58.20
+Tuesday October 12 UsedSpaceGB   : 58.17
+Monday October 11 UsedSpaceGB    : 58.11
+Sunday October 10 UsedSpaceGB    : 58.21
+
+
+VMName                           : Solex-wJZl
+TotalSpaceGB                     : 1249
+ProvisionedSpaceGB               : 1489.10
+UsedSpaceGB                      : 732.08
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 732.08
+Thursday October 14 UsedSpaceGB  : 732.07
+Wednesday October 13 UsedSpaceGB : 732.06
+Tuesday October 12 UsedSpaceGB   : 731.98
+Monday October 11 UsedSpaceGB    : 731.91
+Sunday October 10 UsedSpaceGB    : 732.11
+
+
+VMName                           : Alfa-API-pkND
+TotalSpaceGB                     : 30
+ProvisionedSpaceGB               : 38.20
+UsedSpaceGB                      : 13.28
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 13.28
+Thursday October 14 UsedSpaceGB  : 13.28
+Wednesday October 13 UsedSpaceGB : 13.35
+Tuesday October 12 UsedSpaceGB   : 12.95
+Monday October 11 UsedSpaceGB    : 12.95
+Sunday October 10 UsedSpaceGB    : 21.22
+
+
+VMName                           : Family-Web -dispatcher-OoDw
+TotalSpaceGB                     : 25
+ProvisionedSpaceGB               : 29.08
+UsedSpaceGB                      : 9.04
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 9.03
+Thursday October 14 UsedSpaceGB  : 9.03
+Wednesday October 13 UsedSpaceGB : 9.03
+Tuesday October 12 UsedSpaceGB   : 9.03
+Monday October 11 UsedSpaceGB    : 9.03
+Sunday October 10 UsedSpaceGB    : 9.04
+
+
+VMName                           : Alfa-ADD-ySut
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 308.09
+UsedSpaceGB                      : 32.05
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 32.05
+Thursday October 14 UsedSpaceGB  : 32.22
+Wednesday October 13 UsedSpaceGB : 32.84
+Tuesday October 12 UsedSpaceGB   : 32.86
+Monday October 11 UsedSpaceGB    : 33.07
+Sunday October 10 UsedSpaceGB    : 33.06
+
+
+VMName                           : Elbatal-VM-HeOb
+TotalSpaceGB                     : 180
+ProvisionedSpaceGB               : 184.08
+UsedSpaceGB                      : 40.49
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 40.47
+Thursday October 14 UsedSpaceGB  : 40.36
+Wednesday October 13 UsedSpaceGB : 36.68
+Tuesday October 12 UsedSpaceGB   : 33.04
+Monday October 11 UsedSpaceGB    : 33.04
+Sunday October 10 UsedSpaceGB    : 33.04
+
+
+VMName                           : machine1-kuet
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 258.08
+UsedSpaceGB                      : 257.21
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 257.21
+Thursday October 14 UsedSpaceGB  : 257.23
+Wednesday October 13 UsedSpaceGB : 257.23
+Tuesday October 12 UsedSpaceGB   : 256.66
+Monday October 11 UsedSpaceGB    : 256.66
+Sunday October 10 UsedSpaceGB    : 256.75
+
+
+VMName                           : venus-Database-KNXi
+TotalSpaceGB                     : 400
+ProvisionedSpaceGB               : 406.08
+UsedSpaceGB                      : 318.10
+UsageDifferenceGB                : -1
+Friday October 15 UsedSpaceGB    : 318.98
+Thursday October 14 UsedSpaceGB  : 320.25
+Wednesday October 13 UsedSpaceGB : 317.75
+Tuesday October 12 UsedSpaceGB   : 317.45
+Monday October 11 UsedSpaceGB    : 316.95
+Sunday October 10 UsedSpaceGB    : 315.81
+
+
+VMName                           : venus-app-twM3
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 210.09
+UsedSpaceGB                      : 87.16
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 86.97
+Thursday October 14 UsedSpaceGB  : 86.94
+Wednesday October 13 UsedSpaceGB : 86.74
+Tuesday October 12 UsedSpaceGB   : 86.85
+Monday October 11 UsedSpaceGB    : 86.73
+Sunday October 10 UsedSpaceGB    : 86.81
+
+
+VMName                           : EL-Doctor-machine1-IUKV
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 540.20
+UsedSpaceGB                      : 52.18
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 52.04
+Thursday October 14 UsedSpaceGB  : 52.04
+Wednesday October 13 UsedSpaceGB : 52.04
+Tuesday October 12 UsedSpaceGB   : 50.11
+Monday October 11 UsedSpaceGB    : 50.11
+Sunday October 10 UsedSpaceGB    : 50.11
+
+
+VMName                           : IGI-ECCsandbox-yYRT
+TotalSpaceGB                     : 550
+ProvisionedSpaceGB               : 566.10
+UsedSpaceGB                      : 333.94
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 333.94
+Thursday October 14 UsedSpaceGB  : 333.94
+Wednesday October 13 UsedSpaceGB : 333.95
+Tuesday October 12 UsedSpaceGB   : 333.95
+Monday October 11 UsedSpaceGB    : 333.95
+Sunday October 10 UsedSpaceGB    : 333.95
+
+
+VMName                           : Alfa-SQL-Server-qecU
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 516.10
+UsedSpaceGB                      : 516.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 516.10
+Thursday October 14 UsedSpaceGB  : 516.10
+Wednesday October 13 UsedSpaceGB : 516.10
+Tuesday October 12 UsedSpaceGB   : 516.10
+Monday October 11 UsedSpaceGB    : 516.10
+Sunday October 10 UsedSpaceGB    : 516.10
+
+
+VMName                           : Alfa-DAXRPT-bA5n
+TotalSpaceGB                     : 1000
+ProvisionedSpaceGB               : 1016.10
+UsedSpaceGB                      : 771.97
+UsageDifferenceGB                : 9
+Friday October 15 UsedSpaceGB    : 763.29
+Thursday October 14 UsedSpaceGB  : 760.65
+Wednesday October 13 UsedSpaceGB : 781.01
+Tuesday October 12 UsedSpaceGB   : 790.16
+Monday October 11 UsedSpaceGB    : 789.99
+Sunday October 10 UsedSpaceGB    : 788.59
+
+
+VMName                           : Family-Corp-HANA-QAS-Q6kF
+TotalSpaceGB                     : 690
+ProvisionedSpaceGB               : 970.11
+UsedSpaceGB                      : 649.09
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 649.09
+Thursday October 14 UsedSpaceGB  : 571.62
+Wednesday October 13 UsedSpaceGB : 571.62
+Tuesday October 12 UsedSpaceGB   : 571.60
+Monday October 11 UsedSpaceGB    : 571.50
+Sunday October 10 UsedSpaceGB    : 649.09
+
+
+VMName                           : machine2-NyKd
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 258.08
+UsedSpaceGB                      : 90.24
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 90.24
+Thursday October 14 UsedSpaceGB  : 90.24
+Wednesday October 13 UsedSpaceGB : 89.35
+Tuesday October 12 UsedSpaceGB   : 89.37
+Monday October 11 UsedSpaceGB    : 89.37
+Sunday October 10 UsedSpaceGB    : 89.37
+
+
+VMName                           : jump-solex
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 204.08
+UsedSpaceGB                      : 164.27
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 163.98
+Thursday October 14 UsedSpaceGB  : 163.47
+Wednesday October 13 UsedSpaceGB : 163.58
+Tuesday October 12 UsedSpaceGB   : 164.68
+Monday October 11 UsedSpaceGB    : 164.79
+Sunday October 10 UsedSpaceGB    : 164.87
+
+
+VMName                           : Alfa-DAXAOS-LhCj
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 332.11
+UsedSpaceGB                      : 99.71
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 100.23
+Thursday October 14 UsedSpaceGB  : 103.43
+Wednesday October 13 UsedSpaceGB : 112.91
+Tuesday October 12 UsedSpaceGB   : 113.37
+Monday October 11 UsedSpaceGB    : 87.58
+Sunday October 10 UsedSpaceGB    : 87.57
+
+
+VMName                           : Liptis-Windows-7oXx
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 324.10
+UsedSpaceGB                      : 226.74
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 226.65
+Thursday October 14 UsedSpaceGB  : 226.40
+Wednesday October 13 UsedSpaceGB : 228.27
+Tuesday October 12 UsedSpaceGB   : 228.50
+Monday October 11 UsedSpaceGB    : 228.61
+Sunday October 10 UsedSpaceGB    : 229.67
+
+
+VMName                           : Soltech-ksa-NNDM
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 116.20
+UsedSpaceGB                      : 47.50
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 47.50
+Thursday October 14 UsedSpaceGB  : 47.50
+Wednesday October 13 UsedSpaceGB : 47.50
+Tuesday October 12 UsedSpaceGB   : 47.50
+Monday October 11 UsedSpaceGB    : 47.50
+Sunday October 10 UsedSpaceGB    : 47.50
+
+
+VMName                           : DP-S4H-APP-DEV-IWVB
+TotalSpaceGB                     : 875
+ProvisionedSpaceGB               : 1003.10
+UsedSpaceGB                      : 380.96
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 380.96
+Thursday October 14 UsedSpaceGB  : 379.10
+Wednesday October 13 UsedSpaceGB : 375.60
+Tuesday October 12 UsedSpaceGB   : 373.23
+Monday October 11 UsedSpaceGB    : 370.83
+Sunday October 10 UsedSpaceGB    : 381.34
+
+
+VMName                           : LEADERS-DB FUTURERS+FUTURAHK-Bqjv
+TotalSpaceGB                     : 400
+ProvisionedSpaceGB               : 432.09
+UsedSpaceGB                      : 64.89
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 64.91
+Thursday October 14 UsedSpaceGB  : 64.91
+Wednesday October 13 UsedSpaceGB : 64.45
+Tuesday October 12 UsedSpaceGB   : 64.55
+Monday October 11 UsedSpaceGB    : 64.56
+Sunday October 10 UsedSpaceGB    : 64.58
+
+
+VMName                           : Alfa-DAXEP-O9sY
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 266.10
+UsedSpaceGB                      : 55.57
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 55.56
+Thursday October 14 UsedSpaceGB  : 55.54
+Wednesday October 13 UsedSpaceGB : 55.47
+Tuesday October 12 UsedSpaceGB   : 55.45
+Monday October 11 UsedSpaceGB    : 55.45
+Sunday October 10 UsedSpaceGB    : 55.56
+
+
+VMName                           : RDP-uJXQ
+TotalSpaceGB                     : 350
+ProvisionedSpaceGB               : 360.08
+UsedSpaceGB                      : 23.13
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 23.13
+Thursday October 14 UsedSpaceGB  : 23.14
+Wednesday October 13 UsedSpaceGB : 23.26
+Tuesday October 12 UsedSpaceGB   : 23.26
+Monday October 11 UsedSpaceGB    : 23.26
+Sunday October 10 UsedSpaceGB    : 23.28
+
+
+VMName                           : Future-ERP-System-5Phq-r3lw
+TotalSpaceGB                     : 880
+ProvisionedSpaceGB               : 896.21
+UsedSpaceGB                      : 85.33
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 85.21
+Thursday October 14 UsedSpaceGB  : 85.09
+Wednesday October 13 UsedSpaceGB : 84.90
+Tuesday October 12 UsedSpaceGB   : 84.78
+Monday October 11 UsedSpaceGB    : 84.65
+Sunday October 10 UsedSpaceGB    : 84.63
+
+
+VMName                           : DP-Solman-4AXz
+TotalSpaceGB                     : 774
+ProvisionedSpaceGB               : 822.09
+UsedSpaceGB                      : 272.31
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 272.29
+Thursday October 14 UsedSpaceGB  : 272.28
+Wednesday October 13 UsedSpaceGB : 272.25
+Tuesday October 12 UsedSpaceGB   : 272.24
+Monday October 11 UsedSpaceGB    : 272.18
+Sunday October 10 UsedSpaceGB    : 272.18
+
+
+VMName                           : ITVisionary-K4hP
+TotalSpaceGB                     : 512
+ProvisionedSpaceGB               : 576.09
+UsedSpaceGB                      : 196.17
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 196.17
+Thursday October 14 UsedSpaceGB  : 196.18
+Wednesday October 13 UsedSpaceGB : 195.69
+Tuesday October 12 UsedSpaceGB   : 195.78
+Monday October 11 UsedSpaceGB    : 195.78
+Sunday October 10 UsedSpaceGB    : 195.33
+
+
+VMName                           : Copy-El-Reyada-VM-EcJu
+TotalSpaceGB                     : 1024
+ProvisionedSpaceGB               : 1048.09
+UsedSpaceGB                      : 1038.80
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 1038.79
+Thursday October 14 UsedSpaceGB  : 1039.06
+Wednesday October 13 UsedSpaceGB : 1039.03
+Tuesday October 12 UsedSpaceGB   : 1039.03
+Monday October 11 UsedSpaceGB    : 1039.43
+Sunday October 10 UsedSpaceGB    : 1039.44
+
+
+VMName                           : mailbox server-01-F4Ms
+TotalSpaceGB                     : 60
+ProvisionedSpaceGB               : 70.20
+UsedSpaceGB                      : 44.29
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 44.29
+Thursday October 14 UsedSpaceGB  : 44.29
+Wednesday October 13 UsedSpaceGB : 44.29
+Tuesday October 12 UsedSpaceGB   : 44.29
+Monday October 11 UsedSpaceGB    : 44.29
+Sunday October 10 UsedSpaceGB    : 44.29
+
+
+VMName                           : 4Am-DAXRDS-yhsv-Copy-10GU
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 368.07
+UsedSpaceGB                      : 106.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 106.40
+Thursday October 14 UsedSpaceGB  : 106.40
+Wednesday October 13 UsedSpaceGB : 106.40
+Tuesday October 12 UsedSpaceGB   : 106.40
+Monday October 11 UsedSpaceGB    : 106.40
+Sunday October 10 UsedSpaceGB    : 106.40
+
+
+VMName                           : Alfa-DAXRT-Yqno
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 266.10
+UsedSpaceGB                      : 68.16
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 68.12
+Thursday October 14 UsedSpaceGB  : 68.07
+Wednesday October 13 UsedSpaceGB : 67.42
+Tuesday October 12 UsedSpaceGB   : 67.40
+Monday October 11 UsedSpaceGB    : 67.31
+Sunday October 10 UsedSpaceGB    : 67.27
+
+
+VMName                           : SAP-ROUTER-vyos
+TotalSpaceGB                     : 80
+ProvisionedSpaceGB               : 84.08
+UsedSpaceGB                      : 8.36
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 8.36
+Thursday October 14 UsedSpaceGB  : 8.36
+Wednesday October 13 UsedSpaceGB : 8.34
+Tuesday October 12 UsedSpaceGB   : 8.30
+Monday October 11 UsedSpaceGB    : 8.30
+Sunday October 10 UsedSpaceGB    : 8.32
+
+
+VMName                           : Alfa-DAXAOSB-YyLF
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 266.11
+UsedSpaceGB                      : 57.41
+UsageDifferenceGB                : -1
+Friday October 15 UsedSpaceGB    : 57.66
+Thursday October 14 UsedSpaceGB  : 57.74
+Wednesday October 13 UsedSpaceGB : 57.81
+Tuesday October 12 UsedSpaceGB   : 57.86
+Monday October 11 UsedSpaceGB    : 56.30
+Sunday October 10 UsedSpaceGB    : 56.31
+
+
+VMName                           : Family-Corp-ERP-DEV-pHPo
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 324.10
+UsedSpaceGB                      : 99.03
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 99.02
+Thursday October 14 UsedSpaceGB  : 98.91
+Wednesday October 13 UsedSpaceGB : 98.41
+Tuesday October 12 UsedSpaceGB   : 98.32
+Monday October 11 UsedSpaceGB    : 97.85
+Sunday October 10 UsedSpaceGB    : 98.75
+
+
+VMName                           : Alfa-Dashboard-3Z6P
+TotalSpaceGB                     : 30
+ProvisionedSpaceGB               : 38.20
+UsedSpaceGB                      : 13.28
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 13.28
+Thursday October 14 UsedSpaceGB  : 13.28
+Wednesday October 13 UsedSpaceGB : 13.12
+Tuesday October 12 UsedSpaceGB   : 13.10
+Monday October 11 UsedSpaceGB    : 12.74
+Sunday October 10 UsedSpaceGB    : 19.21
+
+
+VMName                           : D-LAP-Centos-QvhL
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 208.09
+UsedSpaceGB                      : 15.18
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 15.18
+Thursday October 14 UsedSpaceGB  : 15.18
+Wednesday October 13 UsedSpaceGB : 15.18
+Tuesday October 12 UsedSpaceGB   : 15.17
+Monday October 11 UsedSpaceGB    : 15.17
+Sunday October 10 UsedSpaceGB    : 15.17
+
+
+VMName                           : DP-S4H-APP-QAS-PRxw
+TotalSpaceGB                     : 875
+ProvisionedSpaceGB               : 1075.10
+UsedSpaceGB                      : 424.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 424.38
+Thursday October 14 UsedSpaceGB  : 421.59
+Wednesday October 13 UsedSpaceGB : 416.37
+Tuesday October 12 UsedSpaceGB   : 412.95
+Monday October 11 UsedSpaceGB    : 409.45
+Sunday October 10 UsedSpaceGB    : 424.82
+
+
+VMName                           : Alfa-DAXRDS-zvo6
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 282.21
+UsedSpaceGB                      : 246.60
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 246.60
+Thursday October 14 UsedSpaceGB  : 246.60
+Wednesday October 13 UsedSpaceGB : 246.60
+Tuesday October 12 UsedSpaceGB   : 246.60
+Monday October 11 UsedSpaceGB    : 246.60
+Sunday October 10 UsedSpaceGB    : 246.60
+
+
+VMName                           : hefny-pharma-5l7S
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 532.09
+UsedSpaceGB                      : 528.38
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 528.39
+Thursday October 14 UsedSpaceGB  : 528.39
+Wednesday October 13 UsedSpaceGB : 528.44
+Tuesday October 12 UsedSpaceGB   : 527.28
+Monday October 11 UsedSpaceGB    : 527.28
+Sunday October 10 UsedSpaceGB    : 527.29
+
+
+VMName                           : DP-S4H-DB-PRD-6x2M
+TotalSpaceGB                     : 978
+ProvisionedSpaceGB               : 1298.13
+UsedSpaceGB                      : 562.40
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 562.40
+Thursday October 14 UsedSpaceGB  : 560.06
+Wednesday October 13 UsedSpaceGB : 555.22
+Tuesday October 12 UsedSpaceGB   : 552.17
+Monday October 11 UsedSpaceGB    : 549.05
+Sunday October 10 UsedSpaceGB    : 562.53
+
+
+VMName                           : DP-HANA-Cockpit-6lDc
+TotalSpaceGB                     : 112
+ProvisionedSpaceGB               : 144.09
+UsedSpaceGB                      : 88.33
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 88.32
+Thursday October 14 UsedSpaceGB  : 88.32
+Wednesday October 13 UsedSpaceGB : 88.31
+Tuesday October 12 UsedSpaceGB   : 88.28
+Monday October 11 UsedSpaceGB    : 88.28
+Sunday October 10 UsedSpaceGB    : 88.29
+
+
+VMName                           : Alfa-DAXDB-7Qts
+TotalSpaceGB                     : 1750
+ProvisionedSpaceGB               : 2395.50
+UsedSpaceGB                      : 907.89
+UsageDifferenceGB                : -10
+Friday October 15 UsedSpaceGB    : 917.75
+Thursday October 14 UsedSpaceGB  : 914.05
+Wednesday October 13 UsedSpaceGB : 848.09
+Tuesday October 12 UsedSpaceGB   : 823.38
+Monday October 11 UsedSpaceGB    : 807.76
+Sunday October 10 UsedSpaceGB    : 807.34
+
+
+VMName                           : Future-ERP-01-mj5z
+TotalSpaceGB                     : 880
+ProvisionedSpaceGB               : 896.20
+UsedSpaceGB                      : 14.27
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 14.27
+Thursday October 14 UsedSpaceGB  : 14.27
+Wednesday October 13 UsedSpaceGB : 14.27
+Tuesday October 12 UsedSpaceGB   : 14.27
+Monday October 11 UsedSpaceGB    : 14.27
+Sunday October 10 UsedSpaceGB    : 14.27
+
+
+VMName                           : GlobalTech-Ubu-SAVs
+TotalSpaceGB                     : 400
+ProvisionedSpaceGB               : 408.09
+UsedSpaceGB                      : 35.47
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 35.46
+Thursday October 14 UsedSpaceGB  : 35.45
+Wednesday October 13 UsedSpaceGB : 35.28
+Tuesday October 12 UsedSpaceGB   : 35.15
+Monday October 11 UsedSpaceGB    : 34.91
+Sunday October 10 UsedSpaceGB    : 36.19
+
+
+VMName                           : Demo-Ikjw
+TotalSpaceGB                     : 250
+ProvisionedSpaceGB               : 266.10
+UsedSpaceGB                      : 33.44
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 33.46
+Thursday October 14 UsedSpaceGB  : 33.45
+Wednesday October 13 UsedSpaceGB : 33.44
+Tuesday October 12 UsedSpaceGB   : 33.53
+Monday October 11 UsedSpaceGB    : 33.34
+Sunday October 10 UsedSpaceGB    : 33.38
+
+
+VMName                           : DP-Business-Int-h9iA
+TotalSpaceGB                     : 464
+ProvisionedSpaceGB               : 496.09
+UsedSpaceGB                      : 113.73
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 113.68
+Thursday October 14 UsedSpaceGB  : 113.63
+Wednesday October 13 UsedSpaceGB : 114.29
+Tuesday October 12 UsedSpaceGB   : 114.38
+Monday October 11 UsedSpaceGB    : 114.42
+Sunday October 10 UsedSpaceGB    : 114.48
+
+
+VMName                           : Ramy-ubuntu-bWhh
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 232.09
+UsedSpaceGB                      : 49.64
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 49.51
+Thursday October 14 UsedSpaceGB  : 49.48
+Wednesday October 13 UsedSpaceGB : 49.00
+Tuesday October 12 UsedSpaceGB   : 48.78
+Monday October 11 UsedSpaceGB    : 48.60
+Sunday October 10 UsedSpaceGB    : 50.03
+
+
+VMName                           : Egypt-Cables-5001-sRfn
+TotalSpaceGB                     : 340
+ProvisionedSpaceGB               : 372.09
+UsedSpaceGB                      : 45.20
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 45.18
+Thursday October 14 UsedSpaceGB  : 45.17
+Wednesday October 13 UsedSpaceGB : 45.12
+Tuesday October 12 UsedSpaceGB   : 45.00
+Monday October 11 UsedSpaceGB    : 45.89
+Sunday October 10 UsedSpaceGB    : 46.09
+
+
+VMName                           : IGI-SAPROUTER-zWKm
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 108.08
+UsedSpaceGB                      : 23.06
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 23.06
+Thursday October 14 UsedSpaceGB  : 23.06
+Wednesday October 13 UsedSpaceGB : 23.06
+Tuesday October 12 UsedSpaceGB   : 23.07
+Monday October 11 UsedSpaceGB    : 23.07
+Sunday October 10 UsedSpaceGB    : 23.08
+
+
+VMName                           : concrete-VPS2-0oEV
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 231.20
+UsedSpaceGB                      : 35.18
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 35.16
+Thursday October 14 UsedSpaceGB  : 35.17
+Wednesday October 13 UsedSpaceGB : 35.16
+Tuesday October 12 UsedSpaceGB   : 35.16
+Monday October 11 UsedSpaceGB    : 35.16
+Sunday October 10 UsedSpaceGB    : 35.12
+
+
+VMName                           : solex-S4-HANA-R5OJ
+TotalSpaceGB                     : 974
+ProvisionedSpaceGB               : 1214.21
+UsedSpaceGB                      : 633.36
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 633.36
+Thursday October 14 UsedSpaceGB  : 633.36
+Wednesday October 13 UsedSpaceGB : 633.36
+Tuesday October 12 UsedSpaceGB   : 633.36
+Monday October 11 UsedSpaceGB    : 633.36
+Sunday October 10 UsedSpaceGB    : 633.36
+
+
+VMName                           : Alfa-Test 10 Days-16Sk
+TotalSpaceGB                     : 580
+ProvisionedSpaceGB               : 1068.72
+UsedSpaceGB                      : 934.77
+UsageDifferenceGB                : -28
+Friday October 15 UsedSpaceGB    : 963.28
+Thursday October 14 UsedSpaceGB  : 961.31
+Wednesday October 13 UsedSpaceGB : 957.10
+Tuesday October 12 UsedSpaceGB   : 956.99
+Monday October 11 UsedSpaceGB    : 912.60
+Sunday October 10 UsedSpaceGB    : 947.00
+
+
+VMName                           : LEADERS-SUNRISE-QrlC
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 516.09
+UsedSpaceGB                      : 59.42
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 59.42
+Thursday October 14 UsedSpaceGB  : 59.44
+Wednesday October 13 UsedSpaceGB : 57.93
+Tuesday October 12 UsedSpaceGB   : 57.92
+Monday October 11 UsedSpaceGB    : 57.92
+Sunday October 10 UsedSpaceGB    : 57.90
+
+
+VMName                           : Developers-VM7-kKia
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 108.09
+UsedSpaceGB                      : 17.56
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 17.56
+Thursday October 14 UsedSpaceGB  : 17.56
+Wednesday October 13 UsedSpaceGB : 17.56
+Tuesday October 12 UsedSpaceGB   : 17.55
+Monday October 11 UsedSpaceGB    : 17.55
+Sunday October 10 UsedSpaceGB    : 17.55
+
+
+VMName                           : IGI-ECCDEV-J2tv
+TotalSpaceGB                     : 550
+ProvisionedSpaceGB               : 566.10
+UsedSpaceGB                      : 63.79
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 63.79
+Thursday October 14 UsedSpaceGB  : 63.79
+Wednesday October 13 UsedSpaceGB : 63.79
+Tuesday October 12 UsedSpaceGB   : 63.79
+Monday October 11 UsedSpaceGB    : 63.78
+Sunday October 10 UsedSpaceGB    : 63.78
+
+
+VMName                           : adobe-document-2gal
+TotalSpaceGB                     : 178
+ProvisionedSpaceGB               : 202.09
+UsedSpaceGB                      : 101.13
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 101.13
+Thursday October 14 UsedSpaceGB  : 101.13
+Wednesday October 13 UsedSpaceGB : 101.12
+Tuesday October 12 UsedSpaceGB   : 101.12
+Monday October 11 UsedSpaceGB    : 101.12
+Sunday October 10 UsedSpaceGB    : 101.12
+
+
+VMName                           : ser19-DbcF
+TotalSpaceGB                     : 800
+ProvisionedSpaceGB               : 808.09
+UsedSpaceGB                      : 78.15
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 78.14
+Thursday October 14 UsedSpaceGB  : 78.21
+Wednesday October 13 UsedSpaceGB : 78.34
+Tuesday October 12 UsedSpaceGB   : 78.34
+Monday October 11 UsedSpaceGB    : 78.81
+Sunday October 10 UsedSpaceGB    : 78.82
+
+
+VMName                           : Alfa-Backup-us3m
+TotalSpaceGB                     : 2128
+ProvisionedSpaceGB               : 2141.90
+UsedSpaceGB                      : 1877.16
+UsageDifferenceGB                : 60
+Friday October 15 UsedSpaceGB    : 1817.46
+Thursday October 14 UsedSpaceGB  : 1721.48
+Wednesday October 13 UsedSpaceGB : 1711.80
+Tuesday October 12 UsedSpaceGB   : 1632.18
+Monday October 11 UsedSpaceGB    : 1749.28
+Sunday October 10 UsedSpaceGB    : 1682.56
+
+
+VMName                           : Gabr-VM-OhJC
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 216.09
+UsedSpaceGB                      : 99.79
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 99.79
+Thursday October 14 UsedSpaceGB  : 99.79
+Wednesday October 13 UsedSpaceGB : 99.79
+Tuesday October 12 UsedSpaceGB   : 99.79
+Monday October 11 UsedSpaceGB    : 99.79
+Sunday October 10 UsedSpaceGB    : 99.79
+
+
+VMName                           : solex-solman7-2-NzAy
+TotalSpaceGB                     : 600
+ProvisionedSpaceGB               : 664.10
+UsedSpaceGB                      : 475.03
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 475.01
+Thursday October 14 UsedSpaceGB  : 475.13
+Wednesday October 13 UsedSpaceGB : 474.33
+Tuesday October 12 UsedSpaceGB   : 474.27
+Monday October 11 UsedSpaceGB    : 474.25
+Sunday October 10 UsedSpaceGB    : 474.26
+
+
+VMName                           : Hamd-RootCA-M8aT
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 516.09
+UsedSpaceGB                      : 55.35
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 55.38
+Thursday October 14 UsedSpaceGB  : 55.38
+Wednesday October 13 UsedSpaceGB : 55.46
+Tuesday October 12 UsedSpaceGB   : 55.66
+Monday October 11 UsedSpaceGB    : 55.66
+Sunday October 10 UsedSpaceGB    : 55.69
+
+
+VMName                           : Solex-Solman2-4znd
+TotalSpaceGB                     : 400
+ProvisionedSpaceGB               : 830.05
+UsedSpaceGB                      : 781.38
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 781.21
+Thursday October 14 UsedSpaceGB  : 781.03
+Wednesday October 13 UsedSpaceGB : 780.77
+Tuesday October 12 UsedSpaceGB   : 780.66
+Monday October 11 UsedSpaceGB    : 780.38
+Sunday October 10 UsedSpaceGB    : 780.22
+
+
+VMName                           : Family-Corp-RDP-7wzY
+TotalSpaceGB                     : 280
+ProvisionedSpaceGB               : 302.80
+UsedSpaceGB                      : 193.42
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 193.42
+Thursday October 14 UsedSpaceGB  : 193.42
+Wednesday October 13 UsedSpaceGB : 193.42
+Tuesday October 12 UsedSpaceGB   : 193.26
+Monday October 11 UsedSpaceGB    : 193.25
+Sunday October 10 UsedSpaceGB    : 193.25
+
+
+VMName                           : Family-Corp-ERP-QAS-jG26
+TotalSpaceGB                     : 174
+ProvisionedSpaceGB               : 198.09
+UsedSpaceGB                      : 36.33
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 36.33
+Thursday October 14 UsedSpaceGB  : 36.32
+Wednesday October 13 UsedSpaceGB : 36.32
+Tuesday October 12 UsedSpaceGB   : 36.31
+Monday October 11 UsedSpaceGB    : 36.30
+Sunday October 10 UsedSpaceGB    : 36.31
+
+
+VMName                           : Family-Odoo-Mfv6
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 108.09
+UsedSpaceGB                      : 28.99
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 28.80
+Thursday October 14 UsedSpaceGB  : 28.78
+Wednesday October 13 UsedSpaceGB : 28.48
+Tuesday October 12 UsedSpaceGB   : 28.02
+Monday October 11 UsedSpaceGB    : 27.89
+Sunday October 10 UsedSpaceGB    : 29.66
+
+
+VMName                           : vcenter1-qSqL
+TotalSpaceGB                     : 128
+ProvisionedSpaceGB               : 132.19
+UsedSpaceGB                      : 128.00
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 128.00
+Thursday October 14 UsedSpaceGB  : 128.00
+Wednesday October 13 UsedSpaceGB : 128.00
+Tuesday October 12 UsedSpaceGB   : 128.00
+Monday October 11 UsedSpaceGB    : 128.00
+Sunday October 10 UsedSpaceGB    : 128.00
+
+
+VMName                           : Developer-VM4-4Uso
+TotalSpaceGB                     : 160
+ProvisionedSpaceGB               : 168.09
+UsedSpaceGB                      : 21.38
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 21.38
+Thursday October 14 UsedSpaceGB  : 21.47
+Wednesday October 13 UsedSpaceGB : 21.69
+Tuesday October 12 UsedSpaceGB   : 21.70
+Monday October 11 UsedSpaceGB    : 21.80
+Sunday October 10 UsedSpaceGB    : 21.76
+
+
+VMName                           : Exchange-02-yzzQ
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 232.09
+UsedSpaceGB                      : 62.36
+UsageDifferenceGB                : 62
+Friday October 15 UsedSpaceGB    : 
+Thursday October 14 UsedSpaceGB  : 
+Wednesday October 13 UsedSpaceGB : 
+Tuesday October 12 UsedSpaceGB   : 
+Monday October 11 UsedSpaceGB    : 
+Sunday October 10 UsedSpaceGB    : 
+
+
+VMName                           : ElRabehmachine1-ysH2
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 216.20
+UsedSpaceGB                      : 50.97
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 50.97
+Thursday October 14 UsedSpaceGB  : 50.97
+Wednesday October 13 UsedSpaceGB : 51.21
+Tuesday October 12 UsedSpaceGB   : 51.21
+Monday October 11 UsedSpaceGB    : 51.21
+Sunday October 10 UsedSpaceGB    : 51.20
+
+
+VMName                           : WP-DS-Redis-a3pa
+TotalSpaceGB                     : 30
+ProvisionedSpaceGB               : 38.20
+UsedSpaceGB                      : 13.11
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 13.11
+Thursday October 14 UsedSpaceGB  : 13.11
+Wednesday October 13 UsedSpaceGB : 13.18
+Tuesday October 12 UsedSpaceGB   : 13.15
+Monday October 11 UsedSpaceGB    : 12.92
+Sunday October 10 UsedSpaceGB    : 16.21
+
+
+VMName                           : IGI-CRMQAS-wtml
+TotalSpaceGB                     : 550
+ProvisionedSpaceGB               : 566.09
+UsedSpaceGB                      : 388.59
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 388.59
+Thursday October 14 UsedSpaceGB  : 388.59
+Wednesday October 13 UsedSpaceGB : 388.59
+Tuesday October 12 UsedSpaceGB   : 388.59
+Monday October 11 UsedSpaceGB    : 388.59
+Sunday October 10 UsedSpaceGB    : 388.59
+
+
+VMName                           : WP-DS-MongoDB-n4jw
+TotalSpaceGB                     : 30
+ProvisionedSpaceGB               : 38.20
+UsedSpaceGB                      : 14.13
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 14.13
+Thursday October 14 UsedSpaceGB  : 14.13
+Wednesday October 13 UsedSpaceGB : 13.97
+Tuesday October 12 UsedSpaceGB   : 13.92
+Monday October 11 UsedSpaceGB    : 13.77
+Sunday October 10 UsedSpaceGB    : 17.44
+
+
+VMName                           : Concrete-1-kweI
+TotalSpaceGB                     : 150
+ProvisionedSpaceGB               : 166.09
+UsedSpaceGB                      : 36.29
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 36.26
+Thursday October 14 UsedSpaceGB  : 35.97
+Wednesday October 13 UsedSpaceGB : 35.78
+Tuesday October 12 UsedSpaceGB   : 35.56
+Monday October 11 UsedSpaceGB    : 35.31
+Sunday October 10 UsedSpaceGB    : 36.87
+
+
+VMName                           : DP-Jump-Machine-LYHf
+TotalSpaceGB                     : 400
+ProvisionedSpaceGB               : 408.09
+UsedSpaceGB                      : 156.33
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 156.34
+Thursday October 14 UsedSpaceGB  : 156.31
+Wednesday October 13 UsedSpaceGB : 156.25
+Tuesday October 12 UsedSpaceGB   : 156.15
+Monday October 11 UsedSpaceGB    : 156.12
+Sunday October 10 UsedSpaceGB    : 156.10
+
+
+VMName                           : IGI-ECCQAs-AOnk
+TotalSpaceGB                     : 550
+ProvisionedSpaceGB               : 566.10
+UsedSpaceGB                      : 296.20
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 296.19
+Thursday October 14 UsedSpaceGB  : 293.56
+Wednesday October 13 UsedSpaceGB : 293.40
+Tuesday October 12 UsedSpaceGB   : 290.46
+Monday October 11 UsedSpaceGB    : 290.39
+Sunday October 10 UsedSpaceGB    : 290.11
+
+
+VMName                           : LedersSTA-SQL01-JuYQ
+TotalSpaceGB                     : 700
+ProvisionedSpaceGB               : 1228.52
+UsedSpaceGB                      : 583.96
+UsageDifferenceGB                : 3
+Friday October 15 UsedSpaceGB    : 581.40
+Thursday October 14 UsedSpaceGB  : 581.20
+Wednesday October 13 UsedSpaceGB : 575.21
+Tuesday October 12 UsedSpaceGB   : 575.00
+Monday October 11 UsedSpaceGB    : 572.96
+Sunday October 10 UsedSpaceGB    : 569.59
+
+
+VMName                           : LEADERS-COIN+RETAIL-T2mK
+TotalSpaceGB                     : 350
+ProvisionedSpaceGB               : 366.09
+UsedSpaceGB                      : 54.96
+UsageDifferenceGB                : 16
+Friday October 15 UsedSpaceGB    : 38.82
+Thursday October 14 UsedSpaceGB  : 38.79
+Wednesday October 13 UsedSpaceGB : 38.79
+Tuesday October 12 UsedSpaceGB   : 38.79
+Monday October 11 UsedSpaceGB    : 38.79
+Sunday October 10 UsedSpaceGB    : 38.79
+
+
+VMName                           : Rentex-VM-B4AZ
+TotalSpaceGB                     : 1024
+ProvisionedSpaceGB               : 1088.21
+UsedSpaceGB                      : 38.57
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 38.57
+Thursday October 14 UsedSpaceGB  : 38.57
+Wednesday October 13 UsedSpaceGB : 38.57
+Tuesday October 12 UsedSpaceGB   : 38.57
+Monday October 11 UsedSpaceGB    : 38.57
+Sunday October 10 UsedSpaceGB    : 38.57
+
+
+VMName                           : Concrete-VPS1-zwbd
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 253.80
+UsedSpaceGB                      : 63.41
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 63.16
+Thursday October 14 UsedSpaceGB  : 62.98
+Wednesday October 13 UsedSpaceGB : 62.67
+Tuesday October 12 UsedSpaceGB   : 62.51
+Monday October 11 UsedSpaceGB    : 62.43
+Sunday October 10 UsedSpaceGB    : 63.98
+
+
+VMName                           : Leaders-STA-8-0mRF
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 216.08
+UsedSpaceGB                      : 27.33
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 27.32
+Thursday October 14 UsedSpaceGB  : 27.30
+Wednesday October 13 UsedSpaceGB : 28.17
+Tuesday October 12 UsedSpaceGB   : 28.24
+Monday October 11 UsedSpaceGB    : 28.31
+Sunday October 10 UsedSpaceGB    : 28.45
+
+
+VMName                           : ELDoha-2eTo
+TotalSpaceGB                     : 180
+ProvisionedSpaceGB               : 184.08
+UsedSpaceGB                      : 165.64
+UsageDifferenceGB                : 1
+Friday October 15 UsedSpaceGB    : 165.46
+Thursday October 14 UsedSpaceGB  : 165.43
+Wednesday October 13 UsedSpaceGB : 165.22
+Tuesday October 12 UsedSpaceGB   : 165.21
+Monday October 11 UsedSpaceGB    : 165.20
+Sunday October 10 UsedSpaceGB    : 166.70
+
+
+VMName                           : concrete-2-i4LC
+TotalSpaceGB                     : 150
+ProvisionedSpaceGB               : 166.20
+UsedSpaceGB                      : 14.37
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 14.37
+Thursday October 14 UsedSpaceGB  : 14.37
+Wednesday October 13 UsedSpaceGB : 14.37
+Tuesday October 12 UsedSpaceGB   : 14.37
+Monday October 11 UsedSpaceGB    : 14.37
+Sunday October 10 UsedSpaceGB    : 14.37
+
+
+VMName                           : Soltech-ksa-2-DT9O
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 516.09
+UsedSpaceGB                      : 70.59
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 70.59
+Thursday October 14 UsedSpaceGB  : 70.59
+Wednesday October 13 UsedSpaceGB : 70.59
+Tuesday October 12 UsedSpaceGB   : 70.59
+Monday October 11 UsedSpaceGB    : 70.59
+Sunday October 10 UsedSpaceGB    : 70.56
+
+
+VMName                           : Hamd-HAProxy-1UmZ
+TotalSpaceGB                     : 128
+ProvisionedSpaceGB               : 140.09
+UsedSpaceGB                      : 18.51
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 18.51
+Thursday October 14 UsedSpaceGB  : 18.51
+Wednesday October 13 UsedSpaceGB : 18.51
+Tuesday October 12 UsedSpaceGB   : 18.51
+Monday October 11 UsedSpaceGB    : 18.51
+Sunday October 10 UsedSpaceGB    : 18.50
+
+
+VMName                           : Alfa-Test-uCQi
+TotalSpaceGB                     : 80
+ProvisionedSpaceGB               : 84.08
+UsedSpaceGB                      : 82.37
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 82.39
+Thursday October 14 UsedSpaceGB  : 82.43
+Wednesday October 13 UsedSpaceGB : 82.50
+Tuesday October 12 UsedSpaceGB   : 82.51
+Monday October 11 UsedSpaceGB    : 82.65
+Sunday October 10 UsedSpaceGB    : 82.65
+
+
+VMName                           : HAProxy-PvxS
+TotalSpaceGB                     : 300
+ProvisionedSpaceGB               : 316.09
+UsedSpaceGB                      : 25.80
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 25.80
+Thursday October 14 UsedSpaceGB  : 25.80
+Wednesday October 13 UsedSpaceGB : 25.80
+Tuesday October 12 UsedSpaceGB   : 25.80
+Monday October 11 UsedSpaceGB    : 25.80
+Sunday October 10 UsedSpaceGB    : 25.80
+
+
+VMName                           : DC-DB-clqj
+TotalSpaceGB                     : 450
+ProvisionedSpaceGB               : 460.09
+UsedSpaceGB                      : 22.10
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 22.10
+Thursday October 14 UsedSpaceGB  : 22.24
+Wednesday October 13 UsedSpaceGB : 22.38
+Tuesday October 12 UsedSpaceGB   : 22.39
+Monday October 11 UsedSpaceGB    : 22.40
+Sunday October 10 UsedSpaceGB    : 22.41
+
+
+VMName                           : Leaders-FUTUREN-ELXx
+TotalSpaceGB                     : 200
+ProvisionedSpaceGB               : 216.08
+UsedSpaceGB                      : 28.27
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 28.25
+Thursday October 14 UsedSpaceGB  : 28.24
+Wednesday October 13 UsedSpaceGB : 29.19
+Tuesday October 12 UsedSpaceGB   : 29.26
+Monday October 11 UsedSpaceGB    : 29.34
+Sunday October 10 UsedSpaceGB    : 29.46
+
+
+VMName                           : Developer-VM2-Ddj3
+TotalSpaceGB                     : 500
+ProvisionedSpaceGB               : 508.09
+UsedSpaceGB                      : 334.08
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 334.10
+Thursday October 14 UsedSpaceGB  : 334.53
+Wednesday October 13 UsedSpaceGB : 334.30
+Tuesday October 12 UsedSpaceGB   : 334.24
+Monday October 11 UsedSpaceGB    : 334.17
+Sunday October 10 UsedSpaceGB    : 334.06
+
+
+VMName                           : Copy-Developer-VM1-rxGz-Njvp
+TotalSpaceGB                     : 260
+ProvisionedSpaceGB               : 276.09
+UsedSpaceGB                      : 173.93
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 173.78
+Thursday October 14 UsedSpaceGB  : 173.56
+Wednesday October 13 UsedSpaceGB : 173.47
+Tuesday October 12 UsedSpaceGB   : 173.27
+Monday October 11 UsedSpaceGB    : 173.08
+Sunday October 10 UsedSpaceGB    : 172.85
+
+
+VMName                           : windows-2016-JY8V
+TotalSpaceGB                     : 100
+ProvisionedSpaceGB               : 104.20
+UsedSpaceGB                      : 11.99
+UsageDifferenceGB                : 0
+Friday October 15 UsedSpaceGB    : 11.99
+Thursday October 14 UsedSpaceGB  : 11.99
+Wednesday October 13 UsedSpaceGB : 11.99
+Tuesday October 12 UsedSpaceGB   : 11.99
+Monday October 11 UsedSpaceGB    : 11.99
+Sunday October 10 UsedSpaceGB    : 11.99
+
 
 

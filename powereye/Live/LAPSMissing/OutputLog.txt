@@ -1,1 +1,7 @@
-09/29/2021 09:56:23 [*] LAPS found on all contacted hosts.
+10/17/2021 11:30:46 [!] LAPS missing on some hosts. Sending mail.
+
+ComputerName LAPSInstalled
+------------ -------------
+EU1DV9100            False
+
+

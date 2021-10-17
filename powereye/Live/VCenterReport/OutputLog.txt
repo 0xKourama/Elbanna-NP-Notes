@@ -45,6 +45,23 @@ Scope    ProxyPolicy     DefaultVIServerMode InvalidCertificateAction  DisplayDe
 Session  UseSystemProxy  Single              Ignore                    True                       3
 User                     Single              Ignore                                                
 AllUsers                                     Ignore                                                
-09/28/2021 21:53:33 [+] Report generated. Sending mail.
+
+IsConnected   : True
+Id            : /VIServer=worldposta.com\powercli@10.5.5.20:443/
+ServiceUri    : https://10.5.5.20/sdk
+SessionSecret : "ef437be746197257e01c77cc6cccadb54b03a211"
+Name          : 10.5.5.20
+Port          : 443
+SessionId     : "ef437be746197257e01c77cc6cccadb54b03a211"
+User          : WORLDPOSTA.COM\powercli
+Uid           : /VIServer=worldposta.com\powercli@10.5.5.20:443/
+Version       : 6.7.0
+Build         : 18485185
+ProductLine   : vpx
+InstanceUuid  : 9455ae5e-3f2e-4be3-b798-68d38b0c59a7
+RefCount      : 1
+ExtensionData : VMware.Vim.ServiceInstance
+
+10/16/2021 23:08:41 [+] Report generated. Sending mail.
 
 

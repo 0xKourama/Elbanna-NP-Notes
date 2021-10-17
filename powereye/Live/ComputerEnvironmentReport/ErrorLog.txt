@@ -1,8 +1,9 @@
-Send-MailMessage : Unable to connect to the remote server
-At C:\powereye\ComputerEnvironmentReport\ComputerEnvironmentReport.ps1:167 char:1
-+ Send-MailMessage @MailSettings -BodyAsHtml "$style $header $body"
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (System.Net.Mail.SmtpClient:SmtpClient) [Send-Mail 
-   Message], SmtpException
-    + FullyQualifiedErrorId : SmtpException,Microsoft.PowerShell.Commands.SendMailMessage
+Get-ADComputer : A connection to the directory on which to process the request was unavailable. 
+This is likely a transient condition.
+At C:\powereye\ComputerEnvironmentReport\ComputerEnvironmentReport.ps1:26 char:16
++ ... dServers = (Get-ADComputer -Filter * -SearchBase 'OU=OldServers,DC=Ro ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Get-ADComputer], ADException
+    + FullyQualifiedErrorId : ActiveDirectoryServer:0,Microsoft.ActiveDirectory.Management.Command 
+   s.GetADComputer
  

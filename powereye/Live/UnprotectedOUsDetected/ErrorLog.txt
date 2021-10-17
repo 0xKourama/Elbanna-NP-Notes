@@ -1,9 +1,0 @@
-A connection to the directory on which to process the request was unavailable. This is likely a transient condition.
-Send-MailMessage : Unable to connect to the remote server
-At C:\powereye\UnprotectedOUsDetected\UnprotectedOUsDetected.ps1:11 char:5
-+     Send-MailMessage @MailSettings -BodyAsHtml "$Style $Header $($Res ...
-+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (System.Net.Mail.SmtpClient:SmtpClient) [Send-Mail 
-   Message], SmtpException
-    + FullyQualifiedErrorId : SmtpException,Microsoft.PowerShell.Commands.SendMailMessage
- 

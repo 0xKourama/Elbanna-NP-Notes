@@ -244,7 +244,7 @@ ForEach-Object -Begin {'<ul>'} {if($_ -like '*:*'){ "<li><b>$($_ -replace ':',':
         }
     }
 
-    Send-MailMessage @MailSettings -BodyAsHtml "$Style $body"
+    Send-MailMessage @MailSettings -BodyAsHtml "$Style $header $body"
 }
 else{
     Write-Output "$(Get-Date) [*] No Security Event log clear(s) detected."

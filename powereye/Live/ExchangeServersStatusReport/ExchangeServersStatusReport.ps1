@@ -22,7 +22,6 @@ Import-PSSession $Session -DisableNameChecking -AllowClobber | Out-Null
 
 #1 Server Status
 
-<#
 $Header = "
 		<style>
 		TABLE {border-width: 1px; border-style: solid; border-color: black; border-collapse: collapse;}
@@ -32,166 +31,110 @@ $Header = "
 		<h2 align=""center"">Exchange Servers Status Report</h3>
 		<h4 align=""center"">Generated On $((Get-Date).ToString())</h5>
 		"
-#>
 
+$EXServers=@()
+$AllStatus=@()
+$EXServers=(Get-ExchangeServer).Name | Sort
+$smtpsettings=@{
+	To =  "Operation@Roaya.co"
+	From = "ExchangeServersStatusReport@PowerEye.Roaya.loc"
+	Subject = "Exchange Servers Status Report"
+	SmtpServer = "192.168.2.1"
+}
 $reportime = Get-Date
 
-$htmlhead = "@
-<html>
-
-<style>
-BODY{font-family: Arial; font-size: 8pt;}
-H1{font-size: 16px;}
-H2{font-size: 14px;}
-H3{font-size: 12px;}
-TABLE{border: 1px solid black; border-collapse: collapse; font-size: 8pt;}
-TH{border: 1px solid black; background: #dddddd; padding: 5px; color: #000000;}
-TD{border: 1px solid black; padding: 5px; }
-td.pass{background: #7FFF00;}
-td.warn{background: #FFE600;}
-td.fail{background: #FF0000; color: #ffffff;}
-td.info{background: #85D4FF;}
-</style>
-
-<body>
-<h1 align=""center"">Exchange Servers Status Report</h1>
-<h3 align=""center"">Generated: $reportime</h3>
-@"
+$htmlhead="<html>
+                <style>
+                BODY{font-family: Arial; font-size: 8pt;}
+                H1{font-size: 16px;}
+                H2{font-size: 14px;}
+                H3{font-size: 12px;}
+                TABLE{border: 1px solid black; border-collapse: collapse; font-size: 8pt;}
+                TH{border: 1px solid black; background: #dddddd; padding: 5px; color: #000000;}
+                TD{border: 1px solid black; padding: 5px; }
+                td.pass{background: #7FFF00;}
+                td.warn{background: #FFE600;}
+                td.fail{background: #FF0000; color: #ffffff;}
+                td.info{background: #85D4FF;}
+                </style>
+                <body>
+                <h1 align=""center"">Exchange Servers Status Report</h1>
+                <h3 align=""center"">Generated: $reportime</h3>"
 
 
-$htmltableheader = @"
-<p>
-<table>
-<tr>
-<th>Name(Online)</th>
-<th>MountedDBs</th>
-<th>CPU(%)</th>
-<th>RAM(%)</th>
-<th>LogDiskFree(%)</th>
-<th>StuckQueues</th>
-<th>StoppedServices</th>
-<th>DBBadCopy</th>
-</tr>
-"@
-
+$htmltableheader = "    <p>
+                        <table>
+                        <tr>
+                        <th>Name(Online)</th>
+						<th>MountedDBs</th>
+                        <th>CPU(%)</th>
+                        <th>RAM(%)</th>
+                        <th>LogDiskFree(%)</th>
+                        <th>StuckQueues</th>
+                        <th>StoppedServices</th>
+                        <th>DBBadCopy</th>
+                        </tr>"
 $exchangeserverreporthtmltable = $htmlhead + $htmltableheader 
 
-$AllStatus=@()
-
-Foreach ($Server in ((Get-ExchangeServer).Name | Sort)){
-
-	If((Test-Connection -ComputerName $Server -Count 1 -Quiet) -eq $false){
-        $AllStatus += New-Object -TypeName PSObject -Property @{Name=$Server; Online=$false}
-        Continue
-    }
-
-	If(Get-MailboxServer $Server -EA SilentlyContinue){
-        $mdbs = (Get-MailboxDatabaseCopyStatus -Server $Server | ?{$_.Status -eq "Mounted"}).Count
-        $StuckQueues = (Get-Queue -Server $Server -Filter {MessageCount -gt 5} -EA SilentlyContinue | ? {$_.DeliveryType -notlike "*Shadow*" -and "*Submission*"}).Count
-        $DBBadCopy=(Get-MailboxDatabaseCopyStatus -Server $Server -EA SilentlyContinue | ? {$_.Status -ne "Healthy" -and $_.Status -ne "Mounted"}).Count
-    }
-	Else{
-        $mdbs = $null
-        $StuckQueues=$null
-        $DBBadCopy=$null
-    }
-
-	$CPU = [math]::Round((Get-WmiObject -Computer $Server -class win32_processor -EA SilentlyContinue | Measure-Object -property LoadPercentage -Average).Average,0)
-
-    $OSInformation = Get-Ciminstance Win32_OperatingSystem -ComputerName $Server -EA SilentlyContinue
-
-	$RAM = [math]::Round((1- $OSInformation.FreePhysicalMemory/$OSInformation.TotalVisibleMemorySize)*100,0)
-
-    $YDriveData = Get-WmiObject -ComputerName $Server -Class Win32_logicalDisk -EA SilentlyContinue | ? {$_.DeviceID -eq "Y:"}
-
-	If($YDriveData){
-        $LogDiskFree = [math]::Round(($YDriveData.FreeSpace/$YDriveData.Size)*100,0)
-    }
-	Else{
-        $LogDiskFree = $null
-    }
-
+Foreach ($Server in $EXServers){
+	$Online=if (Test-Connection $Server -Count 1 -EA SilentlyContinue) {$true} else {$false}
+	If($Online -eq $false){$Status=New-Object -TypeName PSObject -Property @{Name=$Server; Online=$false}; $AllStatus += $Status; Continue}
+	If(Get-MailboxServer $Server -EA SilentlyContinue)
+		{$mdbs=(Get-MailboxDatabaseCopyStatus -Server $Server | ?{$_.Status -eq "Mounted"}).Count}
+		Else{$mdbs=$null}
+	$CPU=[math]::Round((Get-WmiObject -Computer $Server -class win32_processor -EA SilentlyContinue | Measure-Object -property LoadPercentage -Average).Average,0)
+	$RAM=[math]::Round((1-(Get-Ciminstance Win32_OperatingSystem -ComputerName $Server -EA SilentlyContinue).FreePhysicalMemory/(Get-Ciminstance Win32_OperatingSystem -ComputerName $Server -EA SilentlyContinue).TotalVisibleMemorySize)*100,0)
+	If(Get-WmiObject -ComputerName $Server -Class Win32_logicalDisk -EA SilentlyContinue | ? {$_.DeviceID -eq "Y:"})
+		{$LogDiskFree=[math]::Round(((Get-WmiObject -ComputerName $Server -Class Win32_logicalDisk -EA SilentlyContinue | ? {$_.DeviceID -eq "Y:"}).FreeSpace/(Get-WmiObject -ComputerName $Server -Class Win32_logicalDisk -EA SilentlyContinue | ? {$_.DeviceID -eq "Y:"}).Size)*100,0)}
+		Else {$LogDiskFree=$null}
+	If(Get-MailboxServer $Server -EA SilentlyContinue)
+		{$StuckQueues=(Get-Queue -Server $Server -Filter {MessageCount -gt 5} -EA SilentlyContinue | ? {$_.DeliveryType -notlike "*Shadow*" -and "*Submission*"}).Count}
+		Else{$StuckQueues=$null}
 	$StoppedServices=(Get-Service -ComputerName $Server -Name "MSExchange*" | ? {$_.StartType -eq "Automatic" -and $_.Status -ne "Running"}).Count
+	If(Get-MailboxServer $Server -EA SilentlyContinue)
+		{$DBBadCopy=(Get-MailboxDatabaseCopyStatus -Server $Server -EA SilentlyContinue | ? {$_.Status -ne "Healthy" -and $_.Status -ne "Mounted"}).Count}
+		Else{$DBBadCopy=$null}
+	#If((Get-MailboxServer $Server -EA SilentlyContinue).AdminDisplayVersion -like "*15.0*")
+		#{$DBBadIndex=(Get-MailboxDatabaseCopyStatus -Server $Server -EA SilentlyContinue | ? {$_.ContentIndexState -ne "Healthy"}).Count}
+		#Else{$DBBadIndex=$null}
+	$Status = New-Object -TypeName PSObject -Property @{
+														Name = $Server
+														Online = $Online
+														MountedDBs = $mdbs
+														CPU = $CPU
+														RAM = $RAM
+														LogDiskFree = $LogDiskFree
+														StuckQueues = $StuckQueues
+														StoppedServices = $StoppedServices
+														DBBadCopy = $DBBadCopy
+														#DBBadIndex = $DBBadIndex
+														}
 
-	$Status = New-Object -TypeName PSObject `
-                         -Property @{
-		                                Name = $Server
-		                                Online = $Online
-		                                MountedDBs = $mdbs
-		                                CPU = $CPU
-		                                RAM = $RAM
-		                                LogDiskFree = $LogDiskFree
-		                                StuckQueues = $StuckQueues
-		                                StoppedServices = $StoppedServices
-		                                DBBadCopy = $DBBadCopy
-	}
-
-    $htmltablerow = "<tr>"
-    if ($Status.Online -eq $false){
-        $htmltablerow += "<td class=""fail"">$($Status.Name)</td>"
-    }
-    else{
-        $htmltablerow += "<td class=""pass"">$($Status.Name)</td>"
-    }
-
-    $htmltablerow += "<td class=""pass"">$($Status.MountedDBs)</td>"
-
-    if ($Status.CPU -gt 75){
-        $htmltablerow += "<td class=""fail"">$($Status.CPU)</td>"
-    }
-    else{
-        $htmltablerow += "<td class=""pass"">$($Status.CPU)</td>"
-    }
-    if ($Status.RAM -gt 75){
-        $htmltablerow += "<td class=""fail"">$($Status.RAM)</td>"
-    }
-    else{
-        $htmltablerow += "<td class=""pass"">$($Status.RAM)</td>"
-    }
-
-    if ($Status.LogDiskFree -lt 75 -and $Status.LogDiskFree -ne $null){
-        $htmltablerow += "<td class=""fail"">$($Status.LogDiskFree)</td>"
-    }
-    else{
-        $htmltablerow += "<td class=""pass"">$($Status.LogDiskFree)</td>"
-    }
-
-    if ($Status.StuckQueues -gt 0){
-        $htmltablerow += "<td class=""fail"">$($Status.StuckQueues)</td>"
-    }
-    else{
-        $htmltablerow += "<td class=""pass"">$($Status.StuckQueues)</td>"
-    }
-
-    if ($Status.StoppedServices -gt 0){
-        $htmltablerow += "<td class=""fail"">$($Status.StoppedServices)</td>"
-    }
-    else{
-        $htmltablerow += "<td class=""pass"">$($Status.StoppedServices)</td>"
-    }
-    if ($Status.DBBadCopy -gt 0){
-        $htmltablerow += "<td class=""fail"">$($Status.DBBadCopy)</td>"
-    }
-    else{
-        $htmltablerow += "<td class=""pass"">$($Status.DBBadCopy)</td>"
-    }
-    $exchangeserverreporthtmltable = $exchangeserverreporthtmltable + $htmltablerow
+        $htmltablerow = "<tr>"
+        if ($Status.Online -eq $false){$htmltablerow += "<td class=""fail"">$($Status.Name)</td>"}
+            else{$htmltablerow += "<td class=""pass"">$($Status.Name)</td>"}
+        $htmltablerow += "<td class=""pass"">$($Status.MountedDBs)</td>"
+        if ($Status.CPU -gt 75){$htmltablerow += "<td class=""fail"">$($Status.CPU)</td>"}
+            else{$htmltablerow += "<td class=""pass"">$($Status.CPU)</td>"}
+        if ($Status.RAM -gt 75){$htmltablerow += "<td class=""fail"">$($Status.RAM)</td>"}
+            else{$htmltablerow += "<td class=""pass"">$($Status.RAM)</td>"}
+        if ($Status.LogDiskFree -lt 75 -and $Status.LogDiskFree -ne $null){$htmltablerow += "<td class=""fail"">$($Status.LogDiskFree)</td>"}
+            else{$htmltablerow += "<td class=""pass"">$($Status.LogDiskFree)</td>"}
+        if ($Status.StuckQueues -gt 0){$htmltablerow += "<td class=""fail"">$($Status.StuckQueues)</td>"}
+            else{$htmltablerow += "<td class=""pass"">$($Status.StuckQueues)</td>"}
+        if ($Status.StoppedServices -gt 0){$htmltablerow += "<td class=""fail"">$($Status.StoppedServices)</td>"}
+            else{$htmltablerow += "<td class=""pass"">$($Status.StoppedServices)</td>"}
+        if ($Status.DBBadCopy -gt 0){$htmltablerow += "<td class=""fail"">$($Status.DBBadCopy)</td>"}
+            else{$htmltablerow += "<td class=""pass"">$($Status.DBBadCopy)</td>"}
+        $exchangeserverreporthtmltable = $exchangeserverreporthtmltable + $htmltablerow
 
 }
-
 $exchangeserverreporthtmltable = $exchangeserverreporthtmltable + "</table></p>"
 
 $htmltail = "</body>
 			</html>"
-
 $exchangeserverreporthtmltable = $exchangeserverreporthtmltable + $htmltail
 
-$smtpsettings=@{
-	To         = "Operation@Roaya.co"
-	From       = "ExchangeServersStatusReport@PowerEye.Roaya.loc"
-	Subject    = "Exchange Servers Status Report"
-	SmtpServer = "192.168.2.1"
-}
 
 Send-MailMessage @smtpsettings -Body $exchangeserverreporthtmltable -BodyAsHtml -Encoding ([System.Text.Encoding]::UTF8)			
 #endregion

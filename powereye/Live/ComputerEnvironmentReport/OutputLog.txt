@@ -1,18 +1,81 @@
-09/27/2021 11:55:51 [*] Sending mail
+10/16/2021 23:09:03 [*] Sending mail
 
 State   Count ComputerList                                                                         
 -----   ----- ------------                                                                         
-Online      9 FRANK-D02 | FRANK-EVENTLOG | FRANK-KBASE-01 | FRANK-VEEAM-ONE | FRANK-WSUS | Liste...
-Offline    86 CP01 | FRANK-MBX02 | FRANK-BACKUP01 | FRANK-MIGR | FRANK-TOOLS01 | WP-FRANK-F01 | ...
-NoIPV4     51 FRANK-BACKUP01 | WP-FRANK-F01 | WP-FRANK-F02 | FRANK-IDENTITY | FRANK-FEM-F02 | FR...
-           46 WP-FRANK-F01 | WP-FRANK-F02 | WIN-HKLD8797OF3 | FRANK-MS2-S21 | DIYAA-LAB | WP-LAB...
-           19 FRANK-D02 | FRANK-BACKUP01 | FRANK-TOOLS01 | DEEPSECURITY | WORLDPOSTA-VEEM | STRA...
-           16 CP01 | FRANK-MBX02 | FRANK-FEM-F02 | FRANKTESTMON | WORLD | SOLIDDBCLUSTER | FRANK...
-            2 Witness-Server | AWS-FEM-FA1                                                         
-            2 FRANK-MIGR | FRANK-IDENTITY                                                          
+Online     40 CP01 | EU1DV9100 | EU1FE3110 | EU1FE3111 | EU1FE3112 | EU1FE3113 | EU1FE9111 | EU1...
+Offline    85 FRANK-EVENTLOG | WIN-2008 | FRANK-NTBUP-MS | FRANK-BACKUP01 | WP-FRANK-MBX01 | WP-...
+NoIPV4     80 FRANK-EVENTLOG | WIN-2008 | FRANK-NTBUP-MS | FRANK-BACKUP01 | WP-FRANK-MBX01 | WP-...
+           59 FRANK-RODC-01 | WP-ROOTCA | FRANK-ADMIN01 | FRANK-REPORT01 | MMREPORT | WP-FRANK-F...
+           24 FRANK-NTBUP-MS | CP01 | FRANK-MBX02 | WP-FRANK-MBX01 | WP-ADMIN-01 | FRANK-NTBACKU...
+           24 FRANK-D02 | FRANK-ADC-01 | FRANK-PDC | FRANK-ADC-03 | FRANK-ADC-04 | FRANK-ADC-02 ...
+            3 Witness-Server | FRANK-WSUS01 | AWS-FEM-FA1                                          
+            3 FRANK-MIGR | FRANK-IDENTITY | WP-Cluster01                                           
+            2 PC2016 | DESKTOP-PC                                                                  
               MGMT-VCENTER-01                                                                      
-              DESKTOP-PC                                                                           
               AYMAN-PRIVATE                                                                        
+              WIN-2008                                                                             
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
                                                                                                    
                                                                                                    
                                                                                                    

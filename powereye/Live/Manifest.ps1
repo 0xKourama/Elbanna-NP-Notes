@@ -191,7 +191,14 @@ $Modules = @(
     [Module]@{
         Name = 'Exchange Component Reactivation'
         Enabled = $true
-        RunInterval = New-TimeSpan -Minutes 10
+        RunInterval = New-TimeSpan -Minutes 3
+        RunOnDemand = $false
+    }
+    #27 
+    [Module]@{
+        Name = 'Exchange Service Reactivation'
+        Enabled = $true
+        RunInterval = New-TimeSpan -Minutes 3
         RunOnDemand = $false
     }
 )
