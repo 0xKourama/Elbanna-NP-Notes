@@ -5955,3 +5955,18 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 2. getting #2 on 6th grade
 3. dina abdel-ghani revising grades just to get #1
 4. 
+
+# define your self:
+1.  [~] intelligent
+2.  [+] handsome
+3.  [+] polite
+4.  [~] quiet
+5.  [~] calm
+6.  [+] peaceful
+7.  [~] highly focused
+8.  [+] precise
+9.  [+] articulate
+10. [+] athletic
+11. [+] good communicator
+12. [-] extremely intense when angry
+13. [-] difficult to convince
