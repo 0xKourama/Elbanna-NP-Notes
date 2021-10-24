@@ -7,6 +7,7 @@ Function Return-OnlineComputers{
     Where-Object {$_.StatusCode -eq 0} | 
     Select-Object -ExpandProperty Address
 }
+
 Function Return-ADOnlineComputers{
     Test-Connection -ComputerName (Get-ADComputer -Filter * -Properties IPV4Address | Where-Object {$_.IPV4Address}).Name -Count 1 -AsJob |
     Receive-Job -Wait |

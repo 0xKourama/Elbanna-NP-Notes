@@ -27,9 +27,9 @@ $password = '97$p$*J5f7$#3$0DnA'
 
 foreach($Exchange_Server in $Exchange_Servers){
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange `
-                                -ConnectionUri "http://$Exchange_Server/powershell" `
-                                -Authentication Kerberos `
-                                -Credential $UserCredential
+                             -ConnectionUri "http://$Exchange_Server/powershell" `
+                             -Authentication Kerberos `
+                             -Credential $UserCredential
 
     Import-PSSession $Session -DisableNameChecking -AllowClobber | Out-Null
     if($? -eq $true){
@@ -45,7 +45,7 @@ $ExternalMailLatency = @()
 $ExternalMailsExceedingDelayThreshold = @()
 
 #region loop over mailbox servers to collect data
-Foreach($MailBox_Server in (Get-MailboxServer "*MB*" ).Name){
+Foreach($MailBox_Server in (Get-MailboxServer "EU1MB*" ).Name){
 
     $Time_Ago = (Get-Date).AddMinutes(-10)
     
@@ -96,19 +96,26 @@ Remove-PSSession -Session $Session
 #region adding results to HTML
 $InternalResult1HTML = $InternalMailLatency | ConvertTo-Html -Fragment | Out-String
 if($InternalMailsExceedingDelayThreshold){
+
     $Header2 = "<h3>Internal mails exceeding $($LatencyThresholdSeconds/60) minutes delay ($($InternalMailsExceedingDelayThreshold.count))</h3>"
+
     $InternalResult2HTML = $InternalMailsExceedingDelayThreshold | ConvertTo-Html -Fragment | Out-String
+
 }
 
 $ExternalResult1HTML = $ExternalMailLatency | ConvertTo-Html -Fragment | Out-String
+
 if($ExternalMailsExceedingDelayThreshold){
+
     $Header4 = "<h3>External mails exceeding $($LatencyThresholdSeconds/60) minutes delay ($($ExternalMailsExceedingDelayThreshold.count))</h3>"
+
     $ExternalResult2HTML = $ExternalMailsExceedingDelayThreshold | ConvertTo-Html -Fragment | Out-String
 }
 #endregion
 
 #send mails only if the configured threshold has been exceed. Either internally or externally
 if($ExternalMailsExceedingDelayThreshold -or $InternalMailsExceedingDelayThreshold){
+
     Write-Output "$(Get-Date) [!] Mail latency threshold exceeded. Sending mail."
     Write-Output $InternalMailLatency, $InternalMailsExceedingDelayThreshold, $ExternalMailLatency, $ExternalMailsExceedingDelayThreshold
 
