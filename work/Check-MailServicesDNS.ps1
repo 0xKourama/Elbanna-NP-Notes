@@ -1,10 +1,7 @@
 $services = @(
     'mail'
     'imap'
-    'mapi'
     'autodiscover'
-    'rpc'
-    'async'
 )
 ipconfig /flushdns | Out-Null
 Write-Host '[+] Local DNS Cache flushed' -ForegroundColor Green
