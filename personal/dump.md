@@ -5970,3 +5970,14 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 11. [+] good communicator
 12. [-] extremely intense when angry
 13. [-] difficult to convince
+
+# what's needed for balance?
+THINK ABOUT BALANCE
+
+# difference between strategy and tactics
+# depending on sympathy
+
+# what are sunken costs in my life?
+1. 
+
+*don't make past failed investments make you pay for the future too*
