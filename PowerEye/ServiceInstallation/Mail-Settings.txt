@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'ServiceInstallation@PowerEye.com'
-    To         = ''
-    Subject    = 'Service Installation'
-}

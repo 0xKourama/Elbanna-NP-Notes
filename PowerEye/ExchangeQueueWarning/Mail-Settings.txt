@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'ExchangeQueueWarning@PowerEye.com'
-    To         = ''
-    Subject    = 'Exchange Queue Warning'
-}

@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'LocalGroupReport@PowerEye.com'
-    To         = ''
-    Subject    = 'Local Group Report'
-}

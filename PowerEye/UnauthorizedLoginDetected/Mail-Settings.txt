@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'UnauthorizedLoginDetected@PowerEye.com'
-    To         = ''
-    Subject    = 'Unauthorized Login Detected'
-}

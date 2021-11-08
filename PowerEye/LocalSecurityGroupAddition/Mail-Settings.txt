@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'LocalSecurityGroupAddition@PowerEye.com'
-    To         = ''
-    Subject    = 'Local Security Group Addition'
-}

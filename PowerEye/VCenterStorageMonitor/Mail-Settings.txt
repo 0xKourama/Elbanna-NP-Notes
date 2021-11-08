@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'VCenterStorageMonitor@PowerEye.com'
-    To         = ''
-    Subject    = 'VCenter Storage Monitor'
-}

@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'AdminPasswordChange@PowerEye.com'
-    To         = ''
-    Subject    = 'Admin Password Change'
-}

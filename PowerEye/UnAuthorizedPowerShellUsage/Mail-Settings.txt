@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'UnAuthorizedPowerShellUsage@PowerEye.com'
-    To         = ''
-    Subject    = 'UnAuthorized PowerShell Usage'
-}
