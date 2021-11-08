@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'SessionReport@PowerEye.com'
+    To         = ''
+    Subject    = 'Session Report'
+}

@@ -1,7 +1,0 @@
-$MailSettings = @{
-    SMTPserver = '192.168.2.1'
-    From       = 'ComputerEnvironmentReport@PowerEye.Roaya.loc'
-    To         = 'Operation@Roaya.co'
-   #To         = 'MGabr@Roaya.co'
-    Subject    = 'Computer Environment Report'
-}

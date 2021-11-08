@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'InternalDomainsDNSReport@PowerEye.com'
+    To         = ''
+    Subject    = 'Internal Domains DNS Report'
+}

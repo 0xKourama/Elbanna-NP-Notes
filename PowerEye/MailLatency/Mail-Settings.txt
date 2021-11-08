@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'MailLatency@PowerEye.com'
+    To         = ''
+    Subject    = 'Mail Latency'
+}

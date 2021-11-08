@@ -1,7 +1,0 @@
-$MailSettings = @{
-    SMTPserver = '192.168.2.1'
-    From       = 'ExchangeQueueWarning@PowerEye.Roaya.loc'
-    To         = 'Operation@Roaya.co'
-   #To         = 'MGabr@roaya.co'
-    Subject    = 'Exchange Queue Warning'
-}

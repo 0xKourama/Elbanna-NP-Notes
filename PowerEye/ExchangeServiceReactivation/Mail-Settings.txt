@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'ExchangeServiceReactivation@PowerEye.com'
+    To         = ''
+    Subject    = 'Exchange Service Reactivation'
+}

@@ -1,9 +1,0 @@
-Get-ADComputer : A connection to the directory on which to process the request was unavailable. 
-This is likely a transient condition.
-At C:\powereye\ComputerEnvironmentReport\ComputerEnvironmentReport.ps1:26 char:16
-+ ... dServers = (Get-ADComputer -Filter * -SearchBase 'OU=OldServers,DC=Ro ...
-+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (:) [Get-ADComputer], ADException
-    + FullyQualifiedErrorId : ActiveDirectoryServer:0,Microsoft.ActiveDirectory.Management.Command 
-   s.GetADComputer
- 

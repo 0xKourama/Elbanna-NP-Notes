@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'SecurityEventLogCleared@PowerEye.com'
+    To         = ''
+    Subject    = 'Security Event Log Cleared'
+}

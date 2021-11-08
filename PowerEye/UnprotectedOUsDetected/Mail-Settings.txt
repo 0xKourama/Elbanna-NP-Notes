@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'UnprotectedOUsDetected@PowerEye.com'
+    To         = ''
+    Subject    = 'Unprotected OUs Detected'
+}
