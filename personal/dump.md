@@ -5981,3 +5981,8 @@ THINK ABOUT BALANCE
 1. 
 
 *don't make past failed investments make you pay for the future too*
+
+# when a man can confrant what's in him.
+1. anger
+2. sadness
+3. past memories
