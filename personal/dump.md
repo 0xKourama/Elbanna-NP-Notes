@@ -1,3 +1,16 @@
+# Job boards
+0. Wuzzuf
+1. Linkedin
+2. Indeed
+3. Naukri
+4. Careerealism
+5. Job-Hunt
+6. JobBait
+7. Careercloud
+8. GM4JH
+9. Personalbrandingblog
+10. Jibberjobber
+
 # cybersecurity books:
 1. CULT OF THE DEAD COW
 2. PRACTICAL MALWARE ANALYSIS
@@ -5969,6 +5982,8 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 10. [+] athletic
 11. [+] good communicator
 12. [-] extremely intense when angry
+	- carrying old pain
+	- mad at many things -> hatred connected to many things
 13. [-] difficult to convince
 
 # what's needed for balance?
@@ -5982,7 +5997,360 @@ THINK ABOUT BALANCE
 
 *don't make past failed investments make you pay for the future too*
 
-# when a man can confrant what's in him.
+# when a man can confront what's in him.
 1. anger
 2. sadness
 3. past memories
+
+# what's bad in starting anew?
+1. nothing; being stuck in the past is meaningless
+
+# what do you want to become?
+1. godlike level skill
+	[?] what you need that for?
+	1. earning (merit) money
+	2. respect and regard
+2. famous for that
+	1. respect
+	2. opportunity to teach
+3. independently strong ->> inner strength
+	1. i like solitude
+4. hellishly sharp ->> laser-level focus and clarity of mind
+5. highly revered and respected
+
+# on another note, what do you want?
+1. peace
+2. calm
+3. solitude or homies' company
+
+# who are the people that I would have chose?
+1. gomgom
+2. hosam
+3. hisham
+7. adham
+4. seka
+5. k yasser (most of the time)
+6. anan (debatable)
+7. ramy
+8. ramadan
+9. hoka
+
+# people I wish I could change
+
+
+# what are life's quests?
+1. get through education
+2. make a career
+3. choose a wife
+4. raise your children
+5. help them with making it into the world and building a solid character
+6. enjoy retirement
+
+32 years left for employment
+
+# what do now feel about the song: sorry not sorry?
+1. I feel I want to have had a succesful life where I just killed it (sliced the green like a lawnmower)
+2. I can relate to NAS being a person who wanted no war. someone who did stuff for the people as well as for himself.
+3. 
+
+# what are some stuff I haven't expressed?
+# rank figures of authority worst to best (most to least damage)
+- God (religion)
+- law
+- government
+- society
+- market
+- Media
+- parents
+- elders
+- managers
+- con artists
+- bullies
+
+# what are the major sources of bullshit?
+1. people
+	1. media
+	2. government
+	3. 
+
+# what makes something true?
+1. reason?
+2. backing facts
+
+# what makes an agreement fair?
+1. when none of the parties is fucked over
+
+*power and authority is common in all of them* --> because having those means you can force your will upon others
+*in many cases, one figure has way too much authority and power than he can properly control*
+*dropping the power and control levels might work better with humans due to their limited vision and ability and biases*
+
+# riffs:
+1. back in black
+2. bad to the bone
+3. Money for nothing
+4. smoke in the water
+
+# requiem of a dream
+# 
+
+# Pillars of Nosgoth:
+1. Mind
+2. Nature
+3. Time
+4. States
+5. Death
+6. Energy
+7. Dimension
+8. Conflict
+9. balance
+
+# most beautiful women
+1. catherine zeta-jones
+2. Emily addison
+3. mila kunis
+4. amber heard
+5. ANGELINA JOLIE
+6. monica belluci
+7. emma stone
+8. rachel wiesz
+9. scarlett johansen
+10. Daniela Bianchi
+
+# chapters:
+## the effect of psychological state on the body
+## Masculinity and feminitiy
+### Masculinity
+1. courage
+2. chivalry
+3. perseverance
+4. challenge
+5. responsiblity
+### femininity --> related to being
+1. tenderness
+2. closeness
+3. mercy
+4. kindness
+5. love
+6. compassion
+7. forgiveness
+## 3 ego states
+1. child
+2. parent
+3. adult
+### and who's playing which roles
+## el masha3er el tar7eya
+*when you have an amount of strange unjustified feelings towards another person*
+## lamma telbes dor mesh dorak (al taqammos al esqati)
+## identification with the agressor
+## regressing when facing difficult situations and wanting to go back to being a fetus. what the hug resembles.
+## healthy relationships are the final line of defense against psychological illnesses. semam al aman.
+## one must embrace negative emotions as well as positive ones. both sides of the coin. not doing so creates imbalance.
+## psychological holes
+## psychological boxes that people are trapped in --> what are the boxes im in?
+## group influence
+## we have virtually 0 choice of our careers --> society and social standing play the major part in this game
+## we can be defines with our output
+## the messages we get as children consitute a large part of our psyche
+## getting contradicting messages is something that could lead to schizophrenia or insanity
+## gene expression and the ability to alter one's destiny
+## dangerous relationships:
+1. with a narcissist
+2. with only a part of the other person 
+
+# what's your next chain of attack?
+1. develop the bullship filter to perfection
+2. collect all dropped lessons and improve yourself drastically from now on
+3. figure out the congnitive biases and re-scan yourself regularly for lingering bullshit
+
+**GOAL IS RID MYSELF OF ALL FORMS OF BULLSHIT**
+
+# what are the events that happened in this past day? 
+1. my newfound readiness to rebel against forms of authority (dad, management and even God)
+2. my rage at the large amount of bullshit
+3. my newfound rage at people treating each other as objects
+4. my newfound rage at religion being marginalized
+5. my newfound rage at mom losing her life to a sentence and the risks of getting divorced
+6. my newfound rage at the risk of losing something like inheritance which could be a life-saving amount of money. cutting a source of rescue is both risky ... while keeping it requires a level of accepting the cocksucker to play the father role somehow and get some his privileges
+
+# what's the nicest course of action?
+1. let things sink and smooth out and start planning swift corrective action
+
+# what your motive?
+1. correcting whatever's wrong in my scope of effect
+2. improving as a person
+3. helping the people I care about
+4. finding the woman of my dreams and living the life of my dreams <3
+	1. being a real person
+	2. accepting the other person for who she is
+	3. always treating her like the human being she is
+	4. accepting both sides of the coin (masculinity and feminity) in both myself and her
+	5. removing as much trash as possible from our relationship
+
+# scenes of my life where I wanted to be seen
+1. dreaming of beating a demon with a sword infront of the class
+2. drawing fire on my shoes in school
+3. drawing kain on my dosier
+4. loving guitar solos (solos include going out of the tune)
+5. loving heros (gladiator, my hero academia)
+6. parkour
+7. drawing warriors
+8. loving basketball
+9. showing off powershell (centro and worldposta)
+10. mahdy lolololol
+11. "I want my power to scream"
+12. showing off sekiro still
+13. 
+
+# that's right ----> talking to people means you have to read between the liness
+
+# what common between a family members?
+- blood
+- social customs
+
+# heart shapes?
+
+# points where I attacked recently?
+1. removing dad
+2. attacking religion
+3. supporting freedom of choice
+
+# me_v_12_31_2021
+1. smart (critical thinking problem-solver)
+2. sensitive
+3. seeking balance
+4. self-critical
+5. more aware
+
+# what motivates me?
+1. being treated as inferior
+2. feeling inferior
+3. having a vision or build I want to reach
+
+# what stopped me from studying infosec?
+1. you lost your balance
+2. you were off balance during the engagement
+3. you still had many open wounds (you probably still do)
+
+# Skills
+1.  Research [ ]
+2.  Time Management
+3.  Planning [ ]
+4.  Communication
+5.  Problem Solving [ ]
+6.  Leadership [ ]
+7.  Decision Making [ ]
+8.  Active Listening [ ]
+9.  Collaboration [ ]
+10. Negotiation
+11. Confidence
+12. Motivation [ ]
+13. Persuasion
+14. Flexibility [ ]
+15. Critical Thinking
+16. Conflict Resolution [ ]
+17. Emotional Intelligence
+18. Creativity
+19. Adaptability [ ]
+20. Writing
+
+# what my golden lessons in life?
+1. your challenges will almost never get resolved on their own.
+2. life as a chaotic system will test every aspect of your being. developing every aspect of yourself is mandatory if you want to stop making mistakes.
+3. communicaiton is never reliable without validation of every information exchange
+4. awarness is a necessary step before having a shot in problem-solving
+5. emotions need to be transformed into words before you have a chance to work on the messages they deliver.
+6. if you want to be correct in something, scrutinize everything ... every ... single ... thing about it.
+7. being considerate relies heavily on the number of mirror neurons you have to begin with.
+8. male and female have physical differences. the gaps can be minimized ... but expecting to always see eye to eye is probably not feasable.
+9. two things can fuck you up: 1. what you don't know 2. what you think is right .. but is in fact wrong
+10. a con artist wants two things from you: 1. be naive 2. be greedy
+
+# what doubts do I have left?
+1. what i feel i have little control over
+
+# damage done:
+1. career delay
+2. being forced to do something i haven't chosen
+3. the feeling of being tricked
+4. the downgrade to working tickets
+5. being forced to do work you're not a specialist int
+6. 
+
+# facts:
+1.  changing a person's career is forbidden
+2.  there was a voice message where I asked what to study before I joined. I was advised with security related stuff
+3.  I have the necessary qualifications to work in the security field
+4.  getting hammered with work in vodafone is detrimental
+5.  getting a good job isn't going to be easy
+6.  staying sharp is important to land a good job
+7.  vodafone's salary is nice
+8.  vodafone's WFH is nice
+9.  the cocksuckers might make things up. but it's a long shot
+10. keeping an eye on internal vacancies is important
+11. asking for light-weight work is not an option
+12. vodafone are in need of security since the latest breach
+13. AD security looks fun
+14. CIS controls are GG
+15. being sad over what has passed won't do any good. however, it's totally OK <3
+16. expecting them to honor their world is a good dream. those hopes might end up leaving you high and dry
+17. I still have way more room to grow and get stronger
+18. you like to earn what you deserve
+19. you're in blessings. getting paid that much is fucking good you greedy son of a bitch :D
+20. they are really stupid if they think it's cool to change someone's career path
+21. they are even dumber if they think you can do a good job when you're sad
+22. they haven't completely fucked you over, you do have a well-paying job
+23. you did sit 2 months on your ass almost doing nothing and got paid 34k. wipe your tears with those you motherfucker hahahahahahahaha
+24. having VOIS on your resume is good for fishing for good positions. you're now at corporate level my son
+25. literally nothing would happen to you if you never worked in cybersecurity. you would still enjoy a good life XD
+26. taking some to learn about infosec on your own and at your own pace while working on other skills wouldn't hurt either
+27. having grown man balls is good
+28. winging it in security won't work. you gotta get your fucking game up
+
+# what's the main sentence here?
+I DESERVE MY POSITION IN SECURITY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+THEY FUCKING OWE ME THAT <<<<<< your main strength is in your soft skills ... you have no fear of code and can attack complex topics without problem. but you still gotta study the fucking material you piece of shit XD
+
+# you love drum and bass and games where you evolve your character because that's your passion. you want to evolve and be wiser, faster and stronger
+
+# that deep hatred you have for mistakes ... is because your biggest pains came from mistakes
+
+# what the worst that has happened to you?
+1. living in a fucked up home
+2. 
+
+# what personailities do i have?
+1. the warrior (he has the will to take on anything ... everything)
+3. the wise man (critical and balanced ... puts things in their places)
+4. the kid (creative and shining and free and excited as hell)
+8. the tender and gentle breeze of a human (gentle enough to not kill an ant)
+2. the weakling (overwhelmed by what he cannot control .. the voice of despair)
+5. the madman (suprressed violence)
+6. the polite kid / the people pleaser (what the family and society wants to see .. keeping everything perfect)
+7. the idiot (act stupid) or the naive (when I want to indirectly get at someone stronger than me)
+
+# what brings out the child in me?
+1. cashews
+2. avocadoes
+3. dark chocolate
+4. a good movie
+5. a good game
+6. a good anime
+7. comedy
+8. outings with the homies ---> winner
+9. dancing
+10. hacking
+11. basketball ---> winner
+12. drawing
+
+# work achievements?
+1. powershell toolkit
+2. powereye
+3. proxyshell incident response
+4. microsegmentation design worldposta
+5. applocker bypass
+
+*good luck kiddo :D <3
+win or lose ... it's gonna be fun for sure XD
+having you is a luxury
+having a warm kind and almost harmless person is enough of it's own
+but you offer way more my love*
