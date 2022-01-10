@@ -6319,14 +6319,19 @@ THEY FUCKING OWE ME THAT <<<<<< your main strength is in your soft skills ... yo
 2. 
 
 # what personailities do i have?
-1. the warrior (he has the will to take on anything ... everything)
-3. the wise man (critical and balanced ... puts things in their places)
-4. the kid (creative and shining and free and excited as hell)
-8. the tender and gentle breeze of a human (gentle enough to not kill an ant)
-2. the weakling (overwhelmed by what he cannot control .. the voice of despair)
-5. the madman (suprressed violence)
-6. the polite kid / the people pleaser (what the family and society wants to see .. keeping everything perfect)
-7. the idiot (act stupid) or the naive (when I want to indirectly get at someone stronger than me)
+1. the warrior (he has the will to take on anything ... everything) --> fire and lightning --> lion/tiger/wolf
+2. the wise man (critical and balanced ... puts things in their places) --> elementless --> long hair/firm voice
+3. the kid (creative, spontaneous and shining and free and excited as hell) --> sun and water --> a jumping kid
+4. the tender and gentle breeze of a human (gentle enough to not kill an ant) --> breeze and gentle rain --> silk/ a fuzzy bear's hug
+5. the weakling (overwhelmed by what he cannot control .. the voice of despair) --> twigs
+6. the madman (suprressed violence) --> tornado --> no control over violence / mayhem
+7. the polite kid / the people pleaser (what the family and society wants to see .. keeping everything perfect) --> artificial flowers
+8. the idiot (act stupid) or the naive (when I want to indirectly get at someone stronger than me) --> ???
+9. the master/the swordsman/the samurai/the blade (laser focus) --> fully in the moment (right here right now) --> the zone --> electric --> tactical --> zero emotion --> getting the job done flawlessly --> pure excellence of execution
+10. the architect/the mastermind/the strategist --> designer --> builder
+11. the rager/the sore loser/
+12. the unaware/the looper --> the spiral --> will repeat the same mistakes until he sees them --> the ignorant --> the fox chasing its tail
+13. the obsessisive --> goes crazy when he discovers some new technique or ability and wants to try every possible new thing with it
 
 # what brings out the child in me?
 1. cashews
