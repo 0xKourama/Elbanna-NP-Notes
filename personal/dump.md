@@ -6324,14 +6324,14 @@ THEY FUCKING OWE ME THAT <<<<<< your main strength is in your soft skills ... yo
 3. the kid (creative, spontaneous and shining and free and excited as hell) --> sun and water --> a jumping kid
 4. the tender and gentle breeze of a human (gentle enough to not kill an ant) --> breeze and gentle rain --> silk/ a fuzzy bear's hug
 5. the weakling (overwhelmed by what he cannot control .. the voice of despair) --> twigs
-6. the madman (suprressed violence) --> tornado --> no control over violence / mayhem
+6. the madman / the beast (suprressed violence) --> tornado --> no control over violence / mayhem --> a killer
 7. the polite kid / the people pleaser (what the family and society wants to see .. keeping everything perfect) --> artificial flowers
 8. the idiot (act stupid) or the naive (when I want to indirectly get at someone stronger than me) --> ???
 9. the master/the swordsman/the samurai/the blade (laser focus) --> fully in the moment (right here right now) --> the zone --> electric --> tactical --> zero emotion --> getting the job done flawlessly --> pure excellence of execution
 10. the architect/the mastermind/the strategist --> designer --> builder
 11. the rager/the sore loser/
 12. the unaware/the looper --> the spiral --> will repeat the same mistakes until he sees them --> the ignorant --> the fox chasing its tail
-13. the obsessisive --> goes crazy when he discovers some new technique or ability and wants to try every possible new thing with it
+13. the obsessive --> goes crazy when he discovers some new technique or ability and wants to try every possible new thing with it
 
 # what brings out the child in me?
 1. cashews
@@ -6359,3 +6359,193 @@ win or lose ... it's gonna be fun for sure XD
 having you is a luxury
 having a warm kind and almost harmless person is enough of it's own
 but you offer way more my love*
+
+# facts:
+1. Fool me once .. shame on you ... fool me twice ... shame on me
+2. I already accepted the offer
+3. I don't know what position im going for
+4. I don't know if it's the right step or not
+5. I don't think im ready to relocate ... nor that I want to
+
+# upcoming work
+1. get a place
+2. get good at new work
+3. read "thakar sharqi monqared"
+4. read "12 rules for life"
+5. 
+
+# fears
+1. being wrong
+2. losing control
+3. losing
+4. being hurt
+5. being tricked
+6. being unaware
+7. being jobless
+8. being depressed
+9. being delusional
+
+# i want to accept my whole self without any:
+1. terms
+2. conditions
+3. comparisons
+
+# but im afraid of:
+1. being just my father
+2. being a loser
+3. being lazy
+4. being rejected
+5. having no friends
+
+# I don't give a fuck about success because:
+1. it's mostly subjective
+2. lot's of shit is society related
+3. it doesn't fill any gaps within me
+4. it's kinda hollow
+5. i've been pushed for it my entire life
+6. living with my friends that share my attitude of not giving a fuck
+7. being tired of doing shit
+8. the pleasure is a fleeting moment
+
+# it's my right to
+1. be happy
+2. choose everything about my life
+3. choose my partner
+4. be compensated for the struggle i've been through
+
+# non negotiable needs
+1. to be respected --> even if I have to get into a fight
+2. to be admired
+3. not to be harmed --> even if I have to get into a fight
+4. to have attention --> 
+5. to be accepted --> 
+6. to be treated fairly and justly --> even if I have to get into a fight
+7. to have truth told to me in things that concern me --> even if I have to interrogate
+8. to understand
+9. to be addressed directly --> even if I have to call it
+10. to be well paid
+	1. master of the english language
+	2. excellent communicator
+	3. articulate
+	4. critical
+	5. efficient problem solver
+	6. knowledgeable
+	7. resourceful
+	8. skilled
+	9. excellent writer
+	10. very organized
+	11. punctual
+	12. good looking
+	13. intelligent
+	14. straight forward
+	15. quick learner
+	16. working without support
+
+# what makes people disrepect someone1?
+1. they take him for a weakling
+2. they take him for a fool
+3. they regard him as low
+4. 
+
+*a true warrior doesn't need a sword*
+
+# what is needed to be discerning?
+1. knowing the important parts of the equation
+2. 
+
+*thinking during a fight*
+
+# what have I begged for so far?
+1. my peace & safety -> by not defending myself aggressively
+2. my success -> by not crushing work
+3. my mental health -> by asking weakly for my rights ... by begging for what's rightfully mine
+
+# what am I trying to accomplish?
+## high level
+1. improve my:
+	1. judgement
+	2. understanding
+	3. decision making
+	4. mental structure (ordering)
+	5. awareness
+	6. boundaries (a boundary is better than a sword)
+
+
+# what you want can simply be derived from what you constantly do :D
+## you want:
+1. truth
+2. wisdom
+3. to be better
+4. to be stronger
+5. to be right
+6. to be perfect
+7. to make less mistakes
+8. to be more balanced and level-headed
+
+# what's your life story? :D
+a human persisting to live a calm, beautiful and peaceful life
+
+# what were people's opinion of your sensitivity?
+1. im "Too dramatic"
+2. im "Too sensitive"
+3. im "Too much"
+4. im "Too complex"
+5. i "care too much about small things"
+
+# what was the effect
+1. me suppressing my voice
+2. having too intricate needs made them fulfillable by only myself
+
+# what interesting about me?
+1. I know how to hack a computer
+
+# my observed behaviour?
+1. likes one on one talks
+2. like bossing in MMOs
+3. likes epic music
+4. doesn't like mixing with shallow people
+5. keeps to himself most of the time
+6. likes psychology
+7. likes warriors
+8. likes big time specially Katanas
+8. likes grinding and developing
+9. likes aritifical intelligence
+10. thinks about God a LOT
+11. likes vampires
+12. likes beauty and elegance
+13. likes perfection
+14. very quiet
+15. hungers for knowledge and understanding
+16. likes electric guitar solos
+17. loves mastery and skill
+18. loves righteous judgement
+19. likes science fiction
+20. likes basketball and its legends
+21. doesn't like being with the masses
+22. likes standup comedians: chris rock, dave chapelle, kevin hart, bill bur, George carlin, 
+23. likes daigo
+24. likes soloing challenges
+25. loves drum and bass
+26. loves chinese serene music
+27. loves masters and sages
+28. loves insights, epiphanies and dreams of reaching ultimate wisdom
+29. loves comebacks
+30. used to lie a lot to make himself interesting in school
+31. loved martial arts tricking
+32. loved spinning staffs
+33. farmed a lot in games and came out to finish the game late
+34. hates to struggle ... likes smoothness
+35. serious .. didn't like jokes much
+
+# keywords
+1. project alpha
+2. omega
+3. writing a cool "a7a" on desks
+4. writing name on desks
+
+
+*every day, a weakness inside me dies.
+And, one day, there will be none and I will have my peace uninterrupted.
+That peace will remain. Or else, all the strength I have ... will find a target.*
+
+*when our hero has steeled his resolve and have decided to finally do away with all the emotional burdens that plagued him*
