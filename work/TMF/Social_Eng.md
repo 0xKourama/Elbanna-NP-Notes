@@ -1,0 +1,25 @@
+Pretexting is a type of social engineering attack that involves a situation, or pretext, created by an attacker in order to lure a victim into a vulnerable situation and to trick them into giving private information, specifically information that the victim would typically not give outside the context of the pretext.[1] In its history, pretexting has been described as the first stage of social engineering, and has been used by the FBI to aid in investigations.[2] A specific example of pretexting is reverse social engineering, in which the attacker tricks the victim into contacting the attacker first.
+
+A reason for pretexting's prevalence among social engineering attacks is its reliance on manipulating the human mind in order to gain access to the information the attacker wants, versus having to hack a technological system. When looking for victims, attackers can watch out for a variety of characteristics, such as ability to trust, low perception of threat, response to authority, and susceptibility to react with fear or excitement in different situations.[3][4] Throughout history, pretexting attacks have increased in complexity, having evolved from manipulating operators over the phone in the 1900s to the Hewlett Packard scandal in the 2000s, which involved the use of social security numbers, phones, and banks.[5] Current education frameworks on social engineering are used in organizations, although researchers in academia have suggested possible improvements to those frameworks.[6]
+
+Social engineering
+Social engineering is a psychological manipulation tactic that leads to the unwilling or unknowing response of the target/victim.[7] It is one of the top information security threats in the modern world, affecting organizations, business management, and industries.[7] Social engineering attacks are considered difficult to prevent due to its root in psychological manipulation.[8] These attacks can also reach a broader scale. In other security attacks, a company that holds customer data might be breached. With social engineering attacks, both the company (specifically workers within the company) and the customer directly are susceptible to being targeted.[8]
+
+An example would be in the banking industry, where not only bank employees can be attacked, but the customers as well. Social engineering culprits directly target customers and/or employees to work around trying to hack a purely technological system and exploit human vulnerabilities.[8]
+
+Though its definition in relation to cybersecurity has been skewed across different literature, a common theme is that social engineering (in cybersecurity) exploits human vulnerabilities in order to breach entities such as computers and information technology.[2]
+
+Social engineering has little literature and research done on it currently. However, a main part of the methodology when researching social engineering is to set up a made-up pretext. When assessing which social engineering attacks are the most dangerous or harmful, (ie. phishing, vishing, water-holing), the type of pretext is a largely insignificant factor, seeing as some attacks can have multiple pretexts. Thus, pretexting itself is widely used, not just as its own attack, but as a component of others.[9]
+
+
+# Ability to trust
+Trustworthiness goes along with likability, as typically the more someone is liked, the more they are trusted.[14] Similarly, when trust is established between the social engineer (the attacker) and the victim, credibility is also established. Thus, it is easier for the victim to divulge personal information to the attacker if the victim is more easily able to trust.[4]
+
+# Susceptibility to react
+How easily a person reacts to events and to what degree can be used in a social engineer's favor. Particularly, emotions like excitement and fear are often used to persuade people to divulge information. For example, a pretext could be established wherein the social engineer teases an exciting prize for the victim if they agree to give the social engineer their banking information. The feeling of excitement can be used to lure the victim into the pretext and persuade them to give the attacker the information being sought after.[14]
+
+# Low perception of threat
+Despite understanding that threats exist when doing anything online, most people will perform actions that are against this, such as clicking on random links or accepting unknown friend requests.[14] This is due to a person perceiving the action as having a low threat or negative consequence. This lack of fear/threat, despite an awareness of its presence, is another reason why social engineering attacks, especially pretexting, are prevalent.[15]
+
+# Response to authority
+If the victim is submissive and compliant, then an attacker is more likely to be successful in the attack if a pretext is set where the victim thinks the attacker is posed as some type of authoritative figure.[14]
