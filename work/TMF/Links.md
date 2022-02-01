@@ -6,3 +6,5 @@ what is SocNet
 
 
 https://www.mcafee.com/enterprise/en-us/security-awareness/cybersecurity/cybersecurity-policies.html#overview
+
+https://www.sans.org/information-security-policy/?per-page=100
