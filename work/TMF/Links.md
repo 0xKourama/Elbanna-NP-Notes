@@ -3,3 +3,6 @@ https://www.sciencedirect.com/topics/economics-econometrics-and-finance/vulnerab
 
 
 what is SocNet
+
+
+https://www.mcafee.com/enterprise/en-us/security-awareness/cybersecurity/cybersecurity-policies.html#overview
