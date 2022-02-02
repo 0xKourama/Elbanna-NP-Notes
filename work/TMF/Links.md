@@ -8,3 +8,7 @@ what is SocNet
 https://www.mcafee.com/enterprise/en-us/security-awareness/cybersecurity/cybersecurity-policies.html#overview
 
 https://www.sans.org/information-security-policy/?per-page=100
+
+what does a process contribute to the business?
+
+what's the importance of business processes?
