@@ -7,14 +7,13 @@
 	- IP addresses, network ranges, or domain names
 	- Cloud instances? like AWS?
 2. what's allowed? and what's not?
-3. review past threats and vulnerabilities. has there been a previous internal penetration test?
-4. timing. are there any upgrades or project implementations taking place?
+3. timing. are there any upgrades or project implementations taking place?
 	- what the preferred time to conduct the testing?
 		1. During business hours?
 		2. After business hours?
 		3. On the weekends?
-5. list of contacts for: downtime, critical vuln
-6. do you prefer testing identification and response? Purple team exercise?
+4. list of contacts for: downtime, critical vuln
+5. do you prefer testing identification and response? Purple team exercise?
 	- Ability to detect and respond to
 	 	1. information gathering
 		2. foot printing
@@ -22,7 +21,7 @@
 		4. infiltration (attacks)
 		5. data aggregation
 		6. data ex-filtration
-7. In the case that a system is penetrated, how should the testing team proceed?
+6. In the case that a system is penetrated, how should the testing team proceed?
 	1. Perform a local vulnerability assessment on the compromised machine?
 	2. Attempt to gain the highest privileges (root on Unix machines, SYSTEM or Administrator on Windows machines) on the compromised machine?
 	3. Perform no, minimal, dictionary, or exhaustive password attacks against local password hashes obtained (for example, /etc/shadow on Unix machines)?
