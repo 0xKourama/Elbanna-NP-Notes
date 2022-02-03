@@ -18,4 +18,4 @@ Open source intelligence (OSINT) is a form of intelligence collection management
 ## Why do it
 We perform Open Source Intelligence gathering to determine various entry points into an organization. These entry points can be physical, electronic, and/or human. Many companies fail to take into account what information about themselves they place in public and how this information can be used by a determined attacker. On top of that many employees fail to take into account what information they place about themselves in public and how that information can be used to to attack them or their employer.
 
-http://www.pentest-standard.org/index.php/Intelligence_Gathering @ Why do it
+http://www.pentest-standard.org/index.php/Intelligence_Gathering @ DNS Bruteforce
