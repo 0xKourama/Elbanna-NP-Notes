@@ -122,6 +122,8 @@ Defined as:
 
 # 18. irrationality
 
+# 19. probing
+
 ## In a certain subject, there are:
 1. objects
 2. relationships
@@ -152,3 +154,5 @@ But, if you didn't have the manual, you're now tasked with creating that manual 
 
 # what is needed to be discerning?
 1. knowing the important parts of the equation
+
+*mistakes show us the lack in our knowledge*
