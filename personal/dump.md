@@ -6549,3 +6549,5 @@ And, one day, there will be none and I will have my peace uninterrupted.
 That peace will remain. Or else, all the strength I have ... will find a target.*
 
 *when our hero has steeled his resolve and have decided to finally do away with all the emotional burdens that plagued him*
+
+# zit covered, hormone addled low stakes ass world
