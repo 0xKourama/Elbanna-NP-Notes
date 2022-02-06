@@ -1,3 +1,7 @@
+# Happiness Homework
+1. SAT: movie
+2. SUN: Anime
+
 # Job boards
 0. Wuzzuf
 1. Linkedin
@@ -6543,7 +6547,6 @@ a human persisting to live a calm, beautiful and peaceful life
 3. writing a cool "a7a" on desks
 4. writing name on desks
 
-
 *every day, a weakness inside me dies.
 And, one day, there will be none and I will have my peace uninterrupted.
 That peace will remain. Or else, all the strength I have ... will find a target.*
@@ -6551,3 +6554,7 @@ That peace will remain. Or else, all the strength I have ... will find a target.
 *when our hero has steeled his resolve and have decided to finally do away with all the emotional burdens that plagued him*
 
 # zit covered, hormone addled low stakes ass world
+
+*why are you so determined to blame someone?*
+
+*list the shit you've learned and the fallcies you've uncovered on your own and what life taught you*

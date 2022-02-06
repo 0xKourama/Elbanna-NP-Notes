@@ -156,3 +156,5 @@ But, if you didn't have the manual, you're now tasked with creating that manual 
 1. knowing the important parts of the equation
 
 *mistakes show us the lack in our knowledge*
+
+# a master holds an original copy of the entire field of knowledge. with every object completely uncovered when it comes to its attributes and functions along with all the correct relationships between objects. He knows the entire space with the very intricate ins and outs.
