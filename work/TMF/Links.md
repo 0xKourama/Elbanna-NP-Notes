@@ -22,6 +22,23 @@ https://book.hacktricks.xyz/pentesting/1521-1522-1529-pentesting-oracle-listener
 # AD Pentest
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#summary
 
+# Methodology
+https://book.hacktricks.xyz/windows/active-directory-methodology
+
+# Responder
+https://book.hacktricks.xyz/pentesting/pentesting-network/spoofing-llmnr-nbt-ns-mdns-dns-and-wpad-and-relay-attacks
+
+# WinRM
+https://book.hacktricks.xyz/pentesting/5985-5986-pentesting-winrm
+
+# Kerberoast
+https://book.hacktricks.xyz/windows/active-directory-methodology/kerberoast
+
+# LDAP
+https://book.hacktricks.xyz/pentesting/pentesting-ldap
+
+# AD Naming conventions
+https://activedirectorypro.com/active-directory-user-naming-convention/
 
 Book 1: The Pentest Blueprint: 1:00
 Book 2: Social Engineering - The Art fo Human Hacking: 1:58

@@ -158,3 +158,13 @@ But, if you didn't have the manual, you're now tasked with creating that manual 
 *mistakes show us the lack in our knowledge*
 
 # a master holds an original copy of the entire field of knowledge. with every object completely uncovered when it comes to its attributes and functions along with all the correct relationships between objects. He knows the entire space with the very intricate ins and outs.
+
+# list of shit the brain does:
+1. generalizes
+	- you can like, get stuck in traffic for longer that usual .. and then your brain goes into full panic mode on how it's going to be a bad day... like, what? ... you predicted the entire day off of this one incident? .. give me a break
+2. makes illogical connections between stuff
+	- no need to go on a rant on this one
+3. gets irrationally overwhelmed by normal stuff
+	- like everything is overwhelming untill we go through with it
+4. laaazy fucker who will do almost anything to regain comfort zone
+5. hungry for meaning and a grand story even when reality's events are more objectively discrete
