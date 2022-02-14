@@ -59,3 +59,7 @@ Practical Book 3: Gray Hat Python: 24:51
 Practical Book 4: Malware Analysts Cookbook: 26:40
 Practical Book 5: Inside Cyber Warfare: 35:16
 Top 3 books: 37:07 
+
+
+
+https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-exploits.html
