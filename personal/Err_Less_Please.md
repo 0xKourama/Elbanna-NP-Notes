@@ -168,3 +168,34 @@ But, if you didn't have the manual, you're now tasked with creating that manual 
 	- like everything is overwhelming untill we go through with it
 4. laaazy fucker who will do almost anything to regain comfort zone
 5. hungry for meaning and a grand story even when reality's events are more objectively discrete
+
+# The warning system of constantly worrying, and how to handle it efficiently
+# being happy while working on resolving your challenges .. because there's no valid reason to be upset when you're taking action
+
+# learning how to think and find truth and discern true from false and inspect ideas to asses their degree of validity
+
+# learning probability and build an intuitive grasp of it
+# learning your own thinking patterns and biases
+# being aware of your automatic behaviours and scripts
+## scripts are usually personal --> triggered when faced by a certain event
+
+# being aware of your black box (the area where you're inaware of your ingnorance)
+
+# the triangle
+
+# areas this books will branch into
+1. logic
+2. cognitive psychology
+3. emotional intelligence
+
+# merging heart and brain --> translating the low-level language of the heart to the high-level language of the brain
+the heart generating its fair share of emotions on a daily basis ... it's the brain's function to listen and interpret those emotions and put them into language ... expressing them so they can be transferred into actionable items or disposed of (if deemed irrational)
+
+# redeem your brilliance that has been supressed by the world pressure to be numb and oblibious
+# redeem your hunger to question and understand everything
+# redeem your right to be convinced before doing anything
+# redeen your right to know the truth and to distinguish the truth from the lies
+
+# there's something called active reading ... similar to active listening and seeing ... just because you're reading ... means you're understanding ... and just because you're understanding .. doesn't mean your understanding is deep enough or that you know the full impact of what you just learned and how far it extends and applies ... there are levels to every skill
+
+# a small piece of information can have a huge impact in the right hands
