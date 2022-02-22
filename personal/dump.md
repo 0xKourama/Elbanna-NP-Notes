@@ -1,6 +1,12 @@
-# Happiness Homework
-1. SAT: movie
-2. SUN: Anime
+# My skills and weapons
+1. Self-Expression       --> Attack, Defense & Balance Function
+2. Heart-to-brain link   --> Attack, Defense & Balance Function
+3. Deep Analysis         --> Attack, Defense & Balance Function
+4. Critical Thinking     --> Attack, Defense & Balance Function
+5. Tactical Self-Empathy --> Defense & Balance Function
+6. Targeted Questioning (What-Type questions) --> Attack, Defense & Balance Function
+7. Information Gathering (Mirroring & Labeling) --> Attack, Defense & Balance Function
+8. 
 
 # Job boards
 0. Wuzzuf
