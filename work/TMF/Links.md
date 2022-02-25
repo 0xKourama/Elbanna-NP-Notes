@@ -78,13 +78,6 @@ https://builtin.com/software-engineering-perspectives/reading-code
 https://dev.to/bazlur_rahman/-7-ways-to-improve-your-code-reading-skill-1b11
 https://www.cmsdrupal.com/blog/what-are-some-good-ways-improve-your-code-reading-skills-7-best-practice-techniques
 
-# Log4j
-
-https://tryhackme.com/room/solar
-## Log4j attack surface
-https://github.com/YfryTchsGD/Log4jAttackSurface
-
-
 # other interesting rooms
 https://tryhackme.com/room/introtoresearch
 https://tryhackme.com/room/owasptop10
