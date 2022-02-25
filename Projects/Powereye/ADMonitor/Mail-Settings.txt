@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'ADMonitor@PowerEye.com'
+    To         = ''
+    Subject    = 'AD Monitor'
+}

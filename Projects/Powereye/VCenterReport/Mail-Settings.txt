@@ -1,0 +1,15 @@
+$MailSettings1 = @{
+    SMTPserver = '192.168.2.1'
+    From       = 'VCenterReport@PowerEye.Roaya.loc'
+    To         = 'Operation@Roaya.co'
+   #To         = 'MGabr@Roaya.co'
+    Subject    = 'VCenter Report'
+}
+
+$MailSettings2 = @{
+    SMTPserver = '192.168.2.1'
+    From       = 'VCenterLocalDataStoreReport@PowerEye.Roaya.loc'
+    To         = 'Operation@Roaya.co'
+   #To         = 'MGabr@Roaya.co'
+    Subject    = 'VCenter Local DataStore Report'
+}

@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'AdminGroupChange@PowerEye.com'
+    To         = ''
+    Subject    = 'Admin Group Change'
+}

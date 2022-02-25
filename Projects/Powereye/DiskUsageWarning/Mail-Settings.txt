@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'DiskUsageWarning@PowerEye.com'
+    To         = ''
+    Subject    = 'Disk Usage Warning'
+}

@@ -1,0 +1,23 @@
+$Header1 = "<h3>Internal Mail Latency</h3>"
+$Header3 = "<h3>External Mail Latency</h3>"
+
+$Style = @"
+<style>
+th, td {
+    border: 2px solid black;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 100%;
+}
+h3{
+    color: white;
+    padding: 3px;
+    background-color: #210b9e;
+    text-align: Center;
+    border: 2px solid black;
+}
+</style>
+"@

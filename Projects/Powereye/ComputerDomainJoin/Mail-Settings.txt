@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'ComputerDomainJoin@PowerEye.com'
+    To         = ''
+    Subject    = 'Computer Domain Join'
+}

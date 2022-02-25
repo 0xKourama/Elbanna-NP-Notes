@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'LAPSMissing@PowerEye.com'
+    To         = ''
+    Subject    = 'LAPS Missing'
+}

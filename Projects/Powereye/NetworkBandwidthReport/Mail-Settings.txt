@@ -1,0 +1,6 @@
+$MailSettings = @{
+    SMTPserver = ''
+    From       = 'NetworkBandwidthReport@PowerEye.com'
+    To         = ''
+    Subject    = 'Network Bandwidth Report'
+}
