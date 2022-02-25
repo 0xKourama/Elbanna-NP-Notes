@@ -109,7 +109,7 @@ While($true){
 
         $level_progress_unit = '\' * $progress_bars_number
 
-        #Clear-Host
+        Clear-Host
         Write-Host $Random_quote -ForegroundColor DarkBlue
         Write-Host
         Write-Host " $level_progress_unit".PadRight($level_progress_unit.Length + (($upper_border.Length - 2) - $level_progress_unit.Length)) -ForegroundColor DarkBlue
