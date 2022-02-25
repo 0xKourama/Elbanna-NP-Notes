@@ -1,2 +1,0 @@
-Get-ADUser -Filter {mail -like '*@roaya.co' -and enabled -eq 'True'} -Properties Enabled, Mail |
-Select-Object Name, Mail, Enabled | Export-Csv -NoTypeInformation enabled_roaya.co_users_with_mailbox.csv

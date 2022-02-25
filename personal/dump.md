@@ -6568,3 +6568,33 @@ That peace will remain. Or else, all the strength I have ... will find a target.
 *LISTEN UP: HAPPINESS IS THE DEFAULT ... YOU'RE SAD WHEN THERE'S A PROBLEM ... AND A PROBLEM IS A CHALLENGE AND SOMETHING FOR YOU TO WORK ON ... YOU ALSO .. MIGHT AS WELL BE HAPPY WHILE WORKING ON SOLVING THAT PROBLEM ... BECAUSE YOU CAN'T DO MORE THAN YOUR BEST ANYWAY*
 
 *WHAT MADE GOD SO SURE THAT HE'S THE ONLY BEING THERE? ... IF HE HASN'T EXPERIENCED ANOTHER BIENG ... DOESN'T THAT PUT HIM IN THE SAME BOAT AS OURSELVES? ... IF WE HAVEN'T EXPERIENCED A GOD ... SO WE MAKE OURSELVES THE GODS ... WHAT DIFFERENCE IS THERE? ... WE PULL SHIT OUT OF NOTHINGNESS ... IN VIRTUAL REALITY TOO XD .. AND SHIT ARE REAL THERE ... SO ? .......... WHAT'S UP THEN?*
+
+# Pluses:
+1. clear, defined and direct
+2. curious, knowledgeable, smart, analytical and observant
+3. cooperative
+4. sweet, gentle, kind & generous
+5. mature and wise
+6. religious
+7. ambitious
+8. athletic and handsome
+9. fighter
+
+# Quirks:
+1. kinda robotic
+2. sharp and targeted
+3. single-focused
+4. different in thinking
+5. active-minded
+6. must understand as much as possible
+
+
+# Job persona
+1. guy does exactly what he's told... no more no less
+2. he speaks in points ... delivers them ... and shuts up
+3. he's an excellent communicator
+4. he knows his stuff and back it up from documentation
+5. he's a robot at work ... but a fun guy afterwards
+6. he calculates and dicusses any action before going ahead and impelmenting
+7. he doesn't work haphazzardly ... every move is done with a purpose
+8. he confirms understanding of implicit information .. to prevent any assumptions
