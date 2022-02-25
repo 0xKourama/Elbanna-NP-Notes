@@ -13,7 +13,7 @@ $skill_ranks = @(
     'Transcender'
 )
 
-Get-Content -Raw Quotes.txt | Invoke-Expression
+Get-Content -Raw Quotes.md | Invoke-Expression
 
 $Work_duration_minutes   = 30
 $Buffer_duration_minutes = 5
@@ -24,7 +24,6 @@ While($true){
     #get today and yesteday's dates
     $Today     = Get-Date
     $Yesterday = $Today.AddDays(-1)
-    $MaxChain  = Get-Content MaxChain.txt
     $Last_record = Import-Csv Tracker.csv
 
     #yesterday's record is there
@@ -110,7 +109,7 @@ While($true){
 
         $level_progress_unit = '\' * $progress_bars_number
 
-        Clear-Host
+        #Clear-Host
         Write-Host $Random_quote -ForegroundColor DarkBlue
         Write-Host
         Write-Host " $level_progress_unit".PadRight($level_progress_unit.Length + (($upper_border.Length - 2) - $level_progress_unit.Length)) -ForegroundColor DarkBlue
@@ -157,21 +156,14 @@ While($true){
     Write-Host "Prog: " -NoNewline; write-host "100%" -ForegroundColor DarkGreen
     Write-Host "Mins: $Remaining_Minutes"
     #endregion
-
-    #if max chain is exceeded, celebrate!
-    if([int]$object.Chain -gt $MaxChain){
-        Write-Host "[+] Chain record passed!! $($Object.Chain)!!" -ForegroundColor DarkGreen
-        [int]$Object.Chain > MaxChain.txt
-    }
     
     $Object | Export-Csv Tracker.csv -NoTypeInformation
 
 
-    #region commit charge, tracker, trail and max chain and push
+    #region commit charge, tracker and trail then push
     Start-Job -ScriptBlock {
         Set-Location $args[0]
         git add Tracker.csv
-        git add MaxChain.txt
         git add Trail.csv
         git commit -m 'one step closer'
         git push
