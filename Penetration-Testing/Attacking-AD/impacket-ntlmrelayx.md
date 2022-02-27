@@ -1,11 +1,14 @@
 For every connection received, this module will try to relay that connection to specified target(s) system or the original client
 
 # Main options:
-## `-h, --help            show this help message and exit`
+## `-h, --help`
+show this help message and exit
 
-## `-ts                   Adds timestamp to every logging output`
+## `-ts`
+Adds timestamp to every logging output
 
-## `-debug                Turn DEBUG output ON`
+## `-debug`
+Turn DEBUG output ON
 
 ## `-t TARGET, --target TARGET`
 Target to relay the credentials to, can be an IP, hostname or URL like domain\username@host:port (domain\username and port are optional, and don't forget to escape the '\'). If unspecified, it will relay back to the client')
