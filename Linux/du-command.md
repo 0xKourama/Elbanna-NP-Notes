@@ -1,4 +1,4 @@
-# `Usage:`
+# Usage:
 `du [OPTION]... [FILE]...`
 or:
 `du [OPTION]... --files0-from=F`
