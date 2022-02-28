@@ -10,9 +10,6 @@ what does a process contribute to the business?
 
 what's the importance of business processes?
 
-# NFS Pentest
-https://book.hacktricks.xyz/pentesting/nfs-service-pentesting
-
 # Oracle Pentest
 https://book.hacktricks.xyz/pentesting/1521-1522-1529-pentesting-oracle-listener
 
@@ -27,9 +24,6 @@ https://book.hacktricks.xyz/pentesting/pentesting-network/spoofing-llmnr-nbt-ns-
 
 # WinRM
 https://book.hacktricks.xyz/pentesting/5985-5986-pentesting-winrm
-
-# Kerberoast
-https://book.hacktricks.xyz/windows/active-directory-methodology/kerberoast
 
 # LDAP
 https://book.hacktricks.xyz/pentesting/pentesting-ldap
