@@ -8,6 +8,20 @@
 7. Information Gathering (Mirroring & Labeling) --> Attack, Defense & Balance Function
 8. 
 
+# what I love
+1. wisdom
+2. strength (ability to overcome resistance) & power (ability to overcome resistance + the speed of overcoming it)
+3. skill, grip & mastery
+4. agility
+5. respect (reverance)
+6. Guile
+7. sharpness
+8. elegance
+9. silence
+10. balance and steadyness
+11. spirit
+12. growth and maturity
+
 # Job boards
 0. Wuzzuf
 1. Linkedin

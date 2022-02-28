@@ -199,3 +199,124 @@ the heart generating its fair share of emotions on a daily basis ... it's the br
 # there's something called active reading ... similar to active listening and seeing ... just because you're reading ... means you're understanding ... and just because you're understanding .. doesn't mean your understanding is deep enough or that you know the full impact of what you just learned and how far it extends and applies ... there are levels to every skill
 
 # a small piece of information can have a huge impact in the right hands
+
+
+# Books to read
+1. Defense Mechanisms
+2. Thinking fast and slow
+
+# Interesting books
+1. the black swan book
+
+# forms of passive agression
+# to master a subject, you have to meet the full depth of its knowledge i. e. grasp its entire body of knowledge
+
+# be wary of incorrect associations and wrong attributions
+
+I noticed a crazy desire to know in some things
+
+solos have that display of skill and mastery
+
+I paid 20 years of education
+
+# how many fields I needed to learn on my own? that weren't taught by anyone?
+
+# fields I want to study
+1. psychology
+2. social psychology
+3. logic
+4. cognitive psychology
+
+# past consciousness contains instincts deeply engraved in our minds
+
+I study life sciences and people
+
+always look for contradictions to your theories to avoid confirmation bias
+
+having no theories is better than having the wrong ones
+
+# the need for meaning
+does this make our brains suckers for patterns and things that match?
+
+never ask a barber if you need a haircut or not :D he will always tell you that you do ... he makes more money that way
+
+# any thing that stops you from collecting knowledge or verifying your own is inviting failure one way or another
+
+the probe's weakness is when it's not in the right direction i. e. you're asking the wrong questions
+
+*poetry in devastating motion*
+
+measure the sources of influence in a situation ... the balance of power
+
+# faulse causalities can create dangerous illusions
+
+# a man is half himself and half his expression
+
+# Kahneman believes that two types of thinking exist: The first kind is intuitive, automatic, and direct. The second is conscious, rational, slow, **laborious**, and logical.
+
+selling point
+
+# object and relation language
+
+being passive is also a form of contribution; by doing nothing in a certain situation, you have contributed with your passivity.
+
+passive agression is still agression, but in a covert way
+
+if you're not part of the solution, you're part of the problem
+
+Fuzziness, muddyness, contradiction
+
+We attribute success to ourselves and failures to external factors. This is the self-serving bias.
+
+burn your life's flames and shine brightly. life's beautiful.
+
+see objects and relationships in their abstract form.
+
+language improved and his powers of expression are at an artistic level
+
+types of mistakes
+
+there are also attributes and functions for an object
+
+subjecting every object, attribute, function and relationship to criticism is essential 
+
+object oriented programming is solid for this
+
+"Byefdal wara el 7aga l7ad ma ygeeb agalha"
+
+reality is multi-dimensional... so a multi-dimensional attack covers all dimensions
+
+probing aims to decrease the cost of failure
+
+the importance of reason and purpose
+
+outliers
+
+if we knew everything, we wouldn't be making mistakes
+
+making mistakes is a reliable method of learning
+
+what stops us from being happy?
+
+alive, healthy, smart, successful, good job, good manager, good family
+
+people that don't see the wrong in the world... sleeping in ignorance... no hope of change with those
+
+oblivious...
+
+chemicals dictating our thoughts and actions is something wrong
+
+why I hate ugliness and unsorted shit
+
+leadership by example
+
+reasons I failed the OSCP is that I didn't really know everything I learned beforehand and didn't know what I was doing
+
+my tools: targeted questions to analyze and criticize stuff
+
+excuse = a problem or challenge that hasn't been worked on
+
+life is a non feeling non empathetic system... i have to be be ruthless to deal with something ruthless
+
+feeling welcome in the hacker community is a big boost
+some sort of approval seeking behavior 
