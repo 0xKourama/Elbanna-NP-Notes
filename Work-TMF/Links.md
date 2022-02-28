@@ -37,12 +37,8 @@ https://book.hacktricks.xyz/pentesting/pentesting-ldap
 # AD Naming conventions
 https://activedirectorypro.com/active-directory-user-naming-convention/
 
-Book 1: The Pentest Blueprint
-Book 2: Social Engineering - The Art fo Human Hacking
 Book 3: Basic Security Testing with Kali Linux
 Book 4: Metasploit Penetration Testing Cookbook
-Book 5: The Hacker Playbook
-Practical Book 1: RTFM
 Practical Book 2: BLue Team Handbook
 Practical Book 3: Gray Hat Python
 Practical Book 4: Malware Analysts Cookbook
