@@ -6,7 +6,7 @@
 5. Tactical Self-Empathy --> Defense & Balance Function
 6. Targeted Questioning (What-Type questions) --> Attack, Defense & Balance Function
 7. Information Gathering (Mirroring & Labeling) --> Attack, Defense & Balance Function
-8. 
+8. Self-Criticism 
 
 # what I love
 1. wisdom
@@ -21,6 +21,7 @@
 10. balance and steadyness
 11. spirit
 12. growth and maturity
+13. freedom
 
 # Job boards
 0. Wuzzuf
