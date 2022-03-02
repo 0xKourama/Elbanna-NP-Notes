@@ -1,5 +1,5 @@
 ﻿$List = @(
-'bastard',
+#'bastard',
 'october',
 'kotarak',
 'node',

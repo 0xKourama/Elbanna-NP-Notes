@@ -1,4 +1,4 @@
-$male_names = Get-Content C:\Users\MGabr\PowerShell\pentesting\Wordlists\Arabic-male.txt
+#$male_names = Get-Content
 #$female_names = Get-Content
 
 $common_abd_first_names = @(

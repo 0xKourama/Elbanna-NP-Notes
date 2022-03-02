@@ -1,3 +1,6 @@
+# to do
+# randomize order of hosts
+# randomize wait time between each ping
 param($Subnet)
 if(!$Subnet){Write-Host "[!] Usage: Invoke-PingSweep -Subnet 192.168.1" -ForegroundColor Yellow}
 else{

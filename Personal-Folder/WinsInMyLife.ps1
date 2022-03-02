@@ -30,16 +30,11 @@
     '[Centro] Owning the OSCP Lab network in 24 days under horrible conditions'
     '[Centro] Dropping a job with intelligence agency'
     '[Centro] Landing first Cybersecurity Job at Roaya'
-    '[Roaya] Gaining some of Moms approval'
     '[Roaya] Landing my first real-world hack (112 compromised mailboxes)'
-    '[Roaya] Quit fapping'
-    '[Roaya] Handling PaloAlto like a boss in a short time'
     '[Roaya] Exchange Zero-Day Incident Response'
     '[Roaya] Header Script'
-    '[Roaya] PowerEye Script collection'
-    '[Roaya] First vision from God'
+    '[Roaya] PowerEye'
     '[Roaya] Learning to handle toxic thoughts better'
-    '[Roaya] Landing my own apartment mortgage'
 ) | ForEach-Object {
     Write-Host -ForegroundColor Green "[+] $_"
 }
