@@ -27,12 +27,13 @@ https://dev.to/bazlur_rahman/-7-ways-to-improve-your-code-reading-skill-1b11
 https://www.cmsdrupal.com/blog/what-are-some-good-ways-improve-your-code-reading-skills-7-best-practice-techniques
 
 # other interesting rooms
+- [ ] https://tryhackme.com/room/iso27001
 - [ ] https://tryhackme.com/room/introtoresearch
 - [ ] https://tryhackme.com/room/owasptop10
 - [ ] https://tryhackme.com/room/walkinganapplication
 - [ ] https://tryhackme.com/room/ohsint
 - [ ] https://tryhackme.com/room/sakura
-- [ ] https://tryhackme.com/room/httpindetail
+- [X] https://tryhackme.com/room/httpindetail
 - [ ] https://tryhackme.com/room/contentdiscovery
 - [ ] https://tryhackme.com/room/wireshark
 - [ ] https://tryhackme.com/room/extendingyournetwork
@@ -40,7 +41,7 @@ https://www.cmsdrupal.com/blog/what-are-some-good-ways-improve-your-code-reading
 - [ ] https://tryhackme.com/room/historyofmalware
 - [X] https://tryhackme.com/room/puttingitalltogether
 - [ ] https://tryhackme.com/room/authenticationbypass
-- [ ] https://tryhackme.com/room/howwebsiteswork
+- [X] https://tryhackme.com/room/howwebsiteswork
 - [ ] https://tryhackme.com/room/ssrfqi
 - [ ] https://tryhackme.com/room/ssrf
 - [ ] https://tryhackme.com/room/vulnerabilities101
@@ -98,4 +99,4 @@ https://www.cmsdrupal.com/blog/what-are-some-good-ways-improve-your-code-reading
 - [ ] https://tryhackme.com/room/csp
 - [ ] https://tryhackme.com/room/opsec
 - [ ] https://tryhackme.com/room/forbusinessreasons
-- [ ] https://tryhackme.com/room/iso27001
+- [ ] https://tryhackme.com/room/flask

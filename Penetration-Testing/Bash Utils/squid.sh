@@ -2,7 +2,7 @@
 #usage:
 #squid.sh <CLIENT IP>
 echo "[*]    updating apt..."
-apt update
+apt update -y && apt upgrade -y
 echo "[+]    apt updated"; echo "[*]    installing squid..."
 apt -y install squid
 echo "[+]    squid installed"; echo "[*]    starting squid..."
