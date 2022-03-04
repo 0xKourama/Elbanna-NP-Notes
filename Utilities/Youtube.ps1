@@ -3,4 +3,4 @@ Param(
     $SongName,
     $Artist
 )
-d:\Downloads\youtube-dl.exe $URL -o "d:\Downloads\$Artist - $SongName.%(ext)s" -x --audio-format mp3
+d:\YoutubeDownloader\youtube-dl.exe $URL -o "d:\Downloads\$Artist - $SongName.%(ext)s" -x --audio-format mp3

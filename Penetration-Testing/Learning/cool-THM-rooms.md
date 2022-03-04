@@ -43,7 +43,7 @@ https://www.cmsdrupal.com/blog/what-are-some-good-ways-improve-your-code-reading
 - [ ] https://tryhackme.com/room/authenticationbypass
 - [X] https://tryhackme.com/room/howwebsiteswork
 - [ ] https://tryhackme.com/room/ssrfqi
-- [ ] https://tryhackme.com/room/ssrf
+- [X] https://tryhackme.com/room/ssrf
 - [ ] https://tryhackme.com/room/vulnerabilities101
 - [ ] https://tryhackme.com/room/rpwebscanning
 - [ ] https://tryhackme.com/room/btwindowsinternals
