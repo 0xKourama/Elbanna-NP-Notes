@@ -1,3 +1,14 @@
+# what is my cycle?
+1. ask all the questions
+2. learn (read, listen and watch)
+3. apply (configure -> attack -> defend)
+4. play around and mess up
+5. teach and write
+
+# what made favor network pentesting over web?
+1. owning the network has a much bigger network that owning a website
+2. owning a website can lead to owning the network though. but that needs the guy to know how to own a network.
+
 # what is a vulnerability?
 1. a mistake in software that allows the user to alter the needed function
 

@@ -1,5 +1,0 @@
-phtml
-php3
-php4
-php5
-phps    
