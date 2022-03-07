@@ -15,23 +15,6 @@
 ## 1. base passwords (used at the start)
 ## 2. common endings
 
-# they can be placed at the start, end or middle of combinations
-$Special_Chars = @(
-	'!'
-	'#'
-	'$'
-	#'%'
-	#'&'
-	#'*'
-	#'.'
-	'@'
-	#'^'
-	'_'
-    '-'
-	#'~'
-	#'+'
-)
-
 # the full name, abbreviation or first couple of letters
 $Company_Name_Variants = @(
 	#'T@M'
@@ -574,6 +557,26 @@ $Keyboard_Walks_Numbers = @(
 	'99999999'
 )
 
+
+####################################################################ENDINGS####################################################################
+
+# they can be placed at the start, end or middle of combinations
+$Special_Chars = @(
+	'!'
+	'#'
+	'$'
+	#'%'
+	#'&'
+	#'*'
+	#'.'
+	'@'
+	#'^'
+	'_'
+    '-'
+	#'~'
+	#'+'
+)
+
 # contain most birthdays of the generation + futuristic passwords
 $Years_1950_2050 = @(
 	'1950'
@@ -767,7 +770,22 @@ $Common_Endings_Symbols = @(
 $Included_Lists = @(
     $Company_Name_Variants
     $Work_related
-    $Soccer_related
+	$Department_Related
+	$Tech_Related
+	$Known_Bad_Passwords
+	$Social_Sentences
+	$Boyish_words
+	$Girly_words
+	$Music_related
+	$Car_related
+	$Soccer_related
+	$Inappropriate_words
+	$Cities
+	$Days
+	$Seasons
+	$Foods
+	$Common_Male_Names_Arabic
+	$Keyboard_Walks_Numbers
 )
 
 $List_Location = 'C:\Users\MGabr\Desktop\BannedPasswords2.txt'
