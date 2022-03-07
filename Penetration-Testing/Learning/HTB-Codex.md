@@ -323,3 +323,228 @@
 - Exploiting XML external entities
 - Exploiting Python Pickle
 - Enumerating Git Revision History
+
+# Doctor - Easy
+- Identifying a Server Side Template Injection
+- Exploiting an SSTI to get Remote Code Execution
+- Log Enumeration for Passwords
+
+# Driver - Easy
+- Hash Capturing
+- Meterpreter Exploitation
+
+# Dropzone - Medium
+- TFTP data transfer
+- Exploit Modification
+- Discovery of NTFS data streams
+
+# Dynstr - Medium
+- Command Injection
+- Dynamic DNS Exploitation
+- cp wildcard Injection
+
+# Dyplesher - Insane
+- Password Cracking
+- Minecraft Plugin Creation
+- AMQP
+- Cuberite
+
+# EarlyAccess - Hard
+- Reverse Engineering
+- PHP Filtering
+- Command Injection
+- Offline password Cracking
+- Linux capabilities
+
+# Ellingson - Hard
+- Python debugger RCE
+- ROP Exploit
+
+# Enterprise - Hard
+- Identifying Docker Instances
+- Exploiting Wordpress Plugins
+- Exploiting buffer overflows
+
+# Epsilon - Medium
+- Git Enumeration
+- Lambda Function Enumeration
+- Authentication Bypass
+- Service Side Template Injection
+- Tar Symlink Exploitation
+
+# Etheral - Insane
+- DNS data exfiltration
+- OpenSSL egress check, reverse shell, digest generation and file transfer techniques
+- Malicious shortcut testing and creation
+- Malicious MSI testing & creation
+- Enumeration and replication of AppLocker Policy
+
+# Europa - Medium
+- Enumerating SSL Certificates and Apache virtual hosts
+- Exploiting PHP's preg_replace function
+- Bypassing restrictive write permissions
+
+# Explore - Easy
+- Basic Android Exploitation
+
+# Falafel - Hard
+- Boolean-based SQL injection
+- Exploiting system file name restrictions
+- Exploiting video group permissions
+- Exploiting disk group permissions
+
+# Fatty - Insane
+- Thick Client Pentesting
+- Path Traversal
+- SQL Injection
+- Deserialization
+- Tar Exploitation
+
+# Feline - Hard
+- Session Persistence
+- Unix Socket
+- Deserialization
+
+# Fighter - Insane
+- Advanced SQL Injection technique and blacklist bypassing
+- AppLocker Bypassing
+- Command-line Obfuscation
+- Exploit selection & Modification
+- Post-Exploitation Enumeration
+- Reverse Engineering
+
+# FluJab - Hard
+- Cookie Tampering
+- Union SQL Injection
+- Openssl PRNG exploit
+
+# Flustered - Medium
+- Mounting GlusterFS Volumes
+- Identifying and exploiting SSTI Vulnerabilities
+- Accessing Azure Storage
+
+# FlixCapacitor - Medium
+- Enumerating HTTP Parameters
+- Bypassing basic WAF rules
+- Exploiting NOPASSWD
+
+# Forest - Easy
+- ASREPRoasting
+- Enumeration with BloodHound
+- DCSync Attack
+
+# Forge - Medium
+- Data exfiltration using SSRF
+- SSRF localhost filter bypass
+- Python debugging
+
+# Fortune - Insane
+- Creating HTTPS client ceritifcates
+- NFS Exploitation
+
+# ForwardSlash - Hard
+- Pivoting
+- Blind XXE
+- Bash Scripting
+- Attacking Custom Cryptography using Python
+- LUKS Image Mounting and Decryption
+
+# FriendZone - Easy
+- Module Hijacking
+
+# Frolic - Medium
+- Identifying esoteric languages
+- Identifying various encoding methods
+- Cracking password-protected ZIP files
+- Identifying vulnerable services
+- Escalating privileges through ROP SUID binaries with ret2libc
+
+# Fulcrum - Insane
+- Exploiting XML external entities
+- Exploiting File Inclusion vulnerabilities
+- Chaining exploits to increase impact
+- Bypassing restrictive Outbound Network rules
+- Advanced remote enumeration techniques
+- Multiple pivot techniques for linux and windows
+- Multiple PowerShell tricks and one-liners
+
+# Fuse - Medium
+- Printer Enumeration
+- Reset Expired Passwords
+- SeLoadDriver Privilege Abuse
+- Password Spraying
+
+# Ghoul - Hard
+- ZipSlip Vulnerabilitiy
+- Gogs RCE
+- Git reflog
+
+# Giddy - Medium
+- using xp_dirtree to leak the SQL Server service account NetNTLM hash
+- Identification of installed programs via Windows Registry Enumeration
+- Reverse Shell Payload Creation
+
+# Gobox - Medium
+- Go SSTI
+- AWS S3 Buckets
+
+# GoodGames - Easy
+- Explioting Union-Based SQL Injections
+- Hash Cracking Weak Algorithms
+- Password Reuse
+- Exploiting SSTI
+- Basics of Docker Breakouts
+
+# Grandpa - Easy
+- Identifying Known Vulnerabilities
+- Identifying Stable Processes
+- Basic Windows Privilege Escalation Techniques
+
+# Hackback - Insane
+- ASPX Tunneling
+- Named Pipe imerpsonation
+- Exploiting Arbitrary Writes
+
+# Haircut - Easy
+- HTTP-based fuzzing
+- Exploit Curl/Command Injection
+
+# Hawk - Hard
+- OpenSSL cipher experimentation, bruteforce and decryption
+- Drupal Enumeration & Exploitation
+- H2 DBMS Enumeration & Exploitation
+
+# Haystack - Easy
+- Elasticsearch Enumeration
+- Kibana File Inclusion
+- Logstash plugins & Filters
+
+# Heist - Easy
+- RID Bruteforce
+- Cracking Cisco Hashes
+- ProcDump
+
+# Help - Easy
+- GraphQL Enumeration
+- Blind SQL Injection
+
+# Helpline - Hard
+- XXE
+- Applocker Enumeration
+- Event Log Enumeration
+
+# Holiday - Insane
+- Bypassing user agent filtering
+- Bypassing XSS Filtering
+- Obtaining data with stored XSS
+- Exploiting NOPASSWD files
+- Exploiting NPM CLI
+
+# Horizontall - Easy
+- Port Forwarding
+
+# Inception - Hard
+- Identifying vulnerable services
+- Bypassing restrictive network filtering
+- Advanced local enumeration techniques
+- Enumerating services using a pivot machine
