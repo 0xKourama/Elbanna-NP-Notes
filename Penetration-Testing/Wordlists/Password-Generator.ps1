@@ -4,12 +4,13 @@
 ## 2.  using keyboard walks
 ## 3.  using special characters as separators between words or at the end
 ## 4.  using numbers as replacement for characters
-## 5.  using memorable numbers as birthdays (the person or his kids or sometimes an important event)
+## 5.  using memorable numbers as birthdays (the person or his kids or sometimes an important event) (birthday backwards)
 ## 6.  using subject-related words to match (department, technology or company name)
 ## 7.  using numbers at the end of the password
 ## 8.  using their favorite player, team, artist, band, car, food, day in their passwords
-## 9.  using a boyish, girlish, curseword or whatever is on their mind as a password (as long as it's short)
+## 9.  using a boyish, girlish, curseword or whatever is on their mind as a password (as long as it's short) (we can enumerate the namespace of their interests)
 ## 10. using their own name or nickname in the password and mangling it using 133t$p3@k
+## 11. using their pet's name
 
 # The arrays below are split into
 ## 1. base passwords (used at the start)
