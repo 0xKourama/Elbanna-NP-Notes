@@ -1,3 +1,15 @@
+# Laws Summary
+1.  Nobody believes anything bad can happen to them, until it does
+2.  Security only works if the secure way also happens to be the easy way
+3.  If you don't keep up with security fixes, your network won't be yours for long
+4.  It doesn't do much good to install security fixes on a computer that was never secured to begin with
+5.  Eternal vigilance is the price of security
+6.  There really is someone out there trying to guess your passwords
+7.  The most secure network is a well-administered one
+8.  The difficulty of defending a network is directly proportional to its complexity
+9.  Security isn't about risk avoidance; it's about risk management
+10. Technology is not a panacea
+
 # Law #1: Nobody believes anything bad can happen to them, until it does
 
 ## Many people are unwilling partners in computer security.
