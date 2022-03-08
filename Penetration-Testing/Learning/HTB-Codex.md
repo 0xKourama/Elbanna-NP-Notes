@@ -548,3 +548,465 @@
 - Bypassing restrictive network filtering
 - Advanced local enumeration techniques
 - Enumerating services using a pivot machine
+
+# Irked - Easy
+- Exploit Modification
+- Troubleshooting Metasploit Modules
+- Linux Enumeration
+
+# Jail - Insane
+- Enumerating NFS Shares
+- Exploiting Buffer Overflows
+- Escaping SELinux sandbox
+- Exploiting NOPASSWD
+- Escaping rvim
+- Generating Targeted Wordlists
+- Cracking encrypted RAR Archives
+- Exploiting weak RSA Public Keys
+
+# Intense - Hard
+- Length Extension Attack
+- SQLite Injection
+- SNMP RCE
+- Binary Exploitation
+
+# Jarvis - Medium
+- File writes through SQL Injection
+- Exploiting systemctl GTFObin
+
+# Jeeves - Medium
+- Obtaining shell through jenkins
+- Techniques for bypassing Windows Defender
+- Pass-the-hash attacks
+- Enumerating Alternate Data Streams
+
+# Jerry - Easy
+- Basic script debugging
+- Custom war file payload creation
+- SILENTTRINITY post-exploitation framework installation and usage
+
+# Intelligence - Medium
+- ADIDNS abuse
+- `ReadGMSAPssword` abuse
+- Constrained Delegation abuse
+
+# Jewel - Medium
+- Source Code Analysis
+- CVE-2020-8165 Exploitation
+- Sudo Abuse
+
+# Joker - Hard
+- Bypassing network restrictions
+- Exploiting NOPASSWD files
+- Exploiting sudoedit wildcards
+- Exploiting tar wildcards
+
+# JSON - Medium
+- Using ysoserial.net
+- dnSpy
+
+# Knife - Easy
+- Web Exploitation
+- Knife Sudo Exploitation
+
+# Kotarak - Hard
+- Exploiting Server Side Request forgery
+- Extracting data from NTDS Dumps
+- Exploiting Wget
+- Exploiting cron jobs
+- Identifyin isolated systems and containers
+
+# KryptOS - Insane
+- PDO Injection
+- Exploiting RC4 flaws
+- RCE via SQLite 3
+- Decrypting Vimcrypt files
+- Analysing RNG
+- Python eval injection
+
+# Laboratory - Easy
+- Arbitrary read file
+- Marshal cookie attack
+- SUID Exploitation
+
+# LaCasaDePapel - Easy
+- Linux inode knowledge
+- Creating client certificates
+
+# Lame - Easy
+- Identifying vulnerable services
+- Exploiting Samba
+
+# Laser - Insane
+- Printer Exploitation
+- gRPC & Protobuf
+- Race Conditions
+- SSH Redirection
+
+# Lazy - Medium
+- Padding Oracle Attack
+- Exploiting SUID Binaries
+- Using the PATH environment variable to aid in exploitation
+
+# Legacy - Easy
+- Identifying vulnerable services
+- Exploiting SMB
+
+# Lightweight - Medium
+- Passive Sniffing
+- Abusing Linux Capabilities
+
+# Love - Easy
+- Exploit Modification
+- Server side request forgery
+- Applocker policies
+- Always install everything misconfiguration
+
+# Luanne - Easy
+- Lua Code Injection
+- NetPGP and doas Abuse
+
+# Luke - Medium
+- NodeJS Enumeration
+
+# Magic - Easy
+- Basic SQL Injection
+- PHP File Upload Whitelist Bypass
+- Path Hijacking
+- SUID Abuse
+
+# Mango - Medium
+- NoSQL Injection
+- GTFOBins Abuse
+
+# Mantis - Hard
+- Enumerating SQL Server Express databases
+- Exploiting Domain Controllers and Kerberos
+
+# Minion - Insane
+- Exploiting Server Side Request Forgery
+- Exploiting blind command injection
+- Finding and reading alternate data streams
+
+# Mirai - Easy
+- Identifying an IoT device
+- Forensic file recovery
+
+# Mischief - Insane
+- Familiarity with SNMP OIDs
+- IPv6 decimal to hexadecimal encoding techniques
+- Establishment of IPv6 reverse shell
+
+# Monitors - Hard
+- Local File Inclusion
+- Abusing MySQL Misconfigurations
+- Exploit Modification
+- Java Deserialization
+- CAP_SYS_MODULE Docker Capability
+
+# Monteverde - Medium
+- Password Spraying
+- Using `sqlcmd`
+- Azure AD Connect Password Extraction
+
+# Multimaster - Insane
+- SQL injection
+- Password Cracking
+- VS Code Exploitation
+- Reverse Engineering
+- Server Operators Group Abuse
+- SeBackup Privilege Abuse
+- Zerologon Exploitation
+
+# Nest - Easy
+- .NET Development
+- SMB Enumeration
+
+# Netmon - Easy
+- CVE-2018-9276
+
+# Networked - Easy
+- File upload bypass
+- Command Injection
+
+# Nibbles - Easy
+- Enumerating Web applications
+- Guessing probably password
+- Bypassing login rate limiting
+- Exploiting NOPASSWD
+
+# Nighmare - Insane
+- Second Order SQL Injection
+- SSH Brute Forcing
+- Exploiting misconfigured sFTP
+- Attack without touching disk
+- Reverse engineering 64-bit binaries
+- Exploit Modification
+
+# Nineveh - Medium
+- HTTP-based brute forcing
+- Chaining Exploits
+- Local file inclusion
+- Port knocking
+
+# Node - Hard
+- Bypassing user agent filtering
+- Brute forcing JSON payloads
+- Exploiting buffer overflows
+- Bypassing ASLR and NX
+
+# Nunchucks - Easy
+- NodeJS Nunjucks SSTI
+- AppArmor Profile Bypass
+
+# Object - Hard
+- Jenkins Exploitation
+- AD Enumeration
+- ForceChangePassword Abuse
+
+# Obscurity - Medium
+- Source Code Review
+- Known-Plaintext Attack
+
+# October - Hard
+- Exploiting SUID files
+- Exploiting buffer overflows
+- Bypassing NX/DEP
+- Bypassing ASLR
+
+# Olympus - Medium
+- Exploiting Xdebug
+- Identifying Docker Instances
+- Cracking WPA handshakes
+- Gathering information through zone transfers
+- Abusing Docker Permissions
+
+# Omni - Easy
+- Windows IoT Core Exploitation
+- Registry Hive Hash Retrieval & Cracking
+- Powershell Credentials Enumeration
+
+# OneTwoSeven - Hard
+- Apache rules
+- Abusing apt package manager
+
+# Oouch - Hard
+- OAuth Exploitation
+- DBus
+- uWSGI Protocol
+
+# OpenAdmin - Easy
+- Web Exploitation
+- Password Cracking
+- Nano Sudo Exploitation
+
+# OpenKeyS - Medium
+- Code Auditing
+- Exploiting the OpenBSD Authentication Framework
+- Exploiting `xlock`
+- Exploiting `S/Key` Authentication
+
+# Ophuichi - Medium
+- YAML Deserialization
+- Web Assembly Decompilation
+- Go and Web Assembly Source Code Analysis
+
+# Optimum - Easy
+- Identifying vulnerable services
+- Identifying known exploits
+- Basic Windows Privilege Escalation Techniques
+
+# Oz - Hard
+- Gain familiarity with WFuzz advanced options
+- Accessing file system via SQL injection
+- Extraction and crackin gof PBKDF2-SHA256 hashes
+- Server-Side Template Injection
+- Port forwarding using sshuttle
+- Privilege escalation via Portainer authentication bypass
+
+# Passage - Medium
+- Basic Web Exploitation
+- D-Bus Service Exploitation
+
+# Patents - Hard
+- OOB XXE
+- ROP-based exploitation
+- File System Enumeration
+
+# Pikaboo - Hard
+- "Off-by-slash vulnerability"
+- Perl Function Injection
+- Local File Inclusion
+
+# Pit - Medium
+- SNMP extensions
+- Exploiting CVE-2019-12744
+- Basic awareness about possible SELinux restrictions
+
+# pivotapi - Insane
+- Metadata Enumeration
+- Abusing Unset Preauth with Kerberos
+- Analyzing Executables Through Memory Dumps
+- DontNet Source Code Decompilation
+- Abusing MSSQL for Remote Code Execution
+- Extracting KeePass Database Passwords
+- Abusing Active Directory Misconfigurations
+
+# Player - Hard
+- Vhost Enumeration
+- Creating JWT Cookies
+- LFI through FFMPEG
+
+# PlayerTwo - Insane
+- Twirp and Protobuf
+- MQTT
+- Heap Exploitation
+
+# Poison - Easy
+- Apache Log Poisoning
+- Tunneling Ports over SSH
+
+# Popcorn - Medium
+- Bypassing file upload checks
+- Modifying HTTP Requests
+
+# Postman - Easy
+- Redis Exploitation
+- Webmin Command Injection
+
+# Previse - Easy
+- Executing After Redirect (EAR) abuse
+- Abusing PHP `exec()` function
+- Hash cracking with unicode salt
+- PATH Hijacking
+
+# Proper - Hard
+- Reversing Go Applications
+- Exploiting Privileged Write Capabilities
+
+# Querier - Medium
+- Excel Macros
+- PowerView
+
+# Quick - Hard
+- HTTP/3 Protocol
+- Using Symlinks
+- ESI Injection
+
+# Rabbit - Hard
+- Open Office Macro Modification
+- Payload Creation
+- Authorisation Bypass
+- SQL Injection Identification & Exploitation
+- Windows services and file system permission enumeration
+
+# RE - Hard
+- Evading Yara
+- Exploiting WinRAR path traversal
+- Ghidra XXE
+
+# Ready - Medium
+- SSRF & CRLF Attacks
+- Docker Escape
+
+# RedCross - Medium
+- Authentication Bypass technique via PHP Session ID reuse
+- Identification and exploitation of a vulnerable application
+- Privilege escalation via PAM/NSS
+
+# Reddish - Insane
+- Gaining Situational awarness
+- Tunneling
+- Exploitation of default redis configurations
+- Leveraging Cron jobs for lateral movment and privilege escalation
+- Rsync wildcard abuse
+
+# Reel - Hard
+- Extraction and use of document metada in a phishing attack
+- Creation of attacker infrastructure (malicious SMTP server, web server and listener)
+- Identification and exploitation of Active Directory DACL attack chain
+
+# Reel2 - Hard
+- Phishing
+- Password Cracking
+- JEA Bypass
+- Sticky Notes Enumeration
+
+# Registry - Hard
+- Docker API
+- Web Exploitation
+- Restic Exploitation
+
+# Remote - Easy
+- NFS Enumeration
+- CMS Exploitation
+- TeamViewer Credential Gathering
+- SeImpersonate Privilege Abuse
+
+# Resolute - Medium
+- DnsAdmins Abuse
+
+# Return - Easy
+- Network Printer Abuse
+- Server Operators Group Abuse
+
+# Rope - Insane
+- Format String Exploitation
+- Canary & PIE (Position Independent Executable) Bypass
+- ROP Chains
+
+# RopeTwo - Insane
+- V8 Exploit Development
+- Heap Exploitation
+- Linux Driver & Kernel Exploitation
+
+# Safe - Easy
+- ROP
+- Cracking keepass databases
+
+# Sauna - Easy
+- ASREPRoasting Attack
+- DCSync Attack
+
+# Scavenger - Hard
+- SQL Injection
+- Reversing Rootkits
+
+# Schooled - Medium
+- Exploiting Moodle Vulnerabilities
+- Installing custom FreeBSD packages
+
+# ScriptKiddie - Easy
+- Exploiting CVE-2020-7384
+- OS Command Injection in command arguments
+- Running system commands from Metasploit Console
+
+# Seal - Medium
+- Gitbucket Enumeration
+- Nginx Path Normalization Exploitation
+- Mutual Authenticaion Bypass
+- Abusing Ansible Features
+
+# SecNotes - Medium
+- CSRF Payload Creation
+- SQLi Authenticaion bypass
+- Windows Subsystem for linux
+
+# Sense - Medium
+- Modifying Publicy available Exploits
+- Bypassing strict filtering
+- Exploiting PFSense
+
+# Servmon - Easy
+- Exploiting NVMS-1000
+- Exploiting NSClient++
+- SSH Password Spraying
+
+# Sharp - Hard
+- Reversing `.NET` Applications
+- Exploitation of `.NET` Remoting Services
+- Exploitation of `WCF` Remoting Services
+
+# Shocker - Easy
+- Exploiting Shellshock
+- Exploiting NOPASSWD

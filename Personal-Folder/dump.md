@@ -6613,3 +6613,24 @@ That peace will remain. Or else, all the strength I have ... will find a target.
 6. he calculates and dicusses any action before going ahead and impelmenting
 7. he doesn't work haphazzardly ... every move is done with a purpose
 8. he confirms understanding of implicit information .. to prevent any assumptions
+
+since I was born, what did i need?
+# phase 1: as a baby
+1. extreme care
+2. food and everything else
+
+# phase 2: as a boy
+1. food and life essentials
+2. being listened to
+3. being allowed to be myself
+4. being empahised with regarding the retarded education system
+5. being empahised with regarding bullying and the shit in school
+
+# phase 3: as a teen
+1. being told the important basics of life
+	1. indenpendence
+	2. how the world works
+	3. how to think and solve my own problems
+	4. how to find out what's true and what's not
+	5. not to believe everything i see or hear
+	6. 

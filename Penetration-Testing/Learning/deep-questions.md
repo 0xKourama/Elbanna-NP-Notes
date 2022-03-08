@@ -1,3 +1,44 @@
+# Overall
+1. deep technical knowledge and understanding of function
+2. deadly enumeration skill
+3. vulnerability and misconfiguration identification
+4. wide arsenal of tricks
+5. looting skill (configuration files, ssh keys, sticky notes, temps, recycle bin ...etc.)
+6. situational awarness (logs, packet capture)
+
+# what does every hack include?
+1. enumerating all functionalities present on the victim and how to put them together to gain access
+
+# what are my areas I need to expand on?
+1. web pentesting
+2. getting my shit down pat when it comes to
+	1. network services pentesting
+	2. web pentesting
+	3. ad pentesting
+	4. red teaming
+	5. known vulnerabilities and exploits
+3. configuring known services and playing with them
+	1. FTP
+	2. NFS
+	3. SSH
+	4. Databases (MySQL, MSSQL, MariaDB, PostgreSQL, MongoDB, GraphQL)
+	5. Tomcat
+	6. Wordpress, Joomla, Drupal
+	7. AD
+	8. apache, nginx, IIS
+4. social engineering
+5. learning some wireless pentesting
+6. setting up vulnerable environments
+
+# what is enumerated in a web application?
+1. pages
+2. parameters
+3. technologies
+4. 3rd party stuff
+6. input methods
+7. DB? DB type?
+8. all functionalities
+
 # what is my cycle?
 1. ask all the questions
 2. learn (read, listen and watch)
@@ -105,3 +146,77 @@
 2. Log4j ownage
 3. Print Nightmare
 4. get that HTB machine
+
+# resources:
+1. we got HTB
+	[+] realworld
+	[+] we got ippsec
+	[+] we got subscription
+	[-] remote
+2. we got THM
+	[+] walkthroughts and easy learning
+	[+] fun
+	[+] a lot of interesting topics
+	[~] remote but gives a nice machine
+3. we got vulnhub
+	[+] local
+4. we got them books
+	[+] rounded knowledge
+	[+] good for commuting
+6. we got MITRE
+	[+] seeing and learning from tactics
+7. we got elearn courses
+	[+] concise
+8. we got pentester academy courses
+	[+] very nice knowledge
+
+# interview fails:
+## knowing important config files
+chaining exploits --> lfi --> WPconfig.php
+# idenfying the DC:
+	ports: 53, 88, 389, 138, 139, 445, 3268
+	SRV Record.
+
+# AD attacks
+explaining technology behind responder
+explaining pass the hash
+explaining kerberos
+explaining Kerberos delegation and non-contrained delegation
+explaining kerberoast
+explaining ASREProast
+explaining golden and silver tickets
+explaining what do in a red team engagement
+explaining steps to be domain admin
+
+# hacking resources
+asking me about resources:
+General:
+1. hacktricks
+
+AD:
+1. hacktricks
+2. hausec
+3. ADSecurity
+
+# attacking common network services
+attacking SMB
+attacking FTP
+
+
+# where i failed (fixed solutions)
+- what is selinux?
+- what is kerberoast in depth?
+- what is ASREPRoasing?
+- SQL injection attack types
+- what to do in a red teaming scenario?
+- flask and python
+- File inclusion exploitation and what can be done with this vuln
+
+# where i failed (silicon experts)
+- SSRF vulnerability
+
+# where i failed (kpmg)
+- Wirless pentesting
+- Firewall audit tools
+- File upload bypass
+- Exploiting SMTP
