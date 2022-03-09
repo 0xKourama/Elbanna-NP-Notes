@@ -1010,3 +1010,230 @@
 # Shocker - Easy
 - Exploiting Shellshock
 - Exploiting NOPASSWD
+
+# Sizzle - Insane
+- Stealing hashes
+- Passwordless login
+- Keberoasting
+- DCSync
+
+# Shrek - Hard
+- Spectogram Analysis
+- Recognizing and decrypting elliptic curve cryptography
+- Enumerating Hidden Tasks
+- Explioting Chown Wildcards
+
+# Sink - Insane
+- HTTP Desync Exploitation
+- AWS CloudWatch
+- AWS SecretsManager
+- AWS KMS
+
+# Smasher - Insane
+- Binary File Fuzzing
+- Exploit Development
+- Binary File reversing
+- Padding Oracle Exploitation
+
+# Silo - Medium
+- Enumerating Oracle SIDs
+- Enumerating Oracle credentials
+- Leveragin Oracle to Upload & Execute Files
+
+# Smasher2 - Insane
+- Exploiting mmap handlers
+- Reversing Shared Objects
+
+# SolidSate - Medium
+- Exploiting Apache James
+- Enumerating POP Servers
+- Chaining vulnerabilities
+- Exploiting World-writable files
+
+# SneakyMailer - Medium
+- Phishing
+- PyPI Package Exploitation
+- pip3 exploitation
+
+# Sneaky - Medium
+- Basic SQL injection
+- Enumerating SNMP
+- Exploiting SUID files
+- Basic buffer overflow exploitation
+
+# Sniper - Medium
+- LFI and RFI
+- PHP Session File Abuse
+- Malicious CHM Creation
+- NetNTLM-v2 Hash Capture and Cracking
+
+# Spectra - Easy
+- Lateral Movement
+- File System Permissions
+- Sudo Exploitation
+
+# Spider - Hard
+- Obtaining the application configuration via SSTI
+- Decoding and forging Flask cookies
+- SQL Injection attacks via session cookies
+- Bypassing WAF Filters
+
+# Static - Hard
+- Decompression Troubleshooting
+- Multiple Server Pivoting
+- Configuring Routes for VPNs
+- Exploiting phuip-fpizdam
+- PHP X-DEBUG Exploitation
+- Format String Attack Exploitation
+
+# SteamCloud - Easy
+- N/A
+
+# Stratosphere - Medium
+- Indentifying and Exploiting Apache Struts
+- Exploiting Sudo NOPASSWD
+- Hijacking Python Libraries
+
+# Sunday - Medium
+- Enumerating users through Finger
+- Brute forcing SSH
+- Exploiting sudo NOPASSWD
+
+# SwagShop - Easy
+- Exploit modification
+- GTFObins
+
+# Tabby - Easy
+- Tomcat Text Interface WAR File Upload
+- ZIP Cracking
+- LXD Abuse
+
+# Tally - Hard
+- Enumerating Sharepoint
+- Exploiting MSSQL
+- Windows Defender/AV evasion techniques
+- Exploit Modification
+
+# TartarSauce - Medium
+- Static analysis of shell scripts
+- Identification and exploitation of tar GTFOBin using multiple techniques
+
+# Teacher - Medium
+- Website Enumeration
+- Password Brute-Forcing
+- Moddle Quiz Module Exploitation
+- Database Enumeration
+- Password Cracking
+- Linux Symlink Misconfiguration
+
+# Tenet - Medium
+- Exploitation of an insecure deserialization
+- Exploitation of a race condition in a Bash Script
+
+# Tentacle - Hard
+- DNS Enumeration
+- Squid Proxy Enumeration
+- OpenSMTPD Exploitation
+- Kerberos
+
+# Tenten - Medium
+- Enumerating Wordpress
+- Exploit Modification
+- Basic Steganography
+- Exploiting NOPASSWD files
+
+# TheNoteBook - Medium
+- Abusing the Key ID parameter in JSON Web Tokens
+- Exploiting CVE-2019-573 to escalate privileges via Docker
+
+# Time - Medium
+- Java Deserialization
+- System Timer Exploitation
+
+# Toolbox - Easy
+- Leveraging PostgreSQL SQL Injection for RCE
+- Docker Toolbox Exploitation
+
+# Traceback - Easy
+- SSH Motd Editing
+
+# Travel - Hard
+- SSRF
+- Memcached
+- PHP Deserialization
+- Editing LDAP Attributes
+
+# Traverxec - Easy
+- SSH Key Cracking
+- GTFOBins
+
+# Unattended - Medium
+- Union based SQL Injection
+- LFI to RCE
+- Analyzing kernel image
+
+# Unbalanced - Hard
+- Blind XPATH Injection
+- Pi-Hole exploitation
+
+# Unobtainium - Hard
+- Electron application reversing
+- Prototype pollution exploitation
+- Kubernets exploitation
+
+# Valentine - Medium
+- Identifying servers vulnerable to Heartbleed
+- Exploiting Heartbleed
+- Exploiting permissive tmux sessions
+
+# Vault - Medium
+- Creating malicious OpenVPN configuration files
+- SSH port forwarding
+- Bypassing port restrictions using ncat
+
+# Waldo - Medium
+- Source code review
+- Rbash escape techniques
+- Linux Cpabilities Enumeration
+
+# Validation - Easy
+- Web Enumeration
+- SQL injection
+
+# Wall - Medium
+- HTTP Verb tampering
+- WAF Bypass
+- Decompiing python code
+
+# Worker - Medium
+- Azure DevOps
+- SVN Repository
+- OWASP Top 10
+
+# Writer - Medium
+- Vulnerability deteciton in Python
+- UNION Based SQL Injections
+- Local File Inclusion
+- Virtual Host Enumeration
+- Django Hash Cracking
+- Blind SSRF Injection
+- Identifying system misconfigurations
+
+# Writeup - Easy
+- Path Hijacking
+- Process Enumeration
+
+# Ypuffy - Medium
+- Crafing custom LDAP queries/Manually finding the RootDSE
+- Enumeration and exploitation of SSH CA Authentication Configurations
+
+# Zetta - Hard
+- Postgres Command Execution
+- FXP & FTP Bounce Attack
+
+# Zipper - Medium
+- Zabbix API Enumeration
+- Exploit Modification
+- Zabbix Agent command Execution
+- Overcoming revershell disconnects/timeouts
+- Relative path Hijacking

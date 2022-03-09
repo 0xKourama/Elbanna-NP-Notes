@@ -220,3 +220,60 @@ attacking FTP
 - Firewall audit tools
 - File upload bypass
 - Exploiting SMTP
+
+# what should be done to murder all this?
+1. try hard and bang your head against machines?
+2. watch and learn and analyze?
+
+# What the fuck did the HTB people do to become like this?
+
+# why stops me from moving?
+1. motivation
+
+# what i not convinced of?
+# what am i convinced of?
+
+figuring out rabbit holes is important
+
+# what pisses me off about being lost?
+1. the time it takes is huge
+
+*probably replicate the machine and play with it in a personal lab?*
+*make a case study of the services and master them ... looking for exploitation vectors*
+
+# THE GOAL IS:
+BEING ABLE TO FIGURE OUT THOSE HTB MACHINES ON MY FUCKING OWN! ---> owning HTB? --> that's it?
+# Other possible goals:
+1. getting my ass certified?
+2. improving my labbing skills
+3. getting some CVEs?
+4. bug bounty?
+5. making a website?
+6. making a badass repo
+6. bypassing AVs?
+7. bypassing WAFs?
+8. bypassing firewalls?
+9. learning new programming languages?
+10. better understadning of attack tactics?
+11. gaining some forensic knowledge?
+
+# In-short, knowing what to study should make things much more tolerable .. being fucking lost can be a big waste of time ... we want to get strong ... fast! XD .. we wannt shortcut the journey if possible
+
+
+# What's the value of:
+1. red teaming?
+2. AV evasion?
+3. web pentesting
+4. WAF Evasion?
+5. wireless pentesting
+6. mobile pentesting
+7. learning python?
+8. learning PHP?
+9. learning .NET?
+10. learning linux internals?
+11. learning windows internals?
+12. learning AD internals?
+
+# what's demotivating away from:
+1. cryptography
+2. reverse engineering and exploit development

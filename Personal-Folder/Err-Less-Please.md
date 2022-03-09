@@ -320,3 +320,5 @@ life is a non feeling non empathetic system... i have to be be ruthless to deal 
 
 feeling welcome in the hacker community is a big boost
 some sort of approval seeking behavior 
+
+*A challenge can turn into a problem if you don't do your due dilligence to resolve it*

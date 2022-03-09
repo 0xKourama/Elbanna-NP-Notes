@@ -1,3 +1,9 @@
+# To-do
+# 1. customize output to match password length and complexity requirements
+# 2. look at the generated wordlist and analyze it
+# 3. analyse more wordlists and password dumps (categorize them)
+# 4. add l33tsp3@k support
+
 # General Guidlines:
 # People use methods to make things easy
 ## 1.  using first characters as capital to be fit password complexity guidelines
@@ -576,7 +582,7 @@ $Common_Male_Names_Arabic = @(
 )
 
 $All_Male_First_Names = @(
-'Abdallah'
+    'Abdallah'
 	'AbdAlRahman'
 	'AbdelAziz'
 	'Adam'
@@ -1188,7 +1194,7 @@ $Included_Lists = @(
     $Keyboard_Walks_Numbers
 )
 
-$List_Location = 'C:\Users\MGabr\Desktop\BigOne.txt'
+$List_Location = '~\Desktop\BigOne.txt'
 $Counter = 0
 $ItemCount = $Included_Lists.Count
 
