@@ -18,88 +18,91 @@
 
 # the full name, abbreviation or first couple of letters
 $Company_Name_Variants = @(
-	#'T@M'
-	#'t@mweeli'
-	#'T@mweeli'
-	#'T@mweely'
-	#'t@mweely'
+	'T@M'
+	't@mweeli'
+	'T@mweeli'
+	'T@mweely'
+	't@mweely'
 	'Tam'
 	'TAM'
-	#'Tamweel'
-	#'tamweel'
-	#'TAMWEELi'
-	#'Tamweeli'
+    'tam'
+	'Tamweel'
+	'tamweel'
+	'TAMWEELi'
+	'Tamweeli'
 	'TAMWEELY'
-	#'Tamweely'
+	'Tamweely'
     'Tamweelymf'
-	#'tamweely'
+	'tamweely'
 	'TMF'
-	#'Tmf'
+	'Tmf'
 	'tmf'
 )
 
 # common words that employees think of to make passwords easier to remember
 $Work_related = @(
-	#'Access'
-	#'access'
+	'Access'
+	'access'
 	'Admin'
-	#'admin'
-	#'dev'
-	#'Dev'
-	#'Mail'
-	#'mail'
-	#'Manager'
-	#'manager'
-	#'Office'
-	#'office'
-	#'Sec'
-	#'sec'
-	#'security'
-	#'Security'
-	#'Tech'
-	#'tech'
-	#'test'
+	'admin'
+	'dev'
+	'Dev'
+	'Mail'
+	'mail'
+	'Manager'
+	'manager'
+	'Office'
+	'office'
+	'Sec'
+	'sec'
+	'security'
+	'Security'
+	'Tech'
+	'tech'
+	'test'
 	'Test'
-	#'Testing'
-	#'testing'
-	#'web'
-	#'Web'
+	'Testing'
+	'testing'
+	'web'
+	'Web'
 )
 
 # Department-based
 $Department_Related = @(
-	#'Cs'
-	#'cs'
-	#'CS'
-	#'hr'
-	#'Hr'
-	#'HR'
-	#'inv'
-	#'Inv'
-	#'INV'
-	#'INVENTORY'
-	#'Inventory'
-	#'inventory'
-	#'IT'
-	#'it'
-	#'It'
-	#'PMO'
-	#'pmo'
-	#'Pmo'
-	#'sales'
-	#'Sales'
-	#'SALES'
-	#'Tr'
-	#'tr'
-	#'TR'
-	#'TRAIN'
-	#'Train'
-	#'train'
-	#'Training'
-	#'training'
-	#'TRAINING'
-    #'Treasury'
-    #'TREASURY'
+	'Cs'
+	'cs'
+	'CS'
+	'hr'
+	'Hr'
+	'HR'
+	'inv'
+	'Inv'
+	'INV'
+	'INVENTORY'
+	'Inventory'
+	'inventory'
+	'IT'
+	'it'
+	'It'
+	'PMO'
+	'pmo'
+	'Pmo'
+	'sales'
+	'Sales'
+	'SALES'
+	'Tr'
+	'tr'
+	'TR'
+	'TRAIN'
+	'Train'
+	'train'
+	'Training'
+	'training'
+	'TRAINING'
+    'Treasury'
+    'TREASURY'
+    'Business'
+    'business'
 )
 
 # Technology-named
@@ -152,6 +155,7 @@ $Known_Bad_Passwords = @(
 
 # sentences used in social norms
 $Social_Sentences = @(
+    <#
 	'Welcome'
 	'welcome'
 	'Hello'
@@ -164,6 +168,20 @@ $Social_Sentences = @(
 	'Thankyou'
 	'ThankYou'
 	'thankyou'
+    'ByeBye'
+    'byebye'
+    'Goodbye'
+    'Goodbye'
+    #>
+    'GoodMorning'
+    'goodmorning'
+    'GoodAfternoon'
+    'goodafternoon'
+    'GoodEvening'
+    'GoodEvening'
+    'goodevening'
+    'GoodNight'
+    'goodnight'
 )
 
 # teenage boy passwords
@@ -379,49 +397,51 @@ $Car_related = @(
 	'lambo'
 	'mercedes'
 	'Mercedes'
+    'toyota'
+    'Toyota'
 )
 
 # soccer fans
 $Soccer_related = @(
-	#'Ahli'
-	#'ahli'
-	#'Ahly'
-	#'ahly'
-	#'arsenal'
-	#'Arsenal'
-	#'Barcelona'
-	#'barcelona'
-	#'beckham'
-	#'Beckham'
-	#'Chelsea'
-	#'chelsea'
-	#'chelsi'
-	#'Chelsi'
-	#'christiano'
-	#'Christiano'
-	#'Football'
-	#'liverpool'
-	#'Liverpool'
-	#'madrid'
-	#'Madrid'
-	#'Manchester'
-	#'manchester'
-	#'Maradona'
-	#'maradona'
-	#'messi'
-	#'Messi'
-	#'Neymar'
-	#'neymar'
-	#'RealMadrid'
-	#'realmadrid'
-	#'Ronaldo'
-	#'ronaldo'
-	#'Salah'
-    #'Mosalah'
-	#'salah'
-	#'zamalek'
-	#'Zamalek'
-    #'Ahlawy'
+	'Ahli'
+	'ahli'
+	'Ahly'
+	'ahly'
+	'arsenal'
+	'Arsenal'
+	'Barcelona'
+	'barcelona'
+	'beckham'
+	'Beckham'
+	'Chelsea'
+	'chelsea'
+	'chelsi'
+	'Chelsi'
+	'christiano'
+	'Christiano'
+	'Football'
+	'liverpool'
+	'Liverpool'
+	'madrid'
+	'Madrid'
+	'Manchester'
+	'manchester'
+	'Maradona'
+	'maradona'
+	'messi'
+	'Messi'
+	'Neymar'
+	'neymar'
+	'RealMadrid'
+	'realmadrid'
+	'Ronaldo'
+	'ronaldo'
+	'Salah'
+    'Mosalah'
+	'salah'
+	'zamalek'
+	'Zamalek'
+    'Ahlawy'
 )
 
 # curse words
@@ -485,6 +505,34 @@ $Days = @(
 	'Wednesday'
 )
 
+# Months
+$Months = @(
+	'april'
+	'April'
+	'August'
+	'august'
+	'december'
+	'December'
+	'February'
+	'february'
+	'january'
+	'January'
+	'July'
+	'july'
+	'june'
+	'June'
+	'march'
+	'March'
+	'May'
+	'may'
+	'november'
+	'November'
+	'October'
+	'october'
+	'September'
+	'september'
+)
+
 # seasons are popular because of frequent password changes
 $Seasons = @(
 	'Autumn'
@@ -527,6 +575,394 @@ $Common_Male_Names_Arabic = @(
 	'Mohamed'
 )
 
+$All_Male_First_Names = @(
+'Abdallah'
+	'AbdAlRahman'
+	'AbdelAziz'
+	'Adam'
+	'Adel'
+	'Adham'
+	'Ahmad'
+	'Ahmed'
+	'Akram'
+	'Alaa'
+	'Ali'
+	'Aly'
+	'Amgad'
+	'Ammar'
+	'Amr'
+	'Anas'
+	'Andrew'
+	'Ashraf'
+	'Atef'
+	'Atif'
+	'Ayman'
+	'Bahaa'
+	'Baher'
+	'Basem'
+	'Bassem'
+	'Bialy'
+	'Bilal'
+	'Belal'
+	'Botros'
+	'Boules'
+	'Diaa'
+	'Diab'
+	'Ebrahem'
+	'Ebrahim'
+	'Ehab'
+	'Emad'
+	'Eslam'
+	'Essam'
+	'Ezz'
+	'Ezzat'
+	'Fareed'
+	'Fares'
+	'Farid'
+	'Galal'
+	'Gamal'
+	'Gehad'
+	'Haitham'
+	'Hani'
+	'Hany'
+	'Hashem'
+	'Hashim'
+	'Hassan'
+	'Hatem'
+	'Haytham'
+	'Hazem'
+	'Hesham'
+	'Hisham'
+	'Hosam'
+	'Hossam'
+	'Hussein'
+	'Ibrahim'
+	'Ihab'
+	'islam'
+	'Ismail'
+	'Kamal'
+	'Kamel'
+	'Kareem'
+	'Karem'
+	'Karim'
+	'Khaled'
+	'Loay'
+	'Maged'
+	'Maher'
+	'mahmoud'
+	'Malek'
+	'Mamdouh'
+	'Marwan'
+	'Moaaz'
+	'Moatassem'
+	'Moaz'
+	'Moemen'
+	'mohab'
+	'Mohamed'
+	'Mohammad'
+	'Mohannad'
+	'Mohsen'
+	'Moneim'
+	'Mosa'
+	'Mosalam'
+	'Mostafa'
+	'Mounir'
+	'Mourad'
+	'Moustafa'
+	'Mubarak'
+	'Muhamed'
+	'Muhammad'
+	'Muhammed'
+	'Muharram'
+	'Mustafa'
+	'Nabih'
+	'Nabil'
+	'Nadeem'
+	'Nader'
+	'Nadir'
+	'Nageeb'
+	'Nagm'
+	'Naguib'
+	'Naif'
+	'Naser'
+	'Nashaat'
+	'Nasim'
+	'Nasir'
+	'Nasr'
+	'Nasrallah'
+	'Nasser'
+	'Nassif'
+	'Nazif'
+	'Nazim'
+	'Nazmi'
+	'Nazmy'
+	'Negm'
+	'Nooh'
+	'Noor'
+	'Nour'
+	'Nourhan'
+	'Nyazi'
+	'Omar'
+	'osama'
+	'osman'
+	'ossama'
+	'Othman'
+	'Qotb'
+	'Raafat'
+	'Rabea'
+	'raddad'
+	'Radwan'
+	'Raed'
+	'Ragab'
+	'Rahim'
+	'Rahman'
+	'Ramadan'
+	'Ramez'
+	'Ramiz'
+	'Ramy'
+	'Ramzy'
+	'Raouf'
+	'Rashad'
+	'Rashed'
+	'Rashid'
+	'Rashidi'
+	'Rashidy'
+	'Rashwan'
+	'Rayan'
+	'Rifaat'
+	'Rushdi'
+	'Rushdy'
+	'saad'
+	'Saadallah'
+	'Saber'
+	'Sabri'
+	'Sabry'
+	'Sadek'
+	'Sadik'
+	'SadralDin'
+	'Saed'
+	'Saeed'
+	'Safaan'
+	'Safiullah'
+	'Safwan'
+	'Safwat'
+	'Saher'
+	'Sahir'
+	'Said'
+	'Saied'
+	'Saif'
+	'Salah'
+	'Saleh'
+	'Salem'
+	'Salim'
+	'Sameh'
+	'Samer'
+	'Sami'
+	'Samir'
+	'Samy'
+	'Sayed'
+	'seada'
+	'Selim'
+	'Seoud'
+	'Shaaban'
+	'Shaban'
+	'Shadi'
+	'Shady'
+	'Shahin'
+	'Shaker'
+	'Shams'
+	'Sharaf'
+	'Sharara'
+	'Sharf'
+	'Shawkat'
+	'Shawki'
+	'Shawky'
+	'Shazly'
+	'Shehab'
+	'Sherif'
+	'Shokry'
+	'souhaib'
+	'Suhail'
+	'Suleiman'
+	'Suliman'
+	'Sultan'
+	'Taghreed'
+	'Taghreid'
+	'Taghrid'
+	'Taha'
+	'Taher'
+	'Takla'
+	'Talaat'
+	'Tamer'
+	'Tarek'
+	'Tariq'
+	'Tawfik'
+	'Tharwat'
+	'Tijani'
+	'Torky'
+	'Wael'
+	'Wafi'
+	'Wafy'
+	'Wagdy'
+	'Wahba'
+	'wahby'
+	'Waheed'
+	'Wahid'
+	'Waked'
+	'Waleed'
+	'Wasim'
+	'Wesam'
+	'Yahia'
+	'Yahya'
+	'Yaseen'
+	'Yasin'
+	'yasser'
+	'Yehia'
+	'Yosssef'
+	'Younes'
+	'Yousef'
+	'Yousry'
+	'Youssef'
+	'Yunus'
+	'Yusuf'
+	'Zaid'
+	'Zaim'
+	'ZainalAbidin'
+	'Zakareya'
+	'Zakaria'
+	'Zakariya'
+	'Zaki'
+	'Zaky'
+	'zayn'
+	'Zein'
+	'Zeyad'
+)
+
+$All_Female_First_names = @(
+    'Abeer'
+	'Amina'
+	'Amira'
+	'asmaa'
+	'aya'
+	'basma'
+	'boshra'
+	'bushra'
+	'Dalal'
+	'Dalia'
+	'Dema'
+	'Dina'
+	'Doaa'
+	'doha'
+	'Ehsan'
+	'Elham'
+	'Enas'
+	'Esraa'
+	'Fadia'
+	'Fatema'
+	'Faten'
+	'Fatima'
+	'Fatin'
+	'Fatma'
+	'Gehan'
+	'ghada'
+	'Hadeer'
+	'Hagar'
+	'haidy'
+	'hala'
+	'hana'
+	'hanan'
+	'haneen'
+	'hania'
+	'hasnaa'
+	'Hayam'
+	'Heba'
+	'Hemmat'
+	'hend'
+	'Hikmat'
+	'hoda'
+	'Ilham'
+	'Israa'
+	'kenzy'
+	'Kholoud'
+	'KHOLOUD'
+	'Laila'
+	'Lamiaa'
+	'Lamya'
+	'Lamyaa'
+	'Layaly'
+	'Maha'
+	'Mahinor'
+	'Mahitab'
+	'mai'
+	'malak'
+	'Manar'
+	'Mariam'
+	'Marwa'
+	'may'
+	'Menna'
+	'MennaAllah'
+	'Mennatullah'
+	'mona'
+	'Monica'
+	'Moshera'
+	'nada'
+	'Nagham'
+	'Nagla'
+	'Nagwa'
+	'Nancy'
+	'Nariman'
+	'Neama'
+	'Nelly'
+	'nermeen'
+	'Nesma'
+	'nesreen'
+	'Nessma'
+	'Neveen'
+	'Nevine'
+	'Nihad'
+	'noor'
+	'nora'
+	'Noran'
+	'Nour'
+	'Nourhan'
+	'Radwa'
+	'Rana'
+	'Rasha'
+	'Reham'
+	'Riham'
+	'roqaya'
+	'sabreen'
+	'Safi'
+	'Safy'
+	'salma'
+	'salwa'
+	'sama'
+	'Samar'
+	'Samirah'
+	'sara'
+	'sarah'
+	'shaden'
+	'shahd'
+	'shahenaz'
+	'shahenda'
+	'shaimaa'
+	'Shams'
+	'shereen'
+	'Shery'
+	'shorouk'
+	'shorouq'
+	'Sohaila'
+	'solwan'
+	'tasneem'
+	'yasmeen'
+	'yasmin'
+	'yasmine'
+	'Zahra'
+	'Zainab'
+	'Zeinab'
+	'Zinab'
+)
+
 # number-based keyboard walks
 $Keyboard_Walks_Numbers = @(
 	'11111111'
@@ -566,16 +1002,16 @@ $Special_Chars = @(
 	'!'
 	'#'
 	'$'
-	#'%'
-	#'&'
-	#'*'
-	#'.'
+	'%'
+	'&'
+	'*'
+	'.'
 	'@'
-	#'^'
+	'^'
 	'_'
     '-'
-	#'~'
-	#'+'
+	'~'
+	'+'
 )
 
 # contain most birthdays of the generation + futuristic passwords
@@ -683,67 +1119,25 @@ $Years_1950_2050 = @(
 	'2050'
 )
 
-$Years_2010_2030 = @(
-	'2010'
-	'2011'
-	'2012'
-	'2013'
-	'2014'
-	'2015'
-	'2016'
-	'2017'
-	'2018'
-	'2019'
-	'2020'
-	'2021'
-	'2022'
-	'2023'
-	'2024'
-	'2025'
-	'2026'
-	'2027'
-	'2028'
-	'2029'
-	'2030'
-)
-
-$Years_2020_2030 = @(
-	'2020'
-	'2021'
-	'2022'
-	#'2023'
-	#'2024'
-	#'2025'
-	#'2026'
-	#'2027'
-	#'2028'
-	#'2029'
-	#'2030'
-)
-
 # letter-based keyboard walks
-$Keyboard_Walks_Letters = @(
+$Common_Walks_Endings_Letters = @(
 	'asd'
 	'asdf'
     'asdfg'
 	'qwe'
 	'qwer'
 	'qwerty'
-)
-
-# Common Number Endings (a short keyboard walk can be used as an ending too)
-$Common_Endings_Numbers = @(
-	'123'
-	'456'
-	'789'
-)
-
-# Common Character Endings
-$Common_Endings_Letters = @(
 	'ABC'
 	'abc'
 	'XYZ'
 	'xyz'
+)
+
+# Common Number Endings (a short keyboard walk can be used as an ending too)
+$Common_Walks_Endings_Numbers = @(
+	'123'
+	'456'
+	'789'
 )
 
 # common ending symbols (unlikely to be used when using a special middle char)
@@ -768,90 +1162,62 @@ $Common_Endings_Symbols = @(
 	'@@@'
 )
 
+####################################################################GENERATION####################################################################
+
 $Included_Lists = @(
     $Company_Name_Variants
     $Work_related
-	$Department_Related
-	$Tech_Related
-	$Known_Bad_Passwords
-	$Social_Sentences
-	$Boyish_words
-	$Girly_words
-	$Music_related
-	$Car_related
-	$Soccer_related
-	$Inappropriate_words
-	$Cities
-	$Days
-	$Seasons
-	$Foods
-	$Common_Male_Names_Arabic
-	$Keyboard_Walks_Numbers
+    $Department_Related
+    $Tech_Related
+    $Known_Bad_Passwords
+    $Social_Sentences    
+    $Boyish_words
+    $Girly_words
+    $Music_related
+    $Car_related
+    $Soccer_related
+    $Inappropriate_words
+    $Cities
+    $Days
+    $Months
+    $Seasons
+    $Foods
+    $Common_Male_Names_Arabic
+    $All_Male_First_Names
+    $All_Female_First_names
+    $Keyboard_Walks_Numbers
 )
 
-$List_Location = 'C:\Users\MGabr\Desktop\BannedPasswords2.txt'
+$List_Location = 'C:\Users\MGabr\Desktop\BigOne.txt'
+$Counter = 0
+$ItemCount = $Included_Lists.Count
 
 Foreach($List in $Included_Lists){
+    $Counter++
     foreach($Item in $List){
-        Write-Host -ForegroundColor Cyan "[*] Generating combinations for $Item"
+        Write-Host -ForegroundColor Cyan "[*] [$Counter/$ItemCount] Generating combinations for $Item"
 
-        <#
-        Write-Host -ForegroundColor Cyan "[*] Iterating years for $Item"
-        foreach($Year in $Years_1950_2050){
-            "$Item$Year" >> $List_Location
-        }#>
+        # item + year
+        foreach($C1 in $Years_1950_2050)                 {"$Item$C1" >> $List_Location}
 
-        <#
-        Write-Host -ForegroundColor Cyan "[*] Iterating years for $Item"
-        foreach($Year in $Years_2010_2030){
-            "$Item$Year" >> $List_Location
-        }#>
+        # item + common ending letter
+        foreach($C2 in $Common_Walks_Endings_Letters)    {"$Item$C2" >> $List_Location}
 
-        <#
-        Write-Host -ForegroundColor Cyan "[*] Iterating Special Middle Char + Year for $Item"
+        # item + common ending number
+        foreach($C3 in $Common_Walks_Endings_Numbers)    {"$Item$C3" >> $List_Location}
+
+        # item + common ending symbol
+        foreach($C4 in $Common_Endings_Symbols)          {"$Item$C4" >> $List_Location}
+
         foreach($Char in $Special_Chars){
-            foreach($Year in $Years_1950_2050){
-                "$Item$Char$Year" >> $List_Location
-            }
-        }#>
+            # item + special char + year
+            foreach($C5 in $Years_1950_2050)             {"$Item$Char$C5" >> $List_Location}
 
-        <#
-        Write-Host -ForegroundColor Cyan "[*] Iterating Special Middle Char + Year for $Item"
-        foreach($Char in $Special_Chars){
-            foreach($Year in $Years_2020_2030){
-                "$Item$Char$Year" >> $List_Location
-            }
-        }#>
+            # item + special char + common ending letter
+            foreach($C6 in $Common_Walks_Endings_Letters){"$Item$Char$C6" >> $List_Location}
 
-
-        <#
-        Write-Host -ForegroundColor Cyan "[*] Iterating Common Number Endings for $Item"
-        foreach($C1 in $Common_Endings_Numbers){
-            "$Item$C1" >> $List_Location
-        }#>
-
-        Write-Host -ForegroundColor Cyan "[*] Iterating Common Letter Endings for $Item"
-        foreach($C2 in $Common_Endings_Letters){
-            "$Item$C2" >> $List_Location
-        }
-
-        Write-Host -ForegroundColor Cyan "[*] Iterating Common Symbol/Walk Endings for $Item"
-        foreach($C3 in $Common_Endings_Symbols){
-            "$Item$C3" >> $List_Location
-        }
-
-        Write-Host -ForegroundColor Cyan "[*] Iterating Special Middle Char + Year for $Item"
-        foreach($Char in $Special_Chars){
-            foreach($C4 in $Common_Endings_Numbers){
-                "$Item$Char$C4" >> $List_Location
-            }
-        }
-
-        Write-Host -ForegroundColor Cyan "[*] Iterating Special Middle Char + Year for $Item"
-        foreach($Char in $Special_Chars){
-            foreach($C5 in $Common_Endings_Letters){
-                "$Item$Char$C5" >> $List_Location
-            }
+            # item + special char + common ending number
+            foreach($C7 in $Common_Walks_Endings_Numbers){"$Item$Char$C7" >> $List_Location}
         }
     }
 }
