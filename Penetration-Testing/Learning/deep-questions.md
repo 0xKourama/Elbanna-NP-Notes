@@ -277,3 +277,20 @@ BEING ABLE TO FIGURE OUT THOSE HTB MACHINES ON MY FUCKING OWN! ---> owning HTB? 
 # what's demotivating away from:
 1. cryptography
 2. reverse engineering and exploit development
+
+# what makes me hate exams?
+
+# what the fuck am I good at?
+1. metasploit?
+2. powershell scripting?
+3. reading about service pentesting off hacktricks?
+4. os injection?
+5. sql injection using sqlmap?
+6. some ability to modify public exploits?
+7. running privesc tools (winpeas/linpease)
+8. some basic ad testing?
+9. doing some known exploits?
+10. basic windows knowledge?
+11. basic linux knowledge?
+12. some web basics?
+13. some networking basics?
