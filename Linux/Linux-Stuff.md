@@ -16,3 +16,6 @@
 `timedatectl set-ntp false`
 2. set time
 `date -s "2 OCT 2006 18:00:00"`
+
+# Turn uppercase to lower case
+`cat <TEXTFILE> | tr [:upper:] [:lower:]`
