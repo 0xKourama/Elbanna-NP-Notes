@@ -70,3 +70,30 @@ string of characters, like: “dog”, “hello world”
 
 ## bool
 boolean values, like: true or false
+
+# Variable declaration:
+`string countryName = "Netherlands";`
+
+# Adding variables into strings
+`string age = 50;`
+`Console.WriteLine($"You are {input} years old!");`
+
+# Variable naming style:
+camelCase
+
+# Mandatory Syntax Punctuation
+- Semicolon
+- Casing in both classes and functions (ex: `console.writeline()` won't work. it has to be `Console.WriteLine()`)
+- foreach loop variable has to be a defined data type
+
+# Data type conversions:
+*we can implicitly convert when the conversion doesn't create data loss. ex: from int to double. Not the other way around*
+## implicit conversion:
+`string myNumber = 5;`
+`doulbe myDouble = myNumber;`
+
+## Explicit conversion:
+`double myDouble = 3.2;`
+`int myInt = (int)myDouble;`
+or
+`int myInt = Convert.ToInt32(myDouble);`
