@@ -6,3 +6,12 @@ most coders think debugging is about fixing the buf
 debugging is really about finding the bug and finding what made it be there to being with
 when a bug make itself known .. ready to be taken advantage of
 the bug forces the software to evolve -- it becomes somethig new, the next version ... the invetiable upgrade
+
+car jacking ... lololol
+
+primal urges
+repressed memories
+unconscious habits
+
+# criticism
+- they make hacking feel like something too easy

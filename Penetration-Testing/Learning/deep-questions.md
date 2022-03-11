@@ -294,3 +294,64 @@ BEING ABLE TO FIGURE OUT THOSE HTB MACHINES ON MY FUCKING OWN! ---> owning HTB? 
 11. basic linux knowledge?
 12. some web basics?
 13. some networking basics?
+
+# what do I hate about coding?
+
+# what do I love about coding?
+
+# what do I need to retake the OSCP?
+1. web testing improvement (watch rana khalil <3)
+	- building web apps with ASP & PHP
+	- Learn SQL Syntax and build some DBs (MSSQL & MySQL)
+	- improving SQL Injection (Manual) --> Rana Khalil
+	- improving hunting skills --> WSTG + How to hunt
+	- Learning anatomy of web requests, cookies and headers and their exploitation
+	- improving auth bypass and other web basiscs --> Elearn WAPT + PTA bootcamp
+	- practices on vulnerable web apps
+		1. BWAPP
+		2. DVWA
+		3. Web Goat / Web Wolf
+		4. OWASP JuiceShop
+		5. OWASP Mutildae
+2. buffer overflow revision --> keepnote
+3. exploit research and modification experience --> ippsec
+4. getting network service pentesting down PAT
+5. getting my regain posture skill down PAT --> make a speedy mindmap for web, networking services, AD, win privesc, lin privesc AND MAKE IT USABLE
+	1. what info do I have? what do we know this far?
+	2. what am i sure of?
+	3. what evidence do i have to support my hypothesis?
+6. cull info on the labs -> we still have forum access
+	+ deeply analyze their guides on:
+		1. alpha
+		2. beta
+		3. gamma
+		& other newly released ones
+7. clear the suggested HTB machines + rewatch ippsec of the ones already done
+	+ try to figure out what you would have needed to do in order to solve on your own
+8. do the vulnhub machines on your own
+9. cull info from the book and the videos too
+10. be confident that you can DANCE on offsec
+11. configure and make yourself familiar with the power of config files
+12. improve your worldlists
+	1. analyze web wordlists
+	2. analyze
+13. get your codex up and running
+
+# OSCP Important methodology questions:
+## Reflection:
+1. Hypothesis
+2. Evidence
+3. Confidence
+4. Tests
+
+# what downed you on the first OSCP?
+1. you were being rushed by k yasser
+2. you were interrupted by:
+	1. anan the crazy bitch
+	2. abey who's in the konafa
+3. you had no methodology and thought you could just wing it
+4. you had chosen the easy way too many times (relying on tools to get the job done (metasploit, sqlmap, lin/winpeas))
+	- choosing the hard way gives you the tools necessary to navigate through darkness
+		1. anchoring yourself to what you're sure of ---> this can be done at every break
+		2. catching your assumptions and coming back from those
+		3. asking the right questions

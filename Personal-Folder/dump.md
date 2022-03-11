@@ -6634,3 +6634,10 @@ since I was born, what did i need?
 	4. how to find out what's true and what's not
 	5. not to believe everything i see or hear
 	6. 
+
+# what makes me lose self-awareness?
+
+# im tasking parts of my self to constantly do:
+1. observation
+2. critical thinking
+3. asking questions and directing my thoughts
