@@ -1,3 +1,18 @@
+# if:
+## injection is in java script?        --> Cross-site Scripting
+## injection is in SQL?                --> SQL Injection
+## injection is in files?              --> File Upload
+## injection of server-side code?      --> Local/Remote File Inclusion
+## injection of commands?              --> Command Injection
+## Forging a request on user behalf?   --> Cross-site request forgery
+## Forging a request on server behalf? --> Server-side request forgery
+
+## HTTP Requests?  --> user input and server output language
+## HTTP Headers?   --> 
+## POST Data?      --> user input to server functions
+## Get Parameters? --> same like CMDlet parameters
+## Database        --> same like WMI queries ... but with ability to Create, Update and Delete besides what we usually did (READ)
+
 # Overall
 1. deep technical knowledge and understanding of function
 2. deadly enumeration skill
@@ -211,6 +226,7 @@ attacking FTP
 - what to do in a red teaming scenario?
 - flask and python
 - File inclusion exploitation and what can be done with this vuln
+- NMAP firewall
 
 # where i failed (silicon experts)
 - SSRF vulnerability
@@ -258,7 +274,6 @@ BEING ABLE TO FIGURE OUT THOSE HTB MACHINES ON MY FUCKING OWN! ---> owning HTB? 
 11. gaining some forensic knowledge?
 
 # In-short, knowing what to study should make things much more tolerable .. being fucking lost can be a big waste of time ... we want to get strong ... fast! XD .. we wannt shortcut the journey if possible
-
 
 # What's the value of:
 1. red teaming?
@@ -355,3 +370,11 @@ BEING ABLE TO FIGURE OUT THOSE HTB MACHINES ON MY FUCKING OWN! ---> owning HTB? 
 		1. anchoring yourself to what you're sure of ---> this can be done at every break
 		2. catching your assumptions and coming back from those
 		3. asking the right questions
+5. not doing enough reflection on what stopped me from exploiting something
+6. dealing with fixation
+
+# what makes a PoC promising than the other? 
+# we need an exploit-grading criteria
+
+# Parsing..........
+# Encoding.........

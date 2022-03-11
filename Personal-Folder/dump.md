@@ -6641,3 +6641,65 @@ since I was born, what did i need?
 1. observation
 2. critical thinking
 3. asking questions and directing my thoughts
+
+
+# what distinguishes me from the rest?
+1. i spent 24k of my own cash to do OSCP .. im dedicated and extremely motivated --> proof on my linked in
+2. I was help desk for 1 year --> the next I was doing the OSCP .. I learn quick  --> proof is my timeframe
+3. I always exchange information and talk all day about technical stuff. I learn and teach. --> demonstrated in oscp story and well as to be shown in interview
+4. I exchange respect and good treatment with everyone. I respect a human regardless of his gender or social level --> will be stated
+3. im methodical --> i rely on targeted questioning, deep analysis and critical thinking to solve problems --> will be shown
+3. i have excellent english which gives me high capabiltiy to learn and write professional reports --> demonstrated in CV
+4. I can develop code in powershell, bash and python --> shown in CV
+5. i apply intelligence in my work
+6. I love pentesting
+7. I have real world penetration testing experience
+
+# what do I want?
+to be member of a team who love what they do ... where I get to grow, make an impact and be paid well.
+
+# what do i expect as a salary?
+1. before talking about salaries .. I will need you to treat me as a human being ... well treatment and respect are more important than title or salary.
+2. you will need to offer me an environent where i can grow alongside people who love what they do and are passionate to talk about it all day and week.
+3. you're getting a very well educated invdividual with a combination of technical and people skills. with a passion for what he does and dedicated to spend his life to be good at it. 
+
+# what is my cycle?
+1. ask all the questions
+2. learn (read, listen and watch)
+3. apply (configure -> attack -> defend)
+4. play around and mess up
+5. teach and write
+
+# what my reason of leaving
+1. I love all aspects of information security, but I have special love for penetration testing ---> it's only done for ISO purposes at my current job.
+	So, I get do to what I love if working with you will involve 100% penetration testing.
+	I will get to be among a group of like-minded people because I know all people in pentesting do it for love ... because it's a very challenging job. you have to love it to do it.
+2. your services include penetration testing means you're alligned with my passion
+3. More cybersecurity culture
+2. other than that, I love my current job and the environment and i'm very well paid there.
+
+what benefits do you offer?
+learning and career development wise?
+
+8K ---> 20K
+10k ---> 25K
+
+[ 8/10] Extensive knowledge in applying penetration testing techniques and methods
+[ 5/10] Extensive knowledge in intrusion detection and broad-spectrum penetration testing, as well as reporting
+[10/10] Excellent customer service, communication and organizational skills are required
+[10/10] Skills in working with various teams (ISOs, PMs, developers, etc.) to explain findings and make recommendations to remediate findings.
+[ 5/10] Knowledgeable in NIST 800-series special publications, such as 800-53 and 800-115
+[ 9/10] Knowledge and experience in cybersecurity and penetration testing tools, Network topologies
+[ 9/10] Have a mature understanding of coverage and risk as an outcome of pen-testing as it relates to product security posture and business needs
+[10/10] Track and research the latest developments in vulnerability research
+[ 8/10] Have the ability to develop or adapt custom tooling to solve new needs
+
+74/90 --> 70-80%
+
+*Mind mapping tools and spreadsheets are the best two ways to store information with structure and relationships*
+
+
+# pissed me off
+1. smblcient retarded usage
+2. retarded sql questions (full classification name my ass)
+3. not predicting the username for a windows machine

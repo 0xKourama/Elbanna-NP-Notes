@@ -97,3 +97,4 @@ camelCase
 `int myInt = (int)myDouble;`
 or
 `int myInt = Convert.ToInt32(myDouble);`
+

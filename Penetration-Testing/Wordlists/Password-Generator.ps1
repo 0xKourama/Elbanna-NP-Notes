@@ -391,6 +391,18 @@ $Music_related = @(
     'pop'
 )
 
+# movies/series related
+$Movie_related = @(
+    'matrix'
+    'avengers'
+    'johnwick'
+    'psycho'
+    'residentevil'
+    'braveheart'
+    'gladiator'
+    'titanic'
+)
+
 # sports cars and the like
 $Car_related = @(
 	'BMW'
