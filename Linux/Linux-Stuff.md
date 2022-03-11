@@ -19,3 +19,7 @@
 
 # Turn uppercase to lower case
 `cat <TEXTFILE> | tr [:upper:] [:lower:]`
+
+# Checking open ports
+`netstat -tulpn | grep LISTEN`
+`ss -tulpn | grep LISTEN`
