@@ -131,6 +131,7 @@ While($true){
 
     [int]$Object.Record = [int]$Object.Record + 1
     [int]$Object.Chain  = [int]$Object.Chain  + 1
+    $hours = [int]$Object.Record / 2
 
     #region display the finish screen
     $session_progress_unit = '/' * $width * 30
