@@ -1,3 +1,2 @@
-#TYPE System.Management.Automation.PSCustomObject
 "Day","Month","Year","Record","Chain","Streak"
-"12","3","2022","6479","6","27"
+"12","3","2022","6480","7","27"
