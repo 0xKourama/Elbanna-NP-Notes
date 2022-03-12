@@ -392,3 +392,5 @@ BEING ABLE TO FIGURE OUT THOSE HTB MACHINES ON MY FUCKING OWN! ---> owning HTB? 
 # what's stopping you from really learning the fine details that you actually **LOVE**?
 *remember that you spent a full year writing scripts and playing with binaries and powershell. you love this. learning and exploring IS your comfort zone. so go for it .. be enjoy every hour and every seconds. it's the journey that you love*
 # is it FOMO? do you have a fear of missing out?
+
+# what makes a day job less motivating?

@@ -1,5 +1,6 @@
 ﻿$Working_directory = Get-Location | Select-Object -ExpandProperty Path
 
+<#
 $skill_ranks = @(
     'Novice',
     'Apprentice',
@@ -12,6 +13,7 @@ $skill_ranks = @(
     'Completer',
     'Transcender'
 )
+#>
 
 Get-Content -Raw Quotes.md | Invoke-Expression
 
@@ -77,7 +79,7 @@ While($true){
 
     $Random_quote = $Quotes[(Get-Random -Maximum ($Quotes.Count))]
 
-    $skill_rank = $skill_ranks[([math]::Floor($hours / 1000))]
+    #$skill_rank = $skill_ranks[([math]::Floor($hours / 1000))]
 
     $Remaining_Minutes = $Work_duration_minutes
     0..($Work_duration_minutes - 1) | ForEach-Object {
@@ -118,7 +120,7 @@ While($true){
         Write-Host
 
         Write-Host "Exp : $hours "           -NoNewline; write-host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host $($hours + 0.5)
-        Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
+       #Write-Host "Rnk : $skill_rank "      -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host "$($skill_ranks[([math]::Floor($hours / 1000)) + 1])"
         Write-Host "Chn : $($Object.Chain) " -NoNewline; Write-Host '>> ' -NoNewline -ForegroundColor DarkBlue; Write-Host "$([int]$Object.Chain + 1)"
         Write-Host "Strk: $($Object.Streak)"
         Write-Host "Prog: $(100 - (($Remaining_Minutes / $Work_duration_minutes) * 100 -as [int]))%"
@@ -151,7 +153,7 @@ While($true){
     Write-Host
 
     Write-Host "Exp : " -NoNewline; Write-Host $hours -ForegroundColor DarkGreen
-    Write-Host "Rnk : $skill_rank"
+   #Write-Host "Rnk : $skill_rank"
     Write-Host "Chn : " -NoNewline; Write-Host $($Object.Chain) -ForegroundColor DarkGreen
     Write-Host "Strk: $($Object.Streak)"
     Write-Host "Prog: " -NoNewline; write-host "100%" -ForegroundColor DarkGreen
