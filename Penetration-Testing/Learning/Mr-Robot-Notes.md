@@ -15,3 +15,5 @@ unconscious habits
 
 # criticism
 - they make hacking feel like something too easy
+
+# how to stop DDoS attacks

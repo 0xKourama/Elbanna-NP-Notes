@@ -62,6 +62,10 @@
 
 # finding SUID binary using `find / -type f -perm /4000 2>/dev/null | xargs ls -l`
 
+# jenkins exploitaiton using weak credentials
+# finding out MSF brute force module wasn't working
+# using `/script` for silent code execution and using the `Groovy` lanuage payload to execute a reverse shell
+
 # impacket mssqlclient.py usage (note using the `-windows-auth` flag)
 `python3 mssqlclient.py -windows-auth ARCHETYPE/sql_svc@10.129.83.40`
 
@@ -78,6 +82,7 @@ A DTSCONFIG file is an XML configuration file used to apply property values to S
 # using impacket's `psexec.py` for remote code execution
 
 # cracking md5 hash
+# cracking zip file password using `zip2john`
 
 # SQLmap sql injection with the `--os-shell` switch and using authenticated cookie
 
