@@ -1,0 +1,1 @@
+'DefaultDomainName', 'DefaultUserName', 'DefaultPassword', 'AltDefaultDomainName', 'AltDefaultUserName', 'AltDefaultPassword' | % {Get-ItemPropertyValue -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name $_}

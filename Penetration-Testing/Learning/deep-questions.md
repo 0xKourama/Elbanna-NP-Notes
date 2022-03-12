@@ -380,3 +380,15 @@ BEING ABLE TO FIGURE OUT THOSE HTB MACHINES ON MY FUCKING OWN! ---> owning HTB? 
 # Encoding.........
 
 *Hack the box's difficulty rating just assumes that you have all the required knowledge. Which, if you think about it, makes things a LOT easier xD*
+
+# you know what's going to fuck you up?
+1. trying to own all HTB machines in a year
+2. trying to rush everything
+3. trying to get certified
+4. trying to get hired as a pentester
+**AND DOING ALL THIS SHIT BEFORE THE MOST IMPORTANT THING ...... ACTUALLY LEARNING AND TAKIN IN THE LESSONS**
+
+# what are you racing against?
+# what's stopping you from really learning the fine details that you actually **LOVE**?
+*remember that you spent a full year writing scripts and playing with binaries and powershell. you love this. learning and exploring IS your comfort zone. so go for it .. be enjoy every hour and every seconds. it's the journey that you love*
+# is it FOMO? do you have a fear of missing out?

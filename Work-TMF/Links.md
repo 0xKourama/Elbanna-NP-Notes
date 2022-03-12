@@ -39,3 +39,8 @@ Practical Book 4: Malware Analysts Cookbook
 Practical Book 5: Inside Cyber Warfare
 
 https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-exploits.html
+
+
+# .Net Machines
+Nest
+Sharp
