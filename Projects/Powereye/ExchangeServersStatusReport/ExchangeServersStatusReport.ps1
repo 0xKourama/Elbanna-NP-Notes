@@ -38,9 +38,9 @@ $EXServers=(Get-ExchangeServer).Name | Sort
 
 $smtpsettings=@{
 	To =  "Operation@Roaya.co"
-	From = "ExchangeServersStatusReport@PowerEye.Roaya.loc"
+	From = "ExchangeServersStatusReport@Powereye.local"
 	Subject = "Exchange Servers Status Report"
-	SmtpServer = "192.168.2.1"
+	SmtpServer = ""
 }
 
 $reportime = Get-Date

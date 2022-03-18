@@ -3,11 +3,7 @@ Param([int]$Timeout)
 Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
-$Exchange_Servers = @(
-    'EU1MB9901.Roaya.loc'
-    'EU1MB9902.Roaya.loc'
-    'EU1MB9903.Roaya.loc'
-)
+$Exchange_Servers = @()
 
 $ExternalSenderList = @(
     '.*@gmail.com'
@@ -19,8 +15,8 @@ $ExternalSenderList = @(
 
 $LatencyThresholdSeconds = 120
 
-$username = 'QueueMonitor'
-$password = '97$p$*J5f7$#3$0DnA'
+$username = ''
+$password = ''
 
 [securestring]$secStringPassword = ConvertTo-SecureString $password -AsPlainText -Force
 [pscredential]$UserCredential = New-Object System.Management.Automation.PSCredential ($username, $secStringPassword)
