@@ -108,7 +108,7 @@ Q4)sJu\Y8qz*A3?d
 
 Our attack dropped one more user: **chase!**
 
-![chase-owned](chase-owned)
+![chase-owned](chase-owned.jpg)
 
 *trying to execute commands using `crackmapexec`,* we don't get command execution. It seems chase also isn't an administrator on the machine :/
 
