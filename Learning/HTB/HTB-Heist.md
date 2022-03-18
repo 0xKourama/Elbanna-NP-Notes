@@ -126,8 +126,8 @@ username rout3r password 7 0242114B0E143F015F5D1E161713 --> `$uperP@ssword`
 username admin privilege 15 password 7 02375012182C1A1D751618034F36415408 --> Q4)sJu\Y8qz*A3?d
 - [ ] bruteforce for PHP files
 - [X] look for hidden parameters
-- [ ] source code
-- [ ] guess different usernames
+- [X] source code
+- [X] guess different usernames
     1. administrator
         - stealth1agent
         - stealth0agent
@@ -145,7 +145,7 @@ username admin privilege 15 password 7 02375012182C1A1D751618034F36415408 --> Q4
         - Q4)sJu\Y8qz\*A3?d
 
 
-
+Q4)sJu\Y8qz*A3?d
 
 
 # flow
@@ -204,9 +204,49 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
    1278      29    68932      89592       1.53   3492   0 wsmprovhost
 
 
+# machine hint: Process Inspection
+
 # to-do:
 1. try get a reverse shell as hazard and check his loot
 2. run winpeas
-3. check firefox process
+3. check firefox process [https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#browsers-history]
+Firefox credentials file exists at `C:\Users\Chase\AppData\Roaming\Mozilla\Firefox\Profiles\77nc64t5.default\key4.db`
+
+# Result ---> no logins.json file found
+
 4. check webserver root directory
     1. if we can get a reverse shell as IISAppPool --> maybe we can do impersonation attacks
+5. openssh listening
+
+6. LSA protection not enabled
+7. Cred guard not enabled
+8. cached logons fount
+9. No AV <3
+10. Named pipes:
+    1. eventlog
+    2. router
+    3. vgauth-service
+
+11. installed apps
+    1. firefox
+    2. php
+    3. runphp
+
+12. write access
+    1. C:\windows\tasks
+    2. C:\windows\system32\tasks
+
+13. Appcmd [https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#appcmd-exe]
+`C:\Windows\system32\inetsrv\appcmd.exe`
+
+
+# what we have:
+## chase notes
+```
+Stuff to-do:
+1. Keep checking the issues list.
+2. Fix the router config.
+
+Done:
+1. Restricted access for guest user.
+```
