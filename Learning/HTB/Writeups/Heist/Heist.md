@@ -79,7 +79,7 @@ we update our **userlist** right away with those newly-found users:
 2. chase
 3. jason
 
-and we give it another shot with `crackmapexec` while telling it to `continue on success`. we wan't to know if any passwords were being reused.
+and we give it another shot with `crackmapexec` while telling it to `continue on success`. we want to know if any passwords were being reused.
 
 *right now,* our lists are like this:
 
