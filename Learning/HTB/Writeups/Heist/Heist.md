@@ -184,7 +184,7 @@ the path should be `C:\Users\Chase\AppData\Roaming\Mozilla\Firefox\Profiles\` fo
 
 Note:
 the process of hunting for those firefox passwords took way longer than you would expect :)
-1. I used a tool called `SharpWeb.exe` (https://github.com/djhohnstein/SharpWeb) first, only to find out from its source code that *it only handles `key3.db` files.* Changing the name of the file to match that didn't work. after all, if the number 4 refers to an improved version, that would mean that this version of the tool won't work.
+1. I used a tool called `SharpWeb.exe` (https://github.com/djhohnstein/SharpWeb), only to find out from its source code that *it only handles `key3.db` files.* Changing the name of the file to match that didn't work. after all, if the number 4 refers to an improved version, that would mean that this version of the tool wouldn't work.
 2. I found another tool written in python, with which I had trouble transforimg it to exe using pyinstaller.
 3. I found a final tool called `HarvestBrowserPasswords.exe` (https://github.com/Apr4h/HarvestBrowserPasswords) which threw the error of *not being able to find the `logins.json` file* which was the sign that this privesc path wasn't valid.
 
