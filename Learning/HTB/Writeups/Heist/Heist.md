@@ -190,7 +190,7 @@ the process of hunting for those firefox passwords took way longer than you woul
 
 Afterwards, I think of pivoting to the hazard user and looking for something interesting. This would require using `runas.exe`, which needs a fully interactive tty. This is achievable in our case. Since this machine is a **Windows 10.0 Build 17763 x64**.
 
-we use a very nice reverse shell from (https://github.com/antonioCoco/ConPtyShell) for that. But we still get access denied here also XD
+we use the very nice reverse shell from (https://github.com/antonioCoco/ConPtyShell) for that. But we still get access denied here as well XD
 
 ![run-as-failed](run-as-failed.jpg)
 
