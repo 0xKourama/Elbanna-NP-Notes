@@ -66,7 +66,7 @@ we take a step back and think about all the information we can get from having a
 4. enumerate local groups
 5. enumerate local users using RID bruteforce
 
-*when enumerating shares,* we don't something particularly exploitable
+*when enumerating shares,* we don't see something particularly exploitable
 
 ![smb-shares](smb-shares.jpg)
 
