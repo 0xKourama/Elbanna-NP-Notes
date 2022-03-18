@@ -196,7 +196,7 @@ we use the very nice reverse shell from (https://github.com/antonioCoco/ConPtySh
 
 I then decide maybe I should just privesc with Print Nightmare :D
 
-I use John Hammond's version of the exploit (https://github.com/JohnHammond/CVE-2021-34527) since it's written in PowerShell to which I am biased :D
+I use John Hammond's version of the exploit (https://github.com/JohnHammond/CVE-2021-34527) since it's written in PowerShell *(to which I am biased :D*)
 
 *After uploading the script and import it,* we use it to create a local administrator and we are successful :D
 
