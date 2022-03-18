@@ -122,7 +122,7 @@ there a tool called `evil-winrm` which we can use to see if we can connect remot
 
 ![win-rm-as-chase](win-rm-as-chase.jpg)
 
-it works with **chase** but not with hazard, this is because he happens to be a member of a special group: `Remote Management Users` which allows him to use PowerShell Remoting.
+it works with **chase** *but not with hazard*, this is because he happens to be a member of the special group: `Remote Management Users` which allows him to use **PowerShell Remoting.**
 
 ![chase-groups](chase-groups.jpg)
 
