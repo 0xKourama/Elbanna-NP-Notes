@@ -23,27 +23,7 @@
 ## 2. common endings
 
 # the full name, abbreviation or first couple of letters
-$Company_Name_Variants = @(
-	'T@M'
-	't@mweeli'
-	'T@mweeli'
-	'T@mweely'
-	't@mweely'
-	'Tam'
-	'TAM'
-    'tam'
-	'Tamweel'
-	'tamweel'
-	'TAMWEELi'
-	'Tamweeli'
-	'TAMWEELY'
-	'Tamweely'
-    'Tamweelymf'
-	'tamweely'
-	'TMF'
-	'Tmf'
-	'tmf'
-)
+$Company_Name_Variants = @()
 
 # common words that employees think of to make passwords easier to remember
 $Work_related = @(
