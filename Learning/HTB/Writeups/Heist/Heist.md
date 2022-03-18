@@ -43,7 +43,7 @@ the results were:
 this is a start :D
 *from the conversation on the issues page,* we know that **the hazard user requested a user on the windows server**. So, it would be relevant to try logging to the server as that user. we also have 3 different passwords to try with him. we will use the open `smb` port to try loggin in and use the mighty `crackmapexec` for that :)
 
-the **hazard** user authenticated! but he doesn't seem to have administrator privileges :/
+the **hazard** user authenticated with the password `stealth1agent` but he doesn't seem to have administrator privileges :/
 
 ![hazard-authenticated](hazard-authenticated.jpg)
 
