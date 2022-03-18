@@ -151,7 +151,7 @@ Mode                LastWriteTime         Length Name
 -a-hs-        4/22/2019   7:14 AM            282 desktop.ini
 -a----        2/18/2021   4:03 PM       98779512 VMware-tools-11.2.5-17337674-x86_64.exe
 ```
-the contents of `todo.txt`:
+the contents of `todo.txt` don't reveal something important:
 ```
 Stuff to-do:
 1. Keep checking the issues list.
