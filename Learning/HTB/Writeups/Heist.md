@@ -163,7 +163,7 @@ Done:
 ```
 2. searching in IIS webroot: `ls -force c:\inetpub\wwwroot` we get **access denied**
 3. searching within hazard's profile, we get **access denied**
-4. searching for autologon creds, with a little powershell one-liner I wrote:
+4. searching for autologon creds, with a *little powershell one-liner I wrote:*
 ```
 $ErrorActionPreference='SilentlyContinue';'DefaultDomainName', 'DefaultUserName', 'DefaultPassword', 'AltDefaultDomainName', 'AltDefaultUserName', 'AltDefaultPassword' | % {$Val = Get-ItemPropertyValue -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" -Name $_ ;if($Val){Write-Host -ForegroundColor Green "[+] $_`: $Val"; Clear-Variable Val}else{Write-Host "[-] $_`: Not found"}};$ErrorActionPreference='Continue'
 ```
@@ -198,7 +198,7 @@ I then decide maybe I should just privesc with Print Nightmare :D
 
 I use John Hammond's version of the exploit (https://github.com/JohnHammond/CVE-2021-34527) since it's written in PowerShell to which I am biased :D
 
-*After uploading the script and import it,* we use it to create a local administrator and we are successfull :D
+*After uploading the script and import it,* we use it to create a local administrator and we are successful :D
 
 ![murder](murder.jpg)
 
