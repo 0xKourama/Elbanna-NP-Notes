@@ -6,13 +6,10 @@ Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 $Message_Count_threshold = 50
 
 $Exchange_Servers = @(
-    'EU1MB9901.Roaya.loc'
-    'EU1MB9902.Roaya.loc'
-    'EU1MB9903.Roaya.loc'
 )
 
-$username = 'QueueMonitor'
-$password = '97$p$*J5f7$#3$0DnA'
+$username = ''
+$password = ''
 
 [SecureString]$secStringPassword = ConvertTo-SecureString $password -AsPlainText -Force
 [PSCredential]$UserCredential    = New-Object System.Management.Automation.PSCredential ($username, $secStringPassword)
