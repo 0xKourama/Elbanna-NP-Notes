@@ -16,7 +16,7 @@ we immediately see the login page of a web app that gives us the options to *Log
 
 ![Issues](Issues.jpg)
 
-we go ahead and click the link on the configuration file and see **3 different hashes**:
+we go ahead and click the attachment link and see **3 different hashes**:
 
 ![Config](Config.jpg)
 
@@ -24,7 +24,7 @@ we go ahead and click the link on the configuration file and see **3 different h
 2. `username rout3r password 7 0242114B0E143F015F5D1E161713`
 3. `username admin privilege 15 password 7 02375012182C1A1D751618034F36415408`
 
-cracking those hashes might give us a set of passwords to try to gain more access with. So we use `john` to crack it
+cracking those hashes might give us a set of passwords to try to gain more access with. So we use `john` to crack the first one
 
 we find that the password is *stealth1agent*
 
