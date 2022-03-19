@@ -21,7 +21,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 1. `/artwork`
 2. `/music`
 
-we browse to them after opening up `burp` and proxying the traffic through it. This is because burp would log all the traffic and will show us all the request made by the website. This can show us a lot of hidden directories.
+we browse to them after opening up `burp` and proxying the traffic through it. This is because burp would log all the traffic and will show us all the requests made by the website. This can show us a lot of hidden directories.
 
 *after pressing `login` on the `music` directory web page,* we get redirected to `/ona`
 
@@ -33,7 +33,7 @@ we take note of the version `18.1.1` and search for exploits right away!
 
 ![ona-exploit](ona-exploit.jpg)
 
-we look at the one from exploit-db:
+we look at the one from **exploit-db**:
 
 ```
 # Exploit Title: OpenNetAdmin 18.1.1 - Remote Code Execution
@@ -61,10 +61,11 @@ while true;do
 done
 ```
 
-*Analyzing the exploit,* it looks like a bash script given the shebang `#!/bin/bash`
+*Analyzing the exploit,* it looks like a bash script given the shebang `#!/bin/bash`.
+
 it takes a `url` as the argument and reads a command from the user to include it in the request.
 
-*since it doesn't look malicious,* we run it and give it the url of the application `http://10.10.10.171/ona/` as its argument
+*since it doesn't look malicious,* we run it and give it the url of the application `http://10.10.10.171/ona/` as an argument
 
 `./exploit.sh http://10.10.10.171/ona/`
 
@@ -79,11 +80,11 @@ we try to get a full-fledged shell the standard reverse shell payloads:
 
 but no dice :/
 
-we decide to upload a php reverse shell instead using the one in `/usr/share/webshells`
+we decide to upload a **php reverse shell** instead using the one in `/usr/share/webshells`
 
 ![upload-rev](upload-rev.jpg)
 
-the reverse shell connects back when we visit `http://10.10.10.171/ona/revvy.php` and we're good to go
+the reverse shell connects back when we visit `http://10.10.10.171/ona/revvy.php` and we're good to go :D
 
 ![rev-connect-1](rev-connect-1.jpg)
 
@@ -93,7 +94,7 @@ we then upgrade our shell to full tty as normal
 
 `python3 -c 'import pty; pty.spawn("/bin/bash")'` > `CTRL + Z` > `stty raw -echo` > `fg` > `export SHELL=/bin/bash && export TERM=xterm-256color`
 
-we start by enumerating the web root and find a folder called `internal` owned by the user `jimmy` which we cannot access. This gets me to think that we probably would have to pivot to that user if we were to read the contents.
+we start by enumerating the web root and find a folder called `internal` owned by the user `jimmy` which we cannot access. This gets me to think that we probably would have to **pivot to that user** if we were to read the contents.
 
 ```
 bash-4.4$ ls -la /var/www/
@@ -105,8 +106,8 @@ drwxrwx---  2 jimmy    internal 4096 Mar 19 14:08 internal
 lrwxrwxrwx  1 www-data www-data   12 Nov 21  2019 ona -> /opt/ona/www
 ```
 
-*looking at the number of files inside the ona directory,* they turn out to be 1324 files :D
-taking a look in everyone is not feasable by any means. so we look for stuff that might contain something useful.
+*looking at the number of files inside the `ona` directory,* they turn out to be 1324 files :D
+taking a look in every one of them is not feasable by any means. so we look for stuff that might contain something useful.
 
 *after some considerable time,* we find the file `database_settings.inc.php` inside `/var/www/ona/local/config`. It contained the username and password for the database user:
 
@@ -136,7 +137,7 @@ $ona_contexts=array (
 ?>
 ```
 
-This look promising :D
+This looks promising :D
 The `n1nj4W4rri0R!` password worked with the `ona_sys` and we start our enumerating the database. we find a table called `users` inside that contained both the username and password hashes of `admin` and `guest`
 
 ```
@@ -327,7 +328,7 @@ Click here to logout <a href="logout.php" tite = "Logout">Session
 </html>
 ```
 
-getting the ssh key for the `joanna` user should be interesting. but we won't be able to access those webpages unless they were in the `/var/www/html` directory and were both readable and executable by the `www-data` user. There has to be some other way.
+getting the ssh key for the `joanna` user should be interesting. but we won't be able to access those webpages unless they were in the `/var/www/html` directory and were both **readable and executable** by the `www-data` user. There has to be some other way...
 
 I don't get any ideas right off the bat. so I go ahead and use `linpeas.sh` to search for other ways to escalate my privileges.
 
@@ -348,7 +349,7 @@ we know that we should get the contents of `joanna`'s ssh key if we log in with 
 - username: `jimmy`
 - password: `Revealed`
 
-so create an `SSH tunnel` to bring out that internal `52846` port to our localhost on port `8888`
+so we create an `SSH tunnel` to bring out that internal `52846` port to our `localhost` on port `8888`
 
 `ssh jimmy@10.10.10.171 -L 8888:127.0.0.1:52846`
 
@@ -360,11 +361,11 @@ after loggin in, we get the ssh key for the `joanna` user!
 
 ![joanna-key](joanna-key.jpg)
 
-we change its permissions using `chmod 600 joanna_key`
+we copy it to our kali machine and we change its permissions using `chmod 600 joanna_key`
 
-and we use to log in. but it requires a passphrase :D
+and we use it to log in. but it requires a passphrase :D
 
-we use the tool `ssh2john` to change the ssh key into a format crackable by `john`. we crack the password using the `rockyou.txt` wordlist.
+we use the tool `ssh2john` to change the ssh key into a format that's crackable by `john`. we crack the password using the `rockyou.txt` wordlist.
 
 ```
 $ ssh2john joanna_key > joanna_john
@@ -425,7 +426,7 @@ A quick search on GTFO bins reveals a way we can do that using `CTRL+R` followed
 
 ![gtfo](gtfo.jpg)
 
-we use the command `/bin/nano /opt/priv` and issue a command as root `chmod +s /bin/bash`. This makes the `bash` shell run with `setuid` bit. This makes us able to run as the `root` use when using `bash` with the `-p` flag. we do that and voala :D
+we use the command `/bin/nano /opt/priv` and issue a command as root `chmod +s /bin/bash`. This makes the `bash` shell run with `setuid` bit. and makes us able to run as the `root` use when using `bash` with the `-p` flag. we do that and voala :D
 
 ![chmod-bash](chmod-bash.jpg)
 
