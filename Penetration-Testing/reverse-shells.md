@@ -6,10 +6,10 @@
 3. use `stty size` to view the terminal dimensions *to be used in step #7*
 4. use `stty raw -echo` then `fg`
 5. type `reset` even if you don't see visual feedback
-6. when the reverse shell is back, set your `SHELL` and `TERM` environement variables:
-`export SHELL=/bin/bash && export TERM=xterm-256color`
-7. set terminal size using `stty rows <number> columns <number>`:
-`size=$(stty size); rows=$(echo $size | cut -d' ' -f1); cols=$(echo $size | cut -d' ' -f2); echo "stty rows $rows columns $cols"`
+6. when the reverse shell is back, set your `SHELL` and `TERM` environement variables
+- `export SHELL=/bin/bash && export TERM=xterm-256color`
+7. set terminal size using `stty rows <number> columns <number>`
+- `size=$(stty size); rows=$(echo $size | cut -d' ' -f1); cols=$(echo $size | cut -d' ' -f2); echo "stty rows $rows columns $cols"`
 
 # Windows better tty using `rlwrap`
 1. install rlwrap using `apt install rlwrap`
