@@ -1,23 +1,14 @@
 # Linux fully interactive tty
 1. use python 2 or python3 `pty` module's `spawn` function
-`python -c 'import pty; pty.spawn("/bin/bash")'`
-`python3 -c 'import pty; pty.spawn("/bin/bash")'`
+	1. `python -c 'import pty; pty.spawn("/bin/bash")'`
+	2. `python3 -c 'import pty; pty.spawn("/bin/bash")'`
 2. use `CTRL + Z` to background the shell
 3. use `stty size` to view the terminal dimensions *to be used in step #7*
 4. use `stty raw -echo` then `fg`
 5. type `reset` even if you don't see visual feedback
 6. when the reverse shell is back, set your `SHELL` and `TERM` environement variables
-`export SHELL=/bin/bash`
-`export TERM=xterm-256color`
-7. set terminal size using `stty rows <number> columns <number>`
-
-### one liner that checks which python version is there and goes for it:
-`python2=$(which python);python3=$(which python3);if [[ -x $python2 ]];then echo "[+] python2 installed";python -c 'import pty; pty.spawn("/bin/bash")';elif [[ -x $python3 ]];then echo "[+] python3 installed";python3 -c 'import pty; pty.spawn("/bin/bash")';else echo "[-] no python installed";fi`
-
-### another for exporting both `SHELL` and `XTERM` values:
 `export SHELL=/bin/bash && export TERM=xterm-256color`
-
-### and the last one for preparing the command for setting rows and columns
+7. set terminal size using `stty rows <number> columns <number>`
 `size=$(stty size); rows=$(echo $size | cut -d' ' -f1); cols=$(echo $size | cut -d' ' -f2); echo "[*] setting stty rows to $rows and columns to $cols"; stty rows $rows columns $cols`
 
 # Windows better tty using `rlwrap`
