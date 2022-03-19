@@ -131,6 +131,7 @@ it works with **chase** *but not with hazard*, this is because he happens to be 
 1. searching desktop, documents & downloads: `ls -force ~\Desktop, ~\Documents, ~\Downloads`
 ```
 Directory: C:\Users\Chase\Desktop
+
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a-hs-        4/22/2019   7:14 AM            282 desktop.ini
@@ -138,6 +139,7 @@ Mode                LastWriteTime         Length Name
 -ar---        3/18/2022   2:13 PM             34 user.txt
 
 Directory: C:\Users\Chase\Documents
+
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 d--hsl        4/22/2019   7:14 AM                My Music
@@ -146,6 +148,7 @@ d--hsl        4/22/2019   7:14 AM                My Videos
 -a-hs-        4/22/2019   7:14 AM            402 desktop.ini
 
 Directory: C:\Users\Chase\Downloads
+
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a-hs-        4/22/2019   7:14 AM            282 desktop.ini
@@ -159,7 +162,6 @@ Stuff to-do:
 
 Done:
 1. Restricted access for guest user.
-
 ```
 2. searching in IIS webroot: `ls -force c:\inetpub\wwwroot` we get **access denied**
 3. searching within hazard's profile, we get **access denied**
