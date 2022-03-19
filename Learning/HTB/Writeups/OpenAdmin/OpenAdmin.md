@@ -246,7 +246,7 @@ we now have 3 passwords on our list:
 2. joanna
 3. root
 
-we try testing those creds out and find that the password `n1nj4W4rri0R!` works for the `jimmy` user.
+we try those creds out and find that the password `n1nj4W4rri0R!` works for the `jimmy` user.
 
 ```
 $ ssh jimmy@10.10.10.171
