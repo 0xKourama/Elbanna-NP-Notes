@@ -11,6 +11,15 @@
 `export TERM=xterm-256color`
 7. set terminal size using `stty rows <number> columns <number>`
 
+## one liner that check which python version is there and goes for it:
+`python2=$(which python);python3=$(which python3);if [[ -x $python2 ]];then echo "[+] python2 installed";python -c 'import pty; pty.spawn("/bin/bash")';elif [[ -x $python3 ]];then echo "[+] python3 installed";python3 -c 'import pty; pty.spawn("/bin/bash")';else echo "[-] no python installed";fi`
+
+## another for exporting both `SHELL` and `XTERM` values:
+`export SHELL=/bin/bash && export TERM=xterm-256color`
+
+## and the last one for preparing the command for setting rows and columns
+`size=$(stty size); rows=$(echo $size | cut -d' ' -f1); cols=$(echo $size | cut -d' ' -f2); echo "[*] setting stty rows to $rows and columns to $cols"; stty rows $rows columns $cols`
+
 # Windows better tty using `rlwrap`
 1. install rlwrap using `apt install rlwrap`
 2. using rlwrap before your standard listener `rlwrap nc -lvnp <LPORT>`
