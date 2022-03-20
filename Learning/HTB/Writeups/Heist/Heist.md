@@ -2,7 +2,7 @@
 
 we first start by doing a quick nmap top 10 tcp ports: `nmap --top-ports --open 10 10.10.10.149`
 
-![nmap top 10 port scan](../../../../../../../../../../../../../../../../../../../../nmap-top-10-ports.jpg)
+![nmap top 10 port scan](nmap-top-10-ports.jpg)
 
 we find http and smb ports open, so we begin with HTTP after leaving a full port scan `nmap -p- -T4 10 10.10.10.149`
 
