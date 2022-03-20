@@ -922,7 +922,7 @@
 - Rsync wildcard abuse
 
 # Reel - Hard
-- Extraction and use of document metada in a phishing attack
+- Extraction and use of document metadata in a phishing attack
 - Creation of attacker infrastructure (malicious SMTP server, web server and listener)
 - Identification and exploitation of Active Directory DACL attack chain
 

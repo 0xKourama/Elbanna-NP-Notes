@@ -1,0 +1,6 @@
+```
+mask ""
+recruse
+prompt
+mget *
+```
