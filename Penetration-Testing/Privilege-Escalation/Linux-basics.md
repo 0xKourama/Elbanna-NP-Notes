@@ -25,3 +25,15 @@ dpkg -l (Debian based OSs)
 rpm -qa (CentOS / openSUSE )
 uname -a
 ```
+
+# Then using this information, we can help answer the following:
+1. What user files do we have access to?
+2. What configurations do we have access to?
+3. Any incorrect file permissions?
+4. What programs are custom? Any SUID? SGID?
+5. What's scheduled to run?
+6. Any hardcoded credentials? Where are credentials kept?
+7. what's running on the box?
+8. what ports are listening? internally?
+
+*...and many many other questions*
