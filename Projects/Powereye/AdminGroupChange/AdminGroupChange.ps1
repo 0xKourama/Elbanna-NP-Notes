@@ -4,8 +4,7 @@ Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Admin_Security_Groups = @(
-    'Administrators'
-	'Authorized Personnel'
+    	'Administrators'
 	'Compliance Management'
 	'Delegated Setup'
 	'Discovery Management'
@@ -15,9 +14,7 @@ $Admin_Security_Groups = @(
 	'Exchange Trusted Subsystem'
 	'Exchange Windows Permissions'
 	'ExchangeLegacyInterop'
-	'FrontAdmins'
 	'Group Policy Creator Owners'
-	'Help Desk'
 	'Hygiene Management'
 	'Impersonation-Privilege'
 	'import and export role permissions'
@@ -32,10 +29,7 @@ $Admin_Security_Groups = @(
 	'Security Reader'
 	'Server Management'
 	'Server Operators'
-	'UM Management'
 	'View-Only Organization Management'
-	'WP-Support-L1'
-	'WP-Support-L2'
 )
 
 $group_csv_path = '.\GroupData.csv'
