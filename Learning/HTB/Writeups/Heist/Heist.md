@@ -204,4 +204,6 @@ I use John Hammond's version of the exploit (https://github.com/JohnHammond/CVE-
 
 ![murder](murder.jpg)
 
-P.S. nevermind the names I use. It's totally normal XD
+nevermind the names I use. It's totally normal XD
+
+P.S. After checking **Ippsec's** writeup, the *intended path* was to dump the memory of the firefox process and use the `strings` command to look into its contents where the credentials would for the administrator would be found. But, oh well :/ :D
