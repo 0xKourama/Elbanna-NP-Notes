@@ -599,3 +599,12 @@
 		1. System Checks
 		2. User Activity Based Checks
 		3. Time Based Evasion
+10. **Lateral Movement**
+	1. Exploitation of Remote Services
+	2. Internal Spearphishing
+	3. Lateral Tool Transfer
+	4. Remote Service Session Hijacking
+		1. SSH Hijacking
+		2. RDP Hijacking
+	5. Remote Services
+		1. 
