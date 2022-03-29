@@ -73,7 +73,7 @@ And lo and behold! we find a comment right at the bottom saying `secret.txt`
 
 ![secret-comment](secret-comment.jpg)
 
-it's the same result if we grep for comments after curling:
+it's a cleaner view if we grep for comments after curling the page:
 
 ![comment-curl](comment-curl.jpg)
 
