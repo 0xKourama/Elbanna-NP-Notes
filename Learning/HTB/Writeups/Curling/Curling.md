@@ -89,7 +89,7 @@ I immediately try the text as the password on the admin panel with the users:
 
 but nothing!
 
-Even though, this file being hidden in the comments and being called secret.txt are factors making me consider this is something important. Something must be missing. I go for a walk and come back to decide maybe this text isn't a randomly generated password and is encrypted or something. So i drop it onto `CyberChef` (https://gchq.github.io/CyberChef/). It was a base64 encoded text: `Curling2018!`.
+Even though, this file being hidden in the comments and being called `secret.txt` are factors making me consider this is something important. Something must be missing. I go for a walk and come back to decide maybe this text *isn't a randomly generated password* and is encrypted or something. So i drop it onto `CyberChef` (https://gchq.github.io/CyberChef/). It was a base64 encoded text: `Curling2018!`.
 
 ![cracked](Cracked.jpg)
 
@@ -107,9 +107,9 @@ Not the most stealthy option I know. But this is HTB XD
 
 ![revvy](revvy.jpg)
 
-*After upgrading our shell to fully-interactive TTY,* we start checking the system.
+*After upgrading our shell to fully-interactive TTY,* we start checking the system...
 
-We find another user on the system: `floris`. And, *as we're browsing through is home folder,* we see two non-standard items:
+We find another user on the system: `floris`. And, *as we're browsing through his/her home folder,* we see two non-standard items:
 1. a file called `password_backup` that we can read
 2. a folder called admin_area only root and floris can see what's inside.
 
@@ -389,11 +389,11 @@ we check their contents:
 
 ![input-report-files](input-report-files.jpg)
 
-it seems that a `curl` command is being run on the `localhost` url `http://127.0.0.1` which sends the output into the `report` file. We know that because of the error message `WARNING: Failed to daemonise.  This is quite common and not fatal.` which is the error you get when you trigger a `PHP reverse shell` without a listener. We can confirm that by starting a listener and see if something connects back.
+it seems that a `curl` command is being run on the `localhost` url `http://127.0.0.1` which sends the output into the `report` file. We know that because of the error message `WARNING: Failed to daemonise.  This is quite common and not fatal.` which is the error you get when you trigger a `PHP reverse shell` without a listener. We can confirm that by starting a listener to see if something connects back.
 
 ![running-curl](running-curl.jpg)
 
-It does happen :D but we need more information.
+It does happen :D but we need more information to be able to exploit this
 
 we want to get `pspy` (https://github.com/DominicBreuker/pspy) on the victim machine so we can start monitoring what's goin on inside the system. `pspy` is a tool you can use to snoop on processes without need for root permissions. It allows you to see commands run by other users, cron jobs, etc. as they execute. It's very handy.
 
@@ -401,7 +401,7 @@ after making the binary executable, we start it and notice some very interesting
 
 ![pspy](pspy.jpg)
 
-`/bin/sh -c sleep 1; cat /root/default.txt > /home/floris/admin-area/input` a user who can read the file `default.txt` within the `root` folder is getting its contents into the `input` file in the home folder for the `floris` user.
+`/bin/sh -c sleep 1; cat /root/default.txt > /home/floris/admin-area/input` a user who can read the file `default.txt` within the `root` folder is getting its contents into the `input` file in the home folder of the `floris` user.
 
 `/bin/sh -c curl -K /home/floris/admin-area/input -o /home/floris/admin-area/report` as we thought, a curl command is being run which outputs to the `report` file. But we notice that it uses the `-K` flag which lets the curl command read the `input` file as its configuration.
 
@@ -419,9 +419,9 @@ and we manage to get the `shadow` file contents :D so it works!
 
 ![got-shadow](got-shadow.jpg)
 
-alright, by all means, we can read the `root.txt` file. But that wouldn't be fun :D ... we're going for a shell :D
+*alright, with this,* we can totally read the `root.txt` file. But that wouldn't be fun :D ... we're going for a shell :D
 
-*since we can read the `shadow` file, and we can use the `curl` command's `output` functionality to write as root,* we can forge our own shadow file.
+*since we can read the `shadow` file, and we can use the `curl` command's `output` functionality to write as root,* we can **forge** our own `shadow` file.
 
 we first need to create a `SHA-512` hash using `mkpasswd`
 
