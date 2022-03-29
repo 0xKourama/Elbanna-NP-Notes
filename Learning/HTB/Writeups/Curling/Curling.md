@@ -91,7 +91,7 @@ but nothing!
 
 Even though, this file being hidden in the comments and being called secret.txt are factors making me consider this is something important. Something must be missing. I go for a walk and come back to decide maybe this text isn't a randomly generated password and is encrypted or something. So i drop it onto `CyberChef` (https://gchq.github.io/CyberChef/). It was a base64 encoded text: `Curling2018!`.
 
-![cracked](cracked.jpg)
+![cracked](Cracked.jpg)
 
 We use this with the `floris` user and we are logged in as the `Super User`! I was talking to myself like "why you no think of this earlier?" XD
 
