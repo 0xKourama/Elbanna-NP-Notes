@@ -1,19 +1,33 @@
   `-R, --name-resolve=NAME-RESOLVE-ORDER`     Use these name resolution services only
-  `-M, --message=HOST`                        Send message
-  `-I, --ip-address=IP`                       Use this IP to connect to
-  `-E, --stderr`                              Write messages to stderr instead of stdout
-  `-L, --list=HOST`                           Get a list of shares available on a host
-  `-m, --max-protocol=LEVEL`                  Set the max protocol level
-  `-T, --tar=<c|x>IXFvgbNan`                  Command line tar
-  `-D, --directory=DIR`                       Start from directory
-  `-c, --command=STRING`                      Execute semicolon separated commands
-  `-b, --send-buffer=BYTES`                   Changes the transmit/send buffer
-  `-t, --timeout=SECONDS`                     Changes the per-operation timeout
-  `-p, --port=PORT`                           Port to connect to
-  `-g, --grepable`                            Produce grepable output
-  `-q, --quiet`                               Suppress help message
-  `-B, --browse`                              Browse SMB servers using DNS
 
+  `-M, --message=HOST`                        Send message
+
+  `-I, --ip-address=IP`                       Use this IP to connect to
+
+  `-E, --stderr`                              Write messages to stderr instead of stdout
+
+  `-L, --list=HOST`                           Get a list of shares available on a host
+
+  `-m, --max-protocol=LEVEL`                  Set the max protocol level
+
+  `-T, --tar=<c|x>IXFvgbNan`                  Command line tar
+
+  `-D, --directory=DIR`                       Start from directory
+
+  `-c, --command=STRING`                      Execute semicolon separated commands
+
+  `-b, --send-buffer=BYTES`                   Changes the transmit/send buffer
+
+  `-t, --timeout=SECONDS`                     Changes the per-operation timeout
+
+  `-p, --port=PORT`                           Port to connect to
+
+  `-g, --grepable`                            Produce grepable output
+
+  `-q, --quiet`                               Suppress help message
+
+  `-B, --browse`                              Browse SMB servers using DNS
+  
 ```
 Help options:
   -?, --help                                Show this help message
