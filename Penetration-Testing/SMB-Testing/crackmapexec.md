@@ -1,9 +1,9 @@
+# positional arguments:
 ```
-positional arguments:
   target                the target IP(s), range(s), CIDR(s), hostname(s), FQDN(s), file(s) containing a list of targets, NMap XML or .Nessus file(s)
 ```
+# optional arguments:
 ```
-optional arguments:
   -h, --help            show this help message and exit
   -id CRED_ID [CRED_ID ...]
                         database credential ID(s) to use for authentication
@@ -49,8 +49,8 @@ optional arguments:
                         SMB connection timeout, default 3 secondes
   --laps [LAPS]         LAPS authentification
 ```
+# Credential Gathering:
 ```
-Credential Gathering:
   Options for gathering credentials
 
   --sam                 dump SAM hashes from target systems
@@ -58,8 +58,8 @@ Credential Gathering:
   --ntds [{drsuapi,vss}]
                         dump the NTDS.dit from target DCs using the specifed method (default: drsuapi)
 ```
+# Mapping/Enumeration:
 ```
-Mapping/Enumeration:
   Options for Mapping/Enumerating
 
   --shares              enumerate shares and access
@@ -79,8 +79,8 @@ Mapping/Enumeration:
   --wmi-namespace NAMESPACE
                         WMI Namespace (default: root\cimv2)
 ```
+# Spidering:
 ```
-Spidering:
   Options for spidering shares
 
   --spider SHARE        share to spider
@@ -96,15 +96,15 @@ Spidering:
   --depth DEPTH         max spider recursion depth (default: infinity & beyond)
   --only-files          only spider files
 ```
+# Files:
 ```
-Files:
   Options for put and get remote files
 
   --put-file FILE FILE  Put a local file into remote target, ex: whoami.txt \\Windows\\Temp\\whoami.txt
   --get-file FILE FILE  Get a remote file, ex: \\Windows\\Temp\\whoami.txt whoami.txt
 ```
+# Command Execution:
 ```
-Command Execution:
   Options for executing commands
 
   --exec-method {mmcexec,wmiexec,atexec,smbexec}
@@ -114,8 +114,8 @@ Command Execution:
   -x COMMAND            execute the specified command
   -X PS_COMMAND         execute the specified PowerShell command
 ```
+# Powershell Obfuscation:
 ```
-Powershell Obfuscation:
   Options for PowerShell script obfuscation
 
   --obfs                Obfuscate PowerShell scripts
