@@ -15,24 +15,28 @@ Usage: smbclient service <password>
   -g, --grepable                            Produce grepable output
   -q, --quiet                               Suppress help message
   -B, --browse                              Browse SMB servers using DNS
-
+```
+```
 Help options:
   -?, --help                                Show this help message
       --usage                               Display brief usage message
-
+```
+```
 Common samba options:
   -d, --debuglevel=DEBUGLEVEL               Set debug level
   -s, --configfile=CONFIGFILE               Use alternate configuration file
   -l, --log-basename=LOGFILEBASE            Base name for log files
   -V, --version                             Print version
       --option=name=value                   Set smb.conf option from command line
-
+```      
+```
 Connection options:
   -O, --socket-options=SOCKETOPTIONS        socket options to use
   -n, --netbiosname=NETBIOSNAME             Primary netbios name
   -W, --workgroup=WORKGROUP                 Set the workgroup name
   -i, --scope=SCOPE                         Use this Netbios scope
-
+```
+```
 Authentication options:
   -U, --user=USERNAME                       Set the network username
   -N, --no-pass                             Don't ask for a password
