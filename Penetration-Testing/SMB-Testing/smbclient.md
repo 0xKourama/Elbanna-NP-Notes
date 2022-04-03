@@ -17,11 +17,6 @@ Usage: smbclient service <password>
   -B, --browse                              Browse SMB servers using DNS
 ```
 ```
-Help options:
-  -?, --help                                Show this help message
-      --usage                               Display brief usage message
-```
-```
 Common samba options:
   -d, --debuglevel=DEBUGLEVEL               Set debug level
   -s, --configfile=CONFIGFILE               Use alternate configuration file

@@ -1,12 +1,4 @@
 ```
-usage: smbmap [-h] (-H HOST | --host-file FILE) [-u USERNAME] [-p PASSWORD] [-s SHARE] [-d DOMAIN] [-P PORT] [-v] [--admin] [-x COMMAND] [--mode CMDMODE] [-L | -R [PATH] | -r [PATH]] [-A PATTERN | -g] [--dir-only]
-              [--no-write-check] [-q] [--depth DEPTH] [--exclude SHARE [SHARE ...]] [-F PATTERN] [--search-path PATH] [--search-timeout TIMEOUT] [--download PATH] [--upload SRC DST] [--delete PATH TO FILE] [--skip]
-```
-```
-optional arguments:
-  -h, --help            show this help message and exit
-```
-```
 Main arguments:
   -H HOST               IP of host
   --host-file FILE      File containing a list of hosts
