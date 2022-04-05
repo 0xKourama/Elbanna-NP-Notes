@@ -213,3 +213,41 @@ We first try to login using `crackmapexec` using the `SMB` module. But that does
 it works like a charm, this is because we're a member of the builtin group of `Remote Management Users`
 
 ![groups](groups.jpg)
+
+*Anyway,* we get down to enumeration for privesc
+
+1. we look for interesting files in user profiles --> nothing
+2. we check for interesting directories in `c:\` --> nothing
+3. we check processes --> nothing intereting there
+4. we check services --> access denied
+5. we run systeminfo to get information on the kernel --> access denied
+6. we check for saved creds with `cmdkey /list` --> nothing
+7. we check our privileges with `whoami /privs` --> nothing special there
+8. we run WinPEAS (https://github.com/carlospolop/PEASS-ng) and still don't find anything
+
+but ...
+
+*going back to our group memberships,* we do find ourselves in quite a few interesting groups:
+1. Account Operators --> this can let us create AD accounts and add them to groups other than high privelege ones (Administrators, Domain Admins etc.) (https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-accountoperators)
+2. Privileged IT Accounts --> this is not a standard AD group and we would want to know what those *Privileges* are :D
+3. Service Accounts --> this too can be interesting
+
+*since we're in a an Active Directory environment,* a standard tool to use is `BloodHound` (https://github.com/BloodHoundAD/BloodHound). It can help us identify paths to escalate our privileges inside a domain context. We will use it show us what can be done using the privileges that we hold.
+
+*in order to supply bloodhound with the information it needs,* we will need to run a tool called `SharpHound` (https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) to collect details about the domain.
+
+We upload it to the machine using `evil-winrm`'s `upload` functions and run it using the `-c all` flag to perform all collection methods.
+
+![Sharphound-collection](Sharphound-collection.jpg)
+
+We're going to transfer the data (`20220405150628_BloodHound.zip`) over to our kali machine in order to feed it to `bloodhound`.
+
+We do that using impacket's `smbserver.py`
+
+![smb-server](smb-server.jpg)
+
+and then mount it on the victim machine use the `net use` command, moving the `.zip` file and then unmounting the share.
+
+![mounting-smb](mounting-smb.jpg)
+
+*afterwards,* we upload the file into `bloodhound` after starting it with the `--no-sandbox` flag. And, after setting up the `neo4j` database.
