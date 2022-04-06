@@ -4,7 +4,7 @@ Invoke-Expression -Command (Get-Content -Path 'Mail-Settings.txt' -Raw)
 Invoke-Expression -Command (Get-Content -Path 'HTML-Layout.txt'   -Raw)
 
 $Admin_Security_Groups = @(
-    	'Administrators'
+    'Administrators'
 	'Compliance Management'
 	'Delegated Setup'
 	'Discovery Management'

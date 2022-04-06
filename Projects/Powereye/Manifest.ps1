@@ -57,14 +57,14 @@ $Modules = @(
     #7
     [Module]@{
         Name = 'Exchange Queue Warning'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Minutes 10
         RunOnDemand = $false
     }
     #8
     [Module]@{
         Name = 'Mail Latency'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Minutes 10
         RunOnDemand = $false
     }
@@ -113,7 +113,7 @@ $Modules = @(
     #15
     [Module]@{
         Name = 'Transport Services Restart'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Hours 1
         RunOnDemand = $false
     }
@@ -127,28 +127,28 @@ $Modules = @(
     #17
     [Module]@{
         Name = 'Internal Domains DNS Report'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Days 2
         RunOnDemand = $false
     }
     #18
     [Module]@{
         Name = 'Exchange Servers Status Report'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Hours 1
         RunOnDemand = $false
     }
     #19
     [Module]@{
         Name = 'Unauthorized Login Detected'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Minutes 10
         RunOnDemand = $false
     }
     #20
     [Module]@{
         Name = 'VCenter Report'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Days 1
         RunOnDemand = $false
     }
@@ -162,7 +162,7 @@ $Modules = @(
     #22
     [Module]@{
         Name = 'UnAuthorized PowerShell Usage'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Minutes 10
         RunOnDemand = $false
     }
@@ -176,28 +176,28 @@ $Modules = @(
     #24
     [Module]@{
         Name = 'Unprotected OUs Detected'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Days 1
         RunOnDemand = $false
     }
     #25
     [Module]@{
         Name = 'VCenter Storage Monitor'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Days 1
         RunOnDemand = $false
     }
     #26
     [Module]@{
         Name = 'Exchange Component Reactivation'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Minutes 3
         RunOnDemand = $false
     }
     #27 
     [Module]@{
         Name = 'Exchange Service Reactivation'
-        Enabled = $true
+        Enabled = $false
         RunInterval = New-TimeSpan -Minutes 3
         RunOnDemand = $false
     }
