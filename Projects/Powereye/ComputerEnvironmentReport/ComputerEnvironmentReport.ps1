@@ -23,7 +23,7 @@ $DCProperties = @(
 #endregion
 
 #getting the computers in the 'old servers' OU to be excluded from report
-$OldServers = (Get-ADComputer -Filter * -SearchBase 'OU=OldServers,DC=Roaya,DC=loc').Name
+#$OldServers = (Get-ADComputer -Filter * -SearchBase 'OU=OldServers,DC=Roaya,DC=loc').Name
 
 #fetch all AD computers with the needed properties
 $ADComputers = Get-ADComputer -Filter * -Properties $ADProperties | Where-Object {$OldServers -notcontains $_.name} |
