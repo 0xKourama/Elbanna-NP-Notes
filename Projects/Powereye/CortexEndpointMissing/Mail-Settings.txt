@@ -1,6 +1,0 @@
-$MailSettings = @{
-    SMTPserver = ''
-    From       = 'CortexEndpointMissing@PowerEye.com'
-    To         = ''
-    Subject    = 'Cortex Endpoint Missing'
-}

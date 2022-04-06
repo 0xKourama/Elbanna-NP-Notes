@@ -42,7 +42,7 @@ $Modules = @(
     }
     #5
     [Module]@{
-        Name = 'Cortex Endpoint Missing'
+        Name = 'Endpoint Missing'
         Enabled = $true
         RunInterval = New-TimeSpan -Hours 12
         RunOnDemand = $false
