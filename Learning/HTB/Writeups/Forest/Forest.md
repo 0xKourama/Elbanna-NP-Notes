@@ -254,7 +254,7 @@ and then mount it on the victim machine use the `net use` command, moving the `.
 
 ![bloodhound-query](bloodhound-query.jpg)
 
-This query shows us no real path to being a domain admin. So we try another query: `Shortest Paths to Hgih Value Targets`
+This query shows us no real path to being a domain admin. So we try another query: `Shortest Paths to High Value Targets`
 
 ![bloodhound-query-2](bloodhound-query-2.jpg)
 
