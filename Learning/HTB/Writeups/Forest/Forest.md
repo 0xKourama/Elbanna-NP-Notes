@@ -108,7 +108,7 @@ mark                                                  2019-09-20 18:57:30.243568
 santi                                                 2019-09-20 19:02:55.134828  <never> 
 ```
 
-This gets us **all** the users in the domain. The ones below look organic enough for us to try spraying.
+*Because LDAP Anonymous access is enabled,* this gets us **all** the users in the domain. The ones below look organic enough for us to try spraying.
 - Administrator
 - sebastien
 - lucinda
