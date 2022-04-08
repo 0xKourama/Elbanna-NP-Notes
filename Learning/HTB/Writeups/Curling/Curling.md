@@ -445,6 +445,6 @@ output = "/etc/shadow"
 
 we start our `python3` webserver and we get a `GET` request :D
 
-We then `su` as the `root` user and we have a shell! :D
+We then `su` as the `root` user and get our root shell! :D
 
 ![gotcha](gotcha.jpg)
