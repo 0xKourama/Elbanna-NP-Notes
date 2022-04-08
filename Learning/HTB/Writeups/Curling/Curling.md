@@ -397,7 +397,7 @@ It does happen :D but we need more information to be able to exploit this
 
 we want to get `pspy` (https://github.com/DominicBreuker/pspy) on the victim machine so we can start monitoring what's goin on inside the system. `pspy` is a tool you can use to snoop on processes without need for root permissions. It allows you to see commands run by other users, cron jobs, etc. as they execute. It's very handy.
 
-after making the binary executable, we start it and notice some very interesting activities going on.
+after making the binary executable, we start it and notice some very interesting activity going on.
 
 ![pspy](pspy.jpg)
 
