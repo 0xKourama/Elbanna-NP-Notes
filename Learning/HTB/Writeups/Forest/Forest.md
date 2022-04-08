@@ -63,7 +63,7 @@ We find a collection of ports that give us a high probability that this is windo
 - Global Catalog on port 3268
 - WinRM on port 5985
 
-From the nmap `smb-os-discovery`, the domain name should be `htb.local`
+From the nmap script `smb-os-discovery`, the domain name should be `htb.local`
 
 We want to start enumerating users. So we use an impacket tool called `GetADUsers.py`.
 
@@ -108,7 +108,7 @@ mark                                                  2019-09-20 18:57:30.243568
 santi                                                 2019-09-20 19:02:55.134828  <never> 
 ```
 
-This gets us all the users in the domain. The ones below look organic enough for us to try spraying.
+This gets us **all** the users in the domain. The ones below look organic enough for us to try spraying.
 - Administrator
 - sebastien
 - lucinda
@@ -117,7 +117,7 @@ This gets us all the users in the domain. The ones below look organic enough for
 - mark
 - santi
 
-*Since we need a wordlist,* We create a basic one from the most common passwords (like P@ssw0rd etc.) and from commonly used password convention schemes like:
+*Since we need a wordlist,* We create a basic one from the most common passwords (like "P@ssw0rd" etc.) and from **commonly used password convention schemes** like:
 - Season + Year
 - Season + Year + !
 - Season + Special Char + Year
@@ -125,8 +125,8 @@ This gets us all the users in the domain. The ones below look organic enough for
 - Company Name + Year + !
 - Company Name + Special Char + Year
 
-We will use `Forest` as the company name even though it's a CTF. Because that's what I would do in a real pentest :D
-Also, the year this machine has been launched is 2019. So we will use that year as well as a couple of years around it (2017, 2018, 2021 and 2021).
+We will pretend that `Forest` is the company name even though it's a CTF. Because that's what I would do in a real pentest :D
+Also, the year this machine has been launched is 2019. So we will use that year as well as a couple of years around it (2017, 2018, 2020 and 2021).
 
 I write a quick `PowerShell` script for this:
 
@@ -218,7 +218,7 @@ it works like a charm, this is because we're a member of the builtin group of `R
 
 1. we look for interesting files in user profiles --> nothing
 2. we check for interesting directories in `c:\` --> nothing
-3. we check processes --> nothing intereting there
+3. we check processes --> nothing interesting there
 4. we check services --> access denied
 5. we run systeminfo to get information on the kernel --> access denied
 6. we check for saved creds with `cmdkey /list` --> nothing
@@ -228,15 +228,15 @@ it works like a charm, this is because we're a member of the builtin group of `R
 but ...
 
 *going back to our group memberships,* we do find ourselves in quite a few interesting groups:
-1. Account Operators --> this can let us create AD accounts and add them to groups other than high privelege ones (Administrators, Domain Admins etc.) (https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-accountoperators)
+1. Account Operators --> this can let us create AD accounts and add them to groups other than high privilege ones (Administrators, Domain Admins etc.) (https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-accountoperators)
 2. Privileged IT Accounts --> this is not a standard AD group and we would want to know what those *Privileges* are :D
-3. Service Accounts --> this too can be interesting
+3. Service Accounts --> this too might be interesting
 
 *since we're in a an Active Directory environment,* a standard tool to use is `BloodHound` (https://github.com/BloodHoundAD/BloodHound). It can help us identify paths to escalate our privileges inside a domain context. We will use it show us what can be done using the privileges that we hold.
 
 *in order to supply bloodhound with the information it needs,* we will need to run a tool called `SharpHound` (https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) to collect details about the domain.
 
-We upload it to the machine using `evil-winrm`'s `upload` functions and run it using the `-c all` flag to perform all collection methods.
+We upload it to the machine using `evil-winrm`'s `upload` function and run it using the `-c all` flag to perform all collection methods.
 
 ![Sharphound-collection](Sharphound-collection.jpg)
 
@@ -258,7 +258,7 @@ This query shows us no real path to being a domain admin. So we try another quer
 
 ![bloodhound-query-2](bloodhound-query-2.jpg)
 
-It looks horrible at first. *But, after taking a closer look,* we notice that our account *being in the `account operators` group* can add a member to a certain group called `Exchange Windows Permissions` which happens to have `WriteDACL` on `htb.local` a.k.a the domain. Having that privilege means we can abuse it to give ourselves the `DCSync` right that we can use to dump all the domain hashes.
+It looks horrible at first. *But, after taking a closer look,* we notice that our account *being in the* `account operators` *group* can add a member to a certain group called `Exchange Windows Permissions` which happens to have `WriteDACL` on `htb.local` a.k.a the **DOMAIN!**. Having that privilege means we can abuse it to give ourselves the `DCSync` right that we can use to dump all the domain hashes!
 
 ![path-to-DA](path-to-DA.jpg)
 
@@ -268,7 +268,7 @@ we add our user to that group using a powershell command: `Add-ADGroupMember 'Ex
 
 ![adding-to-group](adding-to-group.jpg)
 
-we then upload `PowerView.ps1` (https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) to the victim machine and import it using `import-module .\PowerView.ps1`
+we then upload `PowerView.ps1` (https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) to the victim machine and import it using `import-module .\PowerView.ps1`. This enables access to all the powershell cmdlets included within that module.
 
 we view the help page and usage examples of the abuse command `Add-DomainObjectAcl` using `Get-Help Add-DomainObjectAcl -Examples`
 
