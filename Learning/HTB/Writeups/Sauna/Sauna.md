@@ -215,7 +215,7 @@ Having this right means we can act asif we were another domain controller and as
 
 This can be achieved using impacket's `secretsdump.py` tool:
 
-![secrets-dump](secrets-dump.py)
+![secrets-dump](secrets-dump.jpg)
 
 *With the* `administrator`'*s hash,* we can easily get a shell on the box using `evil-winrm`'s `-H` flag to run what's called a `pass-the-hash` attack.
 
