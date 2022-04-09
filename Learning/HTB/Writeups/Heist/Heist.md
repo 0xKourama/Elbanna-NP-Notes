@@ -1,10 +1,10 @@
 # Heist
 
-we first start by doing a quick nmap top 10 tcp ports: `nmap --top-ports --open 10 10.10.10.149`
+we first start by doing a quick nmap top 10 tcp ports: `nmap --top-ports --open 10.10.10.149`
 
 ![nmap top 10 port scan](nmap-top-10-ports.jpg)
 
-we find http and smb ports open, so we begin with HTTP after leaving a full port scan `nmap -p- -T4 10 10.10.10.149`
+we find http and smb ports open, so we begin with HTTP after leaving a full port scan `nmap -p- -T4 -sC -sV 10.10.10.149`
 
 we immediately see the login page of a web app that gives us the options to *Login as guest*
 
