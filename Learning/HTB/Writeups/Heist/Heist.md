@@ -47,7 +47,7 @@ the **hazard** user authenticated with the password `stealth1agent` but he doesn
 
 ![hazard-authenticated](hazard-authenticated.jpg)
 
-we gained a little information about the host:
+we gain some information about the host:
 1. name: SupportDesk
 2. OS: Windows 10.0 Build 17763 x64
 3. Domain: SupportDesk

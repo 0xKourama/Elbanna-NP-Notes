@@ -1,6 +1,6 @@
 ```
 mask ""
-recruse
+recurse
 prompt
 mget *
 ```
