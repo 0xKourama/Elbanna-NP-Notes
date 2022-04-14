@@ -39,10 +39,10 @@ Host script results:
 |_  start_date: 2022-04-14T20:53:18  
 ```
 and we notice a set of open ports than indicate a domain controller:
-- DNS: TCP 53
-- Kerberos: TCP 88
-- LDAP: TCP 389
-- Global Catalog LDAP: TCP 3268
+- **DNS:** TCP 53
+- **Kerberos:** TCP 88
+- **LDAP:** TCP 389
+- **Global Catalog LDAP:** TCP 3268
 
 we can also verify that by doing a DNS query for a domain's SRV record using `nslookup -type=srv _ldap._tcp.dc._msdcs.active.htb`
 ```
@@ -75,7 +75,7 @@ shutting down
 dighost_shutdown()
 unlock_lookup dighost.c:4091
 ```
-first, we check SMB shares using null authenticaion with `crackmapexec`. And, we find that we have READ access to the `Replication` share.
+first, we check **SMB shares** using **null authenticaion** with `crackmapexec`. And, we find that we have **READ access** to the `Replication` share.
 ```
 └─# crackmapexec smb 10.10.10.100 -u '' -p '' --shares
 SMB         10.10.10.100    445    DC               [*] Windows 6.1 Build 7601 x64 (name:DC) (domain:active.htb) (signing:True) (SMBv1:False)
@@ -91,7 +91,7 @@ SMB         10.10.10.100    445    DC               Replication     READ
 SMB         10.10.10.100    445    DC               SYSVOL                          Logon server share 
 SMB         10.10.10.100    445    DC               Users 
 ```
-This is interesting. We go ahead and connect to the share using `smbclient`. *But before that,* we create a folder and call it `smb-replication` and change to it so we can download files inside it. We can download all files within using `mask ""` -> `recurse` -> `prompt` -> `mget *`. This essentially tells smb client to download all files recursively and without prompting us each time.
+This is interesting. We go ahead and connect to the share using `smbclient`. *But before that,* we create a folder and call it `smb-replication` and change to it so we can download files inside it. We can download all files within using `mask ""` -> `recurse` -> `prompt` -> `mget *`. This essentially tells `smbclient` to download all files *recursively* and *without prompting* us each time.
 
 ![smb-replication-share](smb-replication-share.jpg)
 
@@ -99,7 +99,7 @@ doing so gets us all the files over the `Replication` share. we can now view the
 
 ![repl-share-files](repl-share-files.jpg)
 
-The first file `Groups.xml` is a **Group Policy Preferences** file. This was used back in the day be system admins to create local administrator accounts on domain machines using **Group Policy**. *Looking at its contents:*
+The first file `Groups.xml` is a **Group Policy Preferences** file. This was used back in the day by system admins to create local administrator accounts on domain machines using **Group Policy**. *Looking at its contents:*
 
 ![groups-xml](groups-xml.jpg)
 
@@ -114,7 +114,7 @@ It reveals an encrypted password of the user `active.htb\svc_tgs`. This can easi
 Great! They are valid. But, we aren't local adminitrator. Neither can we use **WinRM** because port 5985 isn't open on this box. We can however do a number of things:
 1. enumerate SMB shares with the new user
 2. pull all AD users
-3. do ASREPRoasing
+3. do ASREPRoasting
 4. do Kerberoasting
 5. do BloodHound Enumeration
 6. do Password Spraying
@@ -123,7 +123,7 @@ Great! They are valid. But, we aren't local adminitrator. Neither can we use **W
 
 ![smb-with-svc-tgs](smb-with-svc-tgs.jpg)
 
-but only find the `user.txt` file. to be worthwile.
+but only find the `user.txt` flag to be significant.
 
 we pull all AD users using **impacket**'s `GetADUsers.py`:
 
@@ -135,13 +135,13 @@ we don't find any other special users. The default Administrator, Guest & krbtgt
 
 ![asrep-roasting](asrep-roasting.jpg)
 
-we get `No entries found!`
+we get `No entries found`
 
 *And along to* **Kerberoasting** *with* `GetUserSPNs.py`
 
 ![kerberoasting](kerberoasting.jpg)
 
-We get really **LUCKY! :D** this is the tgs hash for the Administrator account. Cracking that hash means we can get his password!
+We get really **LUCKY! :D** this is the **TGS** hash for the **Administrator** account. Cracking that hash means we can get his password!
 
 This can be done using `john` with the format as **krb5tgs**
 
