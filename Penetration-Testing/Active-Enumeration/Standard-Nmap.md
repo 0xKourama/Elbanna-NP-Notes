@@ -1,1 +1,1 @@
-`nmap -v <RHOST>; ports=$(nmap -p- --min-rate=1000 -T4 <RHOST> | grep ^[0-9] | cut -d '/' -f1 | tr '\n' ',' | sed s/,$//); nmap -p$ports -sC -sV -oA nmap <RHOST>`
+`nmap -v <RHOST>; ports=$(nmap -p- --min-rate=1000 -T4 <RHOST> | grep ^[0-9] | cut -d '/' -f1 | tr '\n' ',' | sed s/,$//); nmap -p$ports -sC -sV -oA nmap <RHOST>; mkdir nmap && mv nmap.* nmap/`
