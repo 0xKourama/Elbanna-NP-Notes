@@ -13,3 +13,6 @@
 
 # Get files only in a directory
 `(ls -File -Recurse -Force -EA SilentlyContinue).fullname`
+
+# find OS architecture
+`$env:processor_architecture`
