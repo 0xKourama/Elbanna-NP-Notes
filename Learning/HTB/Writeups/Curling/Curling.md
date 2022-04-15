@@ -12,7 +12,7 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.29 (Ubuntu)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
-The `http-generator` NSE script showed Joomla as the web app on port 80. so we go ahead and check it out.
+The `http-generator` **NSE script** showed **Joomla** as the web app on port 80. so we go ahead and check it out.
 
 ![Homepage](Homepage.jpg)
 
@@ -30,22 +30,22 @@ which could be of use. so we note them down. and try logging in with weak passwo
 
 but they don't work with either users.
 
-so we visit `http://10.10.10.150/README.txt` to check out Joomla's version and we notice it is **3.8**
+so we visit `http://10.10.10.150/README.txt` to check out **Joomla's version** and we notice it is **3.8**
 
 ![Joomla-Version](Joomla-Version.jpg)
 
-we try doing a quick searchsploit excluding Joomla Components (*since there were a TON of them!*). but see no clear match of the version we detected.
+we try doing a quick searchsploit *excluding Joomla Components* (*since there were a TON of them!*). but see no clear match of the version we detected.
 
 ![searchsploit](searchsploit.jpg)
 
-so we check to see if we can run a specialized scanner for Joomla (*since it's a famous CMS*). After some research, we find a tool called `joomscan`. We check out its help file and notice it's pretty straight forward. It accepts the `url` and give us the option to enumerate compoents using the `-ec` flag. *This could benefit us since we have noticed a million exploits for vulnerable Joomla components*.
+so we check to see if we can run a **specialized scanner** for Joomla (*since it's a well-known CMS*). *After some research,* we find a tool called `joomscan`. We check out its help menu and notice it's pretty straight forward. It accepts the `url` and give us the option to enumerate compoents using the `-ec` flag. *This could benefit us since we have noticed a million exploits for vulnerable Joomla components*.
 
 ![joomscan-help](joomscan-help.jpg)
 
-After running a scan, we find that:
-- There wasn't a firewall detected. which is nice i guess.
+*After running a scan,* we find that:
+- There wasn't a firewall detected. which is nice :D
 - The Joomla version was indeed 3.8.8 and wasn't vulnerable.
-- The Administrator panel is at `http://10.10.10.150/administrator/`
+- The **Administrator panel** is at `http://10.10.10.150/administrator/`
 - we find `directory listing` enabled on a couple of interesting urls:
 	1. `/administrator/components`
 	2. `/administrator/modules`
@@ -69,11 +69,11 @@ So we browse those directories for a bit to find out there wasn't much valuable 
 We also do `searchsploit` queries for the components found but we don't find any exploits for them.
 
 *Since the situation wasn't looking too good with the "looking for an exploit" path,* we go back to the basics and look at the source code of the home page.
-And lo and behold! we find a comment right at the bottom saying `secret.txt`
+And lo and behold! we find a comment right at the bottom saying `secret.txt`!
 
 ![secret-comment](secret-comment.jpg)
 
-it's a cleaner view if we grep for comments after curling the page:
+we can get a cleaner view if we grep for comments after *curling* the page:
 
 ![comment-curl](comment-curl.jpg)
 
@@ -89,33 +89,35 @@ I immediately try the text as the password on the admin panel with the users:
 
 but nothing!
 
-Even though, this file being hidden in the comments and being called `secret.txt` are factors making me consider this is something important. Something must be missing. I go for a walk and come back to decide maybe this text *isn't a randomly generated password* and is encrypted or something. So i drop it onto `CyberChef` (https://gchq.github.io/CyberChef/). It was a base64 encoded text: `Curling2018!`.
+*Despite that,* seeing this file hidden in the comments and being called `secret.txt` are factors making me consider that it's important. Something must be missing here... I go for a walk and come back to decide maybe this text *isn't some randomly-generated password* and is encrypted or something. So i drop it onto `CyberChef` (https://gchq.github.io/CyberChef/). It was a base64 encoded text >> `Curling2018!`.
 
 ![cracked](Cracked.jpg)
 
-We use this with the `floris` user and we are logged in as the `Super User`! I was talking to myself like "why you no think of this earlier?" XD
+We use this with the `floris` user and we are logged in as the `Super User`!
+
+I thought to myself like "why you no think of this earlier?" XD
 
 ![logged-in](logged-in.jpg)
 
-Being logged in as the administrative user on Joomla means an easy shell.
+Being logged in as the administrative user on Joomla means an **easy shell**.
 
-`Extensions -> Templates -> Templates --> Select the Theme in Use --> Edit Index.php for a PHP reverse shell`
+`Extensions -> Templates -> Templates --> Select the Theme in Use --> Edit Index.php for a PHP reverse shell` (https://pentestmonkey.net/tools/web-shells/php-reverse-shell)
 
-Not the most stealthy option I know. But this is HTB XD
+Not the most stealthy option I know. But this is a CTF XD
 
-*If it were a real life scenario though,* I would have set up a small payload like `php exec($_REQUEST["cmd"]);`
+*If it were a real-world scenario though,* I would have set up a much more subtle payload like `php exec($_REQUEST["cmd"]);`
 
 ![revvy](revvy.jpg)
 
 *After upgrading our shell to fully-interactive TTY,* we start checking the system...
 
-We find another user on the system: `floris`. And, *as we're browsing through his/her home folder,* we see two non-standard items:
-1. a file called `password_backup` that we can read
-2. a folder called admin_area only root and floris can see what's inside.
+We find the user `floris` on the system. And, *as we're browsing through his/her home folder,* we see two *non-standard* items:
+1. a file called `password_backup` that we have read access to.
+2. a folder called `admin_area` where only root and floris can see its contents.
 
 ![Floris-Home](Floris-Home.jpg)
 
-so we take a look at the contents of `password_backup` and see what looks like a hexdump:
+so we take a look at the contents of `password_backup` and see what looks like a **hexdump**:
 
 ```
 www-data@curling:/home/floris$ cat password_backup 
@@ -137,7 +139,7 @@ www-data@curling:/home/floris$ cat password_backup
 000000f0: 819b bb48 
 ```
 
-*after some quick research on "how to read contents of a hex dump",* we find that we need to use the `xxd` tool with the `-r` flag to convert the file to a binary.
+*after some quick research on "how to read contents of a hexdump",* we find that we need to use the `xxd` tool with the `-r` flag to convert the file to a binary.
 
 ```
 www-data@curling:/tmp$ xxd -h
@@ -166,7 +168,7 @@ Options:
 
 `    -r          reverse operation: convert (or patch) hexdump into binary.`
 
-So we go ahead and do that. And we use the `file` command against the output. It's helpful when you have to find out the type of file you've never seen before or the file does not have a file extension.
+So we go ahead and do that. And we use the `file` command against the output. It's very handy when you want to know what file type you're dealing with.
 
 ```
 www-data@curling:/home/floris$ xxd -r password_backup > /tmp/hex
@@ -175,7 +177,7 @@ www-data@curling:/tmp$ file hex
 hex: bzip2 compressed data, block size = 900k
 ```
 
-It's file compressed using bzip2. so we go ahead and extract it using `bzip2` and the `-d` flag. Then again use the `file` command to see what we got.
+It's compressed using `bzip2`. so we go ahead and extract it using `bzip2` and the `-d` flag. Then again use the `file` command to see what we got.
 
 ```
 www-data@curling:/tmp$ bzip2 -d hex 
@@ -215,7 +217,7 @@ www-data@curling:/tmp$ cat password.txt
 5d<wdCbdZu)|hChXll
 ```
 
-At last we get some ASCII text :D We're going to try and switch user to `floris` using that password. *In case you were wondering, I did try reusing the password in `secret.txt` but it didn't work XD*
+At last we get some ASCII text :D We're going to try and switch user to `floris` using that password. *In case you were wondering, I did try reusing the password in `secret.txt` but it didn't work :/*
 
 ![got-floris](got-floris.jpg)
 
@@ -223,7 +225,7 @@ it was indeed the password for the `floris` user :D *It would've been a bad trol
 
 Right off the bat, we check `sudo -l -l` for an easy win. But don't find anything there.
 
-we go the webroot and check `configuration.php` for some creds. And, we DO find some for the local database:
+we go the **webroot** and check `configuration.php` for some creds. And, we DO find some for the local database:
 
 ![configuration.php](configuration.php.jpg)
 
@@ -377,7 +379,7 @@ we grab the other password:
 
 `public $secret = 'VGQ09exHr8W2leID';`
 
-and try to `su` as `root`. But, it's not going to be that easy it seems :D
+and try to `su` as `root`. But, it's not going to be that easy :D
 
 Note: Enumerating the database is a step we could have done using the `www-data` user of course. But my attention was intrigued more by the `password_backup` file and that's why I went for it first.
 
@@ -389,7 +391,7 @@ we check their contents:
 
 ![input-report-files](input-report-files.jpg)
 
-it seems that a `curl` command is being run on the `localhost` url `http://127.0.0.1` which sends the output into the `report` file. We know that because of the error message `WARNING: Failed to daemonise.  This is quite common and not fatal.` which is the error you get when you trigger a `PHP reverse shell` without a listener. We can confirm that by starting a listener to see if something connects back.
+it seems that a `curl` command is being executed on the `localhost` url `http://127.0.0.1` which sends the output into the `report` file. We know that because of the error message `WARNING: Failed to daemonise.  This is quite common and not fatal.` which is the error you get when you trigger a `PHP reverse shell` without a listener. We can confirm that by starting a listener to see if something connects back.
 
 ![running-curl](running-curl.jpg)
 
