@@ -43,8 +43,8 @@ Use "kerbrute [command] --help" for more information about a command.
 `kerbrute bruteuser [flags] <password_list> username`
 
 # Passwordspray
+`kerbrute passwordspray [flags] <username_wordlist> <password>`
 ```
-kerbrute passwordspray [flags] <username_wordlist> <password>
       --user-as-pass   Spray every account with the username as the password
 ```
 # Userenum
