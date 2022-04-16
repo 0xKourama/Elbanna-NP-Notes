@@ -44,7 +44,6 @@ Use "kerbrute [command] --help" for more information about a command.
 ```
       --user-as-pass   Spray every account with the username as the password
 ```
-
 ## Bruteuser
 `kerbrute bruteuser [flags] <password_list> username`
 
