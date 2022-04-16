@@ -16,3 +16,9 @@
 
 # find OS architecture
 `$env:processor_architecture`
+
+# Get ACL
+`Get-ACL <PATH_TO_FILE> | Select -Exp AccessToString`
+
+# Get Process Owners
+`Get-WmiObject -class win32_process | select name,@{n='owner';e={$_.getowner().user}}`

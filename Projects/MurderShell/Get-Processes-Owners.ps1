@@ -1,1 +1,0 @@
-Get-WmiObject -class win32_process | select name,@{n='owner';e={$_.getowner().user}}
