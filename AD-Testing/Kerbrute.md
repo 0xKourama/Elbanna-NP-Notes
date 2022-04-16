@@ -36,16 +36,17 @@ Flags:
                                                                                                                                                                                                                                     
 Use "kerbrute [command] --help" for more information about a command. 
 ```
-# Bruteforce
-`kerbrute bruteforce [flags] <user_pw_file>`
+## Userenum
+`kerbrute userenum [flags] <username_wordlist>`
 
-# Bruteuser
-`kerbrute bruteuser [flags] <password_list> username`
-
-# Passwordspray
+## Passwordspray
 `kerbrute passwordspray [flags] <username_wordlist> <password>`
 ```
       --user-as-pass   Spray every account with the username as the password
 ```
-# Userenum
-`kerbrute userenum [flags] <username_wordlist>`
+
+## Bruteuser
+`kerbrute bruteuser [flags] <password_list> username`
+
+## Bruteforce
+`kerbrute bruteforce [flags] <user_pw_file>`
