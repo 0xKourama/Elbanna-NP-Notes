@@ -82,15 +82,17 @@ I use `crackmapexec` to get the password policy of the domain before **password 
 
 ![pass-pol](pass-pol.jpg)
 
-Looks that there's no account lockout at all. I spray with the full AD userlist from `GetADUsers.py` with the `support` password and some variants like: `#01^BlackKnight` but get nothing either :/
+Looks like there's no account lockout at all :D
+
+I spray with the full AD userlist from `GetADUsers.py` with the `support` password and some variants like: `#01^BlackKnight` but get nothing either :/
 
 I then use `bloodhound` to get a look at what I can do with the support account. And I notice that I can reset the password for the `audit2020` user:
 
 ![force-change-password-right](force-change-password-right.jpg)
 
-I find this right by clicking the `First Degree Object Control` box highlighted in the image above.
+I find this right by clicking the `First Degree Object Control` box under the `Node Info` tab as highlighted in the image above.
 
-*By right-clicking the link,* I find the `PowerView` command that I run to abuse this right. This is awesome!
+*By right-clicking the link,* I find the `PowerView` command that I can run to abuse this right. This is awesome!
 
 ![link-help](link-help.jpg)
 
@@ -98,7 +100,7 @@ I find this right by clicking the `First Degree Object Control` box highlighted 
 
 *it says that by using the command* `Set-DomainUserPassword`, we can reset the password for the `audit2020` account and be able to use it.
 
-We can do so by using a `Windows` host. We can run the `RunAs.exe` utility with the `/netonly` flag. That would let us use a set of credentials in the network and be able to do stuff.
+We can do so by using a `Windows` host. We can run the `RunAs.exe` utility with the `/netonly` flag. That would let us use a set of credentials in the network's context and be able to do stuff.
 
 But we first have to set the DNS on both the `Ethernet` and `OpenVPN` interfaces:
 
@@ -108,9 +110,9 @@ we can then authenticate to the network as the `support` user and we are able to
 
 ![runas-netonly](runas-netonly.jpg)
 
-we import `PowerView.ps1` and use the `Set-DomainUserPassword` with the `-Domain` flag and use the `-Verbose` flag in case we need to troubleshoot. Making sure to have the password *complex enough* and casting it to a `Secure String` object using the `ConvertTo-SecureString` powershell cmdlet.
+we import `PowerView.ps1` and use the `Set-DomainUserPassword` with the `-Domain` flag and use the `-Verbose` flag in case we need to troubleshoot. Making sure to have the password *complex enough* and casting it to a `Secure String` object using the `ConvertTo-SecureString` **PowerShell** cmdlet.
 
-The command does take some time. But we're successful in resetting the password to `Password123!` in the end :D
+The command does take some time... But we're successful in resetting the password to `Password123!` in the end :D
 
 ![audit-2020-reset](audit-2020-reset.jpg)
 
@@ -120,7 +122,7 @@ The command does take some time. But we're successful in resetting the password 
 
 *after mounting it,* we see that there's a very interesting file that we can access in the `memory_analysis` folder. That is `lsass.zip`.
 
-`LSASS.exe` is the main authentication process in **Windows**. This process holds the credentials of all users who had logged into the computer using one way or another.
+**LSASS.exe** is the main authentication process in **Windows**. This process holds the credentials of all users who had logged into the computer using one way or another.
 
 ![mounting-forensic-share](mounting-forensic-share.jpg)
 
@@ -132,7 +134,7 @@ we can use a tool called `pypykatz` (https://github.com/skelsec/pypykatz) to obt
 
 `pypykatz lsa minidump lsass.DMP` is the command.
 
-We do a `grep` for the **NT** field for the **NTLM hash** and use the `-B` flag to get th 3 lines before it for the username.
+We do a `grep` for the **NT** field for the **NTLM hash** and use the `-B` flag to get th 3 lines before it to get the usernames.
 
 ![pypkatz](pypkatz.jpg)
 
@@ -167,11 +169,11 @@ this would essentially expose a *shadow* copy of the `c:` drive to another drive
 
 This is required because a file like `NTDS.dit` is constantly undergoing `READ` and `WRITE` operations which would make copying it infeasable under normal circumstances.
 
-*Having created the file in* **Linux**, we will need to change the script's encoding to fit **Windows** for it to work properly. This can be done using the `unix2dos` command:
+*Having created this script file in* **Linux**, we will need to change its encoding to fit **Windows** for it to work properly. This can be done using the `unix2dos` command:
 
 ![abuse-dsh](abuse-dsh.jpg)
 
-notice how the output of `file` command changed from `ASCII text` to `ASCII text, with CRLF line terminators` after conversion.
+notice how the output of `file` command changes from `ASCII text` to `ASCII text, with CRLF line terminators` after conversion.
 
 we upload the `.dsh` file using `evil-winrm`'s `upload` function. And, we change to a writable directory `c:\windows\temp` where we can run the utility:
 
