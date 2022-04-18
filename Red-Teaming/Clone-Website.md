@@ -1,0 +1,1 @@
+`wget --mirror --page-requisites --convert-links --adjust-extension --no-parent <TARGET_URL>`
