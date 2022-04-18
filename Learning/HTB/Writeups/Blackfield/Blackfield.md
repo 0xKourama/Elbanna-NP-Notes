@@ -23,10 +23,10 @@ Host script results:
 |_  start_date: N/A
 ```
 
-We a combination of ports indicative of a **Domain Controller**: **DNS** on 53, **Kerberos** on 88, **LDAP** on 389 and **SMB** on 445.
+We see a combination of ports indicative of a **Domain Controller**: **DNS** on 53, **Kerberos** on 88, **LDAP** on 389 and **SMB** on 445.
 We also notice the domain name on LDAP is **Blackfield.local** and the hostname **DC01**
 
-we add an entry in our `/etc/resolv.conf` file for the domain and proceed to enumerate **SMB** for null/anonymous access.
+we add an `nameserver` entry in our `/etc/resolv.conf` file for the machine's IP and proceed to enumerate **SMB** for null/anonymous access.
 
 we try a few inputs and manage to get a listing of the shares using anonymous authentication:
 
@@ -34,7 +34,7 @@ we try a few inputs and manage to get a listing of the shares using anonymous au
 
 *looking at the shares,* we see that we have `READ` access to the `profiles$` share. We also notice another non-standard share: `forensic` that had a comment `Forensic / Audit share`
 
-*connecting with* `smbclient`, we see many folders that look like usersnames:
+*connecting with* `smbclient`, we see many folders that look like usernames:
 
 ![profiles-share](profiles-share.jpg)
 
@@ -42,7 +42,7 @@ we mount the share using `mount -t cifs -o 'username=a' //10.10.10.192/Profiles$
 
 ![no-files-in-prof-share](no-files-in-prof-share.jpg)
 
-we notice no files there. But, we will be saving those foldernames to be used as a *userlist* for future attacks. we do that using `ls` with the `-1` flag to have the names on one coloumn.
+we notice no files are there. But, we can still save those foldernames to be used as a *userlist* for future attacks. we do that using `ls` with the `-1` flag to have the names on one column.
 
 *Having this list,* we launch an `ASREPRoast` attack using `impacket`'s `GetNPUsers.py`. 
 
@@ -52,23 +52,25 @@ GetNPUsers.py -dc-ip 10.10.10.192 blackfield.local/ -request -usersfile users.tx
 
 ![asrep-roast](asrep-roast.jpg)
 
-*looking at the output,* we notice the hash has been captured for the `support` user. We also notice that *for most users,* we get the error: `Kerberos SessionError: KDC_ERR_C_PRINCIPAL_UNKNOWN(Client not found in Kerberos database)` that indicates that those usernames don't exist. As for the users with the error: `User <USER> doesn't have UF_DONT_REQUIRE_PREAUTH set` they exist but are not *ASREPRoastable*.
+*looking at the output,* we notice the hash has been captured for the `support` user. We also notice that *for most users,* we get the error: `Kerberos SessionError: KDC_ERR_C_PRINCIPAL_UNKNOWN(Client not found in Kerberos database)` that indicates that those usernames don't exist. *As for the users with the error:* `User <USER> doesn't have UF_DONT_REQUIRE_PREAUTH set` they exist but are not *ASREPRoastable*.
 
 these were `svc_backup` and `audit2020`.
 
-we're going to need to get that `audit2020` user if we want access to its share.
+we're going to need to get to that `audit2020` user if we want access to its share (`forensic`).
 
-Right now we need to crack the hash for the `support` user. We do that using `john` and the password is `#00^BlackKnight`.
+*Right now,* we need to crack the hash for the `support` user. We do that using `john` and the password is `#00^BlackKnight`.
 
 We try authenticating using `crackmapexec` and are successful.
 
 ![support-smb-shares](support-smb-shares.jpg)
 
-*After investigating the new-accessible shares* `SYSVOL` *and* `NETLOGON`, we find nothing important. So we pull the full userlist from the domain using `impacket`'s `GetADUsers.py`:
+We try to remote using **WinRM** but no luck :/
+
+*After investigating the new-accessible shares* `SYSVOL` *and* `NETLOGON`, we find nothing important. So we proceed to pull the full userlist from the domain using `impacket`'s `GetADUsers.py`:
 
 ![impacket-get-ad-user](impacket-get-ad-user.jpg)
 
-we find that the usernames we found in the `profiles$` had different `SamAccountNames` and that's why they weren't authenticating.
+we find that the usernames we found in the `profiles$` have different `SamAccountNames` and that's why they weren't authenticating.
 
 we use the new AD user list to launch another `ASREPRoast` attack but get no new results.
 
@@ -80,7 +82,7 @@ I use `crackmapexec` to get the password policy of the domain before **password 
 
 ![pass-pol](pass-pol.jpg)
 
-Looks that there's no account lockout at all. I spray with the full AD userlist from `GetADUsers.py` with the `support` password and some variants like: `#01^BlackKnight` but get nothing.
+Looks that there's no account lockout at all. I spray with the full AD userlist from `GetADUsers.py` with the `support` password and some variants like: `#01^BlackKnight` but get nothing either :/
 
 I then use `bloodhound` to get a look at what I can do with the support account. And I notice that I can reset the password for the `audit2020` user:
 
@@ -108,7 +110,7 @@ we can then authenticate to the network as the `support` user and we are able to
 
 we import `PowerView.ps1` and use the `Set-DomainUserPassword` with the `-Domain` flag and use the `-Verbose` flag in case we need to troubleshoot. Making sure to have the password *complex enough* and casting it to a `Secure String` object using the `ConvertTo-SecureString` powershell cmdlet.
 
-The command does take some time. But we're successful in resetting the password to `Password123!`
+The command does take some time. But we're successful in resetting the password to `Password123!` in the end :D
 
 ![audit-2020-reset](audit-2020-reset.jpg)
 
@@ -116,7 +118,9 @@ The command does take some time. But we're successful in resetting the password 
 
 ![audit-2020-share-access](audit-2020-share-access.jpg)
 
-*after mounting it,* we see that there's a very interesting file that we can access in the `memory_analysis` folder. That is `lsass.zip`. `LSASS.exe` is the main authentication process in windows. This process holds the credentials of all users who had logged into the computer using one way or another.
+*after mounting it,* we see that there's a very interesting file that we can access in the `memory_analysis` folder. That is `lsass.zip`.
+
+`LSASS.exe` is the main authentication process in **Windows**. This process holds the credentials of all users who had logged into the computer using one way or another.
 
 ![mounting-forensic-share](mounting-forensic-share.jpg)
 
@@ -124,7 +128,11 @@ we unzip the `lsass.zip` file to find a `.DMP` file which is a memory dump of th
 
 ![lsass-dmp](lsass-dmp.jpg)
 
-we can use a tool called `pypykatz` (https://github.com/skelsec/pypykatz) to obtain hashes from the `.DMP` files: `pypykatz lsa minidump lsass.DMP`. We do a `grep` for the **NT** field for the **NTLM hash** and get 3 lines before using the `-B` flag
+we can use a tool called `pypykatz` (https://github.com/skelsec/pypykatz) to obtain hashes from the `.DMP` files.
+
+`pypykatz lsa minidump lsass.DMP` is the command.
+
+We do a `grep` for the **NT** field for the **NTLM hash** and get 3 lines before using the `-B` flag
 
 ![pypkatz](pypkatz.jpg)
 
