@@ -132,27 +132,29 @@ we can use a tool called `pypykatz` (https://github.com/skelsec/pypykatz) to obt
 
 `pypykatz lsa minidump lsass.DMP` is the command.
 
-We do a `grep` for the **NT** field for the **NTLM hash** and get 3 lines before using the `-B` flag
+We do a `grep` for the **NT** field for the **NTLM hash** and use the `-B` flag to get th 3 lines before it for the username.
 
 ![pypkatz](pypkatz.jpg)
 
 we find hashes for both the `Adminitrator` user and `svc_backup` accounts
 
-*Sadly,* the hash for the `administrator` account didn't work, but the one for `svc_backup` does. And it also has access to **PowerShell Remoting**
+*Sadly,* the hash for the `administrator` account didn't work, but the one for `svc_backup` did. And it also had access to **PowerShell Remoting** :)
 
 ![svc_backup_shell](svc_backup_shell.jpg)
 
-*checking the group memberships on the* `svc_backup` *user,* we notice he's a member of the `Backup Operators` group. *And, by extension,* it has the `SeBackupPrivilege`.
+*checking the group memberships on the* `svc_backup` *user,* we notice it's a member of the `Backup Operators` group. *And, by extension,* it has the `SeBackupPrivilege`.
 
 ![sebackup-priv](sebackup-priv.jpg)
 
 Having this privilege is very dangerous. This is because the ability to backup files includes a full `READ` access to most files on the system. The most critical being `NTDS.dit` which is the database where the usernames and hashes are stored within a **Domain Controller**.
 
-Being able to grab the `NTDS.dit` and the `SYSTEM` registry hive would enable us to read all the hashes of the domain including the domain administrator's one.
+Being able to grab the `NTDS.dit` and the `SYSTEM` registry hive would enable us to read all the hashes of the domain *including the* **domain administrator's** *one.*
 
-*By doing some research,* we come across this amazing post from **Hacking Articles** (https://www.hackingarticles.in/windows-privilege-escalation-sebackupprivilege/) that tells us how we can abuse this privilege.
+*By doing some research,* we come across this awesome post from **Hacking Articles** (https://www.hackingarticles.in/windows-privilege-escalation-sebackupprivilege/) that tells us how we can abuse this privilege.
 
-We will be using the `diskshadow` command line utility with the `/s` flag for script mode and passing a script file as an argument. the content should be something like:
+We will be using the `diskshadow` command line utility with the `/s` flag for script mode and passing a script file as an argument.
+
+The content should be something like:
 
 ```
 set context persistent nowriters
@@ -161,21 +163,23 @@ create
 expose %abuse% z:
 ```
 
-this would essentially expose a *shadow* copy of the `c:` drive to another drive `z:`. This is required because a file like `NTDS.dit` is constantly undergoing `READ` and `WRITE` operations which would make copying it infeasable under normal circumstances.
+this would essentially expose a *shadow* copy of the `c:` drive to another drive `z:`.
 
-*Having creating the file in* **Linux**, we will need to change the script's encoding to fit **Windows** for it to work properly. This can be done using the `unix2dos` command:
+This is required because a file like `NTDS.dit` is constantly undergoing `READ` and `WRITE` operations which would make copying it infeasable under normal circumstances.
+
+*Having created the file in* **Linux**, we will need to change the script's encoding to fit **Windows** for it to work properly. This can be done using the `unix2dos` command:
 
 ![abuse-dsh](abuse-dsh.jpg)
 
 notice how the output of `file` command changed from `ASCII text` to `ASCII text, with CRLF line terminators` after conversion.
 
-we upload the `.dsh` file using `evil-winrm`'s `upload` function. And, we change to a writable directory: `c:\windows\temp` where we can run the utility:
+we upload the `.dsh` file using `evil-winrm`'s `upload` function. And, we change to a writable directory `c:\windows\temp` where we can run the utility:
 
 ![diskshadow-success](diskshadow-success.jpg)
 
 it succeeds and we can list the contents of `c:` from `z:`
 
-*to be able to get a copy of* `NTDS.dit` *from* `z:\`, we would need to use the `Robocopy` command-line utility with `/b` flag for `backup mode`. This would basically allow the copying to bypass the `ACLs` of the file if the `SeBackup` privilege was held.
+*to be able to get a copy of* `NTDS.dit` *from* `z:\`, we would need to use the `Robocopy` command-line utility with `/b` flag for `backup mode`. This would basically allow the copying to bypass the `ACLs` of the file if the `SeBackupPrivilege` was held.
 
 ```
 robocopy /?
@@ -208,7 +212,9 @@ robocopy /?
 
 ![got-ntds-dit](got-ntds-dit.jpg)
 
-we can use the `reg` command with the `save` option to get the `SYSTEM` hive: `reg save hklm\system c:\windows\Temp\system`
+we can then use the `reg` command with the `save` option to get the `SYSTEM` hive:
+
+`reg save hklm\system c:\windows\Temp\system`
 
 ![got-system-hive](got-system-hive.jpg)
 
