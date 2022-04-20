@@ -7,23 +7,26 @@
 - **Persistence** can also be established with a **golden ticket** since the `krbtgt` account hash would be compromised.
 
 # Lab Setup and conditions
-## 1. Server #1:
-**DC.lab.local** (192.168.126.129): A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
+## 1. DC.lab.local (192.168.126.129)
+A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
 
 ![Domain-Controllers](Domain-Controllers.jpg)
 
 ![AD-CS-Installed](AD-CS-Installed.jpg)
 
-## 2. Server #2:
-**DC2.lab.local** (192.168.126.130): Another Domain Controller (*PrintSpooler Service must be running*)
+## 2. DC2.lab.local (192.168.126.130)
+Another Domain Controller (*PrintSpooler Service must be running*)
 
 ![Spooler-Running](Spooler-Running.jpg)
 
-## 3. Kali Machine (192.168.126.132): for triggering authentication and relaying to ADCS Web UI.
+## 3. Kali Machine (192.168.126.132)
+for triggering authentication and relaying to ADCS Web UI.
 
-## 4. Windows Machine (192.168.126.128): for requesting a TGT and doing the DCSync attack (Shouldn't be in the domain, but should have the DC as its DNS).
+## 4. Windows Machine (192.168.126.128)
+for requesting a TGT and doing the DCSync attack (Shouldn't be in the domain, but should have the DC as its DNS).
 
-## 5. normal user account (Lab\JohnSmith): A regular domain user with no special privileges.
+## 5. normal user account (Lab\JohnSmith)
+A regular domain user with no special privileges.
 
 
 
