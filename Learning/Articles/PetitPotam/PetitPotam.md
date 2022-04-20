@@ -34,17 +34,23 @@ A regular domain user with no special privileges.
 
 ![John-Smith-User](John-Smith-User.jpg)
 
+# Tools needed
+1. Impacket (https://github.com/SecureAuthCorp/impacket)
+2. PetitPotam (https://github.com/topotam/PetitPotam)
+3. Rubeus (https://github.com/GhostPack/Rubeus)
+4. Mimikatz (https://github.com/gentilkiwi/mimikatz)
+
 
 # Steps to Create
-1. Set up NTLM Relay on our attacker host to forward authentication to ADCS Web UI
+1. Set up NTLM Relay on our attacker host to forward the captured authentication to ADCS Web UI
 2. Use PetitPotam to force authentication from a domain controller back to the relaying kali machine
-3. Recieve base64 certificate for the domain controller's computer account
-4. use Rubeus.exe on the windows machine to request a TGT for that account using the certificate
-5. *Having the TGT in memory,* use Mimikatz.exe to do a DCSync attack
+3. Recieve the Base64 certificate for the domain controller's computer account
+4. use Rubeus on the windows machine to request a TGT for that account using the certificate
+5. *Having the TGT in memory,* use Mimikatz to do a DCSync attack
 6. Grab any domain admin's hash to have code execution
 7. (Optional) create a golden ticket for persistence
 
-# 1. Set up NTLM Relay on our attacker host to forward authentication to ADCS Web UI
+# 1. Set up NTLM Relay on our attacker host to forward the captured authentication to ADCS Web UI
 `ntlmrelayx.py -t http://<CAServer>/certsrv/certfnsh.asp -smb2support --adcs --template DomainController`
 
 ![ntlm-relay-start](ntlm-relay-start.jpg)
@@ -54,7 +60,7 @@ A regular domain user with no special privileges.
 
 ![PetitPotam-Launched](PetitPotam-Launched.jpg)
 
-# 3. Recieve base64 certificate for the domain controller's computer account
+# 3. Recieve the Base64 certificate for the domain controller's computer account
 
 ![got-dc2-cert](got-dc2-cert.jpg)
 
