@@ -7,13 +7,15 @@
 - **Persistence** can also be established with a **golden ticket** since the `krbtgt` account hash would be compromised.
 
 # Lab Setup and conditions
-## 1. Server #1 **DC.lab.local** (192.168.126.129): A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
+## 1. Server #1:
+**DC.lab.local** (192.168.126.129): A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
 
 ![Domain-Controllers](Domain-Controllers.jpg)
 
 ![AD-CS-Installed](AD-CS-Installed.jpg)
 
-## 2. Server #2 **DC2.lab.local** (192.168.126.130): Another Domain Controller (*PrintSpooler Service must be running*)
+## 2. Server #2:
+**DC2.lab.local** (192.168.126.130): Another Domain Controller (*PrintSpooler Service must be running*)
 
 ![Spooler-Running](Spooler-Running.jpg)
 
