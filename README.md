@@ -3,4 +3,4 @@ A **deadly attack** where the swordsman *overwhelms his opponent* with a *series
 
 *This is really another one of those Pentesting Repos XD*
 
-*I just felt that it's appropriate to express the awesomeness of what the OmniSlash is... couldn't help it :D :D*
+*I just felt that it's appropriate to express the awesomeness of what the OmniSlash is... couldn't help it :D*
