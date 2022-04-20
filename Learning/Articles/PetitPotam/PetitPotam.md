@@ -111,8 +111,8 @@ Command execution using ticket: `psexec.py <DOMAIN_FQDN>/<CHOSEN_USERNAME>@<DC_F
 
 # Credits
 1. **Will Schroeder** and **Lee Christensen** who wrote this excellent paper (https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf)
-2. **Lionel Gilles** for creating the PetitPotam Python Script
+2. **Lionel Gilles** for creating the **PetitPotam** Python Script
 3. **Yang Zhang** of Back2Zero team & **Yongtao Wang** (@Sanr) of BCM Social Corp, **Eyal Karni, Marina Simakov and Yaron Zinar** from Preempt & **n1nty** from A-TEAM of Legendsec at Qi'anxin Group for the **PrinterBug** (CVE-2019-1040)
-4. **SecureAuthCorp** for the awesome **impacket**
+4. **SecureAuthCorp** for the awesome **Impacket** scripts
 5. **Benjamin Delpy** for the legendary **mimikatz**
-6. **GhostPack** for **Rubeus**
+6. **GhostPack** for the **Rubeus** tool
