@@ -15,7 +15,7 @@ A Domain Controller with **Active Directory Certificate Services Web Enrollment*
 ![AD-CS-Installed](AD-CS-Installed.jpg)
 
 ## 2. DC2.lab.local (192.168.126.130)
-Another Domain Controller (*PrintSpooler Service must be running*)
+Another Domain Controller (*PrintSpooler Service must be running to force authentication. An attacker can wait for this to happen naturally but it could take some time*)
 
 ![Spooler-Running](Spooler-Running.jpg)
 
