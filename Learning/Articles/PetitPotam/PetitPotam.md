@@ -6,7 +6,7 @@
 - *Having all user hashes and using them with a simple Pass-the-Hash attack,* we can obtain **code execution as a Domain Admin**.
 - **Persistence** can also be established with a **golden ticket** since the `krbtgt` account hash would be obtainable.
 
-# Lab Setup and conditions
+# Lab Setup and Conditions
 ## 1. DC.lab.local (192.168.126.129)
 A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
 
@@ -15,7 +15,7 @@ A Domain Controller with **Active Directory Certificate Services Web Enrollment*
 ![AD-CS-Installed](AD-CS-Installed.jpg)
 
 ## 2. DC2.lab.local (192.168.126.130)
-Another Domain Controller (*PrintSpooler Service must be running to force authentication. An attacker can wait for this to happen naturally but it could take some time*)
+Another Domain Controller (*PrintSpooler Service must be running to quickly force authentication.*)
 
 ![Spooler-Running](Spooler-Running.jpg)
 
@@ -25,7 +25,7 @@ for triggering authentication and relaying to ADCS Web UI.
 ![kali-ip-config](kali-ip-config.jpg)
 
 ## 4. Windows Machine (192.168.126.128)
-for requesting a TGT and doing the DCSync attack (Shouldn't be in the domain, but should have the DC as its DNS).
+for requesting a TGT and doing the DCSync attack (it shouldn't be in the domain, but should have the DC as its DNS server).
 
 ![Windows-Attacker-ipconfig](Windows-Attacker-ipconfig.jpg)
 
@@ -36,7 +36,7 @@ A regular domain user with no special privileges.
 
 
 # Steps to Create
-1. Setting up NTLM Relay on our attacker host to forward authentication to ADCS Web UI
+1. Set up NTLM Relay on our attacker host to forward authentication to ADCS Web UI
 2. Use PetitPotam to force authentication from a domain controller back to the relaying kali machine
 3. Recieve base64 certificate for the domain controller's computer account
 4. use Rubeus.exe on the windows machine to request a TGT for that account using the certificate
@@ -44,7 +44,7 @@ A regular domain user with no special privileges.
 6. Grab any domain admin's hash to have code execution
 7. (Optional) create a golden ticket for persistence
 
-# 1. Setting up NTLM Relay on our attacker host to forward authentication to ADCS Web UI
+# 1. Set up NTLM Relay on our attacker host to forward authentication to ADCS Web UI
 `ntlmrelayx.py -t http://<CAServer>/certsrv/certfnsh.asp -smb2support --adcs --template DomainController`
 
 ![ntlm-relay-start](ntlm-relay-start.jpg)
