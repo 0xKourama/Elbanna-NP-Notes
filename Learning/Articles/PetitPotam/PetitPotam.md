@@ -2,15 +2,29 @@
 The **PetitPotam attack** is a technique where we abuse the **printer bug** to make a **domain controller** authenticate to our **kali machine**.
 *Relaying the captured authentication* to the **web interface of AD Certificate services (ADCS)** allows us to get the **certificate of the domain controller computer account**.
 *Having this certificate* can let us **request a TGT for the computer account**.
-*With a TGT of a Domain Controller's machine account,* we can abuse its **DCSync right** on the domain to retrieve **a full dump containing all domain users' NTLM hashes**.
+*With a TGT of a Domain Controller's machine account,* we can abuse its **DCSync** right on the domain to retrieve **a full dump containing all domain users' NTLM hashes**.
 *Having all user hashes and using them with a simple Pass-the-Hash attack,* we can obtain **code execution as a Domain Admin**.
 **Persistence** can also be established with a **golden ticket** since the `krbtgt` account hash would be compromised.
 
 # Lab Setup and conditions
-1. Server #1: Any server with Active Directory Certificate Services Web Enrollment enabled
-2. Server #2: A Domain Controller (PrintSpooler Service must be running)
-3. Kali Machine: for triggering authentication and relaying to ADCS Web UI
-4. Windows Machine: for requesting a TGT and doing the DCSync attack (Shouldn't be in the domain, but should have the DC as its DNS)
+## 1. Server #1 **DC.lab.local** (192.168.126.129): A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
+
+![Domain-Controllers](Domain-Controllers.jpg)
+
+![AD-CS-Installed](AD-CS-Installed.jpg)
+
+## 2. Server #2 **DC2.lab.local** (192.168.126.130): Another Domain Controller (*PrintSpooler Service must be running*)
+
+![Spooler-Running](Spooler-Running.jpg)
+
+## 3. Kali Machine (192.168.126.132): for triggering authentication and relaying to ADCS Web UI.
+
+## 4. Windows Machine (192.168.126.128): for requesting a TGT and doing the DCSync attack (Shouldn't be in the domain, but should have the DC as its DNS).
+
+## 5. normal user account (Lab\JohnSmith): no special privileges needed. A regular domain user would do.
+
+
+
 
 # Steps to Create
 1. Set up NTLM Relay on our attacker host
