@@ -109,6 +109,8 @@ Command execution using ticket: `psexec.py <DOMAIN_FQDN>/<CHOSEN_USERNAME>@<DC_F
 
 ![golden-ticket-used](golden-ticket-used.jpg)
 
+---
+
 # Mitigation:
 ## 1. Enable EPA for Certificate Authority Web Enrollment
 IIS Manager -> Sites -> Default Web Site -> CertSrv -> Authentication -> Windows Authentication -> Right-click -> Advanced Settings -> Extended Protection: Required
