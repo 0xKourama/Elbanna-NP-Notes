@@ -109,6 +109,29 @@ Command execution using ticket: `psexec.py <DOMAIN_FQDN>/<CHOSEN_USERNAME>@<DC_F
 
 ![golden-ticket-used](golden-ticket-used.jpg)
 
+# Mitigation:
+## 1. Enable EPA for Certificate Authority Web Enrollment
+IIS Manager -> Sites -> Default Web Site -> CertSrv -> Authentication -> Windows Authentication -> Right-click -> Advanced Settings -> Extended Protection: Required
+
+![certsrv-epa-required](certsrv-epa-required.jpg)
+
+## 2. Enable EPA for Certificate Enrollment Web Service
+IIS Manager -> Sites -> Default Web Site -> <CA_NAME>\_CES\_Kerberos -> Authentication -> Windows Authentication -> Right-click -> Advanced Settings -> Extended Protection: Required
+
+![certentrollwebsvc-epa-required](certentrollwebsvc-epa-required.jpg)
+
+After enabling EPA in the UI, the `Web.config` file created by CES role at `<%windir%>\systemdata\CES\<CA Name>_CES_Kerberos\web.config` should also be updated by adding `<extendedProtectionPolicy>` set with a value of `Always`
+
+![web-config-editing](web-config-editing.jpg)
+
+## 3. Enable Require SSL, which will enable only HTTPS connections.
+IIS Manager -> Sites -> Default Web Site -> CertSrv -> SSL Settings -> Require SSL
+
+![cert-srv-require-ssl](cert-srv-require-ssl.jpg)
+
+## 4. Restart IIS
+*From an elevated command prompt,* type: `iisreset /restart`
+
 # Credits
 1. **Will Schroeder** and **Lee Christensen** who wrote this excellent paper (https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf)
 2. **Lionel Gilles** for creating the **PetitPotam** Python Script
@@ -116,3 +139,5 @@ Command execution using ticket: `psexec.py <DOMAIN_FQDN>/<CHOSEN_USERNAME>@<DC_F
 4. **SecureAuthCorp** for the awesome **Impacket** scripts
 5. **Benjamin Delpy** for the legendary **mimikatz**
 6. **GhostPack** for the **Rubeus** tool
+7. **Harshit Rajpal** for the amazing article explaining the attack (https://www.hackingarticles.in/domain-escalation-petitpotam-ntlm-relay-to-adcs-endpoints/)
+8. **Microsoft Support** for the mitigation guide (https://support.microsoft.com/en-gb/topic/kb5005413-mitigating-ntlm-relay-attacks-on-active-directory-certificate-services-ad-cs-3612b773-4043-4aa9-b23d-b87910cd3429)
