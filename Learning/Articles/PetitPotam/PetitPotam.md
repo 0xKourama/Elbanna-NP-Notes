@@ -10,7 +10,7 @@
 
 # Lab Setup and Conditions
 1. **DC.lab.local (192.168.126.129):** A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
-2. **DC2.lab.local (192.168.126.130):** Another Domain Controller (*PrintSpooler Service must be running to quickly force authentication.*)
+2. **DC2.lab.local (192.168.126.130):** Another Domain Controller (*PrintSpooler Service must be running on it to quickly force authentication.*)
 3. **Kali Machine (192.168.126.132):** for triggering authentication and relaying to ADCS Web UI.
 4. **Windows Machine (192.168.126.128):** for requesting a TGT and doing the DCSync attack (it shouldn't be in the domain, but should have the DC as its DNS server).
 5. **Normal user account (Lab\JohnSmith):** A regular domain user with no special privileges.
