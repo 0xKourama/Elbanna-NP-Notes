@@ -2,9 +2,9 @@
 - The **PetitPotam attack** is a technique where we abuse the **printer bug** (Explained here: https://www.fortalicesolutions.com/posts/elevating-with-ntlmv1-and-the-printer-bug) to make a **domain controller** authenticate to our **kali machine**.
 - *Relaying the captured authentication* to the **web interface of AD Certificate services (ADCS)** allows us to get the **certificate of the domain controller's computer account**.
 - *Having this certificate* can let us **request a TGT for the computer account**.
-- *With a TGT of a Domain Controller's machine account,* we can abuse its **DCSync** right on the domain to retrieve **a full dump containing all domain users' NTLM hashes**.
+- *And, with a TGT of a Domain Controller's machine account,* we can abuse its **DCSync** right on the domain to retrieve **a full dump containing all domain users' NTLM hashes**.
 - *Having all user hashes and using them with a simple Pass-the-Hash attack,* we can obtain **code execution as a Domain Admin**.
-- **Persistence** can also be established with a **golden ticket** since the `krbtgt` account hash would be obtainable.
+- **Persistence** can also be established with a **Golden Ticket** since the `krbtgt` account hash would be obtainable.
 
 ---
 
