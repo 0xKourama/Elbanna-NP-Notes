@@ -6,6 +6,8 @@
 - *Having all user hashes and using them with a simple Pass-the-Hash attack,* we can obtain **code execution as a Domain Admin**.
 - **Persistence** can also be established with a **golden ticket** since the `krbtgt` account hash would be obtainable.
 
+---
+
 # Lab Setup and Conditions
 1. **DC.lab.local (192.168.126.129):** A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
 2. **DC2.lab.local (192.168.126.130):** Another Domain Controller (*PrintSpooler Service must be running to quickly force authentication.*)
@@ -13,11 +15,15 @@
 4. **Windows Machine (192.168.126.128):** for requesting a TGT and doing the DCSync attack (it shouldn't be in the domain, but should have the DC as its DNS server).
 5. **Normal user account (Lab\JohnSmith):** A regular domain user with no special privileges.
 
+---
+
 # Tools needed
 1. **Impacket** (https://github.com/SecureAuthCorp/impacket)
 2. **PetitPotam** (https://github.com/topotam/PetitPotam)
 3. **Rubeus** (https://github.com/GhostPack/Rubeus)
 4. **Mimikatz** (https://github.com/gentilkiwi/mimikatz)
+
+---
 
 # Steps to Create
 1. Set up NTLM Relay on our attacker host to forward the captured authentication to ADCS Web UI
@@ -28,6 +34,7 @@
 6. Grab any domain admin's hash to have code execution
 7. (Optional) create a golden ticket for persistence
 
+---
 
 # Lab Setup and Conditions
 ## 1. DC.lab.local (192.168.126.129)
@@ -57,6 +64,7 @@ A regular domain user with no special privileges.
 
 ![John-Smith-User](John-Smith-User.jpg)
 
+---
 
 # Steps to Create
 ## 1. Set up NTLM Relay on our attacker host to forward the captured authentication to ADCS Web UI
@@ -133,6 +141,8 @@ IIS Manager -> Sites -> Default Web Site -> CertSrv -> SSL Settings -> Require S
 
 ## 4. Restart IIS
 *From an elevated command prompt,* type: `iisreset /restart`
+
+---
 
 # Credits
 1. **Will Schroeder** and **Lee Christensen** who wrote this excellent paper (https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf)
