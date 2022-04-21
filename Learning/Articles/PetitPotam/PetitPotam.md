@@ -16,17 +16,6 @@
 
 ---
 
-# Steps to Create
-1. Set up NTLM Relay on our attacker host to forward the captured authentication to ADCS Web UI
-2. Use PetitPotam to force authentication from a domain controller back to the relaying kali machine
-3. Recieve the Base64 certificate for the domain controller's computer account
-4. use Rubeus on the windows machine to request a TGT for that account using the certificate
-5. *Having the TGT in memory,* use Mimikatz to do a DCSync attack
-6. Grab any domain admin's hash to have code execution
-7. (Optional) create a golden ticket for persistence
-
----
-
 # Lab Setup and Conditions
 ## 1. DC.lab.local (192.168.126.129)
 A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
