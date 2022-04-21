@@ -8,15 +8,6 @@
 
 ---
 
-# Lab Setup and Conditions
-1. **DC.lab.local (192.168.126.129):** A Domain Controller with **Active Directory Certificate Services Web Enrollment** enabled
-2. **DC2.lab.local (192.168.126.130):** Another Domain Controller (*PrintSpooler Service must be running on it to quickly force authentication.*)
-3. **Kali Machine (192.168.126.132):** For triggering authentication and relaying to ADCS Web UI.
-4. **Windows Machine (192.168.126.128):** For requesting a TGT and doing the DCSync attack (This machine shouldn't be in the domain, but should have the DC as its DNS server).
-5. **Normal user account (Lab\JohnSmith):** A regular domain user with no special privileges.
-
----
-
 # Tools needed
 1. **Impacket** (https://github.com/SecureAuthCorp/impacket)
 2. **PetitPotam** (https://github.com/topotam/PetitPotam)
@@ -55,7 +46,7 @@ for triggering authentication and relaying to ADCS Web UI.
 ![kali-ip-config](kali-ip-config.jpg)
 
 ## 4. Windows Machine (192.168.126.128)
-for requesting a TGT and doing the DCSync attack (it shouldn't be in the domain, but should have the DC as its DNS server).
+for requesting a TGT and doing the DCSync attack (The machine shouldn't be in the domain, but should have the Domain Controller set as its primary DNS server).
 
 ![Windows-Attacker-ipconfig](Windows-Attacker-ipconfig.jpg)
 
