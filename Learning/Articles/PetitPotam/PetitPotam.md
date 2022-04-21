@@ -124,6 +124,12 @@ IIS Manager -> Sites -> Default Web Site -> CertSrv -> SSL Settings -> Require S
 
 ---
 
+# Conclusion
+Having a non-secure AD CS Installation in your domain can present an attacker with an easy way to achieve Domain Admin privileges and gain Persistence.
+But, with such easy mitigation steps, you can close down a sure path to Domain Dominance. DO IT! :D
+
+---
+
 # Credits
 1. **Will Schroeder** and **Lee Christensen** who wrote this excellent paper (https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf)
 2. **Lionel Gilles** for creating the **PetitPotam** Python Script
