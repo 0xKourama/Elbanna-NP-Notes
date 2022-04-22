@@ -1,4 +1,7 @@
 # Introduction & Attack Anatomy
+
+![Petit-Potam-Flow-Diagram](Petit-Potam-Flow-Diagram.jpg)
+
 - The **PetitPotam attack** is a technique where we abuse the **printer bug** (Explained here: https://www.fortalicesolutions.com/posts/elevating-with-ntlmv1-and-the-printer-bug) to make a **domain controller** authenticate to our **kali machine**.
 - *Relaying the captured authentication* to the **web interface of AD Certificate services (ADCS)** allows us to get the **certificate of the domain controller's computer account**.
 - *Having this certificate* can let us **request a TGT for the computer account**.
