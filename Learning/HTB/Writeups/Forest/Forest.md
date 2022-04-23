@@ -258,7 +258,7 @@ This query shows us no real path to being a domain admin. So we try another quer
 
 ![bloodhound-query-2](bloodhound-query-2.jpg)
 
-It looks horrible at first. *But, after taking a closer look,* we notice that our account *being in the* `account operators` *group* can add a member to a certain group called `Exchange Windows Permissions` which happens to have `WriteDACL` on `htb.local` a.k.a the **DOMAIN!**. Having that privilege means we can abuse it to give ourselves the `DCSync` right that we can use to dump all the domain hashes!
+It looks horrible at first. *But, after taking a closer look,* we notice that our account *being in the* `account operators` *group* can add a member to a certain group called `Exchange Windows Permissions` which happens to have `WriteDACL` on `htb.local` (**The entire domain!**). Having that privilege means we can abuse it to give ourselves the `DCSync` right that we can use to dump all the domain hashes!
 
 ![path-to-DA](path-to-DA.jpg)
 
