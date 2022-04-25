@@ -1,3 +1,4 @@
+### Nmap
 We start off doing a *comprehensive* nmap scan with **default scripts** and **service detection**
 
 ```
@@ -55,6 +56,8 @@ Host script results:
 |_clock-skew: mean: 2h26m50s, deviation: 4h02m31s, median: 6m49s
 ```
 
+### Domain Controller Detected
+
 We find a collection of ports that give us a high probability that this is windows machine and a domain controller:
 - DNS on port 53
 - Kerberos on port 88
@@ -64,6 +67,8 @@ We find a collection of ports that give us a high probability that this is windo
 - WinRM on port 5985
 
 From the nmap script `smb-os-discovery`, the domain name should be `htb.local`
+
+### Fetching a list of all AD users
 
 We want to start enumerating users. So we use an impacket tool called `GetADUsers.py`.
 
@@ -116,6 +121,8 @@ santi                                                 2019-09-20 19:02:55.134828
 - andy
 - mark
 - santi
+
+### Wordlist generation from common username schemes
 
 *Since we need a wordlist,* We create a basic one from the most common passwords (like "P@ssw0rd" etc.) and from **commonly used password convention schemes** like:
 - Season + Year
@@ -171,6 +178,8 @@ Summer%2019
 ..SNIP..
 ```
 
+### Enumerating domain password policy before password spraying
+
 I then use `crackmapexec` to obtain the password policy. We don't want to lock everyone one out XD
 
 ![CME-Pass-Pol](CME-Pass-Pol.jpg)
@@ -181,6 +190,8 @@ We start the spray using:
 `crackmapexec smb 10.10.10.161 -u users.txt -p passwords.txt --continue-on-success`
 
 But we get no luck with that :/
+
+### ASREPRoasting
 
 *Having no credentials,* we can still try an attack called `ASREP Roasting`. This attack would let us grab the hashes of accounts that **don't require Kerberos PreAuthentication.**
 
@@ -196,6 +207,8 @@ This is after we set `10.10.10.161` as our name server in `/etc/resolv.conf`. We
 
 notice that the user `svc-alfresco` doesn't show in the script console output. I'm not sure why xD but the hash was pushed out to the `asrep-hashes.txt` file.
 
+### Cracking TGT with `John`
+
 we use `john` to crack the hash and the password for `svc-alfresco` turns out to be `s3rvice`
 
 ![cracked](cracked.jpg)
@@ -206,6 +219,8 @@ Alright, here is our first set of creds:
 - Username: htb.local\svc-alfresco
 - Password: s3rvice
 
+### Remote Code Execution
+
 We first try to login using `crackmapexec` using the `SMB` module. But that doesn't work. This is because `svc-alfresco` isn't a local administrator on the machine. So we try another approach for remote code execution. This time using a tool called `evil-winrm` (https://github.com/Hackplayers/evil-winrm)
 
 ![evil-winrm](evil-winrm.jpg)
@@ -214,7 +229,9 @@ it works like a charm, this is because we're a member of the builtin group of `R
 
 ![groups](groups.jpg)
 
-*Anyway,* we get down to enumeration for privesc
+### Privilege Escalation
+
+*Right after,* we get down to enumeration for privesc
 
 1. we look for interesting files in user profiles --> nothing
 2. we check for interesting directories in `c:\` --> nothing
@@ -231,6 +248,8 @@ but ...
 1. Account Operators --> this can let us create AD accounts and add them to groups other than high privilege ones (Administrators, Domain Admins etc.) (https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-accountoperators)
 2. Privileged IT Accounts --> this is not a standard AD group and we would want to know what those *Privileges* are :D
 3. Service Accounts --> this too might be interesting
+
+### Domain Enumeration with BloodHound
 
 *since we're in a an Active Directory environment,* a standard tool to use is `BloodHound` (https://github.com/BloodHoundAD/BloodHound). It can help us identify paths to escalate our privileges inside a domain context. We will use it show us what can be done using the privileges that we hold.
 
@@ -257,6 +276,8 @@ and then mount it on the victim machine use the `net use` command, moving the `.
 This query shows us no real path to being a domain admin. So we try another query: `Shortest Paths to High Value Targets`
 
 ![bloodhound-query-2](bloodhound-query-2.jpg)
+
+### Abusing membership in the `Account Operators` AD group + Abusing the high privileges of the `Exchange Windows Permissions`
 
 It looks horrible at first. *But, after taking a closer look,* we notice that our account *being in the* `account operators` *group* can add a member to a certain group called `Exchange Windows Permissions` which happens to have `WriteDACL` on `htb.local` (**The entire domain!**). Having that privilege means we can abuse it to give ourselves the `DCSync` right that we can use to dump all the domain hashes!
 
