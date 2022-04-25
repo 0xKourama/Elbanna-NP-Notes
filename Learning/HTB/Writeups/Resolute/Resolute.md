@@ -91,7 +91,7 @@ we get more details using `querydispinfo2`
 ![marko-failed](marko-failed.jpg)
 
 ## Who else is using that password?
-*having got an idea of a possible password,* a good logical step is to try that against the entire domain. we put all we got from `rpcclient > enumdomusers` into a text file `users.txt` and use `crackmapexec` to do a **Password Spray.**
+*having got an idea of a possible password,* a good logical step is to try that against the entire domain. we put what we got from `rpcclient > enumdomusers` into a text file `users.txt` and use `crackmapexec` to do a **Password Spray.**
 
 ![got-melanie](got-melanie.jpg)
 
@@ -119,7 +119,7 @@ we get more details using `querydispinfo2`
 
 *With remote code execution using* **WinRM**, we decide to run `SharpHound.exe` from the shell
 
-![sharphound-collection](sharphound-collection.jph)
+![sharphound-collection](sharphound-collection.jpg)
 
 ### Browsing Bloodhound output
 *After browsing* `bloodhound` *for a while*, we find that we would have a clear path to Domain Admin if we manage to get the `ryan` user. This is because he is a member of the DNS Admins group which can be abused to elevate our privileges. He's also a member of **Remote Management Users** and that means we can execute code using **WinRM** too.
