@@ -466,7 +466,7 @@ Sudoers entry:
 ```
 
 **that's it!** we can now escalate privileges to root.
-A quick search on GTFO bins reveals a way we can do that using `CTRL+R` followed by `CTRL+X`
+A quick search on GTFO bins (https://gtfobins.github.io) reveals a way we can do that using `CTRL+R` followed by `CTRL+X`
 
 ![gtfo](gtfo.jpg)
 
