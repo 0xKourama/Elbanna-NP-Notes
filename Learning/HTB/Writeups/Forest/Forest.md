@@ -4,7 +4,7 @@
 - *Using* **BloodHound** *for* **Domain Enumeration**, we find that the user is member of the **Account Operators** group which *gives him the privilege of adding users to AD groups other than Domain Admins etc.*
 - We add our user to a group called **'Exchange Windows Permissions'** which has a **write DACL** over the domain.
 - *Abusing this privilege* lets us give ourselves the **DCSync right** over the domain using **PowerView** which *lets us grab all its NTLM hashes*
-- We use the Domain *Administrators hash* in a simple **Pass-the-Hash** attack to gain full access.
+- We use the Domain *Administrator's hash* in a simple **Pass-the-Hash** attack to gain full access.
 
 ---
 
