@@ -1,3 +1,11 @@
+### Summary
+- AD Box, We retrieve information about all users and find a password in the description field of a user.
+- We reuse that password and spray all domain users and we get another user who has PowerShell remoting privileges.
+- Browsing the file system, we find a PowerShell transcript file with credentials for another user.
+- The other user is a member of the DNSAdmins AD Group which can gain system privilges on a Domain Controller by means of DLL Injection.
+
+---
+
 ### Nmap
 As usual we start with regular nmap with `-sC` for default scripts and `-sV` to enumerate versions and making sure to include all ports with `-p-`:
 ```
