@@ -402,6 +402,8 @@ and try to `su` as `root`. But, it's not going to be that easy :D
 
 Note: Enumerating the database is a step we could have done using the `www-data` user of course. But my attention was intrigued more by the `password_backup` file and that's why I went for it first.
 
+### Detecting unusual activity
+
 *After running `linpeas`,* we don't find much leads to investigate. So we turn to the folder `admin-area` in the `home` of the `floris` user. And we notice that the files `input` and `report` have been very recently modified.
 
 ![admin-area](admin-area.jpg)
@@ -428,6 +430,8 @@ after making the binary executable, we start it and notice some very interesting
 
 ![curl-help](curl-help.jpg)
 
+### Abusig cURL
+
 we do a search on GTFO Bins (https://gtfobins.github.io/gtfobins/curl/) and find we can get a `file read` using `curl`
 
 ![gtfo-curl](gtfo-curl.jpg)
@@ -440,9 +444,11 @@ and we manage to get the `shadow` file contents :D so it works!
 
 ![got-shadow](got-shadow.jpg)
 
+### Getting a shell
+
 *alright, with this,* we can totally read the `root.txt` file. But that wouldn't be fun :D ... we're going for a shell :D
 
-*since we can read the `shadow` file, and we can use the `curl` command's `output` functionality to write as root,* we can **forge** our own `shadow` file.
+*since we can read the `shadow` file, and we can use the `curl` command's `output` functionality to write as root,* we can **forge** our own `shadow` version.
 
 we first need to create a `SHA-512` hash using `mkpasswd`
 
