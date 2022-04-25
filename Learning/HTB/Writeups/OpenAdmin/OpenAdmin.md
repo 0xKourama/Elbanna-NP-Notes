@@ -316,7 +316,7 @@ drwxr-xr-x 4 root  root     4096 Nov 22  2019 ..
 -rwxrwxr-x 1 jimmy internal  339 Mar 19 13:54 main.php
 ```
 
-### Detecting unsual activity
+### Finding unusual files
 
 it contained those php files.
 
@@ -366,7 +366,9 @@ I don't get any ideas right off the bat. so I go ahead and use `linpeas.sh` to s
 
 we go down many different paths, including cracking the `sha512` hash inside the `index.php` file within the `internal` directory (the password was `Revealed`). and re-using it with all the users. but no dice :\
 
-*but we do notice something we haven't paid attention to the first time,* port 52846 is listening *internally*. *on the first look,* we were pre-occupied with the `mysql` port and missed that high port.
+### Finding another high port listening
+
+*but we do notice something we haven't paid attention to the first time,* port **52846** is listening *internally*. *on our first look,* we were pre-occupied with the `mysql` port and missed that high one.
 
 ```
 tcp    LISTEN   0        80              127.0.0.1:3306           0.0.0.0:*     
@@ -381,6 +383,10 @@ we know that we should get the contents of `joanna`'s ssh key if we log in with 
 - username: `jimmy`
 - password: `Revealed`
 
+**And, if we didn't,** we had `write` access to the php authentication file and could modify it ;)
+
+### SSH Tunneling to expose the internal port
+
 so we create an `SSH tunnel` to bring out that internal `52846` port to our `localhost` on port `8888`
 
 `ssh jimmy@10.10.10.171 -L 8888:127.0.0.1:52846`
@@ -389,13 +395,17 @@ and we see the login form:
 
 ![hidden-port](hidden-port.jpg)
 
-after loggin in, we get the ssh key for the `joanna` user!
+### SSH Key for `Joanna`
+
+after logging in, we get the ssh key for the `joanna` user!
 
 ![joanna-key](joanna-key.jpg)
 
 we copy it to our kali machine and we change its permissions using `chmod 600 joanna_key`
 
 and we use it to log in. but it requires a passphrase :D
+
+### Cracking the SSH passphrase using `John`
 
 we use the tool `ssh2john` to change the ssh key into a format that's crackable by `john`. we crack the password using the `rockyou.txt` wordlist.
 
@@ -437,6 +447,8 @@ Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your 
 
 Last login: Tue Jul 27 06:12:07 2021 from 10.10.14.15
 ```
+
+### Joanna can root the box. SUID style
 
 *after loggin in,* we find no interesting files in her home directory. but she shows to have interesting permissions using `sudo -l -l`
 
