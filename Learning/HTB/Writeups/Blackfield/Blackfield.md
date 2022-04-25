@@ -3,9 +3,9 @@
 - We perform an **ASREPRoast attack** to get credentials for the `support` user.
 - *Using* **BloodHound** *to enumerate the domain,* we find that this user *can reset the password for another account* `audit2020`
 - *After resetting* `audit2020`'*s password*, we gain access to the `forensic` **SMB share** which has a **memory dump** of `lsass.exe`
-- *Using* `Mimikatz` *to extract hashes from the dump,* we can access to the `svc_backup` user
+- *Using* `Mimikatz` *to extract hashes from the dump,* we gain access to the `svc_backup` user
 - The user is a member of the **Backup Operators** group which have the *privilege of backing up most files on the domain controller*.
-- We *abuse* this privilege to back up the **NTDS.dit** file and the **system registry hive** and dump **all the NTLM hashes of the domain**.
+- We *abuse* this privilege to back up the **NTDS.dit** file and the **system registry hive** which we use to dump **all the NTLM hashes of the domain**.
 - *With the Domain Administrators NTLM hash,* we can **Pass-the-Hash** to gain full access.
 
 ---
