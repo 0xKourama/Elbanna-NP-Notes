@@ -1,7 +1,7 @@
 ### Summary
-- We find a domain controller with and IIS port open.
-- We extract a list of usernames from the company website
-- We ASREPRoasing and get creds for a user with PowerShell Remoting Capabilities
+- We find a domain controller with a IIS running on port 80.
+- It turns out to be the company website and we extract a list of usernames from the 'Meet the Team' page.
+- We try ASREPRoasing and get creds for a user with PowerShell Remoting capabilities.
 - Enumerating Autologon, we find creds for another user with DCSync privileges which we use to dump all domain NTLM hashes
 
 ---
