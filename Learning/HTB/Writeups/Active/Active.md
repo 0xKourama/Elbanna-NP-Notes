@@ -1,3 +1,12 @@
+### Summary
+- A Domain Controller Machine. We first find an SMB share called `Replication` which we can `read` using `null authentication`.
+- *Going through the share,* we find a `Groups.xml` file containing the encrypted password of the `svc_tgs` account.
+- This password can be *easily* decrypted using the `gpp-decrypt` built-in tool and we can authenticate as `svc_tgs`.
+- We find that we can **kerberoast** the **Domain Administrator** and we get his **TGS** hash.
+- The hash is crackable with `John` and we retrieve the password to gain full access.
+
+---
+
 ### Nmap
 we start off by doing a complete `nmap` with default scripts `-sC` and service detection `-sV`
 ```
