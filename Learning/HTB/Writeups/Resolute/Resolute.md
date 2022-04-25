@@ -180,6 +180,6 @@ using the `sc` command without the `.exe` at the end didn't work. This took me a
 
 ![troubleshooting-sc](troubleshooting-sc.jpg)
 
-Also, copying the `msfvenom` generated dll didn't work because the antivirus kept eating it up xD
+Also, copying the `msfvenom` generated locally on the machine dll didn't work because the antivirus kept eating it up xD
 
 ![evil-dll-eaten](evil-dll-eaten.jpg)
