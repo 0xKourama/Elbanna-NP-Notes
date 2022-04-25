@@ -1,3 +1,4 @@
+### Nmap
 We start off with an `nmap` scan for `all ports` and using `service detection` and `default scripts`
 ```
 PORT      STATE SERVICE       VERSION
@@ -39,6 +40,8 @@ Host script results:
 ```
 *Right off the bat,* we see `IIS 10.0` on port 80 which indicates either Windows Server 2016 or 2019.
 We also see a collection of ports (DNS, Kerberos, LDAP, SMB, Secure LDAP and WinRM) along with `nmap` telling us that this box is more likely a **Domain Controller**. The domain name is `EGOTISTICAL-BANK.LOCAL`
+
+### Basic OSINT: Pulling usernames from the website and Wordlist Generation
 
 we go and check out the website. And, we find mostly static content there that doesn't give us much indication of an exploit. *However,* we do find a couple of potential usernames in the `/about.html` page at the bottom:
 
@@ -83,6 +86,9 @@ Surname.Name
 SurnameN
 Surname.N
 ```
+
+### User Enumeration using `kerbrute`
+
 *using* `kerbrute` *for user enumeration,* we find that the user `fsmith` exists:
 
 ![fsmith-exists](fsmith-exists.jpg)
@@ -97,9 +103,13 @@ we go on and crack the hash using `john`. The password turns out to be `Thestrok
 
 The wordlist I used `gegalist.txt` is just a combination of all the wordlists in **Seclists**.
 
+### PowerShell Remoting
+
 we want to get **remote code execution** on the box, so we try **PowerShell Remoting** using a tool called `evil-winrm` (https://github.com/Hackplayers/evil-winrm). And are lucky :D
 
 ![we-can-winrm](we-can-winrm.jpg)
+
+### Autologon creds for `svc_loanmgr`
 
 *Looking around the box in the user profile and in the root directory,* we don't see much intersting information. *However, when we check for autlogon creds,* we do find interesting credentials for the `svc_loanmgr` user:
 
@@ -111,6 +121,8 @@ $ErrorActionPreference='SilentlyContinue';'DefaultDomainName', 'DefaultUserName'
 ![Autologon-creds](Autologon-creds.jpg)
 
 This is amazing :D we now got two accounts!
+
+### Enumeration with `BloodHound`
 
 *Since this is an AD environment,* it's only natural that we run `BloodHound`. *This time,* we're going to use a python-based version called `bloodhound-python` (https://github.com/fox-it/BloodHound.py).
 
@@ -207,13 +219,17 @@ this leaves us a couple of `.json` files which we can zip before uploading to `b
 
 ![Zipping-them-jsons](Zipping-them-jsons.jpg)
 
-*checking* `bloodhound`, we find that the user that own `svc_loanmgr` happens to have a very dangerous right `DCSync` on the domain.
+### Abusing Dangerous Rights (DCSync)
+
+*trying a standard* `bloodhound` *query,* we find that the user that own `svc_loanmgr` happens to have a very dangerous right `DCSync` on the domain.
 
 ![dc-sync-for-loanmgr](dc-sync-for-loanmgr.jpg)
 
-Having this right means we can act asif we were another domain controller and ask for a full synchronization of all the password hashes of the domain.
+Having this right means we can act as if we were *another domain controller* and ask for a **full synchronization of all the password hashes of the domain.**
 
-This can be achieved using impacket's `secretsdump.py` tool:
+### Full domain hash dump
+
+This can be achieved using `impacket`'s `secretsdump.py` tool:
 
 ![secrets-dump](secrets-dump.jpg)
 
