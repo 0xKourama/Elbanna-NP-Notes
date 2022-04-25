@@ -1,3 +1,4 @@
+### Standard Nmap
 We do a standard `nmap` with service detection `-sV` and default scripts `-sC` on all ports:
 ```
 PORT     STATE SERVICE       VERSION
@@ -23,10 +24,14 @@ Host script results:
 |_  start_date: N/A
 ```
 
+### Domain Controller Signature
+
 We see a combination of ports indicative of a **Domain Controller**: **DNS** on 53, **Kerberos** on 88, **LDAP** on 389 and **SMB** on 445.
 We also notice the domain name on LDAP is **Blackfield.local** and the hostname **DC01**
 
 we add an `nameserver` entry in our `/etc/resolv.conf` file for the machine's IP and proceed to enumerate **SMB** for null/anonymous access.
+
+### SMB Enumeration
 
 we try a few inputs and manage to get a listing of the shares using anonymous authentication:
 
@@ -38,17 +43,19 @@ we try a few inputs and manage to get a listing of the shares using anonymous au
 
 ![profiles-share](profiles-share.jpg)
 
+### Mounting SMB to linux
+
 we mount the share using `mount -t cifs -o 'username=a' //10.10.10.192/Profiles$ /mnt` so we can use handy commands like `find` and look for interesting files within.
 
 ![no-files-in-prof-share](no-files-in-prof-share.jpg)
 
 we notice no files are there. But, we can still save those foldernames to be used as a *userlist* for future attacks. we do that using `ls` with the `-1` flag to have the names on one column.
 
+### ASREPRoasting
+
 *Having this list,* we launch an `ASREPRoast` attack using `impacket`'s `GetNPUsers.py`. 
 
-```
-GetNPUsers.py -dc-ip 10.10.10.192 blackfield.local/ -request -usersfile users.txt
-```
+`GetNPUsers.py -dc-ip 10.10.10.192 blackfield.local/ -request -usersfile users.txt`
 
 ![asrep-roast](asrep-roast.jpg)
 
@@ -66,11 +73,16 @@ We try authenticating using `crackmapexec` and are successful.
 
 We try to remote using **WinRM** but no luck :/
 
+### Getting all AD users for future attacks
+
 *After investigating the new-accessible shares* `SYSVOL` *and* `NETLOGON`, we find nothing important. So we proceed to pull the full userlist from the domain using `impacket`'s `GetADUsers.py`:
 
 ![impacket-get-ad-user](impacket-get-ad-user.jpg)
 
+
 we find that the usernames we found in the `profiles$` have different `SamAccountNames` and that's why they weren't authenticating.
+
+### Kerberoasting & ASREPRoasting
 
 we use the new AD user list to launch another `ASREPRoast` attack but get no new results.
 
@@ -78,13 +90,17 @@ we also try `Kerberoasting` but find no entries:
 
 ![kerberoast](kerberoast.jpg)
 
-I use `crackmapexec` to get the password policy of the domain before **password spraying**
+### Pattern guessing & Password Spraying
+
+I use `crackmapexec` to get the password policy of the domain before doing any spraying
 
 ![pass-pol](pass-pol.jpg)
 
 Looks like there's no account lockout at all :D
 
 I spray with the full AD userlist from `GetADUsers.py` with the `support` password and some variants like: `#01^BlackKnight` but get nothing either :/
+
+### Bloodhound & Abusing the `ForceChangePassword` right
 
 I then use `bloodhound` to get a look at what I can do with the support account. And I notice that I can reset the password for the `audit2020` user:
 
@@ -99,6 +115,8 @@ I find this right by clicking the `First Degree Object Control` box under the `N
 ![abuse-help](abuse-help.jpg)
 
 *it says that by using the command* `Set-DomainUserPassword`, we can reset the password for the `audit2020` account and be able to use it.
+
+### Using a Windows machine to do the deed
 
 We can do so by using a `Windows` host. We can run the `RunAs.exe` utility with the `/netonly` flag. That would let us use a set of credentials in the network's context and be able to do stuff.
 
@@ -116,6 +134,8 @@ The command does take some time... But we're successful in resetting the passwor
 
 ![audit-2020-reset](audit-2020-reset.jpg)
 
+### SMB forensic share enumeration
+
 *Using the new password,* we find that we can now read the `forensic` share.
 
 ![audit-2020-share-access](audit-2020-share-access.jpg)
@@ -130,6 +150,8 @@ we unzip the `lsass.zip` file to find a `.DMP` file which is a memory dump of th
 
 ![lsass-dmp](lsass-dmp.jpg)
 
+### Extracting credentials from LSASS dump
+
 we can use a tool called `pypykatz` (https://github.com/skelsec/pypykatz) to obtain hashes from the `.DMP` files.
 
 `pypykatz lsa minidump lsass.DMP` is the command.
@@ -143,6 +165,8 @@ we find hashes for both the `Adminitrator` user and `svc_backup` accounts
 *Sadly,* the hash for the `administrator` account didn't work, but the one for `svc_backup` did. And it also had access to **PowerShell Remoting** :)
 
 ![svc_backup_shell](svc_backup_shell.jpg)
+
+### Abusing the `SeBackupPrivilege` held by the `Backup Operators` AD Group
 
 *checking the group memberships on the* `svc_backup` *user,* we notice it's a member of the `Backup Operators` group. *And, by extension,* it has the `SeBackupPrivilege`.
 
@@ -169,6 +193,8 @@ this would essentially expose a *shadow* copy of the `c:` drive to another drive
 
 This is required because a file like `NTDS.dit` is constantly undergoing `READ` and `WRITE` operations which would make copying it infeasable under normal circumstances.
 
+### Changing encoding to match Windows
+
 *Having created this script file in* **Linux**, we will need to change its encoding to fit **Windows** for it to work properly. This can be done using the `unix2dos` command:
 
 ![abuse-dsh](abuse-dsh.jpg)
@@ -180,6 +206,8 @@ we upload the `.dsh` file using `evil-winrm`'s `upload` function. And, we change
 ![diskshadow-success](diskshadow-success.jpg)
 
 it succeeds and we can list the contents of `c:` from `z:`
+
+### Special copying mode: `Backup Mode`
 
 *to be able to get a copy of* `NTDS.dit` *from* `z:\`, we would need to use the `Robocopy` command-line utility with `/b` flag for `backup mode`. This would basically allow the copying to bypass the `ACLs` of the file if the `SeBackupPrivilege` was held.
 
@@ -204,7 +232,7 @@ robocopy /?
                  /E :: copy subdirectories, including Empty ones.
              /LEV:n :: only copy the top n LEVels of the source directory tree.
                  /Z :: copy files in restartable mode.
-                 /B :: copy files in Backup mode.
+                 /B :: copy files in Backup mode.  <-------------
                 /ZB :: use restartable mode; if access denied use Backup mode.
                  /J :: copy using unbuffered I/O (recommended for large files).
             /EFSRAW :: copy all encrypted files in EFS RAW mode.
@@ -219,6 +247,8 @@ we can then use the `reg` command with the `save` option to get the `SYSTEM` hiv
 `reg save hklm\system c:\windows\Temp\system`
 
 ![got-system-hive](got-system-hive.jpg)
+
+### Hashes everywhere
 
 we can use `evil-winrm` `download` functionality to retrieve the files to our kali machine. where can use `impacket`'s `secretsdump.py` script to dump all the contents.
 
