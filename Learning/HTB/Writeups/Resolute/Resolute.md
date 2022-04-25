@@ -100,24 +100,27 @@ we get more details using `querydispinfo2`
 ## Options available after getting a valid AD user
 
 *Having a valid AD user,* we got a couple of things to check:
-1. Code execution with **WinRM**
-2. SMB Shares
-3. GPP Enumeration since it's a domain controller
-4. ASREPRoast (could be done without creds but we moved down the password spray path first)
-5. Kerberoast
-6. BloodHound
+1. Code execution with **WinRM**: Check
 
 ![melanie-got-winrm](melanie-got-winrm.jpg)
 
+2. SMB Shares: Nothing there but we can enumerate GPP
+
 ![melanie-smb-access](melanie-smb-access.jpg)
+
+3. GPP Enumeration since it's a domain controller
 
 ![GPP-check](GPP-check.jpg)
 
+4. ASREPRoast (could be done without creds but we moved down the password spray path first). No results
+
 ![asreproast](asreproast.jpg)
+
+5. Kerberoasting didn't get results either
 
 ![Kerberoast](Kerberoast.jpg)
 
-*With remote code execution using* **WinRM**, we decide to run `SharpHound.exe` from the shell
+6. BloodHound. *With remote code execution using* **WinRM**, we decide to run `SharpHound.exe` from the shell
 
 ![sharphound-collection](sharphound-collection.jpg)
 
