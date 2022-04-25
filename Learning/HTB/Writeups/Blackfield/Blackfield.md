@@ -1,3 +1,15 @@
+### Summary
+- A **Domain Controller** machine. We first find **SMB anonymous read access** to a share containing a list of folders which can be used as usernames.
+- We perform an **ASREPRoast attack** to get credentials for the `support` user.
+- *Using* **BloodHound** *to enumerate the domain,* we find that this user *can reset the password for another account* `audit2020`
+- *After resetting* `audit2020`'*s password*, we gain access to the `forensic` **SMB share** which has a **memory dump** of `lsass.exe`
+- *Using* `Mimikatz` *to extract hashes from the dump,* we can access to the `svc_backup` user
+- The user is a member of the **Backup Operators** group which have the *privilege of backing up most files on the domain controller*.
+- We *abuse* this privilege to back up the **NTDS.dit** file and the **system registry hive** and dump **all the NTLM hashes of the domain**.
+- *With the Domain Administrators NTLM hash,* we can **Pass-the-Hash** to gain full access.
+
+---
+
 ### Standard Nmap
 We do a standard `nmap` with service detection `-sV` and default scripts `-sC` on all ports:
 ```
