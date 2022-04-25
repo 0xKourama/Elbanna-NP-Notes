@@ -90,14 +90,14 @@ we get more details using `querydispinfo2`
 
 ![marko-failed](marko-failed.jpg)
 
-## Who else is using that password?
+### Who else is using that password?
 *having got an idea of a possible password,* a good logical step is to try that against the entire domain. we put what we got from `rpcclient > enumdomusers` into a text file `users.txt` and use `crackmapexec` to do a **Password Spray.**
 
 ![got-melanie](got-melanie.jpg)
 
 **We're lucky! :D** the `melanie` user authenticated.
 
-## Options available after getting a valid AD user
+### Options available after getting a valid AD user
 
 *Having a valid AD user,* we got a couple of things to check:
 1. Code execution with **WinRM**: Check
