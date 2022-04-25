@@ -151,7 +151,7 @@ we get `No entries found`
 
 ### Kerberoasted :D
 
-We get really **LUCKY! :D** this is the **TGS** hash for the **Administrator** account. Cracking that hash means we can get his password!
+We get really **LUCKY!** this is the **TGS** hash for the **Administrator** account. Cracking that hash means we can get his password!
 
 This can be done using `john` with the format as **krb5tgs**
 
