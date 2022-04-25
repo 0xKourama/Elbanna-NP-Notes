@@ -218,6 +218,8 @@ we use the very nice reverse shell from (https://github.com/antonioCoco/ConPtySh
 
 ![run-as-failed](run-as-failed.jpg)
 
+### Let's just use PrintNightmare XD
+
 I then decide maybe I should just privesc with Print Nightmare :D
 
 I use John Hammond's version of the exploit (https://github.com/JohnHammond/CVE-2021-34527) since it's written in PowerShell *(to which I am biased :D*)
