@@ -1,8 +1,8 @@
 ### Summary
-- AD Box, We retrieve information about all users and find a password in the description field of a user.
-- We reuse that password and spray all domain users and we get another user who has PowerShell remoting privileges.
-- Browsing the file system, we find a PowerShell transcript file with credentials for another user.
-- The other user is a member of the DNSAdmins AD Group which can gain system privilges on a Domain Controller by means of DLL Injection.
+- A Domain controller box. We first retrieve information about all users and find a password in the description field of one user which doesn't work.
+- We reuse that password and spray all domain users and we get access to another user who has PowerShell remoting privileges.
+- Browsing the file system, we find a PowerShell transcript file with credentials for another user in a hidden folder.
+- The other user is a member of the DNSAdmins AD Group which can gain system privilges on the machine by means of DLL Injection.
 
 ---
 
