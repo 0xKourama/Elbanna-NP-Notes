@@ -1,3 +1,11 @@
+### Summary
+- We find a domain controller with and IIS port open.
+- We extract a list of usernames from the company website
+- We ASREPRoasing and get creds for a user with PowerShell Remoting Capabilities
+- Enumerating Autologon, we find creds for another user with DCSync privileges which we use to dump all domain NTLM hashes
+
+---
+
 ### Nmap
 We start off with an `nmap` scan for `all ports` and using `service detection` and `default scripts`
 ```
