@@ -99,7 +99,7 @@ but nothing!
 
 ### It's not a complex password ... it's Base64 encoded
 
-*Despite that,* seeing this file hidden in the comments and being called `secret.txt` are factors making me consider that it's important. Something must be missing here... I go for a walk and come back to decide maybe this text *isn't some randomly-generated password* and is encrypted or something. So i drop it onto `CyberChef` (https://gchq.github.io/CyberChef/). It was a base64 encoded text >> `Curling2018!`.
+*Despite that,* seeing this file hidden in the comments + it being called `secret.txt` are factors making me consider that it's important. Something must be missing here... I go for a walk and come back to decide maybe this text *isn't some randomly-generated password* and is encrypted or something. So i drop it onto `CyberChef` (https://gchq.github.io/CyberChef/). It was a base64 encoded text >> `Curling2018!`.
 
 ![cracked](Cracked.jpg)
 
@@ -127,7 +127,7 @@ Not the most stealthy option I know. But this is a CTF XD
 
 We find the user `floris` on the system. And, *as we're browsing through his/her home folder,* we see two *non-standard* items:
 1. a file called `password_backup` that we have read access to.
-2. a folder called `admin_area` where only root and floris can see its contents.
+2. a folder called `admin_area` where only `root` and `floris` can see its contents.
 
 ![Floris-Home](Floris-Home.jpg)
 
@@ -184,7 +184,9 @@ Options:
 
 `    -r          reverse operation: convert (or patch) hexdump into binary.`
 
-So we go ahead and do that. And we use the `file` command against the output. It's very handy when you want to know what file type you're dealing with.
+So we go ahead and do that. And we use the `file` command against the output.
+
+It's very handy when you want to know what file type you're dealing with.
 
 ```
 www-data@curling:/home/floris$ xxd -r password_backup > /tmp/hex
@@ -233,7 +235,9 @@ www-data@curling:/tmp$ cat password.txt
 5d<wdCbdZu)|hChXll
 ```
 
-At last we get some ASCII text :D We're going to try and switch user to `floris` using that password. *In case you were wondering, I did try reusing the password in `secret.txt` but it didn't work :/*
+At last we get some ASCII text :D We're going to try and switch user to `floris` using that password.
+
+*In case you were wondering, I did try reusing the password in `secret.txt` but it didn't work :/*
 
 ![got-floris](got-floris.jpg)
 
@@ -249,7 +253,7 @@ we go the **webroot** and check `configuration.php` for some creds. And, we DO f
 
 ### DB Enumeration
 
-we use the the creds to enumeration the database. but find nothing special there.
+we use the the creds to enumerate the database. but find nothing special there.
 
 ![db-login](db-login.jpg)
 
@@ -413,7 +417,11 @@ we check their contents:
 
 ![input-report-files](input-report-files.jpg)
 
-it seems that a `curl` command is being executed on the `localhost` url `http://127.0.0.1` which sends the output into the `report` file. We know that because of the error message `WARNING: Failed to daemonise.  This is quite common and not fatal.` which is the error you get when you trigger a `PHP reverse shell` without a listener. We can confirm that by starting a listener to see if something connects back.
+it seems that a `curl` command is being executed on the `localhost` url `http://127.0.0.1` which sends the output into the `report` file. We know that because of the error message `WARNING: Failed to daemonise.  This is quite common and not fatal.` which is the error you get when you trigger a `PHP reverse shell` without a listener.
+
+### Running a quick test to verify our hypothesis
+
+We can confirm that by starting a listener to see if something connects back.
 
 ![running-curl](running-curl.jpg)
 
