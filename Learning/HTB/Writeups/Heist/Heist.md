@@ -1,10 +1,11 @@
-# Heist
-
+### Nmap
 we first start by doing a quick nmap top 10 tcp ports: `nmap --top-ports --open 10.10.10.149`
 
 ![nmap top 10 port scan](nmap-top-10-ports.jpg)
 
 we find http and smb ports open, so we begin with HTTP after leaving a full port scan `nmap -p- -T4 -sC -sV 10.10.10.149`
+
+### Guest login
 
 we immediately see the login page of a web app that gives us the options to *Login as guest*
 
@@ -16,6 +17,8 @@ we immediately see the login page of a web app that gives us the options to *Log
 
 ![Issues](Issues.jpg)
 
+### Cisco Router Configuration File
+
 we go ahead and click the attachment link and see **3 different hashes**:
 
 ![Config](Config.jpg)
@@ -23,6 +26,8 @@ we go ahead and click the attachment link and see **3 different hashes**:
 1. `enable secret 5 $1$pdQG$o8nrSzsGXeaduXrjlvKc91`
 2. `username rout3r password 7 0242114B0E143F015F5D1E161713`
 3. `username admin privilege 15 password 7 02375012182C1A1D751618034F36415408`
+
+### Cracking Cisco Hashes
 
 cracking those hashes might give us a set of passwords to try to gain more access with. So we use `john` to crack the first one
 
@@ -53,11 +58,15 @@ we gain some information about the host:
 3. Domain: SupportDesk
 4. SMB Signing and SMBv1: False
 
+### Testing password variations
+
 we try our luck with the administrator account using variations of the `stealth1agent` password as well as the other passwords we found. But we don't have a success:
 
 ![admin-trials](admin-trials.jpg)
 
 we get similar results when trying other probable users like admin, supportadmin, supportdesk etc.
+
+### Listing our options
 
 we take a step back and think about all the information we can get from having a valid user:
 1. enumerate SMB shares
@@ -70,6 +79,8 @@ we take a step back and think about all the information we can get from having a
 
 ![smb-shares](smb-shares.jpg)
 
+### RID Brute Forcing
+
 we also get nothing from enumerating sessions, logged on users or localgroups. *However, when enumerating local users using RID bruteforce,* we get a nice list of users to try! :D
 
 ![rid-brute](rid-brute.jpg)
@@ -78,6 +89,8 @@ we update our **userlist** right away with those newly-found users:
 1. support
 2. chase
 3. jason
+
+### Password Reuse
 
 and we give it another shot with `crackmapexec` while telling it to `continue on success`. we want to know if any passwords were being reused.
 
@@ -110,6 +123,8 @@ Our attack dropped one more user: **chase!**
 
 ![chase-owned](chase-owned.jpg)
 
+### Getting Code Execution
+
 *trying to execute commands using `crackmapexec`,* we don't get command execution. It seems chase also isn't an administrator on the machine :/
 
 *however...*
@@ -125,6 +140,8 @@ there a tool called `evil-winrm` which we can use to see if we can connect remot
 it works with **chase** *but not with hazard*, this is because he happens to be a member of the special group: `Remote Management Users` which allows him to use **PowerShell Remoting.**
 
 ![chase-groups](chase-groups.jpg)
+
+### Let's privesc
 
 *now on the machine,* we go into privilege escalation mode :D we try many things:
 
@@ -179,12 +196,15 @@ we get nothing also:
 	2. php-cgi --> maybe we can try to abuse this somehow
 	3. spoolsv --> **Print Nightmare Privesc!**
 
-*given that print nightmare would be too easy,* I take a shot at the 1st option and search for stored passwords for firefox :D
+### PrintNightmare would be too easy
+
+*given that print nightmare would be too easy,* I take a shot at the 1st option and search for stored passwords for **Firefox** :D
 the path should be `C:\Users\Chase\AppData\Roaming\Mozilla\Firefox\Profiles\` for chase. Which we find that it contains a password file `key4.db` but notice that *there was no `logins.json` to be used in pulling those credentials :/*
 
 ![no-json-logins](no-json-logins.jpg)
 
-Note:
+### The Firefox rabbit hole
+
 the process of hunting for those firefox passwords took way longer than you would expect :)
 1. I used a tool called `SharpWeb.exe` (https://github.com/djhohnstein/SharpWeb), only to find out from its source code that *it only handles `key3.db` files.* Changing the name of the file to match that didn't work. after all, if the number 4 refers to an improved version, that would mean that this version of the tool wouldn't work.
 2. I found another tool written in python, with which I had trouble transforimg to an exe using `pyinstaller`.
