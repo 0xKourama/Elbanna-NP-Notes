@@ -43,7 +43,7 @@ we try a few inputs and manage to get a listing of the shares using anonymous au
 
 ![profiles-share](profiles-share.jpg)
 
-### Mounting SMB to linux
+### Mounting SMB to Linux
 
 we mount the share using `mount -t cifs -o 'username=a' //10.10.10.192/Profiles$ /mnt` so we can use handy commands like `find` and look for interesting files within.
 
@@ -128,7 +128,7 @@ we can then authenticate to the network as the `support` user and we are able to
 
 ![runas-netonly](runas-netonly.jpg)
 
-we import `PowerView.ps1` and use the `Set-DomainUserPassword` with the `-Domain` flag and use the `-Verbose` flag in case we need to troubleshoot. Making sure to have the password *complex enough* and casting it to a `Secure String` object using the `ConvertTo-SecureString` **PowerShell** cmdlet.
+we import `PowerView.ps1` and use the `Set-DomainUserPassword` with the `-Domain` flag and use the `-Verbose` flag (*in case we need to troubleshoot*). Making sure to have the password *complex enough* and casting it to a `Secure String` object using the `ConvertTo-SecureString` **PowerShell** cmdlet.
 
 The command does take some time... But we're successful in resetting the password to `Password123!` in the end :D
 
@@ -141,6 +141,8 @@ The command does take some time... But we're successful in resetting the passwor
 ![audit-2020-share-access](audit-2020-share-access.jpg)
 
 *after mounting it,* we see that there's a very interesting file that we can access in the `memory_analysis` folder. That is `lsass.zip`.
+
+### A brief about LSASS
 
 **LSASS.exe** is the main authentication process in **Windows**. This process holds the credentials of all users who had logged into the computer using one way or another.
 
@@ -160,7 +162,7 @@ We do a `grep` for the **NT** field for the **NTLM hash** and use the `-B` flag 
 
 ![pypkatz](pypkatz.jpg)
 
-we find hashes for both the `Adminitrator` user and `svc_backup` accounts
+we find hashes for both the `Administrator` user and `svc_backup` accounts
 
 *Sadly,* the hash for the `administrator` account didn't work, but the one for `svc_backup` did. And it also had access to **PowerShell Remoting** :)
 
@@ -177,6 +179,8 @@ Having this privilege is very dangerous. This is because the ability to backup f
 Being able to grab the `NTDS.dit` and the `SYSTEM` registry hive would enable us to read all the hashes of the domain *including the* **domain administrator's** *one.*
 
 *By doing some research,* we come across this awesome post from **Hacking Articles** (https://www.hackingarticles.in/windows-privilege-escalation-sebackupprivilege/) that tells us how we can abuse this privilege.
+
+### Diskshadow
 
 We will be using the `diskshadow` command line utility with the `/s` flag for script mode and passing a script file as an argument.
 
