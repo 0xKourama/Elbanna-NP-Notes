@@ -144,7 +144,7 @@ The creds turn out to be valid and we get a shell as the `ryan` user
 ![shell-as-ryan](shell-as-ryan.jpg)
 
 ### DNSAdmins abuse
-*Using* **Google**, we come across an excellent article from **Ired.team** website (https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/from-dnsadmins-to-system-to-domain-compromise) fully explaining the abuse.
+*Using* **Google**, we come across an excellent article from **Ired.team** website (https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/from-dnsadmins-to-system-to-domain-compromise) fully explaining the a way we can exploit our membership in the **DNSAdmins** group to own the domain.
 
 We should first compile a dll using `msfvenom` and configure **DNS** to load that dll *remotely* from our **SMB share**.
 
