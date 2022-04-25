@@ -1,3 +1,13 @@
+### Summary
+- A **Linux machine** with port 80 that reveals a *vulnerable web application*.
+- *Exploiting the application,* we gain access as `www-data`.
+- We find **credentials in the database configuration file** which we use to *pivot to another user* which has access to a *special folder*.
+- *Browsing the special folder and checking listening ports,* we find an **internal website being served on a high port**.
+- *On the website,* logging in presents us with an **SSH key of another user** that we crack the passphrase for using `John`.
+- The third user has **sudo privileges** with `nano` which we use to **privesc**.
+
+---
+
 ### Nmap
 We start off with the usual nmap scan and we find two open ports:
 1. SSH
@@ -448,7 +458,7 @@ Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your 
 Last login: Tue Jul 27 06:12:07 2021 from 10.10.14.15
 ```
 
-### Joanna can root the box. SUID style :D
+### Joanna can root the box. SUDO style :D
 
 *after logging in,* we find no interesting files in her home directory. but she shows to have interesting permissions using `sudo -l -l`
 
