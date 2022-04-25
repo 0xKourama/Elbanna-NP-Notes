@@ -1,3 +1,14 @@
+### Summary
+- we find **Joomla** running on HTTP port 80 and we get a **list of usernames** *from the posts on the main page.*
+- *Inspecting the home page's source code,* we find a comment about a `secret.txt` file which happens to be at the webroot.
+- The contents of the file reveal a **base64-encoded password** which we use to *gain administrative access* to **Joomla** using the `floris` user.
+- We *abuse* the **Joomla Administrator's** ability to *edit PHP files* to place a **reverse shell** and gain access as the `www-data` user.
+- We find a **readable hexdump** called `password_backup` in `floris`'s home folder which we *reverse* to a binary and *decompress* to gain the password for the `floris` user.
+- *Detecting unusal activity on the box* with `pspy` reveals a *cron job* executing a `curl` command that *reads its configuration from a file we can modify.*
+- *Abusing* `curl` for privileged read/write access lets us get a shell as root by forging our own `/etc/shadow` file.
+
+---
+
 ### Nmap
 We start out by doing the standard nmap with `-sC` and `-sV` flags:
 ```
