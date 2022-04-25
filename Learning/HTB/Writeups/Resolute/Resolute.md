@@ -100,27 +100,27 @@ we get more details using `querydispinfo2`
 ### Options available after getting a valid AD user
 
 *Having a valid AD user,* we got a couple of things to check:
-1. Code execution with **WinRM**: Check
+1. **Code execution with WinRM:** Check
 
 ![melanie-got-winrm](melanie-got-winrm.jpg)
 
-2. SMB Shares: Nothing there but we can enumerate GPP
+2. **SMB Shares:** Nothing there but we can enumerate GPP
 
 ![melanie-smb-access](melanie-smb-access.jpg)
 
-3. GPP Enumeration since it's a domain controller
+3. **GPP Enumeration** (*since it's a domain controller*)
 
 ![GPP-check](GPP-check.jpg)
 
-4. ASREPRoast (could be done without creds but we moved down the password spray path first). No results
+4. **ASREPRoast** (*could be done without creds but we moved down the password spray path first*):  No results
 
 ![asreproast](asreproast.jpg)
 
-5. Kerberoasting didn't get results either
+5. **Kerberoasting:** didn't get results either
 
 ![Kerberoast](Kerberoast.jpg)
 
-6. BloodHound. *With remote code execution using* **WinRM**, we decide to run `SharpHound.exe` from the shell
+6. **BloodHound:** *With remote code execution using* **WinRM**, we decide to run `SharpHound.exe` from the shell
 
 ![sharphound-collection](sharphound-collection.jpg)
 
@@ -130,7 +130,6 @@ we get more details using `querydispinfo2`
 ![ryan-should-takeover](ryan-should-takeover.jpg)
 
 But we don't have him as of the moment. So we look around the file system to see if we can find something to help us.
-
 
 ### Finding creds in a hidden folder
 *Looking around the* `C:` *drive*, we find the creds of the `ryan` user in `c:\PSTranscripts\20191203\PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt`
