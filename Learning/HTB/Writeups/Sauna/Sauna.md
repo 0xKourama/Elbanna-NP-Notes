@@ -93,6 +93,8 @@ Surname.N
 
 ![fsmith-exists](fsmith-exists.jpg)
 
+### ASREPRoast Attack
+
 *Having only this one user,* we decide to `ASREPRoast` him to see if he doesn't have `Kerberos Pre-Authentication` enabled. And he does! :D
 
 ![ASREP-roasted](ASREP-roasted.jpg)
@@ -103,7 +105,7 @@ we go on and crack the hash using `john`. The password turns out to be `Thestrok
 
 The wordlist I used `gegalist.txt` is just a combination of all the wordlists in **Seclists**.
 
-### PowerShell Remoting
+### PowerShell Remoting with `fsmith`
 
 we want to get **remote code execution** on the box, so we try **PowerShell Remoting** using a tool called `evil-winrm` (https://github.com/Hackplayers/evil-winrm). And are lucky :D
 
