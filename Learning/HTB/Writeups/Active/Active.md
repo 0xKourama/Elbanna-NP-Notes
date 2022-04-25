@@ -1,3 +1,4 @@
+### Nmap
 we start off by doing a complete `nmap` with default scripts `-sC` and service detection `-sV`
 ```
 PORT      STATE SERVICE       VERSION          
@@ -38,6 +39,7 @@ Host script results:
 |   date: 2022-04-14T20:58:13                   
 |_  start_date: 2022-04-14T20:53:18  
 ```
+### Domain Controller Identification
 and we notice a set of open ports than indicate a domain controller:
 - **DNS:** TCP 53
 - **Kerberos:** TCP 88
@@ -75,6 +77,8 @@ shutting down
 dighost_shutdown()
 unlock_lookup dighost.c:4091
 ```
+
+### SMB Share enumeration
 first, we check **SMB shares** using **null authenticaion** with `crackmapexec`. And, we find that we have **READ access** to the `Replication` share.
 ```
 └─# crackmapexec smb 10.10.10.100 -u '' -p '' --shares
@@ -99,6 +103,8 @@ doing so gets us all the files over the `Replication` share. we can now view the
 
 ![repl-share-files](repl-share-files.jpg)
 
+### Group Policy Preferences
+
 The first file `Groups.xml` is a **Group Policy Preferences** file. This was used back in the day by system admins to create local administrator accounts on domain machines using **Group Policy**. *Looking at its contents:*
 
 ![groups-xml](groups-xml.jpg)
@@ -111,7 +117,9 @@ It reveals an encrypted password of the user `active.htb\svc_tgs`. This can easi
 
 ![svc-tgs-creds-valid](svc-tgs-creds-valid.jpg)
 
-Great! They are valid. But, we aren't local adminitrator. Neither can we use **WinRM** because port 5985 isn't open on this box. We can however do a number of things:
+Great! They are valid. But, we aren't local administrator. Neither can we use **WinRM** because port 5985 isn't open on this box and we don't know if we have this privilege or not. We can however do a number of things.
+
+### Options with a valid AD user
 1. enumerate SMB shares with the new user
 2. pull all AD users
 3. do ASREPRoasting

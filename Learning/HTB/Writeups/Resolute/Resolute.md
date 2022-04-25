@@ -176,10 +176,10 @@ we get a connect back on our **SMB** share and code execution occures giving us 
 ![got-domain-admin](got-domain-admin.jpg)
 
 ### Notes and pitfalls
-using the `sc` command without the `.exe` at the end didn't work. This took me a while to figure out.
+- using the `sc` command without the `.exe` at the end didn't work. This took me a while to figure out.
 
 ![troubleshooting-sc](troubleshooting-sc.jpg)
 
-Also, copying the `msfvenom` generated locally on the machine dll didn't work because the antivirus kept eating it up xD
+- Also, copying the `msfvenom` generated locally on the machine dll didn't work because the antivirus kept eating it up xD
 
 ![evil-dll-eaten](evil-dll-eaten.jpg)
