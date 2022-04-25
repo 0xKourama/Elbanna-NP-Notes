@@ -71,6 +71,7 @@ so we check to see if we can run a **specialized scanner** for Joomla (*since it
 	13. com_wrapper
 
 So we browse those directories for a bit to find out there wasn't much valuable information there.
+
 We also do `searchsploit` queries for the components found but we don't find any exploits for them.
 
 ### Checking Source Code
