@@ -1,3 +1,14 @@
+### Summary
+- We find a website on port 80 that **lets us login as a guest**.
+- *On the first page,* we find a conversation between a user and a support admin about checking an **attached Cisco router configuration file**.
+- *Browsing the configuration file,* we find **hashes** that *we can easily crack* to get passwords.
+- One password works with SMB for the user on the web page. We use that to do a **`RID` enumeration** to get **all the usernames on the system**.
+- **Reusing the password we found with all users,** we find one more user who happens to have **PowerShell remoting access.**
+- *To privesc*, we use the famous **PrintNightmare** vulnerability since **print spooler** is found running.
+- The *intended* path is **dumping the running Firefox process from memory** and using the `strings` command to obtain the **Administrator credentials** from the dump.
+
+---
+
 ### Nmap
 we first start by doing a quick nmap top 10 tcp ports: `nmap --top-ports --open 10.10.10.149`
 
