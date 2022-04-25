@@ -427,6 +427,8 @@ We can confirm that by starting a listener to see if something connects back.
 
 It does happen :D but we need more information to be able to exploit this
 
+### PSPY
+
 we want to get `pspy` (https://github.com/DominicBreuker/pspy) on the victim machine so we can start monitoring what's goin on inside the system. `pspy` is a tool you can use to snoop on processes without need for root permissions. It allows you to see commands run by other users, cron jobs, etc. as they execute. It's very handy.
 
 after making the binary executable, we start it and notice some very interesting activity going on.
@@ -439,7 +441,7 @@ after making the binary executable, we start it and notice some very interesting
 
 ![curl-help](curl-help.jpg)
 
-### Abusig cURL
+### Abusing cURL
 
 we do a search on GTFO Bins (https://gtfobins.github.io/gtfobins/curl/) and find we can get a `file read` using `curl`
 
@@ -453,7 +455,7 @@ and we manage to get the `shadow` file contents :D so it works!
 
 ![got-shadow](got-shadow.jpg)
 
-### Getting a shell
+### Getting a shell by altering the shadow file
 
 *alright, with this,* we can totally read the `root.txt` file. But that wouldn't be fun :D ... we're going for a shell :D
 
