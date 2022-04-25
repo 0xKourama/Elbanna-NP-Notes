@@ -1,3 +1,13 @@
+### Summary
+- A Domain Controller machine. **Anonymous LDAP** is enabled which we use to get **a full list of AD users**.
+- *After performing an ASREPRoast attack,* we end up with a user that has *PowerShell Remoting Access*.
+- The user is member of the **Account Operators** AD Group which *gives him the privilege of adding users to AD groups*.
+- We add our user to a group called **'Exchange Windows Permissions'** which has a **write DACL** over the domain.
+- Abusing this privilege* lets us give ourselves the **DCSync right** which *lets us grab all the domain's NTLM hashes*
+- We use the Domain *Administrators hash* in a simple **Pass-the-Hash** attack to gain full access.
+
+---
+
 ### Nmap
 We start off doing a *comprehensive* nmap scan with **default scripts** and **service detection**
 
