@@ -366,7 +366,7 @@ I don't get any ideas right off the bat. so I go ahead and use `linpeas.sh` to s
 
 we go down many different paths, including cracking the `sha512` hash inside the `index.php` file within the `internal` directory (the password was `Revealed`). and re-using it with all the users. but no dice :\
 
-### Finding another high port listening
+### Finding another high port listening *locally*
 
 *but we do notice something we haven't paid attention to the first time,* port **52846** is listening *internally*. *on our first look,* we were pre-occupied with the `mysql` port and missed that high one.
 
@@ -448,9 +448,9 @@ Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your 
 Last login: Tue Jul 27 06:12:07 2021 from 10.10.14.15
 ```
 
-### Joanna can root the box. SUID style
+### Joanna can root the box. SUID style :D
 
-*after loggin in,* we find no interesting files in her home directory. but she shows to have interesting permissions using `sudo -l -l`
+*after logging in,* we find no interesting files in her home directory. but she shows to have interesting permissions using `sudo -l -l`
 
 ```
 Matching Defaults entries for joanna on openadmin:
