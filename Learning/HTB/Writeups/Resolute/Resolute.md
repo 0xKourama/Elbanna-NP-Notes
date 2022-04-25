@@ -131,7 +131,7 @@ we get more details using `querydispinfo2`
 
 But we don't have him as of the moment. So we look around the file system to see if we can find something to help us.
 
-### Finding creds in a hidden folder
+### Finding Creds in Hidden Folders
 *Looking around the* `C:` *drive*, we find the creds of the `ryan` user in `c:\PSTranscripts\20191203\PowerShell_transcript.RESOLUTE.OJuoBGhU.20191203063201.txt`
 
 ![transcript-found](transcript-found.jpg)
@@ -142,7 +142,7 @@ The creds turn out to be valid and we get a shell as the `ryan` user
 
 ![shell-as-ryan](shell-as-ryan.jpg)
 
-### DNSAdmins abuse
+### DNSAdmins Abuse
 *Using* **Google**, we come across an excellent article from **Ired.team** website (https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/from-dnsadmins-to-system-to-domain-compromise) fully explaining the a way we can exploit `ryan`'s' membership in the **DNSAdmins** group to own the domain.
 
 We should need to compile a dll using `msfvenom` and configure the locally running **DNS Service** to load that dll *remotely* from our **SMB share**.
