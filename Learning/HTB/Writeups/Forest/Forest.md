@@ -279,7 +279,7 @@ This query shows us no real path to being a domain admin. So we try another quer
 
 ### Abusing membership in `Account Operators` & the high privileges of `Exchange Windows Permissions` AD groups
 
-It looks horrible at first. *But, after taking a closer look,* we notice that our account *being in the* `account operators` *group* can add a member to a certain group called `Exchange Windows Permissions` which happens to have `WriteDACL` on `htb.local` (**The entire domain!**). Having that privilege means we can abuse it to give ourselves the `DCSync` right that we can use to dump all the domain hashes!
+It looks horrible at first. *But, after taking a closer look,* we notice that our account *being in the* `account operators` *group* can add a member to a certain group called `Exchange Windows Permissions` which happens to have `WriteDACL` on `htb.local` (**The entire domain!**). *Having that privilege* means we can abuse it to give ourselves the `DCSync` right that we can use to dump all the domain hashes!
 
 ![path-to-DA](path-to-DA.jpg)
 
@@ -290,6 +290,8 @@ we add our user to that group using a powershell command: `Add-ADGroupMember 'Ex
 ![adding-to-group](adding-to-group.jpg)
 
 we then upload `PowerView.ps1` (https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) to the victim machine and import it using `import-module .\PowerView.ps1`. This enables access to all the powershell cmdlets included within that module.
+
+### Checking the help for the `Add-DomainObjectAcl` command
 
 we view the help page and usage examples of the abuse command `Add-DomainObjectAcl` using `Get-Help Add-DomainObjectAcl -Examples`
 
@@ -303,9 +305,15 @@ $Cred = New-Object System.Management.Automation.PSCredential('HTB.local\svc-alfr
 Add-DomainObjectAcl -TargetIdentity "dc=htb,dc=local" -PrincipalIdentity 'HTB.local\svc-alfresco' -Rights DCSync -Credential $Cred -Verbose
 ```
 
-This takes a little while to run but we eventually have permission to dump hashes. We use impacket's `secretsdump.py` and voala! :D
+This takes a little while to run but we eventually have permission to dump hashes.
+
+### And down the hashes go...
+
+We use impacket's `secretsdump.py` and voala! :D
 
 ![hashes_dumped](hashes_dumped.jpg)
+
+### Pass-the-Hash for the win :)
 
 *Using the administrator NTLM hash,* we can use `evil-winrm` to remote inside and we're done with the box :D
 
