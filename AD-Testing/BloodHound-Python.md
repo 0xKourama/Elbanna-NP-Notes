@@ -1,0 +1,1 @@
+`python ./bloodhound.py -u <USER> -p <PASS> -d <DOMAIN_FQDN> -c All -dc <DC_FQDN>`
