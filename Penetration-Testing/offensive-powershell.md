@@ -22,3 +22,10 @@
 
 # Get Process Owners
 `Get-WmiObject -class win32_process | select name,@{n='owner';e={$_.getowner().user}}`
+
+# Get .NET Version
+## Paths:
+`c:\windows\microsoft.net\framework`
+`c:\windows\microsoft.net\framework64`
+## Command:
+`(Get-Item "c:\windows\microsoft.net\framework64\*\clr.dll").VersionInfo.ProductVersion`
