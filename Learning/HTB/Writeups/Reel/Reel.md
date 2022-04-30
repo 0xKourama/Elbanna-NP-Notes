@@ -7,7 +7,7 @@
 - We then find out that `Backup_Admins` have access to a certain folder called `Backup Scripts` on the `Administrator`'s desktop on the box.
 - *Within that folder,* we find a script that contains the password for the local administrator which works and we use it to login using the open `SSH` port.
 - A *Similar path* exists with another user `tom` whom his credentials are present in a `creds.xml` file on `nico`'s desktop as a `secure string`.
-- The clear-text credentials can be retrieved to gain access as `tom` using `SSH`.
+- The clear-text credentials can be retrieved to gain access as `tom` using `SSH`. `tom` has `WriteOwner` on `claire` who has a `WriteDACL` on `Backup_Admins`.
 - Another path exists with abusing the `SeLoadDriverPrivilege` held by `tom` since he's a member of the `Print Operators` group.
 - The box is also vulnerable to `CVE-2019-1458` and `CVE-2018-8440` local privilege escalation exploits.
 
