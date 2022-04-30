@@ -108,7 +108,7 @@ When we run `exiftool` against the `Windows Event Forwarding.docx` file, we do f
 
 ![exiftool-wef-doc](exiftool-wef-doc.jpg)
 
-we note this down and go to verify this user using `smtp-user-enum`
+we note this down and go verify this user using `smtp-user-enum`
 
 ### Trying various SMTP methods for enumeration
 
