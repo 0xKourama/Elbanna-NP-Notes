@@ -297,7 +297,7 @@ On `nico`'s desktop we find a file called `cred.xml`
 
 ![ps-cred-object](ps-cred-object.jpg)
 
-A PowerShell credential object is used to execute commands using a different set of creds than that of the current user.
+A **PowerShell Credential Object** is used to execute commands *using a different set of creds* than that of the current user.
 
 *Without having the password,* we can import the credential object using `Import-Clixml` cmdlet and use it with the PowerShell `Start-Job` cmdlet to launch a `nishang` shell as `tom`
 
