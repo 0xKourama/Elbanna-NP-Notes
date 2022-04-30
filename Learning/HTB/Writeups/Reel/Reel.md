@@ -363,4 +363,4 @@ The `tom` user is a member of the `Print Operators` Group which hold the `SeLoad
 
 ![print-ops-and-load-driver](print-ops-and-load-driver.jpg)
 
-*However,* exploiting this seems relatively complex and difficult to achieve specially with the **Group Policy** restrictions in place.
+*However,* exploiting this would be challenging to achieve specially with the **Group Policy** restrictions in place.
