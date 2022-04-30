@@ -357,7 +357,7 @@ another exploit that worked is `CVE-2018-8440`
 
 Of course these paths are not intended because it's just using `MetaSploit`
 
-### Incomplete Exploit Path #4: Abusing `SeLoadDriverPrivilege`
+### Exploit Path #4 (Incomplete): Abusing `SeLoadDriverPrivilege`
 
 The `tom` user is a member of the `Print Operators` Group which hold the `SeLoadDriverPrivilege`
 
