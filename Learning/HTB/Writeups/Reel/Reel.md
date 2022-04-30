@@ -261,7 +261,7 @@ and set the password:
 
 ![ssh-as-herman](ssh-as-herman.jpg)
 
-and we can add ourselves to the backup_admins easily with `Add-ADGroupMember 'backup_admins' -members herman`
+and we can add ourselves to the `backup_admins` group easily with `Add-ADGroupMember 'backup_admins' -members herman`
 
 ![joining-backup-admins](joining-backup-admins.jpg)
 
