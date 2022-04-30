@@ -195,7 +195,7 @@ We know this because it was mentioned that the user has set up `Hash Rules` for 
 
 ![Applocker-docx](Applocker-docx.jpg)
 
-This is why we generated an HTA payload using `msfvenom` instead.
+This is why we generated an `HTA` payload using `msfvenom` instead.
 
 ### Domain Enumeration using `SharpHound.ps1`
 
