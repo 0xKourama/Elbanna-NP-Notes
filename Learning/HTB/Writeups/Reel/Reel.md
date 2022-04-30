@@ -14,7 +14,7 @@
 ---
 
 ### Nmap
-*Checking the* `nmap` *scan,* we find very few ports running:
+*Looking at the* `nmap` *scan,* we find very few ports running:
 ```
 PORT   STATE SERVICE VERSION                                                                                      
 21/tcp open  ftp     Microsoft ftpd                                                                               
