@@ -191,7 +191,7 @@ We try to look non-suspicous as possible. And use a subtle message in the body t
 
 The guide talks about using an `exe` file. We cannot do so because of `Applocker`.
 
-We know this because was mentioned that the user has set up hash rules for multiple file types:
+We know this because it was mentioned that the user has set up hash rules for multiple file types:
 
 ![Applocker-docx](Applocker-docx.jpg)
 
