@@ -14,8 +14,11 @@
 # Get files only in a directory
 `(ls -File -Recurse -Force -EA SilentlyContinue).fullname`
 
-# find OS architecture
+# Get OS architecture
 `$env:processor_architecture`
+
+# Get Process Architecture
+`[Environment]::Is64BitProcess`
 
 # Get ACL
 `Get-ACL <PATH_TO_FILE> | Select -Exp AccessToString`
@@ -29,3 +32,6 @@
 `c:\windows\microsoft.net\framework64`
 ## Command:
 `(Get-Item "c:\windows\microsoft.net\framework64\*\clr.dll").VersionInfo.ProductVersion`
+
+# Reflective Execution (Can Bypass Applocker)
+`Invoke-reflectivePEInjection -PEBytes ([IO.File]::ReadAllBytes('<PATH_TO_EXE>'))`
