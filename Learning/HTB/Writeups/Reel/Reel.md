@@ -221,7 +221,7 @@ Switching to **PowerShell** from **CMD** can be done with the below command usin
 
 ### Investigating Possible Exploit Paths
 
-Upon looking at `BloodHound`'s output, we notice that `nico` can set the `owner` for user `herman`
+*Upon looking at* `BloodHound`'s *output,* we notice that `nico` can set the `owner` for user `herman`
 
 ![nico-can-write-owner](nico-can-write-owner.jpg)
 
