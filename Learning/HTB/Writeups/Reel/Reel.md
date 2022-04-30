@@ -172,7 +172,7 @@ sendEmail \
 -m 'Kindly review the attached document. Just press OK if you get an error while opening it and it should be fine.'
 ```
 
-We try to look non-suspicous as possible. And use a subtle message body to have the user click 'OK' if he gets an error message (which does happen with this exploit).
+We try to look non-suspicous as possible. And use a subtle message in the body to have the user click 'OK' if he gets an error message (which does happen with this exploit).
 
 ![document-error-1](document-error-1.jpg)
 
