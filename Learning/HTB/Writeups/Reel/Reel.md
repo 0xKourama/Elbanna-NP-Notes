@@ -179,7 +179,7 @@ We try to look non-suspicous as possible. And use a subtle message in the body t
 ![document-error-2](document-error-2.jpg)
 
 ### Triggering the exploit chain
-Having everything ready, we trigger the chain:
+*Having everything ready,* we trigger the chain:
 
 1. Send the malicious `RTF` file
 2. The `RTF` calls back to the `HTA` payload hosted on our kali machine
