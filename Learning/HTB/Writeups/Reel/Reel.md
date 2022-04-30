@@ -283,13 +283,11 @@ Checking the `BackupScript.ps1` shows a password:
 
 ![backscript-password](backscript-password.jpg)
 
-### Exploit Path #1's End
-
 Using the password `Cr4ckMeIfYouC4n!` works with the administrator user over `SSH`:
 
 ![got-admin-path-1](got-admin-path-1.jpg)
 
-### Exploit Path #2 (`nico` -> `tom` -> `claire` > `backup_admins`)
+### Exploit Path #2: `nico` -> `tom` -> `claire` > `backup_admins`
 
 On `nico`'s desktop we find a file called `cred.xml`
 
@@ -321,7 +319,7 @@ The password works for `tom` using `SSH`
 
 ![claire-to-backup-admins](claire-to-backup-admins.jpg)
 
-### Exploit Path #3 Metasploitation
+### Exploit Path #3: Metasploitation
 
 The same exploit for **CVE-2017-0199** exists in a **Metasploit Module** (`windows/fileformat/office_word_hta`) when we search using the `rtf` keyword:
 
@@ -359,7 +357,7 @@ another exploit that worked is `CVE-2018-8440`
 
 Of course these paths are not intended because it's just using `MetaSploit`
 
-### Incomplete Exploit Path #4 `SeLoadDriverPrivilege`
+### Incomplete Exploit Path #4: Abusing `SeLoadDriverPrivilege`
 
 The `tom` user is a member of the `Print Operators` Group which hold the `SeLoadDriverPrivilege`
 

