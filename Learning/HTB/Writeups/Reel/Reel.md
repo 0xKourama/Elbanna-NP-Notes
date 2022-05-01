@@ -199,7 +199,7 @@ This is why we generated an `HTA` payload using `msfvenom` instead.
 
 ### Domain Enumeration using `SharpHound.ps1`
 
-*Since running* `.exe` *is disabled by* **Group Policy**, we turn to `BloodHound`'s **PowerShell injestor** (https://raw.githubusercontent.com/puckiestyle/powershell/master/SharpHound.ps1) and run the `Invoke-BloodHound` method.
+*Since running* `.exe` *is disabled by* **Group Policy**, we turn to `BloodHound`'s **PowerShell ingestor** (https://raw.githubusercontent.com/puckiestyle/powershell/master/SharpHound.ps1) and run the `Invoke-BloodHound` method.
 
 *But before we can do that,* we need a **PowerShell** shell.
 
