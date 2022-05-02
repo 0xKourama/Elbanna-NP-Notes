@@ -15,7 +15,7 @@
 
 ### Nmap
 The nmap output gives some good information:
-- **Machine name:** Sizzle
+- **Machine Name:** Sizzle
 - **Domain Name:** HTB.local
 - **FTP** with *anonymous* login allowed
 - **IIS** 10.0 on port 80 which indicates server 2016+ or windows 10
