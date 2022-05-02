@@ -347,7 +347,7 @@ This is to:
 we will use the `-Credential` paramer with `Start-Process` to create the Network Authentication needed for the attack to succeed.
 
 *That way,* we've hit multiple birds with one stone.
-1. Never had to deal with **Applocker**
+1. We never had to deal with **Applocker**
 2. Dodged **Contrained Language Mode**
 3. Created the needed **Network Logon**
 4. **Kerberoasted** *without ever touching the victim's disk*
