@@ -114,13 +114,12 @@ Host script results:
 ```
 
 ### Anonymous FTP
-We notice the FTP port with anonymous login enabled.
 No files were there, and we're not granted `write` access either. So we move on.
 
 ![Anon-FTP-no-write](Anon-FTP-no-write.jpg)
 
 ### HTTP/HTTPs
-The home page just shows a `GIF` of bacon sizzling.
+The home page just shows a `GIF` of bacon sizzling...
 
 ![http-homepage](http-homepage.jpg)
 
