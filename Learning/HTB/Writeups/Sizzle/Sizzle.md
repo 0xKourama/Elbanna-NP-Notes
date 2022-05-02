@@ -198,3 +198,4 @@ We're going to fire up `responder` making sure the `Responder.conf` file has the
 
 And then copy the `.scf` file to `\\10.10.10.103\Department Shares\Users\Public` as well as the `ZZ_ARCHIVE` folders to make sure any visitor gives us his/her hash.
 
+![amanda-hash-captured](amanda-hash-captured.jpg)
