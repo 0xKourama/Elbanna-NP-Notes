@@ -261,3 +261,47 @@ And it works like a charm :D
 
 Note: the PEM pass phrase is the one you were required to enter when generating the private key and CSR with `openssl`
 
+### Back to `BloodHound` graphs: Kerberoastable Users
+Inspecting the query `List all Kerberoastable Accounts` shows us that a user called `mrlky` is vulnerable:
+
+![mrlky-kerberoastable](mrlky-kerberoastable.jpg)
+
+That user is very special since he has the 2 required rights to perform a `DCSync` attack:
+1. `GetChanges`
+2. `GetChangesAll`
+
+![mrlky-can-dcsync](mrlky-can-dcsync.jpg)
+
+Hence, we need to kerberoast this guy and get his TGS hash :D
+
+### Roasting with Rubeus: Bypassing Applocker and Performing Network Authentication
+After copying `Rubeus.exe` from our kali machine over to `amanda`'s documents folder, we find that we can't execute due to Applocker.
+
+![rubeus-applocked](rubeus-applocked.jpg)
+
+Moving it to `c:\windows\temp` directory works as a bypass. But we get another error:
+
+![rubeus-no-net-logon](rubeus-no-net-logon.jpg)
+
+This is because we logged in using a different way: user certificate. In order to carry out this attack, we would need to authenticate to the network.
+
+This can be done using the `/creduser` and `/credpassword` along withe `/domain` switches in `Rubeus.exe`.
+
+The command is: `.\rubeus.exe kerberoast /creduser:htb.local\amanda /credpassword:Ashare1972 /domain:htb.local`
+
+![mrlky-kerberoasted](mrlky-kerberoasted.jpg)
+
+We're good! :D
+
+Now we crack the hash for `mrkly` again with `john`:
+
+![mrlky-cracked](mrlky-cracked.jpg)
+
+### DCSync
+Having the password for `mrkly`: `Football#7`, we're going to use Impacket's `secretsdump.py` python script to do a `DCSync` attack:
+
+![dcsynced](dcsynced.jpg)
+
+and follow up with `psexec.py` pass-the-hash attack to get code execution as `NT Authority\System`:
+
+![got-system](got-system.jpg)
