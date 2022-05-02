@@ -9,7 +9,7 @@
 - We decide to use `Rubeus.exe` to do the job but can't execute it due to **Applocker** restrictions.
 - We bypass by moving it to the Windows `temp` folder and are faced with another error requiring us to authenticate to the network.
 - We add the `amanda`'s credentials as flags to the `Rubeus` tool and manage to kerberoast `mrkly`.
-- We crack his `TGS` hash and are able to get the password. We then proceed to `DCSync` and obtain the `NTLM hash` for the `administrator` account which we pass to gain complete access.
+- We crack his `TGS` hash and are able to get the password. We then proceed to `DCSync` and obtain the `NTLM hash` for the `administrator` account and `PtH` to gain complete access.
 
 ---
 
