@@ -199,3 +199,65 @@ We're going to fire up `responder` making sure the `Responder.conf` file has the
 And then copy the `.scf` file to `\\10.10.10.103\Department Shares\Users\Public` as well as the `ZZ_ARCHIVE` folders to make sure any visitor gives us his/her hash.
 
 ![amanda-hash-captured](amanda-hash-captured.jpg)
+
+we manage to get a response right away and we get to cracking with `john`
+
+![amanda-hash-cracked](amanda-hash-cracked.jpg)
+
+the password turns out to be `Ashare1972`
+
+### WinRM situation
+We first validate the creds for `amanda` with `crackmapexec` and they work. So we try WinRM but end up with a weird error message:
+
+![cme-smb-yes-winrm-no](cme-smb-yes-winrm-no.jpg)
+
+at this moment, I wasn't quite sure what to do. So I moved on to other avenues.
+
+### Domain Enumeration With BloodHound.py
+Since I don't have local code execution, I turn to the python version of `BloodHound` and do enumeration with all collection methods:
+
+![bloodhound-py](bloodhound-py.jpg)
+
+Viewing the `amanda` user, I see she has PowerShell Remoting capability when I run the `Shortest Path from Owned Principles` query.
+
+![amanda-can-ps-remote](amanda-can-ps-remote.jpg)
+
+### Getting WinRM to work
+Since we have access to the `amanda` user, we can request a user certificate from AD Certificate Services.
+
+This can be done after authenticating to `http://10.10.10.103/certsrv` and submitting a Certificate Signing Request (CSR for short).
+
+Before visiting the ADCS page, we would need to get a key and a CSR. This can be done using `openssl`. The command should be like below:
+
+`openssl req -newkey rsa:2048 -keyout amanda.key -out amanda.csr`
+
+![gen-key-gen-csr](gen-key-gen-csr.jpg)
+
+Note the contents of the `.csr` file:
+
+![amanda-csr](amanda-csr.jpg)
+
+We now visit the page:
+
+![cert-srv-1](cert-srv-1.jpg)
+
+![cert-srv-2](cert-srv-2.jpg)
+
+we then paste what we copied from `amanda.csr`
+
+![cert-srv-3](cert-srv-3.jpg)
+
+And we select eh Base 64 encoded version and download it.
+
+![cert-srv-4](cert-srv-4.jpg)
+
+Having done all this, we just need to hook the `.key` file and the `.cer` we got from ADCS to `evil-winrm` while using the `-S` flag for SSL. We know so from checking the help:
+
+![evil-winrm-help](evil-winrm-help.jpg)
+
+And it works like a charm :D
+
+![winrm-success-amanda](winrm-success-amanda.jpg)
+
+Note: the PEM pass phrase is the one you were required to enter when generating the private key and CSR with `openssl`
+
