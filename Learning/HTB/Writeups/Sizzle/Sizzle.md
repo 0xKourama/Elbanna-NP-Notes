@@ -123,7 +123,7 @@ The home page just shows a `GIF` of bacon sizzling...
 
 ![http-homepage](http-homepage.jpg)
 
-Spidering with `gobuster` shows an interesting directory `/certsrv` which indicates that the **ADCS role** is installed on this server.
+Spidering with `gobuster` shows an interesting directory `/certsrv` which indicates that the **ADCS role** is installed on this server. We note this down.
 
 ![gobuser-output](gobuser-output.jpg)
 
@@ -153,7 +153,7 @@ We find some files in the `ZZ_ARCHIVE` folder but they dont have any content:
 
 ![zz-archive-files](zz-archive-files.jpg)
 
-we loop over the files use the `file` command and `grep` out any empty hex line with `xxd` to find nothing there as well.
+we loop over the files using the `file` command and `grep` out any empty hex line with `xxd` to find nothing there as well.
 
 ![checking_zz_archive](checking_zz_archive.jpg)
 
