@@ -176,7 +176,7 @@ done
 ```
 
 1. it does a `find` on the mount point with the `-type d` flag to get *only directories*.
-2. attempts to create a file in each one using `touch`
+2. then attempts to create a file in each one using `touch`
 3. It prints out if the folder is writable or not
 4. then clears the test file if the folder is writable.
 
@@ -187,7 +187,7 @@ The results show that we have `write` access in both the `Public` and `ZZ_ARCHIV
 Having this access would allow us to *plant a malicious type of file* that would enable us to *steal* **NTLMv2 hashes** from users who access these locations.
 
 ### SCF File Attacks for Hash Theft
-SCF (Shell Command Files) are files that can perform actions in **Windows Explorer**. One functionality can be abused to have the *share-visiting* user *directed* to our kali machine.
+SCF (Shell Command Files) are files that can perform actions in **Windows Explorer**. One functionality can be *abused* to have the *share-visiting* user *directed* to our kali machine.
 
 This can be done using a file with the below content:
 
@@ -207,7 +207,7 @@ And then copy the `.scf` file to `\\10.10.10.103\Department Shares\Users\Public`
 
 ![amanda-hash-captured](amanda-hash-captured.jpg)
 
-We manage to get a response right away :D
+We manage to get a response from the `amanda` user right away :D
 
 We then get to cracking with `john`
 
@@ -218,14 +218,14 @@ the password turns out to be `Ashare1972`
 ### The WinRM situation
 We first validate the creds for `amanda` with `crackmapexec` via SMB and they work.
 
-So we try WinRM next but end up with a weird error message:
+So we try WinRM after but end up with a weird error message:
 
 ![cme-smb-yes-winrm-no](cme-smb-yes-winrm-no.jpg)
 
 at this moment, I wasn't quite sure what to do. So I moved on to try other things.
 
 ### Domain Enumeration With BloodHound.py
-*Since I didn't have code execution,* I turned to the python version of `BloodHound` to do enumeration with all collection methods:
+*Since I didn't have code execution,* I turned to the **Python** version of `BloodHound` to do enumeration with all collection methods:
 
 ![bloodhound-py](bloodhound-py.jpg)
 
@@ -238,7 +238,9 @@ at this moment, I wasn't quite sure what to do. So I moved on to try other thing
 
 This can be done after authenticating to `http://10.10.10.103/certsrv` and submitting a **Certificate Signing Request** (**CSR** for short).
 
-*Before visiting the* **ADCS** *page,* we would need to get a **key** and a **CSR**. This can be done using `openssl`. The command should be like below:
+*Before visiting the* **ADCS** *page,* we would need to get a **key** and a **CSR**. This can be done using `openssl`.
+
+The command should be as below:
 
 `openssl req -newkey rsa:2048 -keyout amanda.key -out amanda.csr`
 
@@ -262,7 +264,7 @@ And we select the **Base 64 encoded version** and download it.
 
 ![cert-srv-4](cert-srv-4.jpg)
 
-*Having done all this,* we just need to hook the `.key` file and the `.cer` we got from ADCS to `evil-winrm` while using the `-S` flag for SSL.
+*Having done all this,* we just need to hook both the `.key` file and the `.cer` we got from **ADCS** to `evil-winrm` while using the `-S` flag for SSL.
 
 We know so from checking the help:
 
@@ -272,7 +274,7 @@ And it works like a charm :D
 
 ![winrm-success-amanda](winrm-success-amanda.jpg)
 
-Note: the PEM pass phrase is the one you were required to enter when generating the private key and CSR with `openssl`
+Note: the PEM pass phrase is the one you were asked to enter when generating the private key and CSR with `openssl`
 
 ### Back to `BloodHound` graphs: Kerberoastable Users
 Inspecting the query `List all Kerberoastable Accounts` shows us that a user called `mrlky` is vulnerable.
@@ -300,7 +302,7 @@ This is because we logged in using a different way: user certificate.
 
 *In order to carry out this attack,* we would need to authenticate to the network.
 
-This can be done using the `/creduser` and `/credpassword` along withe `/domain` switches in `Rubeus.exe`.
+This can be done using the `/creduser`, `/credpassword` and `/domain` switches in `Rubeus.exe`.
 
 The command is: `.\rubeus.exe kerberoast /creduser:htb.local\amanda /credpassword:Ashare1972 /domain:htb.local`
 
