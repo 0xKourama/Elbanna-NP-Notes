@@ -302,6 +302,6 @@ Having the password for `mrkly`: `Football#7`, we're going to use Impacket's `se
 
 ![dcsynced](dcsynced.jpg)
 
-and follow up with `psexec.py` pass-the-hash attack to get code execution as `NT Authority\System`:
+and follow up with `psexec.py` for a quick pass-the-hash attack to get code execution as `NT Authority\System`:
 
 ![got-system](got-system.jpg)
