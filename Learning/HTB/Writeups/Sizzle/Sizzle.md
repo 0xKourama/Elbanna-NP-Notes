@@ -350,6 +350,6 @@ we will use the `-Credential` paramer with `Start-Process` to create the Network
 1. Jumped over Applocker
 2. Dodged Contrained Language Mode
 3. Created the needed Network Logon
-4. And never touched the victim's disk in the process
+4. Kerberoasted without ever touching the victim's disk
 
 ![bonus-kill](bonus-kill.jpg)
