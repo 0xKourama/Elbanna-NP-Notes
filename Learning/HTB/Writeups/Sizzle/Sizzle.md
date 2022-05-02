@@ -1,13 +1,15 @@
 ### Summary
-- A Windows Domain Controller machine. We find an SMB share containing a writable folder called 'Public'. We place an `SCF` file there that directs the visiting user's computer to our listening responder where we capture his `NTLMv2` hash.
-- After cracking it, we get the password for the `amanda` user which we use to enumerate the domain using `BloodHound`.
-- Noticing that our user has PowerShell Remoting capabilities, we try to get access but are faced with a strange error.
-- Upon inspecting the functionality of the `Evil-Winrm` tool, we find that we can use a certificate for logging in.
-- We create a Certificate Signing Request using `openssl` and get it signed from the ADCS web interface found on the domain controller.
-- We successfully achieve code execution using PowerShell Remoting but find ourselves in Contrained Language Mode which disables some functionalities.
-- Looking back at the output of `BloodHound`, it did show a kerberoastable user called `mrlky` that has dangerous rights that could be abuse to do a `DCSync` attack.
-- We bypass the Contrained Language Mode by downgrading to PowerShell Version 2 and are able to kerberoast after using the `-credential` switch to create a network logon.
-- After kerberoasting the `mrlky` user, we crack his TGS hash and are able to get the password. We then proceed to `DCSync` and obtain the NTLM hash for the `administrator` account which we pass to gain complete access.
+- A **Windows Domain Controller** machine. We find an **SMB share** containing a *writable* folder called `Public`. We place an `SCF` file there that *directs the visiting user's computer* to our listening `responder` where we capture his `NTLMv2` hash.
+- *After cracking it,* we get the password for the `amanda` user which we use to enumerate the domain using `BloodHound`.
+- *Noticing that our user has* **PowerShell Remoting** *capabilities,* we try to gain access but are faced with a *strange authentication error*.
+- *Upon inspecting the functionality of the* `Evil-Winrm` *tool,* we find that we can use a *certificate* for logging in.
+- We create a **Certificate Signing Request** using `openssl` and get it signed from the **ADCS Web Interface** found on the domain controller.
+- Using `evil-winrm`'s ability to authenticate using SSL certificates, we successfully achieve code execution.
+- The output of `BloodHound` showed a *kerberoastable* user called `mrlky` that has dangerous rights that could be abuse to do a `DCSync` attack.
+- We decide to use `Rubeus.exe` to do the job but can't execute it due to **Applocker restrictions.**
+- We bypass that by moving `Rubeus` in the Windows `temp` folder and are faced with another error requiring us to authenticate to the network.
+- We add the `amanda` user's credentials as flags to the `Rubeus` tool and manage to kerberoast the `mrkly` user.
+- We crack his TGS hash and are able to get the password. We then proceed to `DCSync` and obtain the NTLM hash for the `administrator` account which we pass to gain complete access.
 
 ---
 
