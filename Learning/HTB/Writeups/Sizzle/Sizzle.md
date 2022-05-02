@@ -14,7 +14,7 @@
 ---
 
 ### Nmap
-The nmap output shows us some good information:
+The nmap output gives some good information:
 - **Machine name:** Sizzle
 - **Domain Name:** HTB.local
 - **FTP** with *anonymous* login allowed
