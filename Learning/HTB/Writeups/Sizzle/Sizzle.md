@@ -6,8 +6,8 @@
 - We create a **Certificate Signing Request** using `openssl` and get it signed from the **ADCS Web Interface** found on the domain controller.
 - *Using* `evil-winrm`'*s ability to authenticate using SSL certificates,* we successfully achieve code execution.
 - Looking back at the output of `BloodHound` showed a *kerberoastable* user called `mrlky` that has dangerous rights abusable for a `DCSync` attack.
-- We decide to use `Rubeus.exe` to do the job but can't execute it due to **Applocker restrictions.**
-- We bypass by moving `Rubeus` to the Windows `temp` folder and are faced with another error requiring us to authenticate to the network.
+- We decide to use `Rubeus.exe` to do the job but can't execute it due to **Applocker** restrictions.
+- We bypass by moving it to the Windows `temp` folder and are faced with another error requiring us to authenticate to the network.
 - We add the `amanda` user's credentials as flags to the `Rubeus` tool and manage to kerberoast the `mrkly` user.
 - We crack his `TGS` hash and are able to get the password. We then proceed to `DCSync` and obtain the `NTLM hash` for the `administrator` account which we pass to gain complete access.
 
