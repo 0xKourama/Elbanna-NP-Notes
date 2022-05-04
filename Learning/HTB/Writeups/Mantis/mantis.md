@@ -159,6 +159,8 @@ I tried the MetaSploit module and it showed those results:
 
 The `secure*~` seemed interesting enough. So, I went ahead for directory bruteforcing using `gobuster`
 
+![gobuster-output-1337](gobuster-output-1337.jpg)
+
 The full name for the directory was `secure_notes`. It had the below contents.
 
 ![1337-secure-notes-contents](1337-secure-notes-contents.jpg)
