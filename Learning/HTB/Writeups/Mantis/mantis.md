@@ -1,0 +1,195 @@
+### Summary
+- A Window Domain Controller machine. We find a hidden credentials file when directory bruteforcing IIS on a custom port.
+- The file gives us information about the MSSQL database (the username and DB name) in plain text while the password is present in the file name as a base-64 encoded hex string.
+- Using the credentials found, we gain access to the MSSQL database which contains the password for a user called `james` who turns out to an AD user.
+- With `james`'s credentials, we're able to exploit kerberos with a known CVE (MS14-068) a.k.a pykek to forge a golden ticket.
+- Using the ticket with kerberos authentication, we can execute commands on the box as a domain administrator to gain full access.
+
+---
+
+### Nmap
+```
+PORT      STATE SERVICE      VERSION
+53/tcp    open  domain       Microsoft DNS 6.1.7601 (1DB15CD4) (Windows Server 2008 R2 SP1)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB15CD4)
+88/tcp    open  kerberos-sec Microsoft Windows Kerberos (server time: 2022-05-03 18:53:51Z)
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+389/tcp   open  ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds Windows Server 2008 R2 Standard 7601 Service Pack 1 microsoft-ds (workgroup: HTB)
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+1337/tcp  open  http         Microsoft IIS httpd 7.5
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: IIS7
+1433/tcp  open  ms-sql-s     Microsoft SQL Server 2014 12.00.2000.00; RTM
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2022-05-03T18:51:03
+|_Not valid after:  2052-05-03T18:51:03
+|_ssl-date: 2022-05-03T18:55:01+00:00; 0s from scanner time.
+| ms-sql-ntlm-info: 
+|   Target_Name: HTB
+|   NetBIOS_Domain_Name: HTB
+|   NetBIOS_Computer_Name: MANTIS
+|   DNS_Domain_Name: htb.local
+|   DNS_Computer_Name: mantis.htb.local
+|   DNS_Tree_Name: htb.local
+|_  Product_Version: 6.1.7601
+3268/tcp  open  ldap         Microsoft Windows Active Directory LDAP (Domain: htb.local, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+5722/tcp  open  msrpc        Microsoft Windows RPC
+8080/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: Tossed Salad - Blog
+|_http-open-proxy: Proxy might be redirecting requests
+9389/tcp  open  mc-nmf       .NET Message Framing
+47001/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49157/tcp open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc        Microsoft Windows RPC
+49168/tcp open  msrpc        Microsoft Windows RPC
+49180/tcp open  msrpc        Microsoft Windows RPC
+49184/tcp open  msrpc        Microsoft Windows RPC
+50255/tcp open  ms-sql-s     Microsoft SQL Server 2014 12.00.2000
+|_ssl-date: 2022-05-03T18:55:01+00:00; 0s from scanner time.
+| ms-sql-ntlm-info: 
+|   Target_Name: HTB
+|   NetBIOS_Domain_Name: HTB
+|   NetBIOS_Computer_Name: MANTIS
+|   DNS_Domain_Name: htb.local
+|   DNS_Computer_Name: mantis.htb.local
+|   DNS_Tree_Name: htb.local
+|_  Product_Version: 6.1.7601
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Not valid before: 2022-05-03T18:51:03
+|_Not valid after:  2052-05-03T18:51:03
+Service Info: Host: MANTIS; OS: Windows; CPE: cpe:/o:microsoft:windows_server_2008:r2:sp1, cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 34m16s, deviation: 1h30m43s, median: 0s
+| ms-sql-info: 
+|   10.10.10.52:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2014 RTM
+|       number: 12.00.2000.00
+|       Product: Microsoft SQL Server 2014
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| smb2-security-mode: 
+|   2.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2022-05-03T18:54:52
+|_  start_date: 2022-05-03T18:49:33
+| smb-os-discovery: 
+|   OS: Windows Server 2008 R2 Standard 7601 Service Pack 1 (Windows Server 2008 R2 Standard 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_server_2008::sp1
+|   Computer name: mantis
+|   NetBIOS computer name: MANTIS\x00
+|   Domain name: htb.local
+|   Forest name: htb.local
+|   FQDN: mantis.htb.local
+|_  System time: 2022-05-03T14:54:51-04:00
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+```
+
+- A full port scan shows us a set ports indicative of a Domain Controller (DNS, Kerberos, LDAP, SMB, LDAP GC).
+- We notice the computer name is Mantis
+- The domain name to be htb.local
+- from the `nmap` `smb-os-discovery` script, the operating system of the machine is Windows Server 2008 R2
+- We also see MSSQL on its standard port: 1443
+- We take note that IIS 7.5 is running on both port 1337 (which is definitely interesting) and on port 8080.
+
+### SMB Enumeration
+We try enumerating SMB with different authentication methods using `crackmapexec`:
+1. Null
+2. Anonymous
+3. Guest
+
+![smb-enum](smb-enum.jpg)
+
+without success.
+
+### LDAP Enumeration
+Using `ldapsearch`, we don't get much information either:
+
+![ldapsearch-output](ldapsearch-output.jpg)
+
+### Kerberos Enumeration
+Enumerating kerberos with `kerbrute` gave me one user: `james`
+
+![kerbrute-userenum](kerbrute-userenum.jpg)
+
+### ASREPRoasting James
+`james` wasn't asreproastable.
+
+![james-not-asreproastable](james-not-asreproastable.jpg)
+
+### Port 8080
+Checking out port 8080 showed a CMS called Orchard CMS detected by `wappalyzer`
+
+![orchard-cms](orchard-cms.jpg)
+
+Testing for weak credentials with both the `admin` and `james` users failed:
+
+![orchard-test-default-creds](orchard-test-default-creds.jpg)
+
+### Port 1337
+This port was interesting because of its number. And, since it was IIS 7.5, I wanted to test out a certain vulnerability called the IIS Tilde Vulnerability.
+
+Briefly, it can disclose the first 6 characters of file/folder names on this version of IIS.
+
+I tried the MetaSploit module and it showed those results:
+
+![iis-tilde-vuln](iis-tilde-vuln.jpg)
+
+The `secure*~` seemed interesting enough. So, I went ahead for directory bruteforcing using `gobuster`
+
+The full name for the directory was `secure_notes`. It had the below contents.
+
+![1337-secure-notes-contents](1337-secure-notes-contents.jpg)
+
+The `web.config` file didn't exist. But both the name and contents of `dev_notes_NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx.txt.txt` were interesting:
+
+![dev_notes_top](dev_notes_top.jpg)
+
+We could tell:
+1. The DB is SQL server 2014 Express
+2. The username is `admin`
+3. The DB name is `orcharddb`
+
+and...
+
+By taking a closer look at the file name, the string `NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx` should be the missing piece of the puzzle: the password for the `orcharddb`'s `admin` user.
+
+### The CyberChef knew the recipe :D
+`CyberChef` is an amazing tool that is intelligent enough to discover if a string of text has undergone encryption/encoding.
+
+Using it revealed that the text was base64-encoded after being converted into hexadecimal:
+
+![cyber-chef-awesomeness](cyber-chef-awesomeness.jpg)
+
+The password turned out to be `m$$ql_S@_P@ssW0rd!`
+
+### Interacting with MSSQL
+Using another awesome Impacket python script: `mssqlclient.py`, we are able to interact with the MSSQL DB from our linux machine:
+
+![mssql-client-py-help](mssql-client-py-help.jpg)
+
+we're connected to the database prompt successfully:
+
+![mssql-client-py-connected](mssql-client-py-connected.jpg)
