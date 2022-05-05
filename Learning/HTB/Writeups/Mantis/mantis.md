@@ -303,4 +303,4 @@ we're going to export this ticket to our shell environment's `KRB5CCNAME` variab
 
 ![pykek-for-the-win](pykek-for-the-win.jpg)
 
-One sweet exploit :D
+Sweeeet :D
