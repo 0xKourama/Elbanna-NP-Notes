@@ -1,5 +1,5 @@
 ### Summary
-- A Window Domain Controller machine. We find a hidden credentials file when directory bruteforcing IIS on a custom port.
+- A Windows Domain Controller machine. We find a hidden credentials file when directory bruteforcing IIS on a custom port.
 - The file gives us information about the MSSQL database (the username and DB name) in plain text while the password is present in the file name as a base-64 encoded hex string.
 - Using the credentials found, we gain access to the MSSQL database which contains the password for a user called `james` who turns out to an AD user.
 - With `james`'s credentials, we're able to exploit kerberos with a known CVE (MS14-068) a.k.a pykek to forge a golden ticket.
@@ -170,7 +170,7 @@ The `web.config` file didn't exist. But both the name and contents of `dev_notes
 ![dev_notes_top](dev_notes_top.jpg)
 
 We could tell:
-1. The DB is SQL server 2014 Express
+1. The DB is SQL Server 2014 Express
 2. The username is `admin`
 3. The DB name is `orcharddb`
 
