@@ -274,7 +274,7 @@ We find nothing special there apart from RDP privilege to the DC:
 ### MS14-068 a.k.a Pykek (The Kill :D)
 MS14-068 is a killer exploit for Domain Controllers before 2016.
 
-In short, it allows to forge our own kerberos ticket allowing us to have group memberships in whatever high-privilege groups we want (ex: Domain Admins, Enterprise Admins etc.)
+In short, it give us the ability to forge our own kerberos ticket allowing us to have group memberships in whatever high-privilege groups we want (ex: Domain Admins, Enterprise Admins etc.)
 
 A full article on it is here (https://adsecurity.org/?p=541)
 The Microsoft Reference that details the affected versions (https://docs.microsoft.com/en-us/security-updates/securitybulletins/2014/ms14-068)
