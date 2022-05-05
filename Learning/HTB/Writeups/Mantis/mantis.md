@@ -276,8 +276,8 @@ MS14-068 is a killer exploit for Domain Controllers before 2016.
 
 In short, it give us the ability to forge our own kerberos ticket allowing us to have group memberships in whatever high-privilege groups we want (ex: Domain Admins, Enterprise Admins etc.)
 
-A full article on it is here (https://adsecurity.org/?p=541)
-The Microsoft Reference that details the affected versions (https://docs.microsoft.com/en-us/security-updates/securitybulletins/2014/ms14-068)
+- A full article on it here (https://adsecurity.org/?p=541)
+- The Microsoft Reference that details the affected versions (https://docs.microsoft.com/en-us/security-updates/securitybulletins/2014/ms14-068)
 
 Looking at the GitHub PoC (https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS14-068/pykek), It only needs:
 1. A valid AD user
