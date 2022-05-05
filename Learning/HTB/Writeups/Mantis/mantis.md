@@ -195,3 +195,78 @@ Using another awesome Impacket python script: `mssqlclient.py`, we are able to i
 we're connected to the database prompt successfully:
 
 ![mssql-client-py-connected](mssql-client-py-connected.jpg)
+
+We're going to enumerate the tables in the `orcharddb` database first using: `SELECT * FROM orcharddb.INFORMATION_SCHEMA.TABLES`
+
+![orcharddb-tables](orcharddb-tables.jpg)
+
+The table `blog_Orchard_Users_UserPartRecord` seems interesting. So we do a select on it: `select * from blog_Orchard_Users_UserPartRecord`
+
+![james-password-db-cleartext](james-password-db-cleartext.jpg)
+
+and we're greeted with a clear-text password for james :D
+
+### Post-Cred Checks
+Having tested the creds from the james user, and found them valid, we move on to more enumeration/attacks.
+
+![james-creds-validated-cme](james-creds-validated-cme.jpg)
+
+1. New SMB Access
+2. GPP
+3. Enum full AD users > Password Pattern Recognition > Password Policy Enumeration > Password Spraying
+4. Full AD ASREPRoast
+5. Kerberoast
+6. BloodHound
+7. MS14-068
+
+- [x] 1. New SMB Access had the standard `READ` access on `SYSVOL` and `NETLOGON` shares.
+
+![james-smb-access](james-smb-access.jpg)
+
+- [x] 2. GPP
+
+![gpp-enumeration](gpp-enumeration.jpg)
+
+- [x] 3. Password Pattern Recognition + Enum full AD users > Password Policy Enumeration > Password Spraying
+
+![full-ad-userlist](full-ad-userlist.jpg)
+
+Going by the same pattern for the `james` user on his password `J@m3s_P@ssW0rd!`, the password for the `Administrator` should be something like:
+- Adm1n_P@ssw0rd!
+- @dm1n_P@ssw0rd!
+- Adm!n_P@ssw0rd!
+- @dm!n_P@ssw0rd!
+- Adm1n_P@$$w0rd!
+- @dm1n_P@$$w0rd!
+- Adm!n_P@$$w0rd!
+- @dm!n_P@$$w0rd!
+
+But before trying anything, we're going to enumerate the Password Policy:
+
+![cme-pass-pol](cme-pass-pol.jpg)
+
+Seems alright to bruteforce the `Administrator` :D
+
+![admin-brute-force](admin-brute-force.jpg)
+
+But no luck there I guess XD
+
+- [x] 4. Full AD ASREPRoast
+
+![full-ad-asreproast](full-ad-asreproast.jpg)
+
+- [x] 5. Kerberoast
+
+![kerberoast](kerberoast.jpg)
+
+- [x] 6. Bloodhound
+
+![bloodhound-py](bloodhound-py.jpg)
+
+![bloodhound-initialization](bloodhound-initialization.jpg)
+
+We find nothing special there apart from RDP privilege to the DC:
+
+![james-can-rdp-the-dc](james-can-rdp-the-dc.jpg)
+
+### MS14-068
