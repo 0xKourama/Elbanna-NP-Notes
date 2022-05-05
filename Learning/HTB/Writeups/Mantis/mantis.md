@@ -219,6 +219,8 @@ Having tested the creds from the james user, and found them valid, we move on to
 6. BloodHound
 7. MS14-068
 
+Note: we won't be trying PowerShell Remoting since the WinRM port wasn't open in our full nmap. We're going to code to try everything that doesn't require code execution on the box.
+
 - [x] 1. New SMB Access had the standard `READ` access on `SYSVOL` and `NETLOGON` shares.
 
 ![james-smb-access](james-smb-access.jpg)
@@ -269,4 +271,36 @@ We find nothing special there apart from RDP privilege to the DC:
 
 ![james-can-rdp-the-dc](james-can-rdp-the-dc.jpg)
 
-### MS14-068
+### MS14-068 a.k.a Pykek (The Kill :D)
+MS14-068 is a killer exploit for Domain Controllers before 2016.
+
+In short, it allows to forge our own kerberos ticket allowing us to have group memberships in whatever high-privilege groups we want (ex: Domain Admins, Enterprise Admins etc.)
+
+A full article on it is here (https://adsecurity.org/?p=541)
+The Microsoft Reference that details the affected versions (https://docs.microsoft.com/en-us/security-updates/securitybulletins/2014/ms14-068)
+
+Looking at the GitHub PoC (https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS14-068/pykek), It only needs:
+1. A valid AD user
+2. His SID
+
+`james` is a valid AD user, we just need to get his SID.
+
+With an awesome impacket script called `lookupsid.py`, we can easily get that.
+
+![james-sid-calculation](james-sid-calculation.jpg)
+
+Because like the picture above, a user's SID is formed of `<DOMAIN_SID>-<USER_RID>`
+
+We're going to run the exploit with the needed parameters.
+
+`python2.7 ./ms14-068.py -u james@htb.local -s S-1-5-21-4220043660-4019079961-2895681657-1103 -d mantis.htb.local -p 'J@m3s_P@ssW0rd!'`
+
+![got-forged-ticket](got-forged-ticket.jpg)
+
+Looks like a success! :D
+
+we're going to export this ticket to our shell environment's `KRB5CCNAME` variable and use `psexec.py` to own this DC :D
+
+![pykek-for-the-win](pykek-for-the-win.jpg)
+
+One sweet exploit :D
