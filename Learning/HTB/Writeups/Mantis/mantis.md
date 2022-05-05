@@ -1,9 +1,9 @@
 ### Summary
-- A Windows Domain Controller machine. We find a hidden credentials file when directory bruteforcing IIS on a custom port.
-- The file gives us information about the MSSQL database (the username and DB name) in plain text while the password is present in the file name as a base-64 encoded hex string.
-- Using the credentials found, we gain access to the MSSQL database which contains the password for a user called `james` who turns out to an AD user.
-- With `james`'s credentials, we're able to exploit kerberos with a known CVE (MS14-068) a.k.a pykek to forge a golden ticket.
-- Using the ticket with kerberos authentication, we can execute commands on the box as a domain administrator to gain full access.
+- A **Windows Domain Controller** machine. We find a *hidden credentials file* when directory bruteforcing **IIS** on a *custom* port.
+- The file gives us information about the **MSSQL database** (the username and DB name) in plain text while the password is present in the file name as a *base-64 encoded hex* string.
+- *Using the credentials found,* we gain access to the **MSSQL database** which contains the password for a user called `james` who is an AD user.
+- *With* `james`'s *credentials,* we're able to exploit **Kerberos** with a known **CVE (MS14-068) a.k.a Pykek** to *forge* a **Domain Admin** ticket.
+- *Using the ticket with kerberos authentication,* we can execute commands on the box as a **Domain Administrator** to gain **full access**.
 
 ---
 
@@ -107,15 +107,15 @@ Host script results:
 |_  message_signing: required
 ```
 
-- A full port scan shows us a set ports indicative of a Domain Controller (DNS, Kerberos, LDAP, SMB, LDAP GC).
-- We notice the computer name is Mantis
-- The domain name to be htb.local
-- from the `nmap` `smb-os-discovery` script, the operating system of the machine is Windows Server 2008 R2
-- We also see MSSQL on its standard port: 1443
-- We take note that IIS 7.5 is running on both port 1337 (which is definitely interesting) and on port 8080.
+- A full port scan shows us a set ports indicative of a **Domain Controller** (DNS, Kerberos, LDAP, SMB, LDAP GC).
+- We notice the computer name is `Mantis`
+- The domain name to be `htb.local`
+- from the `nmap` `smb-os-discovery` script, the operating system of the machine is **Windows Server 2008 R2**.
+- We also see **MSSQL** on its standard port: 1443
+- We take note that **IIS 7.5** is running on both port 1337 (*which is interesting*) and on port 8080.
 
 ### SMB Enumeration
-We try enumerating SMB with different authentication methods using `crackmapexec`:
+We try enumerating **SMB** with *different authentication methods* using `crackmapexec`:
 1. Null
 2. Anonymous
 3. Guest
@@ -125,12 +125,12 @@ We try enumerating SMB with different authentication methods using `crackmapexec
 without success.
 
 ### LDAP Enumeration
-Using `ldapsearch`, we don't get much information either:
+Using `ldapsearch`, we don't get much information either :/
 
 ![ldapsearch-output](ldapsearch-output.jpg)
 
 ### Kerberos Enumeration
-Enumerating kerberos with `kerbrute` gave me one user: `james`
+Enumerating kerberos with `kerbrute` gave us one user: `james`
 
 ![kerbrute-userenum](kerbrute-userenum.jpg)
 
@@ -140,59 +140,66 @@ Enumerating kerberos with `kerbrute` gave me one user: `james`
 ![james-not-asreproastable](james-not-asreproastable.jpg)
 
 ### Port 8080
-Checking out port 8080 showed a CMS called Orchard CMS detected by `wappalyzer`
+Checking out port 8080 showed a **CMS** called **Orchard CMS**  as detected by `wappalyzer`.
 
 ![orchard-cms](orchard-cms.jpg)
 
-Testing for weak credentials with both the `admin` and `james` users failed:
+*Testing for weak credentials* with both the `admin` and `james` users failed :/
 
 ![orchard-test-default-creds](orchard-test-default-creds.jpg)
 
 ### Port 1337
-This port was interesting because of its number. And, since it was IIS 7.5, I wanted to test out a certain vulnerability called the IIS Tilde Vulnerability.
+This port was interesting because of its number.
 
-Briefly, it can disclose the first 6 characters of file/folder names on this version of IIS.
+*And, since it was* **IIS 7.5**, I wanted to test out a certain vulnerability called the **IIS Tilde Vulnerability**.
 
-I tried the MetaSploit module and it showed those results:
+*Briefly,* it can *disclose the first 6 characters of file/folder names* on this version of **IIS.**
+
+I tried the **MetaSploit** module and it showed those results:
 
 ![iis-tilde-vuln](iis-tilde-vuln.jpg)
 
-The `secure*~` seemed interesting enough. So, I went ahead for directory bruteforcing using `gobuster`
+The `secure*~` file/directory seemed interesting enough. So, I went ahead for directory bruteforcing using `gobuster` and the `directory-list-lowercase-2.3-medium.txt` wordlist.
+
+Note: I used the lowercase wordlist since we're bruteforcing **Windows** which isn't case sensitive like **Linux.**
 
 ![gobuster-output-1337](gobuster-output-1337.jpg)
 
-The full name for the directory was `secure_notes`. It had the below contents.
+The full name for the directory was `secure_notes`. It had the below contents:
 
 ![1337-secure-notes-contents](1337-secure-notes-contents.jpg)
 
-The `web.config` file didn't exist. But both the name and contents of `dev_notes_NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx.txt.txt` were interesting:
+The `web.config` file didn't exist.
+
+But both the name and contents of `dev_notes_NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx.txt.txt` were interesting:
 
 ![dev_notes_top](dev_notes_top.jpg)
 
 We could tell:
-1. The DB is SQL Server 2014 Express
-2. The username is `admin`
-3. The DB name is `orcharddb`
+1. The username is `admin`
+2. The DB name is `orcharddb`
 
 and...
 
-By taking a closer look at the file name, the string `NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx` could be the missing piece of the puzzle: the password for the `orcharddb`'s `admin` user.
+*By taking a closer look at the file name,* the string `NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx` could be the *missing piece of the puzzle*: the password for the `orcharddb`'s `admin` user.
 
-### The CyberChef knew the recipe :D
+### CyberChef knew the recipe :D
 `CyberChef` is an amazing tool that is intelligent enough to discover if a string of text has undergone encryption/encoding.
 
-Using it revealed that the text was base64-encoded after being converted into hexadecimal:
+Using it revealed that the text was **base64-encoded** after being converted into **hexadecimal**:
+
+![cyber-chef-magic-wand-1](cyber-chef-magic-wand-1.jpg)
+
+![cyber-chef-magic-wand-2](cyber-chef-magic-wand-2.jpg)
 
 ![cyber-chef-awesomeness](cyber-chef-awesomeness.jpg)
 
 The password turned out to be `m$$ql_S@_P@ssW0rd!`
 
-### Interacting with MSSQL
-Using another awesome Impacket python script: `mssqlclient.py`, we are able to interact with the MSSQL DB from our linux machine:
+### Interacting with MSSQL and DB Enumeration
+*Using another awesome* **Impacket** *python script:* `mssqlclient.py`, we are able to interact with the **MSSQL DB** command prompt from our Linux machine:
 
 ![mssql-client-py-help](mssql-client-py-help.jpg)
-
-we're connected to the database prompt successfully:
 
 ![mssql-client-py-connected](mssql-client-py-connected.jpg)
 
@@ -200,36 +207,38 @@ We're going to enumerate the tables in the `orcharddb` database first using: `SE
 
 ![orcharddb-tables](orcharddb-tables.jpg)
 
-The table `blog_Orchard_Users_UserPartRecord` seems interesting. So we do a select on it: `select * from blog_Orchard_Users_UserPartRecord`
+The table `blog_Orchard_Users_UserPartRecord` seemed interesting. So, we did a select on it: `select * from blog_Orchard_Users_UserPartRecord`
 
 ![james-password-db-cleartext](james-password-db-cleartext.jpg)
 
 and we're greeted with a clear-text password for james :D
 
 ### Post-Cred Checks
-Having tested the creds from the james user, and found them valid, we move on to more enumeration/attacks.
+*Having tested the creds from the* `james` *user,* and found them valid and we went on to more enumeration/attacks.
 
 ![james-creds-validated-cme](james-creds-validated-cme.jpg)
 
-1. New SMB Access
-2. GPP
-3. Enum full AD users + Password Pattern Recognition > Password Policy Enumeration > Password Spraying
-4. Full AD ASREPRoast
-5. Kerberoast
-6. BloodHound
-7. MS14-068
+1. New **SMB** Access
+2. **GPP**
+3. Full AD user enumeration + Password Pattern Recognition > Password Policy Enumeration > Password Spraying
+4. Full AD **ASREPRoast**
+5. **Kerberoast**
+6. **BloodHound**
+7. **MS14-068**
 
-Note: we won't be trying PowerShell Remoting since the WinRM port wasn't open in our full nmap. We're going to code to try everything that doesn't require code execution on the box.
+Note: *we won't be trying* **PowerShell Remoting** *since the* **WinRM** *port wasn't open in our full nmap.*
 
-- [x] 1. New SMB Access had the standard `READ` access on `SYSVOL` and `NETLOGON` shares.
+*We're going to try everything that doesn't require* **code execution** *on the box.*
+
+- [x] 1. New **SMB** Access had the standard `READ` access on `SYSVOL` and `NETLOGON` shares.
 
 ![james-smb-access](james-smb-access.jpg)
 
-- [x] 2. GPP
+- [x] 2. **GPP**
 
 ![gpp-enumeration](gpp-enumeration.jpg)
 
-- [x] 3. Password Pattern Recognition + Enum full AD users > Password Policy Enumeration > Password Spraying
+- [x] 3. Full AD user enumeration + Password Pattern Recognition > Password Policy Enumeration > Password Spraying
 
 ![full-ad-userlist](full-ad-userlist.jpg)
 
@@ -243,7 +252,7 @@ Going by the same pattern for the `james` user on his password `J@m3s_P@ssW0rd!`
 - `Adm!n_P@$$w0rd!`
 - `@dm!n_P@$$w0rd!`
 
-But before trying anything, we're going to enumerate the Password Policy:
+*But before trying anything,* we're going to enumerate the **Password Policy**:
 
 ![cme-pass-pol](cme-pass-pol.jpg)
 
@@ -253,43 +262,47 @@ Seems alright to bruteforce the `Administrator` :D
 
 But no luck there I guess XD
 
-- [x] 4. Full AD ASREPRoast
+- [x] 4. Full AD **ASREPRoast**
 
 ![full-ad-asreproast](full-ad-asreproast.jpg)
 
-- [x] 5. Kerberoast
+- [x] 5. **Kerberoast**
 
 ![kerberoast](kerberoast.jpg)
 
-- [x] 6. Bloodhound
+- [x] 6. **Bloodhound**
+
+All collection methods:
 
 ![bloodhound-py](bloodhound-py.jpg)
 
+Neo4j DB Initialization + BloodHound (--no-sandbox)
+
 ![bloodhound-initialization](bloodhound-initialization.jpg)
 
-We find nothing special there apart from RDP privilege to the DC:
+We find nothing special there apart from **RDP Privilege** to the DC:
 
 ![james-can-rdp-the-dc](james-can-rdp-the-dc.jpg)
 
 ### MS14-068 a.k.a Pykek (The Kill :D)
-MS14-068 is a killer exploit for Domain Controllers before 2016.
+**MS14-068** is a vulnerability that affects most Domain Controllers before Server 2016.
 
-In short, it give us the ability to forge our own kerberos ticket allowing us to have group memberships in whatever high-privilege groups we want (ex: Domain Admins, Enterprise Admins etc.)
+In short, it gives us the ability to forge our own kerberos ticket allowing us to have group memberships in whatever high-privilege groups we want (*ex: Domain Admins, Enterprise Admins etc.*)
 
 - A full article on it here (https://adsecurity.org/?p=541)
-- The Microsoft Reference that details the affected versions (https://docs.microsoft.com/en-us/security-updates/securitybulletins/2014/ms14-068)
+- The Microsoft Reference that details the affected versions there (https://docs.microsoft.com/en-us/security-updates/securitybulletins/2014/ms14-068)
 
-Looking at the GitHub PoC (https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS14-068/pykek), It only needs:
+*Looking at the GitHub PoC* (https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS14-068/pykek), It only needs:
 1. A valid AD user
 2. His SID
 
-`james` is a valid AD user, we just need to get his SID.
+`james` is a valid AD user, we just need to get his **SID**.
 
-With an awesome impacket script called `lookupsid.py`, we can easily get that.
+*With a handy* **Impacket** *script called* `lookupsid.py`, we can easily get that.
 
 ![james-sid-calculation](james-sid-calculation.jpg)
 
-Because like the picture above, a user's SID is formed of `<DOMAIN_SID>-<USER_RID>`
+*Because like the picture above,* a user's SID is formed of `<DOMAIN_SID>-<USER_RID>`
 
 We're going to run the exploit with the needed parameters.
 
