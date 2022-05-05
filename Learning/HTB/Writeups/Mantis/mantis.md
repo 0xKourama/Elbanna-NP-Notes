@@ -232,14 +232,14 @@ Having tested the creds from the james user, and found them valid, we move on to
 ![full-ad-userlist](full-ad-userlist.jpg)
 
 Going by the same pattern for the `james` user on his password `J@m3s_P@ssW0rd!`, the password for the `Administrator` should be something like:
-- Adm1n_P@ssw0rd!
-- @dm1n_P@ssw0rd!
-- Adm!n_P@ssw0rd!
-- @dm!n_P@ssw0rd!
-- Adm1n_P@$$w0rd!
-- @dm1n_P@$$w0rd!
-- Adm!n_P@$$w0rd!
-- @dm!n_P@$$w0rd!
+- `Adm1n_P@ssw0rd!`
+- `@dm1n_P@ssw0rd!`
+- `Adm!n_P@ssw0rd!`
+- `@dm!n_P@ssw0rd!`
+- `Adm1n_P@$$w0rd!`
+- `@dm1n_P@$$w0rd!`
+- `Adm!n_P@$$w0rd!`
+- `@dm!n_P@$$w0rd!`
 
 But before trying anything, we're going to enumerate the Password Policy:
 
