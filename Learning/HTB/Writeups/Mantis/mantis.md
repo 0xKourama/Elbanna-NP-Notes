@@ -213,7 +213,7 @@ Having tested the creds from the james user, and found them valid, we move on to
 
 1. New SMB Access
 2. GPP
-3. Enum full AD users > Password Pattern Recognition > Password Policy Enumeration > Password Spraying
+3. Enum full AD users + Password Pattern Recognition > Password Policy Enumeration > Password Spraying
 4. Full AD ASREPRoast
 5. Kerberoast
 6. BloodHound
