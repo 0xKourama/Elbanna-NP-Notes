@@ -176,7 +176,7 @@ We could tell:
 
 and...
 
-By taking a closer look at the file name, the string `NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx` should be the missing piece of the puzzle: the password for the `orcharddb`'s `admin` user.
+By taking a closer look at the file name, the string `NmQyNDI0NzE2YzVmNTM0MDVmNTA0MDczNzM1NzMwNzI2NDIx` could be the missing piece of the puzzle: the password for the `orcharddb`'s `admin` user.
 
 ### The CyberChef knew the recipe :D
 `CyberChef` is an amazing tool that is intelligent enough to discover if a string of text has undergone encryption/encoding.
