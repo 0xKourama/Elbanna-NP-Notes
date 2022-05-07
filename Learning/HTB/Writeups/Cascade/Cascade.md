@@ -312,7 +312,7 @@ it is: `c4scadek3y654321`
 It seems that the `.exe` reads the encrypted password and decrypts using the `DecryptString` function before moving on to carry out its task.
 
 ### AES-CBC-128 Decryption
-Adding the details we found into an online decryption tool, we get the plaintext: `w3lc0meFr31nd`
+Adding the details we found into an online decryption tool (https://www.devglan.com/online-tools/aes-encryption-decryption), we get the plaintext: `w3lc0meFr31nd`
 
 ![aes-cbc-128-decryption](aes-cbc-128-decryption.jpg)
 
