@@ -315,8 +315,8 @@ Opening the `CascCrypto.dll` with `DNSpy.exe` shows two important functions: `En
 
 A great deal of information is present regarding the encryption:
 1. **Type:** AES
-2. **BlockSize:** 128-bit
-3. **KeySize:** 128-bit
+2. **Block Size:** 128-bit
+3. **Key Size:** 128-bit
 4. **Initialization Vector (IV):** `1tdyjCbY1Ix49842`
 5. **Mode:** CBC
 
