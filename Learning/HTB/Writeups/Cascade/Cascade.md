@@ -165,7 +165,7 @@ we're going to use a `grep` with some Regex kung fu to get rid of any unnecessar
 
 Regex: `^\w+:`
 
-English: Get us any line that starts with a bunch of characters followed by a semicolon.
+English: Get us any line that starts (`^`) with a bunch of characters (`\w+`) followed by a semicolon (`:`).
 
 We then follow up with a `sort` using the `-u` flag to get only unique attributes.
 
