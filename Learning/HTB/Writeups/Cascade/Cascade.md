@@ -1,7 +1,7 @@
 ### Summary
 - *Noticing the open ports*: **DNS, Kerberos, LDAP & SMB**, we know we're up against a **Windows Domain Controller**.
 - **LDAP Enumeration** reveals a *base-64 encoded* password which was *embedded* in a unique **Active Directory** user attribute.
-- Decoding the password grants access to the `r.thompson` user who happens to have `read` access to the `data` **SMB** share.
+- Decoding the password grants us access to the `r.thompson` user who happens to have `read` access to the `data` **SMB** share.
 - *Exploring the share,* we find a `VNC`-related `.reg` file which contains an encrypted password in hexadecimal format.
 - We also find an e-mail about a *deleted* `TempAdmin` who has a similar password to the normal (admin) user.
 - *After we crack the password with a tool called* `vncpwd`, we gain access to the `s.smith` user.
