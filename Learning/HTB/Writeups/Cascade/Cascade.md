@@ -325,7 +325,7 @@ The group membership of this user is very interesting:
 
 ![ark-svc-group-membership](ark-svc-group-membership.jpg)
 
-the `s.smith` didn't have this access:
+`s.smith` didn't have this access:
 
 ![s-smith-group-membership](s-smith-group-membership.jpg)
 
@@ -342,7 +342,7 @@ But that fails :/
 
 ![attempting-tempadmin-restore](attempting-tempadmin-restore.jpg)
 
-I scratch my head for a while.
+I scratch my head for a while...
 
 But eventually get the idea of checking all the attributes for the `TempAdmin` user.
 
@@ -352,7 +352,7 @@ Command: `Get-ADObject -ldapFilter:"(msDS-LastKnownRDN=*)" -IncludeDeletedObject
 
 ![temp-admin-password](temp-admin-password.jpg)
 
-Son of a ... It was indeed the case.
+Son of a ... It was indeed the case XDD
 
 And of course, it was base-64 encoded.
 
