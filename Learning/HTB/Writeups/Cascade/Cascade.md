@@ -356,7 +356,7 @@ Son of a ... It was indeed the case XDD
 
 And of course, it was base-64 encoded.
 
-We decode it and use with the `Administrator` user since that's what mentioned in the email:
+We decode it and use it with the `Administrator` user since that's what was mentioned in the email:
 
 ```
 Username is TempAdmin (password is the same as the normal admin account password)
