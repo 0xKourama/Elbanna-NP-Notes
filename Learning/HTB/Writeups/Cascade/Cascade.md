@@ -60,45 +60,6 @@ Host script results:
 
 ![ad-gameplan-map](ad-gameplan-map.jpg)
 
-1. **RPC**
-	1. `enum4linux-ng`
-		1. Userlist
-		2. Group list
-		2. Password Policy
-2. **Kerberos**
-	1. `kerbrute` user enumeration
-	2. got userlist? -> ASREPRoast
-	2. got userlist? -> Password Spray
-		1. Common Passwords
-		2. Themed Passwords
-		3. User = Pass
-3. **SMB**
-	1. `crackmapexec` Share Enumeration
-		1. Null
-		2. Guest
-		3. Anonymous
-	2. Share access
-		1. Read?
-			1. File content
-			2. User Activity Information
-			3. Metadata
-			4. Alternate Data Streams?
-		2. Write?
-			1. SCF Attack
-			2. Scripts? -> Abuse
-4. **LDAP**
-	1. `ldapsearch`
-5. **Got AD creds?**
-	1. Kerberoast
-	2. Password Reuse
-	3. Password Pattern Recognition + Password List Regeneration
-	4. BloodHound
-		1. DCSync users?
-		2. High priv group membership?
-		3. ACL attacks and permissions abuse?
-	5. Old DC?
-		1. MS14-068
-
 ### Down to business: RPC
 `enum4linux-ng` (https://github.com/cddmp/enum4linux-ng) is a really nice revamp of the old `enum4linux` tool.
 
