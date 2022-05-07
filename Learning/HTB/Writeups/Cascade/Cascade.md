@@ -1,5 +1,5 @@
 ### Summary
-- *Noticing the open ports*: DNS**, Kerberos, LDAP & SMB**, we know we're up against a **Windows Domain Controller**.
+- *Noticing the open ports*: **DNS, Kerberos, LDAP & SMB**, we know we're up against a **Windows Domain Controller**.
 - **LDAP Enumeration** reveals a *base-64 encoded* password which was *embedded* in a unique **Active Directory** user attribute.
 - Decoding the password grants access to the `r.thompson` user who happens to have `read` access to the `data` **SMB** share.
 - *Exploring the share,* we find a `VNC`-related `.reg` file which contains an encrypted password in hexadecimal format.
