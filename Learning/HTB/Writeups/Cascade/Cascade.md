@@ -224,6 +224,8 @@ Here's what it found:
 
 *According to the mail,* a user called `TempAdmin` which has the same password as the normal admin (`Administrator` *probably*) should be deleted at the end of 2018.
 
+We note this down and make sure to be on the lookout for that user.
+
 When we look at the `ArkAdRecycleBin.log` we get a confirmation that the `TempAdmin` user has in fact been deleted.
 
 ![ark-ad-recycle-bin](ark-ad-recycle-bin.jpg)
