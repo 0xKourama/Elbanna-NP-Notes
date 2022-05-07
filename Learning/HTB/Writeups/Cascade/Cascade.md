@@ -1,16 +1,16 @@
 ### Summary
-- Noticing the open ports: DNS, Kerberos, LDAP & SMB, we know we're up against a Windows Domain Controller.
-- LDAP Enumeration reveals a base-64 encoded password which was embedded in a unique Active Directory user attribute.
-- Decoding the password grants access to the `r.thompson` user who happens to have `read` access to the `data` SMB share.
-- Exploring the share, we find a `VNC`-related `.reg` file which contains an encrypted password in hexadecimal format.
-- We also find an e-mail about a deleted `TempAdmin` who has a similar password to the normal (admin) user.
-- After we crack the password with a tool called `vncpwd`, we gain access to the `s.smith` user.
-- Enumerating the SMB access for `s.smith`, we find that he has `read` access to the `audit` share.
-- The `audit` share contained an `sqlite3` database file. Enumerating it, we find an encrypted password for the `arksvc` user.
+- *Noticing the open ports*: DNS**, Kerberos, LDAP & SMB**, we know we're up against a **Windows Domain Controller**.
+- **LDAP Enumeration** reveals a *base-64 encoded* password which was *embedded* in a unique **Active Directory** user attribute.
+- Decoding the password grants access to the `r.thompson` user who happens to have `read` access to the `data` **SMB** share.
+- *Exploring the share,* we find a `VNC`-related `.reg` file which contains an encrypted password in hexadecimal format.
+- We also find an e-mail about a *deleted* `TempAdmin` who has a similar password to the normal (admin) user.
+- *After we crack the password with a tool called* `vncpwd`, we gain access to the `s.smith` user.
+- *While enumerating SMB access for* `s.smith`, we find that he has `read` access to the `audit` share.
+- The `audit` share contained an `sqlite3` database file. *When enumerating it,* we find an encrypted password for the `arksvc` user.
 - We also find two files `CascAudit.exe` and `CasCrypto.dll` which we reverse to find the necessary information to decrypt the `arksvc` password.
-- We authenticate as the `arksvc` user and find that he's a member of the `AD Recycle Bin` group.
-- Combining this information with the e-mail contents, we're enticed to check the AD users that were deleted.
-- Using PowerShell to fetch the deleted users with all their properties, we find the password for the `Administrator` account in the same unique attribute for the `TempAdmin` user. We use to authenticate and we gain full access to the machine.
+- We authenticate as the `arksvc` user and find that he's a member of a special group: `AD Recycle Bin`.
+- *Combining this information with the e-mail contents,* we're enticed to check the deleted AD users.
+- *Using* **PowerShell** *to fetch the deleted users with all their properties,* we find the password for the `Administrator` account in the same unique attribute for the `TempAdmin` user. We use it to authenticate and we gain **full access** to the machine.
 
 ---
 
@@ -46,23 +46,23 @@ Host script results:
 |   date: 2022-05-06T11:03:13
 |_  start_date: 2022-05-06T10:54:20
 ```
-DNS + Kerberos + LDAP + SMB = Domain Controller :D
+**DNS + Kerberos + LDAP + SMB = Domain Controller :D** 
 
-WinRM = Shell Access maybe :)
+**WinRM** = Shell Access maybe :)
 
-From `nmap` version detection and scripts:
-- OS: Windows Server 2008 R2 SP1
-- Domain Name: Cascade.local
-- Hostname: CASC-DC1
+*From* `nmap` *version detection and scripts:*
+- **OS:** Windows Server 2008 R2 SP1
+- **Domain Name:** Cascade.local
+- **Host name:** CASC-DC1
 
 ### Checkpoint: Listing Possible Enumeration/Exploitation Paths
-Having the port data, we go over our gameplan:
-1. RPC
+*Having the port data,* we go over our **game plan**:
+1. **RPC**
 	1. `enum4linux-ng`
 		1. Userlist
 		2. Group list
 		2. Password Policy
-2. Kerberos
+2. **Kerberos**
 	1. `kerbrute` user enumeration
 	2. got userlist? -> ASREPRoast
 	2. got userlist? -> password spray
@@ -73,7 +73,7 @@ Having the port data, we go over our gameplan:
 		1. Kerberoast
 		2. Password Reuse
 		3. Password List Regeneration
-3. SMB
+3. **SMB**
 	1. `crackmapexec` share enumeration
 		1. Null
 		2. Guest
@@ -87,9 +87,9 @@ Having the port data, we go over our gameplan:
 		2. Write?
 			1. SCF Attack
 			2. Scripts? -> Abuse
-4. LDAP
+4. **LDAP**
 	1. `ldapsearch`
-5. got AD creds?
+5. **got AD creds?**
 	1. BloodHound
 		1. DCSync users?
 		2. High priv group membership?
@@ -100,65 +100,75 @@ Having the port data, we go over our gameplan:
 ### Down to business: RPC
 `enum4linux-ng` (https://github.com/cddmp/enum4linux-ng) is a really nice revamp of the old `enum4linux`.
 
-we run it using the `-A` switch as well as the `-oY` to output into YAML format.
+we run it using the `-A` switch as well as the `-oY` to output into **YAML format**.
 
 Command: `enum4linux-ng -A 10.10.10.182 -oY e4lng-output`
 
 we get a bunch of cool stuff:
 
-1. usernames:
+1. usernames
 
 ![e4lng-output-users](e4lng-output-users.jpg)
 
-2. groups:
+2. groups
 
 ![e4lng-output-groups](e4lng-output-groups.jpg)
 
-3. password policy:
+3. password policy
 
 ![e4lng-output-pass-pol](e4lng-output-pass-pol.jpg)
 
-This is great! We have a userlist that we can use to do ASREPRoasting and we can do Password Spraying without locking anyone out.
+This is great! We have a userlist that we can use to do **ASREPRoasting** and we can do **Password Spraying** without locking anyone out.
 
 ### ASREPRoasting
-To save time, we're going to do the ASREPRoast because it's a quick check and has a high change of giving us creds if we can crack the hash.
+*To save time,* we're going to do the **ASREPRoast** frist because it's a quick check and has a high chance of giving us creds if we can crack the hash.
 
 Command: `GetNPUsers.py -dc-ip 10.10.10.182 -request -debug -usersfile users.txt cascade.local/`
 
-Note: I generally prefer to user the `-debug` flag. It can save me a lot of time in troubleshooting.
+**Note:** *I generally prefer to use the* `-debug` *flag with everything. It can save me a lot of time in troubleshooting.*
 
 ![asreproast-results](asreproast-results.jpg)
 
-We find no accounts that don't require kerberoes preauthentication.
+We find no accounts that don't require **kerberoes preauthentication.**
 
-we also notice some accounts did get another type of error: `KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)`. more on those later :)
+we also notice some accounts got another type of error: `KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)`. *more on those later :)*
 
 ### Time Saving: Password Spraying in the background
-Since the password policy contained to user lockout, we're good to go spraying :D
+*Since the password policy contained no user lockout,* we're good to go spraying :D
 
 Command: `for i in $(cat /opt/Seclists/Passwords/Common-Credentials/500-worst-passwords.txt); do kerbrute passwordspray --dc 10.10.10.182 -d cascade.local users.txt $i | grep -oP '\[\+\].*'; done`
 
-what this does: it will spray using common passwords and only show us the output if it catches something. This is mainly to avoid filling up the screen with junk.
+what this does:
 
-Note on the error we get when ASREPRoasting: we know during spraying that the users that got the `KDC_ERR_CLIENT_REVOKED` were in fact locked out.
+it will spray using common passwords and only show us the output if it catches something.
+
+This is *mainly* to avoid filling up the screen with junk.
+
+Note on the error we get when ASREPRoasting:
+
+*Upon spraying,* we know that the users that got the `KDC_ERR_CLIENT_REVOKED` were in fact locked out.
+
+Another benefit of the verbosity with `-v` :)
 
 ![locked-out-users](locked-out-users.jpg)
 
 ### SMB Enumeration
-While we have our spray running, we're going to enumerate SMB shares using `crackmapexec`
+*While we leave our spray running,* we're going to enumerate **SMB shares** using `crackmapexec`
 
 ![crackmapexec-smb-enum](crackmapexec-smb-enum.jpg)
 
-Notice that we test with the `cascguest` user on the 3rd attempt. This is because it was there in the `enum4linux-ng` output.
+Notice that we test with the `cascguest` user on the 3rd attempt.
+
+This is because it was there in the `enum4linux-ng` output.
 
 ![casc-guest](casc-guest.jpg)
 
 ### LDAP
-We're going to enumerate LDAP and see if we can find something there.
+We're going to enumerate **LDAP** and see if we can find something there.
 
 Command: `ldapsearch -x -H ldap://10.10.10.182 -b 'dc=cascade,dc=local'`
 
-The output was huge. So we can saved it to `ldap-output`
+The output was huge. So we saved it to `ldap-output`
 
 ![ldap-output-huge](ldap-output-huge.jpg)
 
@@ -194,10 +204,6 @@ With the same strategy as before, we're going to kerberoast.
 ![kerberoasting](kerberoasting.jpg)
 
 No results there.
-
-### Enhanced Spraying with Password Pattern Recognition
-
-
 
 ### SMB Access with `R.Thompson`
 We're going to user a `crackmapexec` module called `spider_plus`.
