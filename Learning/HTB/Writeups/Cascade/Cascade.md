@@ -316,3 +316,52 @@ Adding the details we found into an online decryption tool, we get the plaintext
 
 ![aes-cbc-128-decryption](aes-cbc-128-decryption.jpg)
 
+### ArkSvc and the AD Recycle Bin
+The user `ArkSvc` authenticates successfully with the `w3lc0meFr31nd` password and also has `WinRM` access.
+
+![ark-svc-got-winrm](ark-svc-got-winrm.jpg)
+
+The group membership of this user is very interesting:
+
+![ark-svc-group-membership](ark-svc-group-membership.jpg)
+
+the `s.smith` didn't have this access:
+
+![s-smith-group-membership](s-smith-group-membership.jpg)
+
+we're interested in the Recycle Bin of Active Directory because it has the `TempAdmin` user who might have a similar password to what we have.
+
+We try restoring him using `PowerShell`
+
+The command has 3 parts:
+1. Fetching all deleted objects: `Get-ADObject -ldapFilter:"(msDS-LastKnownRDN=*)" -IncludeDeletedObjects`
+2. Selecting last one (TempAdmin): `Select -Last 1 `
+3. Restoring It: `Restore-ADObject`
+
+But that fails :/
+
+![attempting-tempadmin-restore](attempting-tempadmin-restore.jpg)
+
+I scratch my head for a while.
+
+But eventually get the idea of checking all the attributes for the `TempAdmin` user.
+
+Just in case he had his password in one of them like the `r.thompson` user or something.
+
+Command: `Get-ADObject -ldapFilter:"(msDS-LastKnownRDN=*)" -IncludeDeletedObjects -Properties * | Select -Last 1`
+
+![temp-admin-password](temp-admin-password.jpg)
+
+Son of a ... It was indeed the case.
+
+And of course, it was base-64 encoded.
+
+We decode it and use with the `Administrator` user since that's what mentioned in the email:
+
+```
+Username is TempAdmin (password is the same as the normal admin account password)
+```
+
+![got-admin-at-last](got-admin-at-last.jpg)
+
+And we finally owned the box after all following those breadcrumbs XD
