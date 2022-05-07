@@ -287,8 +287,8 @@ We're going to use the `sqlite3` command-line utility to check out the database 
 1. we list the tables with: `.tables`
 2. we get the schema using `.schema`
 3. we notice the `pwd` field in the `Ldap` table and select everything from it.
-4. we get all contents from the `DeletedUserAudit` table but find no new data.
-5. we find no data in the `Misc` table as well
+4. no new data was found in `DeletedUserAudit` table.
+5. same for the `Misc` table as well.
 
 ![sqlite-db-enumeration](sqlite-db-enumeration.jpg)
 
