@@ -322,7 +322,7 @@ A great deal of information is present regarding the encryption:
 
 We need just the key to be able to decrypt the `ArkSvc` password found in the DB. Or so we hope :D
 
-We find the key in the `.exe` code
+We find the it in the `.exe` code
 
 ![dnspy-casc-exe](dnspy-casc-exe.jpg)
 
