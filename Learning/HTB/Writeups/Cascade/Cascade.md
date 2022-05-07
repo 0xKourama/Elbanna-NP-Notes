@@ -87,8 +87,8 @@ Having the port data, we go over our gameplan:
 			2. Edit Scripts
 5. got AD creds?
 	1. BloodHound
-		1. DCSync users
-		2. High priv group membership
-		3. ACL attacks and permissions abuse
+		1. DCSync users?
+		2. High priv group membership?
+		3. ACL attacks and permissions abuse?
 	2. Got creds? + Old DC?
 		1. MS14-068
