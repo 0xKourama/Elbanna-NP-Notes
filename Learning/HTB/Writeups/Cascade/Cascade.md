@@ -256,6 +256,10 @@ He also has **WinRM** access :D
 
 ![steve-winrm-access](steve-winrm-access.jpg)
 
+The user flag is the only significant thing that we found using his shell access.
+
+Running **WinPeas** didn't pick up anything either. So we took a step back to check his **SMB** access.
+
 ### Steve's SMB access: The `Audit$` Share
 Using `crackmapexec` with the `--shares` flag, we get the below:
 
