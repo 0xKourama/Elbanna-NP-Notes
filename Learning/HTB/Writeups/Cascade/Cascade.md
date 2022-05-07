@@ -263,7 +263,7 @@ From the SQLite `.dll` files, we infer that the `.db` file is of that type. We c
 ![check-out-the-db](check-out-the-db.jpg)
 
 ### DB Enumeration
-We're going to use a command-line utility `sqlite3` to check out the database contents.
+We're going to use the `sqlite3` command-line utility to check out the database contents.
 
 1. we list the tables with: `.tables`
 2. we get the schema using `.schema`
