@@ -348,7 +348,7 @@ The user `ArkSvc` authenticates successfully with the `w3lc0meFr31nd` password a
 
 ![s-smith-group-membership](s-smith-group-membership.jpg)
 
-The **Recycle Bin** of **Active Directory** is important because it contains the `TempAdmin` user.
+The **Recycle Bin** of **Active Directory** is important in our case because it contains the `TempAdmin` user.
 
 We don't know his password yet. But it might be similar to any of the ones we found.
 
