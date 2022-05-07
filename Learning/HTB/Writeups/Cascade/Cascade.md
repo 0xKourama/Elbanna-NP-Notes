@@ -98,9 +98,9 @@ Host script results:
 		1. MS14-068
 
 ### Down to business: RPC
-`enum4linux-ng` (https://github.com/cddmp/enum4linux-ng) is a really nice revamp of the old `enum4linux`.
+`enum4linux-ng` (https://github.com/cddmp/enum4linux-ng) is a really nice revamp of the old `enum4linux` tool.
 
-we run it using the `-A` switch as well as the `-oY` to output into **YAML format**.
+we run it using the `-A` switch as well as `-oY` to output into **YAML format**.
 
 Command: `enum4linux-ng -A 10.10.10.182 -oY e4lng-output`
 
@@ -121,7 +121,7 @@ we get a bunch of cool stuff:
 This is great! We have a userlist that we can use to do **ASREPRoasting** and we can do **Password Spraying** without locking anyone out.
 
 ### ASREPRoasting
-*To save time,* we're going to do the **ASREPRoast** frist because it's a quick check and has a high chance of giving us creds if we can crack the hash.
+*To save time,* we're going to do the **ASREPRoast** first because it's a quick check and has a high chance of giving us creds (*if we crack the hash*).
 
 Command: `GetNPUsers.py -dc-ip 10.10.10.182 -request -debug -usersfile users.txt cascade.local/`
 
@@ -144,7 +144,7 @@ it will spray using common passwords and only show us the output if it catches s
 
 This is *mainly* to avoid filling up the screen with junk.
 
-Note on the error we get when ASREPRoasting:
+Note on the error we get when **ASREPRoasting:**
 
 *Upon spraying,* we know that the users that got the `KDC_ERR_CLIENT_REVOKED` were in fact locked out.
 
@@ -181,6 +181,8 @@ we're going to use a `grep` with some **Regex Kung Fu** to get rid of any unnece
 We then follow up with a `sort` using the `-u` flag to get *only the signicant attributes.*
 
 ![regex-kung-fu](regex-kung-fu.jpg)
+
+100 lines is much better XD
 
 *While sifting through the attributes,* we came across this:
 
