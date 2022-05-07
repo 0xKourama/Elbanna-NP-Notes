@@ -122,7 +122,7 @@ we get a bunch of cool stuff:
 
 This is great! We have a userlist that we can use to do **ASREPRoasting** and we can do **Password Spraying** without locking anyone out.
 
-### ASREPRoasting
+### Time Saving #1: ASREPRoasting
 *To save time,* we're going to do the **ASREPRoast** first because it's a quick check and has a high chance of giving us creds (*if we crack the hash*).
 
 Command: `GetNPUsers.py -dc-ip 10.10.10.182 -request -debug -usersfile users.txt cascade.local/`
@@ -135,7 +135,7 @@ We find no accounts that don't require **kerberoes preauthentication.**
 
 we also notice some accounts got another type of error: `KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)`. *more on those later :)*
 
-### Time Saving: Password Spraying in the background
+### Time Saving #2: Password Spraying in the background
 *Since the password policy contained no user lockout,* we're good to go spraying :D
 
 Command: `for i in $(cat /opt/Seclists/Passwords/Common-Credentials/500-worst-passwords.txt); do kerbrute passwordspray --dc 10.10.10.182 -d cascade.local users.txt $i | grep -oP '\[\+\].*'; done`
