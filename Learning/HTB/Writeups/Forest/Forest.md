@@ -1,4 +1,4 @@
-![forest](forest.png)
+![forest](Forest.png)
 
 ---
 
