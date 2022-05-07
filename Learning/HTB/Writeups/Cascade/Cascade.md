@@ -65,7 +65,7 @@ Host script results:
 2. **Kerberos**
 	1. `kerbrute` user enumeration
 	2. got userlist? -> ASREPRoast
-	2. got userlist? -> password spray
+	2. got userlist? -> Password Spray
 		1. Common Passwords
 		2. Themed Passwords
 		3. User = Pass
@@ -74,7 +74,7 @@ Host script results:
 		2. Password Reuse
 		3. Password List Regeneration
 3. **SMB**
-	1. `crackmapexec` share enumeration
+	1. `crackmapexec` Share Enumeration
 		1. Null
 		2. Guest
 		3. Anonymous
