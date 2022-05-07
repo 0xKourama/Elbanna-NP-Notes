@@ -10,7 +10,7 @@
 - We also find two files `CascAudit.exe` and `CasCrypto.dll` which we reverse to find the necessary information to decrypt the `arksvc` password.
 - We authenticate as the `arksvc` user and find that he's a member of a special group: `AD Recycle Bin`.
 - *Combining this information with the e-mail contents,* we're enticed to check the deleted AD users.
-- *Using* **PowerShell** *to fetch the deleted users with all their properties,* we find the password for the `Administrator` account in the same unique attribute for the `TempAdmin` user. We use it to authenticate and we gain **full access** to the machine.
+- *Using* **PowerShell** *to fetch the deleted users with all their properties,* we find the password for the `Administrator` account in a unique attribute of the `TempAdmin` user. We use it to authenticate and we gain **full access** to the machine.
 
 ---
 
