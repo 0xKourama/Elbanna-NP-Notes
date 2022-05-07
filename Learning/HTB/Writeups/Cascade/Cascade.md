@@ -364,4 +364,4 @@ Username is TempAdmin (password is the same as the normal admin account password
 
 ![got-admin-at-last](got-admin-at-last.jpg)
 
-And we finally owned the box after all following those breadcrumbs XD
+And we finally own the box after following all those breadcrumbs XD
