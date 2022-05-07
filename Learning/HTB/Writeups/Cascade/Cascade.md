@@ -320,7 +320,7 @@ A great deal of information is present regarding the encryption:
 4. **Initialization Vector (IV):** `1tdyjCbY1Ix49842`
 5. **Mode:** CBC
 
-only the key is left to be able to decrypt the `ArkSvc` password found in the DB. Or so we hope :D
+We need just the key to be able to decrypt the `ArkSvc` password found in the DB. Or so we hope :D
 
 We find the key in the `.exe` code
 
