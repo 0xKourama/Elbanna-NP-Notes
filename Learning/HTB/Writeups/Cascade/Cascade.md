@@ -373,7 +373,7 @@ Command: `Get-ADObject -ldapFilter:"(msDS-LastKnownRDN=*)" -IncludeDeletedObject
 
 ![temp-admin-password](temp-admin-password.jpg)
 
-Son of a ... It was indeed the case XDD
+Son of a ... It was indeed the case XD
 
 *And of course,* it was base-64 encoded.
 
