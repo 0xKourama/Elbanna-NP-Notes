@@ -131,7 +131,7 @@ Note: I generally prefer to user the `-debug` flag. It can save me a lot of time
 
 We find no accounts that don't require kerberoes preauthentication.
 
-we also notice some accounts did get another type of error: `KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)`. more on that later :)
+we also notice some accounts did get another type of error: `KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)`. more on those later :)
 
 ### Time Saving: Password Spraying in the background
 Since the password policy contained to user lockout, we're good to go spraying :D
