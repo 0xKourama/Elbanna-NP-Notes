@@ -58,20 +58,21 @@ From `nmap` version detection and scripts:
 Having the port data, we go over our gameplan:
 1. RPC
 	1. `enum4linux-ng`
-		1. userlist
-		2. password policy
+		1. Userlist
+		2. Group list
+		2. Password Policy
 2. Kerberos
 	1. `kerbrute` user enumeration
 	2. got userlist? -> ASREPRoast
 	2. got userlist? -> password spray
 		1. Common Passwords
 		2. Themed Passwords
+		3. User = Pass
 	3. got working creds?
 		1. Kerberoast
 		2. Password Reuse
-3. LDAP
-	1. `ldapsearch`
-4. SMB
+		3. Password List Regeneration
+3. SMB
 	1. `crackmapexec` share enumeration
 		1. Null
 		2. Guest
@@ -84,7 +85,9 @@ Having the port data, we go over our gameplan:
 			4. Alternate Data Streams?
 		2. Write?
 			1. SCF Attack
-			2. Edit Scripts
+			2. Scripts? -> Abuse
+4. LDAP
+	1. `ldapsearch`
 5. got AD creds?
 	1. BloodHound
 		1. DCSync users?
@@ -92,3 +95,135 @@ Having the port data, we go over our gameplan:
 		3. ACL attacks and permissions abuse?
 	2. Got creds? + Old DC?
 		1. MS14-068
+
+### Down to business: RPC
+`enum4linux-ng` (https://github.com/cddmp/enum4linux-ng) is a really nice revamp of the old `enum4linux`.
+
+we run it using the `-A` switch as well as the `-oY` to output into YAML format.
+
+Command: `enum4linux-ng -A 10.10.10.182 -oY e4lng-output`
+
+we get a bunch of cool stuff:
+
+1. usernames:
+
+![e4lng-output-users](e4lng-output-users.jpg)
+
+2. groups:
+
+![e4lng-output-groups](e4lng-output-groups.jpg)
+
+3. password policy:
+
+![e4lng-output-pass-pol](e4lng-output-pass-pol.jpg)
+
+This is great! We have a userlist that we can use to do ASREPRoasting and we can do Password Spraying without locking anyone out.
+
+### ASREPRoasting
+To save time, we're going to do the ASREPRoast because it's a quick check and has a high change of giving us creds if we can crack the hash.
+
+Command: `GetNPUsers.py -dc-ip 10.10.10.182 -request -debug -usersfile users.txt cascade.local/`
+
+Note: I generally prefer to user the `-debug` flag. It can save me a lot of time in troubleshooting.
+
+![asreproast-results](asreproast-results.jpg)
+
+We find no accounts that don't require kerberoes preauthentication.
+
+we also notice some accounts did get another type of error: `KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)`. more on that later :)
+
+### Time Saving: Password Spraying in the background
+Since the password policy contained to user lockout, we're good to go spraying :D
+
+Command: `for i in $(cat /opt/Seclists/Passwords/Common-Credentials/500-worst-passwords.txt); do kerbrute passwordspray --dc 10.10.10.182 -d cascade.local users.txt $i | grep -oP '\[\+\].*'; done`
+
+what this does: it will spray using common passwords and only show us the output if it catches something. This is mainly to avoid filling up the screen with junk.
+
+Note on the error we get when ASREPRoasting: we know during spraying that the users that got the `KDC_ERR_CLIENT_REVOKED` were in fact locked out.
+
+![locked-out-users](locked-out-users.jpg)
+
+### SMB Enumeration
+While we have our spray running, we're going to enumerate SMB shares using `crackmapexec`
+
+![crackmapexec-smb-enum](crackmapexec-smb-enum.jpg)
+
+Notice that we test with the `cascguest` user on the 3rd attempt. This is because it was there in the `enum4linux-ng` output.
+
+![casc-guest](casc-guest.jpg)
+
+### LDAP
+We're going to enumerate LDAP and see if we can find something there.
+
+Command: `ldapsearch -x -H ldap://10.10.10.182 -b 'dc=cascade,dc=local'`
+
+The output was huge. So we can saved it to `ldap-output`
+
+![ldap-output-huge](ldap-output-huge.jpg)
+
+we're going to use a `grep` with some Regex kung fu to get rid of any unnecessary information.
+
+Regex: `^\w+:`
+
+English: Get us any line that starts with a bunch of characters followed by a semicolon.
+
+We then follow up with a `sort` using the `-u` flag to get only unique attributes.
+
+![regex-kung-fu](regex-kung-fu.jpg)
+
+While we were filtering the attributes, we came across this:
+
+![ldap-uniq-attrib](ldap-uniq-attrib.jpg)
+
+![ldap-uniq-attrib-val](ldap-uniq-attrib-val.jpg)
+
+Since it had an `=` at the end, we try to decode it using `base64 -d`
+
+![ldap-uniq-attrib-pass-decoded](ldap-uniq-attrib-pass-decoded.jpg)
+
+This attribute belonged to the `r.thompson` user.
+
+We succeed when using it for authentication. But get no code execution with WinRM :/
+
+![ryan-creds-check](ryan-creds-check.jpg)
+
+### Kerberoasting
+With the same strategy as before, we're going to kerberoast.
+
+![kerberoasting](kerberoasting.jpg)
+
+No results there.
+
+### SMB Access with `R.Thompson`
+We're going to user a `crackmapexec` module called `spider_plus`.
+
+It essentially crawls the `SMB` share and returns a list of files that we have access to.
+
+![cme-spider-plus](cme-spider-plus.jpg)
+
+Here's what it found:
+
+![cme-spider-plus-results](cme-spider-plus-results.jpg)
+
+In the `Data` share, the contents of the `Meeting_Notes_June_2018.html` are interesting:
+
+![email-contents](email-contents.jpg)
+
+When we look at the `ArkAdRecycleBin.log` we get a confirmation that the `TempAdmin` user has been deleted.
+
+![ark-ad-recycle-bin](ark-ad-recycle-bin.jpg)
+
+We find something very intersting in the `VNC Install.reg` file:
+
+![tight-vnc-password](tight-vnc-password.jpg)
+
+### Cracking VNC Passwords
+We're interesting in cracking this VNC password and reusing it.
+
+Luckily, a tool called `vncpwd` (https://github.com/jeroennijhof/vncpwd) can easily do that.
+
+we clone the repo using `git clone https://github.com/jeroennijhof/vncpwd` and follow up with a `make` command to build it.
+
+We then get the hex string and reverse it with `xxd` using the `-r` and `-p` flags. And follow up with decrypting it.
+
+![vnc-pwd-cracked](vnc-pwd-cracked.jpg)
