@@ -194,6 +194,10 @@ With the same strategy as before, we're going to kerberoast.
 
 No results there.
 
+### Enhanced Spraying with Password Pattern Recognition
+
+
+
 ### SMB Access with `R.Thompson`
 We're going to user a `crackmapexec` module called `spider_plus`.
 
@@ -224,6 +228,6 @@ Luckily, a tool called `vncpwd` (https://github.com/jeroennijhof/vncpwd) can eas
 
 we clone the repo using `git clone https://github.com/jeroennijhof/vncpwd` and follow up with a `make` command to build it.
 
-We then get the hex string and reverse it with `xxd` using the `-r` and `-p` flags. And follow up with decrypting it.
+We then get the hex string and reverse it with `xxd` using the `-r` and `-p` flags before decrypting it.
 
 ![vnc-pwd-cracked](vnc-pwd-cracked.jpg)
