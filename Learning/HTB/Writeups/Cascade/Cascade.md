@@ -286,7 +286,7 @@ We're going to use the `sqlite3` command-line utility to check out the database 
 
 1. we list the tables with: `.tables`
 2. we get the schema using `.schema`
-3. we notice the `pwd` field in the `Ldap` table and select everything from it.
+3. we select everything from the `Ldap` table after noticing the `pwd` field.
 4. no new data was found in `DeletedUserAudit` table.
 5. same for the `Misc` table as well.
 
