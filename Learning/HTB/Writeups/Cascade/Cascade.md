@@ -359,9 +359,9 @@ The command has 3 parts:
 2. Selecting the last one (TempAdmin): `Select -Last 1 `
 3. Restoring It: `Restore-ADObject`
 
-But that fails :/
-
 ![attempting-tempadmin-restore](attempting-tempadmin-restore.jpg)
+
+But that fails :/
 
 I scratch my head for a while...
 
