@@ -57,6 +57,9 @@ Host script results:
 
 ### Checkpoint: Listing Possible Enumeration/Exploitation Paths
 *Having the port data,* we go over our **game plan**:
+
+![ad-gameplan-map](ad-gameplan-map.jpg)
+
 1. **RPC**
 	1. `enum4linux-ng`
 		1. Userlist
@@ -69,10 +72,6 @@ Host script results:
 		1. Common Passwords
 		2. Themed Passwords
 		3. User = Pass
-	3. got working creds?
-		1. Kerberoast
-		2. Password Reuse
-		3. Password List Regeneration
 3. **SMB**
 	1. `crackmapexec` Share Enumeration
 		1. Null
@@ -90,11 +89,14 @@ Host script results:
 4. **LDAP**
 	1. `ldapsearch`
 5. **Got AD creds?**
-	1. BloodHound
+	1. Kerberoast
+	2. Password Reuse
+	3. Password Pattern Recognition + Password List Regeneration
+	4. BloodHound
 		1. DCSync users?
 		2. High priv group membership?
 		3. ACL attacks and permissions abuse?
-	2. Got creds? + Old DC?
+	5. Old DC?
 		1. MS14-068
 
 ### Down to business: RPC
