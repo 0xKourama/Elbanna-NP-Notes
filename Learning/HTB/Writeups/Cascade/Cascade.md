@@ -47,6 +47,7 @@ Host script results:
 |_  start_date: 2022-05-06T10:54:20
 ```
 DNS + Kerberos + LDAP + SMB = Domain Controller :D
+
 WinRM = Shell Access maybe :)
 
 From `nmap` version detection and scripts:
