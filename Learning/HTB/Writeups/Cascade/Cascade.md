@@ -3,7 +3,7 @@
 - **LDAP Enumeration** reveals a *base-64 encoded* password which was *embedded* in a unique **Active Directory** user attribute.
 - Decoding the password grants us access to the `r.thompson` user who happens to have `read` access to the `data` **SMB** share.
 - *Exploring the share,* we find a `VNC`-related `.reg` file which contains an encrypted password in hexadecimal format.
-- We also find an e-mail about a *deleted* `TempAdmin` who has a similar password to the normal (admin) user.
+- We also find an e-mail about a *deleted* user (`TempAdmin`) who has a similar password to the normal (admin) user.
 - *After we crack the password with a tool called* `vncpwd`, we gain access to the `s.smith` user.
 - *While enumerating SMB access for* `s.smith`, we find that he has `read` access to the `audit` share.
 - The `audit` share contained an `sqlite3` database file. *When enumerating it,* we find an encrypted password for the `arksvc` user.
