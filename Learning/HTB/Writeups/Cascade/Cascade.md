@@ -56,7 +56,6 @@ From `nmap` version detection and scripts:
 
 ### Checkpoint: Listing Possible Enumeration/Exploitation Paths
 Having the port data, we go over our gameplan:
-```
 1. RPC
 	1. `enum4linux-ng`
 		1. userlist
@@ -93,5 +92,3 @@ Having the port data, we go over our gameplan:
 		3. ACL attacks and permissions abuse
 	2. Got creds? + Old DC?
 		1. MS14-068
-
-```
