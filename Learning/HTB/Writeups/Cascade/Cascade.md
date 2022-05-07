@@ -89,7 +89,7 @@ Host script results:
 			2. Scripts? -> Abuse
 4. **LDAP**
 	1. `ldapsearch`
-5. **got AD creds?**
+5. **Got AD creds?**
 	1. BloodHound
 		1. DCSync users?
 		2. High priv group membership?
@@ -168,45 +168,45 @@ We're going to enumerate **LDAP** and see if we can find something there.
 
 Command: `ldapsearch -x -H ldap://10.10.10.182 -b 'dc=cascade,dc=local'`
 
-The output was huge. So we saved it to `ldap-output`
+The output was huge (6k+ lines). So we saved it to `ldap-output`
 
 ![ldap-output-huge](ldap-output-huge.jpg)
 
-we're going to use a `grep` with some Regex kung fu to get rid of any unnecessary information.
+we're going to use a `grep` with some **Regex Kung Fu** to get rid of any unnecessary information.
 
-Regex: `^\w+:`
+**Regex:** `^\w+:`
 
-English: Get us any line that starts (`^`) with a bunch of characters (`\w+`) followed by a semicolon (`:`).
+**English:** Get us any line that starts (`^`) with a bunch of characters (`\w+`) followed by a semicolon (`:`).
 
-We then follow up with a `sort` using the `-u` flag to get only unique attributes.
+We then follow up with a `sort` using the `-u` flag to get *only the signicant attributes.*
 
 ![regex-kung-fu](regex-kung-fu.jpg)
 
-While we were filtering the attributes, we came across this:
+*While sifting through the attributes,* we came across this:
 
 ![ldap-uniq-attrib](ldap-uniq-attrib.jpg)
 
 ![ldap-uniq-attrib-val](ldap-uniq-attrib-val.jpg)
 
-Since it had an `=` at the end, we try to decode it using `base64 -d`
+*Since it has an* `=` *at the end,* we try to decode it using `base64 -d`
 
 ![ldap-uniq-attrib-pass-decoded](ldap-uniq-attrib-pass-decoded.jpg)
 
 This attribute belonged to the `r.thompson` user.
 
-We succeed when using it for authentication. But get no code execution with WinRM :/
+Authentication succeded with it. But we didn't get code execution with **WinRM** :/
 
 ![ryan-creds-check](ryan-creds-check.jpg)
 
 ### Kerberoasting
-With the same strategy as before, we're going to kerberoast.
+*Applying the same strategy as before,* we're going to **kerberoast.**
 
 ![kerberoasting](kerberoasting.jpg)
 
 No results there.
 
 ### SMB Access with `R.Thompson`
-We're going to user a `crackmapexec` module called `spider_plus`.
+We're going to use a `crackmapexec` module called `spider_plus`.
 
 It essentially crawls the `SMB` share and returns a list of files that we have access to.
 
@@ -216,11 +216,11 @@ Here's what it found:
 
 ![cme-spider-plus-results](cme-spider-plus-results.jpg)
 
-In the `Data` share, the contents of the `Meeting_Notes_June_2018.html` are interesting:
+*In the* `Data` *share,* the contents of the `Meeting_Notes_June_2018.html` were interesting:
 
 ![email-contents](email-contents.jpg)
 
-When we look at the `ArkAdRecycleBin.log` we get a confirmation that the `TempAdmin` user has been deleted.
+When we look at the `ArkAdRecycleBin.log` we get a confirmation that the `TempAdmin` user has in fact been deleted.
 
 ![ark-ad-recycle-bin](ark-ad-recycle-bin.jpg)
 
@@ -229,24 +229,24 @@ We find something very intersting in the `VNC Install.reg` file:
 ![tight-vnc-password](tight-vnc-password.jpg)
 
 ### Cracking VNC Passwords
-We're interesting in cracking this VNC password and reusing it.
+We're interested in cracking this **VNC** password and reusing it.
 
-Luckily, a tool called `vncpwd` (https://github.com/jeroennijhof/vncpwd) can easily do that.
+*Luckily,* a tool called `vncpwd` (https://github.com/jeroennijhof/vncpwd) can easily do that.
 
 we clone the repo using `git clone https://github.com/jeroennijhof/vncpwd` and follow up with a `make` command to build it.
 
-We then get the hex string and reverse it with `xxd` using the `-r` and `-p` flags before decrypting it.
+We then get the hex string, reverse it with `xxd` using the `-r` and `-p` flags and decrypt it.
 
 ![vnc-pwd-cracked](vnc-pwd-cracked.jpg)
 
 ### Password Reuse
-Having a new password `sT333ve2` we're going to to spray it all over the domain users we've collected.
+*Having a new password* `sT333ve2`, we're going to to spray it all over the domain users we've collected.
 
 ![steve-ad-user-owned](steve-ad-user-owned.jpg)
 
-As expected, the password belonged to the `s.smith` user.
+*As expected,* the password belonged to the `s.smith` user.
 
-He also has WinRM access :D
+He also has **WinRM** access :D
 
 ![steve-winrm-access](steve-winrm-access.jpg)
 
@@ -261,11 +261,13 @@ and list the files with: `find /mnt -type f 2>/dev/null`
 
 ![mount-and-find](mount-and-find.jpg)
 
-Checking the `.bat` file, we find that the executable `CascAudit.exe` runs with an argument `"\\CASC-DC1\Audit$\DB\Audit.db"`
+Checking the `.bat` file, we find that the executable `CascAudit.exe` runs with a database as an argument `"\\CASC-DC1\Audit$\DB\Audit.db"`
 
 ![audit-bat-file](audit-bat-file.jpg)
 
-From the SQLite `.dll` files, we infer that the `.db` file is of that type. We confirm that with `file`
+*From the* **SQLite** `.dll` *files,* we infer that the `.db` file is of that type.
+
+We confirm that with `file`:
 
 ![check-out-the-db](check-out-the-db.jpg)
 
@@ -275,38 +277,38 @@ We're going to use the `sqlite3` command-line utility to check out the database 
 1. we list the tables with: `.tables`
 2. we get the schema using `.schema`
 3. we notice the `pwd` field in the `Ldap` table and select everything from it.
-4. we get all contents from the `DeletedUserAudit` table and find no new data.
-5. we find no data in the `Misc` table
+4. we get all contents from the `DeletedUserAudit` table but find no new data.
+5. we find no data in the `Misc` table as well
 
 ![sqlite-db-enumeration](sqlite-db-enumeration.jpg)
 
-We find a password in the `Ldap` table that appears to be for the `ArkSvc` user.
+The password we found in the `Ldap` table appears to be for the `ArkSvc` user.
 
 Decoding it as base-64 gives us strange output. It must be encrypted.
 
 ![ark-svc-b64-attempt](ark-svc-b64-attempt.jpg)
 
 ### Reversing the `CascAudit.exe` and `.dll` files
-Since the `.bat` file showed the `CascAudit.exe` processing the Audit database, we're interested to know how it works.
+*Since the* `.bat` *file showed the* `CascAudit.exe` *processing the Audit database,* we're interested to know how it works.
 
-We're also very interested in knowing more about the `CascCrypto.dll` because its name suggests being related to the encryption.
+The same goes for `CascCrypto.dll`. *Judging by its name,* it's very likely related to the encryption.
 
 Doing a `file` command against the `CascAudit` files tells us they are built with `.Net`
 
 ![inspecting-cascaudit-files](inspecting-cascaudit-files.jpg)
 
-Thankfully, an amazing tool called `DNSpy` (https://github.com/dnSpy/dnSpy) is excellent in reversing `.Net`
+*Thankfully,* an amazing tool called `DNSpy` (https://github.com/dnSpy/dnSpy) is excellent in reversing `.Net`
 
 Opening the `CascCrypto.dll` shows two important functions: `EncryptString` and `DecryptString`
 
 ![dnspy-casc-crypto-dll](dnspy-casc-crypto-dll.jpg)
 
 A great deal of information is present regarding the encryption:
-1. Type: AES
-2. BlockSize: 128-bit
-3. KeySize: 128-bit
-4. Initialization Vector: `1tdyjCbY1Ix49842`
-5. Mode: CBC
+1. **Type:** AES
+2. **BlockSize:** 128-bit
+3. **KeySize:** 128-bit
+4. **Initialization Vector (IV):** `1tdyjCbY1Ix49842`
+5. **Mode:** CBC
 
 only the key is left to be able to decrypt the `ArkSvc` password found in the DB. Or so we hope :D
 
@@ -314,12 +316,12 @@ We find the key in the `.exe` code
 
 ![dnspy-casc-exe](dnspy-casc-exe.jpg)
 
-it is: `c4scadek3y654321`
+it's `c4scadek3y654321`
 
-It seems that the `.exe` reads the encrypted password and decrypts using the `DecryptString` function before moving on to carry out its task.
+*Looking at the code,* it seems that the `.exe` reads the encrypted password from the database and decrypts it using the `DecryptString` function before moving on to carry out its tasks.
 
 ### AES-CBC-128 Decryption
-Adding the details we found into an online decryption tool (https://www.devglan.com/online-tools/aes-encryption-decryption), we get the plaintext: `w3lc0meFr31nd`
+*Adding the details we found into an* **online decryption tool** (https://www.devglan.com/online-tools/aes-encryption-decryption), we get the plaintext: `w3lc0meFr31nd`
 
 ![aes-cbc-128-decryption](aes-cbc-128-decryption.jpg)
 
@@ -328,21 +330,23 @@ The user `ArkSvc` authenticates successfully with the `w3lc0meFr31nd` password a
 
 ![ark-svc-got-winrm](ark-svc-got-winrm.jpg)
 
-The group membership of this user is very interesting:
+*While doing some basic privesc checks*, we notice that the group membership of this user is unique:
 
 ![ark-svc-group-membership](ark-svc-group-membership.jpg)
 
-`s.smith` didn't have this access:
+`s.smith` didn't have this access.
 
 ![s-smith-group-membership](s-smith-group-membership.jpg)
 
-we're interested in the Recycle Bin of Active Directory because it has the `TempAdmin` user who might have a similar password to what we have.
+The Recycle Bin of Active Directory is important because it contains the `TempAdmin` user.
+
+We don't know his password yet. But it might be similar to any of the ones we found.
 
 We try restoring him using `PowerShell`
 
 The command has 3 parts:
 1. Fetching all deleted objects: `Get-ADObject -ldapFilter:"(msDS-LastKnownRDN=*)" -IncludeDeletedObjects`
-2. Selecting last one (TempAdmin): `Select -Last 1 `
+2. Selecting the last one (TempAdmin): `Select -Last 1 `
 3. Restoring It: `Restore-ADObject`
 
 But that fails :/
@@ -353,7 +357,7 @@ I scratch my head for a while...
 
 But eventually get the idea of checking all the attributes for the `TempAdmin` user.
 
-Just in case he had his password in one of them like the `r.thompson` user or something.
+Just in case his password was in one of them. Just like the `r.thompson` user or something.
 
 Command: `Get-ADObject -ldapFilter:"(msDS-LastKnownRDN=*)" -IncludeDeletedObjects -Properties * | Select -Last 1`
 
@@ -361,9 +365,9 @@ Command: `Get-ADObject -ldapFilter:"(msDS-LastKnownRDN=*)" -IncludeDeletedObject
 
 Son of a ... It was indeed the case XDD
 
-And of course, it was base-64 encoded.
+*And of course,* it was base-64 encoded.
 
-We decode it and use it with the `Administrator` user since that's what was mentioned in the email:
+We decode it and try it with the `Administrator` user as mentioned in the email:
 
 ```
 Username is TempAdmin (password is the same as the normal admin account password)
