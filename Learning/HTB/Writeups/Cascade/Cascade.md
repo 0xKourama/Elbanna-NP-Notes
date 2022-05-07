@@ -231,3 +231,88 @@ we clone the repo using `git clone https://github.com/jeroennijhof/vncpwd` and f
 We then get the hex string and reverse it with `xxd` using the `-r` and `-p` flags before decrypting it.
 
 ![vnc-pwd-cracked](vnc-pwd-cracked.jpg)
+
+### Password Reuse
+Having a new password `sT333ve2` we're going to to spray it all over the domain users we've collected.
+
+![steve-ad-user-owned](steve-ad-user-owned.jpg)
+
+As expected, the password belonged to the `s.smith` user.
+
+He also has WinRM access :D
+
+![steve-winrm-access](steve-winrm-access.jpg)
+
+### Steve's SMB access: The `Audit$` Share
+Using `crackmapexec` with the `--shares` flag, we get the below:
+
+![steve-smb-access](steve-smb-access.jpg)
+
+we mount the share with: `mount -t cifs -o 'username=s.smith,password=sT333ve2' //10.10.10.182/Audit$ /mnt`
+
+and list the files with: `find /mnt -type f 2>/dev/null`
+
+![mount-and-find](mount-and-find.jpg)
+
+Checking the `.bat` file, we find that the executable `CascAudit.exe` runs with an argument `"\\CASC-DC1\Audit$\DB\Audit.db"`
+
+![audit-bat-file](audit-bat-file.jpg)
+
+From the SQLite `.dll` files, we infer that the `.db` file is of that type. We confirm that with `file`
+
+![check-out-the-db](check-out-the-db.jpg)
+
+### DB Enumeration
+We're going to use a command-line utility `sqlite3` to check out the database contents.
+
+1. we list the tables with: `.tables`
+2. we get the schema using `.schema`
+3. we notice the `pwd` field in the `Ldap` table and select everything from it.
+4. we get all contents from the `DeletedUserAudit` table and find no new data.
+5. we find no data in the `Misc` table
+
+![sqlite-db-enumeration](sqlite-db-enumeration.jpg)
+
+We find a password in the `Ldap` table that appears to be for the `ArkSvc` user.
+
+Decoding it as base-64 gives us strange output. It must be encrypted.
+
+![ark-svc-b64-attempt](ark-svc-b64-attempt.jpg)
+
+### Reversing the `CascAudit.exe` and `.dll` files
+Since the `.bat` file showed the `CascAudit.exe` processing the Audit database, we're interested to know how it works.
+
+We're also very interested in knowing more about the `CascCrypto.dll` because its name suggests being related to the encryption.
+
+Doing a `file` command against the `CascAudit` files tells us they are built with `.Net`
+
+![inspecting-cascaudit-files](inspecting-cascaudit-files.jpg)
+
+Thankfully, an amazing tool called `DNSpy` (https://github.com/dnSpy/dnSpy) is excellent in reversing `.Net`
+
+Opening the `CascCrypto.dll` shows two important functions: `EncryptString` and `DecryptString`
+
+![dnspy-casc-crypto-dll](dnspy-casc-crypto-dll.jpg)
+
+A great deal of information is present regarding the encryption:
+1. Type: AES
+2. BlockSize: 128-bit
+3. KeySize: 128-bit
+4. Initialization Vector: `1tdyjCbY1Ix49842`
+5. Mode: CBC
+
+only the key is left to be able to decrypt the `ArkSvc` password found in the DB. Or so we hope :D
+
+We find the key in the `.exe` code
+
+![dnspy-casc-exe](dnspy-casc-exe.jpg)
+
+it is: `c4scadek3y654321`
+
+It seems that the `.exe` reads the encrypted password and decrypts using the `DecryptString` function before moving on to carry out its task.
+
+### AES-CBC-128 Decryption
+Adding the details we found into an online decryption tool, we get the plaintext: `w3lc0meFr31nd`
+
+![aes-cbc-128-decryption](aes-cbc-128-decryption.jpg)
+
