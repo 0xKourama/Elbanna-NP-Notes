@@ -309,7 +309,7 @@ Doing a `file` command against the `CascAudit` files tells us they are built wit
 
 *Because of an amazing tool called* `DNSpy` (https://github.com/dnSpy/dnSpy), reversing `.Net` is simple.
 
-Opening the `CascCrypto.dll` shows two important functions: `EncryptString` and `DecryptString`
+Opening the `CascCrypto.dll` with `DNSpy.exe` shows two important functions: `EncryptString` and `DecryptString`
 
 ![dnspy-casc-crypto-dll](dnspy-casc-crypto-dll.jpg)
 
