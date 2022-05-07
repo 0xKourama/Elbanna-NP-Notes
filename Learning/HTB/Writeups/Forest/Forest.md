@@ -1,3 +1,7 @@
+![forest](forest.png)
+
+---
+
 ### Summary
 - A Domain Controller machine. **Anonymous LDAP** is enabled which we use to get **a full list of AD users**.
 - *After performing an* **ASREPRoast attack**, we end up with a user that has **PowerShell Remoting Access**.
