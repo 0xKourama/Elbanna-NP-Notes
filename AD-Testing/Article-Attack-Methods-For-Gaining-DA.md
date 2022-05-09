@@ -112,3 +112,15 @@ https://www.dsinternals.com/en/dumping-ntds-dit-files-using-powershell/
 Extracting the hashes from the NTDS.dit file requires the bootkey which is present in the system registry hive.
 
 ### Shadow Credentials
+The symmetric key (secret key) approach, which is the one most widely used and known, uses a symmetric key derived from the client’s password, AKA secret key.
+If using RC4 encryption, this key would be the NT hash of the client’s password.
+
+### PKINIT
+PKINIT is the less common, asymmetric key (public key) approach.
+The client has a public-private key pair, and encrypts the pre-authentication data with their private key, and the KDC decrypts it with the client’s public key.
+The KDC also has a public-private key pair, allowing for the exchange of a session key using one of two methods:
+
+### This means that if you can write to the msDS-KeyCredentialLink property of a user, you can obtain a TGT for that user.
+
+### Note: Using inactive users in attacks
+If we compromise users in AD, we're good to find the inactive users and use them .. so as not to alarm a user.
