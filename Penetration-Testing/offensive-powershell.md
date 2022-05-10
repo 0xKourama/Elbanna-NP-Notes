@@ -20,8 +20,14 @@
 # Get Process Architecture
 `[Environment]::Is64BitProcess`
 
+# Locally listening ports (TCP)
+`netstat -ano -p tcp`
+
 # Get ACL
 `Get-ACL <PATH_TO_FILE> | Select -Exp AccessToString`
+
+# get file system access
+`$ErrorActionPreference = 'silentlycontinue'; ls -recurse -force | ? {$_.fullname -notmatch 'AppData|Application Data|Local Settings'} | ? {(get-acl $_.fullname ).accesstostring -like '*tushikikatomo*'} | select -expand fullname; $ErrorActionPreference = 'continue'`
 
 # Get Process Owners
 `Get-WmiObject -class win32_process | select name,@{n='owner';e={$_.getowner().user}}`
