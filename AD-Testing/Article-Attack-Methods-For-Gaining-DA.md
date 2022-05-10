@@ -124,3 +124,10 @@ The KDC also has a public-private key pair, allowing for the exchange of a sessi
 
 ### Note: Using inactive users in attacks
 If we compromise users in AD, we're good to find the inactive users and use them .. so as not to alarm a user.
+
+### Note: the bootkey is different on all computers
+*Can be verified using:* https://www.dsinternals.com/en/dumping-ntds-dit-files-using-powershell/
+
+### Note: Known RIDs
+RID 502 is the KRBTGT account
+RID 500 is the default administrator
