@@ -131,3 +131,6 @@ If we compromise users in AD, we're good to find the inactive users and use them
 ### Note: Known RIDs
 RID 502 is the KRBTGT account
 RID 500 is the default administrator
+
+
+Install-Module -Name DSInternals -Force
