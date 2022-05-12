@@ -1,10 +1,10 @@
 # The Attack In Brief
 1. By default, A regular AD user can add up to 10 computers to the domain.
 2. After a user adds a computer to the domain, he becomes its owner.
-3. Being a computer's owner, the user can change the computers `DNSHostname` property
-4. By changing this property to match a domain controller's name, we can request a certificate for it from ADCS.
-5. Using the domain controller's certificate, we can obtain that computer's NTLM hash
-6. with a domain controller's computer account NTLM hash, we can request a complete copy of the domain hashes a.k.a the DCSync attack
+3. Being a computer's owner gives the user the right to change the computers `DNSHostname` property.
+4. By changing this property to be a domain controller's `DNSHostname`, we can request a certificate for it from ADCS.
+5. Using the domain controller's certificate, we can obtain that computer's NTLM hash.
+6. And with that, we can request a complete copy of the domain hashes a.k.a perform a **DCSync** attack.
 
 # Tools Needed
 1. Certipy (https://github.com/ly4k/Certipy)
