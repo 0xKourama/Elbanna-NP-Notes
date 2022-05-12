@@ -1,3 +1,12 @@
+# Outline
+- The attack in brief
+- Tools Needed
+- Lab Setup And Conditions
+- Attack Demonstration
+- Technical Breakdown
+- Mitigation
+- References and Credits
+
 # The Attack In Brief
 1. By default, A regular AD user can add up to 10 computers to the domain.
 2. After a user adds a computer to the domain, he gains the right to change its `DNSHostname` property.
@@ -9,7 +18,7 @@
 1. Certipy (https://github.com/ly4k/Certipy)
 2. Impacket (https://github.com/SecureAuthCorp/impacket)
 
-# Lab setup And Conditions
+# Lab Setup And Conditions
 ## 1. Domain Controller with ADCS Role installed [DC.LAB.Local: 192.168.126.129]
 ![dc-with-adcs-installed](dc-with-adcs-installed.jpg)
 
