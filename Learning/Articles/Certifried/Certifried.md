@@ -51,9 +51,23 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 ![dc-sync-with-dc-ntlm-hash](dc-sync-with-dc-ntlm-hash.jpg)
 
 # Technical Breakdown
-1. the default AD user quota
-2. the permissions for the computer certificate template
-3. the granted ownership that comes with joining a machine to a domain + what we can modify
+## Puzzle Piece #1: The Default Privileges Of A Normal AD User
+In Active Directory, any member of the `Authenticated Users` group is allowed to add up to 10 computers to the domain.
+
+We can verify that by going to `MMC -> ADSI EDIT > DEFAULT NAMING CONTEXT > DOMAIN PROPERTIES`
+
+![machine-account-quota](machine-account-quota.jpg)
+
+## Puzzle Piece #2: The Permissions an AD User Has on The Computer He Joins to the domain
+When a user adds a computer to the domain, he gains a few permissions on it:
+
+![permissions-of-computer-owner](permissions-of-computer-owner.jpg)
+
+## Puzzle Piece #3: the permissions for the computer certificate template
+The computer certificate is accessible to any computer in the Domain Computers Group:
+
+![computer-certificate-template-permissions](computer-certificate-template-permissions.jpg)
+
 4. requesting certs
 5. grabbing the NTLM hash
 
