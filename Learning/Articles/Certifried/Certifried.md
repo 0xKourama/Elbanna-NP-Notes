@@ -14,7 +14,8 @@
 ## 1. Domain Controller with ADCS Role installed [DC.LAB.Local: 192.168.126.129]
 ![dc-with-adcs-installed](dc-with-adcs-installed.jpg)
 
-## 2. Kali machine [192.168.145.128]
+## 2. Kali [192.168.145.128]
+![kali-machine](kali-machine.jpg)
 
 ## 3. Normal User Account (No Special Privileges)
 ![normal-ad-user](normal-ad-user.jpg)
