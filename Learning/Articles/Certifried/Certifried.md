@@ -12,7 +12,7 @@
 9. *When a user joins a computer to the domain,* he can modify its `DNSHostname` property.
 10. *Combining points above,* a user can *spoof* the `DNSHostname` to *forge* a certificate as a **Domain Controller**.
 11. *With a Domain Controller's certificate,* the user *can obtain* the computer account's **NTLM** hash.
-12. *And with that hash,* he can *pose* as a legit **Domain Controller** and *request a full copy of the domain's hashes* (a.k.a **perform a `DCSync` attack**).
+12. *And with that hash,* he can *impersonate* a legit **Domain Controller** and *request a full copy of the domain's hashes* (a.k.a **perform a `DCSync` attack**).
 
 ---
 
