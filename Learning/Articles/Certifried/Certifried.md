@@ -4,18 +4,24 @@
 - Lab Setup And Conditions
 - Attack Demonstration
 - The Exploit as a Conversation
-- The Technical Breakdown
+- Technical Breakdown
 - Mitigation
 - References and Credits
 
 ---
 
 # The Attack In Brief
-1. By default, A regular AD user can add up to 10 computers to the domain.
-2. After a user adds a computer to the domain, he gains the right to change its `DNSHostname` property.
-3. By changing this property to be a domain controller's `DNSHostname`, he can request a certificate for it from ADCS.
-4. Using the domain controller's certificate, we can obtain its NTLM hash.
-5. And with that, we can request a complete copy of the domain hashes a.k.a perform a **DCSync** attack.
+1. AD Certificates can be used for authentication.
+2. Certificates can be generated from templates in a certificate signing request (CSR).
+3. There are two types of templates available in ADCS by default: User and Computer.
+4. Those templates are accessible to anyone in the `Domain Users` or `Domain Computers` groups.
+5. Those templates allow the certificate holder to authenticate with them.
+6. When generating a certificate for a computer object, the template will check its `DNSHostname` property and generate the certificate based on that.
+7. By default, any authenticated user can join up to 10 computers to the domain.
+8. When a user joins a computer to the domain, he can modify its `DNSHostname` property.
+9. Combining the last two points, a user can spoof the DNSHostname to forge a certificate as a domain controller.
+10. with a domain controller's certificate, the user can obtain the computer account's NTLM hash.
+11. And with that hash, can he pose as a domain controller and request a full copy of the domain's hashes (a.k.a perform a `DCSync` attack).
 
 ---
 
@@ -69,72 +75,13 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 
 ---
 
-# The exploit: A Conversation
-\+ **User:** Mr. AD! I heard that I could join 10 computers to the domain without any special privileges. Is this for real?
-
-\- **AD:** Thats right! knock yourself out!
-
-\+ **User:** Yo ADCS! can I request a certificate from you?
-
-\~ **ADCS:** Sure! what do you need this certificate for, user or computer?
-
-\+ **User:** I have my own certificate. Thanks. Can I get that for the computer I just joined to the domain?
-
-\~ **ADCS:** You bet! all domain computers can get their certificate!
-
-\+ **User:** Oh that's great! Alright, i'll need one for my computer here. But can I make its `DNShostname` like this? \*shows domain controller fully-qualified domain name\*
-
-\~ **ADCS:** \*inspects the certificate request closely and looks confused\* Well um... this is weird. But you totally have the permission to do that. \*Hands him a certificate with the domain controllers `DNSHostname` one it\*
-
-\+ **User:** Thank you ADCS! This certificate is good for authentication too, Right?
-
-\~ **ADCS:** That's correct.
-
-\+ **User:** Perfect!
-
-\+ **User:** AD! \*Points to the newly joined computer\*. There's another domain controller here that wants to get a copy of all the passwords. Would that be OK?
-
-\- **AD:** Yea I know that domain controller. \*Sends him a copy of all the domain hashes\*
-
-\+ **User:** Oh you're so generous AD <3
-
-\- **AD:** Just doing my job :D
+# Mitigation
+1. Applying the patch released by Microsoft (https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-26923)
+2. Reduce certificate template permissions.
+3. Reduce the default user's machine quota to zero. Only Administrators should have this privilege
 
 ---
 
-# The Technical Breakdown
-
-## Puzzle Piece #1: About Certificate Templates: The Process, Who's allowed to enroll? what can they do with a certificate?
-Here's the process:
-1. First, a client (User/Computer) generates a public/private key pair.
-2. Second, the client sends a Certificate Signing Request (CSR) to the Enteprise CA Server.
-3. Both the User and Computer Certificate Templates must exist. Because a user client will need to access the User Certificate Template and the same goes for a computer client.
-4. Templates have permissions too. If the template allows the client to request a certificate, he should be good to go and the CA will sign his certificate with its own private key.
-5. After recieving a user/computer certificate, they can both be used for authentication. This is the default.
-6. This authentication is because of the PKINIT kerberos extension. Meaning that: If you have a valid certificate, you can get a TGT.
-
-## Puzzle Piece #2: the permissions for the computer certificate template
-The computer certificate is accessible to any computer in the Domain Computers Group:
-
-![computer-certificate-template-permissions](computer-certificate-template-permissions.jpg)
-
-## Puzzle Piece #3: The Default Privileges Of A Normal AD User
-In Active Directory, any member of the `Authenticated Users` group is allowed to add up to 10 computers to the domain.
-
-We can verify that by going to `MMC -> ADSI EDIT > DEFAULT NAMING CONTEXT > DOMAIN PROPERTIES`
-
-![machine-account-quota](machine-account-quota.jpg)
-
-## Puzzle Piece #4: The Permissions an AD User Has on The Computer He Joins to the domain
-When a user adds a computer to the domain, he gains a few permissions on it:
-
-![permissions-of-computer-owner](permissions-of-computer-owner.jpg)
-
-This allows the user to set the `DNSHostname` property which ADCS uses to generate the certificate.
-
-With a domain controller's certificate, we can request a TGT on its behalf and gain its NTLM hash too.
-
-# mitigation
-
-
-# references and credits
+# References and Credits
+- **Will Schroeder** and **Lee Christensen** who wrote the paper that started it all (https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf)
+- **Oliver Lyak** (https://twitter.com/ly4k_) who discovered and reported the vulnerability and created the Certipy tool.
