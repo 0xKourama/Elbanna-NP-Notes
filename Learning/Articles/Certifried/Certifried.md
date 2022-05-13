@@ -1,15 +1,3 @@
-# Outline
-- The Attack In Brief
-- Tools Needed
-- Lab Setup And Conditions
-- Attack Demonstration
-- The Exploit as a Conversation
-- Technical Breakdown
-- Mitigation
-- References and Credits
-
----
-
 # The Attack In Brief
 1. AD Certificates can be used for authentication.
 2. Certificates can be generated from templates in a certificate signing request (CSR).
