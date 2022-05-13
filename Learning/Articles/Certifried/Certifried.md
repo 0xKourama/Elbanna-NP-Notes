@@ -73,4 +73,5 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 
 # References and Credits
 - **Will Schroeder** and **Lee Christensen** who wrote the paper that started it all (https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf)
-- **Oliver Lyak** (https://twitter.com/ly4k_) who discovered and reported the vulnerability and created the Certipy tool.
+- **Oliver Lyak** (https://twitter.com/ly4k_) who discovered and reported the vulnerability and created the `Certipy` tool.
+- **SecureAuthCorp** for the awesome **Impacket** scripts of course :D
