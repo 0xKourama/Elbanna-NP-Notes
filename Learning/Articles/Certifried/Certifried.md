@@ -5,11 +5,12 @@
 4. Those templates are **accessible to anyone** in the `Domain Users` or `Domain Computers` groups.
 5. Those templates **allow the certificate holder to authenticate** with them.
 6. *When generating a certificate for a computer object*, the template will check its `DNSHostname` property and **will generate the certificate based on that**.
-7. *By default,* **any authenticated user** can join up to 10 computers to the domain.
-8. *When a user joins a computer to the domain,* he can modify its `DNSHostname` property.
-9. *Combining the last two points,* a user can *spoof* the `DNSHostname` to *forge* a certificate as a **Domain Controller**.
-10. *With a Domain Controller's certificate,* the user *can obtain* the computer account's **NTLM** hash.
-11. *And with that hash,* can he *pose* as a legit **Domain Controller** and *request a full copy of the domain's hashes* (a.k.a **perform a `DCSync` attack**).
+7. **Meaning:** *if the computer's* `DNSHostname` *says it's a Domain Controller,* you will get a certificate for a **Domain Controller!**
+8. *By default,* **any authenticated user** can join up to 10 computers to the domain.
+9. *When a user joins a computer to the domain,* he can modify its `DNSHostname` property.
+10. *Combining the last two points,* a user can *spoof* the `DNSHostname` to *forge* a certificate as a **Domain Controller**.
+11. *With a Domain Controller's certificate,* the user *can obtain* the computer account's **NTLM** hash.
+12. *And with that hash,* can he *pose* as a legit **Domain Controller** and *request a full copy of the domain's hashes* (a.k.a **perform a `DCSync` attack**).
 
 ---
 
