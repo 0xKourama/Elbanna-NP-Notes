@@ -1,8 +1,8 @@
 # Outline
 - The Attack In Brief
-- The Tools Needed
+- Tools Needed
 - Lab Setup And Conditions
-- Demonstrating The Attack
+- Attack Demonstration
 - Technical Breakdown
 - Mitigation
 - References and Credits
@@ -18,7 +18,7 @@
 
 ---
 
-# The Needed Tools
+# Tools Needed
 1. Certipy (https://github.com/ly4k/Certipy)
 2. Impacket (https://github.com/SecureAuthCorp/impacket)
 
@@ -36,7 +36,7 @@
 
 ---
 
-# Demonstrating The Attack
+# Attack Demonstration
 ## 1. Joining A Machine Account to The Domain with A Spoofed `DNSHostname`
 Command: `certipy account create <DOMAIN_FQDN>/<AD_USER>@<DC_IP> -user '<NEW_COMPUTER_NAME>' -dns <DC_FQDN>`
 
@@ -68,9 +68,29 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 
 ---
 
-# Technical Breakdown
-## Center Puzzle Piece: Certificates Can Be Used For Authentication in AD
+# Technical Breakdown: The conversation
+User: Yo AD! I heard that I could join 10 computers to the domain. Is this for real?
+AD: Thats right! knock yourself out!
+User: Yo ADCS, I heard I can request a certificate from you. is that true?
+ADCS: Sure is! what do you need this certificate for, user or computer?
+User: I have my own certificate. Thanks. Can I get that for the computer I just joined to the domain?
+ADCS: You bet! all domain computers can get their certificate!
+User: Oh that's great! Alright, i'll need one for my computer here. But can I make his `DNShostname` like this? \*puts domain controller fully-qualified domain name\*
+ADCS: \*inspects the certificate request closely and looks confused\* Well um... this is weird. But you totally have the permission to do that. \*Hands him a certificate with the domain controllers `DNSHostname` one it\*
+User: Thank you ADCS!
+User: AD! \*Points to the newly joined computer\*. There's another domain controller here that wants to get a copy of all the passwords. Would that be OK?
+AD: Of course! There you are! \*Sends him a copy of all the domain hashes\*
+User: Oh you're so generous AD <3
 
+## About Certificate Templates: Who's allowed to enroll? what can they do with a certificate?
+Here's the process:
+1. First, a client (can be a User or Computer) generates a public/private key pair.
+2. Client sends a Certificate Signing Request (CSR) to an Enteprise CA Server.
+3. A user client will need to access the User Certificate Template. Same goes for a computer client. So both templates must exist.
+4. By default, both the user and computer certificate templates allow client authentication.
+4. Templates have permissions too. If the template allows the client to request a certificate, he should be good to go and the CA will sign his certificate with its own private key.
+5. The client would then store this certificate in its Certificate Store and use it to perform actions allowed by the certificate (including authentication).
+6. Because of the PKINIT kerberos extension, the issues certificates can be used for authentication.
 
 ## Puzzle Piece #1: The Default Privileges Of A Normal AD User
 In Active Directory, any member of the `Authenticated Users` group is allowed to add up to 10 computers to the domain.
