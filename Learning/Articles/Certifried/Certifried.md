@@ -116,6 +116,8 @@ Here's the process:
 ## Puzzle Piece #2: the permissions for the computer certificate template
 The computer certificate is accessible to any computer in the Domain Computers Group:
 
+![computer-certificate-template-permissions](computer-certificate-template-permissions.jpg)
+
 ## Puzzle Piece #3: The Default Privileges Of A Normal AD User
 In Active Directory, any member of the `Authenticated Users` group is allowed to add up to 10 computers to the domain.
 
@@ -128,12 +130,11 @@ When a user adds a computer to the domain, he gains a few permissions on it:
 
 ![permissions-of-computer-owner](permissions-of-computer-owner.jpg)
 
-![computer-certificate-template-permissions](computer-certificate-template-permissions.jpg)
-
 This allows the user to set the `DNSHostname` property which ADCS uses to generate the certificate.
 
 With a domain controller's certificate, we can request a TGT on its behalf and gain its NTLM hash too.
 
 # mitigation
+
 
 # references and credits
