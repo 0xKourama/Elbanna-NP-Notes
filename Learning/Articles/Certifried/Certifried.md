@@ -107,8 +107,8 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 ## Puzzle Piece #1: About Certificate Templates: The Process, Who's allowed to enroll? what can they do with a certificate?
 Here's the process:
 1. First, a client (User/Computer) generates a public/private key pair.
-2. Client sends a Certificate Signing Request (CSR) to an Enteprise CA Server.
-3. A user client will need to access the User Certificate Template. Same goes for a computer client. So both templates must exist.
+2. Second, the client sends a Certificate Signing Request (CSR) to the Enteprise CA Server.
+3. Both the User and Computer Certificate Templates must exist. Because a user client will need to access the User Certificate Template and the same goes for a computer client.
 4. Templates have permissions too. If the template allows the client to request a certificate, he should be good to go and the CA will sign his certificate with its own private key.
 5. After recieving a user/computer certificate, they can both be used for authentication. This is the default.
 6. This authentication is because of the PKINIT kerberos extension. Meaning that: If you have a valid certificate, you can get a TGT.
