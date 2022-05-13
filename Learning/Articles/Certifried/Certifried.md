@@ -43,9 +43,9 @@
 ![proof-of-dns-hostname-spoofing](proof-of-dns-hostname-spoofing.jpg)
 
 ## 2. Requesting A Domain Controller's Certificate
-we must first know the certificate authority's name.
+we must first obtain the certificate authority's name.
 
-This can be done by visiting the `/certsrv` web directory on the server with ADCS installed and authenticating:
+This can be done by visiting the `/certsrv` web directory on the server with ADCS installed and authenticating.
 
 ![finding-out-the-ca-name](finding-out-the-ca-name.jpg)
 
