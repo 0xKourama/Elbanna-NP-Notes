@@ -7,6 +7,8 @@
 - Mitigation
 - References and Credits
 
+---
+
 # The Attack In Brief
 1. By default, A regular AD user can add up to 10 computers to the domain.
 2. After a user adds a computer to the domain, he gains the right to change its `DNSHostname` property.
