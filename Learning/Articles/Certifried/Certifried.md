@@ -75,13 +75,13 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 
 \+ **User:** Yo ADCS! can I request a certificate from you?
 
-\~ **ADCS:** Sure is! what do you need this certificate for, user or computer?
+\~ **ADCS:** Sure! what do you need this certificate for, user or computer?
 
 \+ **User:** I have my own certificate. Thanks. Can I get that for the computer I just joined to the domain?
 
 \~ **ADCS:** You bet! all domain computers can get their certificate!
 
-\+ **User:** Oh that's great! Alright, i'll need one for my computer here. But can I make his `DNShostname` like this? \*puts domain controller fully-qualified domain name\*
+\+ **User:** Oh that's great! Alright, i'll need one for my computer here. But can I make its `DNShostname` like this? \*shows domain controller fully-qualified domain name\*
 
 \~ **ADCS:** \*inspects the certificate request closely and looks confused\* Well um... this is weird. But you totally have the permission to do that. \*Hands him a certificate with the domain controllers `DNSHostname` one it\*
 
@@ -93,9 +93,11 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 
 \+ **User:** AD! \*Points to the newly joined computer\*. There's another domain controller here that wants to get a copy of all the passwords. Would that be OK?
 
-\- **AD:** Of course! There you are! \*Sends him a copy of all the domain hashes\*
+\- **AD:** Yea I know that domain controller. \*Sends him a copy of all the domain hashes\*
 
 \+ **User:** Oh you're so generous AD <3
+
+\- **AD:** Just doing my job :D
 
 ## About Certificate Templates: Who's allowed to enroll? what can they do with a certificate?
 Here's the process:
