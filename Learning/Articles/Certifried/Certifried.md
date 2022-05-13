@@ -3,7 +3,8 @@
 - Tools Needed
 - Lab Setup And Conditions
 - Attack Demonstration
-- Technical Breakdown
+- The Exploit as a Conversation
+- The Technical Breakdown
 - Mitigation
 - References and Credits
 
@@ -68,8 +69,8 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 
 ---
 
-# Technical Breakdown: The conversation
-\+ **User:** Mr. AD! I heard that I could join 10 computers to the domain. Is this for real?
+# The exploit: A Conversation
+\+ **User:** Mr. AD! I heard that I could join 10 computers to the domain without any special privileges. Is this for real?
 
 \- **AD:** Thats right! knock yourself out!
 
@@ -99,35 +100,39 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 
 \- **AD:** Just doing my job :D
 
-## About Certificate Templates: Who's allowed to enroll? what can they do with a certificate?
+---
+
+# The Technical Breakdown
+
+## Puzzle Piece #1: About Certificate Templates: The Process, Who's allowed to enroll? what can they do with a certificate?
 Here's the process:
-1. First, a client (can be a User or Computer) generates a public/private key pair.
+1. First, a client (User/Computer) generates a public/private key pair.
 2. Client sends a Certificate Signing Request (CSR) to an Enteprise CA Server.
 3. A user client will need to access the User Certificate Template. Same goes for a computer client. So both templates must exist.
-4. By default, both the user and computer certificate templates allow client authentication.
 4. Templates have permissions too. If the template allows the client to request a certificate, he should be good to go and the CA will sign his certificate with its own private key.
-5. The client would then store this certificate in its Certificate Store and use it to perform actions allowed by the certificate (including authentication).
-6. Because of the PKINIT kerberos extension, the issues certificates can be used for authentication.
+5. After recieving a user/computer certificate, they can both be used for authentication. This is the default.
+6. This authentication is because of the PKINIT kerberos extension. Meaning that: If you have a valid certificate, you can get a TGT.
 
-## Puzzle Piece #1: The Default Privileges Of A Normal AD User
+## Puzzle Piece #2: the permissions for the computer certificate template
+The computer certificate is accessible to any computer in the Domain Computers Group:
+
+## Puzzle Piece #3: The Default Privileges Of A Normal AD User
 In Active Directory, any member of the `Authenticated Users` group is allowed to add up to 10 computers to the domain.
 
 We can verify that by going to `MMC -> ADSI EDIT > DEFAULT NAMING CONTEXT > DOMAIN PROPERTIES`
 
 ![machine-account-quota](machine-account-quota.jpg)
 
-## Puzzle Piece #2: The Permissions an AD User Has on The Computer He Joins to the domain
+## Puzzle Piece #4: The Permissions an AD User Has on The Computer He Joins to the domain
 When a user adds a computer to the domain, he gains a few permissions on it:
 
 ![permissions-of-computer-owner](permissions-of-computer-owner.jpg)
 
-## Puzzle Piece #3: the permissions for the computer certificate template
-The computer certificate is accessible to any computer in the Domain Computers Group:
-
 ![computer-certificate-template-permissions](computer-certificate-template-permissions.jpg)
 
-4. requesting certs
-5. grabbing the NTLM hash
+This allows the user to set the `DNSHostname` property which ADCS uses to generate the certificate.
+
+With a domain controller's certificate, we can request a TGT on its behalf and gain its NTLM hash too.
 
 # mitigation
 
