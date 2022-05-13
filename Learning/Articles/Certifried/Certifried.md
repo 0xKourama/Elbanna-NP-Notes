@@ -69,11 +69,11 @@ Command: `secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIG
 ---
 
 # Technical Breakdown: The conversation
-\+ **User:** Yo AD! I heard that I could join 10 computers to the domain. Is this for real?
+\+ **User:** Mr. AD! I heard that I could join 10 computers to the domain. Is this for real?
 
 \- **AD:** Thats right! knock yourself out!
 
-\+ **User:** Yo ADCS, can I request a certificate from you?
+\+ **User:** Yo ADCS! can I request a certificate from you?
 
 \~ **ADCS:** Sure is! what do you need this certificate for, user or computer?
 
