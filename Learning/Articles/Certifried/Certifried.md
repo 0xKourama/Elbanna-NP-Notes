@@ -1,3 +1,5 @@
+![Certifried-diagram](Certifried-diagram.jpg)
+
 # The Attack In Brief
 1. AD Certificates can be used for authentication.
 2. Certificates can be generated from **templates** in a **Certificate Signing Request** (CSR).
