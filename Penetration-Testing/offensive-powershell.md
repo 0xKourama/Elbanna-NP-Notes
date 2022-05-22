@@ -53,3 +53,6 @@
 
 # Get Alternate Data Streams
 `$ErrorActionPreference = 'SilentlyContinue'; ls * -Recurse -Force | % {Get-Item $_ -Stream * | ? {$_.Stream -notmatch ':\$DATA|Zone\.Identifier'} |Select FileName, Stream}; $ErrorActionPreference = 'Continue'`
+
+# View listening connections (with optional PID translation to Proc names)
+`$PROCS = Get-Process; Get-NetTCPConnection -LocalAddress <LOCAL_IP> | Sort-Object LocalPort | Select-Object @{n='Process';e={$ID = $_.OwningProcess; if($PROCS){($PROCS|?{$ID -eq $_.id}).name}else{$ID}}},LocalAddress,LocalPort,RemoteAddress,RemotePort,State | Format-Table`
