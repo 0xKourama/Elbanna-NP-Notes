@@ -16,9 +16,9 @@
 		2. Try enumeration through **LDAP** using `ldapsearch`
 		3. Try enumeration using **SMB** through guest/null/anonymous authention
 		4. Try enumeration through RPC using `enum4linux-ng`
-	7. **[Low-Hanging Fruit]** Test for zero logon (on domain controllers) + eternal blue (on domain controllers or any other host)
-	8. **[Low-Hanging Fruit]** Test for proxy logon (metasploit version) if exchange servers are found
-	9. **[Low-Hanging Fruit]** Run nmap scan for port 80 --> `curl` for "http://<IP>/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
+	7. **[Low-Hanging Fruit]** Test for **Zero Logon** (on domain controllers) + eternal blue (on domain controllers or any other host)
+	8. **[Low-Hanging Fruit]** Test for **Proxy Logon** (metasploit version) if exchange servers are found
+	9. **[Identifing High Value Targets + Low-Hanging Fruit]** Run `nmap` scan for port 80 --> `curl` for "http://<IP>/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
 	10. **[Unauthenticated AD Attacks 1 - ASREPRoasing]** got a userlist? --> **ASREPRoast**
 	11. **[Unauthenticated AD Attacks 2 - Password Spraying]** Try to obtain **Password Policy** `crackmapexec smb <DC_IP> -u '' -p '' --pass-pol` --> start spraying with most common passwords & company-name convention passwords
 	12. **[Authenticated AD Attacks without shell access]** got user?
