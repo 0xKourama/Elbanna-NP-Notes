@@ -35,7 +35,7 @@
 		9. **Kerberoast**
 		10. Run **Bloodhound**
 			1. Conduct **ACL attacks** with `powerview` to abuse **dangerous rights** (ex: password reset)
-			2. Abuse highly-privileged group memberships
+			2. Abuse high privilege group memberships
 				1. **DNSAdmins** --> Escalate to domain admin via DLL hijacking
 				2. **Exchange Windows Permissions** --> DCSync
 				3. **Backup Pperators** --> backup `NTDS.dit`
