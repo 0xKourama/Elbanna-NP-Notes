@@ -18,7 +18,7 @@
 		4. Try enumeration through RPC using `enum4linux-ng`
 	7. **[Low-Hanging Fruit]** Test for **Zero Logon** (on domain controllers) + eternal blue (on domain controllers or any other host)
 	8. **[Low-Hanging Fruit]** Test for **Proxy Logon** (metasploit version) if exchange servers are found
-	9. **[Identifing High Value Targets + Low-Hanging Fruit]** Run `nmap` scan for port 80 --> `curl` for "http://<IP>/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
+	9. **[Identifing High Value Targets + Low-Hanging Fruit]** Run `nmap` scan for port 80 --> `curl` for "http://SERVER_IP/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
 	10. **[Unauthenticated AD Attacks 1 - ASREPRoasing]** got a userlist? --> **ASREPRoast**
 	11. **[Unauthenticated AD Attacks 2 - Password Spraying]** Try to obtain **Password Policy** `crackmapexec smb <DC_IP> -u '' -p '' --pass-pol` --> start spraying with most common passwords & company-name convention passwords
 	12. **[Authenticated AD Attacks without shell access]** got user?
@@ -61,7 +61,7 @@
 				2. Attempt stopping/disabling its services
 				3. Attempt deleting its unprotected files
 				4. Attempt obfuscating powershell scripts using `Invoke-Obfuscation`
-			4. Attempt Dumping LSASS Memory
+			4. Attempt Dumping **LSASS** Memory
 				1. Task Manager
 				2. **procdump**
 				3. rundll
