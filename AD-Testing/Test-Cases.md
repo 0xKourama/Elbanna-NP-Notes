@@ -1,8 +1,9 @@
 # Test Cases (after scope verification)
 
 # OSINT
-1. generate user list from LinkedIn 
+1. generate user list from LinkedIn/company website/
 2. Use hunter.io to get an idea on username convention
+3. generate list of common passwords schemes including company name
 # network pentest
 1. [time saving] start nessus (basic network scan) in the background + applying scan precautions based on network infrastructure
 2. AD pentesting
@@ -20,18 +21,25 @@
 		1. search for shell access using `crackmapexec` `smb` and `winrm`
 		2. ADCS? --> use `noPac.py` + CVE-2022-26923 (a.k.a certifried)
 		3. Exchange? --> use `privexchange` relay attack to domain admin
-		4. Print Nightmare CVE-2021-1675
-		5. test for pykek (MS14-068)
-		6. pull all AD users --> another full ASREPRoast + check for stored passwords in description AD attribute
-		7. pull all AD computer names --> check for interesting computers
-		8. Kerberoast
-		9. Bloodhound
+		4. Drop the MIC (CVE-2019-1040)
+		5. Print Nightmare CVE-2021-1675
+		6. test for pykek (MS14-068)
+		7. pull all AD users --> another full ASREPRoast + check for stored passwords in description AD attribute
+		8. pull all AD computer names --> check for interesting computers
+		9. Kerberoast
+		10. Bloodhound
 			1. conduct ACL attacks with `powerview` to abuse dangerous rights
 			2. Abuse high privileges group memberships
+				1. DNSAdmins --> Escalate to domain admin
+				2. Exchange Windows Permissions --> DCSync
+				3. Backup Pperators --> backup NTDS.dit
+				4. Account Operators --> non-high-privilege group membership addition
+				5. Server Operators --> administrative access to non-domain controller servers
 			3. locate computers where domain admins are logged in
-		10. Enumerate Group Policy Preferences (MS14-025)
-		11. enumerate SMB share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant SCF file/plant malicious office document (macro attack) with interesting name (to attract a user to open it)
-		12. check for contrained/unconstrained delegation
+		11. Enumerate Group Policy Preferences (MS14-025)
+		12. enumerate SMB share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant SCF file/plant malicious office document (macro attack) with interesting name (to attract a user to open it)
+		13. check for contrained/unconstrained delegation
+		14. check for readable LAPS passwords
 	12. [authenticated attacks with shell/rdp access] got user?
 		1. [privilege escalation] winpeas --> regular windows pricesc paths
 		2. [privilege escalation] potato attacks
@@ -44,7 +52,7 @@
 			2. attempt cracking password and stuffing it accross all other authentication channels
 			3. antivirus?
 				1. attempt uninstalling
-				2. attempt stopping its services
+				2. attempt stopping/disabling its services
 				3. attempt deleting its unprotected files
 				4. attempt obfuscating scripts
 			4. attempt dumping lsass memory
@@ -55,7 +63,7 @@
 				5. if avast AV, try using it to dump lsass
 3. [resume network exploitation] retrieve nessus scan results
 	1. find most (critical + exploitable) vulnerabilities
-	2. check for know, safe and trusted exploits on
+	2. check for known, safe and trusted exploits on
 		1. Metasploit
 		2. ExploitDB
 		3. GitHub PoCs (review source code before execution)
