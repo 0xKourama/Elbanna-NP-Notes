@@ -11,16 +11,16 @@
 	1. **[Time Saving]** find targets without SMB signing enabled `crackmapexec smb <SUBNET> --gen-relay-list <OUT_FILE>`
 	2. **[Time Saving + network poisoning]** start `responder` and start relaying to target list ---> obtain AD naming convention to modify userlist
 	3. **[SSDP]** gather creds with fake UPnP devices using `evil-SSDP`
-	4. Identify **Domain Controllers** by doing a quick `nmap` scan searching for DNS, Kerberos and LDAP ports: 53, 88, 389
+	4. **[Identifing Domain Controllers]** Doing a quick `nmap` scan searching for DNS, Kerberos and LDAP ports: 53, 88, 389
 	5. Bruteforce DNS using subnet IPs to get a list of all server names --> set priority list for interesting host names
 	6. **[Time Saving + Username Enumeration]**
-		1. start `kerbrute` to enumerate AD users 
-		2. try enumeration through **LDAP** using `ldapsearch`
-		3. try enumeration using **SMB** through guest/null/anonymous authention
-		4. try enumeration through RPC using `enum4linux-ng`
-	7. **[Low Hanging Fruit]** test for zero logon (on domain controllers) + eternal blue (on domain controllers or any other host)
-	8. **[Low Hanging Fruit]** test for proxy logon (metasploit version) if exchange servers are found
-	9. **[Low Hanging Fruit]** run nmap scan for port 80 --> `curl` for "http://<IP>/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
+		1. Start `kerbrute` to enumerate AD users 
+		2. Try enumeration through **LDAP** using `ldapsearch`
+		3. Try enumeration using **SMB** through guest/null/anonymous authention
+		4. Try enumeration through RPC using `enum4linux-ng`
+	7. **[Low Hanging Fruit]** Test for zero logon (on domain controllers) + eternal blue (on domain controllers or any other host)
+	8. **[Low Hanging Fruit]** Test for proxy logon (metasploit version) if exchange servers are found
+	9. **[Low Hanging Fruit]** Run nmap scan for port 80 --> `curl` for "http://<IP>/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
 	10. **[Unauthenticated AD Attacks 1 - ASREPRoasing]** got a userlist? --> **ASREPRoast**
 	11. **[Unauthenticated AD Attacks 2 - Password Spraying]** Try to obtain **Password Policy** `crackmapexec smb <DC_IP> -u '' -p '' --pass-pol` --> start spraying with most common passwords & company-name convention passwords
 	12. **[Authenticated AD Attacks without shell access]** got user?
@@ -29,7 +29,7 @@
 		3. **MS Exchange found?** --> use `privexchange` relay attack to domain admin
 		4. **Drop the MIC** (CVE-2019-1040)
 		5. **Remote Print Nightmare** CVE-2021-1675
-		6. Test for pykek (MS14-068)
+		6. Test for pykek vulnerability (MS14-068)
 		7. Retrieve all AD users
 			1. Do another full **ASREPRoast**
 			2. Check for **stored passwords** in user description field
@@ -45,9 +45,9 @@
 				5. **Server Operators** --> administrative access to non-domain controller servers
 			3. Locate computers where domain admins are logged in
 		11. Enumerate Group Policy Preferences (MS14-025)
-		12. enumerate SMB share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant SCF file/plant malicious office document (macro attack) with interesting name (to attract a user to open it)
-		13. check for **kerberos contrained/unconstrained delegation**
-		14. check for **readable LAPS passwords**
+		12. Enumerate SMB share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant SCF file/plant malicious office document (macro attack) with interesting name (to attract a user to open it)
+		13. Check for **kerberos contrained/unconstrained delegation**
+		14. Check for **readable LAPS passwords**
 	13. **[Authenticated Attacks with shell/rdp access]** got user?
 		1. **[Privilege Escalation]** run **WinPEAS** --> regular windows pricesc paths
 		2. **[Privilege Escalation]** potato attacks
@@ -55,26 +55,26 @@
 		4. **[Privilege Escalation]** **SMBGHost** CVE-2020-0796
 		5. **[Privilege Escalation]** **HiveNightmare/SeriousSam** 2021-36934
 	14. **[after gaining Administrative Access]** got locl admins?
-		1. dump SAM and get local admin NTLM hash
-			1. pass-the-hash and spray the network using `crackmapexec` to check for reused local admin password
-			2. attempt cracking password and stuffing it accross all other authentication channels
-			3. antivirus?
-				1. attempt uninstalling
-				2. attempt stopping/disabling its services
-				3. attempt deleting its unprotected files
-				4. attempt obfuscating scripts
-			4. attempt dumping lsass memory
-				1. task manager
-				2. procdump
+		1. Dump SAM and get local admin NTLM hash
+			1. **Pass-the-Hash** and spray the network using `crackmapexec` to check for reused local admin password
+			2. Attempt password cracking and stuffing them accross all other authentication channels
+			3. **[Antivrus Evasion]** antivirus?
+				1. Attempt uninstalling
+				2. Attempt stopping/disabling its services
+				3. Attempt deleting its unprotected files
+				4. Attempt obfuscating scripts
+			4. Attempt Dumping LSASS Memory
+				1. Task Manager
+				2. **procdump**
 				3. rundll
-				4. outminidump.ps1
-				5. if avast AV, try using it to dump lsass
-3. **[resume network exploitation]** retrieve nessus scan results
-	1. find most (critical + exploitable) vulnerabilities
-	2. check for known, safe and trusted exploits on
+				4. **Powersploit** outminidump.ps1
+				5. if Avast AV found, try using it to dump LSASS
+3. **[Resume Network Exploitation]** retrieve nessus scan results
+	1. Find most (critical + exploitable) vulnerabilities
+	2. Check for known, safe and trusted exploits on
 		1. Metasploit
 		2. ExploitDB
 		3. GitHub PoCs (review source code before execution)
-	3. check for clear-text protocols and perform MitM attacks (ARP poisoning)
-	4. attack common applications with specialized tools (ex: Oracle --> ODAT)
-	5. check for **log4j**
+	3. Check for clear-text protocols and perform MitM attacks (ARP poisoning)
+	4. Attack common applications with specialized tools (ex: Oracle --> ODAT)
+	5. Check for **log4j**
