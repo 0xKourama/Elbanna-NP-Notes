@@ -36,14 +36,14 @@
 		10. Run **Bloodhound**
 			1. Conduct **ACL attacks** with `powerview` to abuse **dangerous rights** (ex: password reset)
 			2. Abuse highly-privileged group memberships
-				1. **DNSAdmins** --> Escalate to domain admin
+				1. **DNSAdmins** --> Escalate to domain admin via DLL hijacking
 				2. **Exchange Windows Permissions** --> DCSync
-				3. **Backup Pperators** --> backup NTDS.dit
-				4. **Account Operators** --> non-high-privilege group membership addition + ability to read LAPS passwords
+				3. **Backup Pperators** --> backup `NTDS.dit`
+				4. **Account Operators** --> non-high-privilege group membership addition + ability to read **LAPS** passwords
 				5. **Server Operators** --> administrative access to non-domain controller servers
 			3. Locate computers where domain admins are logged in
-		11. Enumerate Group Policy Preferences (MS14-025)
-		12. Enumerate SMB share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant SCF file/plant malicious office document (macro attack) with interesting name (to attract a user to open it)
+		11. Enumerate **Group Policy Preferences** (MS14-025)
+		12. Enumerate **SMB** share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant **SCF** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
 		13. Check for **Kerberos contrained/unconstrained delegation**
 		14. Check for **readable LAPS passwords**
 	13. **[Authenticated Attacks with shell/rdp access]** got user?
@@ -67,12 +67,12 @@
 				3. rundll
 				4. **Powersploit** outminidump.ps1
 				5. if Avast AV found, try using it to dump LSASS
-3. **[Resume Network Exploitation]** retrieve nessus scan results
+3. **[Resume Network Exploitation]** Retrieve Nessus scan results
 	1. Find most (critical + exploitable) vulnerabilities
 	2. Check for known, safe and trusted exploits on
-		1. Metasploit
-		2. ExploitDB
-		3. GitHub PoCs (review source code before execution)
+		1. **Metasploit**
+		2. **ExploitDB**
+		3. **GitHub** PoCs (review source code before execution)
 	3. Check for clear-text protocols and perform MitM attacks (ARP poisoning)
 	4. Attack common applications with specialized tools (ex: Oracle --> ODAT)
 	5. Check for **log4j**
