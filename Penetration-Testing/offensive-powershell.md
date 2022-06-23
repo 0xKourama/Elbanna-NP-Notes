@@ -39,6 +39,9 @@
 ## Command:
 `(Get-Item "c:\windows\microsoft.net\framework64\*\clr.dll").VersionInfo.ProductVersion`
 
+# get-bytes of a string
+`[System.Text.Encoding]::UTF8.GetBytes('hello')`
+
 # Reflective Execution (Can Bypass Applocker)
 `Invoke-reflectivePEInjection -PEBytes ([IO.File]::ReadAllBytes('<PATH_TO_EXE>'))`
 
