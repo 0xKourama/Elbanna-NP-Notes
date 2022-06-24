@@ -108,11 +108,11 @@ and we get a password!
 ![mhope-password](mhope-password.jpg)
 
 ### Shell Access as `mhope`
-*After getting this password,* we immediately spray it over the domain users. We find that it's valid and that we have WinRM access too!
+*After getting this password,* we immediately spray it over the domain users. We find that it's valid and that we have **WinRM** access as well!
 
 **Command:** `crackmapexec winrm 10.10.10.172 -u users.txt -p '4n0therD4y@n0th3r$' --continue-on-success`
 
-**Note:** we used the `--continue-on-success` to be able to detect any password reuse and be able to exploit it.
+**Note:** we used the `--continue-on-success` to be able to take advantage of any password reuse.
 
 ![winrm-as-mhope](winrm-as-mhope.jpg)
 
