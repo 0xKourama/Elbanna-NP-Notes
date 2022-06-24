@@ -151,7 +151,7 @@ and we get this awesome blog post [here](https://blog.xpnsec.com/azuread-connect
 
 ![privesc-blog](privesc-blog.jpg)
 
-*Reading the post,* we learn that **Azure AD Connect** is a: tool for *integrating between* both **On-Prem Active Directory Deployments** and **Azure AD**.
+*Reading the post,* we learn that **Azure AD Connect** is: a tool for *integrating between* both **On-Prem Active Directory Deployments** and **Azure AD**.
 
 It has the **Password Hash Syncronization (PHS)** feature which "*uploads user accounts and password hashes from Active Directory to Azure*".
 
