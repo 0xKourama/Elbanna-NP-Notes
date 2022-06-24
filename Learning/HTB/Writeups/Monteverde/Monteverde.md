@@ -135,7 +135,7 @@ And in the `c:\Program Files` directory, we find a whole bunch of software relev
 
 ![program-files](program-files.jpg)
 
-*Right now,* our senses are *tingling*. *Because,* we have a lot of signs pointing us towards this area:
+*Right now,* our senses are *tingling*. *Because,* we had a lot of signs along the way that are pointing towards this area:
 1. the `AAD_987d7f2f57d2` user
 2. the `azure.xml` file
 3. the `Azure Admins` group membership
