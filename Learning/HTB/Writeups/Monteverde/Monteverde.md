@@ -170,7 +170,7 @@ Seems like we do!
 
 ![database-access](database-access.jpg)
 
-After using the script, we notice that it runs, but stops right after it prints its banner and we lose our shell.
+*After using the script,* we notice that it runs. But it stops right after it prints its banner and we lose our shell.
 
 ![script-fail](script-fail.jpg)
 
