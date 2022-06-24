@@ -157,7 +157,7 @@ It has the **Password Hash Syncronization (PHS)** feature which "*uploads user a
 
 We also learn that: *during the setup,* an **AD account** is used to perform the sync process. And is granted the **necessary permissions** to be able to access all the **domain hashes**.
 
-One more thing we notice: is that the credentials for the synchronization account are **located in the local database** included in the installation process.
+One more thing we notice: is that the credentials for the synchronization account are **found on the local database** included in the installation process.
 
 *And, even though they are encrypted,* the key to decrypt them is also present in the same database.
 
