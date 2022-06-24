@@ -225,7 +225,8 @@ Seems that the connection string doesn't use our `mhope` user credentials.
 
 1. Defining the connection string: we're connecting to the **ADSync DB** on the **local computer** using **Windows Authentication**
 ```
-$client = new-object System.Data.SqlClient.SqlConnection -ArgumentList "Data Source=localhost;Initial Catalog=ADSync;Integrated Security=true;"
+$connection_string = "Data Source=localhost;Initial Catalog=ADSync;Integrated Security=true;"
+$client = new-object System.Data.SqlClient.SqlConnection -ArgumentList $connection_string
 $client.Open()
 $cmd = $client.CreateCommand()
 ```
