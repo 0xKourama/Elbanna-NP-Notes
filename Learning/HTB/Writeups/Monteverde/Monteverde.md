@@ -177,7 +177,7 @@ Seems like we do!
 ### Troubleshooting
 *Since the script isn't big (< 40 lines)*, It wouldn't be difficult to step through it line-by-line to find out what's wrong.
 
-we get the first 5 lines:
+we take a look at the first 5 lines:
 
 ```
 Write-Host "AD Connect Sync Credential Extract POC (@_xpn_)`n"
