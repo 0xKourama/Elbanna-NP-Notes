@@ -60,3 +60,27 @@ Using a tool called `enum4linux-ng`, we are able to get a list of usernames thro
 Command: `enum4linx-ng -A 10.10.10.172`
 
 ![enum4linux-ng-output](enum4linux-ng-output.jpg)
+
+No interesting info was there in the description except for one user: `AAD_987d7f2f57d2`
+
+It said: `Service account for the Synchronization Service with installation identifier 05c97990-7587-4a3d-b312-309adfc172d9 running on computer MONTEVERDE.` which hinted at the possibility that this account might have DCSync rights. If that was true, then getting access as that user would mean game over :D
+
+We take note of that and get the Domain Password Policy from the output as well.
+
+![password-policy](password-policy.jpg)
+
+No account lockout! We can spray like there's no tomorrow :D
+
+### Password Spraying
+Since ASREPRoasting is the first thing to do with a userlist, we tried that but weren't awarded with any hashes. So we turned to Password Spraying.
+
+We make a quick list of common passwords to try like 'P@ssw0rd, Welcome1' etc. but don't get anything.
+
+So we try using the usernames as passwords. We do this attack using `hydra` and we get a hit!
+
+Command: `hydra -e s -L users.txt ldap3://10.10.10.172 -v`
+
+where the `-e` flag with the `s` argument is the part instructing `hydra` to use the same entry for both username and password.
+
+![hydra-attack](hydra-attack.jpg)
+
