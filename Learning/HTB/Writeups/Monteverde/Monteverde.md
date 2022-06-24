@@ -63,7 +63,8 @@ We also have **WinRM** open on tcp 5985 which would be handy to get remote code 
 
 No interesting info was in the description except for one user: `AAD_987d7f2f57d2`
 
-It said: `Service account for the Synchronization Service with installation identifier 05c97990-7587-4a3d-b312-309adfc172d9 running on computer MONTEVERDE.` which hinted at the possibility that this account might have **DCSync** rights. *If that was true,* then getting access as that user would mean game over :D
+It said: `Service account for the Synchronization Service with installation identifier 05c97990-7587-4a3d-b312-309adfc172d9 running on computer MONTEVERDE.`
+This hinted at the possibility that this account might have **DCSync** rights. *If that was true,* then getting access as that user would mean game over :D
 
 We take note of that and get the **Domain Password Policy** from the output as well.
 
