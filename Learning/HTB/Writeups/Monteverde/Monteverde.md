@@ -164,7 +164,7 @@ One more thing we notice: is that the credentials for the synchronization accoun
 ### Trying the PowerShell Script
 The researcher and blog author **"Adam Chester"** had thankfully created a script that takes care of all the above and dumps us the stored credentials *if we had access to the database.*
 
-We're going to use a brief command to try connecting to the local database to see if we have access: `sqlcmd -Q "SELECT name FROM master.dbo.sysdatabases"`
+We're going to use a brief command to try connecting to the local database to see if we can query it: `sqlcmd -Q "SELECT name FROM master.dbo.sysdatabases"`
 
 Seems like we do!
 
