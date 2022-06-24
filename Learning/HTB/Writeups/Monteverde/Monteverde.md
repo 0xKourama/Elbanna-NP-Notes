@@ -2,7 +2,7 @@
 - Another Windows Domain Controller Machine.
 - We get a full list of domain users by enumerating **RPC** and are able to login with a user called `SABatchJobs` whose password was his own username.
 - *Enumerating the* **SMB** *access for this user,* we find that he could read a certain **XML** file which contained a password.
-- *After spraying the password over all users,* it turns out to belong to another user called `mhope` who happens to be a member of the `Azure Admins` AD group which was interesting.
+- *After spraying the password over all users,* it turns out to belong to another user called `mhope` who happens to have **PowerShell Remoting** access and is a member of the `Azure Admins` AD group which was interesting.
 - *Additionally,* we found a special folder called `.Azure` in `mhope`'s user profile. It contained remnants of a connection made to **Azure**.
 - We also find `Azure AD Connect` installed in the `C:\Program Files` directory which all stuck out and brought our attention to search for **Privilege Escalation** paths along that way.
 - *Searching* **Google** *for* `Privilege Escalation Using Azure AD Connect`, we find a **blog post** that gives us a bit of background on what `Azure AD Connect` does and how to exploit it to gain **Domain Admin** privileges.
@@ -83,4 +83,69 @@ Command: `hydra -e s -L users.txt ldap3://10.10.10.172 -v`
 where the `-e` flag with the `s` argument is the part instructing `hydra` to use the same entry for both username and password.
 
 ![hydra-attack](hydra-attack.jpg)
+
+### SMB Access
+After we verify that `SABatchJobs` doesn't have WinRM access, we enumerate his SMB Access using `crackmapexec`'s `spider_plus` module.
+
+This module does as the name suggests: it recursively spiders SMB shares and outputs the results in a temp folder.
+
+Command: `crackmapexec smb 10.10.10.172 -u SABatchJobs -p SABatchJobs -M spider_plus`
+
+![cme-spiderplus](cme-spiderplus.jpg)
+
+Looking at the results in the output JSON file, we a very interesting file: `azure.xml` which existed in the `users` share under the folder for the `mhope` user:
+
+![azure-xml-file](azure-xml-file.jpg)
+
+We connect to the share with `smbclient` and download the file and view its contents:
+
+Command: `smbclient //10.10.10.172/users$ -U SABatchJobs`
+
+and we get a password!
+
+![mhope-password](mhope-password.jpg)
+
+### Shell Access as `mhope`
+After getting this password, we immediately spray it over the domain users to find that it's valid + we have WinRM access too!
+
+Command: `crackmapexec winrm 10.10.10.172 -u users.txt -p '4n0therD4y@n0th3r$' --continue-on-success`
+
+Note: we used the `--continue-on-success` to be able to detect any password reuse and be able to exploit it.
+
+![winrm-as-mhope](winrm-as-mhope.jpg)
+
+We login using `evil-winrm` to get a full PowerShell session on the box:
+
+Command: `evil-winrm -i 10.10.10.172 -u mhope -p '4n0therD4y@n0th3r$'`
+
+![evil-winrm-access](evil-winrm-access.jpg)
+
+### Enumeration before Privesc
+Running a quick `whoami /groups` command shows that we are in an AD group called `Azure Admins`
+
+![ad-group-membership](ad-group-membership.jpg)
+
+We also notice a strange folder on `mhope`'s user folder.
+
+![dot-azure-folder](dot-azure-folder.jpg)
+
+And in the `c:\Program Files` directory, we find a whole bunch of software relevant to Azure AD Sync
+
+![program-files](program-files.jpg)
+
+Right now, our senses are tingling. Because, we have a lot of signs pointing towards this area:
+1. the `AAD_987d7f2f57d2` user
+2. the `azure.xml` file
+3. the `Azure Admins` group membership
+4. the `.Azure` folder
+5. the Azure related software in `Program Files`
+
+So we go ahead and do some googling :D
+
+### Research
+We decide to use a broad term in our first search to make things easier for ourselves. We type: "Azure AD Sync Privilege Escalation"
+
+and we get this blog post [here](https://blog.xpnsec.com/azuread-connect-for-redteam/):
+
+![privesc-blog](privesc-blog.jpg)
 
