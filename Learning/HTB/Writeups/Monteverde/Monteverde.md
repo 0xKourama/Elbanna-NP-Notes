@@ -76,7 +76,7 @@ We take note of that and get the **Domain Password Policy** from the output as w
 ### ASREPRoasting then Password Spraying
 *Since* **ASREPRoasting** *is the first thing to do with a userlist,* we tried it but weren't awarded with any hashes. So we turned to **Password Spraying**.
 
-We make a quick list of common passwords to try like 'P@ssw0rd, Welcome1' etc. but don't get anything :/
+We make a quick list of common passwords to try like 'P@ssw0rd', 'Welcome1' etc. but don't get anything :/
 
 So we try using the usernames themselves as passwords. We do so using `hydra` and we get a hit!
 
