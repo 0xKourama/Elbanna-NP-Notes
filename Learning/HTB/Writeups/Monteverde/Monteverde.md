@@ -159,7 +159,7 @@ We also learn that: *during the setup,* an **AD account** is used to perform the
 
 One more thing we notice: is that the credentials for the synchronization account are **found on the local database** included in the installation process.
 
-*And, even though they are encrypted,* the key to decrypt them is also present in the same database.
+*And, even though they are encrypted,* the key to **decrypt** them is also present on the same database.
 
 ### Trying the PowerShell Script
 Thanks to the researcher **"Adam Chester"**, he had already created a script that takes care of all the above and dumps us the stored credentials *if we have access to the database.*
