@@ -202,7 +202,7 @@ Reading the sentences in the error tells us something about **network-related** 
 
 we confirm this by consulting the **Microsoft Documentation** on connection strings [here](https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlconnection.connectionstring?view=dotnet-plat-ext-6.0#system-data-sqlclient-sqlconnection-connectionstring).
 
-it says the **"Data Source"** is for the **"The name or network address of the instance of SQL Server to which to connect."**. This tells us this is not for a local DB.
+it says the **"Data Source"** is for the **"The name or network address of the instance of SQL Server to which to connect."**. This won't work for a local DB.
 
 ![Data-Source-Doc](Data-Source-Doc.jpg)
 
