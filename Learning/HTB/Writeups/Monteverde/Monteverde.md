@@ -2,7 +2,7 @@
 - Another Windows Domain Controller Machine.
 - We get a full list of domain users by enumerating **RPC** and are able to login with a user called `SABatchJobs` whose password was his own username.
 - *Enumerating the* **SMB** *access for this user,* we find that he could read a certain **XML** file which contained a password.
-- *After spraying the password over all users,* it turns out to belong to another user called `mhope` who happens to have **PowerShell Remoting** access and who's a member of the `Azure Admins` AD group which was interesting.
+- *After spraying the password over all users,* it turns out to belong to another user called `mhope` who happens to have **PowerShell Remoting** access and who's a member of the `Azure Admins` AD group. Which was interesting.
 - *Additionally,* we found a special folder called `.Azure` in `mhope`'s user profile. It contained remnants of a connection made to **Azure**.
 - We also find `Azure AD Connect` installed in the `C:\Program Files` directory which all stuck out and brought our attention to search for **Privilege Escalation** paths along that way.
 - *Searching* **Google** *for* `Privilege Escalation Using Azure AD Connect`, we find a **blog post** that gives us a bit of background on what `Azure AD Connect` does and how to exploit it to gain **Domain Admin** privileges.
