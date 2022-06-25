@@ -20,7 +20,7 @@
 	8. **[Low-Hanging Fruit]** Test for **Proxy Logon** (metasploit version) if exchange servers are found
 	9. **[Identifing High Value Targets + Low-Hanging Fruit]** Run `nmap` scan for port 80 --> `curl` for "http://SERVER_IP/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
 	10. **[Unauthenticated AD Attacks 1 - ASREPRoasing]** got a userlist? --> **ASREPRoast**
-	11. **[Unauthenticated AD Attacks 2 - Password Spraying]** Try to obtain **Password Policy** `crackmapexec smb <DC_IP> -u '' -p '' --pass-pol` --> start spraying with most common passwords & company-name convention passwords
+	11. **[Unauthenticated AD Attacks 2 - Password Spraying]** Try to obtain **Password Policy** `crackmapexec smb <DC_IP> -u '' -p '' --pass-pol` --> start spraying with most common passwords, trying usernames as passwords (`hydra`) & company-name convention passwords
 	12. **[Authenticated AD Attacks without shell access]** got user?
 		1. Search for **shell access** using `crackmapexec` modules for `smb` and `winrm`
 		2. **ADCS found?** --> use `noPac.py` + CVE-2022-26923 (a.k.a certifried)
