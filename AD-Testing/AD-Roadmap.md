@@ -13,8 +13,8 @@
 	5. **[Identifing High Value Targets]** Bruteforce DNS using subnet IPs to get a list of all server names --> set priority list for interesting host names
 	6. **[Time Saving + Username Enumeration]**
 		1. Start `kerbrute` using `userenum` module to enumerate AD users 
-		2. Try enumeration through **LDAP** using `ldapsearch`
-		3. Try enumeration using **SMB** through guest/null/anonymous authention
+		2. Try enumeration through **LDAP** using `ldapsearch` (checking if anonymous bind is enabled)
+		3. Try enumeration using **SMB** through guest/null/anonymous authention/rid-brute
 		4. Try enumeration through RPC using `enum4linux-ng`
 	7. **[Low-Hanging Fruit]** Test for **Zero Logon** (on domain controllers) + eternal blue (on domain controllers or any other host)
 	8. **[Low-Hanging Fruit]** Test for **Proxy Logon** (metasploit version) if exchange servers are found
@@ -43,7 +43,7 @@
 				5. **Server Operators** --> administrative access to non-domain controller servers
 			3. Locate computers where domain admins are logged in
 		11. Enumerate **Group Policy Preferences** (MS14-025)
-		12. Enumerate **SMB** share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant **SCF** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
+		12. Enumerate **SMB** share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant **SCF/LNK** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
 		13. Check for **Kerberos contrained/unconstrained delegation**
 		14. Check for **readable LAPS passwords**
 	13. **[Authenticated Attacks with shell/rdp access]** got user?
