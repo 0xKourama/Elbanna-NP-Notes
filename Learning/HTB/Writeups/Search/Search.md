@@ -235,7 +235,7 @@ What's left is to reset the password for `tristan` which we can do through `rpcc
 
 then following with the `setuserinfo2` command making sure our password satisfies the complexity requirements.
 
-and we finish with **impacket**'s `wmiexec.py` get full shell access.
+and finishing with **impacket**'s `wmiexec.py` to get full shell access.
 
 ![got-tristan](got-tristan.jpg)
 
