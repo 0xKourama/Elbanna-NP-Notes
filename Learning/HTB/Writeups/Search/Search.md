@@ -87,7 +87,7 @@ Host script results:
 
 We see standard Domain Controller ports (53, 88, 389 & 3269) and **IIS** on ports 80, 443 & 8172
 
-Port 5985 wasn't open so that mean no **WinRM** for this box
+Port 5985 wasn't open so that meant no **WinRM** for this box
 
 ### Stuff we tried but didn't work
 1. **SMB** enumeration using anonymous, guest and null sessions.
