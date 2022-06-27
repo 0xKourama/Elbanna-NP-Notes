@@ -201,7 +201,7 @@ we use `smbclient` to fetch the file:
 
 ![getting-the-sheet](getting-the-sheet.jpg)
 
-*When looking into the second tab of the workbook,* we notice a hidden column: **C**
+*After opening the document with* **Microsoft Office's Excel** *and looking into the second tab of the workbook,* we notice a hidden column: **C**
 
 ![hidden-column](hidden-column.jpg)
 
