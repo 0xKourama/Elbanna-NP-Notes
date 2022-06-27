@@ -184,8 +184,6 @@ It has turned into a habit for me to spray any password I get on all possible us
 
 ![cme-full-userlist](cme-full-userlist.jpg)
 
-Piping the output to a round of `awk` and `sed` formats the output into a nice list.
-
 We find out that another user had been user the same password **"@3ONEmillionbaby"**
 
 ![edgar-reusing](edgar-reusing.jpg)
