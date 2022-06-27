@@ -285,3 +285,5 @@ Invoke-Command -ComputerName 127.0.0.1 -credential $cred -ScriptBlock $Script
 `Invoke-Command -ComputerName 127.0.0.1 -credential $killercreds -ScriptBlock {whoami}`
 
 ![tristan-web-access](tristan-web-access.jpg)
+
+And this wrap us the secondary path :D
