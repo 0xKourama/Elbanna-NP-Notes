@@ -3,7 +3,7 @@
 2. *Using this authenticated access,* we run a **Kerberoast** attack which gets us the hash of the `web_svc` account that we crack to get a password.
 3. *When spraying this password across the domain users,* we find out that the password is also used by another user: `edgar.jacobs`.
 4. Edgar's shared redirected folder was exposing his user profile which contained an interesting **Microsoft Excel** document called `Phishing_Attempt.xlsx`.
-5. *When closely checking the contents of this sheet,* we find a *hidden* column which cannot be viewed because the document is protected.
+5. *When closely checking the contents of that document,* we find a *hidden* column which cannot be viewed because the document was protected.
 6. Uploading the Excel workbook to **Google Sheets** does the trick shows us the hidden column which turned out to be a set of passwords.
 7. One of the passwords worked for a user called `sierra.frye` which had the permission to read the **GMSA** password of `BIR-ADFS-GMSA$`.
 8. That account had a `WriteDACL` right on a **Domain Administrator** called `tristan.davies`.
