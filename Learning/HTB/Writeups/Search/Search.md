@@ -209,7 +209,9 @@ We won't be able to **unhide** this column unless we **unprotect** the sheet:
 
 ![unprotecting-sheet](unprotecting-sheet.jpg)
 
-*We can, however,* use a trick of uploading the `xlsx` file to **Google Sheets** :D
+*We can, however,* use a trick :D
+
+Uploading the `xlsx` file to **Google Sheets** should take care of this :D
 
 ![got-them-passwords](got-them-passwords.jpg)
 
