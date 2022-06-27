@@ -239,12 +239,12 @@ and finishing with **impacket**'s `wmiexec.py` to get full shell access.
 
 ![got-tristan](got-tristan.jpg)
 
-### Alternate Route: cracking the `.pfx` certificate on `sierra`'s share + using it for PowerShell web access
-*If we take some time to check* `sierra` *profile,* we see a file called `staff.pfx` in the `/Downloads/Backups` folder:
+### An Alternate Route: cracking the `.pfx` certificate on `sierra`'s share + using it for PowerShell web access
+*If we take some time to check* `sierra`'s *profile,* we see a file called `staff.pfx` in the `\Downloads\Backups` folder:
 
 ![pfx-found](pfx-found.jpg)
 
-Using `john`'s python script `pfx2john`, we can get a format that's crackable.
+Using `john`'s python utility script `pfx2john`, we can get a format that's crackable.
 
 ![cracked-pfx](cracked-pfx.jpg)
 
@@ -252,7 +252,7 @@ We can import these certificates into `firefox`
 
 ![firefox-cert-import](firefox-cert-import.jpg)
 
-After importing the certificates, we can browse to `https://10.10.11.129/staff`
+*After importing the certificates,* we can browse to `https://10.10.11.129/staff`
 
 ![powershell-web-access](powershell-web-access.jpg)
 
