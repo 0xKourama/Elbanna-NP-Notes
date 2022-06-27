@@ -85,7 +85,7 @@ Host script results:
 |_  start_date: N/A
 ```
 
-We see standard Domain Controller ports and **IIS** on ports 80, 443 & 8172
+We see standard Domain Controller ports (53, 88, 389 & 3269) and **IIS** on ports 80, 443 & 8172
 
 Port 5985 wasn't open so that mean no **WinRM** for this box
 
