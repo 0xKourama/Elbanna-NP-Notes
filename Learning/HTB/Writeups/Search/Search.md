@@ -112,7 +112,7 @@ It said: "Send password to Hope Sharp" then "IsolationIsKey?"
 ### First set of credentials
 Earlier, when extracted user names from the website:
 
-![website-users](website-users.jpg)
+![website-users](website-users-2.jpg)
 
 we used a python tool called `ADGenerator` [here](https://github.com/w0Tx/generate-ad-username) to generate a list of username based on their first and last names following common naming conventions:
 
