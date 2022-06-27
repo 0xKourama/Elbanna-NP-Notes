@@ -8,7 +8,7 @@
 7. One of the passwords worked for a user called `sierra.frye` which had the permission to read the **GMSA** password of `BIR-ADFS-GMSA$`.
 8. The account `BIR-ADFS-GMSA$` had a `WriteDACL` right on a **Domain Administrator** called `tristan.davies`.
 9. We use a python script to retrieve the **NTLM** hash of `BIR-ADFS-GMSA$` and abuse his rights to reset the password of `tristan.davies` via **RPC.**
-10. Another route that is a bit longer includes using the **PowerShell Web Access** enabled on the web server after cracking then importing a `.pfx` certificate (*found on the shared user profile of the* `sierra.frya` *user*) into our browser.
+10. Another route that is a bit longer includes using the **PowerShell Web Access** enabled on the web server after cracking then importing into our browser a `.pfx` certificate found on the shared user profile of the `sierra.frya` user.
 
 ---
 
