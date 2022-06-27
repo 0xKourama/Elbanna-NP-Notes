@@ -1,5 +1,5 @@
-# Enumerate LDAP without credentials
-`ldapsearch -x -H ldap://10.10.10.161 -D '' -w '' -b 'dc=htb,dc=local'`
+# ldapsearch
+`ldapsearch -x -H ldap://10.10.10.161 -D <USERNAME> -w <PASSWORD> -b 'DC=MEGABANK,DC=LOCAL'`
 
-# After creds
+# ldapdomaindump --> Nice HTML reports
 `ldapdomaindump`

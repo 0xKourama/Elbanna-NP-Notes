@@ -72,3 +72,6 @@ $lnk.Description = "Browse the web"
 $lnk.HotKey = "Ctrl+Alt+O"
 $lnk.Save()
 ```
+
+# Enable PowerShell Remoting
+`Enable-PSRemoting -Force`
