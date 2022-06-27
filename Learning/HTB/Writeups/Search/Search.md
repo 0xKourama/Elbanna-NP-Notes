@@ -116,7 +116,7 @@ It said: **"Send password to Hope Sharp"** then **"IsolationIsKey?"**
 
 ![website-users](website-users-2.jpg)
 
-we used a python tool called `ADGenerator` [here](https://github.com/w0Tx/generate-ad-username) to generate a list of usernames based on their first and last names following common naming conventions:
+we used a python tool called `ADGenerator` [(link)](https://github.com/w0Tx/generate-ad-username) to generate a list of usernames based on their first and last names following common naming conventions:
 
 - NameSurname
 - Name.Surname
@@ -129,7 +129,7 @@ we used a python tool called `ADGenerator` [here](https://github.com/w0Tx/genera
 - SurnameN
 - Surname.N
 
-and we used a tool called `kerbrute` [here](https://github.com/ropnop/kerbrute) to enumerate which were valid users using the `userenum` module.
+and we used a tool called `kerbrute` [(link)](https://github.com/ropnop/kerbrute) to enumerate which were valid users using the `userenum` module.
 
 ![kerbrute-userenum](kerbrute-userenum.jpg)
 
@@ -142,7 +142,7 @@ We went ahead and found the password **"IsolationIsKey?"** to work with **"Hope.
 ### The Awesomeness of BloodHound
 *Since port 5985 isn't open,* we have no reason to check for **WinRM** capabilities. So we turn to using all the tools that don't require a foothold on the box.
 
-We start with `BloodHound.py` [here](https://github.com/fox-it/BloodHound.py) to get an overview of the situation in the domain.
+We start with `BloodHound.py` [(link)](https://github.com/fox-it/BloodHound.py) to get an overview of the situation in the domain.
 
 **Note:** it's recommended to set your **DNS** server in `/etc/resolv.conf` to the box's IP to make sure things go smoothly when using any of the tools we're about to use.
 
@@ -224,7 +224,7 @@ and since `sierra` is a member of the `ITSEC` group, we're going to go for a ful
 ![path-to-da](path-to-da.jpg)
 
 ### Reading the GMSA password & Resetting `tristan`'s password
-We can obtain the **NTLM** hash of the **GMSA** `BIR-ADFS-GMSA$` with a **python** tool called `gMSADumper` [here](https://github.com/micahvandeusen/gMSADumper)
+We can obtain the **NTLM** hash of the **GMSA** `BIR-ADFS-GMSA$` with a **python** tool called `gMSADumper` [(link)](https://github.com/micahvandeusen/gMSADumper)
 
 **Command:** `python3 gMSADumper/gMSADumper.py -u Sierra.Frye -p '$$49=wide=STRAIGHT=jordan=28$$18' -d search.htb`
 
