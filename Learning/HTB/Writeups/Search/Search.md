@@ -140,7 +140,7 @@ We went ahead and found the password **"IsolationIsKey?"** to work with **"Hope.
 ![auth-as-hope-sharp](auth-as-hope-sharp.jpg)
 
 ### The Awesomeness of BloodHound
-*Since port 5985 isn't open,* we have no reason to check for WinRM capabilities. So we turn to using all the tools that don't require a foothold on the box.
+*Since port 5985 isn't open,* we have no reason to check for **WinRM** capabilities. So we turn to using all the tools that don't require a foothold on the box.
 
 We start with `BloodHound.py` [here](https://github.com/fox-it/BloodHound.py) to get an overview of the situation in the domain.
 
