@@ -133,7 +133,7 @@ and we used a tool called `kerbrute` [here](https://github.com/ropnop/kerbrute) 
 
 ![kerbrute-userenum](kerbrute-userenum.jpg)
 
-So we know that the username convention is **Name.Surname**
+*From that,* we know that the username convention is **Name.Surname**
 
 We went ahead and found the password **"IsolationIsKey?"** to work with **"Hope.Sharp"**
 
