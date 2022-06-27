@@ -178,7 +178,7 @@ The password was **"@3ONEmillionbaby"**
 ### Checking for Password Reuse
 It has turned into a habit for me to spray any password I get on all possible users xD
 
-I use `crackmapexec` with the `--users` flag to obtain a the full list of domain users.
+*In order to get a the full list of domain users,* I use `crackmapexec` with the `--users` flag.
 
 **Command:** `crackmapexec smb 10.10.11.129 -u 'web_svc' -p '@3ONEmillionbaby' --users`
 
