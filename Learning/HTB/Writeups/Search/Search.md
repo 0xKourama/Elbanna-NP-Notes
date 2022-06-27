@@ -4,9 +4,9 @@
 3. *When spraying this password across the domain users,* we find out that the password is also used by another user: `edgar.jacobs`.
 4. Edgar's shared redirected folder was exposing his user profile which contained an interesting **Microsoft Excel** document called `Phishing_Attempt.xlsx`.
 5. *When closely checking the contents of that document,* we find a *hidden* column which cannot be viewed because the document was protected.
-6. Uploading the Excel workbook to **Google Sheets** does the trick shows us the hidden column which turned out to be a set of passwords.
+6. Uploading the Excel workbook to **Google Sheets** does the trick and shows us the hidden column which turned out to be a set of passwords.
 7. One of the passwords worked for a user called `sierra.frye` which had the permission to read the **GMSA** password of `BIR-ADFS-GMSA$`.
-8. That account had a `WriteDACL` right on a **Domain Administrator** called `tristan.davies`.
+8. The account `BIR-ADFS-GMSA$` had a `WriteDACL` right on a **Domain Administrator** called `tristan.davies`.
 9. We use a python script to retrieve the **NTLM** hash of `BIR-ADFS-GMSA$` and abuse his rights to reset the password of `tristan.davies` via **RPC.**
 10. Another route that is a bit longer includes using the **PowerShell Web Access** enabled on the web server after cracking then importing a `.pfx` certificate (*found on the shared user profile of the* `sierra.frya` *user*) into our browser.
 
