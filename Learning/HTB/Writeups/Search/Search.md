@@ -91,7 +91,7 @@ Port 5985 wasn't open so that meant no **WinRM** for this box
 
 ### Stuff we tried but didn't work
 1. **SMB** enumeration using anonymous, guest and null sessions.
-2. **RPC** enumeration with `enum4linux-ng` which didn't get much information.
+2. **RPC** enumeration with `enum4linux-ng`.
 3. **LDAP** enumeration with `ldapsearch` using anonymous authentication.
 4. Collecting usernames from the website and trying them. We got 3 valid users. But none of them was **ASREPRoastable** or had a weak password.
 5. Web Directory Bruteforcing. The only unique directory was `/staff` but we got access denied. We also did file bruteforcing with multiple extensions without much success.
