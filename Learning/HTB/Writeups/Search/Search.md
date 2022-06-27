@@ -1,6 +1,6 @@
 ### Summary
 1. A **Windows Domain Controller** machine where we don't get any access using conventional methods. The key to gaining our initial set of credentials is by inspecting *one of the images* on the website that turns out to have **credentials** for a user called `hope.sharp`
-2. *Using this authenticated access,* we run a **Kerberoast** attack which gets the hash of the `web_svc` account which we crack to get a password.
+2. *Using this authenticated access,* we run a **Kerberoast** attack which gets us the hash of the `web_svc` account that we crack to get a password.
 3. *When spraying this password across the domain users,* we find out that the password is also used by another user: `edgar.jacobs`.
 4. Edgar's redirected folder was exposing his user profile which contained an interesting **Microsoft Excel** document called `Phishing_Attempt.xlsx`.
 5. *When closely checking the contents of this sheet,* we find a *hidden* column which cannot be viewed because the document is protected.
