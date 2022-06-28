@@ -7,7 +7,7 @@
 1. **[Time Saving]** start **Nessus** (basic network scan) in the background
 2. **AD pentesting**
 	1. **[Time Saving]** find targets without SMB signing enabled `crackmapexec smb <SUBNET> --gen-relay-list <OUT_FILE>`
-	2. **[Time Saving + network poisoning]** start `responder` and start relaying to target list ---> obtain AD naming convention to modify userlist
+	2. **[Time Saving + network poisoning]** start `responder` and/or `mitm6` and start relaying to target list ---> obtain AD naming convention to modify userlist
 	3. **[SSDP]** gather creds with fake UPnP devices using `evil-SSDP`
 	4. **[Identifing Domain Controllers]** Doing a quick `nmap` scan searching for DNS, Kerberos and LDAP ports: 53, 88, 389
 	5. **[Identifing High Value Targets]** Bruteforce DNS using subnet IPs to get a list of all server names --> set priority list for interesting host names
@@ -43,7 +43,9 @@
 				5. **Server Operators** --> administrative access to non-domain controller servers
 			3. Locate computers where domain admins are logged in
 		11. Enumerate **Group Policy Preferences** (MS14-025)
-		12. Enumerate **SMB** share access with the obtained user using `crackmapexec` --> writable SMB share? --> plant **SCF/LNK** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
+		12. Enumerate **SMB** share access with the obtained user using `crackmapexec` `--shares` module
+			1. Passwords in files? --> search for keywords like "password" "creds" in readable files
+			2. writable SMB share? --> plant **SCF/LNK** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
 		13. Check for **Kerberos contrained/unconstrained delegation**
 		14. Check for **readable LAPS passwords**
 	13. **[Authenticated Attacks with shell/rdp access]** got user?
