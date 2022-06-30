@@ -30,7 +30,7 @@
 `$ErrorActionPreference = 'silentlycontinue'; ls -recurse -force | ? {$_.fullname -notmatch 'AppData|Application Data|Local Settings'} | ? {(get-acl $_.fullname ).accesstostring -like '*tushikikatomo*'} | select -expand fullname; $ErrorActionPreference = 'continue'`
 
 # Get Process Owners
-`Get-WmiObject -class win32_process | select name,@{n='owner';e={$_.getowner().user}}`
+`Get-WmiObject -class win32_process | ? {$_.name -notlike '*svchost*'} | select name,@{n='owner';e={$_.getowner().user}} | ft -autosize`
 
 # Get .NET Version
 ## Paths:
