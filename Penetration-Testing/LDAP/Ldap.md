@@ -1,5 +1,5 @@
-# ldapsearch
-`ldapsearch -x -H ldap://10.10.10.161 -D <USERNAME> -w <PASSWORD> -b 'DC=MEGABANK,DC=LOCAL'`
-
 # ldapdomaindump --> Nice HTML reports
-`ldapdomaindump`
+`ldapdomaindump -u '<DOMAIN_FQDN>\<USER>' -p '<PASSWORD>' --no-json --no-grep -m <HOST_FQDN>`
+
+# ldapsearch
+`ldapsearch -x -H ldap://<TARGET_IP> -D <USERNAME> -w <PASSWORD> -b 'DC=MEGABANK,DC=LOCAL'`
