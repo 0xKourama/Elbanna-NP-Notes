@@ -8,5 +8,10 @@
 `ntpdate <SERVER_IP>`
 
 # using `rdate`
-`apt-get -y install rdate`
-`rdate -n <DC_IP>`
+```bash
+apt-get -y install rdate
+rdate -n <DC_IP>
+```
+
+# or manually using `date`
+`date -s "1 JAN 2000 18:00:00"`
