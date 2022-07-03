@@ -60,7 +60,6 @@ msfvenom -p windows/adduser USER=<USERNAME> PASS=<PASSWORD_MATCHING_COPLEXITY>
 ```
 
 ---
----
 
 # Local Detection
 When runnnig:
