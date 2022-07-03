@@ -10,7 +10,7 @@ Protocol: [MS-PAR]: Print System Asynchronous Remote Protocol
 Protocol: [MS-RPRN]: Print System Remote Protocol
 ```
 
-# [RCE](https://github.com/cube0x0/CVE-2021-1675)
+# RCE Version [Github](https://github.com/cube0x0/CVE-2021-1675)
 
 ## Installation
 ```bash
@@ -78,7 +78,7 @@ HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint
 gsv spooler
 ```
 
-# [LPE](https://github.com/calebstewart/CVE-2021-1675)
+# LPE Version [Github](https://github.com/calebstewart/CVE-2021-1675)
 ## Usage (Creating Local Admin)
 ```
 Import-Module .\cve-2021-1675.ps1
