@@ -1,7 +1,7 @@
 # Building the `incognito.exe` binary
-1. clone the ingonitor repository [here](https://github.com/FSecureLABS/incognito)
-2. make sure you have visual studio installed with the C++ compile workload installed
-3. open a developer's command prompt from the start menu
+1. clone the incognito repository [here](https://github.com/FSecureLABS/incognito)
+2. make sure you have **Visual Studio** installed with the **"C++ compile workload"** installed
+3. open a Developer's Command Prompt from the start menu
 4. go to the project folder
 5. run the `nmake` command
 6. you should get the `incognito.exe` binary as an output
