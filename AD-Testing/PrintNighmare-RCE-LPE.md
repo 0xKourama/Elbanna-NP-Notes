@@ -1,6 +1,6 @@
 # RCE Version [Github](https://github.com/cube0x0/CVE-2021-1675)
 
-## Vulnerability Detection (Remote)
+## Vulnerability Detection
 When running:
 ```bash
 rpcdump.py @<VICTIM_IP> | egrep 'MS-RPRN|MS-PAR'
