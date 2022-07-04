@@ -24,6 +24,7 @@
 	10. **[Unauthenticated AD Attacks 1 - ASREPRoasing]** got a userlist? --> **ASREPRoast**
 	11. **[Unauthenticated AD Attacks 2 - Password Spraying]** Try to obtain **Password Policy** `crackmapexec smb <DC_IP> -u '' -p '' --pass-pol` --> start spraying with most common passwords, trying usernames as passwords (`hydra`) & company-name convention passwords
 	12. **[Authenticated AD Attacks without shell access]** got user?
+		0. NetNTLMv1 found? Coerce with `petitpotam` and submit hash for cracking on crack.sh
 		0. Domain Controller <= Microsoft Server 2012 R2? --> MS14-068 (a.k.a pykek)
 		1. Search for **shell access** using `crackmapexec` modules for `smb` and `winrm`
 		2. **ADCS found?** --> use `noPac.py` + CVE-2022-26923 (a.k.a certifried)
@@ -48,7 +49,7 @@
 		11. Enumerate **Group Policy Preferences** (MS14-025)
 		12. Enumerate **SMB** share access with the obtained user using `crackmapexec` `--shares` module
 			1. Passwords in files? --> search for keywords like "password" "creds" in readable files
-			2. writable SMB share? --> plant **SCF/LNK** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
+			2. writable SMB share? --> plant **SCF/LNK/INI** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
 		13. Check for **Kerberos contrained/unconstrained delegation**
 		14. Check for **readable LAPS passwords**
 	13. **[Authenticated Attacks with shell/rdp access]** got user?

