@@ -1,0 +1,12 @@
+# Reversible Encryption
+1. it has to be enabled on an AD account
+2. it has to be enabled on the password policy
+3. the clear-text password can be retrieved in a DCSync attack
+4. the clear-text password would only be there if there was a password change done after the feature has been set. In other words, the DC won't be allowed to see the incoming clear-text password unless the feature is set beforehand.
+
+# RDP Security: Network Level Authentication
+This feature is handy because it would stop any computer non-joined to the domain from using RDP. even if he has a correct set of credentials.
+Even with a network logon using runas:
+```shell
+runas.exe /netonly /user:lab.local\administrator mstsc.exe
+```

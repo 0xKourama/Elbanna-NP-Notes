@@ -34,7 +34,7 @@
 		6. Test for **Pykek** vulnerability (MS14-068)
 		7. Retrieve all AD users
 			1. Do another full **ASREPRoast**
-			2. Check for **stored passwords** in user description field (`ldapdomaindump` or `crackmapexec`)
+			2. Check for **stored passwords** in user description field (`ldapdomaindump` or `Get-ADUser` from a RSAT-enabled & Network Authenticated user)
 		8. Retrieve full AD computer list --> check for interesting computers to target
 		9. **Kerberoast**
 		10. Run **Bloodhound**
