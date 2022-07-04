@@ -14,7 +14,7 @@ Get-DomainObjectAcl -Identity "SuperSecureGPO" -ResolveGUIDs |  Where-Object {($
 ```powershell
 Add-LocalAdmin -Identity 'Bobby' -GPOIdentity 'SuperSecureGPO'
 ```
-# Assign a new right (not test --> might break stuff)
+# Assign a new right (not tested --> might break stuff)
 ```powershell
 Add-UserRights -Rights "SeLoadDriverPrivilege","SeDebugPrivilege" -Identity 'Bobby' -GPOIdentity 'SuperSecureGPO'
 ```
