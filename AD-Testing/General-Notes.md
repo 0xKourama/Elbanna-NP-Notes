@@ -10,3 +10,9 @@ Even with a network logon using runas:
 ```shell
 runas.exe /netonly /user:lab.local\administrator mstsc.exe
 ```
+
+# The use of kerberos pre-authentication
+Without pre-auth, anyone could get a blob encrypted with a key derived from a client's password and would be able ot crack it offline --> ASREPRoast
+
+# The method of kerberos preauthentication. The reason for adjusting clock skew.
+To prevent relay attacks, the client performs preauth by encrypting a timestamp with their credentials --> this will prove to the KDC that they have the creds for the account. This is also why there can't be much clockskew
