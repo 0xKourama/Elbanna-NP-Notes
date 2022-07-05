@@ -128,7 +128,7 @@ gmsa1$:1122:aad3b435b51404eeaad3b435b51404ee:2be99b0ca6594829276aaf74358624b8:::
 ```
 
 ## (Optional) Step #6: Removing the msDS-KeyCredentialLink
-you will need the device GUID for this stem --> it's provided in the output of the command in step #1
+you will need the device GUID for this step --> it's provided in the output of the command in step #1
 
 ### Command
 ```bash
