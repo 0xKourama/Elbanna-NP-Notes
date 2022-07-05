@@ -5,11 +5,11 @@
 2. use the `-dc-ip` flag to point to the domain controller
 
 ## Scenario
-domain: lab.local
-ADCS: present and required for PKINIT
-user: sysadmin
-group membership: key admins
-privilege: AddKeyCredentialLink over Domain Controller: DC$
+- domain: lab.local
+- ADCS: present and required for PKINIT
+- user: sysadmin
+- group membership: key admins
+- privilege: AddKeyCredentialLink over Domain Controller: DC$
 
 ## Step #1: List key credentials
 listing the keys on the DC. the out gives an either/or answer so we should try going for it
