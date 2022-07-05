@@ -42,9 +42,13 @@
 			2. Abuse high privilege group memberships
 				1. **DNSAdmins** --> Escalate to domain admin via DLL hijacking
 				2. **Exchange Windows Permissions** --> DCSync
-				3. **Backup Pperators** --> backup `NTDS.dit`
-				4. **Account Operators** --> non-high-privilege group membership addition + ability to read **LAPS** passwords
-				5. **Server Operators** --> administrative access to non-domain controller servers
+				3. **Backup Operators** --> backup `NTDS.dit`
+				4. **LAPS Group** --> Ability to read **LAPS** passwords
+				5. **gMSA Group** Ability to read **gMSA** passwords
+				6. **Exchange Windows Permissions** --> DCSync
+				7. **Key Admins/Enterprise Key Admins** With ADCS, do shadow credentials --> DCSync
+				8. **Account Operators** --> modify group memberships --> exploit all above abilities from group memberships
+				9. **Server Operators** --> administrative access to non-domain controller servers
 			3. Locate computers where domain admins are logged in
 		11. Enumerate **Group Policy Preferences** (MS14-025)
 		12. Enumerate **SMB** share access with the obtained user using `crackmapexec` `--shares` module
