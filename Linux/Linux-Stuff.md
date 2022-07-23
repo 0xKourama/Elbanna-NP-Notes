@@ -1,3 +1,10 @@
+# Finding distro type
+```bash
+cat /etc/issue
+cat /etc/lsb-release      # Debian based
+cat /etc/redhat-release   # Redhat based
+```
+
 # Find glibc version
 `ldd --version`
 
