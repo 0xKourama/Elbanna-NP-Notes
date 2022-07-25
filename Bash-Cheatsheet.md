@@ -33,14 +33,27 @@ echo "Hi $name"
 --- 
 
 ## flow control
+### example #1: if/then
 ```bash
 read -p "What is your age: " age
 if [ $age -lt 21 ]
 then
-echo "you can't have a driver's license yet"
+	echo "you can't have a driver's license yet"
 fi
 ```
-
+### example #2: if/elif/else
+```bash
+read -p "What is your age: " age
+if [ $age -lt 21 ]
+then
+	echo "you can't have a driver's license yet"
+elif [ $age -gt 80 ]
+then
+	echo "Don't drive old man!"
+else
+	echo "Welcome to the test"
+fi
+```
 ---
 
 ## important operators
@@ -65,4 +78,59 @@ fi
 | -w FILE | FILE exists and has write permission |
 | -x FILE | FILE exists and has execute permission |
 
---- 
+---
+
+## boolean operators
+
+```bash
+read -p "Enter a username: " user
+grep $user /etc/passwd && echo "$user found!" || echo "$user not found
+```
+
+---
+
+## for loops
+```bash
+for ip in $(seq 1 254); do echo 10.10.10.$ip; done
+```
+**OR**
+```bash
+for ip in {1..254}; do echo 10.10.10.$ip; done
+```
+
+---
+
+## while loops
+
+```bash
+counter=1
+while [ $counter -lt 10 ]
+do
+	echo "10.10.10.$counter"
+	((counter++))
+done
+```
+
+---
+
+## functions
+### normal function declaration and call
+```bash
+get_a_random_number() {
+	echo $RANDOM	
+}
+get_a_random_number
+```
+### function with a return value
+```bash
+return_a_random_number() {
+	return $RANDOM	
+}
+return_a_random_number
+echo "return value: $?"
+```
+### output:
+```bash
+./func.sh 
+return value: 11
+```
