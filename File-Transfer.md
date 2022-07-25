@@ -11,7 +11,7 @@ cat socat.key socat.crt > socat.pem
 ```bash
 socat -d -d OPENSSL-LISTEN:<LPORT>,cert=socat.pem,verify=0,reuseaddr,fork file:file.txt
 ```
-## #step #4: on machine receiving the file:
+### step #4: on machine receiving the file:
 ```bash
 socat OPENSSL:<LHOST>:<LPORT>,verify=0 file:file.txt,create
 ```
