@@ -38,6 +38,7 @@ set_session=tcrg5ptlfkit2mik13vbsi2aah&pma_username=root&pma_password=hello&serv
 ## if we send the request to intruder, and got the options tab, we can extract useful information from responses and feed them to the attack results table.
 1. we grab from `_session" value="` to `">` for the cookie value
 2. we grab from `token" value="` to `:>` for the token value
+
 ![phpma-brute-1](phpma-brute-1.jpg)
 
 ## we then configure the payload locations
@@ -48,6 +49,7 @@ set_session=tcrg5ptlfkit2mik13vbsi2aah&pma_username=root&pma_password=hello&serv
 2. recursive grep: from `_session" value="` to `">` for the cookie value
 3. simple list: <PASSWORD_LIST>
 4. recursive grep: from `token" value="` to `:>` for the token value
+
 ![phpma-brute-3](phpma-brute-3.jpg)
 
 ## after that, we set the resource pool for 1 max concurrent request to be compatible with our recursive grep payloads
