@@ -78,7 +78,7 @@ xhttp.send();
 | | user: optional user name |
 | | psw: optional password |
 | send() | Sends the request to the server |
-| Used for GET requests |
+| | Used for GET requests |
 | send(string) | Sends the request to the server. |
-| Used for POST requests |
+| | Used for POST requests |
 | setRequestHeader() | Adds a label/value pair to the header to be sent |
