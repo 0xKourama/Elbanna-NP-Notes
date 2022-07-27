@@ -1,6 +1,7 @@
 # Browser Fingerprinting
 ## Tool: Fingerprintjs2 JavaScript library
 [link here](https://github.com/LukasDrgon/fingerprintjs2/fork)
+### sample: prints out the user-agent and platform components
 ```html
 <!doctype html>
 <html>
