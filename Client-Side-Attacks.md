@@ -27,7 +27,10 @@
 https://developers.whatismybrowser.com/useragents/parse/#parse-useragent
 
 ## fingerprinting with AJAX: 
-### Note: The POST request is issued against the same server where the malicious web page is stored, therefore the URL used in the `xmlhttp.open` method does not specify an IP address
+### Note:
+*In this example,* the POST request is issued against the same server where the malicious web page is stored, therefore the URL used in the `xmlhttp.open` method does not specify an IP address.
+
+A comment is added for when targeting a remote server
 ```html
 <!doctype html>
 <html>
