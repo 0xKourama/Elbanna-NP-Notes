@@ -217,3 +217,12 @@ function handleResponse() {
 };
 </script>
 ```
+
+---
+
+checkpoint
+https://portswigger.net/web-security/cross-site-scripting  
+   https://portswigger.net/web-security/cross-site-scripting/reflected  
+      https://portswigger.net/web-security/cross-site-scripting/exploiting  
+         https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf  
+            https://roadmap.sh/backend
