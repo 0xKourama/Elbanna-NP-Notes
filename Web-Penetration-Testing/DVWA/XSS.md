@@ -181,7 +181,7 @@ admin:password
 ---
 
 ## Exploiting cross-site scripting to perform CSRF
-- *Anything a legitimate user can do on a web site,*
+- *Anything a legitimate user can do on a web site,*  
    you can probably do too with XSS.
 - *Depending on the site you're targeting,*
    you might be able to make a victim:
@@ -189,8 +189,8 @@ admin:password
    - accept a friend request,
    - commit a backdoor to a source code repository,
    - or transfer some Bitcoin.
-- Some websites allow logged-in users to change their email address without re-entering their password.
-   *If you've found an XSS vulnerability,*
-      you can make it trigger this functionality to:
-      change the victim's email address to one that you control,
+- Some websites allow logged-in users to change their email address without re-entering their password.  
+   *If you've found an XSS vulnerability,*  
+      you can make it trigger this functionality to:  
+      change the victim's email address to one that you control,  
       and then trigger a password reset to gain access to the account. 
