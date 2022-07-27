@@ -127,7 +127,7 @@ function loadDoc() {
 xhttp.open("GET", "ajax_test.asp", true);
 ```
 **Note:** The file can be **any** kind of file, like:
-- .txt and .xml,
-- or **server scripting files** like:
+- .txt and .xml,  
+or **server scripting files** like:
 - .asp and .php  
 *(which can perform actions on the server before sending the response back).*
