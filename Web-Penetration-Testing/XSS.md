@@ -201,8 +201,8 @@ admin:password
       However, these strategies **do not provide any protection if an XSS vulnerability is also present.**
 
 ## Example: stored XSS to CSRF
-## Note: AJAX is used to send a request to the `my-account` page because it's where the `csrf` hidden input is present
-## After that, the `csrf` token is sent in the POST request to the `/my-account/change-email` page where it changes the email the value we mentioned `test@test.com`
+### Note: AJAX is used to send a request to the `my-account` page because it's where the `csrf` hidden input is present
+### After that, the `csrf` token is sent in the POST request to the `/my-account/change-email` page where it changes the email the value we mentioned `test@test.com`
 ```html
 <script>
 var req = new XMLHttpRequest();
