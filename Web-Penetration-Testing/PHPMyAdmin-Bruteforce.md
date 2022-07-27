@@ -39,10 +39,10 @@ set_session=tcrg5ptlfkit2mik13vbsi2aah&pma_username=root&pma_password=hello&serv
 1. we grab from `_session" value="` to `">` for the cookie value
 2. we grab from `token" value="` to `:>` for the token value
 
-![phpma-brute-1](phpma-brute-1.jpg)
+![phpma-brute-1](/Assets/PHPMyAdmin-Bruteforce/phpma-brute-1.jpg)
 
 ## we then configure the payload locations
-![phpma-brute-2](phpma-brute-2.jpg)
+![phpma-brute-2](/Assets/PHPMyAdmin-Bruteforce/phpma-brute-2.jpg)
 
 ## and set them for their respective values
 1. recursive grep: from `_session" value="` to `">` for the cookie value
@@ -50,10 +50,10 @@ set_session=tcrg5ptlfkit2mik13vbsi2aah&pma_username=root&pma_password=hello&serv
 3. simple list: <PASSWORD_LIST>
 4. recursive grep: from `token" value="` to `:>` for the token value
 
-![phpma-brute-3](phpma-brute-3.jpg)
+![phpma-brute-3](/Assets/PHPMyAdmin-Bruteforce/phpma-brute-3.jpg)
 
 ## after that, we set the resource pool for 1 max concurrent request to be compatible with our recursive grep payloads
-![phpma-brute-4](phpma-brute-4.jpg)
+![phpma-brute-4](/Assets/PHPMyAdmin-Bruteforce/phpma-brute-4.jpg)
 
 ## we then launc the attack and get a 302 redirect when the password is correct
-![phpma-brute-5](phpma-brute-5.jpg)
+![phpma-brute-5](/Assets/PHPMyAdmin-Bruteforce/phpma-brute-5.jpg)
