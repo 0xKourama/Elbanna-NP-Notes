@@ -72,13 +72,11 @@ xhttp.send();
 | getAllResponseHeaders() | Returns header information |
 | getResponseHeader() | Returns specific header information |
 | open(method, url, async, user, psw) | Specifies the request |
-
-method: the request type GET or POST  
-url: the file location  
-async: true (asynchronous) or false (synchronous)  
-user: optional user name  
-psw: optional password  
-
+| | method: the request type GET or POST |
+| | url: the file location |
+| | async: true (asynchronous) or false (synchronous) |
+| | user: optional user name |
+| | psw: optional password |
 | send() | Sends the request to the server |
 | Used for GET requests |
 | send(string) | Sends the request to the server. |
