@@ -102,3 +102,32 @@ xhttp.send();
 | | 404: "Not Found" |
 | | For a complete list go to the Http Messages Reference |
 | statusText | Returns the status-text (e.g. "OK" or "Not Found") |
+
+# The onreadystatechange Property
+- The onreadystatechange function is called **every time** the readyState changes.
+- *When `readyState` is 4 and `status` is 200,*
+	the response is ready
+```javascript
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt");
+  xhttp.send();
+}
+```
+**Note:** The `onreadystatechange` event is triggered **four** times (1-4), **one time for each change in the readyState.**
+
+# call a file on the server
+- The `url` parameter of the `open()` method, is an address to a file on a server:
+```javascript
+xhttp.open("GET", "ajax_test.asp", true);
+```
+**Note:** The file can be **any** kind of file, like:
+	- .txt and .xml,
+	- or **server scripting files** like:
+		- .asp and .php
+	*(which can perform actions on the server before sending the response back).*
