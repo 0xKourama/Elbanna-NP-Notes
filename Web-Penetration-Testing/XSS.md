@@ -194,3 +194,8 @@ admin:password
       you can make it trigger this functionality to:  
       change the victim's email address to one that you control,  
       and then trigger a password reset to gain access to the account. 
+- This type of exploit is typically referred to as **cross-site request forgery (CSRF)**,  
+   which is slightly confusing because CSRF can also occur as a standalone vulnerability.  
+   *When CSRF occurs as a standalone vulnerability,*  
+      it can be patched using strategies like **anti-CSRF tokens**.  
+      However, these strategies **do not provide any protection if an XSS vulnerability is also present.**
