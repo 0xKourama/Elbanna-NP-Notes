@@ -192,21 +192,21 @@ function loadDoc() {
 <button type="button" onclick="loadDoc()">Request data</button>
 
 <p id="demo"></p>
-
+ 
 <script>
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     document.getElementById("demo").innerHTML = this.responseText;
   }
-  xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford");
-  xhttp.send();
+  xhttp.open("POST", "demo_post2.asp");
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("fname=Henry&lname=Ford");
 }
 </script>
- 
+
 </body>
 </html>
-
 ```
 
 ## Server Response Properties

