@@ -103,21 +103,37 @@ xhttp.send();
 | | For a complete list go to the Http Messages Reference |
 | statusText | Returns the status-text (e.g. "OK" or "Not Found") |
 
-## The onreadystatechange Property
+## The `onreadystatechange` Property
 - The onreadystatechange function is called **every time** the readyState changes.
 - *When `readyState` is 4 and `status` is 200,*
 	the response is ready
-```javascript
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML = this.responseText;
+      document.getElementById("demo").innerHTML =
+      this.responseText;
     }
   };
   xhttp.open("GET", "ajax_info.txt");
   xhttp.send();
 }
+</script>
+
+</body>
+</html>
+
 ```
 **Note:** The `onreadystatechange` event is triggered **four** times (1-4), **one time for each change in the readyState.**
 
@@ -139,19 +155,58 @@ or **server scripting files** like:
 - Sending a large amount of data to the server (POST has no size limitations).
 - Sending user input (which can contain unknown characters), POST is more robust and secure than GET.
 
-## GET Request
-```javascript
-var xhttp = new XMLHttpRequest();
-xhttp.open("GET", "demo_get.asp");
-xhttp.send(); 
+## GET Request (we add a `math.random()` call to avoid hitting the cache)
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "demo_get.asp?t=" + Math.random());
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
+
 ```
 
 ## POST Request with headers
-```javascript
-var xhttp = new XMLHttpRequest();
-xhttp.open("POST", "ajax_test.asp");
-xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xhttp.send("fname=Henry&lname=Ford");
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<p id="demo"></p>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "demo_get2.asp?fname=Henry&lname=Ford");
+  xhttp.send();
+}
+</script>
+ 
+</body>
+</html>
+
 ```
 
 ## Server Response Properties
@@ -160,13 +215,13 @@ xhttp.send("fname=Henry&lname=Ford");
 | responseText | get the response data as a string |
 | responseXML | get the response data as XML data |
 
-## The responseText Property
+## The `responseText` Property
 The `responseText` property returns the server response as a JavaScript string, and you can use it accordingly:
 ```javascript
 document.getElementById("demo").innerHTML = xhttp.responseText; 
 ```
 
-## The responseXML Property
+## The `responseXML` Property
 The `XMLHttpRequest` object has an in-built XML parser.  
 The `responseXML` property returns the server response as an **XML DOM object**.  
 *Using this property,* you can parse the response as an **XML DOM object**:
@@ -215,4 +270,335 @@ function myFunction(xml) {
 	<ARTIST>JayZ</ARTIST>
 	<ARTIST>Nas</ARTIST>
 </artists>
+```
+
+## Server Response Methods
+| Method | Description |
+| --- | --- |
+| getResponseHeader() | Returns specific header information from the server resource |
+| getAllResponseHeaders()	| Returns all the header information from the server resource |
+
+## The `getAllResponseHeaders()` and the `getResponseHeader()` methods
+returns all header information from the server response.
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+<p>The getAllResponseHeaders() function returns all the header information of a resource, like length, server-type, content-type, last-modified, etc:</p>
+
+<p id="demo"></p>
+
+<script>
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+  document.getElementById("demo").innerHTML =
+  this.getAllResponseHeaders();
+  // for getting a specific header
+  //this.getResponseHeader("Last-Modified");
+}
+xhttp.open("GET", "ajax_info.txt");
+xhttp.send();
+</script>
+
+</body>
+</html>
+```
+
+## AJAX xml example
+The xml looks like:
+```xml
+<CATALOG>
+	<CD>
+		<TITLE>Empire Burlesque</TITLE>
+		<ARTIST>Bob Dylan</ARTIST>
+		<COUNTRY>USA</COUNTRY>
+		<COMPANY>Columbia</COMPANY>
+		<PRICE>10.90</PRICE>
+		<YEAR>1985</YEAR>
+	</CD>
+</CATALOG>
+```
+```html
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<button type="button" onclick="loadDoc()">Get my CD collection</button>
+<br><br>
+<table id="demo"></table>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    myFunction(this);
+  }
+  xhttp.open("GET", "cd_catalog.xml");
+  xhttp.send();
+}
+function myFunction(xml) {
+  const xmlDoc = xml.responseXML;
+  const x = xmlDoc.getElementsByTagName("CD");
+  let table="<tr><th>Artist</th><th>Title</th></tr>";
+  for (let i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue + 
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>
+```
+
+## AJAX PHP Example: the use gets a hint for a name based on his inpurt: (if the user inputs the character 'A', he will get a suggestion for "Anna")
+a function called `showHint()` is executed when The function is triggered by the `onkeyup` event and sends a GET request back to the server-side PHP code with the `q` parameter
+### HTML page
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+<h3>Start typing a name in the input field below:</h3>
+
+<p>Suggestions: <span id="txtHint"></span></p> 
+<p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
+
+<script>
+function showHint(str) {
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("txtHint").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "gethint.php?q="+str);
+  xhttp.send();   
+}
+</script>
+
+</body>
+</html>
+```
+### PHP Code
+```php
+<?php
+// Array with names
+$a[] = "Anna";
+$a[] = "Brittany";
+$a[] = "Cinderella";
+$a[] = "Diana";
+$a[] = "Eva";
+
+// get the q parameter from URL
+$q = $_REQUEST["q"];
+
+$hint = "";
+
+// lookup all hints from array if $q is different from ""
+if ($q !== "") {
+  $q = strtolower($q);
+  $len = strlen($q);
+  foreach($a as $name) {
+    if (stristr($q, substr($name, 0, $len))) {
+      if ($hint === "") {
+        $hint = $name;
+      } else {
+        $hint .= ", $name";
+      }
+    }
+  }
+}
+
+// Output "no suggestion" if no hint was found or output correct values
+echo $hint === "" ? "no suggestion" : $hint;
+?> 
+```
+
+## AJAX Database Example:
+AJAX can be used for interactive communication with a database.  
+In the below example, on customer selection change, a request is sent to back to the server-side PHP code to select the required data from the database
+### HTML page
+```html
+<!DOCTYPE html>
+<html>
+<style>
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<form action=""> 
+  <select name="customers" onchange="showCustomer(this.value)">
+    <option value="">Select a customer:</option>
+    <option value="ALFKI">Alfreds Futterkiste</option>
+    <option value="NORTS ">North/South</option>
+    <option value="WOLZA">Wolski Zajazd</option>
+  </select>
+</form>
+<br>
+<div id="txtHint">Customer info will be listed here...</div>
+
+<script>
+function showCustomer(str) {
+  if (str == "") {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("txtHint").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "getcustomer.php?q="+str);
+  xhttp.send();
+}
+</script>
+</body>
+</html>
+```
+### PHP server-side code
+```php
+<?php
+$mysqli = new mysqli("servername", "username", "password", "dbname");
+if($mysqli->connect_error) {
+  exit('Could not connect');
+}
+
+$sql = "SELECT customerid, companyname, contactname, address, city, postalcode, country FROM customers WHERE customerid = ?";
+
+$stmt = $mysqli->prepare($sql);
+$stmt->bind_param("s", $_GET['q']);
+$stmt->execute();
+$stmt->store_result();
+$stmt->bind_result($cid, $cname, $name, $adr, $city, $pcode, $country);
+$stmt->fetch();
+$stmt->close();
+
+echo "<table>";
+echo "<tr>";
+echo "<th>CustomerID</th>";
+echo "<td>" . $cid . "</td>";
+echo "<th>CompanyName</th>";
+echo "<td>" . $cname . "</td>";
+echo "<th>ContactName</th>";
+echo "<td>" . $name . "</td>";
+echo "<th>Address</th>";
+echo "<td>" . $adr . "</td>";
+echo "<th>City</th>";
+echo "<td>" . $city . "</td>";
+echo "<th>PostalCode</th>";
+echo "<td>" . $pcode . "</td>";
+echo "<th>Country</th>";
+echo "<td>" . $country . "</td>";
+echo "</tr>";
+echo "</table>";
+?>
+```
+
+### AJAX App: navigation between XML data
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id='showCD'></div><br>
+<input type="button" onclick="previous()" value="<<">
+<input type="button" onclick="next()" value=">>">
+
+<script>
+let i = 0;
+let len;
+let cd;
+
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+  const xmlDoc = xhttp.responseXML;
+  cd = xmlDoc.getElementsByTagName("CD");
+  len = cd.length;
+  displayCD(i);
+}
+xhttp.open("GET", "cd_catalog.xml");
+xhttp.send();
+
+function displayCD(i) {
+  document.getElementById("showCD").innerHTML =
+  "Artist: " +
+  cd[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+  "<br>Title: " +
+  cd[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+  "<br>Year: " + 
+  cd[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+}
+
+function next() {
+  if (i < len-1) {
+    i++;
+    displayCD(i);
+  }
+}
+
+function previous() {
+  if (i > 0) {
+    i--;
+    displayCD(i);
+  }
+}
+</script>
+
+</body>
+</html>
+```
+The XML:
+```xml
+<CATALOG>
+	<CD>
+		<TITLE>Empire Burlesque</TITLE>
+		<ARTIST>Bob Dylan</ARTIST>
+		<COUNTRY>USA</COUNTRY>
+		<COMPANY>Columbia</COMPANY>
+		<PRICE>10.90</PRICE>
+		<YEAR>1985</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Hide your heart</TITLE>
+		<ARTIST>Bonnie Tyler</ARTIST>
+		<COUNTRY>UK</COUNTRY>
+		<COMPANY>CBS Records</COMPANY>
+		<PRICE>9.90</PRICE>
+		<YEAR>1988</YEAR>
+	</CD>
+	<CD>
+		<TITLE>Greatest Hits</TITLE>
+		<ARTIST>Dolly Parton</ARTIST>
+		<COUNTRY>USA</COUNTRY>
+		<COMPANY>RCA</COMPANY>
+		<PRICE>9.90</PRICE>
+		<YEAR>1982</YEAR>
+	</CD>
+</CATALOG>
 ```
