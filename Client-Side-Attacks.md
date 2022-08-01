@@ -148,6 +148,15 @@ Str = Str + "AAbwB3AGUAcgBTAGgAZQBsAGwAXAB2ADEALgAwAFwAcABvAHcAZQByAHMAaABlAGwAb
 
 the powershell script in the **MurderShell project** can take care of the splitting.
 
+### Note: taken from [unicorn](https://github.com/trustedsec/unicorn) readme
+```
+If you are deploying this against Office365/2016+ versions of Word you need to modify the first line of the output from: Sub Auto_Open()
+
+To: Sub AutoOpen()
+
+The name of the macro itself must also be "AutoOpen" instead of the legacy "Auto_Open" naming scheme.
+```
+
 ---
 
 # Object Linking and Embedding (Awesome)

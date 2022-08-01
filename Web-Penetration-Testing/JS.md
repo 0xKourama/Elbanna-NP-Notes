@@ -547,6 +547,104 @@ url = "https://www.victimsite.com/?csrftoken=95202460752969227078829139976552";
 document.URL.match("csrftoken=(.*)")[1]; //this would return "95202460752969227078829139976552"
 ```
 
+## JS to call another html page using AJAX and parse the HTML response as a DOM for accessibility then select the first `h1` element's innerHTML
+```html
+<html>
+ <form  method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function () {
+    if(xhr.status == 200 && xhr.readyState == 4){
+      alert(xhr.responseXML.getElementsByTagName('h1')[0].innerHTML);
+    }
+  };
+  xhr.responseType = "document";
+  xhr.open('GET','index2.html');  
+  xhr.send();
+</script>
+</html>
+```
+
+## parsing JSON data into accessible objects
+```html
+<html>
+ <form  method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET','jason.json');
+  xhr.onreadystatechange = function () {
+    if(xhr.status == 200 && xhr.readyState == 4){
+      var obj = JSON.parse(xhr.responseText);
+      alert(obj.name + " is a developer living in " + obj.city + ". His age is " + obj.age + " years old.");
+    }
+  };
+  xhr.send();
+</script>
+</html>
+```
+### the `jason.json` file
+```json
+{"name":"Jason", "age":30, "city":"New York"}
+```
+
+## Ending note:
+*once you combine:*
+1. XSS
+2. the power of Javascript
+  1. Accessing the DOM
+    1. cookies
+    2. csrf tokens
+  2. manipulating the DOM
+    1. changing html elements
+    2. even creating fake forms to capture creds
+    3. registering events
+  3. HTML,XML and JSON parsing
+  4. AJAX
+
+then: *sky is the limit* :D
+
 ---
 
 ## HTML DOM Events List
