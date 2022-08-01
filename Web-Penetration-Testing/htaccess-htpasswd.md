@@ -1,4 +1,4 @@
-# protecting access to certain web directories on Apache2
+# Protecting access to certain web directories on Apache2
 ### Step #1: create a directory where you want authentication and a basic `index.html` file
 ```bash
 cd /var/www/html
