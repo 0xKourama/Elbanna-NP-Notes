@@ -186,26 +186,6 @@ admin:password
 
 ---
 
-## Exploiting cross-site scripting to perform CSRF
-- *Anything a legitimate user can do on a web site,*  
-   you can probably do too with XSS.
-- *Depending on the site you're targeting,*
-   you might be able to make a victim:
-   - send a message,
-   - accept a friend request,
-   - commit a backdoor to a source code repository,
-   - or transfer some Bitcoin.
-- Some websites allow logged-in users to change their email address without re-entering their password.  
-   *If you've found an XSS vulnerability,*  
-      you can make it trigger this functionality to:  
-      change the victim's email address to one that you control,  
-      and then trigger a password reset to gain access to the account. 
-- This type of exploit is typically referred to as **cross-site request forgery (CSRF)**,  
-   which is slightly confusing because CSRF can also occur as a standalone vulnerability.  
-   *When CSRF occurs as a standalone vulnerability,*  
-      it can be patched using strategies like **anti-CSRF tokens**.  
-      However, these strategies **do not provide any protection if an XSS vulnerability is also present.**
-
 ## Example: stored XSS to CSRF
 ### Note: AJAX is used to send a request to the `my-account` page because it's where the `csrf` hidden input is present
 ### After that, the `csrf` token is sent in the POST request to the `/my-account/change-email` page where it changes the email the value we mentioned `test@test.com`
@@ -265,9 +245,64 @@ xhr.send("email=wiener2%40normal-user.net&csrf=" + token);
 
 ---
 
-checkpoint
-- [X] https://portswigger.net/web-security/cross-site-scripting
-- [X] https://portswigger.net/web-security/cross-site-scripting/reflected  
-- [X] https://portswigger.net/web-security/cross-site-scripting/exploiting
-- [ ] https://portswigger.net/web-security/cross-site-scripting/exploiting/lab-perform-csrf  
-      https://roadmap.sh/backend
+## Lab: https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-with-most-tags-and-attributes-blocked
+## Solution (didn't work all the way because triggerring windows resize event could be done through JS) however the process is good for finding bypassing WAF
+1. try XSS standard vector
+```html
+<img src=1 onerror=print()>
+```
+2. intercept the request with burp and send to `intruder`
+3. add a payload sign between emtpy tags `<§§>`
+4. copy all the tags from the XSS cheatsheet (https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+5. brute force and notice the 200 OK generated with the `body` tag
+6. set up the next attack in intruder using `<body%20§§=1>`
+7. copy all the events from the XSS cheatsheet and start the bruteforce
+8. you find that the `onresize` event gave a 200 OK
+9. this means that we need to get a POC working with **that tag** as well as **that event**
+
+### Exploitation URL
+```
+https://your-lab-id.web-security-academy.net/?search=%22%3E%3Cbody%20onresize=print()%3E" onload=this.style.width='100px'
+```
+
+---
+
+## Lab: Reflected XSS into HTML context with all tags blocked except custom ones (https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-with-all-standard-tags-blocked)
+
+### Exploitation URL:
+```
+https://your-lab-id.web-security-academy.net/?search=<xss+id=x+onfocus=alert(document.cookie) tabindex=1>#x'
+```
+
+- This injection creates a `custom tag` with the `ID` x, 
+- which contains an `onfocus` event handler that triggers the alert function.
+- The hash at the end of the URL focuses on this element as soon as the page is loaded, causing the alert payload to be called
+
+this custom tag will execute if the tag button is pressed or if you switch context to the browser
+
+```html
+<xss id=x onfocus=alert(1) tabindex=1>
+```
+---
+
+## Lab: Reflected XSS with some SVG markup allowed (https://portswigger.net/web-security/cross-site-scripting/contexts/lab-some-svg-markup-allowed)
+### Solution html code
+```html
+<svg><image><animateTransform onbegin=alert(1) /></image></svg>
+```
+### Process: we followed the same process in (https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-with-most-tags-and-attributes-blocked) to search for allowed tags and events
+### Step #1: we found 4 tags allowed
+1. animatetransform
+2. image
+3. svg
+4. title
+### Step #2: we found 1 event allowed
+1. onbegin
+### Step #3: when consulting the below documentation for both the `animatetransform` tag and the `onbegin` event:
+- https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform
+- https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/beginEvent_event
+
+### We found that we can creat the svg.image.animatetransform structure to trigger javascript execution
+```html
+<svg><image><animateTransform onbegin=alert(1) /></image></svg>
+```

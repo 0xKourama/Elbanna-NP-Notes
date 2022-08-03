@@ -98,5 +98,5 @@ $PROCS = Get-Process;
 Enable-PSRemoting -Force
 ```
 
-## Search for strings in files (needs obtimization)
+## Search for strings in files (needs optimization)
 `$ErrorActionPreference = 'SilentlyContinue';ls -Recurse -Force | % {sls -Path $_.fullname -Pattern ".*password.*"}; $ErrorActionPreference = 'continue'`

