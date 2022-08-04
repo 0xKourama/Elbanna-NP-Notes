@@ -18,28 +18,31 @@
 		2. Enumerate **LDAP** (checking if anonymous bind is enabled)
 		3. Enumerate **SMB** guest/null/anonymous authentication/rid-brute
 		4. Enumerate **RPC**
-	7. **[ZeroLogon / Eternal Blue]**
-	8. **[Exchange]** Test for **Proxy Logon**
-	9. **[Identifying ADCS]**
-	10. **[Unauthenticated AD Attacks | ASREPRoasing]**
-	11. **[Unauthenticated AD Attacks | Password Spraying]**
-		1. Try to obtain**Domain Password Policy**
-		2. Start spraying with generated password list
-	12. **[Authenticated AD Attacks without shell access]**  
+	6. **[Low Hanging Fruit]**
+		1. **ZeroLogon / Eternal Blue**
+		2. **Exchange Proxy Logon**
+	7. **[Identifying ADCS]**
+	8. **[Unauthenticated AD Attacks]**
+		1. ASREPRoasing
+		2. Password Spraying]**
+			1. Try to obtain**Domain Password Policy**
+			2. Start spraying with generated password list
+	9. **[Authenticated AD Attacks]**  
 		1. Domain Controller <= Microsoft Server 2012 R2? --> MS14-068 (a.k.a pykek)		
 		2. **[ADCS Attacks]**
 			1. check for **samAccountName spoofing**
 			2. CVE-2022-26923 (a.k.a certifried)
 			3. PetitPotam
 		3. **Drop the MIC** (CVE-2019-1040)
-		4. **MS Exchange found?** --> use `privexchange` relay attack to domain admin
+		4. **PrivExchang**
 		5. **Remote Print Nightmare** CVE-2021-1675
-		6. Check for Writable GPOs
+		6. **GPO Abuse**
 		7. Search for **shell access** using SMB/WinRM
-		8. Enumerate **SMB** share access
-			1. Passwords in files? --> search for keywords like "password" "creds" in readable files
-			2. writable SMB share? --> plant **SCF/LNK/INI** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
-		9. Retrieve all AD users/Computer
+		8. **SMB Share Enumeration**
+			1. Enumerate **Group Policy Preferences** (MS14-025)
+			2. Passwords in files? --> search for keywords like "password" "creds" in readable files
+			3. writable SMB share? --> plant **SCF/LNK/INI** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
+		9. **Full AD User/Computer Enumeration**
 			1. Do another full **ASREPRoast**
 			2. Check for **stored passwords** in user description field (`ldapdomaindump` or `Get-ADUser` from a RSAT-enabled & Network Authenticated user)
 			3. Check for interesting computers to target
@@ -57,7 +60,7 @@
 				7. **Key Admins/Enterprise Key Admins** With ADCS, do shadow credentials --> DCSync
 				8. **Account Operators** --> modify group memberships --> exploit all above abilities from group memberships
 				9. **Server Operators** --> administrative access to non-domain controller servers
-			4. Locate computers where domain admins are logged in
+			4. **[Hunting For High Privilege Users]**
 				1. Impersonate tokens with `incognito.exe`
 				2. Logged in through RDP?
 					1. Hijack Session
@@ -72,7 +75,6 @@
 						3. rundll
 						4. **Powersploit** outminidump.ps1
 						5. if Avast AV found, try using it to dump LSASS
-		12. Enumerate **Group Policy Preferences** (MS14-025)
 	13. **[Local Privilege Escalation]**
 		1. Run **WinPEAS** --> regular windows pricesc paths
 		2. `SeImpersonatePrivilege`? Abuse Potato attacks (SweetPotato)
