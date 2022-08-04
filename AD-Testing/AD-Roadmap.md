@@ -6,13 +6,22 @@
 # Network/AD Pentest
 1. **[Time Saving]** start **Nessus** (basic network scan) in the background
 2. **AD pentesting**
-	1. **[Time Saving]** find targets without SMB signing enabled `crackmapexec smb <SUBNET> --gen-relay-list <OUT_FILE>`
-	2. **[Time Saving + network poisoning]** start `responder` and start relaying to target list ---> obtain AD naming convention to modify userlist
-	3. **[SSDP]** gather creds with fake UPnP devices using `evil-SSDP`
-	4. **[Identifing Domain Controllers]** Doing a quick `nmap` scan searching for DNS, Kerberos and LDAP ports: 53, 88, 389
-	5. **[Identifing High Value Targets]** Bruteforce DNS using subnet IPs to get a list of all server names --> set priority list for interesting host names
+	1. **[Time Saving]** find targets without SMB signing enabled
+	```bash
+	crackmapexec smb <SUBNET> --gen-relay-list <OUT_FILE>
+	```
+	2. **[Time Saving + Network Poisoning]** start **`Responder`** and start relaying to target list ---> obtain AD naming convention to modify userlist
+	```bash
+	responder -I <NETWORK_INTERFACE>
+	```
+	3. **[Time Saving + Social Engineering]** gather creds with fake UPnP devices using **`Evil-SSDP`**
+	```bash
+	python3 evil_ssdp.py <NETWORK_INTERFACE> --template scanner
+	```
+	4. **[Identifing Domain Controllers]** Doing a quick **`nmap`** scan searching for DNS, Kerberos and LDAP ports: 53, 88, 389
+	5. **[Identifing Other High Value Targets]** Bruteforce DNS using subnet IPs to get a list of all server names --> set priority list for interesting host names
 	6. **[Time Saving + Username Enumeration]**
-		1. Start `kerbrute` using `userenum` module to enumerate AD users 
+		1. Start `kerbrute` using `userenum` module to enumerate AD users from OSINT-Generated wordlist
 		2. Try enumeration through **LDAP** using `ldapsearch` (checking if anonymous bind is enabled)
 		3. Try enumeration using **SMB** through guest/null/anonymous authention/rid-brute
 		4. Try enumeration through RPC using `enum4linux-ng`
