@@ -90,6 +90,8 @@
 		1. **Metasploit**
 		2. **ExploitDB**
 		3. **GitHub** PoCs (review source code before execution)
-	3. Check for clear-text protocols and perform MitM attacks (ARP poisoning)
+	3. Check for clear-text protocols and perform MitM attacks
+		1. ARP poisoning
+		2. Authentication Capture Modules
 	4. Attack common applications with specialized tools (ex: Oracle --> ODAT)
 	5. Check for **log4j**
