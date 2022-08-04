@@ -60,29 +60,29 @@
 				7. **Key Admins/Enterprise Key Admins** With ADCS, do shadow credentials --> DCSync
 				8. **Account Operators** --> modify group memberships --> exploit all above abilities from group memberships
 				9. **Server Operators** --> administrative access to non-domain controller servers
-			4. **[Hunting For High Privilege Users]**
-				1. Impersonate tokens with `incognito.exe`
+		12. **[Local Privilege Escalation]**
+			1. Run **WinPEAS** --> regular windows pricesc paths
+			2. `SeImpersonatePrivilege`? Abuse Potato attacks (SweetPotato)
+			3. test **Local Print Nightmare** CVE-2021-1675
+			4. **SMBGHost** CVE-2020-0796
+			5. **HiveNightmare/SeriousSam** 2021-36934
+			6. NetNTLMv1 found? Coerce with `petitpotam` and submit hash for cracking on [crack.sh](https://crack.sh/)
+		13. **[Attacks with Local Administrator]**
+			1. **High Privilege User Hunting**
+				1. **Token Impersonation** with `incognito.exe`
 				2. Logged in through RDP?
 					1. Hijack Session
 					2. Dump Credentials
-				3. Dump Creds
-					1. SAM
+				3. **Credential Dumping**
+					1. **SAM Database**
 						1. **Pass-the-Hash** and spray the network using `crackmapexec` to check for reused local admin password
 						2. Attempt password cracking and and trying across all other authentication channels
-					2. Attempt Dumping **LSASS** Memory
+					2. **LSASS Memory**
 						1. Task Manager
 						2. **procdump**
 						3. rundll
 						4. **Powersploit** outminidump.ps1
 						5. if Avast AV found, try using it to dump LSASS
-	13. **[Local Privilege Escalation]**
-		1. Run **WinPEAS** --> regular windows pricesc paths
-		2. `SeImpersonatePrivilege`? Abuse Potato attacks (SweetPotato)
-		3. test **Local Print Nightmare** CVE-2021-1675
-		4. **SMBGHost** CVE-2020-0796
-		5. **HiveNightmare/SeriousSam** 2021-36934
-		6. NetNTLMv1 found? Coerce with `petitpotam` and submit hash for cracking on [crack.sh](https://crack.sh/)
-	14. **[After gaining Administrative Access]** got local admin?
 3. **[Resume Network Exploitation]** Retrieve Nessus scan results
 	1. Find most (critical + exploitable) vulnerabilities
 	2. Check for known, safe and trusted exploits on
