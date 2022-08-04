@@ -24,7 +24,7 @@
 	7. **[Identifying ADCS]**
 	8. **[Unauthenticated AD Attacks]**
 		1. ASREPRoasing
-		2. Password Spraying]**
+		2. Password Spraying
 			1. Try to obtain**Domain Password Policy**
 			2. Start spraying with generated password list
 	9. **[Authenticated AD Attacks]**  
