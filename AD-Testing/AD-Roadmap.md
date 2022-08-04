@@ -7,8 +7,8 @@
 	3. Company-name conventions
 
 # Network/AD Pentest
-1. Start **Nessus** (basic network scan) in the background
-2. **AD pentesting**
+- Start **Nessus** (basic network scan) in the background
+- **AD pentesting**
 	1. **[Network Poisoning + Relay Attacks]** start **`Responder`** and start relaying to target list ---> obtain AD naming convention to modify userlist
 	2. **[Social Engineering]** gather creds with fake UPnP devices using **`Evil-SSDP`**
 	3. **[Identifing Domain Controllers]** Doing a quick **`nmap`** scan searching for DNS, Kerberos or LDAP ports: 53, 88, 389
@@ -83,7 +83,7 @@
 						3. rundll
 						4. **Powersploit** outminidump.ps1
 						5. if Avast AV found, try using it to dump LSASS
-3. **[Resume Network Exploitation]** Retrieve Nessus scan results
+- **[Resume Network Exploitation]** Retrieve Nessus scan results
 	1. Find most (critical + exploitable) vulnerabilities
 	2. Check for known, safe and trusted exploits on
 		1. **Metasploit**
