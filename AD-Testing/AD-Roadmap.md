@@ -66,7 +66,8 @@
 			3. test **Local Print Nightmare** CVE-2021-1675
 			4. **SMBGHost** CVE-2020-0796
 			5. **HiveNightmare/SeriousSam** 2021-36934
-			6. NetNTLMv1 found? Coerce with `petitpotam` and submit hash for cracking on [crack.sh](https://crack.sh/)
+			6. **NetNTLMv1** enabled? Coerce with `petitpotam` and submit hash for cracking on [crack.sh](https://crack.sh/)
+			7. **Lazagne.exe**
 		13. **[Attacks with Local Administrator]**
 			1. **High Privilege User Hunting**
 				1. **Token Impersonation** with `incognito.exe`
