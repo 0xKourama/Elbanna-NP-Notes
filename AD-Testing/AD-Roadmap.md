@@ -7,7 +7,7 @@
 1. **[Time Saving]** start **Nessus** (basic network scan) in the background
 2. **AD pentesting**
 	1. **[Time Saving]** find targets without SMB signing enabled `crackmapexec smb <SUBNET> --gen-relay-list <OUT_FILE>`
-	2. **[Time Saving + network poisoning]** start `responder` and/or `mitm6` and start relaying to target list ---> obtain AD naming convention to modify userlist
+	2. **[Time Saving + network poisoning]** start `responder` and start relaying to target list ---> obtain AD naming convention to modify userlist
 	3. **[SSDP]** gather creds with fake UPnP devices using `evil-SSDP`
 	4. **[Identifing Domain Controllers]** Doing a quick `nmap` scan searching for DNS, Kerberos and LDAP ports: 53, 88, 389
 	5. **[Identifing High Value Targets]** Bruteforce DNS using subnet IPs to get a list of all server names --> set priority list for interesting host names
@@ -23,9 +23,8 @@
 	9. **[Identifying High Value Targets + Low-Hanging Fruit]** Run `nmap` scan for port 80 --> `curl` for "http://SERVER_IP/certsrv" to detect **Active Directory Certificate Services** --> perform **PetitPotam Attack**
 	10. **[Unauthenticated AD Attacks 1 - ASREPRoasing]** got a userlist? --> **ASREPRoast**
 	11. **[Unauthenticated AD Attacks 2 - Password Spraying]** Try to obtain **Password Policy** `crackmapexec smb <DC_IP> -u '' -p '' --pass-pol` --> start spraying with most common passwords, trying usernames as passwords (`hydra`) & company-name convention passwords
-	12. **[Authenticated AD Attacks without shell access]** got user?
+	12. **[Authenticated AD Attacks without shell access]**  
 		0. check for writable GPOs
-		0. NetNTLMv1 found? Coerce with `petitpotam` and submit hash for cracking on crack.sh
 		0. Domain Controller <= Microsoft Server 2012 R2? --> MS14-068 (a.k.a pykek)
 		1. Search for **shell access** using `crackmapexec` modules for `smb` and `winrm`
 		2. **ADCS found?** --> use `noPac.py` + CVE-2022-26923 (a.k.a certifried)
@@ -58,11 +57,12 @@
 		13. Check for **Kerberos contrained/unconstrained delegation**
 		14. Check for **readable LAPS passwords**
 	13. **[Authenticated Attacks with shell/rdp access]** got user?
-		1. **[Privilege Escalation]** Run **WinPEAS** --> regular windows pricesc paths
-		2. **[Privilege Escalation]** Abuse Potato attacks
-		3. **[Privilege Escalation]** test **Local Print Nightmare** CVE-2021-1675
-		4. **[Privilege Escalation]** **SMBGHost** CVE-2020-0796
-		5. **[Privilege Escalation]** **HiveNightmare/SeriousSam** 2021-36934
+		1. **[Local Privilege Escalation]** Run **WinPEAS** --> regular windows pricesc paths
+		2. **[Local Privilege Escalation]** `SeImpersonatePrivilege`? Abuse Potato attacks (SweetPotato)
+		3. **[Local Privilege Escalation]** test **Local Print Nightmare** CVE-2021-1675
+		4. **[Local Privilege Escalation]** **SMBGHost** CVE-2020-0796
+		5. **[Local Privilege Escalation]** **HiveNightmare/SeriousSam** 2021-36934
+		6. **[Local Privilege Escalation]** NetNTLMv1 found? Coerce with `petitpotam` and submit hash for cracking on [crack.sh](https://crack.sh/)
 	14. **[After gaining Administrative Access]** got local admin?
 		1. Dump SAM and get local admin NTLM hash
 			1. **Pass-the-Hash** and spray the network using `crackmapexec` to check for reused local admin password
