@@ -34,7 +34,7 @@
 			2. CVE-2022-26923 (a.k.a certifried)
 			3. PetitPotam
 		3. **Drop the MIC** (CVE-2019-1040)
-		4. **PrivExchang**
+		4. **PrivExchange**
 		5. **Remote Print Nightmare** CVE-2021-1675
 		6. **GPO Abuse**
 		7. Search for **shell access** using SMB/WinRM
