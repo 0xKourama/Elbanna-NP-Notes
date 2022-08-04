@@ -18,16 +18,16 @@
 		2. Enumerate **LDAP** (checking if anonymous bind is enabled)
 		3. Enumerate **SMB** guest/null/anonymous authentication/rid-brute
 		4. Enumerate **RPC**
-	7. **[Low-Hanging Fruit | Domain Controllers/Other Windows Hosts]** Ex: ZeroLogon/Eternal Blue
-	8. **[Low-Hanging Fruit | Exchange]** Test for **Proxy Logon**
-	9. **[Identifying ADCS + Other Web Services]**
+	7. **[ZeroLogon / Eternal Blue]**
+	8. **[Exchange]** Test for **Proxy Logon**
+	9. **[Identifying ADCS]**
 	10. **[Unauthenticated AD Attacks | ASREPRoasing]**
 	11. **[Unauthenticated AD Attacks | Password Spraying]**
 		1. Try to obtain**Domain Password Policy**
 		2. Start spraying with generated password list
 	12. **[Authenticated AD Attacks without shell access]**  
 		1. Domain Controller <= Microsoft Server 2012 R2? --> MS14-068 (a.k.a pykek)		
-		2. **ADCS found?**
+		2. **[ADCS Attacks]**
 			1. check for **samAccountName spoofing**
 			2. CVE-2022-26923 (a.k.a certifried)
 			3. PetitPotam
@@ -47,7 +47,7 @@
 		11. Run **Bloodhound**
 			1. Conduct **ACL attacks** with `powerview` to abuse **dangerous rights** (ex: password reset)
 			2. Check for **Kerberos unconstrained/contrained delegation**
-			3. Abuse high privilege group memberships
+			3. **[High Privilege Group Memberships Abuse]**
 				1. **DNSAdmins** --> Escalate to domain admin via DLL hijacking
 				2. **Exchange Windows Permissions** --> DCSync
 				3. **Backup Operators** --> backup `NTDS.dit`
