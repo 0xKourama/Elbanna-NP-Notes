@@ -89,10 +89,12 @@ php > popen('id', 'w');
 uid=0(root) gid=0(root) groups=0(root)
 ```
 
-## Weird ways to execute PHP
+## Interesting shorthands
 ```php
-// ternary operator
+// ternary operator (PHP >= 5.3)
 1?`id`:1;
+// Null coalescing (PHP >= 7)
+`id`??1;
 // some obfuscation: equivalent to exec
 str_replace('z', 'e', 'zxzc')("id");
 ```
